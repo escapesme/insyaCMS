@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    
+
+    
+    
+    
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        <country  name="country"  type="text"  title="Country "/>
+        <msg name="msg"  type="textarea" title="msg" />
+        <order name="order"  type="order" title="Order" />
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" value='1' />
+        
+       
+        <cat_id name="cat_id"  type="select" select_type='DB' 
+                select_data="com_faq_categories" select_text='title' select_value='id'  title="Category" pclass='_50'/>
+     
+        
+    </fields>
+    
+    
+   
+
+    <selectfields>
+    
+        <cat_id />   
+                
+    </selectfields>
+    
+    
+    
+    
+    
+    
+    
+  
+    <group>
+        <com_gustbook title="gustbook" parent="yes" />
+        <com_gustbook_categories title="gustbook categories"  />
+    </group>
+    
+    
+    
+    <listfields>   
+        <title list-width="2"/>
+        
+        <msg list-width="4"/>
+        <country list-width="2"/>
+        <order list-width="1"/>
+        <enabled list-width="1"/>      
+    </listfields>
+
+
+
+
+
+    
+</root>

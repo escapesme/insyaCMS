@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        
+        <viewType name="viewType" 
+                  type="select"  
+                  title="View Type" 
+                  select_data='item>>Item;cat>>Category'
+        />
+        
+        <cat_id name="cat_id"  
+                type="select"  
+                title="Category ID" 
+                select_data="com_events_categories" 
+                select_type="DB"  
+                select_text ="title"
+                select_value ="id"
+        />
+        
+
+        <item_id name="item_id" 
+                 type="select"  
+                 title="Item Id" 
+                 select_data="com_events" 
+                 select_type="DB"  
+                 select_text ="title"
+                 select_value ="id"
+        />
+        <nums 
+            name="nums"  
+            type="number"  
+            title="Number of Items per Page" 
+            
+        />
+        
+        
+        
+         
+        <ViewTitle 
+            name="ViewTitle"  
+            type="enable"  
+            title="View Title " 
+            
+        />
+        
+         
+        <ViewImage
+            name="ViewImage"  
+            type="enable"  
+            title="View Image " 
+            
+        />
+           
+           
+        <ViewDes
+            name="ViewDes"  
+            type="enable"  
+            title="ViewDes" 
+            
+        />
+        
+        
+        
+    </fields>
+</root>
+
+
+    
+
+

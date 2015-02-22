@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <countries>
+        <AF>Afghanistan</AF>
+        <AR>Argentina</AR>
+        <AU>Australia</AU>
+        <AT>Azerbaijan</AT>
+        <BD>Bangladesh</BD>
+        <BR>Brazil</BR>
+        <KH>Cambodia</KH>
+        <CA>Canada</CA>
+        <CL>Chile</CL>
+        <CN>China</CN>
+        <EG>Egypt</EG>
+        <SV>El Salvador</SV>
+        <ET>Ethiopia</ET>
+        <FR>France</FR>
+        <GE>Georgia</GE>
+        <DE>Germany</DE>
+        <GR>Greece</GR>
+        <GT>Guatemala</GT>
+        <IS>Iceland</IS>
+        <IN>India</IN>
+        <ID>Indonesia</ID>
+        <IR>Iran</IR>
+        <IT>Italy</IT>
+        <JP>Japan</JP>
+        <JO>Jordan</JO>
+        <LB>Lebanon</LB>
+        <LS>Lesotho</LS>
+        <MG>Madagascar</MG>
+        <MY>Malaysia</MY>
+        <MX>Mexico</MX>
+        <MA>Morocco</MA>
+        <MM>Myanmar</MM>
+        <NP>Nepal</NP>
+        <NZ>New Zealand</NZ>
+        <NG>Nigeria</NG>
+        <NO>Norway</NO>
+        <PK>Pakistan</PK>
+        <PH>Philippines</PH>
+        <PL>Poland</PL>
+        <PT>Portugal</PT>
+        <RU>Russia</RU>
+        <ZA>South Africa</ZA>
+        <KR>South Korea</KR>
+        <ES>Spain</ES>
+        <LK>Sri Lanka</LK>
+        <SD>Sudan</SD>
+        <SY>Syria</SY>
+        <TW>Taiwan</TW>
+        <TH>Thailand</TH>
+        <TR>Turkey</TR>
+        <UG>Uganda</UG>
+        <UA>Ukraine</UA>
+        <UK>United Kingdom</UK>
+        <US>United States</US>
+        <VE>Venezuela</VE>
+        <VN>Vietnam</VN>
+        <YE>Yemen</YE>
+    </countries>
+</root>
+
+

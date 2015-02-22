@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+      
+         
+         
+        <news name="news"  type="enable"   title="Searsh News "  />
+         
+        <images name="images"  type="enable"   title="Searsh Images "  />
+        
+        <videos name="videos"  type="enable"   title="Searsh Videos"  />
+         
+        <products name="products"  type="enable"   title="Searsh Products "  />
+         
+         
+        
+    </fields>
+</root>
+
+
+    
+

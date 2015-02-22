@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+        <alias name="alias"  type="text"  title="Alias"/>
+        <image  name="image"  type="pic" title="image" />
+        <order name="order"  type="order" title="Order" />
+          <cat_id 
+            name="cat_id"  
+            type="select"  
+            title="Category" 
+            select_data= "com_content_catgories"
+            select_type= "DB"
+            select_value= "id"
+            select_text= "title"
+        />
+        <enabled name="enabled"  type="enable" title="enable" value='1'  />
+    </fields>
+    
+
+
+
+    
+
+    <group>
+        <com_content_article title="Articale" parent="yes" />
+        <com_content_catgories title="Articale Categories groups"  />
+    </group>
+    
+    
+       
+    <listfields  multiLevel="yes" >   
+        <title  list-width="6"/>
+        <image  list-width="2"/>
+        <order  list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

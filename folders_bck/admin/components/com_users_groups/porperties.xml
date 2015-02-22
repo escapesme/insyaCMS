@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <group_name name="group_name"  type="text"  title="Title"/>
+        <def name="def"  type="enable" title="Defult" />
+        <enabled name="enabled"  type="enable" title="enable" />
+    </fields>
+    
+
+
+    <selectfields>
+    
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <group_name  list-width="7"/>
+        <def  list-width="3"/>
+  
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title   name="title"  type="text"  title="Email"/>
+        <subject name="subject"  type="text" title="subject" pclass='_50' />
+        <formlabel   name="formlabel"  type="text"  title="formLabel" pclass='_50'/>
+        <formmail   name="formmail"  type="text"  title="form Email" pclass='_50'/>
+
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50'  />
+        
+        
+        
+        <body name="body"  type="editor" title="body" />
+    </fields>
+    
+
+
+    <selectfields>
+
+    </selectfields>
+    
+    
+  
+    
+       
+    <listfields  >   
+        <title  list-width="2"/>
+        <subject  list-width="2"/>
+        <formlabel  list-width="1"/>
+        <formmail  list-width="2"/>
+ <body  list-width="2"/>       
+        <enabled  list-width="1"/>
+       
+ 
+    </listfields>
+    
+        
+   
+    
+
+</root>
+
+
+    
+

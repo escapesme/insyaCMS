@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+
+<root>
+    <raza_type_msg>You requested Raza type:</raza_type_msg>
+    
+    <update_button>update</update_button>
+    <change_button>change</change_button>
+    <itsid>itsid</itsid>
+    <name>name</name>
+    <status>status</status>
+    <actions>actions</actions>
+
+    <additsmsg>Add more persons to your group. ITS NO</additsmsg>
+    <add_button>add</add_button>
+
+    <ApplyforRaza>Apply for Raza</ApplyforRaza>
+
+
+    <ex_checkin>ex_checkin</ex_checkin>
+    <ex_checkout>ex_checkout</ex_checkout>
+    <airline>airline</airline>
+    <airline_code>airline code</airline_code>
+    <arrival_time>arrival time</arrival_time>
+
+    <arriving_from>arriving from</arriving_from>
+    <ex_lawazim>lawazim</ex_lawazim>
+        
+    <total_lawazim>total lawazim</total_lawazim>
+    
+    <ex_nights>nights</ex_nights>
+    <lgoinmsg>login</lgoinmsg>
+    
+    <lgoinsubmit>login</lgoinsubmit>
+    <forall> applay for all</forall>
+    <lgointitle>Logged in as : </lgointitle>
+    
+    
+      <logoutsubmit>logout</logoutsubmit>
+    
+
+</root>
+
+    
+

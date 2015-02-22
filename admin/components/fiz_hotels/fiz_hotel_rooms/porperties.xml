@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        <title name="title"  type="text"  title="Title"/> 
+        <enabled name="enabled"  type="enable" title="enable" />
+    </fields>
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <title  list-width="5"/>
+       
+        <enabled list-width="1"/>
+    </listfields>
+    
+     
+    <group>
+        <fiz_hotels title="hotels Rooms " parent='yes'  />
+        <fiz_hotels_titles title="Hotels"   />
+        <fiz_hotel_rooms title="room Types"   />
+    </group>
+</root>
+
+
+    
+

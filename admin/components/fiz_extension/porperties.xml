@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    <fields>
+        
+        
+          
+        <package_id  
+           
+            
+            
+            name="package_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_lawazim_packages"
+            select_text='title' 
+            select_value='id'  
+            title="package"  
+            pclass='col-6' 
+      
+            
+        />
+      
+        
+         <pkg_cat_id  
+           
+            
+            
+            name="pkg_cat_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_lawazim_packages_cat"
+            select_text='title' 
+            select_value='id'  
+            title="package Categry"  
+            pclass='col-6' 
+      
+            
+        />
+      
+        
+        
+        
+   
+        <nights  name="nights"  type="text"  title="nights"/> 
+        <ex_lawazim  name="ex_lawazim"  type="text"  title="ex_lawazim"/> 
+        <ex_paid  name="ex_paid"  type="enable"  title="ex_paid"/> 
+        <ex_checkin  name="ex_checkin"  type="date"  title="ex_checkin"/> 
+        <ex_checkout  name="ex_checkout"  type="date"  title="ex_checkout"/> 
+
+
+    </fields>
+    
+   
+   
+   <selectfields>
+    
+        
+      
+    </selectfields>
+   
+   
+    <listfields     >   
+        
+        
+        <pkg_cat_id  list-width="2"/>
+        <package_id  list-width="2"/>
+        <ex_checkin  list-width="2"/>
+        <ex_checkout  list-width="2"/>
+        <ex_lawazim  list-width="1"/>
+        <ex_paid  list-width="1"/>  
+        
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+

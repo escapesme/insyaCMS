@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+                <line1  type="line" style='background-color:transparent' /> 
+
+        <icone name="icone"  type="text" title="icon"
+               comment= "Choose your icon from fontawesome.io/icons/ and enter the class as provided. Example: fa-circle" pclass='col-6' />
+                <line2  type="line" style='background-color:transparent' /> 
+
+        <tooltip name="tooltip"  type="textarea"  title="tooltip"
+        comment="Enter text that will appear in the tooltip for the menu item" pclass='col-6'/>
+        
+                        <line3  type="line" style='background-color:transparent' /> 
+
+        <function name="function"  type="textarea"  title="function"
+comment="Enter the name of the function that auto generates a certain part of the menu" pclass='col-6'        />
+        
+        
+                        <line4  type="line" style='background-color:transparent' /> 
+
+        
+        
+      
+   
+        <order name="order"  type="order" title="order" pclass='col-3' />
+                        <line5  type="line" style='background-color:transparent' /> 
+
+
+        <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-3' />
+        
+       
+        
+    </fields>
+    
+    
+   
+
+    <selectfields>
+    
+                
+                
+    </selectfields>
+    
+    
+    
+    
+    
+    
+    
+           
+    <group>
+        <sys_admin_menu title='admin menu' parent='yes'/>
+        <sys_admin_pkg title='admin group'  />
+    </group>
+    
+    
+    
+    <listfields>   
+        <title list-width="3" />
+        <icone list-width="2.5" />
+        <function list-width="2.5" />
+        
+        <order list-width="1"  />      
+        <enabled list-width="1"  />
+             
+    </listfields>
+
+
+
+
+
+    
+</root>

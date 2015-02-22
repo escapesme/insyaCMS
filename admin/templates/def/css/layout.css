@@ -1,0 +1,616 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Dec-2013, 15:45:02
+    Author     : empcl_000
+*/
+
+/*login-box*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul,li{
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+}
+
+.clearfix{
+    clear: both;
+    height:1px;
+    width:100%;
+}
+.mainpage {
+
+
+    margin-top: 60px;
+    padding: 26px;
+    position: relative;
+
+
+
+}
+
+.mainpage .mainpage{
+    
+    
+    margin-top: -6px;
+   padding: 0px;
+}
+
+
+.mainpage .mainpage .group_bar {
+
+
+width: auto;
+left: -26px;
+
+right: -26px;
+}
+
+#login-box{
+    border-color:#ddd;
+
+}
+#login-box{
+    position: fixed;
+    width:400px;
+    max-width: 100%;
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+input[type="text"], input[type="password"]{
+    width:100%;
+
+}
+.subtitle{
+    float:left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.actions-left{
+    float: left;
+}.actions-right{
+    float: right;
+}#login-box li{
+
+    float:left;
+
+}
+
+.actions-right , .toright{
+    float:right !important;;
+}
+
+.actions-left , .toleft{
+    float:left !important;;
+}
+.form_row{
+    width:100%;
+    clear: both;
+    float:none
+        ;
+    margin-top: 5px;
+}
+.form_row._33 ,.form_row._50,.form_row._25{
+
+    float:left;
+    margin: 0.5%;
+    clear: none
+
+}
+.form_row._33{
+    width:31%;
+}
+.form_row._50{
+    width:48%;
+}
+.form_row._25{
+    width:23%;
+}
+
+.block-header{
+
+    font-size: 22px;
+    margin: -26px;
+    padding-left: 26px;clear: both;
+    margin-bottom: 0px;
+}
+
+.listindx .block-header {
+
+    margin-bottom:  -26px;
+
+}
+.listindx {
+
+    margin-bottom:  -26px;
+    position: relative;
+    top: -43px;z-index: 1;
+}
+
+.block-actions .form_row{
+
+    width: auto;
+    clear: none;
+    margin: 2px;
+}
+
+.block-actions{
+    position: absolute;
+    bottom: -37px;
+    right: -5px;
+}
+
+.block-actions.top{
+    bottom:auto;
+    top: -50px;
+}
+
+.block-actions.bottom{
+    width: 100%;
+    position: relative;
+    height: 30px;
+    background-color: #F2F4F6;
+    border: 0px;
+
+    margin-top: 20px;
+    padding: 19px 20px 20px;
+    bottom: -26px;
+    right: -26px;
+    left: -26px;
+    clear: both;
+    padding-left: 32px;
+}
+.block-actions.bottom .form_row{
+    margin-top: 0px;
+}
+
+.block-actions  .myreset ,.block-actions .mysubmit{
+    margin-right: 5px;
+    min-width: 120px;
+    margin-bottom: 8px;
+
+}
+
+.block-actions  .myreset{
+
+    color: #5e5e5e;
+    background-color: #fff;
+    border: 1px solid #e5e9ec;
+}
+.block-actions .mysubmit{
+
+    color: #fff;
+    background-color: #f35958;
+}
+
+
+
+
+header{
+    padding: 0 !important;
+    margin: 0 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    min-height: 60px;
+    top:0; left:0;
+}
+header .header-seperation {
+    width: 250px;
+    display: block;
+    float: left;
+    height: 60px;
+    overflow: hidden
+}
+.page-sidebar {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 250px;
+    margin-top: 58px;
+    position: fixed
+}
+
+.main{
+    float: left;
+}
+.page-content {
+    margin-left: 250px;
+    min-height: 1006px;
+}
+
+.page-content {
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #e5e9ec;
+    overflow: auto;
+    position: relative;
+    min-height: 911px;
+}
+
+.page-content .content{
+
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 83px;
+
+}
+.col-12,.col-11,.col-10,
+.col-9,.col-8,.col-7,.col-6,.col-5,
+.col-4,.col-3,.col-2,.col-1
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    float: left;
+    clear: none;
+    margin-left: -4px;
+
+}
+.col-12{width:100%}
+.col-11{width:91.66666666666666%}
+.col-10{width:83.33333333333334%}
+.col-9{width:75%}
+.col-8{width:66.66666666666666%}
+.col-7{width:58.333333333333336%}
+.col-6{width:50%}
+.col-5{width:41.66666666666667%}
+.col-4{width:33.33333333333333%}
+.col-3{width:25%}
+.col-2{width:16.666666666666664%}
+.col-1{width:8.333333333333332%}
+
+
+.getdata_body{
+    display: none;
+}
+
+
+
+.form_row.col-12 .field-input,.form_row.col-11 .field-input ,.form_row.col-10 .field-input ,
+.form_row.col-9 .field-input, .form_row.col-8 .field-input,.form_row.col-7 .field-input,.form_row.col-6 .field-input
+,.form_row.col-5 .field-input,
+.form_row.col-4 .field-input, .form_row.col-3 .field-input,.form_row.col-2 .field-input,.form_row.col-1 .field-input
+{
+    width:98%;
+
+}
+
+
+
+
+
+
+.thbutton{
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer
+}
+
+.divrow.head .divCell.selected{
+
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+
+.divrow.head .divCell a{
+
+
+    float: left;
+    margin-right: 5px;
+}
+
+.divrow.head .divCell,.divrow.head .divCell a ,.divrow.head .divCell .th_title,.divrow.head .divCell i{  
+
+    height:35px;
+    line-height: 35px;
+}
+
+
+
+
+.select_bar div.form_row {
+
+    width:20%;
+    float: right;
+    margin-right: 2px;
+    clear: none;
+
+}
+
+.select_bar div.field-input {
+    width: 94%;
+    float:left;
+    line-height: 35px;
+
+
+
+
+}
+.select_bar div.field-input {
+    clear: both
+}
+
+.select_bar select ,.select_bar  input{
+    width:100%;
+    margin-top: -13px;
+    height:30px !important;
+    min-height: 30px !important;
+    margin-bottom: 5px !important;
+}
+.select_bar div.field-label {
+    float:left;
+    width:100%;    
+    line-height: 35px;
+    font-family: 'Open Sans';
+    font-size: 12px;
+}
+.select_bar div.field-label , .select_bar div.field-label  label{
+
+
+    line-height: 35px;
+
+}
+
+
+
+.pagination{
+    float:right;display: inline-block;
+
+    margin: 5px;
+    padding-bottom: 10px;
+}
+.pagination li{
+    display: inline-block;
+
+
+}
+.pagination ul {
+    display: inline-block;
+    margin: 0;
+
+
+}
+.pagination .info{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    float: left;
+    padding-right: 14px;
+    border-right: 1px solid #cecece;
+}
+
+
+
+.pagination li a{
+
+    padding: 5px 10px;
+    line-height: 20px;
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+
+}
+
+
+
+
+
+
+/* Base for label styling */
+[type="checkbox"].scheckbox:not(:checked),
+[type="checkbox"].scheckbox:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"].scheckbox:not(:checked) + label,
+[type="checkbox"].scheckbox:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"].scheckbox:not(:checked) + label:before,
+[type="checkbox"].scheckbox:checked + label:before {
+    content: '';
+    position: absolute;
+
+    width: 18px;
+    height: 17px;
+
+    border-radius: 3px;
+
+    display: inline-block;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    top: 1.4px;
+    background-color: #fff;
+    border: 1px solid #c2c6cb;
+
+    transition: border 0.2s linear 0s,color 0.2s linear 0s;
+
+
+
+}
+/* checked mark aspect */
+[type="checkbox"].scheckbox:not(:checked) + label:after,
+[type="checkbox"].scheckbox:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\F00C";
+    position: absolute;
+    top: 0; left: 4px;
+    font-size: 12px;
+
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"].scheckbox:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"].scheckbox:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+.site_title{
+
+    float: left;  height: 60px;
+    margin-left: 15px;
+    overflow: hidden;
+    width: 170px;
+}
+
+
+.field-label span{
+    margin: 5px;
+}
+/* Useless styles, just for demo styles */
+
+
+
+
+
+
+.gmap3{
+    min-height: 200px;
+}
+
+
+
+
+
+.form_row  .pic_preview{
+    height: 200px;
+    text-align: center;
+    background: url("images/question_m.png") center no-repeat;
+}
+
+.form_row  .pic_preview img{
+    max-width: 100%;;
+    max-height: 100%;;
+}
+
+
+.menusItems  a i{
+    margin-right: 5px;    font-size: 10px;
+}
+.divCell{
+
+    color:#333
+}
+
+
+.divRow{
+    width:100%;
+
+    float:none;
+    clear: both;
+    overflow: hidden;
+
+}
+
+
+
+.divCell{
+    min-height: 25px;
+    float:left;
+    padding:2px;
+
+}
+
+.cellTitle{
+    display: none
+}
+.cellvalue{
+    width:100%;
+    float: none;
+    min-height: 25px;
+
+}
+
+
+.list2 .divRow{
+    width:49%;
+
+    float:left;
+    clear: none;
+    overflow: hidden;
+
+}
+
+
+
+.blocks     .divRow{
+    width:47%;
+    float:right
+        ;
+    background: #eee;
+    margin: 1%;
+
+}
+
+
+.blocks   .divCell{
+    clear: both;
+    width:100%;   
+    min-height: 25px;
+    min-width: 100%;
+    margin-top: 1px; 
+
+
+}
+.blocks  .cellvalue{
+    float:right;
+    width:80% ;
+    line-height: 25px;  
+    min-height: 25px; 
+    border-bottom: 1px #333 solid;
+}         
+.blocks .cellTitle{
+    width:19%;
+    float:left;
+    line-height: 25px;
+    min-height: 25px;  
+    display: block
+}.blocks .divRow.head{
+    display: none
+}
+
+
+div.xrefRows,
+div.xrefdivCell.divCell,.getXrefData.list_data{
+   max-height: 100% !important;
+   height: auto !important;
+   overflow: auto !important;
+   width: 100%;
+}
+.divRow .getXrefData{
+    display: none;
+}
+.divRow.opened .getXrefData{
+    display: block;
+}

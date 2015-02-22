@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <order_id type='text' name='order_id' title='orderid' pclass='_50' />
+        <ship_name  type='text' name='ship_name' title='ship name' pclass='_50' />   
+        <card_holder_name type='text' name='card_holder_name' title='card holdername'  pclass='_50' />  
+        <order_status 
+            name="order_status" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_order_status" 
+            select_text='title' 
+            select_value='id'  
+            title="status"  
+            pclass='_50'
+        
+        />
+        <site  
+   
+            name="site" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_cities_categories"
+            select_text='urlcode' 
+    
+            
+            
+            
+            select_value='urlcode'  
+            title="Region"
+           
+            
+            pclass='_50'/>
+  
+    </fields>
+    
+
+
+
+    
+    
+
+  
+    <group>
+        <com_products_order title="Order"  />
+        <com_products title="Products" parent="yes" />
+        <com_products_price title=" Price"  />
+        <com_products_categories title="Categories "  />
+        <plg_shipping title="Shipping"  />
+        <plg_shipper title="Shipper"  />
+        <plg_coupon title="Create Coupon"  />
+        <plg_shipping_setting title="Shipping Setting"  />
+        <com_products_setting title=" Setting"  />
+        <com_order_status title="Order Status"  />
+    </group>
+   
+    <selectfields>
+        <site />
+    </selectfields>
+       
+    <listfields  orderType='DESC'>   
+        <order_id />
+        <site />
+        <ship_name />
+        <card_holder_name />
+        <order_status />
+        
+        
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        
+       
+        
+        
+        
+        
+        <title name="title"  type="text"  title="Title"/> 
+        <des name="des"  type="textarea"  title="des"/> 
+        <email_from name="email_from"  type="text"  title="email_from"/> 
+        
+        <email_copy name="email_copy"  type="text"  title="email_copy"/> 
+        
+        
+        
+        <new_email_subject name="new_email_subject"  type="text"  title="new_email_subject"/> 
+        <edit_email_subject name="edit_email_subject"  type="text"  title="edit_email_subject"/> 
+        <delete_email_subject name="delete_email_subject"  type="text"  title="delete_email_subject"/> 
+        
+
+        
+                
+        
+        
+        
+        
+        
+        <package_category name="package_category"  type="list" select_type='DB' 
+                          select_data="fiz_lawazim_packages_cat" select_text='title' select_value='id'  title="package_category" pclass='_50'/>
+                     
+        
+        <email_new_template name="email_new_template"  type="select" select_type='DB' 
+                            select_data="com_html" select_text='title' select_value='id'  title="email_new_template" pclass='_50'/>
+                     
+        <email_edit_template name="email_edit_template"  type="select" select_type='DB' 
+                             select_data="com_html" select_text='title' select_value='id'  title="email_edit_template" pclass='_50'/>
+                     
+        <email_delete_template name="email_delete_template"  type="select" select_type='DB' 
+                               select_data="com_html" select_text='title' select_value='id'  title="email_delete_template" pclass='_50'/>
+           
+       
+
+        <enabled name="enabled"  type="enable" title="enable" />
+    </fields>
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <title  list-width="5"/>
+       
+        <enabled list-width="1"/>
+    </listfields>
+    
+   
+</root>
+
+
+    
+

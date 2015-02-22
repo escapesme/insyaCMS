@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        
+        <status 
+            name="status"  
+            type="getdata"  
+            title="Category" 
+            getData= "com_project_status"
+            getDataTitle="title" 
+            getDataValue="id"
+        
+     
+                 
+        /> 
+        
+        
+        
+        
+        <user_id name="user_id"  type="text"  title="user" />
+         
+        <user_id  
+           
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='name' 
+            select_value='id'  
+            title="user"
+            pclass='col-6' 
+            
+        />
+        
+        <donations  name="donations"  type="text" title="donations" pclass='col-3'/>
+        <address  name="address"  type="text" title="address" pclass='col-3'/>
+        
+        
+        
+        <name name="name"  type="text" title="name" value='1' pclass='col-3' />
+        <email name="email"  type="email" title="email" pclass='col-3' />
+
+        <city name="city"  type="text"   title="city" pclass='col-3'  />
+        
+       
+        <cuntry name="cuntry"  type="text" title="cuntry" value='1' pclass='col-3' />
+        <mail_box name="mail_box"  type="text" title="mail box" value='1' pclass='col-3' />
+        <date name="date"  type="date" title="date" value='1' pclass='col-3' />
+    </fields>
+    
+    
+    
+    	
+    	
+    
+    
+    
+    
+    
+    
+   
+    
+ 
+     <group>
+        <com_project title="Projects" parent="yes" />
+        <com_project_catgories title="Categories"  />
+        <com_project_donations title="donations"  />
+        <com_project_status title="Status"  />
+        <com_project_setting title="Settings"  />
+        
+         <plg_rescores title="rescores" parent="yes" />
+        
+        
+    </group>
+    
+
+    
+       
+    <listfields   >   
+        <user_id  list-width="3"/>
+        <name  list-width="3"/>
+        <donations list-width="2"/>
+        <status  list-width="2"/>
+   
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

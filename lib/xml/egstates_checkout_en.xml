@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<root>
+    <egstates>
+        <Aswan>Aswan</Aswan>
+        <Assiut>Assiut</Assiut>
+        <Alexandria>Alexandria</Alexandria>
+        <Ismailia>Ismailia</Ismailia>
+        <Luxor>Luxor</Luxor>
+        <RedSea>Red Sea</RedSea>
+        <Beheira>Beheira</Beheira>
+        <Giza>Giza</Giza>
+        <Dakahlia>Dakahlia</Dakahlia>
+        <Suez>Suez</Suez>
+        <Sharqiyya>Sharqiyya</Sharqiyya>
+        <Gharbiyya>Gharbiyya</Gharbiyya>
+        <Fayoum>Fayoum</Fayoum>
+        <Cairo>Cairo</Cairo>
+        <Qalyoubia>Qalyoubia</Qalyoubia>
+        <Menoufia>Menoufia</Menoufia>
+        <Minya>Minya</Minya>
+        <NewValley>NewValley</NewValley>
+     
+    </egstates>
+</root>
+

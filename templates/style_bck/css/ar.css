@@ -1,0 +1,85 @@
+._285 p{
+    float: right;
+}
+._285 img {
+    float: left;
+}
+
+
+._285 p {
+
+    position: absolute;
+    right: 0px;
+    left: 250px;
+}
+.catImg {
+    right:auto;left: 0px;}
+
+
+
+
+
+._285 img {
+
+    left: -250px;
+    right:auto
+}
+div.nivo-caption{
+    left:auto;
+    direction: rtl;right: -359px;
+}
+
+.slideShowData{
+
+
+    width:640px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+
+
+
+
+
+.mod-title, .datatitle, .catTitle {
+    padding-left: 0px;
+    padding-right: 50px;
+    background-position:  center right;
+
+
+    text-align:right;
+}
+p{
+    text-align: right
+}
+
+.catTitle {
+
+    width: auto;}
+
+div.Block {
+
+    direction: rtl
+}
+div.Block .label {
+    float:right
+}
+
+button#cboxClose {
+
+    left:0;
+    right:auto;
+}
+
+div#cboxLoadedContent div.blackTitle {
+    text-align: right;
+}
+
+
+.mod-title, .datatitle, .catTitle {
+    font-family: "GE_SS_Two_Medium";}
+
+.block.cats .title ,.blackTitle{
+
+    font-family: "GE_SS_Two_ligher";}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Beheira>
+        <Damanhur> دمنهور</Damanhur>
+        <Abu_Elmatameer>ابوالمطامير</Abu_Elmatameer>
+        <Abu_Hommos> أبوحمص</Abu_Hommos>
+        <Itai_Elbarood>ايتاى البارود</Itai_Elbarood>
+        <Dalengat> الدلنجات</Dalengat>
+        <Mahmodeya> المحمودية</Mahmodeya>
+        <Hoosh_Isa> حوش عيسى</Hoosh_Isa>
+        <Rasheed>رشيد</Rasheed>
+        <Shubrakheet> شبراخيت</Shubrakheet>
+        <Kafr_Eldwar> كفر الدوار</Kafr_Eldwar>
+        <Koom_Hamada> كوم حماده</Koom_Hamada>
+        <Modereyet_Eltahreer> مديريه التحرير</Modereyet_Eltahreer>
+        <Edco>إدكو</Edco>
+        <Wadi_Elnatron> وادى النطرون</Wadi_Elnatron>
+        <Rahmanyea>الرحمانية</Rahmanyea>
+        <Elnobareya_Gharb>غرب النوبارية</Elnobareya_Gharb>
+        <Badr>بدر</Badr>
+        <Abu_Elreesh>أبو الريش</Abu_Elreesh>
+        <Beheira>البحيرة</Beheira>
+    </Beheira>
+</root>

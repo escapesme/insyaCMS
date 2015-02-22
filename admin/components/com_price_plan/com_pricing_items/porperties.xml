@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        <des name="des"  type="editor"  title="des"/>
+        <data  name="data" 
+               type="fields"
+               file='formData_data' 
+               options=" 
+             html,form,endForm,egphone
+             ,div,html,endDiv,line
+             ,label,text,number
+             ,url,email,phone
+             ,time ,date ,color
+             ,hidden,password,textarea
+             ,editor,tinyeditor,radio
+             ,check,select,list
+             ,autocomplete,upload,pic
+             ,picAdvanced,uploadAjax,button
+             ,submit,reset" title="data "/>
+        <line type="line" name="line"/>
+        <enabled name="enabled"  type="enable"  title="enable" pclass='_50' />
+    </fields>
+    
+   
+    <selectfields>
+        <title />    
+        <enabled/>
+    </selectfields>
+    
+    <listfields>   
+        <title list-width="9"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+    
+    <group>
+        <com_price_plan title="price plan" parent='yes'  />
+
+        <com_pricing_items title="pricing items"   />
+    </group>
+    
+</root>

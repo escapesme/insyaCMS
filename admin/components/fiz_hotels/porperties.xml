@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        <title name="title"  type="text"  title="Title"/> 
+   
+        
+         <title 
+            name="title" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_hotels_titles"
+            select_text='title' 
+            select_value='id'  
+            title="hotels"  
+            pclass='col-6' 
+        />
+        
+        
+        <room_type 
+            name="room_type" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_hotel_rooms"
+            select_text='title' 
+            select_value='id'  
+            title="room Type"  
+            pclass='col-6' 
+        />
+          
+        <number name="number"    pclass='col-6'  type="text"  title="Number" /> 
+        
+        
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" value='1'/>
+        
+        
+        
+        
+    </fields>
+    
+    
+    <selectfields>
+        <title/>
+    </selectfields>
+    
+    <listfields >   
+        <title  list-width="5"/>
+        <room_type  list-width="2"/>
+        <number  list-width="2"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+   
+   
+       
+    <group>
+        <fiz_hotels title="hotels Rooms " parent='yes'  />
+        <fiz_hotels_titles title="Hotels"   />
+        <fiz_hotel_rooms title="room Types"   />
+    </group>
+</root>
+
+
+    
+

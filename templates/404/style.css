@@ -1,0 +1,77 @@
+/* 
+    Document   : style
+    Created on : Apr 29, 2013, 10:23:37 AM
+    Author     : ismil
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+
+
+@font-face
+{
+    font-family: GE_SS_Two_Medium;
+    src: url(images/GE_SS_Two_Medium.otf);
+}
+
+
+
+
+
+body{
+    font-family: "Tahoma"
+}
+.bodyData{
+
+    width:850px;
+    margin: 50px auto;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+    padding:60px 10px;
+    min-height: 100px;
+    position: relative;
+    top:230px;
+}
+.logo{
+    height: 108px;
+    background: url("images/logo.png") no-repeat center;
+    float: right;
+    margin: 20px;
+    clear: both;
+    width: 100%;position: absolute;
+}
+
+.error{
+  width: 151px;
+float: right;
+height: 153px;
+clear: right;
+background: url("images/madad_error.jpg") no-repeat;
+margin-right: 64px;
+margin-top: -13px;
+}
+
+h1,.msg{
+ direction: rtl;
+float: right;
+margin-top: -20px;
+width: 510px;
+margin-right: 16px;
+line-height: 25px;
+
+}h1{
+    margin-bottom: 31px;
+    font-size: 16pt;
+    font-weight: lighter; font-family: GE_SS_Two_Medium;
+
+}
+.msg{
+    font-size: 15px;
+    text-align: justify;}
+a{
+    color:#3d5480
+}

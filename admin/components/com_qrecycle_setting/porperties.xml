@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        
+          <concrete_dumpsters 
+            name="concrete_dumpsters"  
+            type="select"  
+            title="Category" 
+            
+             select_data="com_dumpsters" 
+                   select_type="DB"  
+                   select_text ="title"
+                   select_value ="id"
+            
+            
+            
+            pclass='_50'             
+        /> 
+        
+        
+        <concretemsg  name="mapaddress"  type="editor"  title="concretemsg "/>
+        
+        
+           <hazardousmsg  name="hazardousmsg"  type="editor"  title="hazardousmsg "/>
+        
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50' />
+    </fields>
+    
+
+    
+    <listfields>   
+        <title list-width="9"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+</root>

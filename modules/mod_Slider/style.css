@@ -1,0 +1,10 @@
+#carousel {             
+    width: 870px;       
+    height: 175px;      
+    overflow: hidden;
+}
+
+.slide_inner{
+    width:100px;
+    height:100px;
+}

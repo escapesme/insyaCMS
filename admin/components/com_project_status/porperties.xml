@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='col-6'/>
+        <color  name="color"  type="color" title="color" pclass='col-6' />
+        <enabled name="enabled"  type="enable" title="enable" value='1' pclass='col-3' />
+    </fields>
+    
+
+    
+    <group>
+        <com_project title="Projects" parent="yes" />
+        <com_project_catgories title="Categories"  />
+        <com_project_donations title="donations"  />
+        <com_project_setting title="Settings"  />
+
+    </group>
+
+
+    
+       
+    <listfields   >   
+        <title  list-width="6"/>
+        <color  list-width="4"/>
+      
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

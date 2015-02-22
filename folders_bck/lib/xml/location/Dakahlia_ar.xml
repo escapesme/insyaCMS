@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Dakahlia>
+        
+        <Elmansoura> المنصورة</Elmansoura>
+        <Aga> أجا</Aga>
+        <Elsenblaween> السنبلاوين</Elsenblaween>
+        <Elmanzala> المنزلة</Elmanzala>
+        <Belqas> بلقاس</Belqas>
+        <Dekernes> دكرنس</Dekernes>
+        <Sherbeen> شربين</Sherbeen>
+        <Talkha> طلخا</Talkha>
+        <Meet_Ghamr> ميت غمر</Meet_Ghamr>
+        <Gamasa> جمصه</Gamasa>
+        <Menyet_Elnasr> منية النصر</Menyet_Elnasr>
+        <Meet_Salseel>ميت سلسيل</Meet_Salseel>
+        <Bany_Ebeed>بنى عبيد</Bany_Ebeed>
+        <Elgamaleya>الجمالية</Elgamaleya>
+        <Tama_Elamdeed>تمى الأمديد</Tama_Elamdeed>
+        <Nabaru>نبروه</Nabaru>
+        <Dakahlia>الدقهلية</Dakahlia>
+    </Dakahlia>
+</root>

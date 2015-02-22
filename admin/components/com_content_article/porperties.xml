@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        <line  style="  height: 20px;" type="line"  />
+        
+        <title comment="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="title"  type="text"  title="Title" pclass='_50'/>
+        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
+        <author name="author"  type="text"  title="Author" pclass='_50'/> 
+        <date name="date"  type="date"  title="Date" pclass='_50'/>
+        
+        <line1 style="  height: 20px;" type="line"  />
+        
+        
+        
+        <cat_id  
+           
+            xref='com_content_article_xref' 
+            name="cat_id" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_content_catgories"
+            select_text='title' 
+            select_value='id'  
+            title="Category" 
+            tree='yes'
+        />
+       
+        
+        <line2 style="  height: 5px;" type="line"  />
+        
+        
+        
+        <order name="order"  type="order" title="order" pclass='_50' />
+        <enabled name="enabled"  type="enable" title="Enable"  pclass='_50' value='1'/>
+        
+        <th_image name="th_image"  type="pic"  title="TH image" />
+        <tags name="tags"  type="textarea" title="Tags"  />
+         
+        
+        
+        <des  name="des"  type="editor" title="Intro" />
+        <artbody  name="artbody"  type="editor" title="Body" />
+        
+        <line3 style="  height: 25px;" type="line"  />
+        
+    </fields>
+    
+    
+    
+        
+    <listfields  orderType='DESC'>   
+        <title list-width="4"  />
+        <author  list-width="1" />
+        <cat_id list-width="1.5" />
+        <date list-width="1.5" />
+     
+        <order list-width="1" />
+        <enabled list-width="1" />
+        
+        
+        
+        
+    </listfields>
+    
+    
+    
+    
+    
+
+
+    <selectfields>
+        <cat_id/>
+        <author/>
+ 
+        <enabled />
+    </selectfields>
+   
+   
+   
+   
+    <children>      
+    </children>
+    
+    
+
+    
+    <group>
+        <com_content_article title="Articale" parent="yes" />
+        <com_content_catgories title="Articale Categories groups"  />
+    </group>
+    
+
+    
+    
+
+</root>

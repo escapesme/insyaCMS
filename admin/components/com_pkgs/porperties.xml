@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+ 
+      
+        <Data_Priceing name='Data_Pricing'  collapse="yes" type='block' title="Pricing"  />
+        
+        <div  name='__77'  type="div"  moreactions="addmore"  />
+        
+        
+        
+        <conrictitle 
+            type="title" title="Number of Days and Conditions" pclass="_100" />
+        <minDays name="minDays[]"  
+                 xref='com_pkgs_prising' 
+                 xrefType='o2m'
+                 type="text" title="min Days"   pclass="_50" />
+        <maxDays
+
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="maxDays[]"  type="text" title="max Days"  pclass="_50" />
+        <Prictitle
+
+            name="Prictitle"  type="title" title="Price Per Day" pclass="_100" />
+        <adultsPric 
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="adultsPric[]"  type="text" title="adults Price" pclass="_33" />
+        <childPric 
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            
+            name="childPric[]"  type="text" title="child Price" pclass="_33"  />
+        <InfantsPric 
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="InfantsPric[]"  type="text" title="Infants Price" pclass="_33"  />
+      
+        <PricFull name="PricFull[]"   type="title" title="Package Fixed Price" pclass="_100" />
+        <adults_pric_full
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="adults_pric_full[]"  type="text" title="adults Price Full" pclass="_33" />
+        <child_pric_full 
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="child_pric_full[]"  type="text" title="child Price Full" pclass="_33"  />
+        <cInfant_pric_full 
+            xref='com_pkgs_prising' 
+            xrefType='o2m'
+            name="InfantsPric_full[]"  type="text" title="Infants Price" pclass="_33"  />
+        <endDiv type="enddiv"   />
+        
+        
+        <Priceing_enddata type='endblock'  name='Priceing_enddata'/>
+
+        <html name="html"  type="InfantsPric" title="Infants Pric" pclass="_50"  />
+
+        <html name="imagesgallery"  
+              type="select"  
+              title="Html" select_data="com_html" 
+              select_type="DB"  
+              select_text ="title"
+              select_value ="id"
+              pclass='_50'
+        />
+        
+        
+        <imagesgallery name="imagesgallery"  type="select"  
+                       title="Images Gallery" select_data="com_images_gallery_categories" 
+                       select_type="DB"  
+                       select_text ="title"
+                       select_value ="id"
+                       pclass='_50'
+        />
+        
+        <videogallery name="videogallery"  type="select"  
+                      title="Video Gallery" select_data=" com_video_gallery_categories" 
+                      select_type="DB"  
+                      select_text ="title"
+                      select_value ="id"
+                      pclass='_50'
+        />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" pclass="_50"  />
+    </fields>
+    
+
+
+    <selectfields>
+        <title/>
+        
+        
+    </selectfields>
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+       
+    <listfields>   
+        <title list-width="3"/>
+        <maxDays list-width="1.5"/>
+        <minDays list-width="1.5"/>
+        <adultsPric list-width="1.5"/>
+        <childPric list-width="1.5"/>
+         
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

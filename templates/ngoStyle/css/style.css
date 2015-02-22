@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 4, 2014, 8:45:49 PM
+    Author     : eScapes
+*/
+
+
+
+@font-face
+{
+    font-family: GE_SS_Two_Bold;
+    src: url(fontes/GE_SS_Two_Bold.otf);
+}
+
+@font-face
+{
+    font-family: GE_SS_Two_Medium;
+    src: url(fontes/GE_SS_Two_Medium.otf);
+}
+
+
+@font-face
+{
+    font-family: GE_SS_Two_ligher;
+    src: url(fontes/GE_SS_Two_ligher.otf);
+}
+
+body {
+    background: #f2f2f2;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "tahoma";
+    font-size: 15px;
+    direction: rtl;
+}
+
+.com_main{
+    background: #f2f2f2;
+    width: 1050px;
+    margin: 0 auto !important;
+    position: relative;
+}
+.res_img img {
+    background: #fff;
+    border:#dddddd 1px solid; 
+    height:200px;
+    width: 200px;
+    margin: 15px;
+}
+
+.res_title, .res_number {
+    border-bottom: 1px #c2c2c2 solid;
+    line-height: 50px;
+}
+label{
+    min-width: 140px;
+    display: inline-block
+}
+.h3{
+    font-family: GE_SS_Two_Medium;
+    font-size: 20px;
+}
+.res_data{
+
+    font-family: GE_SS_Two_Medium;
+    font-size: 17px;
+}
+
+.res_address ,.res_phone,.res_url{
+
+    background: url("images/addressIcone.png")  no-repeat right top;
+    padding-right: 30px;
+  line-height: 50px;
+    height: auto;
+    overflow: hidden;width: 20%;
+}
+
+.res_phone{
+
+    background: url("images/phoneIcone.png")  no-repeat right;
+
+
+
+}
+
+.res_address{
+    width: 60%;
+}
+.res_url{
+
+    padding-right: 50px;
+    background: url("images/websiteicone.png")  no-repeat right;
+
+    direction: ltr
+        ;
+    text-align: right;
+
+}
+.logo{
+  
+background: url("images/logo.png")   center no-repeat;
+height:70px;
+width: 100%;
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<root>
+
+    <positions>
+
+
+
+        <position>search</position> 
+        <position>mainmenu</position> 
+        <position>usermenu</position> 
+             <position>bottom</position> 
+        
+        <position>bottom_back</position> 
+        
+        <position>search</position> 
+        <position>slideShow</position> 
+      
+        <position>left</position>  
+           <position>main_top</position>  
+        <position>main_top_left</position>  
+        <position>main_top_right</position>  
+        <position>main_bottom </position> 
+        <position>right</position>  
+        <position>footer</position>  
+        <position>footer_left</position>  
+        <position>header_right</position>  
+
+      
+        <position>copyright</position>  
+       
+    </positions>
+    
+    <classs>
+        <class>nostyle</class>
+         <gray>gray</gray>
+        <class>dark</class>
+        <class>light</class>          
+    </classs>
+    
+    <fields>
+        <color name="color" type='color' title='color' />
+        
+    </fields>
+            
+        
+</root>

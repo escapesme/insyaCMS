@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <modTitle name="modTitle"  type="title"  title="" value="@%get::com%@"/>
+
+        <ins_title name="ins_title"  type="text"  title="Title"/>
+        <ins_alias name="ins_alias"  type="hidden"  value="@%get::com%@"  />
+        <ins_type  name="ins_type"  type="hidden"  value="template" />   
+        <default name="default"  type="enable_one" title="default" pclass='col-6' />
+             <enabled name="enabled"  type="enable" title="enabled" pclass='col-6' />
+        
+        
+    </fields>
+
+    <selectfields>
+    </selectfields>
+    
+    <listfields view="ins_type='template'" addtolink="type=template">   
+        <ins_title list-width="5"/>
+        <ins_alias list-width="3"/>
+        <default list-width="1"/>
+          <enabled list-width="1"/>
+        
+    </listfields>
+    
+    
+   
+    
+    
+</root>

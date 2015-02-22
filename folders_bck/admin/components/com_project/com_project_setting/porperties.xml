@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+         
+        
+     
+        <messages 
+            name="messages" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_html" 
+            select_text='title' 
+            select_value='id'  
+            title="Massges"   
+            pclass='col-6'
+        
+        />
+        
+        <cart 
+            name="cart" 
+            type="select" 
+            select_type='DB' 
+            select_data="plg_cart" 
+            select_text='title' 
+            select_value='id'  
+            title="cart"   
+            pclass='col-6'
+        
+        />
+        
+        
+        
+        
+        <comment_data name='comment_data'  collapse="yes" type='block' title="comment settting"  />
+       
+        <commet_enabled name="commet_enabled"  type="enable" title="commet_enabled"  pclass='col-6' value='1'/>
+        <commet_users name="commet_users"  type="enable" title="commet_users"  pclass='col-6' value='1'/>
+
+        <commet_type name="commet_type"  type="select"  title="commet_type"   select_data="in>>in;fb>>fb;all>>all"  pclass='col-6' value='1'/>
+        
+        <comment_data_enddata type='endblock'  name='comment_data_enddata'/> 
+           
+        
+        <Page_data name='Page_data'  collapse="yes" type='block' title="select update"  />
+           
+        <div  name='__77'  type="div"  moreactions="addmore"  />
+        <select_update_value   name="select_update_value[]" title='select update value'  type='text' value="" pclass="col-6"    /> 
+        <select_update_text     name="select_update_text[]" title='select update text'  type='text' value="" pclass="col-6" /> 
+        <endDiv name='__77e' type="enddiv"   />  
+        <Page_enddata type='endblock'  name='Page_enddata'/> 
+        
+        
+        
+        <select_don_value_data name='select_don_value_data'  collapse="yes" type='block' title="select don"  />
+        <__78  name='__78'  type="div"  moreactions="addmore"  />
+        <select_don_value   name="select_don_value[]" title='select don value'  type='text' value="" pclass="col-6"    /> 
+        <select_don_text     name="select_don_text[]" title='select don text'  type='text' value="" pclass="col-6" /> 
+        <endDiv name='__78e' type="enddiv"   />  
+        
+        <select_don_value_enddata type='endblock'  name='select_don_value_enddata'/> 
+        
+        
+         
+                 
+        <select_date_value_data name='select_date_value_data'  collapse="yes" type='block' title="select date"  />
+        <__7date  name='__7date'  type="div"  moreactions="addmore"  />
+        <select_date_value   name="select_date_value[]" title='select date value'  type='text' value="" pclass="col-6"    /> 
+        <select_date_text     name="select_date_text[]" title='select date text'  type='text' value="" pclass="col-6" /> 
+        <endDiv  name='__79e' type="enddiv"   /> 
+        
+
+        <select_date_value_enddata type='endblock'  name='select_date_value_enddata'/> 
+        
+    </fields>
+    
+
+  
+        
+    <listfields >   
+        <title list-width="9"  />
+        <enabled list-width="1"  />
+    </listfields>
+    
+    
+    
+    
+    
+
+
+
+    <selectfields>
+        <cat_id/>
+        
+        
+        
+    </selectfields>
+   
+   
+        
+    <group>
+        <com_project title="Projects" parent="yes" />
+        <com_project_catgories title="Categories"  />
+        <com_project_donations title="donations"  />
+        <com_project_status title="Status"  />
+        <com_project_setting title="Settings"  />
+        
+        <plg_rescores title="rescores" parent="yes" />
+        
+        
+    </group>
+    
+
+</root>
+
+
+    
+

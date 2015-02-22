@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+    <plugins >   
+        <plg_extension1 name="plg_extension"  options="type=>list__3=>ssdfdsf" position="list"/>
+      
+    </plugins>
+    
+    
+    
+
+    <fields>
+        
+
+        <Mumin_id  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='Mumin_id' 
+            select_value='id' 
+              
+              
+            title="ITS NO"      
+            connect="true"
+            pclass='col-6' 
+            
+        />
+   
+        
+        <Name  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Name"       connect="true"
+            pclass='col-6' 
+            
+        />
+    
+        
+        
+        <reservation_id name="reservation_id"  type="text"  title="reservation_id"/> 
+        
+        
+        <email name="email"  type="text"  title="email"/> 
+
+        <mobile name="mobile"  type="text"  title="mobile"/> 
+
+        <arriving_from name="arriving_from"  type="text"  title="arriving_from"/> 
+        <remarks name="remarks"  type="textarea"  title="remarks"/> 
+
+        
+        
+        <user_id  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Users"  
+            pclass='col-6' 
+            
+        />
+        
+        <xrefcat_id 
+            name="xrefcat_id"  
+            type="getXrefData" 
+            title="" 
+            getData= "fiz_extension"
+            pclass='_100'
+            xrefmyid="reservation_id"
+            xrefType="o2m"
+            editable="true"
+            
+        /> 
+      
+        
+        
+        
+    </fields>
+    
+    
+    <selectfields>
+        
+           <mumin_id type='alone' title='Mumin_id'/>
+    </selectfields>
+    
+    <listfields  xrefopend ='false'  > 
+        
+        
+        <Mumin_id  list-width="1"/>  
+        <Name  list-width="8"/>
+
+        <reservation_id  list-width="1"/>
+        
+       
+        <xrefcat_id list-width="12"/>
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+

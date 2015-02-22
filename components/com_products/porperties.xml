@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <offerstyle 
+            name="offerstyle"  
+            type="enable"  
+            title="offer style" 
+    
+           
+        /> 
+        
+        <viewType name="viewType"  type="select"  
+                  title="View Type" 
+
+        
+                  select_data='item>>Item;cat>>Category'
+     
+        />
+        
+      
+        
+        
+        
+        
+        
+        <cat_id name="cat_id"  type="select"  
+                title="Category ID" 
+                select_data="com_products_categories" 
+                select_type="DB"  
+                select_text ="name"
+                select_value ="id"
+                 
+             
+        />
+        
+        <setting 
+            name="setting"  
+            type="select"  
+            title="setting" 
+            select_data="com_products_setting" 
+            select_type="DB"  
+            select_text ="title"
+            select_value ="id"
+        />
+        
+        
+        <item_id 
+            name="item_id" 
+            type="select"  
+            title="Item Id" 
+            select_data="com_products" 
+            select_type="DB"  
+            select_text ="title"
+            select_value ="id"
+        />
+        <nums 
+            name="nums"  
+            type="number"  
+            title="Number of Items per Page" 
+            
+        />
+         
+         
+         
+         
+        <catPageViewTitle 
+            name="catPageViewTitle"  
+            type="enable"  
+            title="catPageViewTitle " 
+            
+        />
+        
+         
+        <catPageViewImage
+            name="catPageViewImage"  
+            type="enable"  
+            title="catPageViewImage " 
+            
+        />
+           
+           
+        <catPageViewDes
+            name="catPageViewDes"  
+            type="enable"  
+            title="catPageViewDes" 
+            
+        />
+          <viewDesNum name="viewDesNum"  type="number" title="Number of Words" default="20"  comment="Specifies the Number of Words in the Description" />
+     
+        <viewintro name="viewintro"  type="enable" title="View Intro" comment="Specifies whether to display the the description or not" />
+      
+        
+        <catPageViewHist
+            name="catPageViewHist"  
+            type="enable"  
+            title="catPageViewHist" 
+            
+        />
+         
+         
+         
+    
+         
+         
+         
+        <catPageViewPric
+            name="catPageViewPric"  
+            type="enable"  
+            title="catPageViewPric" 
+            
+        />
+            
+        <catPageViewBrand
+            name="catPageViewBrand"  
+            type="enable"  
+            title="catPageViewBrand" 
+            
+        />
+               
+               
+               
+               
+    </fields>
+</root>
+
+
+    
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='col-6'/>
+        <icone name="icone"  type="text" title="icon"
+               comment= "Choose your icon from fontawesome.io/icons/ and enter the class as provided. Example: fa-circle" pclass='col-6' />
+        
+        <tooltip name="tooltip"  type="textarea"  title="tooltip" 
+                 comment="Enter text that will appear in the tooltip for the menu item" pclass='col-6'/>
+   
+        <url name="url"  type="textarea"  title="URL" comment="Enter here what should appear in the view= parameter for the admin menu" pclass='col-6'/>
+     
+                <line1  type="line" style='background-color:transparent' /> 
+       
+
+        
+        <cat_id  
+            name="cat_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="sys_admin_pkg"
+            select_text='title' 
+            select_value='id'  
+            title="Admin menu group"
+            comment="Select which menu group will this item belong to" 
+            pclass='col-6'
+        />
+       
+
+                <line2  type="line" style='background-color:transparent' /> 
+
+        <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-2' />
+                        <line3  type="line" style='background-color:transparent' /> 
+
+                <order name="order"  type="order" title="order" pclass='col-2' />
+                                <line4  type="line" style='background-color:transparent' /> 
+
+
+         <locked name="locked"  type="enable"  title="locked" 
+        comment="A locked menu item will not be able to be deleted"  pclass='col-2'/>
+       
+        
+       
+    </fields>
+   
+
+    <selectfields>
+    
+                
+                
+    </selectfields>
+    
+    
+    
+    
+    
+    
+    
+           
+    <group>
+        <sys_admin_menu title='admin menu' parent='yes'/>
+        <sys_admin_pkg title='admin group'  />
+    </group>
+    
+    
+    <listfields >   
+        <title list-width="3" />
+        <url list-width="2.5" />
+            
+        <cat_id list-width="2.5" />
+            
+        <enabled list-width="1"  />
+        <order list-width="1"  />
+                
+            
+            
+    </listfields>
+
+
+
+
+
+    
+</root>

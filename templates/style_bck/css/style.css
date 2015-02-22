@@ -1,0 +1,659 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-Jan-2014, 15:11:34
+    Author     : empcl_000
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face
+{
+    font-family: Oswald-Bold;
+    src: url(fontes/Oswald-Bold.ttf);
+}
+
+@font-face
+{
+    font-family:Oswald-Light;
+    src: url(fontes/Oswald-Light.ttf);
+}
+
+
+@font-face
+{
+    font-family: Oswald;
+    src: url(fontes/Oswald-Regular.ttf);
+}
+
+
+
+/*----------------------------------------------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background: #d7d9db;
+}
+body{
+    width:100%;
+
+    font-family: "Myriad Pro";
+    font-size: 13px;
+}
+p{
+
+
+}
+.block *,.langBar *{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+
+section,
+footer,
+header{
+    width:100%;
+    min-height: 50px;
+
+
+}
+header{
+
+    background: #1cba76;
+    padding-bottom: 35px;
+
+
+}
+footer{
+    clear: both;
+    background: #e7e8e9
+
+}
+section{
+
+    background: #f0f1f1
+
+}
+
+
+
+
+
+.pdata,.mod .data{
+    width:1004px;
+    margin: auto; position: relative
+        ;
+    z-index: 1;
+    max-width: 100%;
+}
+.slideShow .pdata{
+    min-height: 200px; 
+
+
+}
+
+.slideShowData{
+
+
+    width:640px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+div.nivo-caption {
+
+    left: -359px;
+
+}
+
+
+.slideShow{
+
+
+    background: #367ab9
+        ;
+
+
+}.theme-default div.nivoSlider {
+    overflow: visible;}
+
+
+.menu a{
+    color:#fff;
+    font-family: "Oswald-Light";
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+
+    font-size: 16px;
+}
+
+.menu .li_active a{
+
+    color:#181818;
+
+}
+
+
+.menu li{
+    background: none !important;
+    display: inline-block
+}
+
+footer .menu a{
+    color:#000;
+
+}
+footer .mod {
+    margin: auto;
+    clear: both ;
+    text-align: center
+
+
+
+}
+.menu img{
+    display: none
+}
+
+.logo {
+    width:136px;margin-top: 5px;
+    height:124px;
+    background: url(imgs/logo.png) no-repeat;
+    float:left;
+    background-size: 100%
+}
+
+
+.menudata {
+    position: relative;
+
+    top: 35px;
+    width:70%;
+    text-align: center;
+    float: left;
+}
+
+
+
+.langBar {
+    float: right;
+    position: relative;
+    top:40px;
+}
+.langBar
+.menu{
+
+    position: absolute
+}
+
+
+
+.langBar .my_menu_itm,#cboxClose{
+    padding:0px;
+    background: #fff;
+    margin: 10px;
+    width: 45px;
+    height: 35px;
+    border-radius: 50% 50% 0px 50%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #666;
+
+}
+
+
+
+/*.pdata
+
+.menu*/
+
+#cboxClose{
+    background: #fff url(imgs/close_bt.png) center no-repeat;  
+    background-image:  url(imgs/close_bt.png) !important; ;  
+
+    background-position: center;
+    height:43px;
+}
+.langBar li:hover ,#cboxClose:hover{
+    background-color: #ffcc00   ; 
+
+    background-position: center;
+}
+
+
+
+
+.langBar .ar{
+
+}.langBar li{
+    display: inline-block
+}
+
+
+
+.headerTop{
+    height:125px;
+}
+
+
+.slideShow{
+    padding-top: 25px;
+}
+
+.theme-default div.nivoSlider{
+    background: transparent;
+    box-shadow: none;
+}
+
+div.nivo-caption{
+
+
+    top:5px;
+    bottom:5px;
+
+    width:300px;
+    background: url(imgs/slideshowbg.png);    
+}
+.light,.dark{
+    background: url(imgs/mod_lightBg.png);  
+    border-top: #cecfcf dashed 2px
+}
+.dark{
+    background: url(imgs/mod_darkBg.png);  
+
+}
+.mod-title,.datatitle,
+.catTitle{
+    font-family: "Oswald";
+    ;
+    font-size: 20px;
+    background: url(imgs/title_bg.png) no-repeat center left;   
+    padding-left: 50px;
+
+    line-height: 40px;
+}   
+
+
+.catTitleAll{
+    height:195px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px   #367ab9 solid; margin-top: -30px;
+}
+
+.catTitleAll .bgEffeict
+{
+    position: absolute;
+    top:0;
+    bottom: 0px;
+    right:0px;
+    left:0px
+        ;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.catproData{
+    margin-top: 20px;
+}
+.catTitle,.catDes{
+
+    color:#fff;
+    width:70%;
+    margin-top: 15px;
+}
+.catImg img{
+    height:300px;
+    width:300px;
+    border-radius: 50%; 
+}
+.catImg {
+    position: absolute;
+    right: 0px;
+    top:-50px;
+}
+.moduletable_content {
+    position: relative
+}
+.moduletable_content p{
+    font-family: "Myriad Pro" !important;
+    font-size: 13px !important;
+}
+._285 {
+    height: 180px;
+    overflow: hidden;
+
+}
+
+
+._285 p {
+    /* width: 100%; */
+    /* max-width: 100%; */
+    /* margin-right: 699px; */
+    position: absolute;
+    left: 0px;
+    right: 250px;
+
+
+
+}._285 p img{
+    float: right;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: -250px;      
+    top: -80px;
+}
+.block.cats .image,.blackImage {
+    width:200px;
+    height:200px;
+    border-radius: 50%; 
+    padding:10px;
+    background: #1cba76;
+    position: relative;
+    margin: auto;
+
+}
+div.blackImage{
+    width:170px;;
+    height:170px;;
+    margin-top: 20px;
+}
+
+div.Block:hover div.blackImage 
+{background: none;
+
+}
+
+.block.cats .image img,.blackImage  img{
+    width:100%;
+    height:100%;    
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.blackImage  img{
+    margin-left: -5px; 
+
+
+}
+.block:hover .image img,div.Block:hover  .blackImage img{
+
+    margin-left: 0px;
+}
+
+.block:hover .image{
+
+    background: #e1a006;
+}.block:hover .hoverdata{
+
+    opacity: 1;
+}
+
+
+.block:hover  .blackImage  img{
+    margin-left: 0px;
+
+}
+
+
+
+
+.block.cats ,div.Block {
+    float: none;
+    clear: none;
+    margin: auto;
+    display: inline-block;
+   
+}
+.block.cats{
+
+
+ width: 240px;
+
+
+    margin-top: 25PX;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    min-width: 240px;
+    max-width: 100%;
+
+
+
+
+}
+
+
+div.Block {
+ width: 222px;
+    height:450px;
+    background: #f5f5f6 !important;
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 15px;
+margin-top: 15px;
+box-shadow: 1px 1px 5px #ccc
+}
+
+.all.cats,.allBlocks{
+    width:100%;text-align: center;
+}
+
+.block.cats .title{
+    font-size: 18px; 
+    margin-top: 10PX;    font-family: "Oswald-Light";
+
+}
+.hoverdata{
+
+    background: url(imgs/block_hover_icone.png) no-repeat center;
+
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+
+}
+
+.lightBoxData{
+    display: none;
+}
+.shortDes,.countries{
+
+    border-top: #dddede solid 2px;
+    padding: 5px;
+
+}
+
+
+div#cboxLoadedContent {
+    background: #cbcbcb;
+    border-radius:10px;
+    border: none;
+}
+div#cboxLoadedContent {
+
+}
+div#cboxLoadedContent img.blackImg{
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right:20px;
+
+}
+div#cboxLoadedContent .blackDES{
+    padding: 5px;
+    padding-left:20px;
+}
+
+div#cboxLoadedContent .blackTitle {
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+
+.shortDes{
+
+}
+.countries{
+
+}
+.blackDes{
+
+}
+div.Block .label{
+    font-size: 15px;  font-family: "Oswald";
+    color:#009f5b;
+    margin: 2px;
+    margin-top: -5px;
+
+}
+
+div.Block:hover {
+
+    background: #0369c6 !important;
+    color:#fff
+        ;
+    cursor: pointer
+
+}
+div.Block:hover  .label{
+
+
+    color:#fff
+        ;
+
+
+}
+
+
+div.Block:hover .shortDes,div.Block:hover .countries{
+
+    border-top: #6598c7 solid 2px;
+
+}
+
+
+div.Block  li{
+
+    background: none !important;
+
+}٫.blackImg{
+    display: none;
+}
+.catbr{
+    display: none;
+}
+.blackTitle{
+    text-align: center;
+    font-size: 18px;  font-family: "Oswald";
+}
+
+
+
+.shortDes,.countries,.blackDes{
+    padding:5px;
+
+}
+
+
+
+.submenu{
+    position: absolute;
+    background: #fff;
+    border-radius: 5px; 
+    width: 250px;
+    z-index: 11111;
+    color:#333;
+    padding: 5px;
+}
+.menu li:hover{
+
+
+
+}
+
+.menu li:hover a{
+    background: #fff;
+    color:#333; border-radius: 5px;  
+}
+
+.submenu li{
+    width:50%;
+
+    border-bottom: 1px #eee  solid;
+    float:left;
+
+}
+.submenu a.sub_mune_itme{
+
+
+    color:#333
+
+}
+.pdata,.headerTop{
+    position: relative;
+    z-index: 2;}
+
+.slideShow {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.block.cats .title {
+
+
+    color:#181818;
+    text-decoration: none
+}div#cboxLoadedContent img.blackImg {
+    top: 71px;
+    bottom: auto;
+
+}
+.mianTop,div.main,.mianBottom .dark{
+
+
+    padding-left: 10px;
+
+}
+
+
+.menuphonebt{
+    display: none;
+}
+

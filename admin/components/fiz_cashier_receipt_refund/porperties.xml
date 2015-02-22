@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+  
+    
+    
+	
+
+
+
+    <plugins >   
+        <plg_extension_cashier_refund name="plg_extension_cashier_refund"  options="type=>list__3=>ssdfdsf" position="list"/>
+      
+    </plugins>
+    
+    
+
+
+
+
+    <fields>
+        
+
+        <receipt_id name="receipt_id"  type="text"  title="receipt id"/> 
+        
+      
+        <extension_id name="extension_id"  type="text"  title="extension id"/> 
+        
+        
+        
+         
+        <reservation_id name="extension_id"  
+                        type="select" select_type='DB' 
+                        select_data="fiz_extension" 
+                        select_text='reservation_id' 
+                        select_value='id'  
+                        title="reservation id"
+                        pclass='_50'/>
+         
+        
+          <user_id name="user_id"  
+                        type="select" select_type='DB' 
+                        select_data="fiz_extension" 
+                        select_text='FullName' 
+                        select_value='id'  
+                        title="Name"
+                        pclass='_50'/>
+        
+        
+        
+
+        <paid_amount name="paid_amount"  type="text"  title="amount"/> 
+
+        <ex_lawaziminput name="paid_amount"  type="text"  view='input' title="amount"/> 
+        
+        
+        <remarks name="remarks"  type="textarea"  title="remarks"/> 
+
+        
+        
+    </fields>
+    
+    
+ 
+    
+    <listfields >   
+        <receipt_id   list-width="1"/>
+
+                               
+   <user_id  list-width="3"/>
+        
+        
+        <reservation_id   list-width="1.5"/>
+        
+        <extension_id  list-width="1.5"/>
+        <paid_amount list-width="1"/>
+        <ex_lawaziminput list-width="1"/>
+  
+        <remarks list-width="1"/>
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+       <code name="code"  type="select"  
+                    title="Code" 
+                    select_data="com_google_adsense" 
+                    select_type="DB"  
+                    select_text ="title"
+                    select_value ="id"
+        />
+    </fields>
+</root>
+
+
+    
+

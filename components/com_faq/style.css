@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 17, 2014, 7:39:29 PM
+    Author     : empcl_000
+*/
+
+.faq_cat_title{
+    background: #fff url("images/faq_close.jpg") 10px center no-repeat;;
+    line-height: 60px;
+    border:1px solid #dcdcdc;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.faq_cat_title.open{
+    background: #fff url("images/faq_open.jpg") 10px center no-repeat;
+
+
+
+}

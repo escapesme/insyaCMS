@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>     
+        <title  name="title"  type="text" title="Share title" pclass='_50'/>
+        <url  name="url"  type="text" title="share VideoUrl" pclass='_50' />
+        <th_image  name="th_image"  type="text" title="Share Image " />
+        <description  name="description"  type="textarea" title="description" />
+        <keywords  name="keywords"  type="textarea" title="keywords" />
+        <header  name="header"  type="textarea" title="header" />
+    </fields>
+</root>
+
+
+    
+

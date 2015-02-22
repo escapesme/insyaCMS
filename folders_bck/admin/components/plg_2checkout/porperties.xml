@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <checkout_url name="checkout_url"  type="textarea"  title="Checkout URL"/>   
+        <sid name="sid"  type="text"  title=" 2CO SID"/>
+        <purchase_step name="purchase_step"   title="Purchase Step"   type="select" select_data="review-cart>>review-cart;shipping-information>>shipping-information;billing-information>>billing-information;payment-method>>payment-method" />
+
+    </fields>
+    
+
+       
+    <listfields>   
+      
+        <title  list-width="10"/>
+      
+        
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

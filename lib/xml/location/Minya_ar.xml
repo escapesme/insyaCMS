@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Minya>
+        <Minya> المنيا</Minya>
+        <Abu_Qurqas> أبوقرقاص</Abu_Qurqas>
+        <Bani_Mazar> بنى مزار</Bani_Mazar>
+        <Samalot> سمالوط</Samalot>
+        <Maghagha> مغاغه</Maghagha>
+        <Diramos>ديرمواس</Diramos>
+        <Mallawi> ملوى</Mallawi>
+        <Eladwa>العدوة</Eladwa>
+        <Matai> مطاى</Matai>
+        <Atfeeh>أطفيح</Atfeeh>
+    </Minya>
+</root>

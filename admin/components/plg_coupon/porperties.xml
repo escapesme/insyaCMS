@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+    
+        
+        
+        <code 
+            name="code" 
+            type="text" 
+           
+            title="code"/>
+            
+       
+        <edate 
+            name="edate" 
+            type="text" 
+           
+            title="edate"/>
+        
+        <savings 
+            name="savings" 
+            type="text" 
+           
+            title="savings"/>
+        
+        <savings-type 
+            name="savings-type" 
+            type="text" 
+           
+            title="savings-type"/>
+          
+        <products 
+            name="products" 
+            type="text" 
+           
+            title="max_postcode"/>
+        <usenums 
+            name="usenums" 
+            type="text" 
+           
+            title="usenums"/>
+          
+          
+             
+     
+      
+        
+        
+      
+        <enabled name="enabled"  type="enable" title="enable" />
+        <order name="order"  type="order" title="order" />
+    </fields>
+    
+
+
+    <selectfields>
+  
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <title  list-width="9"/>
+ 
+        <enabled  list-width="1"/>
+    </listfields>
+    
+  
+    <group>
+     
+    </group>
+    
+
+    
+
+</root>
+
+
+    
+

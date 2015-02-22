@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+     <Port_Said>
+        <Port_Said> Port Said</Port_Said>
+        <Elsharq> Elsharq</Elsharq>
+        <Elarab>Elarab</Elarab>
+        <Elmanakh> Elmanakh</Elmanakh>
+        <Port_Fouad> Port Fouad</Port_Fouad>
+        <Eldawahi> Eldawahi</Eldawahi>
+        <Elsalam_Neighborhood>Elsalam Neighborhood</Elsalam_Neighborhood>
+        <Kwait_Neighborhood>Kwait Neighborhood</Kwait_Neighborhood>
+        <Atef_Elsadat>Atef Elsadat</Atef_Elsadat>
+    </Port_Said>
+</root>

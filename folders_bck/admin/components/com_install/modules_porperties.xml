@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <ins_title name="ins_title"  type="text"  title="Title"  pclass="col-5"/>
+                <line1  type="line" style='background-color:transparent' /> 
+
+       
+        <ins_alias name="ins_alias"   title="Seelct Modules"  type="select" select_type="DIR" select_data="../modules/" select_text="dir" comment="Select form the list of available modules"  pclass="col-5"/>
+               <line2  type="line" style='background-color:transparent' /> 
+
+        <ins_for name="ins_for"   type="hidden" value="fornt" />
+        <ins_type  name="ins_type"  type="hidden" title="enable" value="@%get::type%@" /> 
+        <enabled name="enabled"  type="enable" title="enabled" value="1" pclass="col-3" />
+    </fields>
+   
+    <selectfields>
+    </selectfields>
+    
+    <listfields view="ins_type='module'" addtolink="type=module" >    
+        <ins_title  list-width="8" />
+        <ins_for  list-width="1"/>
+        <enabled  list-width="1"/>
+    </listfields>
+</root>

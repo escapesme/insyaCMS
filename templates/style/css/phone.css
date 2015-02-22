@@ -1,0 +1,159 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2014, 1:30:50 PM
+    Author     : eScapes
+*/
+
+.block.cats {
+    /* float: none;
+ 
+     display: inline;
+    */
+
+
+}
+
+
+div.nivo-caption {
+    width: 100%;
+    height:150px;
+    background-size: 100%; 
+    bottom: auto;
+    margin-top: -155px;right: 0;
+    left: 0px;
+}
+
+
+
+.theme-default div.nivoSlider {
+    overflow: visible;
+    margin-top: 173px;
+
+}
+
+.menu{
+    display: none;
+
+}
+
+
+
+.langBar .menu{
+    display: block
+;
+    background:none; 
+    width: auto
+}
+
+
+.langBar  .menu li {
+    
+    border: none
+}
+.langBar {
+float: right;
+position: absolute;
+top: -60px;
+right: 131px;
+}
+
+.theme-default .nivoSlider{
+    top: -25px;
+}
+
+._285 p img {
+    display: none;
+
+}
+
+._285 p{
+    right:0px;
+}
+
+.menuphonebt{
+    display: block;
+
+
+    background: url(imgs/mene_bt.png) no-repeat;
+    height:49px;
+    width: 50px ;
+    float: right;
+    margin-right: 25px;
+    margin-top: 29px;
+    background-size: 100%;
+
+}.logo {
+    height: 84px;
+    width: 96px;
+}.headerTop {
+    height: 93px;
+}
+
+
+.menudata{
+
+    top: -17px;
+}
+.menu{
+    background: #fff;
+    width: 60%;
+    float: right;
+  
+        
+        position: absolute;
+right: -48px;
+top: 78px;
+
+
+}
+
+
+.menu li{
+    width: 100%;
+    clear: both;
+    background: #085f3d;
+    border-bottom: 1px solid #f5f5f5;
+
+}
+.menu a {
+    color: #085f3d;
+    text-align: left;
+}
+
+.submenu {
+    position: relative;
+
+    width: 90%;
+
+    margin: auto;}
+
+.submenu li a{
+    background: #eee;
+    
+}
+
+.slideShowData {
+    width: 100%;}
+
+div.nivo-caption{
+
+    right:0;
+
+}
+body {
+
+    overflow: hidden
+}
+
+.catImg{
+    display:none;
+}
+
+
+.menu {
+
+    position: absolute;}

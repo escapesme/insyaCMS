@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='_50'/>
+        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
+        <image name="image"  type="pic" title="image" pclass='_50' />
+        <th_image name="th_image"  type="pic" title="TH Image" pclass='_50' />
+        <link name="link"  type="text" title="link" />
+        <cat_id 
+            name="cat_id" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_images_gallery_categories" 
+            select_text='title' 
+            select_value='id'  
+            title="Category"   
+            xref="com_images_gallery_xref" 
+        
+        />
+       
+   
+  <des name="des"  type="plugin" title="plg_products" />
+        
+        
+        <des name="des"  type="textarea" title="Dec" />
+        <order name="order"  type="order" title="order" pclass='_50' />
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50' value='1' />
+        <tags name="tags"  type="textarea" title="Tages"  />
+      
+        <Page_data name='Page_data'  collapse="yes" type='block' title="Page Data"  />
+        <description  name="description"  type="textarea" title="description" />
+        <keywords  name="keywords"  type="textarea" title="keywords" />
+        <header  name="header"  type="textarea" title="header" />
+        <Page_enddata type='endblock'  name='Page_enddata'/> 
+
+
+    </fields>
+    
+    
+    
+        
+    <listfields orderType='DESC' >   
+        <title  list-width="5"/>
+        <th_image  list-width="2"/>
+        <cat_id list-width="1"/>
+        
+        
+        <order list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+    
+    
+    
+
+
+    <selectfields>
+        <cat_id/>
+    </selectfields>
+   
+   
+   
+    <group>
+        <com_images_gallery title="Images" parent="yes" />
+        <com_images_gallery_categories title="Images Categories"  />
+    </group>
+    
+
+    
+    
+
+</root>
+
+
+    
+

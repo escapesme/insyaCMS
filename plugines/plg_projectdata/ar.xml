@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+
+<root>
+    <done> تم جمع </done>
+    <all> من إجمالى</all>
+    <yet>باقى</yet>
+        <days> يوم   </days>
+                <endtoday>سينتهى اليوم</endtoday>
+    <endsoon>سينتهى قريبا</endsoon>
+    
+       <befrist>كن أول مساهم</befrist>
+    
+    
+    <user> مساهم</user>
+    <allProjects>عدد المشروعات االاجمالية حتى الان</allProjects>
+    <project>مشروع</project>
+      
+      
+    <alldonations> المبلغ الاجمالى المحصل حتى الان</alldonations>
+          <cun>ج . م </cun>
+          
+            <per>بنسبة </per>
+ 
+     
+</root>
+
+    
+

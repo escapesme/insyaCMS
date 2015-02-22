@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    
+    
+
+    
+    
+    
+    
+    <fields>
+        <title name="title"  type="text"  title="title" pclass='_50' />
+          <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
+          <th_image name="th_image"  type="pic"  title="TH image" />
+       
+        
+        <date name="date"  type="date" title="date"   pclass='_50'/>
+        
+        
+        <time name="time"  type="time" title="time"   pclass='_50'/>
+        <imagegallery name="imagegallery"  type="select"  
+                      title="images gallery" select_data="com_images_gallery_categories" 
+                      select_type="DB"  
+                      select_text ="title"
+                      select_value ="id" pclass='_50'
+        />
+        <vediogallery name="vediogallery"  type="select"  
+                      title="vedio gallery " select_data="com_video_gallery_categories" 
+                      select_type="DB"  
+                      select_text ="title"
+                      select_value ="id" pclass='_50'
+        />
+        
+        
+        <cat_id name="cat_id"  type="list" select_type='DB' 
+                select_data="com_events_categories" 
+                
+                select_text='title' 
+                select_value='id'  
+                title="Category"
+                xref='com_events_xref'
+        />
+        
+        
+        
+        
+        <order name="order"  type="order" title="Order" pclass='_50'/>
+        <enabled name="enabled"  value='1' type="enable" title="enable" pclass='_50'/>
+     
+        
+        
+        <users name="users"  type="table" title="users"/>
+        <des name="des"  type="editor" title="des"/>
+    </fields>
+    
+    
+   
+
+    <selectfields>
+    
+        <cat_id />   
+                
+    </selectfields>
+    
+    
+    
+    
+    
+    
+    
+  
+    <group>
+        <com_events title="Events" parent="yes" />
+        <com_events_categories title="Events Categories"  />
+    </group>
+    
+    
+    
+    <listfields>   
+        <title list-width="3"/>
+        <date list-width="1"/>
+        <time list-width="1"/>
+        <des list-width="2"/>
+        <order  list-width="1"/>
+        <enabled  list-width="1"/>      
+    </listfields>
+
+
+
+
+
+    
+</root>

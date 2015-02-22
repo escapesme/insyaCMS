@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        
+        
+        <nights  name="nights"  type="text"    title="nights" pclass='_50'/>
+        <Adults  name="Adults"  type="text"    title="Adults" pclass='_50'/>
+        <Childs  name="Childs"  type="text"    title="Childs" pclass='_50'/>
+        <Infants  name="Infants"  type="text"    title="Infants" pclass='_50'/>      
+
+        
+        
+        
+        
+        
+    </fields>
+    
+
+
+
+</root>
+
+
+    
+

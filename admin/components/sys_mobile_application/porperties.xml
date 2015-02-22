@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+        <enabled name="enabled"  type="enable" title="enable" />
+        <data  name="data"  type="data" file="mobile_data"  
+               options="form,endform,page,panel,popup,footer,content,data,header,group,button,link,date,checkbox,textarea,file,list,listview,toggleBtn,googlemap,input,end,javascript,line,label"   title="Data"/>
+
+    </fields>
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <title list-width="9"/>
+        <enabled list-width="1"/>
+    </listfields>
+</root>
+
+
+    
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        
+        
+       
+        <title name="title"  type="text"  title="Site Name"/>
+        
+        
+        <site_link name="site_link"  type="url"  title=" Site Link" pclass='col-6'/>
+           
+        <admin_mail name="admin_mail"  type="email" title=" Admin email address" pclass='col-6' />
+        
+        <lang name="lang"  title="language"   type="select" select_data="ar>>ar;en>>en" value='ar' pclass='col-3' />
+        <admin_lang name="admin_lang"   title="Admin language"   type="select" select_data="en>>en"  pclass='col-3'/>
+        
+          
+        <link_type name="link_type"  type="hidden"  title="SEO friendly links" value="1" pclass='col-3' />
+ 
+        <admin_list_limit name="admin_list_limit"   title="admin List Limit"   type="select" select_data="5>>5;10>>10;15>>15;20>>20;30>>30;40>>40;50>>50;60>>60;70>>70;80>>80;90>>90;100>>100" pclass='col-3'  />
+        <line1  type="line" style='background-color:transparent' /> 
+
+        <facebookappid name="facebookappid"   title="facebook appid"   type="text"  pclass='col-3'  />
+           
+        
+        
+        
+        <site_meta name="site_meta"  type="textarea"  title="Meta Description"  />
+        
+        <site_keywords name="site_keywords"  type="textarea"  title="Meta Keywords"  />
+        <addto_headre name="addto_headre"  type="textarea"  title="Add to header"  />
+        
+                  <Offline_block name='Offline_block'  collapse="yes" type='block' title="Offline Details"  />
+        
+         <offline name="offline"  type="enable"  title="Website Offline?"  pclass='col-2' />
+        
+        
+       
+                 
+        <offline_background name="offline_background"  type="pic"  title="Offline Background"  />
+      
+        <offline_message name="offline_message"  type="textarea"  title="Offline Message"  />
+
+
+        <offline_morecss name="offline_morecss"  type="textarea"  title="Offline More CSS"  />
+        <Offline_blockEnd type='endblock'  name='Offline_blockEnd' />
+                  
+                                  
+       
+
+        
+    </fields>
+    
+
+       
+    <listfields>   
+      
+        <title  list-width="10"/>
+      
+        
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

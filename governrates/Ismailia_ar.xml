@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    <Ismailia>
+        <Ismailia>الإسماعيلية</Ismailia>
+        <Fayed> فايد</Fayed>
+        <Qantara_Sharq> القنطره شرق</Qantara_Sharq>
+        <Qantara_Gharb> القنطره غرب</Qantara_Gharb>
+        <Eltal_Elkabeer> التل الكبير</Eltal_Elkabeer>
+        <Abu_Homos>ابوحمص</Abu_Homos>
+        <Elqasaseen>القصاصين</Elqasaseen>
+        
+    </Ismailia>
+</root>

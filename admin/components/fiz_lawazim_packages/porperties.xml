@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        
+        
+        
+
+        
+        
+        <title name="title"  type="text"  title="Title"/>
+        
+ 
+        <city name="city"  type="select" select_type='DB' 
+              select_data="fiz_city" 
+              select_text='title' 
+              select_value='id'  
+              title="city"
+              pclass='_50'/>
+     
+        <cat_id name="cat_id"  type="select" select_type='DB' 
+                select_data="fiz_lawazim_packages_cat" select_text='title' select_value='id'  title="Category" pclass='_50'/>
+     
+      
+
+
+        <days_from name="days_from"  type="text"  title="days_from" pclass='_50'/>
+                
+        <days_to name="days_to"  type="text"  title="days_to" pclass='_50'/>
+                
+        <basic_package_days name="basic_package_days"  type="text"  title="basic_package_days" pclass='_50'/>
+        
+        
+        
+        
+
+        
+        
+     
+        <adut_package_price name="adut_package_price"  type="text"  title="adut_package_price" pclass='_50'/>
+        <child_package_price name="child_package_price"  type="text"  title="child_package_price" pclass='_50'/>
+   
+        
+        
+        
+        <adult_extra_night name="adult_extra_night"  type="text"  title="adult_extra_night" pclass='_50'/>
+        <child_extra_night name="child_extra_night"  type="text"  title="child_extra_night" pclass='_50'/>
+        
+        
+        
+        <adult_extra_night_w_transport name="adult_transport_per_night"  type="text"  title="adult_transport_per_night" pclass='_50'/>
+        <child_extra_night_w_transport name="child_transport_per_night"  type="text"  title="child_transport_per_night" pclass='_50'/>
+        
+        
+        
+
+        
+              
+        <enabled name="enabled"  type="enable" title="enable" value="1" />
+    
+    
+    
+    </fields>
+    
+    
+  
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <title  list-width="5"/>
+        <cat_id  list-width="4"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    <group>
+        <fiz_lawazim_packages title="lawazim packages" parent='yes'  />
+       
+       
+        <fiz_lawazim_packages_cat title="Category"   />
+    </group>
+</root>
+
+
+    
+

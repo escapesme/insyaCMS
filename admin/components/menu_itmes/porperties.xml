@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+          
+        <meiTitle name="meiTitle"  type="title"  title='' value="GET__com" />
+        
+        
+        <mei_title name="mei_title"  type="text"  title="Title" pclass='_50'/>
+        <mei_alias name="mei_alias"  type="text"  title="alias" pclass='_50'/>
+        
+        
+
+         
+        <openType  name="openType"   type="enable"   title="Open in Lightbox"  pclass='_50' />
+        <show  name="show"   type="enable" title="Show" pclass='_50' value='1'  />
+   
+            
+        <mei_home name="mei_home"  type="enable_one" title="home" pclass='_50'/>
+      
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50' value='1' />
+        <main_link name="main_link"  type="enable" title="main link" pclass='_50' value='1' />
+        
+        <parent_id name="parent_id" 
+                   type="select"  
+                   title="Menu" 
+                   select_data="com_menus" 
+                   select_type="DB"  
+                   select_text ="men_title"
+                   select_value ="id" 
+                   pclass='_50'
+        />
+        
+        <cat_id 
+            name="cat_id"  
+            type="select"  
+            title="Category" 
+            select_data= "menu_itmes"
+            select_type= "DB"
+            select_value= "id"
+            select_text= "mei_title" pclass='_50'
+        />
+
+        <order name="order"  type="order" title="Order"/>
+        <mei_image  name="mei_image"   type="pic" title="image" pclass='_50' />
+     
+          
+        <mei_background name="mei_background"   type="pic"  title="background" pclass='_50'/>
+       
+        <mei_comment  name="mei_comment"   type="textarea" title="Comment" />
+        
+        <mei_morecss  name="mei_morecss"   type="textarea" title="morecss"  />
+        
+        
+            
+        <Data_permission name='Data_permission'  collapse="yes" type='block' title="permission"  />
+      
+
+        <permission_all name="permission_all"  type="enable"  title="permission all" value="1" /> 
+            <permission_gust name="permission_gust"  type="enable"  title="permission gust Only" value="0" /> 
+        <permission   xref='menu_itmes_permission_xref' name="permission "  
+                      type="list" select_type='DB' select_data="com_users_groups" select_text='group_name' select_value='id'  title="permission" pclass='_50'/>
+       
+
+
+        <Data_permissionEnd type='endblock'  name='Data_permissionEnd' />
+        
+        
+        <Data_site name='Data_site'  collapse="yes" type='block' title="Sites"  />
+     
+        <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
+      
+        <site  
+            xref='com_modules_site_xref' 
+            name="site" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_cities_categories"
+            select_text='title' 
+            select_value='id'  
+            title="site" 
+            
+            pclass='_50'/>
+        
+        
+        <Data_siteend type='endblock'  name='Data_siteend'/>
+        
+        <mei_main name="mei_main"  type="hidden"  title='Type' value="GET__com" />
+        
+    </fields>
+    
+
+
+
+
+
+
+    <selectfields>
+
+        <parent_id />
+    </selectfields>
+    
+    
+    
+       
+    <listfields >   
+        <mei_title list-width="3"/>
+        <mei_alias list-width="2"/>
+        <parent_id list-width="1"/>
+        <mei_main list-width="1"/>
+        <show list-width="1"/>
+        
+        <order list-width="1"/>
+        
+        
+        <enabled list-width="1"/>
+        
+        
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>      
+    
+      
+        <title name="title"    type="text"  title="Title" pclass='col-6'/>
+            <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-3' />
+            <cat_id 
+            name="cat_id[]" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_html_categories" 
+            select_text='title' 
+            select_value='id'  
+            title="Category"   
+            xref="com_html_xref" 
+            pclass='col-3'
+        
+        />
+
+        <my_body name="my_body"  type="editor" editor_type="full"  title="body" />
+    
+
+            
+        
+           
+    
+      
+      
+        
+    </fields>
+
+    <tabs>
+        <main title="main" type="data" enable="all" />
+        <map  title='map' type="map"/>
+        <deletedata title='deletedata' type="deletedata"/>
+    </tabs>
+    
+    
+    
+    <selectfields>
+        <title />
+        <my_body />
+        <cat_id />
+        
+        
+    </selectfields>
+    
+    <listfields orderType='DESC' history='yes'> 
+          
+        <title list-width="6" />
+        <cat_id list-width="1" /> 
+        <my_body list-width="1.5"/> 
+  
+        <enabled list-width="1.5"/>
+    </listfields>
+    
+    
+    
+    
+    
+    <group>
+        
+        
+        
+        <com_html title="html"  parent="yes" />
+        
+        <com_html_categories title="category"  />
+       
+    </group>
+   
+
+</root>
+
+
+    
+

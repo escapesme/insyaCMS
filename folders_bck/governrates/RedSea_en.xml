@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+     <RedSea>
+        <Harguda>Harguda</Harguda>
+        <Elqusair> Elqusair</Elqusair>
+        <Ras_Ghareb> Ras Ghareb</Ras_Ghareb>
+        <Safaga> Safaga</Safaga>
+        <Shalateen> Shalateen</Shalateen>
+        <Marsa_Alam>Marsa Alam</Marsa_Alam>
+        <Halayeb>Halayeb</Halayeb>
+        <RedSea>Red Sea</RedSea>
+    </RedSea>
+</root>

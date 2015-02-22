@@ -1,0 +1,13 @@
+[10-Sep-2013 16:58:51 America/Denver] PHP Notice:  Undefined offset: 5 in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 559
+[10-Sep-2013 16:58:51 America/Denver] PHP Fatal error:  Call to a member function get_id() on a non-object in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 560
+[10-Sep-2013 16:58:59 America/Denver] PHP Notice:  Undefined offset: 5 in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 559
+[10-Sep-2013 16:58:59 America/Denver] PHP Fatal error:  Call to a member function get_id() on a non-object in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 560
+[10-Sep-2013 17:01:58 America/Denver] PHP Notice:  Undefined offset: 5 in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 559
+[10-Sep-2013 17:01:58 America/Denver] PHP Fatal error:  Call to a member function get_id() on a non-object in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 560
+[10-Sep-2013 17:02:09 America/Denver] PHP Notice:  Undefined offset: 5 in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 559
+[10-Sep-2013 17:02:09 America/Denver] PHP Fatal error:  Call to a member function get_id() on a non-object in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 560
+[10-Sep-2013 17:25:45 America/Denver] PHP Fatal error:  Call to undefined method DOMText::getAttribute() in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 393
+[10-Sep-2013 17:25:49 America/Denver] PHP Fatal error:  Call to undefined method DOMText::getAttribute() in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 393
+[10-Sep-2013 17:29:56 America/Denver] PHP Fatal error:  Call to undefined method DOMText::getAttribute() in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 393
+[10-Sep-2013 17:31:21 America/Denver] PHP Fatal error:  Call to undefined method DOMText::getAttribute() in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 393
+[10-Sep-2013 17:31:25 America/Denver] PHP Fatal error:  Call to undefined method DOMText::getAttribute() in /home3/matahene/public_html/fiz/lib/includes/dompdf/include/cellmap.cls.php on line 393

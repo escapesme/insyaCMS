@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
+        <image  name="image"  type="pic" title="Image" />
+        <dec name="dec"  type="tinyeditor" title="Dec" />
+        <order name="order"  type="order" title="Order" />
+        <enabled name="enabled"  type="enable" title="enable" value='1'  />
+    </fields>
+    
+
+
+
+    
+
+      
+    <group>
+        <com_images_gallery title="Images" parent="yes" />
+        <com_images_gallery_categories title="Images Categories"  />
+    </group>
+    
+
+    
+    
+       
+    <listfields  multiLevel="yes" >   
+        <title  list-width="6"/>
+        <image  list-width="2"/>
+        <order  list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

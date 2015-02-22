@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+    <plugins >   
+        <plg_voucher name="plg_voucher"  options="type=>list__3=>ssdfdsf" position="list"/>
+      
+    </plugins>
+    
+    
+    
+
+    <fields>
+        
+
+        <id name="id"  type="text"  title="id"/> 
+        
+        
+        
+        <reservation_id name="reservation_id"  type="text"  title="reservation_id"/> 
+        <email name="email"  type="text"  title="email"/> 
+
+        <mobile name="mobile"  type="text"  title="mobile"/> 
+
+        <arriving_from name="arriving_from"  type="text"  title="arriving_from"/> 
+        <remarks name="remarks"  type="textarea"  title="remarks"/> 
+
+        
+        
+        <user_id  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Users"  
+            pclass='col-6' 
+            
+        />
+        
+        <xrefcat_id 
+            name="xrefcat_id"  
+            type="getXrefData" 
+            title="Order" 
+            getData= "fiz_extension"
+            pclass='_100'
+            xrefmyid="reservation_id"
+            xrefType="o2m"
+            
+        /> 
+      
+        
+        
+        
+    </fields>
+    
+    
+    <selectfields>
+           
+           <mumin_id type='alone' title='Mumin_id'/>
+    </selectfields>
+    
+    <listfields  xrefopend ='true' >   
+        <id   list-width="1"/>
+
+        <reservation_id  list-width="1"/>
+        <user_id list-width="4"/>
+        <email list-width="1"/>
+
+        <mobile list-width="1"/>
+        <remarks list-width="1"/>
+
+
+        <xrefcat_id list-width="11"/>
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+

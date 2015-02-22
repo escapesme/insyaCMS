@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<root>
+    <egstates>
+        <Aswan>أسوان</Aswan>
+        <Assiut>أسيوط</Assiut>
+        <Alexandria>الإسكندرية</Alexandria>
+        <Ismailia>الإسماعيلية</Ismailia>
+        <Luxor>الأقصر</Luxor>
+        <RedSea>البحر الأحم</RedSea>
+        <Beheira>البحيرة</Beheira>
+        <Giza>الجيزة</Giza>
+        <Dakahlia>الدقهلية</Dakahlia>
+        <Suez>السويس</Suez>
+        <Sharqiyya>الشرقية</Sharqiyya>
+        <Gharbiyya>الغربية</Gharbiyya>
+        <Fayoum>الفيوم</Fayoum>
+        <Cairo>القاهرة</Cairo>
+        <Qalyoubia>القليوبية</Qalyoubia>
+        <Menoufia>المنوفية</Menoufia>
+        <Minya>المنيا</Minya>
+        <NewValley>الوادي الجديد</NewValley>
+        
+        <Bani_Swief>بنى سويف</Bani_Swief>
+        <Port_Said>بورسعيد</Port_Said>
+        <Damieeta>دمياط</Damieeta>
+        <Suhag>سوهاج</Suhag>
+        <North_Sinai>سيناء الجنوبية</North_Sinai>
+        <South_Sinai>سيناء الشمالية</South_Sinai>
+        <Qenna>قنا</Qenna>
+        <Kafr_Elshiekh>كفر الشيخ</Kafr_Elshiekh>
+        <Matroh>مرسى مطروح</Matroh>
+
+     
+    </egstates>
+</root>
+

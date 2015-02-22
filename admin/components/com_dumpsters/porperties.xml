@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        <image name="image"  type="image"  title="image"/>
+        <value  name="value"  type="number"  title="value "/>
+        
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50' />
+    </fields>
+    
+   
+    <selectfields>
+        <title />
+        <value />
+            
+        <enabled/>
+    </selectfields>
+    
+    <listfields>   
+        <title list-width="8"/>
+        <value list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+</root>

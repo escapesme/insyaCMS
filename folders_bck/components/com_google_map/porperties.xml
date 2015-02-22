@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    <fields>  
+        <mapData name="mapData" 
+                 type="select" 
+                 title="MapData "
+                 select_type="DB" 
+                 select_data="com_google_map" 
+                 select_text="title"
+                 select_value="id"/>
+        
+        
+        
+        
+        <hieghtMap name="hieghtMap" type="text" value="300" title="map Hight" />
+        <widthMap name="widthMap" type="text" value="300" title=" width Map" />
+
+    
+    </fields>    
+    
+</root>

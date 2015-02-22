@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+      
+      
+      
+      
+ 
+    <componentList caseID="6" caseTrajectoryID="47"> 
+        <component id="101">
+            <status>>red</status>
+            <name>bal</name>
+            <weight>100%</weight>
+            <ar>11.2</ar>
+            <throughput>10.677</throughput>   
+            <cpurate>213.1 ms</cpurate>
+            <cpu>213.1 ms</cpu>
+            <io>0.1</io>
+            <chr>100%</chr>
+            <rt>434.5 ms</rt>
+            <a1>103.7%</a1>
+        </component> 
+        <component id="102">
+            <status>>green</status>
+            <name>bal-1</name>
+            <weight>10%</weight>
+            <ar>11.3</ar>
+            <throughput>12.677</throughput>   
+            <cpurate>413.1 ms</cpurate>
+            <cpu>213.1 ms</cpu>
+
+            <io>1.1</io>
+            <chr>110%</chr>
+            <rt>734.5 ms</rt>
+            <a1>3.7%</a1>
+        
+        </component> 
+    </componentList>
+
+
+
+
+    <componentList caseID="7" caseTrajectoryID="49"> 
+        <component id="103">
+            <status>red</status>
+            <name>btrade _prinV gdfg </name>
+            <weight>100%</weight>
+            <ar>18.0</ar>
+            <throughput>13.258</throughput>   
+            <cpurate>622.0 ms</cpurate>
+            <cpu>213.1 ms</cpu>
+
+            <io>219.4</io>
+            <chr>58%</chr>
+            <rt>1987.2 ms</rt>
+            <a1>111.1%</a1>
+        </component> 
+        <component id="104">
+            <status>green</status>
+            <name>btrade_4_bdas dasdasvasdas dfg prinV</name>
+            <weight>100%</weight>
+            <ar>18.3</ar>
+            <throughput>122.677</throughput>   
+            <cpurate>42.1 ms</cpurate>
+            <cpu>213.1 ms</cpu>
+
+            <io>100.1</io>
+            <chr>100%</chr>
+            <rt>734.5 ms</rt>
+            <a1>10.7%</a1>
+        </component> 
+    </componentList>
+
+
+
+    <PathList > 
+        <impactPath  componentid="104" >
+            
+            <serviceNode>
+                <name>Service Process 1</name>
+            
+                <serviceNode>
+                    <name>Service Component 2</name>
+                    <serviceNode>
+                        <name>Service Task 1</name>
+                        <serviceNode>
+                            <name>Service Activity 1</name>
+                <serviceNode>
+                            <name>Service Activity 1</name>
+                <serviceNode>
+                            <name>Service Activity 1</name>
+                <serviceNode>
+                            <name>Service Activity 1</name>
+                <serviceNode>
+                            <name>Service Activity 1</name>
+               
+                        </serviceNode>
+                        </serviceNode>
+                        </serviceNode>
+                        </serviceNode>
+                        </serviceNode>
+          
+                    </serviceNode>
+               
+                </serviceNode>
+            
+            </serviceNode>
+            
+            
+            
+            
+        </impactPath>
+    </PathList>
+       
+       
+       
+       
+    <diagnosisList >
+        <diagnosis componentid="104" >
+            <data>
+-The Highest component CPU Utilization
+-The highest Throughput loss 37%
+-The lowest Cache Hit Ratio Service time increased by  x
+-The response time increased by 200% (latency due to conflicts and extended service time
+-The component weight is 100% within a business process
+-The CPU time is 624 ms (high)
+            </data>
+        </diagnosis>
+    </diagnosisList>
+             
+    <remediesList>    
+        <remedies componentid="104">
+            
+               <data>
+            -            There are two problems their remediation may create opposite impacts:
+            The Cache ratio is low which extends the service time but does not necessarily contributes in the excessive a1 type dynamic complexity. Increasing the cache hit (type a2  may even aggravate the conflicts due to lack of CPU. 
+            Partition/distribute some large tables or increase the size of the cache should increase the cache hit and improving the service time by up to y. (then Increase the workload until new limit)
+            Reduce the CPU utilization by distribution (e.g. more processors), or  the workload, use more powerful CPU technology, (then Increase the workload until new limit)
+            The CPU time per component call may be reduced  through a logic engineering or redesign. Depending on the degree of reduction the impact can both reduce the CPU utilization.
+            Allows increase in throughput and may also improve the cache hi
+ </data>
+            
+        </remedies>
+    </remediesList>
+
+       
+
+
+
+            
+</root>      
+      
+      
+      
+      
+      
+      
+

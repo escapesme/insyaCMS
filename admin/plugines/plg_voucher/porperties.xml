@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+       
+
+        
+        <vData name="vData"  type="div" />
+      
+      
+      
+      
+        <v_checkin name="v_checkin"  type="date"  title="checkin" pclass='col-4'/>
+
+        <v_checkout name="v_checkout"  type="date"  title="checkout" pclass='col-4'/> 
+         
+        <hotel_id   
+            name="hotel_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_hotels_titles"
+            select_text='title' 
+            select_value='id'  
+            title="hotels"  
+            pclass='col-4' 
+        />
+        
+        
+        <line1 name="line"  type="line" style="padding-bottom: 10px;
+background: #fff;
+width: 100%;" />
+    
+        
+       
+
+        
+        
+        <roomsData name="roomsData"  type="div" />
+        <roomsDataend name="roomsDataend"  type="enddiv" />
+        
+        
+        
+        
+        <remarks name="remarks"  type="textarea"  title="remarks" pclass='col-12'/> 
+        
+        
+        <updatev name="updatev"  type="button" style="margin-top:28px;float:left" pstyle="float:left !important;"    value="Update" pclass='col-3 action-left'/>
+
+        
+        <enddiv2 name="enddiv2"  type="enddiv" />
+        
+        
+        <line name="line"  type="line" style="padding-bottom: 64px;
+background: #fff;
+width: 100%;" />
+        <div name="div"  type="div" />
+        <enddiv name="enddiv"  type="enddiv" />
+    </fields>
+    
+    
+
+ 
+    
+   
+</root>
+
+
+    
+

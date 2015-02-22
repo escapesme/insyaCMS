@@ -1,0 +1,260 @@
+/* 
+    Document   : login
+    Created on : 21/03/2012, 3:29:58 PM
+    Author     : ismail
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+html{
+    background: #8EACB7;
+    color: white;
+    text-shadow: none;
+
+}
+
+.block-border {
+    margin-top: 15px;
+    background: url("../img/misc/shine-effect.png") repeat-x scroll 0 0 rgba(33, 40, 44, 0.7);
+    border: 1px solid #25333C;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+body, button, input, select, textarea {
+    font-family: 'PT Sans','Tahoma',sans-serif;
+    color: #222;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.231;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PT Sans','Tahoma',sans-serif;
+    color: #222;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PT Sans','Tahoma',sans-serif;
+    color: #222;
+}
+
+.block-header {
+    background: url("images/block-header-bg.png") repeat-x scroll top left #CFDEE5;
+    min-height: 38px;
+    border: 1px solid #4B5E6B;
+    border-bottom: 1px solid #9BA6AB;
+    margin-bottom: -2px;
+    position: relative;
+    z-index: 5;
+}
+
+#login-box {
+    margin: 0 auto;
+    margin-top: 210px;
+    width: 400px;
+}
+
+block-border .block-content {
+    box-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+.block-content {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-radius: 3px 3px 3px 3px;
+    position: relative;
+    padding: 0 10px;
+    border: 1px solid #4B5E6B;
+}
+
+a:hover {
+    color: #2F383E;
+    text-decoration: underline;
+}
+a:visited {
+    color: #2D5672;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+.block-actions ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+.button {
+    background: url("images/button-blue.png") repeat-x scroll 0 0 #2D5672;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #111;
+    color: white!important;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    height: 14px;
+}
+
+
+.button:active {
+    background: url("images/button-blue.png") repeat-x scroll 0 -48px #6290B2;
+}
+
+.button.red:active {
+    background: url("images/button-red.png") repeat-x scroll 0 -48px #A85F51;
+}
+
+.button.red:hover {
+    background: url("images/button-red.png") repeat-x scroll 0 -24px #834A3F;
+}
+
+.button.red {
+    background: url("images/button-red.png") repeat-x scroll 0 0 #6B352B;
+}
+.button:hover {
+    background: url("images/button-blue.png") repeat-x scroll 0 -24px #4D7690;
+    color: white!important;
+    text-decoration: none;
+}
+
+.block-actions {
+    margin: 0 -19px -10px -19px;
+    background: url("images/block-actions-bg.png") repeat-x scroll bottom left transparent;
+    border-radius: 0 0 5px 5px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.block-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 37px;
+}
+
+.divider-vertical {
+    background: url("images/divider-vertical.png") no-repeat scroll top left transparent;
+    height: 34px;
+    width: 2px;
+    overflow: hidden;
+}
+.block-actions ul li {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.block-actions ul li.divider-vertical {
+    margin-top: -5px;
+    margin-right: -17px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+input[type="submit"].button,input[type="reset"].button ,input[type="button"].button  {
+    height: 26px;
+}
+
+.block-actions ul.actions-right {
+    float: right;
+    margin-right: 10px;
+}
+.block-actions ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin-top: 5px;
+}
+ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+.block-actions ul.actions-left {
+    float: left;
+    margin-left: 10px;
+}
+input.text, input.email, input.password, textarea.uniform {
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    padding: 3px 0;
+    color: #777;
+    border-top: solid 1px #AAA;
+    border-left: solid 1px #AAA;
+    border-bottom: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.form input[type="text"], .form input[type="password"], .form textarea {
+    border: 1px solid #D1D1D1;
+    border-color: #AAA #CCC #CCC #AAA;
+    border-radius: 3px 3px 3px 3px;
+    line-height: 1.5em;
+    padding: 5px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset;
+}
+
+input.text:focus, input.email:focus, input.password:focus, textarea.uniform:focus {
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    border-color: #999;
+    background: url('images/bg-input-focus.png') repeat-x 0 0 white;
+}
+
+
+input, textarea, select {
+    width: 100%;
+}
+
+
+a{
+    text-decoration: navy
+}
+
+
+.alert.error {
+    background-image: url("images/cross-circle.png");
+    background-color: #FACFCF;
+    border-color: #DC1C1C;
+    color: #820101;
+}
+.alert.no-margin.top {
+    border-width: 0 0 1px 0;
+    margin-top: 0;
+}
+.alert.no-margin {
+    border-radius: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-width: 1px 0;
+}
+div.error {
+    color: #740000;
+    font-weight: 700;
+}
+
+.alert {
+    border: 1px solid;
+    clear: both;
+    margin-bottom: 9px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 35px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+       
+        
+        
+        
+   
+        
+        
+        <user_id  
+          
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='name' 
+            select_value='id'  
+            title="user" 
+            
+        />
+       
+        
+        
+        <status name="status"  type="text" title="status" pclass='_50' />
+
+        <name name="name"  type="text" title="name" pclass='_50' />
+        <donations name="donations"  type="text" title="donations" pclass='_50' />
+        <email name="email"  type="text" title="email" pclass='_50' />
+        <city name="city"  type="text" title="city" pclass='_50' />
+        <country name="country"  type="text" title="country" pclass='_50' />
+        <mobile name="mobile"  type="text" title="mobile" pclass='_50' />
+
+        <street name="street"  type="text" title="street" pclass='_50' />
+        <building name="building"  type="text" title="building" pclass='_50' />
+        <floor name="floor"  type="text" title="floor" pclass='_50' />
+        <flat name="flat"  type="text" title="flat" pclass='_50' />
+        
+        
+        <Collection-Point name="Collection-Point"  type="textarea" title="Collection-Point" pclass='_50' />
+        <anonymous-donation name="anonymous-donation"  type="enable" title="anonymous-donation" pclass='_50' />
+        
+        <anonymous-donation name="anonymous-donation"  type="enable" title="anonymous-donation" pclass='_50' />
+        
+        <terms-conditions name="terms-conditions"  type="enable" title="terms-conditions " pclass='_50' />
+        
+        <newsletter name="newsletter"  type="enable" title="newsletter" pclass='_50' />
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" pclass='_50' />
+        
+     
+    </fields>
+    
+    
+
+    <selectfields>
+    
+    </selectfields>
+    
+    <listfields>   
+        <name  list-width="9"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+   
+</root>

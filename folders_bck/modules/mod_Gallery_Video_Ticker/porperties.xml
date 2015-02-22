@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        
+        
+        
+        
+        
+        <cat_id name="cat_id"  type="select" select_type='DB' select_data="com_video_gallery_categories" select_text='title' select_value='id'  title="Category" comment="For displaying all categories, Leave it empty "/>
+  
+        
+        <view name="view"  type="select" title="Data Type" select_data="categories>>categories;articles>>videos"   showHide="categories>>dynamic__viewTitle__viewDes__viewMViews__viewImage__cat_id;articles>>Datatype__viewMViews"/>
+
+
+         
+         
+        <Datatype name="Datatype"  type="select" title="Type" 
+                  
+                  
+                  
+                  
+                  
+                  select_data="latest>>latest;mostview>>mostview;tags>>tags"  
+                  
+                  
+                  
+                  showHide="latest__mostview>>dynamic__viewTitle__viewDes__viewMViews__viewImage__numberView__cat_id;tags>>tagminfont__tagmaxfont"   
+                  
+                  
+                  
+                  
+                  comment="For articles only" />
+
+        
+        
+        <dynamic name="dynamic"  type="enable" title="Dynamic"  /> 
+        <viewTitle name="viewTitle"  type="enable" title="View Title" comment="Specifies whether to display the the title or not" />
+        <viewImage name="viewImage"  type="enable" title="View Image" comment="Specifies whether to display the the image or not" />
+        <viewDes name="viewDes"  type="enable" title="View Description" comment="Specifies whether to display the the description or not" />
+        <viewMViews name="viewMViews"  type="enable" title="View Hits" comment="Specifies whether to display the the number of hits or not" />
+            <firstMainStyle name="firstMainStyle"  type="enable" title="First Main Style" comment="Specifies how the first item should be displayed" />
+        <numberView name="numberView"  type="text" title="Views Count"  comment="Specifies whether to display  the count or not"/>
+        
+  
+        <tagmaxfont name="tagmaxfont"  type="text" title="Max Font Size" default="50" />
+        <tagminfont name="tagminfont"  type="text" title="Min Font Size" default="10"/>
+       
+        
+    </fields>
+</root>
+
+
+    
+

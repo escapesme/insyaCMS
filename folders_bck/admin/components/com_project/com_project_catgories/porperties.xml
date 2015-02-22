@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='col-6'/>
+        <alias name="alias"  type="text"  title="Alias" pclass='col-6'/>
+        <image  name="image"  type="pic" title="image" pclass='col-6' comment="Image should be of transparent background in PNG format"/>
+        
+        <!--  <cat_id 
+            name="cat_id"  
+            type="select"  
+            title="Category" 
+            select_data= "com_project_catgories"
+            select_type= "DB" 
+            select_value= "id"
+            select_text= "title"
+            pclass='col-6'
+        /> -->
+        <enabled name="enabled"  type="enable" title="enable" value='1' pclass='col-3' />
+        <order name="order"  type="order" title="Order" pclass='col-3' />
+        <plg_othercatOptions name="plg_othercatOptions"  type="plugin"   title="Other Options" pclass='col-6'  />
+    </fields>
+    
+
+
+
+    
+    <group>
+        <com_project title="Projects" parent="yes" />
+        <com_project_catgories title="Categories"  />
+        <com_project_donations title="donations"  />
+        <com_project_status title="Status"  />
+        <com_project_setting title="Settings"  />
+        
+         <plg_rescores title="rescores" parent="yes" />
+        
+        
+    </group>
+    
+       
+    <listfields   >   
+        <title  list-width="6"/>
+        <image  list-width="2"/>
+        <order  list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

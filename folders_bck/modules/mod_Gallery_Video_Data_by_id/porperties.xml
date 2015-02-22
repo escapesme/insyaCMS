@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        
+        
+        
+        
+                <cat_id name="cat_id"  type="select" select_type='DB' select_data="com_video_gallery_categories" select_text='title' select_value='id'  title="Category" comment="For displaying all categories, Leave it empty "/>
+  
+        
+       
+        <ids name="ids"  type="textarea" title="IDS" />
+
+   
+        
+        <dynamic name="dynamic"  type="enable" title="Dynamic"  /> 
+        
+        
+        <viewTitle name="viewTitle"  type="enable" title="View Title" comment="Specifies whether to display the the title or not" />
+        
+        <maxTitle name="maxTitle"  type="input" title="Max Title words" comment="Max Title words" />
+
+        <viewImage name="viewImage"  type="enable" title="View Image" comment="Specifies whether to display the the image or not" />
+        <viewDes name="viewDes"  type="enable" title="View Description" comment="Specifies whether to display the the description or not" />
+        <viewResource name="viewResource"  type="enable" title="view Resource" comment="" />
+       
+        
+        
+        
+
+        <maxdes name="maxdes"  type="input" title="Max Description words" comment="Max Description words" />
+      
+
+        <viewMViews name="viewMViews"  type="enable" title="View Hits" comment="Specifies whether to display the the number of hits or not" />
+        <firstMainStyle name="firstMainStyle"  type="enable" title="First Main Style" comment="Specifies how the first item should be displayed" />
+       
+  
+       
+        
+    </fields>
+</root>
+
+
+    
+

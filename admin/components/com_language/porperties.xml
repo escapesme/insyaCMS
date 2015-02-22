@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+        <title name="title"  type="text"  title="Title"/> 
+        <l_image name="l_image"  type="pic"  title="image"/> 
+
+        <enabled name="enabled"  type="enable" title="enable" />
+    </fields>
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <title  list-width="5"/>
+        <l_image  list-width="4"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+   
+</root>
+
+
+    
+

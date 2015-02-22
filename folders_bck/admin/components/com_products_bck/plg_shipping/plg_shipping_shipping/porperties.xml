@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+       
+        <type 
+            name="type" 
+            type="select" 
+            select_type='DB' 
+            select_data="plg_cshow_categories" 
+            select_text='title' 
+            select_value='id'  
+            title="Category"/>
+        
+        
+        <data name="data"  type="textarea" title="data" />
+        <enabled name="enabled"  type="enable" title="enable" />
+        <order name="order"  type="order" title="order" />
+    </fields>
+    
+
+
+    <selectfields>
+        <type/>
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <type />
+        <data />
+        <enabled/>
+    </listfields>
+    
+  
+    <group>
+        <plg_cshow title="cshow" parent="yes" />
+        <plg_cshow_categories title="plg_cshow categories"  />
+    </group>
+    
+
+    
+
+</root>
+
+
+    
+

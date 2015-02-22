@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+     
+
+<root>
+    
+    <vote>تصويت  </vote>
+    <result>نتائج  </result>
+    <votemsg>تم التصويت بنجاح  </votemsg>
+    
+     <votemsgr>  عفوا تم التصويت من قبل   </votemsgr>
+    <votemsgTitle>تم التصويت   </votemsgTitle>
+    <votemsgButton>انهاء</votemsgButton>
+    <back>رجوع</back>
+</root>
+
+    
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+    <fields>
+        
+        
+        <title name="title"   title="gg"  type='html' > <![CDATA[ <h1 style='color:red'>asdasdasdas</h1> ]]> </title>
+        
+        
+        
+        
+        
+        <total name="total"   title="totle"  type='readOnly'  /> 
+        <remarks  
+            name="remarks" 
+            type="readOnly" 
+            title="remarks"  
+        />
+      
+        
+        
+        <xrefcat_id 
+            name="xrefcat_id"  
+            type="getXrefData" 
+            title="items" 
+            getData= "fiz_cashier_receipt_items"
+            pclass='_100'
+            xrefmyid="receipt_id"
+           
+            xrefType="o2m"
+            
+        /> 
+       
+   
+    </fields>
+    
+   
+   
+    <selectfields>
+    </selectfields>
+   
+
+    <listfields   >   
+        <package_id  list-width="2"/>
+    </listfields>
+    
+   
+</root>
+
+
+    
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        
+        
+        <days  name="days"  type="textarea"    title="nights" pclass='_50'/>
+        <gustes  name="gustes"  type="textarea"    title="Gustes" pclass='_50'/>
+
+         
+
+        
+        
+        
+        
+        
+    </fields>
+    
+
+
+
+</root>
+
+
+    
+

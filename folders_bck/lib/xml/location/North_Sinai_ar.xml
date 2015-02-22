@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <North_Sinai>
+        <Areesh>العريش</Areesh>
+        <hiekh_Zwaid> الشيخ زويد</hiekh_Zwaid>
+        <Rafah>رفح</Rafah>
+        <Elhasna> الحسنة</Elhasna>
+        <Beer_Elabd> بئر العبد</Beer_Elabd>
+        <Nakhl> نخل</Nakhl>
+        <Abu_Saql>ابو صقل</Abu_Saql>
+        <Abu_Taweela>ابو طويلة</Abu_Taweela>
+        <Elkharoba>الخروبة</Elkharoba>
+        <Baloza>بالوظة</Baloza>
+        <Elobor_North_Sinai>العبور شمال سيناء</Elobor_North_Sinai>
+    </North_Sinai>
+</root>

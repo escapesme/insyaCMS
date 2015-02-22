@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Gharbiyya>
+        <Tenth_of_Ramadan>العاشر من رمضان</Tenth_of_Ramadan>
+        <Tanta> طنطا</Tanta>
+        <Mahala>المحلة </Mahala>
+        <Basion> بسيون</Basion>
+        <Elsanta>السنطة</Elsanta>
+        <Zefta> زفتى</Zefta>
+        <Samanod> سمنود</Samanod>
+        <Qator> قطور</Qator>
+        <Kafr_Elzayat>كفر الزيـات</Kafr_Elzayat>
+  
+    </Gharbiyya>
+</root>

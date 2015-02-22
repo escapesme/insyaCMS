@@ -1,0 +1,17 @@
+[12-Dec-2013 14:48:19 America/Denver] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:48:19 America/Denver] PHP Warning:  scandir(): (errno 2): No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:48:19 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 337
+[12-Dec-2013 14:50:15 America/Denver] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:50:15 America/Denver] PHP Warning:  scandir(): (errno 2): No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:50:15 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 337
+[12-Dec-2013 14:51:13 America/Denver] PHP Warning:  mkdir(): Permission denied in /home3/matahene/public_html/fiz/includes/php/filemanager/include/utils.php on line 103
+[12-Dec-2013 14:51:53 America/Denver] PHP Warning:  scandir(/uploads/): failed to open dir: No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:51:53 America/Denver] PHP Warning:  scandir(): (errno 2): No such file or directory in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 330
+[12-Dec-2013 14:51:53 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home3/matahene/public_html/fiz/includes/php/filemanager/dialog.php on line 337
+[15-Jun-2014 17:04:44 America/Denver] PHP Warning:  filesize(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/include/utils.php on line 89
+[15-Jun-2014 17:04:49 America/Denver] PHP Warning:  filemtime(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 347
+[15-Jun-2014 17:04:49 America/Denver] PHP Warning:  filesize(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 348
+[15-Jun-2014 17:04:51 America/Denver] PHP Warning:  filemtime(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 347
+[15-Jun-2014 17:04:51 America/Denver] PHP Warning:  filesize(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 348
+[15-Jun-2014 17:04:52 America/Denver] PHP Warning:  filemtime(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 347
+[15-Jun-2014 17:04:52 America/Denver] PHP Warning:  filesize(): stat failed for ../../../uploads/images/x1 in /home1/escapesm/public_html/newfaiz/includes/php/filemanager/dialog.php on line 348

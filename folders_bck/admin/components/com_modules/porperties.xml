@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+
+    
+    <fields>
+        
+        <modTitle name="modTitle"  type="title"  title="" value="@%get::com%@"/>
+        <mod_title name="mod_title"  type="text"  title="Title"/>
+         
+        <position name="position"  type="select" title="position" select_type="template_positions" pclass='col-6' />
+        
+       
+        <class name="class"  type="select" title="Class" select_type="template_classs"  pclass='col-6'/>
+        <view_title  name="view_title"   type="enable" title="View Title" pclass='col-3' value='1' />
+        <mod_viewall name="mod_viewall"  type="enable" title="View All" pclass='col-3' />
+           
+        <enabled name="enabled"  type="enable" title="Enable" pclass='col-3' value='1' />
+        <order name="order"  type="order"  title="Order" pclass='col-3'/>
+
+        <morecss name="morecss"   type="textarea"  title="MoreCss"/>
+        
+       
+        <Data_permission name='Data_permission'  collapse="yes" type='block' title="permission"   />
+        <permission_all name="permission_all"  type="enable"  title="permission all" value="1" /> 
+        <permission_gust name="permission_gust"  type="enable"  title="permission gust Only" value="0" /> 
+
+        <permission   xref='com_modules_permission_xref' name="permission"  type="list" select_type='DB' select_data="com_users_groups" select_text='group_name' select_value='id'  title="permission" />
+        <Data_permissionEnd type='endblock'  name='Data_permissionEnd' />
+        
+        <Data_site name='Data_site'  collapse="yes" type='block' title="Sites"  />
+     
+        <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
+      
+        <site  
+            xref='com_modules_site_xref' 
+            name="site" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_cities_categories"
+            select_text='title' 
+            select_value='id'  
+            title="site" 
+            
+            pclass='_50'/>
+        <Data_siteend type='endblock'  name='Data_siteend'/>
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <type name="type" title='type' type="hidden" value="@%get::com%@" />        
+    </fields>
+    
+
+
+    <selectfields>
+        <position />
+        <class />
+        <type />
+        
+        
+    </selectfields>
+    
+       
+    <listfields >   
+        <mod_title  list-width="2" />
+        <position list-width="1.25" />
+        <type  list-width="1.25"/>
+        <mod_viewall  list-width="1"/>
+        <view_title list-width="1.25"/>
+        <permission_all list-width="1.25"/>
+        <order  list-width="1"/>
+        <enabled list-width="1"/>
+        
+        
+    </listfields>
+    
+
+
+</root>
+
+
+    
+

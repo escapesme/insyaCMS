@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <price 
+            name="price" 
+            type="text" 
+           
+            title="Price"/>
+           <valueprice 
+            name="valueprice" 
+            type="text" 
+           
+            title="Value Price"/> 
+       
+              
+        
+        
+        
+              
+        <pro_id 
+            name="pro_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_products" 
+            select_text='title' 
+            select_value='id'  
+            title="Product"
+            pclass='_50' />
+                
+        
+      
+        <site  
+   
+            name="site" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_cities_categories"
+            select_text='title' 
+            select_value='id'  
+            title="Region" 
+            
+            pclass='_50'/>
+        <enabled name="enabled"  type="hidden" title="enable" value='1' />
+       
+    </fields>
+    
+
+
+    <selectfields>
+    <site />
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <pro_id />    
+        <price />
+        <site />
+    </listfields>
+    
+  
+
+      <group>
+        <com_products_order title="Order"  />
+        <com_products title="Products" parent="yes" />
+        <com_products_price title=" Price"  />
+        <com_products_categories title="Categories "  />
+        <plg_shipping title="Shipping"  />
+        <plg_shipper title="Shipper"  />
+        <plg_coupon title="Create Coupon"  />
+         <plg_shipping_setting title="Shipping Setting"  />
+        <com_products_setting title=" Setting"  />
+        <com_order_status title="Order Status"  />
+    </group>
+   
+
+    
+
+</root>
+
+
+    
+

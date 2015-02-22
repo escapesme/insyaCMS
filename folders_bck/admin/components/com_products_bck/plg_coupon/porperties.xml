@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <code name="code"  type="text"  title="Code"  />
+       
+         <savings-type 
+            name="savings-type" 
+            type="select" 
+            title="Savings Type" 
+            pclass='_50'
+            select_data="fixed>>Fixed Amount;
+    pric>>Percentage"
+
+        /> <edate name="edate"  type="date"  title="Expiration Date" pclass='_50'/>
+        
+        
+        
+        <savings name="savings"  type="text"  title="savings" pclass='_50' />
+       
+        <minmum-purchase name="minmum-purchase"  type="text"  title="Minimum Purchase" pclass='_50' />
+        
+        <usetype name="usetype"  type="textarea" title="Success Message"  pclass='_50' />
+        
+        
+        
+   
+     
+        <cat_id 
+            name="cat_id" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_products" 
+            select_text='title' 
+            select_value='id'  
+            title="Category"  
+            
+            tree="yes"  
+            xref="com_products_coupon_xref"  pclass='_50'
+        
+        />
+        
+        
+        
+        <enabled name="enabled"  type="enable" title="enable"  value='1' pclass='_350' />
+        <line   type="line" />
+          <maxuse name="maxuse"  type="text"  title="maxuse" pclass='_50' value='1' />
+       
+        <usenums name="usenums"  type="text"  title="usenums" pclass='_50' value='0'/>
+       
+       
+    
+    </fields>
+    
+
+  
+        
+    <listfields >   
+        <code />
+        <edate />
+        <enabled/>
+    </listfields>
+    
+
+    <selectfields>
+    
+    </selectfields>
+   
+   
+       <group>
+        <com_products_order title="Order"  />
+        <com_products title="Products" parent="yes" />
+        <com_products_price title=" Price"  />
+        <com_products_categories title="Categories "  />
+        <plg_shipping title="Shipping"  />
+        <plg_shipper title="Shipper"  />
+        <plg_coupon title="Create Coupon"  />
+         <plg_shipping_setting title="Shipping Setting"  />
+        <com_products_setting title=" Setting"  />
+        <com_order_status title="Order Status"  />
+    </group>
+   
+    
+
+    
+    
+
+</root>
+
+
+    
+

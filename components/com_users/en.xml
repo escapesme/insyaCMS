@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+
+<root>
+    
+    
+      
+    
+        
+       <Mumin_id> id</Mumin_id>
+           
+       <FullName>Welcome</FullName>
+           
+       <logout>Logout</logout>
+    
+    
+       <EJ_loginform_msg>Ejamaat</EJ_loginform_msg>
+          <EJ_sendmsg>Success: ITS id authenticated successfully</EJ_sendmsg>
+             <EJ_errormsg>Error: The ITS username and password could not be authenticated</EJ_errormsg>
+    
+    
+     
+        
+    
+   <forgotPassword>نسيت كلمة السر؟</forgotPassword>
+           <forgotpassword_msg>ادخل بريدك الالكتروني الخاص بحسابك و سيتم ارسال كلمة سر مؤقتة اليك</forgotpassword_msg>
+            <forgotpassword_sendmsg>تم ارسال كلمة السر الى بريدك الالكتروني</forgotpassword_sendmsg>
+           <forgotpassword_errormsg>البريد الالكتروني غير مسجل</forgotpassword_errormsg>
+
+
+            <yourpassword>  كلمة السر المؤقتة الخاصة بك</yourpassword>
+
+       
+    <sendemail>ارسال   </sendemail>
+    
+    <mobile_confirm_msg>هذا الرقم تم تفعيله</mobile_confirm_msg>
+       
+    <mobile_not_confirm_msg>هذا الرقم غير مفعل </mobile_not_confirm_msg>
+       
+    <mydon>نسبة مسهماتى</mydon>
+    <done> تم تحصيلها</done>
+    <all> الاجمالى</all>
+    <yet> أيام باقية</yet>
+    <user> متبرغ</user>   
+    <currency> ج.م</currency>        
+    <nouser> كن أول متبرع</nouser>
+    
+    <nodays>سينتهى اليوم </nodays>
+    <oneday> يوم واحد باقى </oneday>
+    <towday> باقى يومان </towday>
+
+    <gender> الجنس </gender>
+    <undefined> غير مسجل </undefined>
+    <emptyProjectMsg> لايوجد أى مشروعات  </emptyProjectMsg>
+    <street>اسم الشارع</street>
+        
+    <floor>رقم الطابق</floor>
+    <mobile> المحمول</mobile>
+    <male> ذكر</male>
+    <female> أنثى</female>
+    <updateDataMsg> لقد تم تعديل البيانات بنجاح </updateDataMsg>
+    <chkpassworderrorMessage> كلمة السر غير صحيحة برجاء اعادة المحاولة</chkpassworderrorMessage>
+    <chkpasswordSuccessMessage>تم تعديل كلمة السر بنجاح</chkpasswordSuccessMessage>
+    <chkpasswordnotmatchMessage>كلمة السر غير متطابقة برجاء اعادة المحاولة</chkpasswordnotmatchMessage>
+        <address-label>العنوان الخاص بك  </address-label>
+    <building>رقم العمارة</building>
+    
+    <flat>رقم الشقة</flat>
+    <shipping_note>ملاحظات</shipping_note>
+    
+    <name>الاسم </name>
+    <myproject>مشاريعى </myproject>
+
+    <amount>المبلغ </amount>
+
+    <aboutway>عن طريق </aboutway>
+
+    <waytype> فردى / منتظم </waytype>
+    <usein> مستخدم فى </usein>
+
+
+    
+    <login_username>إسم المستخدم</login_username>
+    
+    <login_submit>دخول</login_submit>
+    <login_email>email</login_email>
+    
+    
+    <username>username  </username>
+    <email> email  </email>
+    <password> password</password> 
+    
+    <oldpassword>أدخل كلمة السر الحالية  </oldpassword>
+    <rpassword> إعادة كلمة السر</rpassword> 
+       
+    <newpassword> أدخل كلمة السر الجديدة</newpassword> 
+         
+          
+            
+    <phone>التليفون</phone> 
+    
+    <other>بيانات أخرى</other> 
+        
+    <image>  صورة</image> 
+
+   
+    <submit>إرسال</submit> 
+    <reset>مسح</reset> 
+    
+    
+    <data>البيانات الشخصية</data> 
+
+
+    <edit>تعديل</edit> 
+    <last>أخر</last> 
+
+     
+    <signature> التوقيع </signature> 
+    <password>كلمة السر </password> 
+    <data>بياناتى</data> 
+    <messages>الرسائل</messages> 
+    <wishList>قائمة الامنيات</wishList> 
+    <favorites>المفضلة</favorites> 
+    <products>المنتجات</products> 
+    
+        
+ 
+    <welcome>مرحبا</welcome> 
+ 
+    <messages>رسائل جديدة</messages> 
+    <date>التاريخ</date> 
+    <news>أخبار جديدة</news> 
+    
+    <login>تسجيل دخول</login>
+    
+    <req> تسجيل عضو جديد</req>
+    <titlefb>يمكنك الدخول من خلال: </titlefb>
+    
+    <regMailTitle>  اهلا بك     شادي   في موقع مدد!</regMailTitle>
+    
+    <regMailNote1> لقد تم انشاء حسابك، مرفق لك معلومات الحساب </regMailNote1>
+    
+    <regMailNote3> عند دخولك إلى حسابك، سوف تستطيع القيام بالأمور التالية:</regMailNote3>
+    
+   
+    <regMailuserName>اسم المستخدم الخاص بك حاليا:</regMailuserName>
+    <regMailuserEmail>لقد تم انشاء حسابك الخاص بنجاح على مدد.</regMailuserEmail>
+    <regMailuserEmailone>اسم المستخدم الخاص بك: </regMailuserEmailone>
+    
+    <regMailuserProject>اختار المشروع المناسب لك وساهم فيه </regMailuserProject>
+    <regMailuserProjectNot> اختار احدى المشاريع التنموية على الموقع و ساهم ماليا في المشروع لدعم تنفيذه </regMailuserProjectNot>
+  
+    <regMailuserNews>متابعة اخر اخبار المشروع </regMailuserNews>
+    <regMailuserNewsNot> تابع اخبار خطوات تنفيذ المشروع الذي ساهمت فيه عن طريق الصور و الفيديو</regMailuserNewsNot>
+    
+    <regMailuserReg>متابعة سجل مساهماتك للمشاريع</regMailuserReg>
+    <regMailuserRegNot>تابع سجل مساهماتك المالية للمشاريع و تعرف على الأهداف التي حققتها
+        المشاريع</regMailuserRegNot>
+    <regMailloginTitle>
+        ادخل على حسابك و ادعم المشاريع!</regMailloginTitle>
+    
+    
+    <regMailNote2>
+        لقد تم ارسال هذه الرسالة لانك مشترك ومسجل في موقع مدد وقد وافقت علي استقبال رسائل علي بريدك الالكتروني منا لمتابعة مراحل تنفيذ المشروع المساهم به ، ومعرفة  المشاريع الجديدة، ومعرفة معلومات عن الخدمات التي يقدمها موقع مدد.
+        
+    </regMailNote2>
+
+</root>
+
+    
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    
+    
+    
+    
+    
+<plugins >   
+        <plg_extension_cashier name="plg_extension_cashier"  options="type=>list__3=>ssdfdsf" position="list"/>
+      
+    </plugins>
+    
+    
+    
+
+    <fields>
+        
+        <reservation_id name="reservation_id"  type="hidden" title="reservation_id"  value="@%get::addxrefid%@"/> 
+        
+                   
+        <Name  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Name"     
+            connect="true"
+            pclass='col-6' 
+            
+        />
+    
+        
+        
+        
+          
+        <package_id  
+           
+            
+            
+            name="package_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_lawazim_packages"
+            select_text='title' 
+            select_value='id'  
+            title="package"  
+            pclass='col-6' 
+      
+            
+        />
+      
+        
+       
+   
+        <nights  name="nights"  type="text"  title="nights"/> 
+        <ex_lawazim  name="ex_lawazim"  type="text"  title="lawazim"/> 
+        <ex_paid  name="ex_paid"  type="enable"  title="paid"/> 
+        <ex_checkin  name="ex_checkin"  type="date"  title="checkin"/> 
+        <ex_checkout  name="ex_checkout"  type="date"  title="checkout"/> 
+
+ <ex_lawaziminput view='input'  name="ex_lawazim"  type="text"  title="lawazim"/> 
+    </fields>
+    
+   
+   
+   <selectfields>
+        <reservation_id/>
+        
+        
+           <mumin_id type='alone' title='Mumin_id'/>
+        
+      
+        
+      <!--  <author/> 
+ 
+        <enabled />-->
+    </selectfields>
+   
+    <!--viewvalues="@%get::rid%@" viewfields="reservation_id" -->
+    <listfields   >   
+        <package_id  list-width="2"/>
+        
+        <Name list-width="3"/>
+        <ex_checkin  list-width="1"/>
+        <ex_checkout  list-width="1"/>
+        <ex_lawazim  list-width="1"/>
+        <ex_lawaziminput  list-width="1"/>
+        
+        <ex_paid  list-width="1"/>  
+        
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+

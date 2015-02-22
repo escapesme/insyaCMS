@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+     <Alexandria>
+        <Eldekhila> الدخيلة</Eldekhila>
+        <Elraml> الرمل</Elraml>
+        <Ellaban> اللبان</Ellaban>
+        <Elatareen> العطارين</Elatareen>
+        <Elmanshya> المنشيه</Elmanshya>
+        <Elmontazah> المنتزه</Elmontazah>
+        <Karmoz> كرموز</Karmoz>
+        <Elgomrok> الجمرك</Elgomrok>
+        <Bab_Shark> باب شرق</Bab_Shark>
+        <Seedy_Gaber> سيدى جابر</Seedy_Gaber>
+        <Menaa_Elbasal> ميناء البصل</Menaa_Elbasal>
+        <Moharam_Bek> محرم بك</Moharam_Bek>
+        <Elamerya> العامرية</Elamerya>
+        <Borg_Elarab>برج العرب</Borg_Elarab>
+        <Seedy_Krir> سيدى كرير</Seedy_Krir>
+        <Alexandria>الإسكندرية</Alexandria>
+        <Smoha>سموحة</Smoha>
+        <Elibraheemya>الابراهيمية</Elibraheemya>
+        <Seedy_Beshr>سيدى بشر</Seedy_Beshr>
+    </Alexandria>
+</root>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        <title name="title"  type="text"  title="Title"/>
+        <multiItems
+            name="multiItems"  
+            type="enable"
+            title="add multiItems" 
+            comment="add Type"
+            value='0' pclass='col-6'
+        />
+
+        <addMoreActions
+            name="addMoreActions"  
+            type="enable"
+            title="add More Actions" 
+            comment="add Type"
+            value='0'
+            pclass='col-6'
+        />
+        
+        <form 
+            name="form" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_form" 
+            select_text='title' 
+            select_value='id'  
+            title="form"   
+            pclass='col-6'
+        
+        />
+               
+        <usersSettings 
+            name="usersSettings" 
+            type="select" 
+            
+            select_data="com_users_settings" 
+            select_text="title"
+            select_value="id"
+            title="User Settings"
+            select_type="DB" 
+            comment="Select a pre-made user settings"
+
+        />  
+ 
+        <mail 
+            name="mail" 
+            type="select" 
+            
+            select_data="com_html" 
+            select_text="title"
+            select_value="id"
+            title="mail"
+            select_type="DB" 
+            
+
+        />  
+
+        <users     name="users"  type="enable" title="users" value="1" pclass='col-4'  />
+
+        <mobile_confirm     name="mobile_confirm"  type="enable" title="mobile confirm" value="1" pclass='col-4'  />
+        
+        <price-limit     name="price-limit"  type="text" title="Donation limit" value="1" pclass='col-4'  />
+
+        <collection-fee     name="collection-fee"  type="text" title="collection fee" value="1" pclass='col-4'  />
+
+         <mailSetting name='mailSetting'  collapse="yes" type='block' title="mail Setting"   />
+
+                
+                
+        <signupmail name="signupmail"   title=" Mail Template" 
+
+
+                    type="select"
+                    select_type="DB"
+                    select_data="com_html" 
+                    select_text="title"
+                    select_value="id"
+                 
+                    pclass='col-6' 
+
+        />
+        <mailfrommail name="mailfrommail"  type="text"  title="from mail" pclass='col-6'/>
+        <mailfrom name="mailfrom"  type="text"  title=" from" pclass='col-6' />
+        <mailsubject name="mailsubject"  type="text"  title=" subject " pclass='col-6' />
+        <mailto name="mailto"  type="textarea"  title=" To" pclass='col-12' />
+        
+        <mailSetting_end type='endblock'  name='mailSetting_end'/>
+        
+        
+        
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" value='1'  pclass='col-6' />
+  
+        
+        
+    
+        
+    </fields>
+    
+
+
+          
+    <listfields  >  
+        
+        
+        <title list-width="4"/>
+        <form list-width="3"/> 
+        <multiItems list-width="1"/>
+        <addMoreActions list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+</root>
+
+
+    
+

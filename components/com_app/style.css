@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Nov-2013, 21:08:14
+    Author     : empcl_000
+*/
+
+
+.mainBlock{
+    background: #eee;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 5px #111;
+    width: 28%;
+    float:left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.bar,.blockHeader,.allData ,.footerBar
+{
+    background: #666;
+
+}
+
+
+.tabsHeahder li.act,.footerBar li{
+    background: #333;
+    color: #fff;
+
+
+    border: #000 solid 1px;
+    cursor: pointer
+
+}
+
+
+
+.footerBar{
+    width:100%;
+    clear: both;
+    min-height: 28px;
+}.footerBar li {
+    float:left;
+
+    font-size: 15px;
+    padding: 2px;
+    margin:  2px;
+
+
+
+}
+
+.blockHeader{
+
+    color:#f2f2f2
+
+
+}
+.mainBlock.selected{
+
+    border: lightblue solid 1px;
+    box-shadow: 1px 1px 5px  lightblue;
+}
+
+.bar span { 
+    width: 16px; 
+    height: 16px; 
+    top:5px;
+    left: 5px;
+    position: absolute;
+
+    display: block
+
+
+} .bar li{ 
+    width: 27px;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+    float:left;
+    margin: 3px;
+
+
+} .bar,.mainData {
+    clear: both;
+    width:100%;
+
+    min-height: 35px;
+}
+.allData{
+    clear: both;
+    width:100%;
+
+    float: left
+}
+
+.tabsHeahder li{
+
+    cursor: pointer;
+    list-style: none;
+
+}
+
+
+
+li{
+    list-style: none;
+}
+.tabsHeahder {
+    float: right;
+    width:19%;background: #eee;margin-top: 35px;
+    box-shadow: 0px 1px  5px #000;
+    padding-left: 1%;
+}
+
+
+.mainTabsBody{
+    width:80%;
+    background: #eee;
+    float:left;
+    box-shadow: 1px 1px  5px #000;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menuData,.mainData{
+    float:left;
+    clear: none
+}.menuData{
+    width:10%;
+
+    min-height: 200px;
+
+}.mainData{
+    width:90%;
+
+}

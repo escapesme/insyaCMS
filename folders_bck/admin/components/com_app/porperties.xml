@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='_50'/>
+        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
+        <author name="author"  type="text"  title="Author" pclass='_50'/> 
+        <date name="date"  type="date"  title="Date" pclass='_50'/>
+        
+        
+       
+        
+        
+        <cat_id  
+            xref='com_content_article_xref' 
+            name="cat_id" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_content_catgories"
+            select_text='title' 
+            select_value='id'  
+            title="Category" 
+            tree='yes'
+        />
+       
+        <imagegallery name="imagegallery"  type="select"  
+                      title="images gallery" select_data="com_images_gallery_categories" 
+                      select_type="DB"  
+                      select_text ="title"
+                      select_value ="id" pclass='_50'
+        />
+        <vediogallery name="vediogallery"  type="select"  
+                      title="Video Gallery " select_data="com_video_gallery_categories" 
+                      select_type="DB"  
+                      select_text ="title"
+                      select_value ="id" pclass='_50'
+        />
+       
+        <order name="order"  type="order" title="order" pclass='_50' />
+        <enabled name="enabled"  type="enable" title="Enable"  pclass='_50' value='1'/>
+        
+        <th_image name="th_image"  type="pic"  title="TH image" />
+        <tags name="tags"  type="textarea" title="Tags"  />
+         
+        
+        
+        <des  name="des"  type="editor" title="Intro" />
+        <artbody  name="artbody"  type="editor" title="Body" />
+        
+        <Page_data name='Page_data'  collapse="yes" type='block' title="Page Data"  />
+        <description  name="description"  type="textarea" title="description" />
+        <keywords  name="keywords"  type="textarea" title="keywords" pclass='_50' />
+        <header  name="header"  type="textarea" title="header" pclass='_50'/>
+        <Page_enddata type='endblock'  name='Page_enddata' pclass='_50'/> 
+    </fields>
+    
+    
+    
+        
+    <listfields  orderType='DESC'>   
+        <title list-width="5"/>
+        <author list-width="1" />
+        <date list-width="1"/>
+        <cat_id list-width="1"/>
+        <order list-width="1"/>
+        <enabled list-width="1"/>
+        
+        
+        
+    </listfields>
+    
+    
+    
+    
+    
+
+
+    <selectfields>
+        <cat_id/>
+        <author/>
+ 
+        <enabled />
+    </selectfields>
+   
+   
+   
+   
+    <children>      
+    </children>
+    
+    
+
+    
+    <group>
+        <com_content_article title="Articale" parent="yes" />
+        <com_content_catgories title="Articale Categories groups"  />
+    </group>
+    
+
+    
+    
+
+</root>

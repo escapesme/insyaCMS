@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+
+title	varchar(255)	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         3	uenabled	tinyint(4)			No	None		 Change Change	 Drop Drop	 More Show more actions
+         4	sendMessage	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         5	errorMessage	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         6	chkMessage	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         7	regform	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         8	delete	tinyint(4)			No	None		 Change Change	 Drop Drop	 More Show more actions
+         9	enabled	tinyint(4)			No	1		 Change Change	 Drop Drop	 More Show more actions
+         10	order	int(11)			No	None		 Change Change	 Drop Drop	 More Show more actions
+         11	created	datetime			No	None		 Change Change	 Drop Drop	 More Show more actions
+         12	modified	datetime			No	None		 Change Change	 Drop Drop	 More Show more actions
+         13	reppassword	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         14	defgroup	varchar(255)	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         15	updatemsg	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 More Show more actions
+         16	endreg	date			No	None		 Change Change	 Drop Drop	 More Show more actions
+         17	startreg
+-->
+<root>
+    
+    
+    
+    
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+
+        <regform name="regform"  type="select" select_type="DB"
+                 select_data="com_form" 
+                 select_text="title"
+                 select_value="id"
+                 title="Reg Form" 
+                 pclass='col-6' />
+        
+        <defgroup name="defgroup"  type="select" select_type="DB" 
+                  select_data="com_users_groups" 
+                  select_text="group_name"
+                  select_value="id"
+                  title="Group"  
+                  pclass='col-6' />
+         
+                
+       
+        
+        
+        
+    
+     
+        
+        <enabled name="enabled"  type="enable" title="Enable"   pclass='col-6' />
+        
+        <signup name='signup'  collapse="yes" type='block' title="signup Setting"   />
+
+                
+                
+        <signupmail name="signupmail"   title="signup Mail Template+ " 
+
+
+                    type="select"
+                    select_type="DB"
+                    select_data="com_html" 
+                    select_text="title"
+                    select_value="id"
+                 
+                    pclass='col-6' 
+
+        />
+        
+      
+        <mailfrommail name="mailfrommail"  type="text"  title="from mail" pclass='col-6'/>
+        <mailfrom name="mailfrom"  type="text"  title=" from" pclass='col-6' />
+         
+        
+        
+        
+        <mailsubject name="mailsubject"  type="text"  title=" subject " pclass='col-6' />
+        <mailto name="mailto"  type="textarea"  title=" To" pclass='col-12' />
+        
+       
+        
+         <forgotpassword_mail name="forgotpassword_mail"   title="forgotpassword Mail Template+ " 
+
+
+                    type="select"
+                    select_type="DB"
+                    select_data="com_html" 
+                    select_text="title"
+                    select_value="id"
+                 
+                    pclass='col-6' 
+/>
+        
+        <forgotpassword_mailfrommail name="forgotpassword_mailfrommail"  type="text"  title="forgotpassword_ from mail" pclass='col-6'/>
+        <forgotpassword_mailfrom name="forgotpassword_mailfrom"  type="text"  title="forgotpassword_  from" pclass='col-6' />
+          <forgotpassword_mailsubject name="forgotpassword_mailsubject"  type="text"  title=" forgotpassword_ subject " pclass='col-6' />
+        
+        <signup_end type='endblock'  name='signup_end'/>
+        
+        
+        
+        <sendMessage  name="sendMessage"  type="textarea" title=" sendMessage"  />
+        
+        <errorMessage  name="errorMessage"  type="textarea" title=" errorMessage"  />
+        <chkMessage  name="chkMessage"  type="textarea" title=" chkMessage"  />
+              
+              
+        <reppassword  name="reppassword"  type="textarea" title=" reppassword"  />   
+      
+        
+    </fields>
+    
+
+
+    <selectfields>
+        <g_id/>
+    </selectfields>
+    
+
+    
+ 
+
+    
+       
+    <listfields>   
+      
+        <title  list-width="5" />
+        <defgroup list-width="4" />
+        <enabled list-width="1" />
+       
+        
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

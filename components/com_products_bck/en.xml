@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+     
+
+<root>
+    
+     
+    <ShoppingTitle>Your Shopping Cart </ShoppingTitle>
+    
+    <copunErrorMsg>Sorry your code is invalid or is expired!</copunErrorMsg>
+    
+    <tag> TAG  </tag>
+    
+    
+    <pric>Price </pric>
+    <Afterpric> per item (Shipping is Free!) </Afterpric>
+    
+    
+    <Quantity>Quantity </Quantity>
+    
+    
+    
+    <brand>Brand</brand>
+    <tocart> Add to Cart </tocart>
+    <update> Update </update>
+    <showCart> Show Cart</showCart>
+    <delet> X </delet>
+    
+    <addToCartMsg>(s) added to cart.</addToCartMsg>
+    
+    
+    <deleteFromCartMsg> Delete From Cate Done . </deleteFromCartMsg>
+   
+    <deleteFromCartConfirmMsg>Are you sure you want to remove this from cart?</deleteFromCartConfirmMsg>
+    
+   
+    <copunTitle></copunTitle>
+    
+    <copunValueTitle>I have a discount coupon</copunValueTitle>
+    
+    <copunintro></copunintro>
+    
+    <copunEndintro></copunEndintro>
+        
+    <shippingTitle>Enter Delivery Postcode in UK or Northern Ireland</shippingTitle>
+    
+    <shippingValueTitle>Delivery Price</shippingValueTitle>
+    
+    
+    <cartEmpty>Oops! Your shopping cart is empty!</cartEmpty>
+    
+    
+    
+    <shippingintro></shippingintro>
+    
+    <redirectMsge>Please wait while we redirect you to your order page...</redirectMsge>
+   
+    <redirectMsgeErorr>Please wait while we redirect you to your order page...</redirectMsgeErorr>
+       
+    <thanksMsg>Your order number is : @%order_id%@  and it will ship in 3 days.</thanksMsg>
+    <paymethod>2Checkout Order ID: @%session::pay_order_number%@</paymethod>
+  
+        <shippingMsg>3 days - standard</shippingMsg>
+       
+       
+</root>

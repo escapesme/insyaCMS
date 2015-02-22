@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 7, 2014, 1:51:52 PM
+    Author     : A7med
+*/
+
+.map label{
+    
+    clear: both;
+    color: red;
+    font-size: 30px
+        ;
+    display: block;
+    width: 100%;
+}

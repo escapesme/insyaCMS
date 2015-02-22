@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+      
+        <pros 
+            name="pros" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_project" 
+            select_text='title' 
+            select_value='id'  
+            title="projects"   
+            pclass='col-12'
+        
+        />
+    </fields>
+</root>
+
+
+    
+

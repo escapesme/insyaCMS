@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <data name="data"  type="select"  
+                   title="wizard" select_data="sys_dataBluder" 
+                   select_type="DB"  
+                   select_text ="title" options='fsdf'
+                   select_value ="id" pclass='_50'
+        />
+    
+
+       
+        
+    </fields>
+</root>
+
+
+ 

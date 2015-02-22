@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <url name='url' title='Add URL'  type='url' />
+          <height name='height' title='Height'  type='number' />
+        <width name='width' title='Width'  type='number' />
+    </fields>
+</root>
+
+
+    
+

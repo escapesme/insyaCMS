@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        <des name="des"  type="textarea"  title="des "  />
+        
+    </fields>
+    
+
+       
+    <listfields>   
+      
+        <title  list-width="9"/>
+      
+        <des  list-width="1"/>
+    </listfields>
+    
+    
+    
+    
+    <group>
+        <site_setting title='site setting' parent='yes'/>
+        <sys_site_status title='site status'  />
+    </group>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+      
+      
+      
+      
+ 
+<trajectoryList caseID="6" caseName="Xena FD" XactID="1406298196599" planPoint="10"> 
+    <trajectory>
+        <name>Reception</name>
+        <y>20</y>
+        <number>2537.999999999999856115</number>
+        <status>green</status>
+        <caseTrajectoryID>46</caseTrajectoryID>   
+        <xactID>1406298209520</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+    </trajectory> 
+  
+    <trajectory>
+          <y>150</y>
+        <name>Balance Accounts</name>
+        <number>671.773499999999941857</number>
+        <status>red</status>
+        <caseTrajectoryID>47</caseTrajectoryID>   
+        <xactID>1406298209475</xactID>
+        <componentTable>caseid-6-balance-accounts.png</componentTable>
+
+  
+    </trajectory> 
+    <trajectory>
+          <y>100</y>
+        <name>Apply Payment (Valid)</name>
+        <number>671.773499999999941857</number>
+        <status>green</status>
+        <caseTrajectoryID>48</caseTrajectoryID>   
+        <xactID>1406298209432</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+    </trajectory> 
+    <trajectory>
+          <y>200</y>
+        <name>Trading and Settlement</name>
+        <number>1080.000000000000000000</number>
+        <status>red</status>
+        <caseTrajectoryID>49</caseTrajectoryID>   
+        <xactID>1406298209498</xactID>
+        <componentTable>caseid-6-trading-and-settlement.png</componentTable>
+            
+    </trajectory> 
+    <trajectory>
+          <y>50</y>
+        <name>Bank Products</name>
+        <number>323.999999999999988009</number>
+        <status>green</status>
+        <caseTrajectoryID>50</caseTrajectoryID>   
+        <xactID>1406298209563</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+    </trajectory> 
+    <trajectory>
+          <y>250</y>
+        <name>Branch Service</name>
+        <number>2537.999999999999856115</number>
+        <status>green</status>
+        <caseTrajectoryID>51</caseTrajectoryID>   
+        <xactID>1406298209542</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+    </trajectory> 
+    
+    
+
+
+    <trajectory>
+          <y>20</y>
+        <name>Apply Payment (Invalid)</name>
+        <number>20.776499999999998003</number>
+        <status>green</status>
+        <caseTrajectoryID>52</caseTrajectoryID>   
+        <xactID>1406298209453</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+
+    </trajectory> 
+</trajectoryList>
+
+
+
+<trajectoryList caseID="10" caseName="Increase Retail Faster" XactID="1406688872625" planPoint="12"> 
+    <trajectory>
+              <y>200</y>
+        <name>Reception</name>
+        <number>4229.999999999999760191</number>
+        <status>red</status>
+        <caseTrajectoryID>74</caseTrajectoryID>   
+        <xactID>1406298209520</xactID>
+        <componentTable>caseid-10-reception.png</componentTable>
+    </trajectory> 
+  
+    <trajectory>
+              <y>50</y>
+        <name>Balance Accounts</name>
+        <number>447.848999999999961238</number>
+        <status>green</status>
+        <caseTrajectoryID>75</caseTrajectoryID>   
+        <xactID>1406298209475</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+
+    </trajectory> 
+    <trajectory>
+              <y>50</y>
+        <name>Apply Payment (Valid)</name>
+        <number>447.848999999999961238</number>
+        <status>green</status>
+        <caseTrajectoryID>76</caseTrajectoryID>   
+        <xactID>1406298209432</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+    </trajectory> 
+    <trajectory>
+              <y>50</y>
+        <name>Trading and Settlement</name>
+        <number>720.000000000000000000</number>
+        <status>green</status>
+        <caseTrajectoryID>77</caseTrajectoryID>   
+        <xactID>1406298209498</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+
+    </trajectory> 
+    <trajectory>
+              <y>150</y>
+        <name>Bank Products</name>
+        <number>539.999999999999980015</number>
+        <status>red</status>
+        <caseTrajectoryID>78</caseTrajectoryID>   
+        <xactID>1406298209563</xactID>
+        <componentTable>caseid-10-bank-products.png</componentTable>
+
+    </trajectory> 
+    <trajectory>
+        
+              <y>200</y>
+        <name>Branch Service</name>
+        <number>4229.99999999999976019</number>
+        <status>red</status>
+        <caseTrajectoryID>79</caseTrajectoryID>   
+        <xactID>1406298209542</xactID>
+        <componentTable>caseid-10-branch-service.png</componentTable>
+    </trajectory> 
+    
+
+
+    <trajectory>
+              <y>50</y>
+        <name>Apply Payment (Invalid)</name>
+        <number>13.850999999999998669</number>
+        <status>green</status>
+        <caseTrajectoryID>80</caseTrajectoryID>   
+        <xactID>1406298209453</xactID>
+        <componentTable>no-components-at-risk.png</componentTable>
+
+    </trajectory> 
+</trajectoryList>
+ 
+      
+      
+      
+</root>      
+      
+      
+      
+      
+      
+      
+

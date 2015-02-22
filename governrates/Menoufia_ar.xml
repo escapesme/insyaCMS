@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Menoufia>
+       
+        <Sheben_Elkom>شبين الكوم</Sheben_Elkom>
+        <Elbagor>الباجور</Elbagor>
+        <Ashmoon> أشمون</Ashmoon>
+        <Elshohadaa> الشهداء</Elshohadaa>
+        <Tala> تلا</Tala>
+        <Quesna> قويسنا</Quesna>
+        <Menouf> منوف</Menouf>
+        <Berket_Elsabea>بـركة السبع</Berket_Elsabea>
+        <Madinat_Elsadat> مدينة السادات</Madinat_Elsadat>
+        <Sers_Ellian>سرس الليان</Sers_Ellian>
+        <Menoufia>المنوفية</Menoufia>
+    </Menoufia>
+</root>

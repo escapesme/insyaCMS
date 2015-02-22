@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        
+        <q_id name="q_id"
+        
+              select_data="com_poll_questions" 
+              select_type="DB"  
+              select_text ="questions"
+              select_value ="id"
+              type="select"  title="Question"/>
+    
+        <answers name="answers"  type="text" title="Answers" />
+        <nums name="nums"  type="text" title="nums" />
+        
+        
+        <enabled name="enabled"  type="enable" title="enable" value='1' />
+    </fields>
+    
+
+
+    <selectfields>
+        <q_id/>
+        
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <q_id  list-width="4.5"/>
+        <answers  list-width="4.5"/>
+        
+        <nums list-width="1"/>
+    </listfields>
+    
+    
+    <group>
+        <com_poll_questions title="questions" parent="yes" />
+        <com_poll_answers title="answers"  />
+        
+    
+        
+    </group>
+    
+    
+    
+
+</root>
+
+
+    
+
+
+
+
+    
+

@@ -1,0 +1,154 @@
+/* 
+    Document   : style
+    Created on : Nov 12, 2012, 6:05:04 PM
+    Author     : ismail
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@font-face {
+    font-family: "K Karman";
+    src: url("fonts/k_kamran.eot"); /* IE 9 */
+    src: url("fonts/k_kamran.eot?") format("eot"), /* IE 6-8 */
+        url("fonts/k_kamran.otf") format("opentype"), /* Other browsers */
+        url("fonts/k_kamran.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Hacen Liner Screen";
+    src: url("fonts/hacen_liner_screen.eot"); /* IE 9 */
+    src: url("fonts/hacen_liner_screen.eot?") format("eot"), /* IE 6-8 */
+        url("fonts/hacen_liner_screen.otf") format("opentype"), /* Other browsers */
+        url("fonts/hacen_liner_screen.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+
+
+.logo{
+    width:  171px;
+    height:  99px;
+    background: url("images/logo.png") no-repeat transparent;
+    margin: auto;
+    position: relative;
+    z-index: 100000000;
+    margin-top:8%; 
+}
+
+.data1,.data2{
+    margin: auto;
+
+
+    position: relative;
+    width: 60%;
+    z-index: 2147483647;
+    direction: rtl;
+    text-align: justify;
+
+    border:3px #d2d2d2 solid; 
+    border-radius: 20px;
+    padding:4px;
+    margin-top: 1%;
+
+
+
+}.data2{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Hacen Liner Screen";
+}
+.red{
+    font-family: "K Karman";
+    font-size: 20px;
+    color: red;
+}
+
+.bg  { 
+    color:#fff;
+
+
+    background: url("images/bg.jpg") repeat-x #fff;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+
+
+    background-size: 100% 100%; 
+    position: absolute
+
+
+}
+.header{
+    width:100%;
+    background: url("images/menu_bg.png")  #fff;
+
+}
+
+ul#countdown{
+     text-align: center
+    
+    
+}
+
+ul#countdown li {
+  
+    display: inline-block;
+    
+    text-align: center;
+    width: 104px;
+    text-align: center
+        ;
+    overflow: hidden;
+}
+ul#countdown li span {
+    color: #1F2225;
+    font-size: 3em;
+    font-weight: bold;
+    height: 108px;
+    line-height: 108px;
+    position: relative;
+}
+ul#countdown li span:before {
+    border-top: 1px solid white;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 31px;
+    width: 100%;
+}
+ul#countdown li p.timeRefDays, ul#countdown li p.timeRefHours, ul#countdown li p.timeRefMinutes, ul#countdown li p.timeRefSeconds {
+    color: #333;
+    font-size: 0.875em;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.timer-area{
+    width:60%;
+    position: relative;
+    z-index: 1000;
+    direction: rtl ;
+    margin: auto
+}
+
+body{
+    direction: rtl
+}
+
+
+
+
+#countdown li{
+    border:3px #d2d2d2 solid; 
+    border-radius: 20px;    
+}
+
+
+
+
+
+
+
+
+

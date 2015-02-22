@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <title name="title"  type="text"  title="title"/>
+        <des name="des"  type="textarea"  title="des "  />
+     
+        
+        <pkgs name="pkgs"  type="list" select_type='DB' 
+              select_data="fiz_lawazim_packages_cat" 
+              select_text='title' select_value='id' 
+              title="pkgs Category" pclass='_50'/>
+     
+      
+        <views_modules name="views_modules"  type="list"  title="views modules " select_data="lawazim>>lawazim;host_its_id>>host_its_id"  pclass="_50" />
+        
+        
+        <save_text name="save_text"  type="editor"  title="save_text"  />
+      
+    </fields>
+    
+
+       
+    <listfields>   
+      
+        <title  list-width="9"/>
+      
+        <des  list-width="1"/>
+    </listfields>
+    
+    
+    
+    
+    
+    
+    
+    
+</root>
+
+
+    
+

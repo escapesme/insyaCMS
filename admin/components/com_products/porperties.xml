@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <title name="title"  type="text"  title="Title" pclass='_50' />
+        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>     
+        <cat_id 
+            name="cat_id" 
+            type="list" 
+            select_type='DB' 
+            select_data="com_products_categories" 
+            select_text='name' 
+            select_value='id'  
+            title="Category"   
+            xref="com_products_xref"  pclass=''
+        
+        />
+        <image name="image"  type="pic" title="Image" pclass='_50' />
+        <th_image name="th_image"  type="pic" title="TH image" pclass='_50'  />  
+        <line1   type="line" />
+        <order name="order"  type="order" title="Order" pclass='_50' />
+        <enabled name="enabled"  type="enable" title="Enable"  pclass='_50' value='1' />
+        <line   type="line" />
+        <plg_priceing name="plg_priceing"  type="plugin"   title="priceing" />
+        <line   type="line" />
+        
+        <des name="des"  type="editor" editor_type="full"  title="Description" />
+
+        
+               
+
+        
+        
+    </fields>
+    
+
+  
+        
+    <listfields >   
+        <title list-width="4"  />
+        <th_image list-width="1.5" />
+        <cat_id list-width="1.5" />
+        <enabled list-width="1.5" />
+        <order list-width="1" />
+    </listfields>
+    
+    
+    
+    
+    
+
+
+
+    <selectfields>
+        <cat_id/>
+        
+        
+        
+    </selectfields>
+   
+   
+    <group>
+        <com_products title="Products" parent="yes" />
+   
+        <com_products_categories title="Categories "  />
+      
+    </group>
+   
+    
+
+    
+    
+
+</root>
+
+
+    
+

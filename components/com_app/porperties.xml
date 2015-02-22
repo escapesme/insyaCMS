@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        <components  name="components"  type="select" select_type='DB' select_data="com_install" select_text='ins_title' select_value='id'  title="Category" pclass='_50'/>
+        <blocksNumber name="blocksNumber"  type="text" value="9"  title="blocks Number"/>
+        <propertiesFile name="propertiesFiel"  type="text"   title="properties File"/>
+        <autoreloadTime name="autoreloadTime"  type="text"   title="auto Reload Time"/>
+    </fields>
+</root>
+
+
+ 

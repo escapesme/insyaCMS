@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Qenna>
+        
+        <Qenna> قنا</Qenna>
+        <Abu_Tesht>أبوتشت</Abu_Tesht>
+        <Armant> ارمنت</Armant>
+        <Esna> اسنا</Esna>
+        <Deshna> دشنا</Deshna>
+        <Qos> قوص</Qos>
+        <Nagaa_Hamadi> نجع حمادى</Nagaa_Hamadi>
+        <Naqada> نقاده</Naqada>
+        <Qaft> قفط</Qaft>
+        <Farshot>فرشوط</Farshot>
+        <Elwaqf>الوقف</Elwaqf>
+    </Qenna>
+</root>

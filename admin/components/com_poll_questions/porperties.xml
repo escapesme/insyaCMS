@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <questions name="questions"  type="text"  title="Question"/>
+        
+        <enabled name="enabled"  type="enable" title="enable" value='1' />
+    </fields>
+    
+
+
+    <selectfields>
+       
+    </selectfields>
+    
+    
+    
+       
+    <listfields>   
+        <questions  list-width="9" />
+        <enabled  list-width="1"/>
+      
+    </listfields>
+    
+    
+    
+    <group>
+        <com_poll_questions title="questions" parent="yes" />
+        <com_poll_answers title="answers"  />
+        
+    
+        
+    </group>
+
+</root>

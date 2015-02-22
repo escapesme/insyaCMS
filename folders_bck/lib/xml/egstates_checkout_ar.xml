@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <egstates>
+        <Aswan data-selectable='no'>أسوان</Aswan>
+        <Assiut data-selectable='no' >أسيوط</Assiut>
+        <Alexandria data-selectable='no' >الإسكندرية</Alexandria>
+        <Ismailia data-selectable='no' >الإسماعيلية</Ismailia>
+        <Luxor data-selectable='no' >الأقصر</Luxor>
+        <RedSea data-selectable='no' > البحر الأحمر	</RedSea>
+        <Beheira data-selectable='no' >البحيرة</Beheira>
+        <Giza>الجيزة</Giza>
+        <Dakahlia data-selectable='no' >الدقهلية</Dakahlia>
+        <Suez data-selectable='no' >السويس</Suez>
+        <Sharqiyya data-selectable='no' >الشرقية</Sharqiyya>
+        <Gharbiyya data-selectable='no' >الغربية</Gharbiyya>
+        <Fayoum data-selectable='no' >الفيوم</Fayoum>
+        <Cairo>القاهرة</Cairo>
+        <Qalyoubia data-selectable='no' >القليوبية</Qalyoubia>
+        <Menoufia data-selectable='no' >المنوفية</Menoufia>
+        <Minya data-selectable='no' >المنيا</Minya>
+        <NewValley data-selectable='no' > الوادي الجديد</NewValley>
+     
+    </egstates>
+</root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+               
+       
+        
+        
+        <width name='width' type='text' title='Width'  pclass="_50"  />
+        <height name='height' type='text' title='Height'  pclass="_50"  />
+     
+        
+        <Lat name='Lat' type='text' title='Latitude' pclass="_50" />
+        
+        
+        <Lng name='Lng' type='text' title='Longitude'  pclass="_50"  />
+           
+           <zoom name='zoom' type='text' title='Zoom Level' value='14'  pclass="_50"  />
+        <markerTitle name='markerTitle' type='text' title='Marker Title' pclass="_50"   />
+        <intro name='intro' type='editor' title='Introduction' />
+        <markerData name='markerData' type='editor' title='Marker Data' />
+        
+
+
+    </fields>
+</root>

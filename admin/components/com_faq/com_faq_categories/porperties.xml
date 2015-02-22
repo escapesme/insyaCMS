@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+        <image  name="image"  type="pic" title="image" />
+        <order name="order"  type="order" title="Order" />
+        <enabled name="enabled"  type="enable" title="enable" value='1' />
+    </fields>
+    
+
+
+
+    
+
+    <group>
+        <com_faq title="FAQ" parent="yes" />
+        <com_faq_categories title="FAQ Categories"  />
+    </group>
+    
+    
+       
+    <listfields  >   
+        <title  list-width="6"/>
+        <image  list-width="2"/>
+        <order  list-width="1"/>
+        <enabled list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

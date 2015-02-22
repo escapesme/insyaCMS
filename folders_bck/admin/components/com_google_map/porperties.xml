@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>  
+        <title name='title'  type='text' title='Title2'
+       
+        />         
+        <des name='des' type='editor' title='DES' />
+        
+        <location name='location' type='text' title='location' pclass='col-4'/>
+                
+        <locationtitle name='locationtitle' type='text' title='locationtitle' pclass='col-4'/>
+        
+
+        <enabled name='enabled' type='enable' title='Enabled' pclass='col-4' value="1"/>
+
+         
+         
+         
+    </fields>  
+    
+    
+    
+    
+    <listfields>   
+        <title  list-width="5.5" />
+        
+        <locationtitle list-width="2" />
+        <des list-width="1" />
+        <enabled list-width="1.5" />
+        
+    </listfields>
+    
+    
+</root>

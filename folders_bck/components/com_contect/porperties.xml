@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <fields>
+        <contect name="contect"  type="select"  
+                 title="Contect" select_data="com_contect" 
+                 select_type="DB"  
+                 select_text ="title"
+                 select_value ="id"
+        />
+        <title name="title"  type="text"  
+                title="Mail subject " 
+        />
+        
+        <formlabel name="formlabel"  type="text"  
+                    title="Mail From Label" 
+        />
+        
+        
+        <formmail name="formmail"  type="text"  
+                    title="Mail From Mail" 
+        />
+          
+          
+        <showmap name='showmap' type='enable' title='showmap'  pclass="_50"  />
+        <width name='width' type='text' title='width'  pclass="_50"  />
+        <height name='height' type='text' title='height'  pclass="_50"  />
+     
+        
+        <Lat name='Lat' type='text' title='Lat' pclass="_50" />
+        
+        
+        <Lng name='Lng' type='text' title='Lng'  pclass="_50"  />
+           
+        <zoom name='zoom' type='text' title='zoom' value='14'  pclass="_50"  />
+        <markerTitle name='markerTitle' type='text' title='marker Title' pclass="_50"   />
+        <intro name='intro' type='editor' title='intro' />
+        <markerData name='markerData' type='editor' title='marker Data' /> 
+          
+          
+        
+    </fields>
+</root>

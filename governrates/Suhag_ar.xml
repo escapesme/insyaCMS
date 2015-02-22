@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Suhag>
+        <Suhag> سوهاج</Suhag>
+        <Ekhmim>إخميم</Ekhmim>
+        <Dar_Elsalam> دار السلام</Dar_Elsalam>
+        <Elbaleena> البلينا</Elbaleena>
+        <Elmaragha>المراغة</Elmaragha>
+        <Elmansheya>المنشأة</Elmansheya>
+        <Gerga> جرجا</Gerga>
+        <Saqalta>ساقلته</Saqalta>
+        <Tama> طما</Tama>
+        <Tahta> طهطا</Tahta>
+        <Juhaina>جهينة</Juhaina>
+    </Suhag>
+</root>

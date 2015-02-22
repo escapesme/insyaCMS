@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+      
+      
+       
+        <authorize_reason name="authorize_reason"  type="text"  title="authorize_reason" pclass='col-12'/>
+        <remarks name="remarks"  type="textarea"  title="remarks" pclass='col-12'/>
+        <updatech name="updatech"  type="button" style="margin-top:28px;float:left" pstyle="float:left !important;"    value="updatech" pclass='col-3 action-left'/>
+
+          
+        
+        
+        
+        <line name="line"  type="line" style="padding-bottom: 64px;
+background: #fff;
+width: 100%;" />
+        <div name="div"  type="div" />
+        <enddiv name="enddiv"  type="enddiv" />
+    </fields>
+    
+    
+
+ 
+    
+   
+</root>
+
+
+    
+

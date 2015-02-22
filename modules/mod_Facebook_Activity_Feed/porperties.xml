@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+        
+          <datatype name="datatype"  type="select" title="type"  select_data="activity>>activity;like-box>>like-box" />
+      
+        
+        <Domain name="Domain"  type="text" title="Domain" default="" />
+        <width name="width"  type="text" title="width" value="300" />
+        <height name="height"  type="text" title="height" value="300" />
+          
+        <style name="style"  type="select" title="style"  
+                  
+               select_data="light>>light;dark>>dark"
+        />
+        <target name="target"  type="select" title="target" 
+                select_data="_blank>>_blank;_top>>_top;_parent>>_parent"
+
+              
+
+        />
+          
+        <font name="font"  type="select" title="font" 
+        
+              select_data="arial>>arial;lucida grande>>lucida grande;segoe ui>>segoe ui;tahoma>>tahoma;trebuchet ms>>trebuchet ms;verdana>>verdana"
+
+        />
+     
+          
+       
+      
+        <borderColor name="borderColor"  type="color" title="border Color"  />
+        <Showheader name="Showheader"  type="select" title="Show header"  select_data="true>>true;false>>false" />
+        
+        <ShowFaces name="ShowFaces"  type="select" title="Show Faces"  select_data="true>>true;false>>false" />
+        <Showstream name="Showstream"  type="select" title=" Show stream"  select_data="true>>true;false>>false" />
+        
+       
+        
+    </fields>
+</root>
+
+
+    
+

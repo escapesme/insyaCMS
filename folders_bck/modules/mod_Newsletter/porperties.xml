@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+       
+      
+        <group 
+            name="group" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_newsLetter_group" 
+            select_text='title' 
+            select_value='id'  
+            comment="Select the group"
+            title="Group"/>
+        
+        
+        <emailTemplate 
+            name="emailTemplate" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_mailsTemplates" 
+            select_text='title' 
+            select_value='id' 
+            comment="Select the template for the e-mail" 
+            title="Email Template"/>
+        
+        
+    </fields>
+</root>
+
+
+    
+

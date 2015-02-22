@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    
+    
+    
+    <fields>
+        
+        <title 
+
+            name="title" 
+            
+            type="select" 
+            select_type='DB' 
+            select_data="com_contect" 
+            select_text='title' 
+            select_value='title'  
+            title="title"  
+            pclass='_50'
+
+
+        />
+        
+
+        <data name="data"  type="editor" title="message" />
+       
+    </fields>
+    
+    
+   
+   
+
+    <selectfields>
+      
+                
+        <title/>      
+    </selectfields>
+    
+    
+    
+    
+    <group>
+        <com_contect />
+        <com_contect title='Contect' parent='yes'/>
+        <com_contect_messages title='Messages'  />
+    </group>
+       
+    <listfields orderType='DESC'>   
+        <title  list-width="5"/>
+        <data  list-width="5"/>
+     
+    </listfields>
+
+
+
+
+
+    
+</root>

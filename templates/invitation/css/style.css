@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 1, 2014, 3:41:31 PM
+    Author     : eScapes
+*/
+
+@font-face
+{
+    font-family: GE_SS;
+    src: url(fontes/GE_SS_Two_Medium.otf);
+}
+
+
+body{
+
+    background: url("images/bg.png") no-repeat center top;
+}
+.mainData{
+    width: 990px;
+    margin: auto;
+}
+.title{
+    margin-top: 325px;
+    width: 100%;
+    text-align: center;
+
+    font-size:  30px;    font-family: GE_SS;
+}
+
+
+.note1,.note2,.title1
+,.title2{
+
+    width:45%;
+    float: left; font-size:  16px;  
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 30px;
+    clear: left;
+}
+
+.note1,.title1{
+    float: right;
+    font-family: Tahoma;
+    direction: rtl;
+    clear: right;
+
+}
+.form{width: 100%;
+      text-align: center;
+      padding-top: 42px;
+      clear: both;
+}.form_row{
+    display: inline-block;
+}
+.invitationBT{
+    background: url("images/login_blue.png") no-repeat center top;
+    height:50px;
+    width: 50px;
+    border: none;
+    font-size: 0.1;position: relative;
+top: -7px;
+    color: transparent;
+    cursor: pointer;
+    background-size: 100%; 
+}.invitationBT:hover{
+    background: url("images/login_red.png") no-repeat center top;    background-size: 100%; }
+.invitationcode{
+    height:50px;
+    width:200px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid #2D5672;
+    font-size: 28px;  text-align: center;
+    font-family: Tahoma; overflow: hidden
+
+}

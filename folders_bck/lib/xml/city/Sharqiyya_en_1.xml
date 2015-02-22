@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <Sharqiyya> 
+        <Zagazig>Zagazig</Zagazig> 
+        <Abu_Hamad>Abu Hamadد</Abu_Hamad> 
+        <Abu_Kabir>Abu Kabir</Abu_Kabir>
+       
+        <Elhusinia>Elhusinia</Elhusinia>
+        <Deyarb_Negm>Deyarb Negm</Deyarb_Negm>
+        <Fakus> Fakus</Fakus>
+        <Kafr_Sakr>Kafr Sakr</Kafr_Sakr>
+        <Menya_Elkamh>Menya Elkamh</Menya_Elkamh>
+        <Hehia>Hehia</Hehia>
+        <Elsalheya>Elsalheya</Elsalheya>
+        <Mashtol>Mashtol</Mashtol>
+        <Belbeis>Belbeis</Belbeis>
+        <Elibrahemya>Elibrahemya</Elibrahemya>
+        <awlad_Sakr>Awlad Sakr</awlad_Sakr>
+        <Elqenayat>Elqenayat</Elqenayat>
+        <Mashtol_Elsouq>Mashtol Elsouq</Mashtol_Elsouq>
+  
+    </Sharqiyya>
+</root>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    
+   
+    <fields>
+       
+        <com_title name="com_title"  type="text"  title=" Title" pclass='col-10'/>
+        <enabled name="enabled"  type="enable" title="enable" value='1'  pclass='col-2' />
+      
+        
+        <com_name name="com_name"  type="text"  title="name" pclass='col-6'/>
+        
+        
+         
+        <user_id 
+           
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='name' 
+            select_value='id'  
+            title="user" 
+            pclass='col-6' 
+            
+         
+            
+        />
+        <com_message name="com_message"  type="editor"  title="message" pclass='col-10'/>
+        <line1  type="line" style='background-color:transparent' /> 
+
+
+    </fields>
+    
+
+
+
+    
+    
+
+    <group>
+     
+        
+    </group>
+   
+    
+    
+    
+       
+    <listfields  >   
+        <com_title list-width="4"/>
+        <com_message list-width="2"/>
+        <com_name list-width=""/>
+        
+        <user_id list-width="1"/>
+        <enabled list-width="2"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,68 @@
+/* 
+    Document   : style
+    Created on : 14/03/2012, 1:08:16 PM
+    Author     : ismail
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+
+.meuns_p{
+    top: 0px;
+    float: left;
+
+    padding: 2px;
+    border: 1px #EEE solid;
+    margin: 2px;
+
+    display: block;
+    width: 100%;
+
+
+}
+.meuns_p.act{
+
+
+    background: #EEE;
+}
+
+
+.meuns_ch{
+    display: none ;
+}
+
+
+
+
+
+.allmenus_ch{
+    width: 60%;
+    float:right;
+    background: #eee;
+
+    margin: 2px;
+    height:100%
+
+
+
+}
+.allmenus_ch select{
+    height: 170px;
+    margin-top: 3px
+}.allmenus_p
+{
+    width: 35%;
+
+    float: left;
+
+}
+
+#manu__selectall{
+    float:left;
+    width:10%
+}
+.propreties_p{
+    width: 45%;
+}

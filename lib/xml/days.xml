@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template,  choose Tools | Templates
+and open the template in the editor.
+-->
+
+<days>
+     <sat >Saturaday</sat>
+    <sun >Sunday</sun>
+    <mon >Monday</mon>
+    <tue >Tuesday</tue>
+    <wed >Wednesay</wed>
+    <thu >Thursday</thu>
+    <fri >Friday</fri>
+</days>

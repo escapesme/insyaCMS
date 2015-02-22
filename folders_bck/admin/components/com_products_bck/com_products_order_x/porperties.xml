@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+ 
+
+        <name  name="name"  type="text" title="Name" pclass='_100'  />
+        
+        
+          
+        <phone  name="phone"  type="text" title="phone" pclass='_50'  />
+        <email  name="email"  type="text" title="email" pclass='_50'  />
+        
+        
+        <address  name="address"  type="textarea" title="address" pclass='_50'  />
+        <other  name="other"  type="textarea" title="other" pclass='_50'  />
+        <orderData  name="orderData"  type="readData" title="Order Data"   />
+
+    </fields>
+    
+
+
+
+    
+    
+
+  
+    <group>
+        <com_products_order title="Order"  />
+        <com_products title="Products" parent="yes" />
+        <com_products_price title=" Price"  />
+        <com_products_categories title="Categories "  />
+        <plg_shipping title="Shipping"  />
+        <plg_shipper title="Shipper"  />
+        <plg_coupon title="Create Coupon"  />
+         <plg_shipping_setting title="Shipping Setting"  />
+        <com_products_setting title=" Setting"  />
+        <com_order_status title="Order Status"  />
+    </group>
+   
+    
+       
+    <listfields>   
+        <name />
+        <phone />
+        <email />
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    <fields>
+         <q_id name="q_id"
+        
+              select_data="com_poll_questions" 
+              select_type="DB"  
+              select_text ="questions"
+              select_value ="id"
+              type="select"  title="Question"/>
+    </fields>
+</root>
+
+
+    
+
