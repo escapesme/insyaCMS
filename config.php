@@ -3,19 +3,19 @@
 
 
 
-$setting["db_name"] = 'escapesm_qrecycle';
-$setting["db_user"] = 'escapesm_sms';
-$setting["db_pass"] = 'eshost';
+$setting["db_name"] = 'escapesm_repository';
+$setting["db_user"] = 'escapesm_repo';
+$setting["db_pass"] = 'repo$5152';
 $setting["db_host"] = 'localhost';
 
 
 
 
-$setting["siteTitle"] = 'Faiz-e-Haakimi';
+$setting["siteTitle"] = 'E-Scapes Main Repository';
 $setting["admin_mail"] = 'info@e-scapes.me';
 
-$setting["mailTitle"] = 'Faiz-e-Haakimi';
-$setting["site_path"] = 'http://www.faizehaakimi.com';
+$setting["mailTitle"] = 'E-Scapes';
+$setting["site_path"] = 'http://www.e-scapes.me';
 
 $setting["succeedClass"] = "succee";
 
