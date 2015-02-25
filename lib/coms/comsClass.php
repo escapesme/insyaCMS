@@ -56,7 +56,7 @@ class comsClass {
         $this->project = new projectClass($this->lib);
         $this->faiz = new faizClass($this->lib);
         $this->getData = new getData($this->lib);
-        $this->getMobileData = new getMobileData($this->lib);
+      //  $this->getMobileData = new getMobileData($this->lib);
     }
 
     function getExtensionLastDate($ids) {

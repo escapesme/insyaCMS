@@ -3,9 +3,9 @@
 
 
 
-$setting["db_name"] = 'escapesm_repository';
-$setting["db_user"] = 'escapesm_repo';
-$setting["db_pass"] = 'repo$5152';
+$setting["db_name"] = 'insya';
+$setting["db_user"] = 'root';
+$setting["db_pass"] = '';
 $setting["db_host"] = 'localhost';
 
 
