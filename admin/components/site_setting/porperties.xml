@@ -18,7 +18,7 @@ and open the template in the editor.
         <lang name="lang"  title="language"   type="select" select_data="ar>>ar;en>>en" value='ar' pclass='col-6' />
         <admin_lang name="admin_lang"   title="Admin language"   type="select" select_data="en>>en"  pclass='col-6'/>
         
-           <line1  type="line" style='background-color:transparent' /> 
+        <line1  type="line" style='background-color:transparent' /> 
 
         <link_type name="link_type"  type="hidden"  title="SEO friendly links" value="1" />
  
@@ -27,8 +27,7 @@ and open the template in the editor.
         <facebookappid name="facebookappid"   title="facebook appid"   type="text"  pclass='col-4'  />
            
                              
-             <site_status   
-            
+        <site_status   
             type="select" 
             select_type='DB' 
             select_data="sys_site_status" 
@@ -40,7 +39,8 @@ and open the template in the editor.
         
         />
         
-        
+                <platform name="platform"   title="platform"   type="select" select_data="all>>all;desktop>>desktop;mobile>>mobile" pclass='col-4'  />
+
         <site_meta name="site_meta"  type="textarea"  title="Meta Description"  />
         
         <site_keywords name="site_keywords"  type="textarea"  title="Meta Keywords"  />
@@ -61,7 +61,7 @@ and open the template in the editor.
         <offline_morecss name="offline_morecss"  type="textarea"  title="Offline More CSS"  />
         <Offline_blockEnd type='endblock'  name='Offline_blockEnd' />
                   
-             
+
 
         
         

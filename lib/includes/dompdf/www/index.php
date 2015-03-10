@@ -80,7 +80,7 @@ nested</li>
 <li style="list-style-image: url('images/star_02.gif');">ordered lists are
 currently unsupported.</li>
 
-<li style="list-style-image: url('images/star_03.gif');'">absolute &amp; relative
+<li style="list-style-image: url('images/star_03.gif');">absolute &amp; relative
 positioning and floats do not work, yet.</li>
 
 <li style="list-style-image: url('images/star_04.gif');">not particularly

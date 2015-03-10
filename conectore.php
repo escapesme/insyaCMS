@@ -85,15 +85,9 @@ $header = '
 $myurl = "";
 
 
+
+
 ini_set("display_errors", 0);
-error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
-
-
-
-
-
-
-ini_set("display_errors", 1);
 error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
 require_once("lib/libs.php");
 
@@ -378,6 +372,18 @@ if (isset($_GET['alias']) && $_GET['alias'] == '404') {
     $lib->front->getmobilePage();
 } else if ($lib->util->siteSetting['offline'] != "1") {
 
+
+
+
+    if ($lib->util->siteSetting['platform'] == "desktop") {
+        $lib->front->getpage();
+    } else if ($ismobile || $lib->util->siteSetting['platform'] == "mobile") {
+        $lib->front->getmobilePage();
+    } else {
+        $lib->front->getpage();
+    }
+
+
     /*
 
       $ismobile = check_user_agent('mobile');
@@ -385,7 +391,7 @@ if (isset($_GET['alias']) && $_GET['alias'] == '404') {
       $lib->front->getmobilePage();
       } else {
      */
-    $lib->front->getmobilePage();
+  //  $lib->front->getmobilePage();
     //  $lib->front->getpage();
     // }
 
@@ -458,7 +464,7 @@ function check_user_agent($type = NULL) {
 
 <div id="fb-root"></div>
 
-<script>(function (d, s, id) {
+<script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id))
             return;
