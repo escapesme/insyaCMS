@@ -5,9 +5,15 @@ and open the template in the editor.
 -->
 <root>
 
+    
+    <type>useres</type>
+    
+    <title>useres</title>
     <fields>
       
-      
+     
+        
+        
        
         <authorize_reason name="authorize_reason"  type="text"  title="authorize_reason" pclass='col-12'/>
         <remarks name="remarks"  type="textarea"  title="remarks" pclass='col-12'/>

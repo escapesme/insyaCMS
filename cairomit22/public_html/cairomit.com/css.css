@@ -1,0 +1,75 @@
+header .top {
+
+    height:67px ;
+    width:100%;
+
+}
+
+
+.logo img{
+
+    width:180px;
+}
+.all{
+    width: 1024px;
+    margin: auto;
+}
+footer{
+    background: #333
+        ;
+    color: #eee;
+    height:150px;
+    width:80%;
+    padding:10%;
+
+}
+h1,h2{
+    width:100%;
+    text-align: center;
+}
+.toright{
+    direction: rtl;
+    margin: 5px;
+    float: right;
+    clear: both
+}
+footer label{
+    font-size: 130%;
+    margin-left: 20px;
+    text-shadow: 1px 1px 5px #000; 
+    min-width: 200px;
+    display: block;
+}
+
+
+.dtol{
+    direction: ltr;
+}
+
+.data{   
+    background: #eee;
+    color:#333;
+    text-align: right;
+    direction: rtl;
+    width:80%;
+    padding:2% 10%;
+
+}
+
+.main{
+
+    margin-top: -207px;
+}
+
+li{
+    font-size: 130%;
+    text-shadow: 1px 1px 5px #fff; 
+}
+
+.copyright{
+    text-align: center;
+    width:100%;
+    color: #333;
+    padding: 10px;
+    font-size: 60% 
+}
