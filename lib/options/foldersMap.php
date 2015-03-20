@@ -22,6 +22,7 @@ class foldersMap {
     var $admin_modules_folder = "modules/";
     var $admin_languages_folder = "languages/";
     var $admin_plugins_folder = "plugines/";
+    var $admin_plugins_users_folder = "plugines/typ_users/";
     var $fornt_includes_folder = "includes/";
     var $fornt_upload_images = "/uploads/images/";
 

@@ -1006,7 +1006,7 @@ class htmlClass {
 
 
                 case "DIR":
-                    $vdata = $this->util->readFilesNames($selectData, $select_field_text);
+                    $vdata = $this->lib->files->readFilesNames($selectData, $select_field_text,$fild['perfix']);
                     asort($vdata);
                     foreach ($vdata as $value) {
                         $out.="<option " . $this->isSelect($inputdefault, $value) . " >" . $value . "</option>";

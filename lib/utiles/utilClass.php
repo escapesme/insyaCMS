@@ -505,6 +505,13 @@ class utilClass {
         return $data;
     }
 
+
+    
+    
+    // <editor-fold defaultstate="collapsed" desc="moved">
+    
+    
+    
     function getModurl($remov) {
 
         $data = "/";
@@ -583,10 +590,15 @@ class utilClass {
         $returndata = "";
 //echo $this->variables->url_view ;
 
-        if ($type == "") {
 
 
 
+
+        if ($type == "usersplugin") {
+
+
+            $returndata = $this->foldersMap->admin_plugins_users_folder . "/" . $_GET[$this->variables->url_view];
+        } else if ($type == "") {
             $returndata = $this->foldersMap->admin_components_folder . $this->parent . "/" . $_GET[$this->variables->url_view];
         } else if ($type == "module") {
             
@@ -654,7 +666,7 @@ class utilClass {
 
         $xml = simplexml_load_file($file);
 
-
+        echo $file;
 
 
 
@@ -691,7 +703,7 @@ class utilClass {
     }
 
     function readXmlDataString($file, $tag) {
-       
+
         try {
             $xml = simplexml_load_string(file_get_contents($file));
             $data = array();
@@ -716,7 +728,7 @@ class utilClass {
                 }
             }
         } catch (Exception $e) {
-            echo ">>>".$e->getMessage();
+            echo ">>>" . $e->getMessage();
         }
 
 
@@ -845,9 +857,7 @@ class utilClass {
         return $data;
     }
 
-    function thisTable() {
-        return $_GET[$this->variables->url_view];
-    }
+ 
 
     function getFromProperits($pro) {
 
@@ -956,6 +966,17 @@ class utilClass {
         }
         return $data;
     }
+    
+        
+    // </editor-fold>
+
+
+
+
+   function thisTable() {
+        return $_GET[$this->variables->url_view];
+    }
+
 
     function getProperty($name, $type = "") {
         $returnData = "";
@@ -1112,6 +1133,23 @@ class utilClass {
 
 
 
+    
+    
+    
+
+    function getLangVar($var, $file) {
+
+
+        $title = $this->getLanguageWord($var, $file);
+
+        return $title;
+    }
+
+    
+    
+    
+    
+    
     function getLangWord($type, $word) {
 
         $file = "";
@@ -1132,15 +1170,6 @@ class utilClass {
         $arr = $this->readXmlvalue($file, $word);
         return $arr;
     }
-
-    function getLangVar($var, $file) {
-
-
-        $title = $this->getLanguageWord($var, $file);
-
-        return $title;
-    }
-
     function getLanguageWord($word, $type = "") {
         $link = "";
 
@@ -1171,6 +1200,8 @@ class utilClass {
         return $arr;
     }
 
+    
+    
     function updatCodes($data) {
 
         $myvaltuitle = explode("__", $data);
@@ -1376,9 +1407,6 @@ class utilClass {
         return $returnData;
     }
 
-    
-    
-    
     function getPlugins($id, $table) {
         global $lib;
 

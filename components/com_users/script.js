@@ -36,51 +36,6 @@ function checkPassword() {
 $(function() {
 
 
-
-
-
-
-
-
-    $(".resedit").click(function() {
-
-        getAjax("res/res_actions", "resid=" + $(this).data("resid") + "&status=edit", function(data) {
-
-
-            window.location.href = '/rex/';
-
-
-
-        });
-
-
-
-    })
-    $(".resdelete").click(function() {
-
-
-        getAjax("res/res_actions", "resid=" + $(this).data("resid") + "&status=delete", function(data) {
-
-
-
-        });
-
-    })
-
-    $(".newres").click(function() {
-        var name = $(this).data("seassionname");
-        var value = $(this).data("seassionvalue");
-
-        createSesstion(name, value, function() {
-
-            window.location.href = '/rex/';
-
-
-        })
-    })
-
-
-
     $(".message .msg").hide("slow");
     $(".usersreg .send.submit").click(function() {
         var my = $(this);
@@ -169,23 +124,23 @@ $(function() {
     updateData();
 
 
-
+        
 
 
     $(document).on("click", ".forgotpassword_send", function() {
-
-
-
-
-        getAjax("coms/users/forgotpassword", "settings_id=" + $(".settings_id").val() + "&email=" + $("input.forgotpassword_email").val(), function(data) {
+        
+        
+  
+        
+        getAjax("coms/users/forgotpassword",  "settings_id=" + $(".settings_id").val() +"&email=" +  $("input.forgotpassword_email").val(), function(data){
             $(data).show();
-
-
-
-
-
+            
+            
+            
+            
+            
         });
-
+        
     })
 
     $(document).on("click", ".updatePassword", function() {

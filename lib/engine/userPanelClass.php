@@ -20,6 +20,7 @@ class userPanelClass {
 
     var $panleheader = array();
     var $panleData = array();
+    var $plgData = array();
 
     function getsetting($pro) {
 
@@ -372,10 +373,57 @@ class userPanelClass {
         return $retData;
     }
 
-    function productData($d) {
-        
+    // <editor-fold defaultstate="collapsed" desc="new">
+
+
+    function getadmingroups() {
+        global $lib;
+
+        foreach ($this->plgData as $h) {
+            $l = $lib->foldersMap->admin_plugins_folder . "typ_users/" . $h['ins_alias'];
+
+            if (is_dir($l)) {
+
+                $r[$h['ins_alias']] = Array(
+                    "data_value" => "usersplugin",
+                    "title" => $h['ins_title'],
+                    "parent" => "usersplugin"
+                );
+            }
+        }
+
+
+        return $r;
     }
 
- 
+    function getUsrsData() {
+        global $lib;
 
+        $r = "<div class='datatabs'><ul class='tabstitles'>";
+        foreach ($this->plgData as $h) {
+            $r .="<li  data-show='" . $h['ins_alias'] . "'>" . $lib->language->getText("com_install", "ins_title", $h['id'], $h['ins_title']) . "</li>";
+        }
+
+
+        $r .= "</ul><div class='tabsbodys'>";
+        foreach ($this->plgData as $h) {
+            $r .="<div class='tabsbody " . $h["ins_alias"] . "' >" . $lib->plugins->importPlugin($h["ins_alias"], "", "", "typ_users") . "</div>";
+        }
+        $r .= "</div>"
+                . "</div>";
+        return $r;
+    }
+
+    function updatePlugins() {
+        global $lib;
+        $plugins = $lib->db->get_data("com_install", "*", "ins_type='plugin' and  type='typ_users'");
+
+        foreach ($plugins as $p) {
+            array_push($this->plgData, $p);
+            //echo $data;
+        }
+        // </editor-fold>
+    }
+
+    //  function getplugin
 }

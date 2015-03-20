@@ -23,6 +23,7 @@ require_once('options/DBTables.php');
 require_once('admin/adminClass.php');
 
 
+require_once('data/filesClass.php');
 
 require_once('data/languageClass.php');
 
@@ -58,7 +59,7 @@ class Libs {
      */
     public $config;
 
-  /**
+    /**
      * @var  html\htmlClass
      */
     public $forms;
@@ -149,6 +150,11 @@ class Libs {
     public $sms;
 
     /**
+     * @var  data\files
+     */
+    public $files;
+
+    /**
      * @var  data\languageClass
      */
     public $language;
@@ -173,7 +179,8 @@ class Libs {
         $this->db = new utiles\dbClass($this->config->setting['db_host'], $this->config->setting['db_user'], $this->config->setting['db_pass'], $this->config->setting['db_name']);
         $this->util = new utiles\utilClass($this);
         $this->plugins = new engine\pluginsClass($this->config, $this->util, $this->foldersMap);
-        $this->forms = new   html\htmlClass($this);;
+        $this->forms = new html\htmlClass($this);
+        ;
         $this->users = new engine\usersClass($this);
         $this->userPanel = new engine\userPanelClass($this);
 
@@ -193,12 +200,19 @@ class Libs {
         $this->sms = new engine\smsClass($this);
 
         $this->language = new data\languageClass($this);
+        $this->files = new data\filesClass($this);
+
+
+
+
 
 
         $this->rss = new utiles\rssClass($this->db, $this->util);
         $this->front = new engine\frontEngClass($this);
 
         $this->coms = new coms\comsClass($this);
+
+
 
 
 

@@ -8,7 +8,15 @@
  * 
  */
 
-global $lib;echo $lib->adminEng->getComponentMain();
+global $lib;
+
+$lib->userPanel->updatePlugins();
+
+
+$this->moreToGroup = $lib->userPanel->getadmingroups();
+
+
+echo $lib->adminEng->getComponentMain();
 ?>
 
 

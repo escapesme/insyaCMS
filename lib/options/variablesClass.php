@@ -41,6 +41,9 @@ class variablesClass {
     var $admin_select_all = "Select All";
     
     var $admin_datafields_prfx = "datafields";
+        var $url_ides = "";
+
+    
 
 }
 

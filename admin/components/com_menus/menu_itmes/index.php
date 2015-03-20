@@ -1,16 +1,5 @@
 <?php
-/*
- * Project :Scape
- * Version 2.0.1 2012
- * Copyright E-Scapes IT Solutions
- * Authors: IMI, AD, AMV
- * 
- */
-
-
 global $lib;
-
-
 
 $lib->adminEng->addproreties = "add";
 $lib->adminEng->proretiesType = "menu";
@@ -19,17 +8,16 @@ $mode = $_GET['mode'];
 $setpes = $_GET['steps'];
 
 
+
 if ($mode == "add" && $setpes != "step2") {
     echo getcommponent();
 } else if ($mode == "add" && $setpes == "step2") {
 
     $lib->adminEng->proretiesdir = $_GET['com'];
-    
+
     echo $lib->adminEng->getComponentMain("", "", "add");
 
     echo "<script>$(function(){ chDataCom('" . $lib->util->getmyurl("admin", "steps") . "steps=step1" . "') })</script>";
-    
-    
 } else {
 
 
@@ -43,8 +31,8 @@ if ($mode == "add" && $setpes != "step2") {
 
         $d = $lib->db->get_row('menu_itmes', "", "id=" . $_GET[$lib->variables->url_id]);
 
-        
-        
+
+
         //   print_r($d['mei_main']); //mei_main
         $comtitle = $d['mei_main'];
 
@@ -75,6 +63,34 @@ if ($mode == "add" && $setpes != "step2") {
 
 
     echo $lib->adminEng->getComponentMain();
+}
+
+function getcommponent() {
+    global $lib;
+    $mdata = $lib->db->get_data("com_install", "", " ins_type='component' and `delete`=0");
+    $dir = "../" . $lib->foldersMap->fornt_components_folder;
+
+    $foldert = $lib->util->readFilesNames($dir, "dir");
+    $file = $lib->util->is_thatimage($fulldir . "/" . $d . ".png");
+
+    $returndata = "<div class='block-border'> <div class='block-content'><ul class='shortcut-list'>";
+
+    $returndata.="<li><a href='" . $lib->util->getmyurl("admin", "steps") . "steps=step2&com=com_link' ><img src='" . $file . "'/>Link</a></li>";
+
+
+    foreach ($foldert as $d) {
+        $fulldir = $dir . "/" . $d;
+        $file = $lib->util->is_thatimage($fulldir . "/" . $d . ".png");
+
+
+        $dtitle = str_replace("com_", "", $d);
+
+        $dtitle = str_replace("_", " ", $dtitle);
+        $returndata.="<li><a href='" . $lib->util->getmyurl("admin", "steps") . "steps=step2&com=" . $d . "' ><img src='" . $file . "'/>" . $dtitle . "</a></li>";
+    }
+
+    $returndata.="</ul></div></div>";
+    return $returndata;
 }
 ?>
 <script>

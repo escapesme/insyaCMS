@@ -5,16 +5,9 @@
  * and open the template in the editor.
  */
 
-function plg_comments($data, $lang) {
+function plg_update_user_data($data, $lang) {
     global $lib;
-
-
-
-
-
-
-
-
+    $returnData ="888888";
     return $returnData;
 }
 

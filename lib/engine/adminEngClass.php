@@ -34,6 +34,7 @@ class adminEngClass {
     var $parent = "";
     var $proretiesdir = "";
     var $addToForm = "";
+    var $moreToGroup;
     var $table_name = "";
     var $changEditNames = null; // if you wont change edit Value  [Names    n1;n2]
     var $changEditValues = null; // if you wont change edit Value [Values    v1;v2]
@@ -119,8 +120,9 @@ class adminEngClass {
 
         if ($_GET[$this->url_mode] != "") {
 
-            if ($_GET[$this->url_mode]!="listBody"){
-            $title .="<div class='subtitle'>" . $_GET[$this->url_mode] . "</div>";}
+            if ($_GET[$this->url_mode] != "listBody") {
+                $title .="<div class='subtitle'>" . $_GET[$this->url_mode] . "</div>";
+            }
         }
         if (isset($_GET['parent'])) {
             $title = $group[$this->getMenuVar($this->url_view)]['title'];
@@ -193,37 +195,46 @@ class adminEngClass {
         $mainfolder = "";
 
 
+        $parent = $_GET['parent'];
 
 
 
-        if ($myview != null && $myview != "") {
-            $mainfolder = $this->foldersMap->admin_components_folder . $this->parent . "/" . $myview;
+
+        if ($this->parent == "usersplugin") {
+
+            $mainfolder = $this->foldersMap->admin_plugins_users_folder . "/" . $myview;
         } else {
 
-            $mainfolder = $this->foldersMap->admin_components_folder . "home";
-        };
+
+            if ($myview != null && $myview != "") {
+                $mainfolder = $this->foldersMap->admin_components_folder . $this->parent . "/" . $myview;
+            } else {
+                $mainfolder = $this->foldersMap->admin_components_folder . "home";
+            };
+        }
+
+
+        echo $mainfolder;
+
 
         $mainfile = $mainfolder . "/index.php";
 
         if (is_file($mainfile)) {
 
-            if (is_file($this->util->thislink() . "/script.js")) {
-                $r.= "<script src= \"" . $this->util->thislink() . "/script.js\" ></script>";
+            if (is_file($this->util->thislink($this->parent) . "/script.js")) {
+                $r.= "<script src= \"" . $this->util->thislink($this->parent) . "/script.js\" ></script>";
             }
 
-
-
-            if (is_file($this->util->thislink() . "/functions.php")) {
-
-
+            if (is_file($this->util->thislink($this->parent) . "/functions.php")) {
 
                 ob_start();
-                include ($this->util->thislink() . "/functions.php");
+                include ($this->util->thislink($this->parent) . "/functions.php");
                 $r.= ob_get_clean();
             }
 
-            if (is_file($this->util->thislink() . "/style.css")) {
-                $r.= "  <link type=\"text/css\" rel=\"stylesheet\" href= \"" . $this->util->thislink() . "/style.css\" /> ";
+            if (is_file($this->util->thislink($this->parent) . "/style.css")) {
+
+                $r.= "  <link type=\"text/css\" rel=\"stylesheet\" href= \"" . $this->util->thislink($this->parent) . "/style.css\" /> ";
             }
 
 
@@ -266,8 +277,14 @@ class adminEngClass {
         }
 
 
+        if ($this->parent == "usersplugin") {
+            $xmlfile = $xmlmorelink . $this->foldersMap->admin_plugins_users_folder . "/" . $url . "/" . $porpertiesFile . ".xml";
 
-        $xmlfile = $xmlmorelink . $this->foldersMap->admin_components_folder . $this->parent . "/" . $url . "/" . $porpertiesFile . ".xml";
+            $group = $this->util->readXmlAttributes($xmlmorelink . $this->foldersMap->admin_components_folder . "/com_users/" . $porpertiesFile . ".xml", $this->variables->xml_group);
+        } else {
+            $xmlfile = $xmlmorelink . $this->foldersMap->admin_components_folder . $this->parent . "/" . $url . "/" . $porpertiesFile . ".xml";
+            $group = $this->util->readXmlAttributes($xmlfile, $this->variables->xml_group);
+        }
 
 
 //readXmlAttributes
@@ -281,7 +298,6 @@ class adminEngClass {
 
         $shildern = $this->util->readXmlnames($xmlfile, $this->variables->children);
 
-        $group = $this->util->readXmlAttributes($xmlfile, $this->variables->xml_group);
 
         $Cshow = $this->util->readXmlAttributes($xmlfile, $this->variables->xml_cshow);
         $options = $this->util->readXmlAttributes($xmlfile, $this->variables->xml_options);
@@ -301,7 +317,18 @@ class adminEngClass {
             $mychiled = $shildern[1];
         }
         $admin->my_title = $this->getTitle($group);
+
+        if (is_array($this->moreToGroup)) {
+
+            $group = array_merge($group, $this->moreToGroup);
+        }
+
         $admin->group = $group;
+
+        
+
+        
+        
 
         $admin->addToForm = $this->addToForm;
         $admin->moreHtml = $moreHtml;
@@ -317,7 +344,7 @@ class adminEngClass {
 
 
         if ($xmlmorelink == "admin/") {
-            $m2link="";
+            $m2link = "";
         }
 
 
@@ -331,16 +358,14 @@ class adminEngClass {
 
 
 
-            $opj_properties = $this->returnporteries($porpertiesFile,$m2link);
-           
-            
+            $opj_properties = $this->returnporteries($porpertiesFile, $m2link);
+
+
             $admin->addproreties = $this->addproreties;
             $admin->proreties = $opj_properties;
-
-        
         } else if ($mode == "edit") {
 
-            $opj_properties = $this->returnporteries($porpertiesFile,$m2link);
+            $opj_properties = $this->returnporteries($porpertiesFile, $m2link);
 
             $admin->addproreties = $this->addproreties;
             $admin->proreties = $opj_properties;
@@ -361,8 +386,8 @@ class adminEngClass {
         }
 
 
-        
-         
+
+
         $listoptions = $this->util->readtagAttributes($xmlfile, $this->xml_listfields);
 
 //print_R($table_properties);
@@ -376,8 +401,8 @@ class adminEngClass {
 
         $admin->selectlist = $this->util->readXmlnames($xmlfile, $this->xml_selectfields);
         $admin->selectlistoptions = $this->util->readXmlAttributes($xmlfile, $this->xml_selectfields);
-       // print_R(   $admin->selectlistoptions);
-        
+        // print_R(   $admin->selectlistoptions);
+
         $admin->list = $this->util->readXmlAttributes($xmlfile, $this->xml_listfields);
         $admin->plugins = $this->util->readXmlAttributes($xmlfile, $this->variables->xml_plugins);
 
@@ -420,29 +445,27 @@ class adminEngClass {
             $porpertiesFile = $this->porpertiesFile;
         }
 
-/* @var $lib  \libs\libs */
-global $lib;
+        /* @var $lib  \libs\libs */
+        global $lib;
 
         if ($this->proretiesType == "menu") {
 
-            
+
             $xmlfilepro = $link . $this->foldersMap->fornt_components_folder . $this->proretiesdir . "/" . $porpertiesFile . ".xml";
-            $xmlfilepro=$lib->util->siteSetting[site_link]."/" .$xmlfilepro;
-            $opj_properties = $this->util->readXmlAttributes($xmlfilepro, $this->xml_fldestsgeTag,"../");
-            
-            
+            $xmlfilepro = $lib->util->siteSetting[site_link] . "/" . $xmlfilepro;
+            $opj_properties = $this->util->readXmlAttributes($xmlfilepro, $this->xml_fldestsgeTag, "../");
         } else if ($this->proretiesType == "module") {
-            $xmlfilepro = $lib->util->siteSetting[site_link] ."/" . $this->foldersMap->fornt_modules_folder . $this->proretiesdir . "/" . $porpertiesFile . ".xml";
-             
-            
+            $xmlfilepro = $lib->util->siteSetting[site_link] . "/" . $this->foldersMap->fornt_modules_folder . $this->proretiesdir . "/" . $porpertiesFile . ".xml";
+
+
             $opj_properties = $this->util->readXmlAttributes($xmlfilepro, $this->xml_fldestsgeTag);
         }
 
         if ($this->proretiesType == "template") {
 
-            $xmlfilepro = $lib->util->siteSetting[site_link]."/" . $this->foldersMap->fornt_templates_folder . $this->proretiesdir . "/" . $porpertiesFile . ".xml";
-            
-           
+            $xmlfilepro = $lib->util->siteSetting[site_link] . "/" . $this->foldersMap->fornt_templates_folder . $this->proretiesdir . "/" . $porpertiesFile . ".xml";
+
+
             $opj_properties = $this->util->readXmlAttributes($xmlfilepro, $this->xml_fldestsgeTag);
         }
 

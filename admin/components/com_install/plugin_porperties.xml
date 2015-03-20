@@ -7,26 +7,43 @@ and open the template in the editor.
 
 <root>
     <fields>
-        <ins_title name="ins_title" type="text" title="title" pclass="col-5" />
+        <ins_title name="ins_title" lang="true" type="text" title="title" pclass="col-5" />
         <line1  type="line" style='background-color:transparent' /> 
-
+        <type
+            name="type" 
+            title="Select Plugin Type"
+            comment="Select from the list of plugins available"  
+            type="select"
+            select_type="DIR"
+            select_data="../plugines/"
+            select_text="dir" 
+            perfix='typ'
+            pclass="col-5"/>
+     
+     
+     
+     
         <ins_alias
             name="ins_alias" 
             title="Select Plugin"
             comment="Select from the list of plugins available"  
             type="select"
             select_type="DIR"
-                   select_data="../plugines/"
+            select_data="../plugines/"
             select_text="dir" 
+            perfix='plg'
             pclass="col-5"/>
-                        <line2  type="line" style='background-color:transparent' /> 
+        
+        <line2  type="line" style='background-color:transparent' /> 
 
         <com_id  xref='plugins_xref' name="com_id" 
                  type="list" select_type='DB' select_data="com_install"
                  select_text='ins_title' select_value='id'  title="Install to Component(s)"
                  comment="Select the component(s) where this plugin will be installed"
                  pclass='col-5'/>
-                       <line3  type="line" style='background-color:transparent' /> 
+        <line3  type="line" style='background-color:transparent' /> 
+        
+        
 
         <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-2' />
         <order name="order"  type="order" title="order" pclass='col-3' />

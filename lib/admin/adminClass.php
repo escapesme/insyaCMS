@@ -1457,16 +1457,27 @@ class adminClass extends adminactions {
                     $moreClass = '';
                 }
 
-
-
-                if (isset($this->group[$k]['parent']) && $this->group[$k]['parent'] = "yes") {
+///        if ($this->parent == "") {
                     $myurl = "index.php?";
+
+                if (isset($this->group[$k]['parent']) && $this->group[$k]['parent'] == "yes") {
                     $returndata .= "<a "
                             . "data-title='" . $this->util->updatCodes($this->group[$k]['title']) . "'"
                             . "class='$moreClass' "
                             . "href=\"" . $myurl . $view_url . "=" . $k . "\"  "
                             . "data-info=\"" . $myurl . $view_url . "=" . $k . "\"  "
                             . " >" . $this->util->updatCodes($this->group[$k]['title']) . "</a>";
+                } else if (isset($this->group[$k]['parent']) && $this->group[$k]['parent'] == "usersplugin") {
+                    
+                    
+                    
+                     $returndata .= "<a "
+                            . "data-title='" . $this->util->updatCodes($this->group[$k]['title']) . "'"
+                            . "class='$moreClass' "
+                            . "href=\"" . $myurl . $view_url . "=" . $k . "&parent=usersplugin\"  "
+                            . "data-info=\"" . $myurl . $view_url . "=" . $k . "\"  "
+                            . " >" . $this->util->updatCodes($this->group[$k]['title']) . "</a>";
+                    
                 } else {
 
                     $myparent = $_GET[$url_parent];
@@ -2027,7 +2038,7 @@ class adminClass extends adminactions {
             }
         }
 
-       // print_r($_POST);
+        // print_r($_POST);
     }
 
     function savexRef($status) {

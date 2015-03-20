@@ -8,7 +8,6 @@
 namespace libs\engine;
 
 class pluginsClass {
-    
 
     var $foldersMap;
     var $config;
@@ -20,34 +19,41 @@ class pluginsClass {
         $this->util = $util;
     }
 
-    function importPlugin($name, $data, $object) {
+    function importPlugin($name, $data, $object, $type = "") {
         $returnData = "";
         if ($name != "") {
 
-            $link = $this->foldersMap->admin_plugins_folder . $name;
+
+            if ($type != "") {
+                $type = $type . "/";
+            }
+
+            $link = $this->foldersMap->admin_plugins_folder . $type . $name;
+
+
             $lng = $this->util->importfiles($link);
             require_once $link . "/index.php";
-            
-          
-        
-            
-        
+
+
+
+
+
             $returnData = $name($this->updateData($data), $lng, $object);
         }
 
         return $returnData;
     }
 
-    function importPlugindB($name, $data,$o) {
+    function importPlugindB($name, $data, $o) {
         $returnData = "";
         if ($name != "") {
 
-            
-           
+
+
             $link = $this->foldersMap->admin_plugins_folder . $name;
             $lng = $this->util->importfiles($link);
             require_once $link . "/index.php";
-            $returnData = $name($data, $lng,$o);
+            $returnData = $name($data, $lng, $o);
         }
 
         return $returnData;
@@ -68,8 +74,8 @@ class pluginsClass {
     }
 
     function updateData($data) {
-        
-    
+
+
         $ds = explode(";", $data);
 
         foreach ($ds as $da) {
