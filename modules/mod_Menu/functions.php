@@ -8,33 +8,66 @@
  * 
  */
 
+function mod_menu_createStatu($d) {
+    /* @var $lib  libs\libs */
+    global $lib;
+    $r = "";
+
+    if ($lib->site->cretaStatus($d['id'], $lib->variables->statusPost)) {
+
+        $r = " data-postsatatus='" + $lib->site->cretaStatus($d['id'], $lib->variables->statusPost) + "'";
+    }
+
+    if ($lib->site->cretaStatus($d['id'], $lib->variables->statusSession)) {
+
+        $r .= " data-sessionsatatus='" + $lib->site->cretaStatus($d['id'], $lib->variables->statusSession) + "'";
+    }
+
+    return $r;
+}
+
+function mod_menu_updateLink($d, $dap) {
+    /* @var $lib  libs\libs */
+    global $lib;
+    $href = "";
+
+    if (trim($d['mei_main']) == "com_link") {
+
+        $href = $d['property__url'];
+    } else {
+
+        if (trim($dap['mei_main']) == "com_link") {
+
+            $href = $lib->util->createURLAL($d['mei_alias']);
+        } else {
+            $href = $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
+        }
+    }
+
+
+
+
+    return $href;
+}
+
 function getsubmenu($id, $parent, $pro) {
-
-
 
     /* @var $lib  libs\libs */
     global $lib;
 
 
 
-
-    $datasql = $lib->db->get_data('menu_itmes', '', 'cat_id=\'' . $id . '\'  and `delete`=0  and enabled=\'1\' and parent_id=\'' . $parent . '\' and `show`=\'1\' Order by `order`  ');
-
-
-
-
+    $datasql = $lib->db->get_data('menu_itmes', '*', 'cat_id="' . $id . '"  and   parent_id="' . $parent . '" and `show`="1" ');
 
 
 
 
     if (is_array($datasql[0])) {
 
-        //  print_r($datasql);
+//  print_r($datasql);
 
 
-        $data = "<div class='submenu submenu" . $id . "'>
-            
-<div class='submenutop'></div>
+        $data = "<div class='submenu submenu" . $id . "'><div class='submenutop'></div>
 <ul>";
 
 
@@ -42,125 +75,79 @@ function getsubmenu($id, $parent, $pro) {
         foreach ($datasql as $d) {
 
 
-//$lib->language->getText("com_project", "title", $data['id'], $data['title']);
+            //$lib->language->getText("com_project", "title", $data['id'], $data['title']);
 
 
 
             $d = $lib->language->getDBArray("menu_itmes", $d['id'], $d);
 
+            $dap = $lib->db->get_row('menu_itmes', '', 'id=' . $d['cat_id']);
+
+            $prom = $lib->util->getFromProperits($d['properties']);
 
             $pPermission = $lib->users->getMenuPermission();
-            //  echo $d['permission_all']
-            if ($d['permission_all'] == "1" || $lib->util->chkInPermission($d['id'], $pPermission) == true) {
-
-                if ($lib->util->cities->getIsInSite($d['id'], $d['all_site'], "menu") == true) {
-
-
-                    $dap = $lib->db->get_row('menu_itmes', '', 'id=' . $d['cat_id']);
-
-                    $prom = $lib->util->getFromProperits($d['properties']);
-                    /*
-                     * 
-                     * 
-                     * 
-                     * 
-                      if (trim($d['mei_main']) == "com_link") {
-
-                      $href = $d['property__url'];
-                      } else {
-
-                      $href = $lib->util->createURLAL($d['mei_alias']);
-                      }
-
-                     */
 
 
 
+            if (($d['permission_all'] == "1" ||
+                    $lib->util->chkInPermission($d['id'], $pPermission)) &&
+                    $lib->util->chkInPermissionGuset($d['permission_gust'])) {
+                if ($lib->site->isInStatus($d['id'], $d['all_site'], "menu")) {
 
-
-
-                    if (trim($d['mei_main']) == "com_link") {
-
-                        $href = $prom['url'];
-                    } else {
-
-                        if (trim($dap['mei_main']) == "com_link") {
-
-                            $href = $lib->util->createURLAL($d['mei_alias']);
-                        } else {
-                            $href = $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
-                        }
-                    }
-
-
-
-
-                    if (trim($d['mei_main']) == "com_link") {
-
-                        $href = $d['property__url'];
-                    }
-
-
-
-
-                    $moreact = "";
 
 
 
                     if ($_GET['alias'] == $dap['mei_alias'] && $_GET['id'] == $d['mei_alias']) {
-
-
-
-
                         $_GET['aliasParent'] = $dap['mei_alias'];
                         $_GET['alias'] = $d['mei_alias'];
                         unset($_GET['show']);
                         unset($_GET['id']);
                     }
 
+                    $href = mod_menu_updateLink($d);
 
+                    $liClass = " sub_menu_itm  __li_" . $d['id'];
+                    $aClass = " sub_menu_itm  __a_" . $d['id'];
 
-
-
-
-                    if ($_GET['alias'] == $d['mei_alias']) {
-                        $moreact = "li_active ";
-                    } else {
-
-
-                        $moreact = "";
-                    };
 
                     if ($d['openType'] == "1") {
 
-                        $moreClass = "lightbox-url";
-                    } else {
-
-                        $moreClass = "";
+                        $aClass .= " lightbox-url ";
                     }
 
+
+                    if ($pro['colorbg'] == "1") {
+                        $style = "style='background:#" . $d['color'] . "'";
+                    }
+
+
+                    if ($_GET['alias'] == $d['mei_alias']) {
+                        $liClass .= " li_active ";
+                    }
+
+                    $title = $lib->util->out($d['mei_title'], true);
+
+
+
+                    $data .= '<li  ' . $style . ' class="' . $liClass . '">
+  <div class=\'menu_itminnr\'>
+  <a ' . mod_menu_createStatu($d) . ' title="' . $title . '"  class="' . $aClass . '" href=\'' . $href . '\'>';
 
                     if ($pro['viewImage'] == "1") {
-
-                        $dataimg = "<img src='/uploads/images/" . $d['mei_image'] . "'/>";
+                        $data .="<img src='/uploads/images/" . $d['mei_image'] . "'/>";
                     }
 
-
-
-
-
-
-
-                    $data .= '<li class=\'' . $moreact . '\'><a  class=\'__' . $d['id'] . ' sub_mune_itme ' . $moreClass . ' \' href="' . $href . '">' .
-                            $dataimg
-                            . $d['mei_title'] . getsubmenu($d['id'], $p) . '</a></li>';
+                    $data .= "<span>" . $title . "</span></a>"
+                            . "</div>" . getsubmenu($d['id'], $pro['selecmenu'], $pro) . '</li>';
                 }
             }
         }
-        $data.='</ul></div>';
+        $data.="</ul> </div>";
     }
 
     return $data;
 }
-
 ?>
+
+
+

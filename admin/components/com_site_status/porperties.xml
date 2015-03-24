@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+    
+    <fields>
+        <title name="title"  type="text"  title="Title"/>
+        <urlcode name="urlcode"  type="text"  title="urlcode"/>
+        <cities xref='com_site_status_xref' name="cities"  type="list"  title="Countries" select_type='countries'/>
+        <currency_code name="currency_code"  type="text"  title="currency code"/>
+        <currency_symbol name="currency_symbol"  type="text"  title="currency symbol"/>	
+        
+        <image  name="image"  type="pic" title="image" />
+        <order name="order"  type="order" title="Order" />
+        <enabled name="enabled"  type="enable" title="enable" />
+    </fields>
+    
+
+
+
+    
+ 
+    <group>
+        <com_site_status title="cities"/>
+
+    </group>
+    
+
+    
+       
+    <listfields  multiLevel="yes" >   
+     
+        <title  list-width="6"/>
+        <urlcode  list-width="1"/>
+        <image  list-width="1"/>
+        <order  list-width="1"/>
+        <enabled  list-width="1"/>
+    </listfields>
+    
+    
+
+</root>
+
+
+    
+

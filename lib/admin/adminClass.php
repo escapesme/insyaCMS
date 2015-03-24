@@ -439,7 +439,6 @@ class adminClass extends adminactions {
 
         $myname = $data['name'];
         $typestyle = $this->util->odd_or_even($this->numrow);
-
         switch ($data['type']) {
             case "order" :
 
@@ -610,6 +609,12 @@ class adminClass extends adminactions {
                 $html.= "<div class=' xrefdivCell divCell'>" . $data . "</div>"; //. "</div>";
                 // $typestyle = $this->util->odd_or_even($this->numrow);
                 break;
+
+
+
+
+
+              
             default :
 
 
@@ -629,8 +634,8 @@ class adminClass extends adminactions {
                         break;
                     default :
                         $html.= "
-                            <input  data-id='" . $dval['id'] . "' type='hidden' value='" . $dval['id'] . "__" . $myname . "__" . $data['type'] . "'    class='input__" . $dval['id'] . "__info' />
-                                <span title='" . $dval[$data['name']] . "'>" . $slpn . " " . $dval[$data['name']] . "</span>";
+                            <input  data-id='" . $dval['id'] . "' data-type='".$data['type']."'  type='hidden'   value='" . $dval['id'] . "__" . $myname . "__" . $data['type'] . "'    class='input__" . $dval['id'] . "__info' />
+                                <span title='" . $dval[$data['name']] . "' />" . $slpn . " " . $dval[$data['name']] . "</span>";
                         break;
                 }
         }
@@ -687,6 +692,9 @@ class adminClass extends adminactions {
 
                 $this->thislistleve = 0;
             }
+
+
+
             $moreClass = "";
             if ($this->listOptions["xrefopend"] == "true") {
                 $moreClass = "opened";
@@ -797,7 +805,7 @@ class adminClass extends adminactions {
 
 
 
-                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "' class=\"$myname divCell " . $this->table_properties[$list]['type'] . " list_data\">"
+                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "'   data-type='".$data['type']."' class=\"$myname divCell " . " list_data\">"
                         . "<label class='cellTitle'>" . $this->table_properties[$list]['title'] . "</label><div class='cellvalue'>"
                         . "";
 
@@ -1458,7 +1466,7 @@ class adminClass extends adminactions {
                 }
 
 ///        if ($this->parent == "") {
-                    $myurl = "index.php?";
+                $myurl = "index.php?";
 
                 if (isset($this->group[$k]['parent']) && $this->group[$k]['parent'] == "yes") {
                     $returndata .= "<a "
@@ -1468,16 +1476,15 @@ class adminClass extends adminactions {
                             . "data-info=\"" . $myurl . $view_url . "=" . $k . "\"  "
                             . " >" . $this->util->updatCodes($this->group[$k]['title']) . "</a>";
                 } else if (isset($this->group[$k]['parent']) && $this->group[$k]['parent'] == "usersplugin") {
-                    
-                    
-                    
-                     $returndata .= "<a "
+
+
+
+                    $returndata .= "<a "
                             . "data-title='" . $this->util->updatCodes($this->group[$k]['title']) . "'"
                             . "class='$moreClass' "
                             . "href=\"" . $myurl . $view_url . "=" . $k . "&parent=usersplugin\"  "
                             . "data-info=\"" . $myurl . $view_url . "=" . $k . "\"  "
                             . " >" . $this->util->updatCodes($this->group[$k]['title']) . "</a>";
-                    
                 } else {
 
                     $myparent = $_GET[$url_parent];

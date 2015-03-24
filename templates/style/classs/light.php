@@ -13,12 +13,12 @@ function light($pro) {
 
     $returndata.= "<div class=\" light mod _" . $pro['myid'] . " moduletable\" >
         
-                     <div class='data'><h3 class=\"mod-title\"> <span></span>" . $pro['title'] . " </h3>";
+                     <h3 class=\"mod-title\"> <span></span>" . $pro['title'] . " </h3>";
     $returndata.= "  <div class=\"moduletable_content clearfix\">
         " . $lib->front->moduleBody($pro);
 
 
-    $returndata .= "</div></div></div>";
+    $returndata .= "</div></div>";
 
     return $returndata;
 }

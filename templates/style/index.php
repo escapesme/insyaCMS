@@ -6,12 +6,6 @@
 
 
         <?php
-        ini_set("display_errors", 1);
-        error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
-
-
-
-
         $pro = getProperties();
         $template_url = getTemplateLink();
         global $lib;
@@ -23,157 +17,147 @@
         <link rel="stylesheet" href="/includes/js/lightbox/s3/colorbox.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
         <script src="/includes/js/lightbox/jquery.colorbox.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" src="/lib/js/util.js"></script>
-
         <link rel="stylesheet" href="/<?= $template_url ?>/css/default.css" type="text/css"  />
+
         <link rel="stylesheet" href="/<?= $template_url ?>/css/style.css" type="text/css"/>
-        <link   href="/<?= $template_url ?>/css/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width:700px)" />
+
+
+        <link   href="/<?= $template_url ?>/css/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 900px)" />
+
         <link   href="/<?= $template_url ?>/css/medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 800px)" />
 
 
+        <script type = "text/javascript" src = "/<?= $template_url ?>/js/my.js"></script>
 
 
-        <script type = "text/javascript" src = "/<?= $template_url ?>/js/js.js"></script>
+
+        <script type = "text/javascript" src = "/<?= $template_url ?>/js/cufon-yui.js"></script>
+        <script type = "text/javascript" src = "/<?= $template_url ?>/js/Trajan_Pro_400-Trajan_Pro_700.font.js"></script>
 
         <?= $lib->util->get_to_head(); ?> 
 
-        <?= getMoreCss() ?></style>
-    <title><?= getWidowsTitle() ?></title>
 
+        <?= getMoreCss() ?></style>
+    <title><?= getPageTitle() ?></title>
+
+
+
+
+    <script>
+
+
+
+
+
+    </script>
 
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
 
+        </script>
 
-
-
-    <?php if (isset($_GET["lang"])) {
-        ?>
-        <link rel="stylesheet" href="/<?= $template_url ?>/css/<?= $_GET["lang"] ?>.css" type="text/css"/>
-
-
-        <link   href="/<?= $template_url ?>/css/phone_<?= $_GET["lang"] ?>.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 700px)" />
-        <link   href="/<?= $template_url ?>/css/medium_<?= $_GET["lang"] ?>.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 800px)" />
-
-
-
-        <?php
-    }
-    ?>
 
 
 </head>
-<body class='<?= pageType() ?>'>  <div class='pag-content' ><div class='body-content'>
+<body>   
 
 
 
-            <?php
-            if ((isset($_GET['main']) && $_GET['catid'] == 'main') || isset($_GET['main'])) {
 
-                echo $getmymani;
-            } else {
-                ?>
+    <div class='body_data'>
 
+        <div class='phonemenuData'>
+            <?= $mainmenu ?>
+            <?= $mymenu ?>
+        </div>
 
-                <header>
-                    <div class='header-inner'>
-                        <div class=''>
-                            <div class="headerTop ">
+        <div class='otherData'>
 
-                                <div class='pdata'>
-                                    <a href='/'><div class='logo'></div> </a>
+            <div class='header toclear'>
 
-                                    <div class='topmid'></div>
-                                    <div class='topright'> <?= getModule("lang") ?></div>
-                                </div>  
-                            </div>
-                        </div>
+                <div class='data'>
+                    <div class='header toclear'>   <div class='phonemenuBT'></div>
+
+                        <div class='toleft logo'></div>
+                        <div class='toright mainmenu modcont'><?= $mainmenu ?></div>
+
                     </div>
+                    <div class='our_menu toclear'>
 
-
-                </header>
-                <section>
-
-                    <div class='section-inner'>
-
-
-                        <div class='slideShow '>
-                            <div class='a-light'>
-                                <div class='menuphonebt'></div>
-
-
-
-                                <div class='menudata'><?= $mainmenu ?></div> 
-
-
-                                <?php if (ishome()) { ?>
-                                    <div class="slideShow">
-                                        <div class='pdata'><div class='slideShowData'><?= getModule("slide_show") ?></div> <div class='slideShow_right _toright'><?= getModule("slideShow_right") ?></div></div>
-                                        
-                                       
-                                       
-                                    </div>
-                                <?php } ?></div> </div>
+                        <div class='mainmenu modcont'><?= $mymenu ?></div>
                     </div>
-                </section>
-
-                <section class="main ">
-                    <div class='section-inner'>
-
-                        <div class='  main_top '><?= getModule("main_top") ?></div>
-
-                        
-                        <div class='clearfix'></div>
-                        
-                        
-                        <div class='a-light'> 
-                            <div class='main'><?= $getmymani ?></div>
-
-                        </div>
-                        
-                        
-                        
-                    </div>
-
-                </section>
-                <section class='mianBottom   '>
-                    <div class='section-inner '>
-                        <div class='a-light'>  
-                            <?= getModule("mian_bottom") ?>
-                        </div>
-                         
-                            <?= getModule("mian_bottom_2") ?>
-                   
-                    </div>
-                    
-                    
-                </section>
-
-
-                <footer>
-
-                    <div class='footer-inner'>
-                        <div class='pdata'>
-                            <div class='mods footer'><?= getModule("footer") ?></div>
-
-                        </div>
-                    </div>
-                </footer>
-
+                </div>
             </div>
 
-            <div class='mod copyright'><?= getModule("copyright") ?></div>
-        </div> 
+
+
+            <div class='dataBody'>
+
+                <div class='slideshow toclear'>
+                    <div class='data modcont'>
+                        <?= getModule("slideShow") ?>
+                        <div class='left toleft modcont'><?= getModule("slideShow_left") ?></div>
+                        <div class='right toright toright modcont'><?= getModule("slideShow_right") ?></div>
+                    </div>
+                </div>
 
 
 
-    <?php } ?>
+                <div class='maindata toclear'> 
+
+                    <div class='data'>
+
+                        <div class='main_top_left modcont'><?= getModule("main_top_left") ?></div>
+                        <div class='main_top_right modcont'><?= getModule("main_top_right") ?></div>
+                        <?php if (!ishome()) { ?>
+                            <div class='maindatabottom toclear'> 
+                                <div class='left toleft modcont'><?= getModule("left") ?></div>
+                                <div class='main  modcont'>
+                                    <div class='pageTitle'><?= getPageTitle() ?></div>
+                                    <?= $getmymani ?></div></div>
+                        <?php } ?>
+
+
+                        <div class='main_bottom modcont'><?= getModule("main_bottom") ?></div>
+
+                    </div>
+                </div>
+
+                <div class='toclear' style="width:100%; height:1px;">
 
 
 
+                </div>
+                <div class='footer toclear'>
+                    <div class='data'>     
+                        <div class='left toleft modcont'><?= getModule("footer_left") ?></div>
+                        <div class='right toright toright modcont'><?= getModule("footer_right") ?></div>
+                    </div>
+                    <div class='toclear' style="width:100%; height:1px;">
+                        <div class='copyright toclear'>
+
+                            <div class='data'>
+                                <div class='left toleft modcont'><?= getModule("copyright") ?></div>
+
+                            </div>
+                        </div>   
+                        <div class='toclear' style="width:100%; height:1px;">
+                        </div> </div> </div>
+                </body>
+                </html>
+                <script>
+                    $(function() {
+                        $(".modcont,.moduletable").each(function() {
+
+                            if ($.trim($(this).html()) == "") {
+                                $(this).css("display", "none");
+                            }
+
+                        })
 
 
+                    })
 
-
-</body>
-</html>
+                </script>

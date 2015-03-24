@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root>
+
+    
+    <positions>
+        <position>lang</position>        
+        <position>main_top</position>        
+        <position>mian_bottom</position>  
+        <position>mian_bottom_2</position>  
+
+
+        <position>slideShow_right</position> 
+        <position>slide_show</position>  
+        <position>footer</position>  
+        <position>copyright</position>  
+       
+    </positions>
+    
+    <classs>
+        <class>nostyle</class>
+        <gray>gray</gray>
+        <class>dark</class>
+        <class>light</class>    
+        <class>light_green</class>    
+
+                          
+    </classs>
+    
+    <fields>
+        <color name="color" type='color' title='color' />
+        
+    </fields> 
+</root>

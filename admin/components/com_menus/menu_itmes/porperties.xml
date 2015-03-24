@@ -8,6 +8,8 @@ and open the template in the editor.
     <fields>
         
           
+   
+    
         <meiTitle name="meiTitle"  type="title"  title='' value="@%get::com%@"  />
            
         
@@ -77,22 +79,36 @@ and open the template in the editor.
         <permission   xref='menu_itmes_permission_xref' name="permission"  type="list" select_type='DB' select_data="com_users_groups" select_text='group_name' select_value='id'  title="permission" pclass='_50'/>
         <Data_permissionEnd type='endblock'  name='Data_permissionEnd' />
         
-        <Data_site name='Data_site'  collapse="yes" type='block' title="Sites"  />
-     
-        <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
+        
+        
+        
+        
+        <Data_site name='Data_site'  collapse="yes" type='block' title="Status"  />
+        
+        
+        <all_status name="all_status"  type="enable"  title="all site" value="1" /> 
       
+        
+         
+        
+        
+        
         <site  
-            xref='com_modules_site_xref' 
+            xref='com_modules_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 
-            select_data="com_cities_categories"
+            select_data="com_site_status"
             select_text='title' 
             select_value='id'  
             title="site" 
-            
             pclass='_50'/>
         <Data_siteend type='endblock'  name='Data_siteend'/>
+        
+        
+        
+        
+        
         
         <Page_data name='Page_data'  collapse="yes" type='block' title="Page Data"  />
            
@@ -109,17 +125,13 @@ and open the template in the editor.
         <mei_main name="mei_main"  type="hidden"  title='mei_main' value="@%get::com%@" />
       
 
-
-        
-        
-        
-        
         
     </fields>
     
 
 
 
+    
 
 
 

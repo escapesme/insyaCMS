@@ -8,7 +8,7 @@
 namespace libs\utiles;
 
 class utileCitiesClass {
-
+/*
     public function __construct($foldersMap, $config, $variables, $db) {
         $this->foldersMap = $foldersMap;
         $this->config = $config;
@@ -16,7 +16,9 @@ class utileCitiesClass {
         $this->parent = $_GET['parent'];
         $this->db = $db;
     }
-
+    
+    
+/*
     function getIsInSite($id, $all, $type) {
         $return = false;
         $arr = $this->getSite();
@@ -61,16 +63,18 @@ class utileCitiesClass {
 
       
         return $return;
-    }
+    }*/
 
-    function urlConvert($url) {
+      /* function urlConvert($url) {
 
-        $sdata = $this->db->get_row("com_cities_xref", "item_id", "cat_id='" . $url . "'");
+     $sdata = $this->db->get_row("com_cities_xref", "item_id", "cat_id='" . $url . "'");
 
 
         $datasql = $this->db->get_row("com_cities_categories", "*", "id='" . $sdata['item_id'] . "'");
         return $datasql['urlcode'];
     }
+    
+ 
 
     function getCurrency() {
         $datasql = $this->getSite();
@@ -98,6 +102,9 @@ class utileCitiesClass {
 
         return $sdata['price'];
     }
+    
+    
+    
 
     function getData($table) {
 
@@ -120,7 +127,7 @@ class utileCitiesClass {
         }
         return $rdata;
     }
-
+/*
     function getSiteGet($id) {
         $site = "";
         if (isset($_GET['site'])) {
@@ -132,9 +139,9 @@ class utileCitiesClass {
         return $site;
     }
 
+    */
     
-    
-    
+    /*
     
      function getSiteGetV($id, $url) {
 
@@ -143,9 +150,9 @@ class utileCitiesClass {
 
 
         return $datasql[0][$id];
-    }
+    }*/
 
-    function getSite() {
+    /*function getSite() {
         $site = "";
         if (!isset($_GET['site'])) {
 
@@ -167,11 +174,11 @@ class utileCitiesClass {
 
         return $sdata['valueprice'];
     }
-
+/*
     function getSiteV($s) {
         return $this->db->get_data("com_cities_categories", "*", "urlcode='" . $s . "'");
     }
-
+*/
     /*
       function getSite() {
       $site = "";

@@ -10,7 +10,7 @@ function plg_pkgs($pro) {
     /* @var $lib  libs\libs */
     global $lib;
 
-    print_r($_SESSION);
+    //print_r($_SESSION);
 
 
     $nights = $pro['nights'];

@@ -15,7 +15,7 @@ $setting["siteTitle"] = 'E-Scapes Main Repository';
 $setting["admin_mail"] = 'info@e-scapes.me';
 
 $setting["mailTitle"] = 'E-Scapes';
-$setting["site_path"] = 'http://www.e-scapes.me';
+$setting["site_path"] = 'http://cms.localhost';
 
 $setting["succeedClass"] = "succee";
 

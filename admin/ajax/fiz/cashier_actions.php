@@ -216,7 +216,7 @@ if ($status == "refund") {
                     "received_by" => $data['email']
                 );
 
-                print_R($data_array);
+              //  print_R($data_array);
                 $lib->db->insert_row("fiz_cashier_receipt", $data_array);
 
                 $receipt_id = $lib->db->get_maxrow("fiz_cashier_receipt")["id"];

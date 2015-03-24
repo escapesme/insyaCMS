@@ -72,9 +72,9 @@ function sendMail($email, $settingId) {
 
     $result = array_merge((array) $lang, (array) $userData);
 
-    $result['myUploadsimagesurl'] = "http://fiz.qlegal.net/uploads/images/";
-    $result['myimagesurl'] = "http://fiz.qlegal.net/templates/style/css/images/";
-    $result['userurl'] = "http://fiz.qlegal.net/account/#login";
+    $result['myUploadsimagesurl'] = $this->siteSetting['site_link'] ."/uploads/images/";
+    $result['myimagesurl'] = $this->siteSetting['site_link'] ."/templates/style/css/images/";
+    $result['userurl'] = $this->siteSetting['site_link'] ."/account/#login";
 
 
 

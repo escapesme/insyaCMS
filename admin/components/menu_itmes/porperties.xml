@@ -62,7 +62,7 @@ and open the template in the editor.
       
 
         <permission_all name="permission_all"  type="enable"  title="permission all" value="1" /> 
-            <permission_gust name="permission_gust"  type="enable"  title="permission gust Only" value="0" /> 
+        <permission_gust name="permission_gust"  type="enable"  title="permission gust Only" value="0" /> 
         <permission   xref='menu_itmes_permission_xref' name="permission "  
                       type="list" select_type='DB' select_data="com_users_groups" select_text='group_name' select_value='id'  title="permission" pclass='_50'/>
        
@@ -76,11 +76,11 @@ and open the template in the editor.
         <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
       
         <site  
-            xref='com_modules_site_xref' 
+            xref='com_modules_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 
-            select_data="com_cities_categories"
+            select_data="com_site_status"
             select_text='title' 
             select_value='id'  
             title="site" 

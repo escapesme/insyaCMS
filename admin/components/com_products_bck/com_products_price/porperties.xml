@@ -39,7 +39,7 @@ and open the template in the editor.
             name="site" 
             type="select" 
             select_type='DB' 
-            select_data="com_cities_categories"
+            select_data="com_site_status"
             select_text='title' 
             select_value='id'  
             title="Region" 

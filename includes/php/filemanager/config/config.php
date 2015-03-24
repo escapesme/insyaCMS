@@ -1,26 +1,10 @@
 <?php
-
+include_once '../../../config.php';
 session_start();
 mb_internal_encoding('UTF-8');
-//------------------------------------------------------------------------------
-// DON'T COPY THIS VARIABLES IN FOLDERS config.php FILES
-//------------------------------------------------------------------------------
-//**********************
-//Path configuration
-//**********************
-// In this configuration the folder tree is
-// root
-//    |- source <- upload folder
-//    |- thumbs <- thumbnail folder [must have write permission (755)]
-//    |- filemanager
-//    |- js
-//    |   |- tinymce
-//    |   |   |- plugins
-//    |   |   |   |- responsivefilemanager
-//    |   |   |   |   |- plugin.min.js
 
-$base_url = "http://fiz.qlegal.net/";  // base url (only domain) of site (without final /). If you prefer relative urls leave empty
-$upload_dir = '/uploads/'; // path from base_url to base of upload folder (with start and final /)
+$base_url = $setting["site_path"]; 
+$upload_dir = '/uploads/';
 $current_path = '../../../uploads/'; // relative path from filemanager folder to upload folder (with final /)
 //thumbs folder can't put inside upload folder
 $thumbs_base_path = '../../../uploads/thumbs/'; // relative path from filemanager folder to thumbs folder (with final /)
@@ -36,12 +20,8 @@ $show_folder_size = true; //Show or not show folder size in list view feature in
 $show_sorting_bar = true; //Show or not show sorting feature in filemanager
 $loading_bar = true; //Show or not show loading bar
 $transliteration = false; //active or deactive the transliteration (mean convert all strange characters in A..Za..z0..9 characters)
-//*******************************************
-//Images limit and resizing configuration
-//*******************************************
-// set maximum pixel width and/or maximum pixel height for all images
-// If you set a maximum width or height, oversized images are converted to those limits. Images smaller than the limit(s) are unaffected
-// if you don't need a limit set both to 0
+
+
 $image_max_width = 0;
 $image_max_height = 0;
 

@@ -7,7 +7,7 @@ global $lib;
 //"listBody"
 
 
-print_r($_GET);
+//print_r($_GET);
 
 
 

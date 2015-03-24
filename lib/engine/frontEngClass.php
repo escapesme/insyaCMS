@@ -303,16 +303,19 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
         $ids = "( id=-1 ";
 
         $menuid = $this->getmenu('id');
+        
+        $more= " 1=1 ";
         if (isset($_GET['city'])) {
             $more = "and ( Citys like'%" . $_GET['site'] . "%' )";
         }
+
         $mydata = $this->db->get_data("com_modules", "", "mod_viewall = '1' and 
                     position ='" . $postions . "' and 
-                         enabled='1' 
-                         and 
-                        `delete`='0'  
                         '" . $more . "'");
 
+
+
+       
 
         foreach ($mydata as $m) {
             if (isset($m['class'])) {
@@ -339,6 +342,9 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
         $ids.=")";
+        
+     
+        
         return $ids;
     }
 
@@ -468,7 +474,6 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
         $mydata = $this->db->get_data("com_modules", "", $ids . "   " . $more . "  order by `order`");
 
-
         foreach ($mydata as $m) {
 
 
@@ -478,7 +483,7 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
 
-                if ($this->util->cities->getIsInSite($m['id'], $m['all_site']) == true) {
+                if ($this->lib->site->isInStatus($m['id']) == true) {
 
                     include_once( $this->templatelink . "/" . "classs/" . $m['class'] . ".php");
 

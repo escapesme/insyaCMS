@@ -6,7 +6,7 @@
  */
 
 class citiesUtileClass {
-
+/*
     public function __construct($foldersMap, $config, $variables, $db) {
         $this->foldersMap = $foldersMap;
         $this->config = $config;
@@ -160,7 +160,7 @@ class citiesUtileClass {
         return $this->db->get_data("com_cities_categories", "*", "urlcode='" . $s . "'");
         ;
     }
-
+*/
 }
 
 ?>

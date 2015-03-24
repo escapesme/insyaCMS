@@ -1,159 +1,463 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
-    Created on : Sep 25, 2014, 1:30:50 PM
-    Author     : eScapes
+    Document   : small
+    Created on : May 7, 2013, 3:30:31 PM
+    Author     : ismil
+    Description:
+        Purpose of the stylesheet follows.
 */
 
-.block.cats {
-    /* float: none;
- 
-     display: inline;
-    */
-
-
+html, body{
+    width:100%
+        ;
+    height:100%;
+    overflow: hidden;
 }
 
-
-div.nivo-caption {
-    width: 100%;
-    height:150px;
-    background-size: 100%; 
-    bottom: auto;
-    margin-top: -155px;right: 0;
-    left: 0px;
-}
-
-
-
-.theme-default div.nivoSlider {
-    overflow: visible;
-    margin-top: 173px;
-
-}
+.logo{
+    background: url(images/logo_smll.png) no-repeat;
+    height:60px;
+    width:168px;  margin-left: 5px;
+    float: left;
+    clear: none; margin-top: 7px;
+}.header {
+    height:45px;
+    background: url(images/small_header_bg.png) ;
+    background-size:  100% 100%
+}  
 
 .menu{
+    display: none
+}
+body
+{   max-width: 100%;
+    width:100%;
+    margin: 0px;
+    overflow-x: hidden
+}
+.body_data {
+    max-width: 100%;
+    width:100%;      
+    overflow-x: hidden
+}
+
+.slideshow .left{
     display: none;
+}
 
+.slideshow{
+    width: 100%;
+    max-width: 100%;
+}
+
+.slideshow .right{
+
+    min-height:100px;
+    margin-right: 0px;
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+
+
+.main_top_left{
+    height: 70px;
 }
 
 
 
-.langBar .menu{
-    display: block
-;
-    background:none; 
-    width: auto
+
+
+
+
+.main_top_left, .main_top_right  {
+
+    width:100%;
+    max-width: 100%;
+
+}.main_top_left h3{
+    clear: both;
+    height:100px;
 }
 
 
-.langBar  .menu li {
-    
+.tickerbt ,marquee { 
+
+    margin-top: 5px;
+}
+
+
+
+marquee { 
+    /*   width: 83%;
+       margin: auto;
+       margin-top: 5px;*/
+
+    position: absolute;
+    width: auto;
+    right:30px;
+    left:30px;
+}
+.tickerbts{
+    position: relative;
+    width:100%;
+    max-width: 100%;
+}
+
+.main_top_right .mod {
+    border-top:none;
+    min-width: 100%;
+
+    padding:0px 20px;
+    width:auto;
+    margin: 0px
+}
+
+
+
+
+
+
+
+div.current-hourstime {
+    max-width: none;
+    width: auto;
+    width: auto;
+
+}
+
+div.time-city ,div.ampm{
+    width: auto;
+    clear: both;
+}
+
+.main_bottom .mod_block ,.main_bottom .modig_blockdes {
+    margin: 0px 10px;
+    width:100%;
+    height: auto;
+    margin-left: 0px; 
+    padding: 2px 10px;
+
+
+}
+.main_bottom .modig_blockdes {
+
+    width:80%;
+
+}
+
+.weather {
     border: none
 }
-.langBar {
-float: right;
-position: absolute;
-top: -60px;
-right: 131px;
+.main_bottom .modig_blocTitle{
+    margin-left: 0px;
+}
+.main_bottom .modig_blockdes a{
+    font-weight: normal
+}
+.main_bottom .mod_block{
+    background: url("images/homeblok_bg.png") repeat-x scroll 0% 0% transparent; 
+    margin:10px 0px;
 }
 
-.theme-default .nivoSlider{
-    top: -25px;
+div.main_top_right{
+    height:120px;
 }
-
-._285 p img {
-    display: none;
-
-}
-
-._285 p{
-    right:0px;
-}
-
-.menuphonebt{
-    display: block;
-
-
-    background: url(imgs/mene_bt.png) no-repeat;
-    height:49px;
-    width: 50px ;
-    float: right;
-    margin-right: 25px;
-    margin-top: 29px;
-    background-size: 100%;
-
-}.logo {
-    height: 84px;
-    width: 96px;
-}.headerTop {
-    height: 93px;
-}
-
-
-.menudata{
-
-    top: -17px;
-}
-.menu{
-    background: #fff;
-    width: 60%;
-    float: right;
-  
-        
-        position: absolute;
-right: -48px;
-top: 78px;
+div.weather {
 
 
 }
 
+div.time_mod ,div.weather{
+    width: 230px;
+    margin: auto;
 
-.menu li{
-    width: 100%;
+}
+
+.timeType ,.daytype{
+    float:left;
+
+}
+
+.copyright {
+    width:80%;
+    max-width: 80%;
+}
+
+.copyright p {
+
+    width:100%;
+    max-width: 100%;
+}
+
+
+.weather-current-dayname,.weather-current-hi-lo{
+
     clear: both;
-    background: #085f3d;
-    border-bottom: 1px solid #f5f5f5;
+
+
+
 
 }
-.menu a {
-    color: #085f3d;
-    text-align: left;
+.weather-current-hi-lo{
+
+
 }
 
-.submenu {
+.clock-image {margin-left: 13px;
+
+}
+
+.footer {
+    position: relative;
+    height:auto;
+    min-height: 200px;
+    margin: 0px;
+    float: none;
+    width:100%;
+    max-width: 100%;margin-bottom: 80px;
+    padding-bottom: 5px;
+}
+.footer .left  ,.footer .right {
+    float: none;
+    margin: 0px;
+    width:100%;
+    max-width: 100%;
+    clear: both;
     position: relative;
 
-    width: 90%;
-
-    margin: auto;}
-
-.submenu li a{
-    background: #eee;
-    
+}.footer .right {
+    min-width: 100px;
+    min-height: 100px;
 }
-
-.slideShowData {
-    width: 100%;}
-
-div.nivo-caption{
-
-    right:0;
+.footer .menu_itm {
+    width:49%;
 
 }
-body {
+.footer .menu ,.phonemenuData .menu {
+    display: block
+}
 
+
+.phonemenuData .menu_itm ,.phonemenuData ul {
+
+    margin: 0;
+    padding: 0px;
+}
+
+.phonemenuData li {
+
+    list-style: circle;
+
+}
+.phonemenuData .menu_itm ,.phonemenuData .submenu li {
+    width:100%; 
+    max-width:100%;
+    clear: both
+        ;
+    height: auto;
+    min-height: 40px;
+    line-height: 40px;
+    padding:0px;
+
+    padding-left: 10px;
+    background: url(images/small_leftmenu_bg.jpg) repeat-x bottom ;
+
+
+
+}
+
+.phonemenuData .sub_mune_itme:hover
+,.phonemenuData .menu_itm a:hover
+,
+.menu_itm:hover .my_menu_itm, 
+.sub_mune_itme:hover,
+.my_menu_itm:hover
+
+{
+    background:none;
+    color: #492701;
+}
+.phonemenuData .submenu li {
+    list-style: inside circle; 
+    background: url(images/small_leftmenu_bg.jpg) repeat-x top ;  
+
+    margin-left: -20px; padding-left: 35px;   
+}
+.menu_itminnr{
+    height: 40px;
+    line-height: 40px; 
+}
+.phonemenuData .menu_itm:first-child {
+
+
+}
+.phonemenuData .menu_itm:last-child {
+
+    background: url(images/small_leftmenu_bg.jpg) repeat-x bottom ;
+}
+
+
+
+.phonemenuData .menu_itm  a{
+    color:#492701; 
+    line-height:40px;   
+    height:40px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px;
+
+    margin-left: 15px;
+
+}
+
+.phonemenuData .submenu{
+    position: relative;
+    display: block;
+    background: none;
+    margin-top: 0px;
+    margin-left: 10px;
+
+    padding:0px;}
+.phonemenuData .menu {
+    margin-top: 6px;
+}
+.phonemenuData .menu .submenu  a{
+    margin-top: -40px;
+    margin-left: 5px;
+
+}
+
+.slideshow .mod-title{
+    display: none;
+}
+.phonemenuBT{
+    width:45px;
+    height:45px;
+    background: url(images/menu_bt.png) no-repeat;
+
+    cursor: pointer;  display: block;
+
+    background-size:100% 100%;  
+    z-index: 1000;
+    position: relative;
+    float: right
+
+}
+
+.phonemenuData{
+    display: none;
+    height:100%;
+    ;
+    width:80%;
+    right:0px;
+
+    background: url(images/small_menu_bg.jpg) repeat;
+
+    top:0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+    position: fixed
+}
+
+
+.otherData{
+    width: 100%;
+    position: absolute;
     overflow: hidden
 }
 
-.catImg{
-    display:none;
+.theme-default .nivoSlider{
+
+    height: auto;
+
+}
+
+#sunries, #sunset {
+
+
+
+}
+
+#sunset {
+    border:none;
+
+    background: none;
+
 }
 
 
-.menu {
+.dataBody{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
 
-    position: absolute;}
+    overflow-y: auto;
+}
+
+
+
+
+.weather div.tooltip {
+    height:0px;
+    width:0px;
+    overflow: hidden
+
+}
+
+
+.main_top_left .moduletable_content {
+
+
+    width:100%
+}
+
+.main_bottom .modig_blocTitle {
+
+
+    width:100%;
+}
+.left {
+    display: none
+}
+
+.itemBlock {
+    clear: both;
+    width:100%;
+}
+
+.itemBlock_imgae_cont  img,.itemBlock_imgae_cont{
+    width:98%;
+    clear: both;
+    max-width: 98%;
+    max-height: none
+}
+.main {
+
+    width:  100%;
+}
+
+.comment-block, textArea.formtext{
+    margin: 0px;
+    width:100%;
+}.comment-block ,.com_main {
+    width:100%;
+    margin: 0;
+}
+
+.maindatabottom {
+    background: url("images/inner_bg_phone.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: auto;
+    margin-top: 0px;
+}
+.fullart img , .fullart table ,table.mytable {
+    width:100%;
+     clear: both;
+     float: none;
+     margin: 2px
+}

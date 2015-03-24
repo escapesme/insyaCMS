@@ -39,11 +39,13 @@ class variablesClass {
     var $xml_classs = "classs";
     var $xml_cshow = "Cshow";
     var $admin_select_all = "Select All";
-    
     var $admin_datafields_prfx = "datafields";
-        var $url_ides = "";
-
-    
+    var $url_ides = "";
+    var $statusGet = "get";
+    var $statusPost = "pos";
+    var $statusNormal = "normal";
+    var $statusVariableName = "site";
+    var $statusSession="session";
 
 }
 

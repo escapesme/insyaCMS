@@ -1,33 +1,36 @@
 <?xml version="1.0"?>
 <root>
 
-    
     <positions>
-        <position>lang</position>        
-        <position>main_top</position>        
-        <position>mian_bottom</position>  
-        <position>mian_bottom_2</position>  
 
 
+
+        <position>our_menu</position> 
+        <position>mainmenu</position> 
+        <position>search</position> 
+        <position>slideShow_left</position> 
         <position>slideShow_right</position> 
-        <position>slide_show</position>  
-        <position>footer</position>  
+        <position>left</position>  
+        <position>main_top_left</position>  
+          <position>main_top_right</position>  
+        <position>main_bottom </position> 
+        <position>right</position>  
+        <position>footer_left</position>  
+        <position>footer_right</position>  
         <position>copyright</position>  
        
     </positions>
     
     <classs>
         <class>nostyle</class>
-        <gray>gray</gray>
         <class>dark</class>
-        <class>light</class>    
-        <class>light_green</class>    
-
-                          
+        <class>light</class>          
     </classs>
     
     <fields>
         <color name="color" type='color' title='color' />
         
-    </fields> 
+    </fields>
+            
+        
 </root>

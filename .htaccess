@@ -36,12 +36,6 @@ RewriteRule ^print/do/([^/]*)/([^/]*)/([^/]*)/$ ?do=$1&alias=$2&print=print&id=$
 RewriteRule ^do/([^/]*)/([^/]*)/$ ?do=$1&alias=$2 [L]
 RewriteRule ^do/([^/]*)/([^/]*)/([^/]*)/$ ?do=$1&alias=$2&id=$3 [L]
 
-
-
-
-
-
-
 RewriteRule ^print/([^/]*)/$ ?alias=$1&print=print [L]
 RewriteRule ^print/([^/]*)/([^/]*)/$ ?show=cat&alias=$1&id=$2&print=print [L]
 RewriteRule ^print/([^/]*)/([^/]*)/([^/]*)/$ ?show=item&alias=$1&id=$3&catid=$2&print=print [L]
