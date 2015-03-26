@@ -37,7 +37,7 @@ function mapgetsubmenu($id, $parent, $pro) {
             //  echo $d['permission_all']
             if ($d['permission_all'] == "1" || $lib->util->chkInPermission($d['id'], $pPermission) == true) {
 
-                if ($lib->util->cities->getIsInSite($d['id'], $d['all_site'],"menu") == true) {
+                if ($this->lib->site->isInStatus($d['id'], $d['all_site'],"menu") == true) {
 
 
                     $dap = $lib->db->get_row('menu_itmes', '', 'id=' . $d['cat_id']);

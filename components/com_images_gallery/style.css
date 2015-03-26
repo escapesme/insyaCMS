@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 24, 2015, 4:21:43 PM
+    Author     : eScapes
+*/
+
+
+.blocks{
+    position: relative;
+    width:100%;
+    height: 356px;
+
+}
+
+.block{
+    position: absolute;
+    top:0;
+    left: 20px;
+    display: none;
+
+
+}
+.block img{
+    margin: auto;
+    width: 90%;
+    margin-left: 5%;  border: 2px solid #ffffff;
+}
+
+
+.thimg li {
+    display: inline-block;
+    border: 4px solid #ffffff;
+    cursor: pointer;
+    opacity: .5;
+    margin: 3px;
+    width: 103px;
+
+}
+
+.thimg ul{
+    position: absolute
+        ;display: block;
+
+    padding: 0;
+    width: auto;
+}
+.thimg img {
+    width: 103px;
+    height: 72px;
+
+}
+
+
+
+.thimg li:hover,.thimg li.act{
+    opacity: 1;
+}
+
+
+
+
+
+.thimg{
+    height:110px;
+    width: 466px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+
+
+#bt_prv,#bt_next{
+    list-style: none;
+    position: absolute;
+    top: 21px;
+    cursor: pointer;
+    background: #eee;
+
+    width: 23px;
+    height: 43px; 
+
+}
+#bt_prv {
+    left: 20px;
+    background: url(images/bt_g_prv.png);
+}#bt_next {
+
+
+    background: url(images/bt_g_next.png);
+    right: 20px;
+}
+
+.slideshowbar{
+    position: relative;
+    width:100%;
+    height:110px;
+
+
+}

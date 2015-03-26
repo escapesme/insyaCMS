@@ -34,7 +34,8 @@ table, td, th {
     vertical-align: middle;
 }
 ul, ol {
-    margin: 0 1.5em 1.5em 0;
+    margin:  0;
+    padding: 0;
 }
 a, a:active, a:visited {
 
@@ -352,10 +353,13 @@ div.modig_blocTitle a{
 
 .main {
     padding-left: 10px;
-    width: 630px;
+    width: 628px;
     
-    background: none;margin-left: 290px;
+    background: none;
+    /* margin-left: 290px; */
 
+    float: right;
+    clear: none;
 }
 
 .footer{
@@ -401,6 +405,12 @@ marquee{
     background-image: url("images/new_p.png");
     margin-left: 5px;
     color:transparent ; margin-right: 5px;
+    position: relative;
+
+
+    z-index: 1111;
+
+
 }
 
 .tickerbt.btright{float:right;
@@ -409,7 +419,7 @@ marquee{
                   margin-right: 5px;
 
 
-}
+z-index: 111111;position: relative;}
 marquee  li a{
 
     color: #EECD7F;
@@ -578,7 +588,7 @@ marquee  li{
     font-size: inherit;
     color: inherit;
     padding-left: 42px;
-    margin: -27px auto auto auto ;
+    margin: 5px auto auto auto;
 
     width:50px;
 
@@ -601,6 +611,7 @@ marquee  li{
     text-transform: capitalize;
     font-size: 23px;
     font-weight: lighter; 
+    margin-top: 11px;
 }
 
 #sun_num {
@@ -625,7 +636,7 @@ marquee  li{
 }
 .footer .menu{
 
-    margin-top: -23px;
+    margin-top: -3px;
 }
 
 .footer .menu_itm{
@@ -679,15 +690,23 @@ marquee  li{
 
     clear: none;
     float: left;
-    background: url("images/separetor.png") no-repeat bottom center;width: 45%;
+    background: url("images/separetor.png") no-repeat bottom center;
+    width: 45%;
     padding: 4px;
-    min-height: 140px;
-    float: left;
+    min-height: 231px;
+    /* float: left; */
     color: #5e2600;
     text-align: justify;
     font-size: 10pt;
     margin: 5px;
+    /* display: inline-block; */
+    /* clear: both; */
+    margin-top: 5px;
+    
+    
+  
 }
+
 
 
 .mytable {
@@ -714,6 +733,9 @@ marquee  li{
 }
 .maindata .left,.maindata .right{
     background: none;
+    float: left;
+    clear: none;
+    /* width: 200px; */
 }
 
 
@@ -785,6 +807,7 @@ div.light_square .pp_content{
     font-size: 25px;
     color: #111;
     margin: 10px 0px;
+    clear: both;
 }
 
 .comment-block {
@@ -1144,3 +1167,51 @@ select.time{
 }  
 
 
+
+
+.com_content_article{
+clear: both        
+;
+margin-top: 10px;
+}
+.home .itemBlock{
+      float: none;
+  display: inline-block;
+  width: 209px;  height: 265px;
+  background-image: url('images/package-bg.png');
+  margin: 33px 2px 0;
+  text-align: justify;  overflow: hidden;
+}
+.home img{
+    display: none
+    
+    
+}
+
+.home .maindatabottom {
+      background: url('images/main-section-2-bg.png');
+
+    
+}
+
+.home  .main{
+    width: 100%;max-width: 100%;  text-align: center;
+}
+
+
+
+
+
+
+.home .itemBlock_des{
+  padding: 0px 25px;}
+
+
+.home .itemBlock_title{
+        padding: 10px 25px;text-align: center;
+
+}
+
+.home .pageTitle{
+    display: none
+}

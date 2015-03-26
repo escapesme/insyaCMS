@@ -37,7 +37,8 @@ function getsubmenu($id, $parent, $pro) {
             //  echo $d['permission_all']
             if ($d['permission_all'] == "1" || $lib->util->chkInPermission($d['id'], $pPermission) == true) {
 
-                if ($lib->util->cities->getIsInSite($d['id'], $d['all_site'],"menu") == true) {
+                if ($lib->site->isInStatus($d['id'], $d['all_site'], "menu") == true
+                ) {
 
 
                     $dap = $lib->db->get_row('menu_itmes', '', 'id=' . $d['cat_id']);
@@ -51,16 +52,12 @@ function getsubmenu($id, $parent, $pro) {
                         $href = $prom['url'];
                     } else {
 
-                         if (trim($dap['mei_main']) == "com_link") {
-                        
-                        $href = $lib->util->createURLAL( $d['mei_alias']);
-                        
-                         }else{
-                              $href = $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
-                             
-                             
-                         }
-                        
+                        if (trim($dap['mei_main']) == "com_link") {
+
+                            $href = $lib->util->createURLAL($d['mei_alias']);
+                        } else {
+                            $href = $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
+                        }
                     }
 
 

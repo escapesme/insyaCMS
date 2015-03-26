@@ -1794,10 +1794,10 @@ EOF;
         }
 
 
-
+if ($alias){
 
         $returnData .= "/" . $alias . "/";
-
+}
         if (isset($items) && trim($items) != "") {
             $returnData .= $items . "/";
         }

@@ -9,7 +9,6 @@
 
 function main($pro, $lang) {
 
-
     $rowNumbers = $pro['rowNumbers'];
     $data = '<div class=\'com_images_gallery images_gallery\'>';
 
@@ -59,7 +58,7 @@ function main($pro, $lang) {
     } else {
 
 
-        $data .= getCategories("0");
+      //  $data .= getCategories("0");
     }
     return $data . "</div>";
 }

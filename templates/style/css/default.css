@@ -240,7 +240,7 @@ div.theme-default div.nivo-controlnav a.nivo-control ,.mod_image img,.multiple_s
     background: #fafafa;
 
     border: 1px #999 solid;
-    float: left;
+    /* float: left; */
     position: relative;
     width: 90%;
     margin: 2px;
@@ -291,19 +291,29 @@ div.theme-default div.nivo-controlnav a.nivo-control ,.mod_image img,.multiple_s
 }
 
 .itemBlock_imgae{
-    width:150px;
+    width: 90px;
+    float: left;
+    padding: 4px;
+    background: #fff;
+    margin: 5px;
 }
 
 
 .itemBlock_title,.CatBlock_title,.catBlock_title{
 
     font-weight: bold;
-    color: #222;
+    
+
+    /* color: #222; */
     line-height: 30px;
     margin-bottom: 8px;
 
     font-size: 100%;
+    
+
     line-height: 1.5em;
+    clear: both;
+
 }
 
 .pagesBar {

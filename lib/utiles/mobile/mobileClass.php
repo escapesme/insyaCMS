@@ -88,22 +88,27 @@ class mobileClass {
 
 
 
-        $returnData.= " <a title='More' href='" . $url . "'>";
+
 
         // if (isset($pro['catPageViewTitle']) && $pro['catPageViewTitle'] == "1") {
         //   }
+
+        
+        
+                $returnData.="<h2 class = ' itemBlock_title info'>" . $d['title'] . "</h2>";
 
         if (isset($pro['catPageViewDate']) && $pro['catPageViewDate'] == "1") {
 
             $returnData.="<div class='itemBlock_date info'><div class='data'><span>" . $date->format('j') . "</span><span>" . $date->format('F') . " </span><span>" . $date->format('Y') . "</span></div><span class=\"triangle\"></span></div>";
         }
+        
+                $returnData.= " <a title='More' href='" . $url . "'>";
         if (isset($pro['catPageViewImage']) && $pro['catPageViewImage'] == "1") {
             $imagePath = "/uploads/images/" . $d['th_image'];
             $returnData.= "<img title = \"" . $d['title'] . "\"  alt=\"" . $d['title'] . "\"   class='lazy itemBlock_imgae'  data-original='" . $imagePath . "' src='/images/pixel.gif' />";
         }
 
-        $returnData.="<h2 class = ' itemBlock_title info'>" . $d['title'] . "</h2>";
-
+ $returnData.= " </a>";
         if (isset($pro['catPageViewDes']) && $pro['catPageViewDes'] == "1") {
             $returnData.="<div class='itemBlock_des'>" . $lib->util->data->getText($d['des'], "", $pro['desLimit']) . "</div>";
         }

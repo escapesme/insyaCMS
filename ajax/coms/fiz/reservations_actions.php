@@ -12,6 +12,8 @@ if ($_GET['status'] == "getits") {
 
 
     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'] . ";getType__data");
+    
+ 
 
     if ($data['FullName']) {
      $id = $lib->coms->faiz->saveUser($data);

@@ -28,7 +28,7 @@ function mod_Menu_mobile($pro) {
         $pPermission = $lib->users->getMenuPermission();
         if ($d['permission_all'] == "1" || $lib->util->chkInPermission($d['id'], $pPermission) == true) {
 
-            if ($lib->util->cities->getIsInSite($d['id'], $d['all_site'], "menu") == true) {
+            if ($lib->site->isInStatus($d['id'], $d['all_site'], "menu") == true) {
 
 
 

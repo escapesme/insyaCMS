@@ -36,11 +36,11 @@ function mod_menu_updateLink($d, $dap) {
         $href = $d['property__url'];
     } else {
 
-        if (trim($dap['mei_main']) == "com_link") {
-
-            $href = $lib->util->createURLAL($d['mei_alias']);
+        if (isset($dap)) {
+            $href .= $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
         } else {
-            $href = $lib->util->createURLAL($dap['mei_alias'], $d['mei_alias']);
+
+            $href .= $lib->util->createURLAL($d['mei_alias']);
         }
     }
 
@@ -104,7 +104,7 @@ function getsubmenu($id, $parent, $pro) {
                         unset($_GET['id']);
                     }
 
-                    $href = mod_menu_updateLink($d);
+                    $href = mod_menu_updateLink($d,$dap);
 
                     $liClass = " sub_menu_itm  __li_" . $d['id'];
                     $aClass = " sub_menu_itm  __a_" . $d['id'];

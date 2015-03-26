@@ -61,7 +61,7 @@
 
 
 </head>
-<body>   
+<body class='<?= getPageTitle() ?>'>   
 
 
 
@@ -111,13 +111,13 @@
 
                         <div class='main_top_left modcont'><?= getModule("main_top_left") ?></div>
                         <div class='main_top_right modcont'><?= getModule("main_top_right") ?></div>
-                        <?php if (!ishome()) { ?>
+                     
                             <div class='maindatabottom toclear'> 
                                 <div class='left toleft modcont'><?= getModule("left") ?></div>
                                 <div class='main  modcont'>
                                     <div class='pageTitle'><?= getPageTitle() ?></div>
                                     <?= $getmymani ?></div></div>
-                        <?php } ?>
+                      
 
 
                         <div class='main_bottom modcont'><?= getModule("main_bottom") ?></div>

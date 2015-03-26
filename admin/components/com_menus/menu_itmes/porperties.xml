@@ -143,12 +143,14 @@ and open the template in the editor.
     
        
     <listfields multiLevel="yes" >   
-        <mei_title  list-width="2.5"/>
+        <mei_title  list-width="2"/>
         <mei_alias  list-width="2"/>
+                <mei_main  list-width="1"/>
+
         <show  list-width="1"/>
         
         <mei_home  list-width="1"/>
-        <permission_all  list-width="1.5"/>
+        <permission_all  list-width="1"/>
         <order  list-width="1"/>
 
         <enabled  list-width="1"/>

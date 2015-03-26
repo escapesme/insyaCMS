@@ -43,6 +43,7 @@ function main($pro, $lang) {
 
 
     $where = "";
+    $data="<div class='com_content_article com_main'>";
     if (isset($_GET['show']) and $_GET['show'] == 'item') {
 
 
@@ -112,7 +113,7 @@ function main($pro, $lang) {
             $data .= getartsByCatID($cat_id, $rowFrom, $rowNumbers, $lang, $pro);
         }
     }
-
+$data.="</div>";
     return $data;
 }
 

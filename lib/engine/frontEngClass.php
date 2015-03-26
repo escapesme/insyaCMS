@@ -76,7 +76,7 @@ class frontEngClass {
         if (isset($alias) && $alias != "") {
             $menus = $this->db->get_data('menu_itmes', "", "mei_alias='" . $alias . "'");
             foreach ($menus as $m) {
-                if ($this->util->cities->getIsInSite($m['id'], $m['all_site'], "menu") == true) {
+                if ($this->lib->site->isInStatus($m['id'], $m['all_site'], "menu") == true) {
                     $th = $this->db->get_row('menu_itmes', "", "id='" . $m['id'] . "'");
                 }
             }

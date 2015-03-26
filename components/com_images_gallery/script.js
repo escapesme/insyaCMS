@@ -29,47 +29,47 @@ $(function() {
 
 
 
+    $(".thimg li").eq(0).addClass("act");
+
+    $(".block").eq(0).show();
 
 
-    $(".bar_imgae").click(function() {
-        var showv = $(this).attr("id");
 
-        showv = showv.replace("thimage_", "");
+    $(".thimg li").click(function() {
+        $(".thimg li").removeClass("act");
 
-
-        $(".bar_imgae").removeClass("act");
-
-        $(".itemMain").hide("slow");
-
-        $(".itemMain." + showv).show("slow");
-
-        $(this).addClass("act")
+        $(".block").hide("slow");
+        $("." + $(this).data("show")).show("slow");
+        $(this).addClass("act");
 
     })
 
 
+    var itemswidth = $(".th_bar_images .bar_imgae").size() * 117;
 
 
-    $(".th_bar_images").width($(".th_bar_images .bar_imgae").size() * 125);
+    $(".th_bar_images").width(itemswidth);
 
 
 
-    var movepx = $(".th_bar").width();
 
 
-    $(".th_bar_prev").click(function() {
 
+    $("#bt_prv").click(function() {
+
+
+
+        var movepx = $(".thimg").outerWidth();
 
         var meleft = $(".th_bar_images").css("left");
         meleft = meleft.replace("px", "");
-        var mel = movepx - $(".th_bar_images").width();
+        var mel = movepx - itemswidth;
 
 
+        if (parseFloat(meleft) <= parseFloat(mel)) {
 
-        if (parseFloat(meleft) < parseFloat(mel)) {
 
-
-            $(".th_bar_images").animate({"left": mel + "px"}, "slow");
+          $(".th_bar_images").animate({"left": mel + "px"}, "slow");
 
 
 
@@ -85,9 +85,8 @@ $(function() {
 
     });
 
-    $(".th_bar_next").click(function() {
+    $("#bt_next").click(function() {
 
-        var mel = movepx - $(".th_bar_images").width();
 
 
         var meleft = $(".th_bar_images").css("left");

@@ -8,6 +8,10 @@
  * 
  */
 
+function getImagesByCat() {
+    
+}
+
 function getimagestag($id, $lang, $rowFrom, $rowNumbers, $pro) {
 
 
@@ -43,10 +47,77 @@ function getimages($pro, $lang, $catID, $rowFrom, $rowNumbers) {
     $table = "com_images_gallery";
     $catTable = "com_images_gallery_categories";
     $returnData .= $lib->util->com->_getCats($pro, $lang, $catTable, $table, $catID);
-    $returnData.= $lib->util->com->_getItems($pro, $lang, $catID, $catTable, $table, $rowFrom, $rowNumbers, "", "true");
+    $returnData.= _getItems_slideShow($pro, $lang, $catID, $catTable, $table, $rowFrom, $rowNumbers, "", "true");
 
     $lib->util->updateTitleCategory($catTable, $catID);
 
+
+
+
+
+
+    return $returnData;
+}
+
+function _getItems_slideShow($pro, $lang, $catID, $catTable, $table, $rowFrom, $rowNumbers, $not = "", $slideshow = "") {
+    global $lib;
+
+    if ($not != "") {
+        $n = "and com_video_gallery.id<>" . $not;
+    }
+    $datasql = $lib->util->com->getXrefData($table, $catID, $n . " order by `order` DESC limit " . $rowFrom . "," . $rowNumbers);
+    $llnum = $lib->util->com->getXrefData($table, $catID);
+    $returnData = "";
+
+    $i = explode(",", $catID);
+    $catID = $i[0];
+
+    $more = "";
+    if (isset($slideshow) && $slideshow != "") {
+
+
+        $more = "gallery";
+    }
+
+
+
+
+
+    $returnData .="<div class='" . $more . " sildeshow'><div class='blocks'>";
+
+
+
+    $width = 0;
+    foreach ($datasql as $da) {
+        $width+=117;
+        $returnData.= " <div  class='__" . $da['id'] . " block'><img src='/uploads/images/" . $da['image'] . "' ></div>";
+    }
+
+
+
+
+
+
+    $returnData.= "</div><div class='slideshowbar'><div id=\"bt_prv\"></div> <div class='thimg'><ul class='th_bar_images' style='width:" . $width . "px'>";
+
+
+
+    foreach ($datasql as $da) {
+        $img = $da['image'];
+        if ($da['th_image']) {
+            $img = $da['th_image'];
+        }
+        $returnData.= "<li class='bar_imgae' data-show='__" . $da['id'] . "'><img src='/uploads/images/" . $img . "' /></li>";
+    }
+    $returnData.= "</ul></div><div id=\"bt_next\"></div></div>"
+            . ""
+            . " ";
+
+
+
+
+
+    $returnData.= "</div>";
 
     return $returnData;
 }
