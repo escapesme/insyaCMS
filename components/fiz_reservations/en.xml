@@ -42,7 +42,15 @@ and open the template in the editor.
     <lgointitle>Logged in as : </lgointitle>
     
     
-      <logoutsubmit>logout</logoutsubmit>
+      <Reservation_ID>Reservation_ID</Reservation_ID>
+      
+            <No_of_Persons>No_of_Persons</No_of_Persons>
+
+      <Arrival_Date>Arrival_Date</Arrival_Date>
+
+      <Departure_Date>Departure_Date</Departure_Date>
+
+    
     
 
 </root>

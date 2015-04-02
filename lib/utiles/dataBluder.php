@@ -195,7 +195,6 @@ class dataBluder extends queryBluderClass {
 
 
             $valuesData = $lib->util->data->updateStringTorray($d);
-echo $valuesData['type'];
 
             switch ($valuesData['type']) {
                 case "query":

@@ -594,7 +594,6 @@ function com_products_showCart($id, $lang, $setting) {
 
 
 
-//  echo $twight;
     $proData++;
 
 

@@ -2,35 +2,15 @@
 
 /* @var $lib  libs\libs */
 global $lib;
-
-
-
-
-
-
-
-
-
-
-
-
-
 $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['ej'] . ";getType__data");
-
-
-if ($data['dob']) {
-    /*
-      $datetime = $data['dob'];
-      $format = "j M Y";
-     */
-
-
-    if (todate($_GET['bod'], "j/m/Y") == todate($data['dob'], "j M Y")) {
-        echo "true";
-    }
+$data['Mumin_id'] = "30385154";
+$data['FullName'] = "16dasdasd0";
+if ($data['FullName']) {
+    $myid = $lib->coms->faiz->saveUser($data);
+    $d = print_r($lib->coms->faiz->getUserDataByID($myid), true);
+    echo $d;
+} else {
+    echo "0";
 }
 
-function todate($datetime, $format) {
-    $t = date_parse_from_format($format, $datetime);
-    return date('d-m-Y', mktime(0, 0, 0, $t['month'], $t['day'], $t['year']));
-}
+

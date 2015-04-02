@@ -13,12 +13,7 @@ function mod_slider($pro, $lang) {
     global $lib;
 //print_r($pro);
 
-    echo'
-    
-
-
-';
-
+   
 
     if ($pro['showtype'] == "banner") {
         $returnData = mod_slider_banner($pro);

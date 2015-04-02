@@ -39,7 +39,7 @@ and open the template in the editor.
         
         />
         
-                <platform name="platform"   title="platform"   type="select" select_data="all>>all;desktop>>desktop;mobile>>mobile" pclass='col-4'  />
+        <platform name="platform"   title="platform"   type="select" select_data="all>>all;desktop>>desktop;mobile>>mobile" pclass='col-4'  />
 
         <site_meta name="site_meta"  type="textarea"  title="Meta Description"  />
         

@@ -13,15 +13,18 @@ function mod_menu_createStatu($d) {
     global $lib;
     $r = "";
 
+
     if ($lib->site->cretaStatus($d['id'], $lib->variables->statusPost)) {
 
-        $r = " data-postsatatus='" + $lib->site->cretaStatus($d['id'], $lib->variables->statusPost) + "'";
+        $r = " data-postsatatus='" .$lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusPost) . "'";
     }
 
     if ($lib->site->cretaStatus($d['id'], $lib->variables->statusSession)) {
 
-        $r .= " data-sessionsatatus='" + $lib->site->cretaStatus($d['id'], $lib->variables->statusSession) + "'";
+        $r .= " data-sessionsatatus='" .$lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusSession) ."'";
     }
+
+
 
     return $r;
 }
@@ -31,9 +34,16 @@ function mod_menu_updateLink($d, $dap) {
     global $lib;
     $href = "";
 
+    $status.= $lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusGet);
+    
+    if ($status != "") {
+        $href .= $lib->variables->statusVariableName . "/" . $status . "/";
+    }
+
+
     if (trim($d['mei_main']) == "com_link") {
 
-        $href = $d['property__url'];
+        $href .= $d['property__url'];
     } else {
 
         if (isset($dap)) {
@@ -43,7 +53,6 @@ function mod_menu_updateLink($d, $dap) {
             $href .= $lib->util->createURLAL($d['mei_alias']);
         }
     }
-
 
 
 
@@ -104,7 +113,7 @@ function getsubmenu($id, $parent, $pro) {
                         unset($_GET['id']);
                     }
 
-                    $href = mod_menu_updateLink($d,$dap);
+                    $href = mod_menu_updateLink($d, $dap);
 
                     $liClass = " sub_menu_itm  __li_" . $d['id'];
                     $aClass = " sub_menu_itm  __a_" . $d['id'];

@@ -12,13 +12,18 @@ if ($_GET['status'] == "getits") {
 
 
     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'] . ";getType__data");
-    
- 
+
+
+
+
+    /* @var $lib  \libs\libs */
+    global $lib;
+
 
     if ($data['FullName']) {
-     $id = $lib->coms->faiz->saveUser($data);
+        $id = $lib->coms->faiz->saveUser($data);
 
-   
+
 
         $u = $lib->db->get_row("fiz_reservation", "*", "user_id='" . $id . "'");
 
@@ -63,9 +68,11 @@ if ($_GET['status'] == "getits") {
     $_SESSION['razaOwnerID'] = "";
     $_SESSION['formraza'] = "";
 } else if ($_GET['status'] == "lgoin") {
+    global $lib;
 
     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'] . ";getType__data");
-
+    $data['Mumin_id'] = "30385154";
+    $data['FullName'] = "16dasdasd0";
     if ($data['FullName']) {
         $_SESSION['razaOwnerID'] = $lib->coms->faiz->saveUser($data);
     } else {

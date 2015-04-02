@@ -9,7 +9,8 @@ and open the template in the editor.
     <fields>
         <title name="title"  type="text"  title="title"/>
         <des name="des"  type="editor"  title="des"/>
-        <data  name="data"  type="fields"  title="data "/>
+        <data  name="data"                 file="formData_data" 
+ type="fields"  title="data "/>
         
         <enabled name="enabled"  type="enable" title="enable" pclass='_50' />
     </fields>

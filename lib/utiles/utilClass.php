@@ -505,13 +505,10 @@ class utilClass {
         return $data;
     }
 
-
-    
-    
     // <editor-fold defaultstate="collapsed" desc="moved">
-    
-    
-    
+
+
+
     function getModurl($remov) {
 
         $data = "/";
@@ -857,8 +854,6 @@ class utilClass {
         return $data;
     }
 
- 
-
     function getFromProperits($pro) {
 
         $mpro = explode(";", $pro);
@@ -966,17 +961,15 @@ class utilClass {
         }
         return $data;
     }
-    
-        
+
     // </editor-fold>
 
 
 
 
-   function thisTable() {
+    function thisTable() {
         return $_GET[$this->variables->url_view];
     }
-
 
     function getProperty($name, $type = "") {
         $returnData = "";
@@ -1016,6 +1009,16 @@ class utilClass {
         return $res;
     }
 
+     function howManyDaysTime($startDate, $endDate) {
+
+        $date1 = strtotime($startDate);
+        $date2 = strtotime($endDate);
+        $res = (int) (($date2 - $date1) / 86400);
+
+        return $res;
+    }
+    
+    
     function dateTodb($data) {
         $newdate = explode('/', $data);
 
@@ -1133,9 +1136,9 @@ class utilClass {
 
 
 
-    
-    
-    
+
+
+
 
     function getLangVar($var, $file) {
 
@@ -1145,11 +1148,6 @@ class utilClass {
         return $title;
     }
 
-    
-    
-    
-    
-    
     function getLangWord($type, $word) {
 
         $file = "";
@@ -1170,6 +1168,7 @@ class utilClass {
         $arr = $this->readXmlvalue($file, $word);
         return $arr;
     }
+
     function getLanguageWord($word, $type = "") {
         $link = "";
 
@@ -1200,8 +1199,6 @@ class utilClass {
         return $arr;
     }
 
-    
-    
     function updatCodes($data) {
 
         $myvaltuitle = explode("__", $data);
@@ -1724,10 +1721,10 @@ EOF;
             $returnData = "/" . $_GET['lang'];
         }
 
-        if (isset($_GET["site"]) && $_GET["site"] != "global") {
+        /*  if (isset($_GET["site"]) && $_GET["site"] != "global") {
 
-            $returnData .= "/site/" . $_GET['site'] . "";
-        }
+          $returnData .= "/site/" . $_GET['site'] . "";
+          } */
 
         $alias = $this->getMenuAlias($alias);
 
@@ -1789,15 +1786,15 @@ EOF;
             $returnData = "/" . $_GET['lang'];
         }
 
-        if (isset($_GET["site"]) && $_GET["site"] != "global") {
-            $returnData .= "/site/" . $_GET["site"];
+        /* if (isset($_GET["site"]) && $_GET["site"] != "global") {
+          $returnData .= "/site/" . $_GET["site"];
+          } */
+
+
+        if ($alias) {
+
+            $returnData .=  "/" . $alias . "/";
         }
-
-
-if ($alias){
-
-        $returnData .= "/" . $alias . "/";
-}
         if (isset($items) && trim($items) != "") {
             $returnData .= $items . "/";
         }

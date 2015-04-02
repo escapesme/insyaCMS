@@ -122,8 +122,8 @@ function typesData($types) {
         if (isset($type) && trim($type) != "") {
 
             $ts1 = $lib->util->data->updateStringTorray($type);
-            print_r($ts1);
-            echo $ts1['data1'];
+            //print_r($ts1);
+           // echo $ts1['data1'];
             $data .= $lib->util->dataBluder->renderDataBluder($ts1['data1']);
         }
     }

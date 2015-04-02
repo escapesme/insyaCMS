@@ -41,7 +41,6 @@ function main($pro, $lang) {
 
 
 
-
     $where = "";
     $data="<div class='com_content_article com_main'>";
     if (isset($_GET['show']) and $_GET['show'] == 'item') {

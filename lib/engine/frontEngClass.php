@@ -68,6 +68,24 @@ class frontEngClass {
         $this->menuData = $this->lib->language->getDBArray('menu_itmes', $this->menuData['id'], $this->getmenuDB());
 
         $this->templateData = $this->gettemplatedataDB();
+
+        $datas = $this->lib->site->getActStatus();
+
+
+        if (is_array($datas)) {
+            foreach ($datas as $data) {
+
+
+                if (isset($data['language']) && $data['language'] != "") {
+
+                    $lang = $this->db->get_row('com_language', "", "id='" . $data['language'] . "'");
+
+
+                    $_GET['lang'] = $lang['title'];
+                    $data = $this->lib->site->Setting['lang'] = $lang['title'];
+                }
+            }
+        }
     }
 
     function getmenuDB() {
@@ -83,7 +101,15 @@ class frontEngClass {
         } else {
 
             $th = $this->db->get_row('menu_itmes', "", "mei_home='1'");
+            
+            
+            $data = $this->lib->site->addTostatus($th["addstatus"]);
+            
+          //  print_r($this->lib->site->getActStatus());
+            
         }
+
+
 
         $this->componentLink = $this->foldersMap->fornt_components_folder . $th["mei_main"];
 
@@ -303,8 +329,8 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
         $ids = "( id=-1 ";
 
         $menuid = $this->getmenu('id');
-        
-        $more= " 1=1 ";
+
+        $more = " 1=1 ";
         if (isset($_GET['city'])) {
             $more = "and ( Citys like'%" . $_GET['site'] . "%' )";
         }
@@ -315,7 +341,7 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
 
-       
+
 
         foreach ($mydata as $m) {
             if (isset($m['class'])) {
@@ -342,9 +368,9 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
         $ids.=")";
-        
-     
-        
+
+
+
         return $ids;
     }
 
@@ -483,7 +509,8 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
 
-                if ($this->lib->site->isInStatus($m['id']) == true) {
+                if ($this->lib->site->isInStatus($m['id'], $m['all_site']) == true) {
+
 
                     include_once( $this->templatelink . "/" . "classs/" . $m['class'] . ".php");
 

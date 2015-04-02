@@ -84,7 +84,6 @@ class adminactions extends adminvars {
             $this->data_change($ids, $values);
         } else {
 
-            echo "xxxxxxxxxxxxxx";
             $this->data_change($ids, $values);
         }
     }

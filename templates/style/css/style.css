@@ -14,16 +14,25 @@
     font-family: 'Amiri', serif;
     font-family: 'Droid Arabic Kufi', serif;
 */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    /* line-height: 20px; */
+    /* padding: 0; */
+    margin: 0;
+}
 
 
 
 input, textarea, select {
     color: #6d3c07;
-    border: 1px #6d3c07 solid;
-    background-color: #fff7cc;
+    border: 1px #eee solid;
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
 }
 
 th, td, caption {
@@ -40,6 +49,37 @@ ul, ol {
 a, a:active, a:visited {
 
 }
+
+button,.button,input[type="button"]{
+    background: #a95533;
+    color:#fff;
+    border-radius: 3px;
+    border: none;
+    /* box-shadow: 1px 1px 10px #C2C1C1; */
+    padding: 14px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    text-align: center;
+    /* min-width: 100px; */
+}
+
+button:hover,.button:hover,input[type="button"]:hover{
+    background: #934424;
+
+}
+button.disable,.button.disable,input[type="button"].disable{
+    background: #9d7948;
+    color:#bd9a79;
+    box-shadow: none;
+
+
+}
+
+
+
+
+
 
 html{
     background: url("images/section-2-bg.jpg") fixed repeat;
@@ -256,10 +296,18 @@ ul .menu_itm:last-child {
     text-align: center
         ;
 
-    height: 36px;line-height: 36px;
-    background: url(images/branches-select_s.png) no-repeat bottom center;
+    height: 51px;
+    line-height: 51px;
+    background: url(images/menu_line.png) no-repeat bottom center;
 
+    text-align: center;
+    margin-top: 2px;
 }
+
+
+
+
+
 .slideshow .left .my_menu_itm ,
 .maindata .left .my_menu_itm {
     width:100%;
@@ -289,6 +337,8 @@ ul .menu_itm:last-child {
     width: 199px;
     height: 175px;
     margin: 0 auto;
+
+
     padding: 90px 0 0 0;
     margin-top: 14px;
 
@@ -354,7 +404,7 @@ div.modig_blocTitle a{
 .main {
     padding-left: 10px;
     width: 628px;
-    
+
     background: none;
     /* margin-left: 290px; */
 
@@ -384,9 +434,12 @@ div.modig_blocTitle a{
 
 }
 
-marquee{
+.marquee{
     margin-top: 20px;
     background: url("images/m_bg.png");
+    height:20px;
+    margin-right: 1px;
+    float: left;
 }
 
 .main_top_left .moduletable_content {
@@ -403,8 +456,14 @@ marquee{
     margin-top: 20px;
     cursor: pointer;
     background-image: url("images/new_p.png");
+
+
+
     margin-left: 5px;
-    color:transparent ; margin-right: 5px;
+    color:transparent ; 
+
+
+    margin-right: 5px;
     position: relative;
 
 
@@ -419,14 +478,14 @@ marquee{
                   margin-right: 5px;
 
 
-z-index: 111111;position: relative;}
-marquee  li a{
+                  z-index: 111111;position: relative;}
+.marquee  li a{
 
     color: #EECD7F;
     font-size: 10pt;  font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;margin-top: 1px;
     display: block;
 }
-marquee  li{
+.marquee  li{
 
     display:inline-block;
     margin:0;
@@ -442,7 +501,7 @@ marquee  li{
 }
 
 .main_top_left .mod-title{
-    width: 130px;
+    width: 120px;
     float: left;
     margin: 19px 0px 0px 10px;
     padding: 0;
@@ -702,11 +761,16 @@ marquee  li{
     /* display: inline-block; */
     /* clear: both; */
     margin-top: 5px;
-    
-    
-  
-}
 
+
+
+}
+.itemBlock a{
+
+    color: #5e2600;
+
+
+}
 
 
 .mytable {
@@ -901,13 +965,13 @@ label{
 }
 
 .button {
-    background: #622C07;
-    color: #E8D99F;
-    border: none;
-    min-width: 100px;
-    padding: 4px 4px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    /* background: #622C07; */
+    /* color: #E8D99F; */
+    /* border: none; */
+    /* min-width: 100px; */
+    /* padding: 4px 4px; */
+    /* cursor: pointer; */
+    /* margin-bottom: 10px; */
 
 }
 /*menus */
@@ -993,7 +1057,7 @@ div.tooltip iframe{
     margin: 1%;
 }
 .field-input ,.field-input input{
-    width:100%;
+    width: 95%;
 }
 .aduinfo{
     clear: both;
@@ -1011,8 +1075,20 @@ div.tooltip iframe{
 .field-label label{
 
 
-    color: #6d3c07;
-    font-size: 14px;font-weight: normal;font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;   
+    color: #000;
+
+
+
+    font-size: 16px;font-weight: normal;
+
+
+    font-family: 'Oswald', sans-serif;   
+
+
+
+    font-weight: 300;
+
+
 }
 
 select.time{
@@ -1022,7 +1098,7 @@ select.time{
 .textarea ,textarea{
     width: 99%;
     min-height: 150px;
-    
+
     margin-left: 0.5%
 }
 .addMore{
@@ -1170,28 +1246,28 @@ select.time{
 
 
 .com_content_article{
-clear: both        
-;
-margin-top: 10px;
+    clear: both        
+        ;
+    margin-top: -13px;
 }
 .home .itemBlock{
-      float: none;
-  display: inline-block;
-  width: 209px;  height: 265px;
-  background-image: url('images/package-bg.png');
-  margin: 33px 2px 0;
-  text-align: justify;  overflow: hidden;
+    float: none;
+    display: inline-block;
+    width: 209px;  height: 265px;
+    background-image: url('images/package-bg.png');
+    margin: 33px 2px 0;
+    text-align: justify;  overflow: hidden;
 }
 .home img{
     display: none
-    
-    
+
+
 }
 
 .home .maindatabottom {
-      background: url('images/main-section-2-bg.png');
+    background: url('images/main-section-2-bg.png');
 
-    
+
 }
 
 .home  .main{
@@ -1204,14 +1280,212 @@ margin-top: 10px;
 
 
 .home .itemBlock_des{
-  padding: 0px 25px;}
+    padding: 0px 25px;}
 
 
 .home .itemBlock_title{
-        padding: 10px 25px;text-align: center;
+    padding: 10px 25px;text-align: center;
 
 }
 
 .home .pageTitle{
+    display: none
+}
+.slideshow .left .menu{
+    margin-top: 0px;
+}
+
+.mydes {
+    padding: 15px;
+    height: 10px;
+    width: 90%;
+    background: url("images/m_bg.png");
+    /* position: absolute; */
+    font-size: 17px;
+    color: #fed778;
+    position: relative;
+    margin: auto
+        ;
+    bottom: 40px;
+    /* display: none; */
+}
+
+
+
+
+
+
+.msg{
+    margin: 2px;
+    padding: 20px;
+
+    font-family: "Verdana" , sans-serif;;
+    font-size: 14px;
+    background: url(images/succ_icon.png) no-repeat 16px #fff;
+    padding-left: 80px;
+    color: #333; 
+
+}
+.msg.error{
+
+    background-image:  url(images/error_icon.png);
+}
+.msg.info{
+
+    background-image:  url(images/info_icon.png);
+}
+
+.msg.worr{
+
+    background-image:  url(images/worr_icon.png);
+}
+
+a , .light{
+    font-weight: normal;
+    color:#9f3500;
+}
+.mainTabel{
+    width: 100%;
+
+    border:0;          /* Replace border */
+    border-spacing: 0px; /* Replace cellspacing */
+    border-collapse: collapse; 
+    margin-top: 0px;
+}
+
+h2.title{
+    background: #a95533;
+    color:#fff;
+    font-size: 20px;
+    padding: 15px;
+}
+
+h3.title{
+    background: #90482B;
+    color:#fff;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.mainTabel th{
+    background: #a95533;
+    color:#fff;
+    padding: 10px;
+    font-weight: normal;
+
+}
+
+.mainTabel td{
+    margin: 0px;    
+    border-spacing: 0px;
+    padding: 10px;
+    border:#eae8e6 1px solid;
+    padding: 6px;
+
+    max-height: 30px;
+    /* overflow: hidden; */
+    line-height: 24px;
+}
+
+
+
+.mainTabel tr:nth-child(even) {background: #F0ECEC;}
+.mainTabel tr:nth-child(odd) {background: #FFF}
+
+.formError{
+    color:red
+        ;
+    min-width: 200px;
+}
+
+
+.datarow .title{
+    width: 161px;
+    margin-top: 15px;
+}
+
+
+td button,td .button, td input[type="button"]{
+    padding: 8px;
+
+    margin: 0px;
+}
+
+
+
+.wstep._1 .setpesBar{
+    
+  display: none  
+}
+
+.left .mod_block img,.left .mod_block .normal-button{
+    
+    display: none
+}
+
+
+.CategoryMenu .mod-title {
+  width: 187px;
+  height: 33px;
+  background-image: url("images/package-bg2_0.png");
+  margin: auto;
+  font-size: 15px;
+  padding-top: 37px;
+  margin: 30px 2px 0px 50px;
+  color:#000;
+  text-align: center;
+}
+
+.CategoryMenu  .innend{
+
+  background-image: url("images/package-bg2_2.png");
+  width: 187px;
+  height: 60px;
+  
+
+  margin: 13px 2px 0px 50px;
+
+}
+
+
+
+.CategoryMenu  .myinn {
+  padding-right: 25px;
+  padding-top: 10px;
+  background-image: url("images/package-bg2_1.png");
+  background-repeat: repeat-y;
+  margin: 0px 2px 0px 50px;
+  text-align: justify;
+  width: 194px;
+  margin-bottom: -13px;
+  padding-bottom: 7px;
+}
+
+.CategoryMenu  .myinn .modig_blocTitle {
+  width: 130px;
+  background-image: url("images/innli.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  border-bottom: 1px dashed #604426;
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+.CategoryMenu  .myinn a {
+
+
+
+
+  color: #663300;
+  text-decoration: none;
+}
+
+
+.CategoryMenu  .myinn a:hover{
+    color:#000;
+    
+    
+}
+
+.CategoryMenu  .more{
     display: none
 }

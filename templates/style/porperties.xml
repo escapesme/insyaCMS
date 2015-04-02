@@ -12,7 +12,7 @@
         <position>slideShow_right</position> 
         <position>left</position>  
         <position>main_top_left</position>  
-          <position>main_top_right</position>  
+        <position>main_top_right</position>  
         <position>main_bottom </position> 
         <position>right</position>  
         <position>footer_left</position>  
@@ -24,7 +24,9 @@
     <classs>
         <class>nostyle</class>
         <class>dark</class>
-        <class>light</class>          
+        <class>light</class>  
+        <class>LocationMenu</class>  
+        <class>CategoryMenu</class>  
     </classs>
     
     <fields>

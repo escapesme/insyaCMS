@@ -17,10 +17,17 @@ function main($pro, $l) {
 
     // $oid = "160";
 
-    if (isset($_SESSION['razaOwnerID']) && $_SESSION['razaOwnerID'] != "") {
-        $oid = $_SESSION['razaOwnerID'];
 
-        $odata = $lib->db->get_row("com_users", "*", "id='" . $oid . "'");
+    if (isset($_SESSION['razaOwnerID']) && $_SESSION['razaOwnerID'] != "") {
+
+        
+        
+        
+      //  echo  $_SESSION['razaOwnerID'];
+
+
+        $odata = $lib->coms->faiz->getUserDataByID($_SESSION['razaOwnerID']);
+
 
 
         $data .= "<h3>" . $l['lgointitle'] . $odata['FullName'] . " (" . $odata['Mumin_id'] . ") " . "</h3>";
@@ -35,11 +42,10 @@ function main($pro, $l) {
                 , "moreAttra" => "data-to='/FizReservations/' data-do='logout' "
             )
         );
+        
+
         $lib->forms->filds = $filds;
         $data .= $lib->forms->_render_form();
-
-
-
 
 
         $ressettings = $lib->db->get_row("fiz_reservation_settings");
@@ -49,7 +55,7 @@ function main($pro, $l) {
 
         switch ($_GET['do']) {
 
-            case "create-raza":
+            case "create":
                 $data .= fiz_reservations_craeteData($pro, $l, $oid);
                 break;
             case "view-raza":
@@ -61,13 +67,14 @@ function main($pro, $l) {
                 break;
 
             case "send-raza":
-            default :
-                $data .= fiz_reservations_returnData($pro, $l, $oid);
-                break;
+
 
             case "end-raza":
 
                 $data .= fiz_reservations_endData($pro, $l, $oid);
+                break;
+            default :
+                $data .= fiz_reservations_returnData($pro, $l, $oid, $odata);
                 break;
         }
     } else {

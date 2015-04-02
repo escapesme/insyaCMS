@@ -37,11 +37,11 @@ and open the template in the editor.
         <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
       
         <site  
-            xref='com_modules_status_xref' 
+            xref='sys_modules_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 
-            select_data="com_site_status"
+            select_data="sys_site_status"
             select_text='title' 
             select_value='id'  
             title="site" 

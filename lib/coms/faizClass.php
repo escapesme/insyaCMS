@@ -82,27 +82,59 @@ class faizClass {
 
 
     function saveUser($data) {
-
-
-
         /* @var $lib  \libs\libs */
         global $lib;
+        $u = $lib->db->get_row("com_fiz_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
 
-        $u = $lib->db->get_row("com_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
+
+
+
         if (is_array($u)) {
-            $lib->db->update_row("com_users", $data, $u['id']);
-
-            $id = $u['id'];
+            $lib->db->update_row("com_fiz_users", $data, $u['user_id']);
+            $id = $u['user_id'];
         } else {
-
             $u = $lib->db->insert_row("com_users", $data);
-
-            $rdata = $lib->db->get_row("com_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
+            $rdata = $lib->db->get_row("com_users", "max(id) as id");
+            $data['user_id'] = $rdata['id'];
+            $u = $lib->db->insert_row("com_fiz_users", $data);
             $id = $rdata['id'];
         }
 
 
+        print_r($id);
         return $id;
+    }
+
+    function getUserDataByMumin_id($uid) {
+        $r = FALSE;
+        /* @var $lib  \libs\libs */
+        global $lib;
+        $u = $lib->db->get_row("com_fiz_users", "*", "Mumin_id='" . $uid . "'");
+        if (is_array($u)) {
+            $o = $lib->db->get_row("com_users", "*", "id='" . $u['user_id'] . "'");
+            $r = array_merge($u, $o);
+        }
+
+        return $r;
+    }
+
+    function getUserDataByID($uid) {
+        $r = FALSE;
+        /* @var $lib  \libs\libs */
+        global $lib;
+
+
+        $u = $lib->db->get_row("com_users", "*", "id='" . $uid . "'");
+
+        if (is_array($u)) {
+            $o = $lib->db->get_row("com_fiz_users", "*", "user_id='" . $u['id'] . "'");
+            $r = array_merge($u, $o);
+        }
+
+        
+             //   print_r($r);
+
+        return $r;
     }
 
     function createReservationID() {
@@ -124,8 +156,8 @@ class faizClass {
         global $lib;
 
         $where_user = $this->returns($name, $field);
- 
-       
+
+
 
         $where = "";
         if (trim($where_user) != "") {

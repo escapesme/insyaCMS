@@ -55,7 +55,7 @@ $(function() {
 
 
 
-    $("#bt_prv").click(function() {
+    $("#bt_next").click(function() {
 
 
 
@@ -85,7 +85,7 @@ $(function() {
 
     });
 
-    $("#bt_next").click(function() {
+    $("#bt_prv").click(function() {
 
 
 

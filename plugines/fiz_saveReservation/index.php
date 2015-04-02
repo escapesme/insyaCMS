@@ -23,109 +23,40 @@ function fiz_saveReservation($data) {
 
 
 
+    $reservation_id = $lib->coms->faiz->createReservationID();
 
 
-    $A = 0;
+    $resData = array(
+        "reservation_id" => $reservation_id,
+        "email" => $dataSesstion['email'],
+        "mobile" => $dataSesstion['mobile'],
+        "airport_pickup" => "",
+    );
 
-    $I = 0;
 
-    $C = 0;
-
+    // $lib->db->insert_row("fiz_reservation", $resData); 
 
 
     foreach ($dataGuests as $g) {
 
 
-        $saveArray = array_merge($g, $_SESSION);
-        $saveArray['user_id'] = saveUser($g);
+        $userData = $lib->coms->faiz->getUserDataByMumin_id($g['Mumin_id']);
 
 
+        $xrefData = array(
+            "reservation_id" => $reservation_id,
+            "user_id" => $userData['user_id'],
+            "airline" => $dataSesstion['airline'],
+            "airline_code" => $dataSesstion['airline_code'],
+            "individual_id" => $reservation_id,
+            "its_id" => $g['Mumin_id'],
+            "arrival_date" => $g['ex_checkin']
+            , "departure_date" => $g['ex_checkout']
+        );
 
 
-        if ($_SESSION['faiz-new-reservation']['res_status'] == "edit") {
-
-            $newResId = $_SESSION['faiz-new-reservation']['edit_id'];
-
-            $lib->db->delete_data("fiz_reservation", "reservation_id ='" . $newResId . "'");
-            $lib->db->delete_data("fiz_extension", "reservation_id ='" . $newResId . "'");
-        } else {
-
-
-            $newResId = createReservationID();
-        }
-
-
-        $saveArray['reservation_id'] = $newResId;
-
-
-
-
-
-        if ($g['type'] == "Adult") {
-            $A++;
-            $newResId.="A" . $A;
-        } else if ($g['type'] == "Child") {
-            $C++;
-            $newResId.="C" . $C;
-        } else if ($g['type'] == "Infant") {
-            $I++;
-
-            $newResId.="I" . $I;
-        }
-        $saveArray['individual_id'] = $newResId;
-
-
-
-
-        $lib->db->insert_row("fiz_reservation", $saveArray);
-
-
-        $lib->db->insert_row("fiz_extension", $saveArray);
+        //  $lib->db->insert_row("fiz_reservation_users_xref", $xrefData);
     }
-
-
-
-
-
-
-
-    return $rdata;
-}
-
-function createReservationID() {
-    /* @var $lib  \libs\libs */
-    global $lib;
-    $mdata = $lib->db->get_maxrow("fiz_reservation");
-
-
-    $d = $mdata['reservation_id'];
-    $d++;
-
-
-
-    return sprintf("%04s", $d);
-}
-
-function saveUser($data) {
-
-    /* @var $lib  \libs\libs */
-    global $lib;
-
-    $u = $lib->db->get_row("com_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
-    if (is_array($u)) {
-        $lib->db->update_row("com_users", $data, $u['id']);
-
-        $id = $u['id'];
-    } else {
-
-        $u = $lib->db->insert_row("com_users", $data);
-
-        $rdata = $lib->db->get_row("com_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
-        $id = $rdata['id'];
-    }
-
-
-    return $id;
 }
 ?>
 

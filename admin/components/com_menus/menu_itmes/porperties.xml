@@ -86,7 +86,7 @@ and open the template in the editor.
         <Data_site name='Data_site'  collapse="yes" type='block' title="Status"  />
         
         
-        <all_status name="all_status"  type="enable"  title="all site" value="1" /> 
+        <all_status name="all_status"  type="enable"  title="Show all site" value="1" /> 
       
         
          
@@ -94,15 +94,29 @@ and open the template in the editor.
         
         
         <site  
-            xref='com_modules_status_xref' 
+            xref='com_site_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 
-            select_data="com_site_status"
+            select_data="sys_site_status"
             select_text='title' 
             select_value='id'  
-            title="site" 
+            title="Show site" 
             pclass='_50'/>
+               
+        <addstatus  
+            name="addstatus" 
+            type="list" 
+            select_type='DB' 
+            select_data="sys_site_status"
+            select_text='title' 
+            select_value='id'  
+            title="Add site" 
+            select_query="type='get' or type='post' or type='session'  "
+            pclass='_50'/>
+        
+        
+        
         <Data_siteend type='endblock'  name='Data_siteend'/>
         
         

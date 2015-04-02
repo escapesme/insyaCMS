@@ -1006,7 +1006,7 @@ class htmlClass {
 
 
                 case "DIR":
-                    $vdata = $this->lib->files->readFilesNames($selectData, $select_field_text,$fild['perfix']);
+                    $vdata = $this->lib->files->readFilesNames($selectData, $select_field_text, $fild['perfix']);
                     asort($vdata);
                     foreach ($vdata as $value) {
                         $out.="<option " . $this->isSelect($inputdefault, $value) . " >" . $value . "</option>";
@@ -1064,6 +1064,17 @@ class htmlClass {
                 case "months":
                     $file = $stringmyurl . $this->foldersMap->lib_folder . "xml/months.xml";
                     $out.=$this->xmlToOptionsVal($file, "months", $inputdefault, $select_field_value);
+
+                case "language":
+
+
+                    $mydata = $this->db->get_Data("com_language", "*", $select_query);
+                    foreach ($mydata as $mdata) {
+                        $val = $mdata["id"];
+
+                        $out.="<option  " . $this->isSelect($inputdefault, $val) . " value=\"" . $val . "\">" . $mdata["title"] . "</option>";
+                    }
+
                     break;
                 case "DB":
 

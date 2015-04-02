@@ -15,111 +15,133 @@ function mod_news_Ticker($pro) {
 
 
 
-    if ($pro['viewtype'] == "h") {
 
 
 
 
-        $data =
-                "
-              
-          
 
 
 
-    <div class='tickerbts'>
-    
-
+    $data .= "<div class='tickerbts'>
 <div class='tickerbt btleft stop" . $pro['myid'] . "'>left</div> 
-
-  
-    <marquee  id=\"mysl\"  height=\"20\" onmouseover=\"this.setAttribute('scrollamount', 0, 0)\" width=\"280\" direction=\"left\" 
-onmouseout=\"this.setAttribute('scrollamount', 6, 0)\" >
-
-
+    <div  class='marquee' id=\"mysl\" ><ul>
 ";
+    if ($pro['view'] == "categories") {
 
-        if ($pro['view'] == "categories") {
-
-            $data .= news_Ticker_categories_getLast($pro, $thisTable, $thiscatgoriesTable);
-        } else {
-            if ($pro['Datatype'] == "latest") {
-
-                $data .= news_Ticker_getLast($pro, $thisTable, $thiscatgoriesTable);
-            } else if ($pro['Datatype'] == "mostview") {
-
-                $data .= news_Ticker_hints($pro, $thisTable, $thiscatgoriesTable);
-            }if ($pro['Datatype'] == "tags") {
-                $data .= news_Ticker_tags($pro, $thisTable, $thiscatgoriesTable);
-            }
-        }
-        $data .="</marquee><div class='tickerbt btright start" . $pro['myid'] . "'>right</div></div>";
+        $data .= news_Ticker_categories_getLast($pro, $thisTable, $thiscatgoriesTable);
     } else {
+        if ($pro['Datatype'] == "latest") {
 
+            $data .= news_Ticker_getLast($pro, $thisTable, $thiscatgoriesTable);
+        } else if ($pro['Datatype'] == "mostview") {
 
-
-        $data =
-                '<script src="/' . $lib->util->mylink("module", "mod_news_Ticker") . 'js/jquery.totemticker.js"></script>' .
-                "<script>newsTikerRender('" . $pro['myid'] . "');</script>
-          
-
-
-    <div class='tickerbts'>
-    
-<div class='tickerbt  ticker-next ticker-next" . $pro['myid'] . "'>next</div> 
-   
-
-    <div class='tickerbt ticker-previous ticker-previous" . $pro['myid'] . "'>previous</div> 
-        
-<!--      
-<div class='tickerbt stop stop" . $pro['myid'] . "'>stop</div> 
-<div class='tickerbt start start" . $pro['myid'] . "'>start</div>--!>
-    </div>
-<ul class='newstiker " . $pro['myid'] . "'>
-
-";
-
-        if ($pro['view'] == "categories") {
-
-            $data .= news_Ticker_categories_getLast($pro, $thisTable, $thiscatgoriesTable);
-        } else {
-            if ($pro['Datatype'] == "latest") {
-
-                $data .= news_Ticker_getLast($pro, $thisTable, $thiscatgoriesTable);
-            } else if ($pro['Datatype'] == "mostview") {
-
-                $data .= news_Ticker_hints($pro, $thisTable, $thiscatgoriesTable);
-            }if ($pro['Datatype'] == "tags") {
-                $data .= news_Ticker_tags($pro, $thisTable, $thiscatgoriesTable);
-            }
+            $data .= news_Ticker_hints($pro, $thisTable, $thiscatgoriesTable);
+        }if ($pro['Datatype'] == "tags") {
+            $data .= news_Ticker_tags($pro, $thisTable, $thiscatgoriesTable);
         }
-        $data .="</ul>";
     }
+    $data .="</ul></div><div class='tickerbt btright start" . $pro['myid'] . "'>right</div></div>";
+
+
 
     return $data;
 }
 ?>
 
 <script>
+
     $(function() {
-/*
-
-$(".maindata  .left"){
-    
-    
-    
-}*/
-
-        $(".btright").click(function() {
-            $("#mysl").attr('direction', "right");
-
-        })
 
 
-        $(".btleft").click(function() {
-            $("#mysl").attr('direction', "left");
+        $(document).ready(function() {
 
-        })
+            var speed = 1;
+            
+            
+            var pwidth= $('.marquee').outerWidth();
+            var items, scroller = $('.marquee ul');
+
+
+            var width = 0;
+
+            scroller.children().each(function() {
+                width += $(this).outerWidth(true) + 5;
+            });
+
+            scroller.css('width', width);
+
+            scroll();
+            function scroll() {
+                items = scroller.children();
+                var scrollWidth = items.eq(0).outerWidth();
+                scroller.animate({'left': pwidth}, 120 * 100 / speed, 'linear', changeFirst);
+            }
+
+
+            function scrollRight() {
+                items = scroller.children();
+                var scrollWidth = items.last().outerWidth();
+                scroller.animate({'left': -scroller.outerWidth()}, 120 * 100 / speed, 'linear', changeLast);
+            }
+
+
+            function changeFirst() {
+                scroller.append(items.eq(0).remove()).css("left", -scroller.outerWidth());
+                scroll();
+            }
+
+
+            function changeLast() {
+                scroller.append(items.eq(0).remove()).css("left", pwidth);
+                scrollRight();
+            }
+
+
+
+            $(".marquee ul").hover(function() {
+                $(this).stop();
+            }, function() {
+                scroll();
+            });
+
+
+
+
+            $(".btright").click(function() {
+
+                $(".marquee ul").stop();
+
+
+                scroll();
+
+            })
+            $(".btleft").click(function() {
+                $(".marquee ul").stop();
+                scrollRight();
+
+
+            })
+        });
+
+
+
     })
 
 </script>
+
+<style>
+    .marquee {
+        position: relative;
+        width: 280px;
+        overflow: hidden
+    }
+    .marquee ul{
+        width: auto;
+        position: absolute;
+
+    }
+
+    .marquee li{
+        display: inline-block;
+    }
+</style>

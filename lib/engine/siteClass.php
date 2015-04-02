@@ -25,8 +25,8 @@ class siteClass {
     }
 
     function strat() {
-
         $this->siteSetting();
+        ///print_r($this->getActStatus());
     }
 
     function siteSetting() {
@@ -35,10 +35,7 @@ class siteClass {
 
 
 
-        $this->Setting = $this->db->get_row("site_setting", "*");
-
-
-
+        $this->Setting = $this->lib->db->get_row("site_setting", "*");
 
         if (isset($_GET['lang'])) {
 
@@ -50,11 +47,17 @@ class siteClass {
         return $this->lib->db->get_data("com_language", "*");
     }
 
+    var $otherStatus = "";
+
+    function addTostatus($data) {
+        $this->otherStatus.="," . $data;
+    }
+
     function getStatus($more = "") {
 
         $this->lib->db->getEnable = true;
-        $data = $this->lib->db->get_data("com_site_status", "*", $more);
-       // print_r($data);
+        $data = $this->lib->db->get_data("sys_site_status", "*", $more);
+        return $data;
     }
 
     function getFromStatus($type = "") {
@@ -72,25 +75,35 @@ class siteClass {
         return $this->getStatus("type='$type'");
     }
 
-    
+    function getStatusData($g, $type = "alias") {
+        //$_GET
+        // echo $this->lib->variables->statusVariableName;
+        $us = explode(",", $g);
 
-    function getStatusData($g) {
-        if ($_GET['site']) {
-            $us = explode(",", $g);
-        }
 
         $i = 0;
         foreach ($us as $a) {
-            $data[$i] = $this->lib->db->get_row("com_site_status", "*", "alias='" . $a . "'");
-            $i++;
+            if ($a != "") {
+
+                //  echo  "<".$a.">"; 
+                $data[$i] = $this->lib->db->get_row("sys_site_status", "*", $type . "='" . $a . "'");
+
+                $i++;
+            }
         }
+
+        //   
+
+        return $data;
     }
 
     function getActStatus($type = "") {
-        $normal = $this->getFromStatus($this->lib->variables->statusNormal);
         $get = $this->getStatusData($_GET[$this->lib->variables->statusVariableName]);
+
+        $normal = $this->getFromStatus($this->lib->variables->statusNormal);
         $post = $this->getStatusData($_POST[$this->lib->variables->statusVariableName]);
         $session = $this->getStatusData($_SESSION[$this->lib->variables->statusVariableName]);
+        $other = $this->getStatusData($this->otherStatus,"id");
 
 
         switch ($type) {
@@ -106,10 +119,24 @@ class siteClass {
             case $this->lib->variables->statusNormal:
                 $r = $normal;
                 break;
+            case "other":
+                $r = $other;
+                break;
             default :
-                $r = array_merge((array) $normal, (array) $post, (array) $get, (array) $session);
+                $r = array_merge((array) $normal, (array) $post, (array) $get, (array) $session, (array) $other);
                 break;
         }
+
+
+        foreach ($r as $rr) {
+            /*
+              if (!is_array($rr)){
+
+              unset($r[$rr]);
+              } */
+        }
+
+
         return $r;
     }
 
@@ -124,19 +151,19 @@ class siteClass {
         $status = $this->getActStatus($type);
         $xreafTabel = "";
         if ($for == "menu") {
-            $xreafTabel = "menu_itmes_status_xref";
+            $xreafTabel = "sys_menus_status_xref";
         } else {
-            $xreafTabel = "com_modules_status_xref";
+            $xreafTabel = "sys_modules_status_xref";
         }
 
 
         if (is_array($sttaus)) {
             foreach ($sttaus as $s) {
-                $datasql = $this->db->get_data($xreafTabel, "*", "item_id='" . $id . "'");
+                $datasql = $this->lib->db->get_data($xreafTabel, "*", "item_id='" . $id . "'");
 
                 foreach ($datasql as $d) {
                     if ($s['id'] == $d['status_id']) {
-                        $return = $status['alisa'] + ",";
+                        $return = $status['alisa'] . ",";
                     }
                 }
             }
@@ -146,37 +173,75 @@ class siteClass {
         return $return;
     }
 
-    
-    
-    function isInStatus($id, $all, $type) {
-        $return = $all;
-        $sttaus = $this->getActStatus();
-        $xreafTabel = "";
-        if ($type == "menu") {
-            $xreafTabel = "menu_itmes_status_xref";
-        } else {
-            $xreafTabel = "com_modules_status_xref";
-        }
-        
-        
+    function cretaStatusFormIDs($arrayData, $type = "") {
 
+        $sttaus = explode(",", $arrayData);
 
         if (is_array($sttaus)) {
             foreach ($sttaus as $s) {
-                $datasql = $this->db->get_data($xreafTabel, "*", "item_id='" . $id . "'");
+
+                if ($s != "") {
+
+                    print_r($sttaus);
+
+                    $datasql = $this->lib->db->get_row("sys_site_status", "*", "id='" . $s . "'");
+                    //  foreach ($datasql as $d) {
+                    if ($datasql['type'] == $type) {
+
+                        $m = "";
+
+                        if ($s > 1) {
+
+                            $m = ",";
+                        }
+                        $return .= $m . $datasql['alias'];
+                    }
+                    // }
+                }
+            }
+        }
+
+
+        return $return;
+    }
+
+    function isInStatus($id, $all, $type) {
+        $sttaus = $this->getActStatus();
+
+
+
+
+        $xreafTabel = "";
+        if ($type == "menu") {
+            $xreafTabel = "sys_menu_status_xref";
+        } else {
+            $xreafTabel = "sys_modules_status_xref";
+        }
+
+
+        $return = $all;
+//print_r($sttaus);
+
+        if (is_array($sttaus)) {
+            foreach ($sttaus as $s) {
+
+                $datasql = $this->lib->db->get_data($xreafTabel, "*", "item_id='" . $id . "'");
+
+
+
+
 
                 foreach ($datasql as $d) {
-
                     if ($s['id'] == $d['cat_id']) {
-
                         $return = true;
+                        break;
                     }
                 }
             }
         }
 
 
-        return true;
+        return $return;
     }
 
 }

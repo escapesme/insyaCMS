@@ -83,7 +83,7 @@ class mobileClass {
         $urldate = $lib->util->createURL("com_content_article", $d['date'], "", "date");
         $urlcat = $lib->util->createURL("com_content_article", $catData['alias']);
 
-        $returnData.= "<li id='" . $d['id'] . "' class='itemBlock'>"
+        $returnData.= "<li id='" . $d['id'] . "' class='itemBlock'><a href='".$d['ex_link']."'>"
                 . "";
 
 
@@ -150,7 +150,7 @@ class mobileClass {
 
 
 
-        $returnData.= "</li>";
+        $returnData.= "</a></li>";
 
 
 

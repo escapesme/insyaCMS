@@ -414,7 +414,7 @@ function com_project_item($id, $l, $settings) {
 
     $r .= '<div class="comment tabsbody">';
 
-    echo "plg_comments", "enabled__" . $settings['commet_users'] . ";users__" . $settings['commet_type'] . ";mytype__" . $settings['cart'] . ";ob_type__com_project;ob_id__" . $data['id'];
+ //   echo "plg_comments", "enabled__" . $settings['commet_users'] . ";users__" . $settings['commet_type'] . ";mytype__" . $settings['cart'] . ";ob_type__com_project;ob_id__" . $data['id'];
 
     $r .=$lib->plugins->importPlugin("plg_comments", "enabled__" . $settings['commet_users'] . ";users__" . $settings['commet_users'] . ";mytype__" . $settings['commet_type'] . ";ob_type__com_project;ob_id__" . $data['id']);
 

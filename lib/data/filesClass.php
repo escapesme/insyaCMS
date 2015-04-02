@@ -285,10 +285,6 @@ class filesClass {
 
         $xml = simplexml_load_file($file);
 
-        echo $file;
-
-
-
         foreach ($xml->children() as $child) {
 
 

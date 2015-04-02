@@ -5,7 +5,7 @@
  */
 
 function main($pro, $lang) {
-    echo "fdfsdfsdf";
+  //  echo "fdfsdfsdf";
 
     global $lib;
 

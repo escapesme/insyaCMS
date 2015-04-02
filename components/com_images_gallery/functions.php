@@ -90,7 +90,7 @@ function _getItems_slideShow($pro, $lang, $catID, $catTable, $table, $rowFrom, $
     $width = 0;
     foreach ($datasql as $da) {
         $width+=117;
-        $returnData.= " <div  class='__" . $da['id'] . " block'><img src='/uploads/images/" . $da['image'] . "' ></div>";
+        $returnData.= " <div  class='__" . $da['id'] . " block'><img src='/uploads/images/" . $da['image'] . "' ><div class='title mydes'>" . $da['title'] . "</div></div>";
     }
 
 

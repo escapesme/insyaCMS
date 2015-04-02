@@ -18,7 +18,9 @@ and open the template in the editor.
 *{
     text-transform: capitalize
 }
-
+select{
+    text-transform: none
+}
 /* Typography */
 h1, h2, h3, h4, h5, h6{
     margin:10px 0;

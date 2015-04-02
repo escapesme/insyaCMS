@@ -304,7 +304,7 @@ div.theme-default div.nivo-controlnav a.nivo-control ,.mod_image img,.multiple_s
     font-weight: bold;
     
 
-    /* color: #222; */
+    color: #222;
     line-height: 30px;
     margin-bottom: 8px;
 
@@ -539,4 +539,8 @@ input.required-valid,input[type="text"].required-valid, input[type="input"].requ
 .add-more-title  {
     font-size: 18px;
     padding: 5px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }

@@ -81,11 +81,18 @@ $(function() {
 
 
     var ids = $(".Mumin_ids").val();
-    ids = ids.split(",");
-    for (var i = 0; i < ids.length; i++) {
+
+    if (ids) {
+        ids = ids.split(",");
+        for (var i = 0; i < ids.length; i++) {
+            getAjax("res/chekej", "ej=" + ids[i], function(f) {
 
 
-        updateResTable(ids[i], "open");
+                updateResTable(f, "open");
+
+            })
+        }
+
 
     }
 
@@ -95,14 +102,13 @@ $(function() {
         var me = $(this);
 
 
-        getAjax("res/chekej", "ej=" + me.parent().find(".its_id").val() + "&bod=" + me.parent().find(".dob").val(), function(f) {
+        getAjax("res/chekej", "ej=" + me.parent().find(".its_id").val(), function(f) {
+
+            if ($.trim(f) !== "0") {
 
 
-            if ($.trim(f) == "true") {
 
-
-
-                updateResTable(me.parent().find(".its_id").val());
+                updateResTable($.trim(f));
 
             } else {
 
@@ -177,61 +183,41 @@ $(function() {
 
 
 
-    function updateResTable(ej, status) {
-
-
-
-
-
-
-
-        getAjax("res/getejData", "ej=" + ej, function(data) {
-
-       
-
-            var data = JSON.parse(data.replace(/array\(/g, '{').replace(/\)/g, '}').replace(/=>/g, ':'));
-
-
-
-            if ($(".tabelRes table tbody").length)
-            {
-
-
-
-                var html = "<tr>\n\
+    function updateResTable(getdata, status) {
+        //  alert(getdata);
+        var data = new Object();
+        getdata = getdata.split("[");
+        for (var i = 0; i < getdata.length; i++) {
+            var a = $.trim(getdata[i]).split("=>");
+            var v = a[0].replace("]", "");
+            data[$.trim(v)] = $.trim(a[1]);
+        }
+        if ($(".tabelRes table tbody").length)
+        {
+            var html = "<tr>\n\
 <td>" + data['Mumin_id'] + "</td>\n\
 <td>" + data['FullName'] + "</td>\n\
 <td><input class='button removeTabelRes' value='remove'  data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>";
 
 
+            $(".tabelRes table tbody").append(html).hide().fadeIn(1000);
 
-
-
-                $(".tabelRes table tbody").append(html).hide().fadeIn(1000);
-                if (status !== "open") {
-
-
-                    $(".Mumin_ids").val($(".Mumin_ids").val() + "," + data['Mumin_id']);
-
-
-                }
-
-            } else {
-
-                alert(data['Mumin_id']);
-
-                var html = "<table><thead><tr><th>ITS ID</th><th>Name</th></tr></thead><tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr></tbody></table>";
-
-
-                if (status !== "open") {
-                    $(".Mumin_ids").val(data['Mumin_id']);
-                }
-                $(".tabelRes").html(html).hide().fadeIn(1000);
-
+            if (status !== "open") {
+                $(".Mumin_ids").val($(".Mumin_ids").val() + "," + data['Mumin_id']);
             }
 
+        } else {
 
-        });
+
+            var html = "<table class='mainTabel'><thead><tr><th>ITS ID</th><th>Name</th></tr></thead><tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr></tbody></table>";
+            if (status !== "open") {
+                $(".Mumin_ids").val(data['Mumin_id']);
+            }
+            $(".tabelRes").html(html).hide().fadeIn(1000);
+
+        }
+
+
 
     }
 

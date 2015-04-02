@@ -10,15 +10,23 @@
 
 function mod_News_Data($pro, $l) {
     global $lib;
+    print_R($pro);
 
+
+ini_set("display_errors", 1);
+error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
     $thisTable = "com_content_article";
     $thiscatgoriesTable = "com_content_catgories";
     $datacat = $lib->db->get_row($thiscatgoriesTable, "*", "`id`='" . $pro['cat_id'] . "'");
     $url = $lib->util->createURL($thisTable, $datacat['alias']);
 
+    
+    
+    
     $data.="<div class='more top'><a href='" . $url . "'>>> " . $l['moretop'] . " " . $datacat['title'] . " </a></div>";
     if ($pro['view'] == "categories") {
 
+        
 
         $data = mod_categories_getLast($pro, $thisTable, $thiscatgoriesTable, $l);
     } else {

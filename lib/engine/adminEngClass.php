@@ -214,7 +214,6 @@ class adminEngClass {
         }
 
 
-        echo $mainfolder;
 
 
         $mainfile = $mainfolder . "/index.php";

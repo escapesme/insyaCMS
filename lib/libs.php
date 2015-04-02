@@ -9,7 +9,12 @@
  */
 
 namespace libs;
+ini_set("display_errors", 0);
 
+if (!$myurl){
+    
+    $myurl="";
+}
 require_once($myurl . 'config.php');
 require_once('utiles/DBClass.php');
 require_once('utiles/utilClass.php');

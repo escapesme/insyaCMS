@@ -102,7 +102,7 @@ $(function() {
 
 
 
-                updateResTable(me.parent().find(".its_id").val());
+           //     updateResTable(me.parent().find(".its_id").val());
 
             } else {
 
