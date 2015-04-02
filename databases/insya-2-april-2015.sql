@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 29, 2015 at 01:44 PM
+-- Generation Time: Apr 02, 2015 at 03:47 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -121,10 +121,10 @@ INSERT INTO `com_content_article` (`id`, `title`, `des`, `artbody`, `hits`, `cat
 (180, 'Ain Sokhna', '', '<p><strong><img src="images/c36.jpg" alt="/" /></strong></p>\r\n<p><strong>&nbsp;</strong>Ain Sukhna, the Arabic for hot spring, was named after the nearby sulfur springs. The springs originate at Gebel Ataka, the northern most mountain in the Eastern Desert.&nbsp; Close enough to Cairo for a day-trip, this popular weekend resort has fine beaches, coral reefs, fishing and water sports. It is located about 55 kilometers (34 miles) south of Suez, and is the nearest bathing resort to Cairo. Some hotels in Ain Sukhna are the best on the Red Sea.</p>\r\n<p><strong>&nbsp;</strong></p>', 0, '37', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 103, 0, '2015-03-11', '2013-05-28', 1, 7, 0, '', '51a505a6ba493.jpg', 'Ain-Sokhna', '', '', '', 0, '', ''),
 (181, 'Luxor', '', '<p><strong><img src="images/c35.jpg" alt="/" /></strong></p>\r\n<p>Luxor is unique among the world cities, originally built on the site of ancient Thebes over 4,000 years it is home to some of the most spectacular ancient sites in the world. Wherever you go, you cant afford to miss a thing. You will experience the past and the present, with a wealth of history and culture that spans centuries. There is hardly anywhere in the city that does not have a relic, offering you an impressive representation of the splendour of the ancient Egyptians several thousand years ago</p>\r\n<p><strong>&nbsp;</strong></p>', 0, '', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 104, 0, '0000-00-00', '2013-05-28', 1, 0, 0, '', '51a505d5dc610.jpg', 'Luxor', '', '', '', 0, '', ''),
 (182, 'Aswan', '', '<p><strong><img src="images/c33.jpg" alt="/" /></strong></p>\r\n<p><strong>&nbsp;</strong><strong>&nbsp;</strong>Egypt southernmost city and one of her most beautiful&nbsp;Aswan is larger but much quieter than Luxor, it is Egypt&nbsp; southernmost city and one of her most beautiful, sitting alongside some of the best stretches of the Nile -- wide, green and dotted with pretty islands, with high desert hills topped with the Aga Khan Mausoleum as a dramatic backdrop</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong><img src="images/c34.jpg" alt="/" /></strong></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>', 0, '37', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 105, 0, '2015-03-11', '2013-05-28', 1, 8, 0, '', '51a5064e60ea5.jpg', 'Aswan', '', '', '', 0, '', ''),
-(183, 'AL-Azhar Park & Old Cairo', '<p>Al-Azhar Park is a major park in Cairo Darb al-Ahmar neighborhood in Egypt. It was inaugurated in May 2005. Among several honors, this park is listed as one of the world sixty great public spaces by Project for Public Spaces (PPS).[1] The Park was created by the Historic Cities Support Programme</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">5 LE</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">10 am - 10 pm</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">15 mins</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img src="images/c26.jpg" alt="/" width="400" height="313" /></strong></p>\r\n<p>Al-Azhar Park is a major park in Cairo&nbsp; Darb al-Ahmar neighborhood in Egypt. It was inaugurated in May 2005.</p>\r\n<p>Among several honors, this park is listed as one of the world&nbsp; sixty great public spaces by Project for Public Spaces (PPS).<sup>[1]</sup> The Park was created by the Historic Cities Support Programme (HCSP) of the Aga Khan Trust for Culture (AKTC), an entity of the Aga Khan Development Network (AKDN). The park, developed at a cost in excess of USD $30 million, was a gift to Cairo from His Highness the Aga Khan. It is interesting to note that the city of Cairo was founded in the year 969 by the Fatimid Imam-Caliphs who were ancestors of the Aga Khan.</p>\r\n<p>The park project was not only the development of the park, but also included aspects of archeology (12th century Ayyubid wall), historic building rehabilitation (14th Century Umm Sultan Shaban Mosque, the 13th century Khayrbek complex, and the Darb Shoughlan School) and several quality of life improvement initiatives. Those initiatives included skills training, area rehabilitation, microfinance, and support in the areas of health and education among others.</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong><span>Old Cairo</span></strong></p>\r\n<p>&nbsp;</p>\r\n<p>Old Cairo is really compact, and you can with ease cover a great collection of important Cairo sights in half a day.The part of <strong>Cairo</strong> that contains</p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 106, 1, '2015-03-24', '2013-05-28', 1, 2, 0, '', '51a5067d47d61.jpg', 'AL-Azhar-Park-Old-Cairo', '', '', '', 0, '', ''),
+(183, 'AL-Azhar Park & Old Cairo', '<p>Al-Azhar Park is a major park in Cairo Darb al-Ahmar neighborhood in Egypt. It was inaugurated in May 2005. Among several honors, this park is listed as one of the world sixty great public spaces by Project for Public Spaces (PPS).[1] The Park was created by the Historic Cities Support Programme</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">5 LE</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">10 am - 10 pm</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">15 mins</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img src="images/c26.jpg" alt="/" width="400" height="313" /></strong></p>\r\n<p>Al-Azhar Park is a major park in Cairo&nbsp; Darb al-Ahmar neighborhood in Egypt. It was inaugurated in May 2005.</p>\r\n<p>Among several honors, this park is listed as one of the world&nbsp; sixty great public spaces by Project for Public Spaces (PPS).<sup>[1]</sup> The Park was created by the Historic Cities Support Programme (HCSP) of the Aga Khan Trust for Culture (AKTC), an entity of the Aga Khan Development Network (AKDN). The park, developed at a cost in excess of USD $30 million, was a gift to Cairo from His Highness the Aga Khan. It is interesting to note that the city of Cairo was founded in the year 969 by the Fatimid Imam-Caliphs who were ancestors of the Aga Khan.</p>\r\n<p>The park project was not only the development of the park, but also included aspects of archeology (12th century Ayyubid wall), historic building rehabilitation (14th Century Umm Sultan Shaban Mosque, the 13th century Khayrbek complex, and the Darb Shoughlan School) and several quality of life improvement initiatives. Those initiatives included skills training, area rehabilitation, microfinance, and support in the areas of health and education among others.</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong><span>Old Cairo</span></strong></p>\r\n<p>&nbsp;</p>\r\n<p>Old Cairo is really compact, and you can with ease cover a great collection of important Cairo sights in half a day.The part of <strong>Cairo</strong> that contains</p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 106, 1, '2015-04-02', '2013-05-28', 1, 4, 0, '', '51a5067d47d61.jpg', 'AL-Azhar-Park-Old-Cairo', '', '', '', 0, '', ''),
 (184, 'Citadel', '<p>One of Cairo most popular tourist attractions is the Citadel, located on a spur of limestone that had been detached from its parent Moqattam Hills by quarrying. The Citadel is one of the world greatest monuments to medieval warfare,</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">50 LE</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">9 am to 4 pm</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">20 mins</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img src="images/c23.jpg" alt="/" /></strong></p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p>One of Cairo most popular tourist attractions is the Citadel, located on a spur of limestone that had been detached from its parent Moqattam Hills by quarrying. The Citadel is one of the world greatest monuments to medieval warfare, as well as a highly visible landmark on Cairo&nbsp; eastern skyline.&nbsp;Particularly when viewed from the back side (from the north), the Citadel reveals a very medieval character.</p>\r\n<p><strong>&nbsp;</strong></p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 107, 1, '2015-03-20', '2013-05-28', 1, 2, 0, '', '51a5069872162.jpg', 'Citadel', '', '', '', 0, '', ''),
 (185, 'Giza Pyramids', '<p>You won t want to miss one of Egypt s top attractions, the last surviving member of the Seven Wonders of the World, the Great Pyramid of Giza. There are in fact three main pyramids in Giza; the Great Pyramid of Khufu (or Cheops), The Pyramid of Kafhre and the smaller Pyramid of Menkaura.</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">60 LE</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">9am &ndash; 3:30 pm</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">45 min</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img src="images/c12.jpg" alt="/" /></strong></p>\r\n<p>&nbsp;</p>\r\n<p>You won t want to miss one of Egypt s top attractions, the last surviving member of the Seven Wonders of the World, the Great Pyramid of Giza. There are in fact three main pyramids in Giza; the Great Pyramid of Khufu (or Cheops), The Pyramid of Kafhre and the smaller Pyramid of Menkaura. Each Pyramid is a tomb to a different King of Egypt. In front of the pyramids lies the Sphinx, or Abu al-Hol in Arabic, Father of Terror. Carved out of a single block of stone, this enormous cat-like sculpture has mesmerized millions of visitors.</p>\r\n<p><strong><img src="images/c14.jpg" alt="/" /></strong></p>\r\n<p>Gizas three pyramids and the Sphinx were thought to have been constructed in the fourth dynasty of Egypt&nbsp; Old Kingdom, arguably the first great civilization on earth. For most of us that translates in to about 5000 years ago. Even though there is still debate about how the pyramids at Giza were built, most are in agreement it wasn t by aliens . It is believed about 20,000 laborers were used and approximately 2 million blocks of stone, each weighing 2.5 tons, just to build the Pyramid of Khufu.</p>\r\n<p>&nbsp;</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong><span>Sound and light show at Giza</span></strong></p>\r\n<p><strong><img src="images/c37.jpg" alt="/" /></strong></p>\r\n<p>Have you ever wondered what life must have been like thousands of years ago? These thoughts of curiosity has inspired artists to take you there, for a brief period, through the creation of sound &amp; light shows. You can get a glimpse back in time to see, feel, and imagine how it was when the powerful ancient Egyptians ruled. The artists have masterfully created a spectacle show that draws you in as part of history.</p>\r\n<p><strong>&nbsp;</strong></p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 108, 1, '2015-03-24', '2013-05-28', 1, 1, 0, '', '51a507037d9e9.jpg', 'Giza-Pyramids', '', '', '', 0, '', ''),
-(186, 'Nile Cruise', '<p>Nile Cruises...the very words conjure up images of mystery, enchantment and unforgettable experiences of one of the most ancient civilisations. One of the best ways to do this is aboard a Nile dinner cruiser.</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">180 LE (For bookings contact Zuwwar Office)</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">Evenings after sunset</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">45 mins</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img class="form_pic" src="uploads/guide_nilecruise.jpg" alt="/" /><br /></strong></p>\r\n<p>Nile Cruises...the very words conjure up images of mystery, enchantment and unforgettable experiences of one of the most ancient&nbsp;civilisations. One of the best ways to do this is aboard a Nile dinner cruiser. Some of these boats are, in fact, converted Nile passenger ships, which stay out usually for several hours and include good food, fine entertainment, and a romantic evening gazing at the lights along the the banks. Really, this is one form of entertainment that should not be missed on a visit to Egypt.</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>&nbsp;</strong></p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 109, 1, '2015-03-25', '2013-05-28', 1, 2, 0, '', '51a5072ff09f6.jpg', 'Nile-Cruise', '', '', '', 0, '', ''),
+(186, 'Nile Cruise', '<p>Nile Cruises...the very words conjure up images of mystery, enchantment and unforgettable experiences of one of the most ancient civilisations. One of the best ways to do this is aboard a Nile dinner cruiser.</p>', '<table class="mytable">\r\n<tbody>\r\n<tr>\r\n<td class="on">Entrance fee</td>\r\n<td class="on">180 LE (For bookings contact Zuwwar Office)</td>\r\n</tr>\r\n<tr>\r\n<td class="tw">Visiting Hours</td>\r\n<td class="tw">Evenings after sunset</td>\r\n</tr>\r\n<tr>\r\n<td class="on">Traveling time</td>\r\n<td class="on">45 mins</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong><img class="form_pic" src="uploads/guide_nilecruise.jpg" alt="/" /><br /></strong></p>\r\n<p>Nile Cruises...the very words conjure up images of mystery, enchantment and unforgettable experiences of one of the most ancient&nbsp;civilisations. One of the best ways to do this is aboard a Nile dinner cruiser. Some of these boats are, in fact, converted Nile passenger ships, which stay out usually for several hours and include good food, fine entertainment, and a romantic evening gazing at the lights along the the banks. Really, this is one form of entertainment that should not be missed on a visit to Egypt.</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>&nbsp;</strong></p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 109, 1, '2015-04-01', '2013-05-28', 1, 4, 0, '', '51a5072ff09f6.jpg', 'Nile-Cruise', '', '', '', 0, '', ''),
 (187, '', '', '', 0, '', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 0, 0, '0000-00-00', '0000-00-00', 0, 36, 0, '', '', '', '', '', '', 0, '', ''),
 (188, 'Khan Al Khalili', '<p>Khan el-Khalili is for many the most entertaining part of Cairo. It is an ancient shopping area, nothing less, but some of the shops have also their own little factories or workshops.</p>', '<p><strong><img src="images/c10.jpg" alt="/" /></strong>Khan el-Khalili is for many the most entertaining part of Cairo. It is an ancient shopping area, nothing less, but some of the shops have also their own little factories or workshops.</p>\r\n<p>The suq (which is the Arabic name for bazaar, or market) dates back to 1382, when Emir Djaharks el-Khalili built a big caravanserai (or khan) right here. A caravanserai was a sort of hotel for traders, and usually the focal point for economic activity for any surrounding area. This caravanserai is still there, you just ask for the narrow street of Sikka Khan el-Khalili and Badestan.</p>\r\n<p>Khan Khalili Bazaar, it stays open till late, and&nbsp; is a very interesting area for monuments as well as shopping.</p>', 0, '36', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 111, 1, '2015-03-20', '2013-05-28', 1, 15, 0, '', '51a507eedcf22.jpg', 'Khan-Al-Khalili', '', '', '', 0, '', ''),
 (189, 'Sharm al Sheikh', '', '<p><a href="../uploads/c31.jpg"><img src="uploads/c31.jpg" alt="/" /></a></p>\r\n<p><strong><span>&nbsp;</span></strong>The simplicity of sun, sea and sand. The luxury of five-star hotels, water sports, shopping and entertainment. This is Sharm el-Sheikh, one of the most accessible and developed tourist resort communities on the Sinai peninsula. All around are Bedouins, colorful tents, mountains and sea. There are small, intimate hotels with modern designs, as well as larger hotel complexes belonging to International chains, plus about all the amenities one could expect of a tourist center, including casinos, discos and nightclubs, golf courses and health facilities. In fact, with diving and snorkeling, windsurfing and other water sports, horses and camel riding, desert safaris, and great nearby antiquities attractions, it is almost impossible for a visitor to ever suffer from bored</p>\r\n<p><strong>&nbsp;</strong></p>', 0, '37', '0000-00-00', '0000-00-00', 0, '0000-00-00', '', 112, 0, '2015-03-11', '2013-05-28', 1, 34, 0, '', '51a5095b6857d.jpg', 'Sharm-al-Sheikh', '', '', '', 0, '', ''),
@@ -397,7 +397,7 @@ CREATE TABLE IF NOT EXISTS `com_content_catgories` (
   `cat_id` int(11) NOT NULL,
   `des` text NOT NULL,
   `alias` varchar(255) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=39 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=42 ;
 
 --
 -- Dumping data for table `com_content_catgories`
@@ -405,9 +405,12 @@ CREATE TABLE IF NOT EXISTS `com_content_catgories` (
 
 INSERT INTO `com_content_catgories` (`id`, `title`, `image`, `enabled`, `created`, `order`, `modified`, `delete`, `cat_id`, `des`, `alias`) VALUES
 (35, 'test', '', 1, '2013-04-16 07:54:06', 1, '2013-04-16 00:00:00', 0, 0, '', 'test'),
-(36, 'Cairo', '', 1, '2013-04-17 06:06:01', 2, '2013-05-28 00:00:00', 0, 0, '', 'Cairo'),
+(36, 'Cairo', '', 1, '2013-04-17 06:06:01', 2, '2015-04-02 12:08:39', 0, 39, '', 'Cairo'),
 (37, 'Outside Cairo', '', 1, '2013-05-28 13:11:57', 3, '0000-00-00 00:00:00', 0, 0, '', 'Outside-Cairo'),
-(38, 'Home Packages', '52c4766bf02e6.jpg', 1, '2014-01-01 13:11:24', 4, '2015-03-25 15:13:15', 0, 0, '', 'Home-Packages');
+(38, 'Home Packages', '52c4766bf02e6.jpg', 1, '2014-01-01 13:11:24', 4, '2015-03-25 15:13:15', 0, 0, '', 'Home-Packages'),
+(39, 'Egypt At A Glance', '', 1, '2015-04-02 12:08:20', 5, '0000-00-00 00:00:00', 0, 0, '', 'Egypt-At-A-Glance'),
+(40, 'Outside Cairo', '', 1, '2015-04-02 12:08:59', 2, '2015-04-02 13:02:35', 0, 39, '', 'Outside-Cairo'),
+(41, 'Ziarats', '', 1, '2015-04-02 12:09:06', 2, '2015-04-02 13:03:04', 0, 39, '', 'Ziarats');
 
 -- --------------------------------------------------------
 
@@ -540,7 +543,7 @@ CREATE TABLE IF NOT EXISTS `com_faq` (
 `id` int(11) NOT NULL,
   `question` text NOT NULL,
   `answer` text NOT NULL,
-  `enabled` tinyint(4) NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
   `delete` tinyint(4) NOT NULL,
   `order` int(11) NOT NULL,
   `created` datetime NOT NULL,
@@ -604,6 +607,107 @@ INSERT INTO `com_faq_categories` (`id`, `title`, `des`, `image`, `created`, `ena
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `com_fiz_users`
+--
+
+CREATE TABLE IF NOT EXISTS `com_fiz_users` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `delete` tinyint(4) NOT NULL,
+  `order` int(11) NOT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `group` int(11) NOT NULL,
+  `fb_id` varchar(255) NOT NULL,
+  `mobile` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `area` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
+  `mobile_confirm` tinyint(4) NOT NULL,
+  `mobile_confirm_code` text NOT NULL,
+  `Mumin_id` varchar(50) NOT NULL,
+  `FullName` varchar(250) NOT NULL,
+  `First_name` varchar(50) NOT NULL,
+  `Middle_Prefix` varchar(50) NOT NULL,
+  `Middle_Name` varchar(250) NOT NULL,
+  `Surname` varchar(250) NOT NULL,
+  `Age` varchar(10) NOT NULL,
+  `MOBILE_NO` varchar(50) NOT NULL,
+  `Age1` varchar(50) NOT NULL,
+  `Jamaat` varchar(250) NOT NULL,
+  `Jamiaat` varchar(250) NOT NULL,
+  `dob` varchar(50) NOT NULL,
+  `prefix` varchar(250) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=204 ;
+
+--
+-- Dumping data for table `com_fiz_users`
+--
+
+INSERT INTO `com_fiz_users` (`id`, `created`, `modified`, `enabled`, `delete`, `order`, `phone`, `image`, `group`, `fb_id`, `mobile`, `city`, `area`, `country`, `gender`, `mobile_confirm`, `mobile_confirm_code`, `Mumin_id`, `FullName`, `First_name`, `Middle_Prefix`, `Middle_Name`, `Surname`, `Age`, `MOBILE_NO`, `Age1`, `Jamaat`, `Jamiaat`, `dob`, `prefix`, `user_id`) VALUES
+(3, '2012-03-21 00:00:00', '2015-03-20 16:27:54', 1, 0, 0, 'g', '52c03abbbd3a9.png', 0, '', '01010666917', '', '', '', '', 1, '19858', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(151, '2014-05-07 06:33:15', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465995_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(150, '2014-05-07 06:32:08', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465928_', 0, '', '', '', '', '', 'female', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(148, '2014-05-07 06:28:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465687_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(149, '2014-05-07 06:30:49', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465849_', 0, '', '01010666918', '', '', '', 'male', 1, '89300', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(140, '2014-05-07 04:57:15', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '690193676', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(147, '2014-05-07 06:25:54', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465554_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(146, '2014-05-07 06:13:11', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464791_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(144, '2014-05-07 06:02:24', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464144_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(145, '2014-05-07 06:07:03', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464423_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(152, '2014-05-07 06:34:35', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '100000467417166', '01222489051', '', '', '', 'male', 1, '78463', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(161, '2014-06-03 17:10:30', '2015-03-20 12:42:02', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385155', 'Zainab bai Shaikh Hatim bhai Ghotawala', 'Zainab', 'Shaikh ', 'Hatim ', 'Ghotawala', '62', '918696160606', '62', 'Partabgarh_Jamaat', 'Rampura', '06 May 1952 ', '0', 0),
+(160, '0000-00-00 00:00:00', '2015-04-02 10:33:17', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385154', '16dasdasd0', 'Aziz', 'Shaikh', 'Mohammed', 'Shakir ( vasi )', '32', '201222489051', '32', 'Cairo_Jamaat', 'Al-Khaleej', '23 Aug 1982 ', 'Mulla', 160),
+(162, '0000-00-00 00:00:00', '2015-03-20 13:32:15', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355789', 'Taha bhai  Mustafa bhai Wadia', 'Taha', '', 'Mustafa', 'Wadia', '18', '+201228799330', '18', 'Cairo_Jamaat', 'Al-Khaleej', '30 Sep 1996 ', '0', 0),
+(163, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355993', 'Mufaddal bhai Mulla Aziz bhai Shakir ( vasi )', 'Mufaddal', 'Mulla', 'Aziz', 'Shakir ( vasi )', '4', '+20122489051', '4', 'Cairo_Jamaat', 'Al-Khaleej', '31 Aug 2009 ', '0', 0),
+(164, '2014-06-29 06:56:16', '2014-06-29 06:57:55', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '78652180', 'Saleh bs Abilfazal bs Husami', 'Saleh', 'Shaikh', 'Abilfazal', 'Husami', '31', '', '31', 'Qa_Jamaat', 'Mumbai', '02 Jan 1983 ', '0', 0),
+(165, '2014-07-22 14:29:30', '2015-03-20 14:41:09', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385152', 'Tasneem bai  Moiz bhai Motiwala', 'Tasneem', ' ', 'Moiz ', 'Motiwala', '26', '+971503845472', '26', 'Dubai_Jamaat', 'Al-Khaleej', '08 Apr 1988 ', '0', 0),
+(166, '2014-07-23 16:32:01', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385153', 'Farida bai  Mustafa bhai Dalal', 'Farida', ' ', 'Mustafa ', 'Dalal', '47', '+971507650681', '47', 'Dubai_Jamaat', 'Al-Khaleej', '11 Jan 1967 ', '0', 0),
+(167, '2014-07-23 16:34:12', '2015-03-20 13:50:52', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385150', 'Abbas bhai Shaikh Shabbirhusain bhai Sadriwala', 'Abbas', 'Shaikh', 'Shabbirhusain', 'Sadriwala', '28', '+971503504786', '28', 'Dubai_Jamaat', 'Al-Khaleej', '27 Oct 1986 ', '0', 0),
+(168, '2014-07-23 20:13:57', '2015-03-20 13:50:03', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322202', 'Shaikh Mohammed bhai  Abid bhai Shakir ( vasi )', 'Mohammed', '', 'Abid', 'Shakir ( vasi )', '69', '+971506761525', '69', 'Dubai_Jamaat', 'Al-Khaleej', '07 Aug 1945 ', 'Shaikh', 0),
+(169, '2014-07-23 20:20:03', '2014-07-25 06:05:37', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387405', 'Mulla Rashida bai  Rashida bhai Shakir ( vasi )', 'Rashida', ' ', ' ', 'Shakir ( vasi )', '62', '+971503557882', '62', 'Dubai_Jamaat', 'Al-Khaleej', '08 Jun 1952 ', 'Mulla', 0),
+(170, '2014-07-24 16:34:47', '2014-07-24 16:37:29', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385151', 'Mulla Abdulqadir bhai Shaikh Juzer bhai Hamidi', 'Abdulqadir', 'Shaikh', 'Juzer', 'Hamidi', '27', '+971551287652', '27', 'Dubai_Jamaat', 'Al-Khaleej', '14 Apr 1987 ', 'Mulla', 0),
+(171, '2014-07-25 05:39:47', '2015-03-20 13:50:26', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322201', 'Saifuddin bhai  Mansoor bhai Tarwala', 'Saifuddin', '', 'Mansoor', 'Tarwala', '40', '+919377718873', '40', 'Jeddah_Jamaat', 'Al-Khaleej', '03 Sep 1974 ', '', 0),
+(172, '2014-07-25 05:52:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322203', 'Saifuddin bhai  Asgarali bhai Diwan', 'Saifuddin', '', 'Asgarali', 'Diwan', '41', '', '41', 'Dubai_Jamaat', 'Al-Khaleej', '19 Sep 1972 ', '', 0),
+(173, '2014-07-31 18:57:44', '2014-08-01 21:55:14', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322205', 'Mustafa bhai  Abbas bhai Hydrabad wala', 'Mustafa', '', 'Abbas', 'Hydrabad wala', '37', '+971506502095', '37', 'Dubai_Jamaat', 'Al-Khaleej', '10 Jul 1977 ', '', 0),
+(174, '2014-07-31 18:58:48', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322206', 'Zohair bhai  Shiraz bhai Lokhandwala', 'Zohair', '', 'Shiraz', 'Lokhandwala', '67', '+971504581406', '67', 'Dubai_Hakimi', 'Al-Khaleej', '11 Apr 1947 ', '', 0),
+(175, '2014-07-31 18:59:06', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322208', 'Mulla Abbas bhai  Yusuf bhai Hamid', 'Abbas', '', 'Yusuf', 'Hamid', '68', '+971506760251', '68', 'Dubai_Jamaat', 'Al-Khaleej', '14 Jun 1946 ', 'Mulla', 0),
+(176, '2014-08-16 09:45:22', '2015-03-20 13:50:40', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385156', 'Munira bai Shaikh Aliasgar bhai Jawadwala', 'Munira', 'Shaikh ', 'Aliasgar ', 'Jawadwala', '42', '+971506539150', '42', 'Dubai_Jamaat', 'Al-Khaleej', '25 Apr 1972 ', '', 0),
+(177, '2014-08-16 09:46:52', '2015-03-20 13:50:47', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385158', 'Burhanuddin bhai Mulla Mustafa bhai Nasikwala', 'Burhanuddin', 'Mulla', 'Mustafa', 'Nasikwala', '14', '+971501914082', '14', 'Dubai_Jamaat', 'Al-Khaleej', '01 Aug 2000 ', '', 0),
+(178, '2014-08-18 05:56:58', '2014-08-18 08:52:41', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355522', 'Mufaddal bhai Shaikh Ilyas bhai Shehabi', 'Mufaddal', 'Shaikh', 'Ilyas', 'Shehabi', '27', '+201224211510', '27', 'Cairo_Jamaat', 'Al-Khaleej', '10 May 1987 ', '', 0),
+(179, '2014-08-18 06:00:27', '2014-08-18 06:36:08', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355523', 'Murtaza bhai Shaikh Ilyas bhai Shehabi', 'Murtaza', 'Shaikh', 'Ilyas', 'Shehabi', '22', '+201225285192', '22', 'Cairo_Jamaat', 'Al-Khaleej', '07 May 1992 ', '', 0),
+(180, '2014-08-18 06:53:59', '2014-08-18 06:59:11', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355786', 'Huzaifa bhai Shaikh Mustafa bhai Kasimji', 'Huzaifa', 'Shaikh', 'Mustafa', 'Kasimji', '18', '+201222148734', '18', 'Cairo_Jamaat', 'Al-Khaleej', '06 Dec 1995 ', '', 0),
+(181, '2014-08-18 06:56:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355785', 'Fatema bai Shaikh Mustafa bhai Kasimji', 'Fatema', 'Shaikh', 'Mustafa', 'Kasimji', '20', '+201222148734', '20', 'Cairo_Jamaat', 'Al-Khaleej', '30 Jan 1994 ', '', 0),
+(182, '2014-08-18 06:56:27', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355784', 'Tasneem bai Shaikh Mustafa bhai Kasimji', 'Tasneem', 'Shaikh ', 'Mustafa ', 'Kasimji', '43', '+201222148734', '43', 'Cairo_Jamaat', 'Al-Khaleej', '20 Jul 1971 ', '', 0),
+(183, '2014-08-19 05:35:15', '2014-08-19 05:35:57', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355667', 'Husain bhai Shaikh Shabbir bhai Vajihi', 'Husain', 'Shaikh', 'Shabbir', 'Vajihi', '26', '+201224261370', '26', 'Cairo_Jamaat', 'Al-Khaleej', '02 Nov 1987 ', '', 0),
+(184, '2014-08-19 05:36:12', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355669', 'Khadija bai Mulla Qusai bhai Hamidi (sunelwala)', 'Khadija', 'Mulla ', 'Qusai ', 'Hamidi (sunelwala)', '30', '+919167855766', '30', 'Dubai_Jamaat', 'Al-Khaleej', '11 Feb 1984 ', '', 0),
+(185, '2014-08-19 05:36:46', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355670', 'Ummehani bai Shaikh Shabbir bhai Vajihi', 'Ummehani', 'Shaikh', 'Shabbir', 'Vajihi', '21', '+201094521952', '21', 'Cairo_Jamaat', 'Al-Khaleej', '07 Dec 1992 ', '', 0),
+(186, '2015-03-20 13:50:59', '2015-03-20 17:16:40', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385160', 'Mustaali bhai Shaikh Aliasgar bhai Jawadwala', 'Mustaali', 'Shaikh', 'Aliasgar', 'Jawadwala', '18', '918238710669', '18', 'Surat_Jamea', 'Surat', '28 Sep 1996 ', '', 0),
+(187, '2015-03-20 14:39:58', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385052', 'Fatema bai Mulla Zohair bhai Jawadwala', 'Fatema', 'Mulla', 'Zohair', 'Jawadwala', '12', '+971507780051', '12', 'Dubai_Jamaat', 'Al-Khaleej', '06 May 2002 ', '', 0),
+(188, '2015-03-20 14:41:27', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375452', 'Tasneem bai  Qaidjohar bhai Burhani', 'Tasneem', ' ', 'Qaidjohar ', 'Burhani', '51', '+919850698887', '51', 'Pune_Burhani', 'Pune', '03 Oct 1963 ', '', 0),
+(189, '2015-03-20 14:42:07', '2015-03-20 15:53:42', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375252', 'Zahra bai  Taher bhai Gheewala', 'Zahra', '', 'Fidahusain', 'Gheewala', '90', '', '90', 'Pune_Burhani', 'Pune', '23 Feb 1925 ', '', 0),
+(190, '2015-03-20 14:52:47', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '20321208', 'Rashida bai  Abidali bhai Ghadiyali', 'Rashida', ' ', 'Abidali ', 'Ghadiyali', '50', '+919928279269', '50', 'Banswara_Badri', 'Taherabad', '17 Aug 1964 ', '', 0),
+(191, '2015-03-20 14:55:37', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30315167', 'Nafisa bai  Hatim bhai Tajani', 'Nafisa', ' ', 'Hatim ', 'Tajani', '51', '+919664907864', '51', 'Bombay_Hashemi', 'Mumbai', '15 Sep 1963 ', '', 0),
+(192, '2015-03-20 15:57:02', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385161', 'Lamak bhai Shaikh Aliasgar bhai Jawadwala', 'Lamak', 'Shaikh', 'Aliasgar', 'Jawadwala', '20', '+971551878633', '20', 'Dubai_Jamaat', 'Al-Khaleej', '21 May 1994 ', '', 0),
+(193, '2015-03-20 16:58:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387160', 'Sarrah bai Shaikh Mustafa bhai Saasa', 'Sarrah', 'Shaikh', 'Mustafa', 'Saasa', '19', '+971508579566', '19', 'Dubai_Jamaat', 'Al-Khaleej', '11 Nov 1995 ', '', 0),
+(194, '2015-03-20 16:58:43', '2015-03-20 17:49:15', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385760', 'Rashida bai  Shabbirali bhai Lokhandwala', 'Rashida', ' ', 'Shabbirali ', 'Lokhandwala', '35', '+971506881869', '35', 'Dubai_Jamaat', 'Al-Khaleej', '08 Nov 1979 ', '', 0),
+(195, '2015-03-20 17:04:50', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385177', 'Rashida bai  Shabbar bhai Mala', 'Rashida', ' ', 'Shabbar ', 'Mala', '44', '+971506500850', '44', 'Dubai_Hakimi', 'Al-Khaleej', '14 Dec 1970 ', '', 0),
+(196, '2015-03-20 17:06:59', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385192', 'Husain bhai Mulla Shabbir bhai Adenwala', 'Husain', 'Mulla', 'Shabbir', 'Adenwala', '33', '+971554525335', '33', 'Dubai_Jamaat', 'Al-Khaleej', '18 Jun 1981 ', '', 0),
+(197, '2015-03-20 17:08:38', '2015-03-20 17:12:08', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385195', 'Bilqis bai Shaikh Zainuddin bhai Shujaei', 'Bilqis', 'Shaikh ', 'Zainuddin ', 'Shujaei', '64', '+971501892597', '64', 'Dubai_Jamaat', 'Al-Khaleej', '24 Apr 1950 ', '', 0),
+(198, '2015-03-20 17:11:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385143', 'Maimuna bai  Yusuf bhai Contractor', 'Maimuna', '', 'Hasan', 'Contractor', '85', '+971508778010', '85', 'Houston_Jamaat', 'USA', '15 Mar 1930 ', '', 0),
+(199, '2015-03-20 17:14:28', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30384160', 'Mohammed bhai Shaikh Zohair bhai Mukadam', 'Mohammed', 'Shaikh', 'Zohair', 'Mukadam', '17', '+917767845753', '17', 'Abudhabi_Jamaat', 'Al-Khaleej', '12 Apr 1997 ', '', 0),
+(200, '2015-03-20 17:14:47', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30383160', 'Aziz bhai  Shabbir bhai Bootwala', 'Aziz', '', 'Shabbir', 'Bootwala', '18', '', '18', 'Ratlam_Burhani', 'Ujjain', '16 Aug 1996 ', '', 0),
+(201, '2015-03-20 17:17:09', '2015-03-20 17:17:27', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385197', 'Rashida bai Shaikh Juzer bhai Berberawala', 'Rashida', 'Shaikh ', 'Juzer ', 'Berberawala', '59', '+971504224148', '59', 'Dubai_Jamaat', 'Al-Khaleej', '19 Apr 1955 ', '', 0),
+(202, '2015-03-20 17:17:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385198', 'Moiz bhai  Shabbir bhai Doodhwala', 'Moiz', '', 'Shabbir', 'Doodhwala', '32', '+447948289929', '32', 'Manchester_Jamaat', 'UK', '14 Apr 1982 ', '', 0),
+(203, '2015-03-29 17:52:54', '2015-03-29 21:36:49', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', '', 0, '', '160', '16dasdasd0', '', '', '', '', '', '', '', '', '', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `com_form`
 --
 
@@ -617,25 +721,27 @@ CREATE TABLE IF NOT EXISTS `com_form` (
   `order` int(11) NOT NULL,
   `delete` tinyint(4) NOT NULL,
   `data` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `com_form`
 --
 
 INSERT INTO `com_form` (`id`, `title`, `des`, `modified`, `created`, `enabled`, `order`, `delete`, `data`) VALUES
-(1, 'Madad-Checkout', 0, '2014-05-06 06:35:56', '2013-04-22 12:52:51', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T13__type=>label__name=>__class=>h3 bb toclear__title=>@%lang::payTitle%@__widthmode=>_100__moreAttra=>__;typeID=>T10__type=>hidden__name=>payTitle__class=>COLabel payTitle__widthmode=>_100__value=>@%lang::payTitle%@__moreAttra=>__;typeID=>T2__type=>form__name=>Madad-Checkout__class=>Madad-Checkout__class=>Madad-Checkout__saveType=>sesstion__saveTo=>Madad-Checkout__SMsg=>aaaaa__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>data-name%3D%22dddddd%22__;typeID=>T8__type=>div__name=>rightform__class=>rightform__moreactions=>-1__moreAttra=>__;typeID=>T3__type=>text__name=>name__class=>name__title=>@%lang::name%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.name%25%40%22__;typeID=>T4__type=>email__name=>email__class=>email__title=>@%lang::email%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.email%25%40%22%20readonly__;typeID=>T7__type=>select__name=>country__class=>country__title=>@%lang::country%@__widthmode=>_100__select_type=>data__select_data=>__select_text=>%D9%85%D8%B5%D8%B1__select_value=>egypt__value=>egypt__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T5__type=>select__name=>city__class=>city__title=>@%lang::city%@__widthmode=>_100__required=>required__select_type=>XML__select_data=>http://fiz.qlegal.net/lib/xml/egstates_checkout_ar.xml__select_text=>egstates__select_value=>__value=>@%session::Madad-Checkout.city%@__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T10__type=>select__name=>area__class=>area__title=>@%lang::area%@__widthmode=>_100__required=>required__select_type=>__select_data=>__select_text=>__select_value=>__value=>@%session::Madad-Checkout.area%@__depend_on=>city__depend_source=>xml__moreAttra=>__;typeID=>T8__type=>hidden__name=>donations__class=>donations__widthmode=>_100__value=>%@session::donations@%__moreAttra=>__;typeID=>T9__type=>endDiv__;||stepid=>s1__steporder=>2__steptitle=>payment-choices__|typeID=>T2__type=>div__name=>payment-choices__class=>payment-choices __moreactions=>-1__moreAttra=>__;typeID=>T8__type=>label__name=>__class=>COLabel choice-label toclear h3 bb__title=>@%lang::choice-label%@__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>hidden__name=>choice-label__class=>COLabel choice-label__widthmode=>_100__value=>@%lang::choice-selected%@__moreAttra=>__;typeID=>T3__type=>radio__name=>pay-choice__class=>COD__title=>@%lang::pay-chioce-COD%@__widthmode=>_100__value=>COD__moreAttra=>__;typeID=>T8__type=>hidden__name=>COD__class=>COD__widthmode=>_100__value=>@%lang::pay-chioce-COD%@__moreAttra=>__;typeID=>T1__type=>radio__name=>pay-choice__class=>collection-point__title=>@%lang::pay-chioce-collection-point%@__widthmode=>_100__value=>collection-point__moreAttra=>__;typeID=>T9__type=>hidden__name=>pay-chioce-collection-point__class=>pay-chioce-collection-point__widthmode=>_100__value=>@%lang::pay-chioce-collection-point%@__moreAttra=>__;typeID=>T9__type=>label__name=>__class=>COD-msg h6 red RedLabel__title=>@%lang::COD-msg%@__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>endDiv__;||stepid=>s1__steporder=>3__steptitle=>left-form__|typeID=>T4__type=>div__name=>leftform__class=>leftform__moreactions=>-1__moreAttra=>__;typeID=>T10__type=>label__name=>__class=>RequestLabel request-fill h4__title=>@%lang::request-fill%@__widthmode=>_100__moreAttra=>__;typeID=>T16__type=>hidden__name=>RequestLabel request-fill__class=>RequestLabel request-fill h4__widthmode=>_100__value=>@%lang::request-selected%@__moreAttra=>__;typeID=>T18__type=>label__name=>__class=>RequestLabel request-collection-fill h4__title=>@%lang::request-collection-fill%@__widthmode=>_100__moreAttra=>__;typeID=>T17__type=>hidden__name=>RequestLabel request-collection__class=>RequestLabel request-collection-fill h4__widthmode=>_100__value=>@%lang::request-collection-selected%@__moreAttra=>__;typeID=>T1__type=>date__name=>date__class=>__title=>@%lang::date%@__widthmode=>_100__required=>required__styleMode=>-1__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.date%25%40%22__;typeID=>T2__type=>time__name=>time__class=>__title=>@%lang::time%@__widthmode=>_100__required=>required__value=>@%session::Madad-Checkout.time%@__moreAttra=>__;typeID=>T3__type=>egphone__name=>mobile__class=>__title=>@%lang::mobile%@__widthmode=>_100__required=>required__value=>@%session::Madad-Checkout.mobile%@__moreAttra=>__;typeID=>T5__type=>endDiv__;typeID=>T11__type=>div__name=>cod-options__class=>cod-options__moreactions=>-1__moreAttra=>__;typeID=>T19__type=>label__name=>__class=>RequestLabel address-label h4__title=>@%lang::address-label%@__widthmode=>_100__moreAttra=>__;typeID=>T20__type=>hidden__name=>RequestLabel address-label__class=>RequestLabel address-label__widthmode=>_100__value=>@%lang::address-label%@__moreAttra=>__;typeID=>T15__type=>text__name=>street__class=>__title=>@%lang::street%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.street%25%40%22__;typeID=>T7__type=>text__name=>building__class=>__title=>@%lang::building%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.building%25%40%22__;typeID=>T8__type=>text__name=>floor__class=>__title=>@%lang::floor%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.floor%25%40%22__;typeID=>T9__type=>text__name=>flat__class=>__title=>@%lang::flat%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.flat%25%40%22__;typeID=>T15__type=>text__name=>shipping_note__class=>__title=>@%lang::shipping_note%@__widthmode=>_100__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.shipping_note%25%40%22__;typeID=>T12__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>Collection-point__|typeID=>T1__type=>div__name=>Collection-point-option__class=>Collection-point-option__moreactions=>-1__moreAttra=>__;typeID=>T7__type=>label__name=>collection-point-label__class=>RequestLabel address-label h4__title=>@%lang::Collection-Point%@__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>hidden__name=>RequestLabel collection-point-label__class=>RequestLabel address-label h4__widthmode=>_100__value=>@%lang::Collection-Point%@__moreAttra=>__;typeID=>T5__type=>select__name=>Collection-Point__class=>__title=>__widthmode=>_100__required=>required__select_type=>data__select_data=>__select_text=>%D9%88%D8%B3%D8%B7%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF__select_value=>downtown__value=>downtown__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T6__type=>hidden__name=>Collection-Point-selected__class=>Collection-Point-selected__widthmode=>_100__value=>@%lang::Collection-Point-selected%@__moreAttra=>__;typeID=>T6__type=>label__name=>__class=>RedLabel collection-msg h6 red__title=>@%lang::collection-msg%@__widthmode=>_100__moreAttra=>__;typeID=>T6__type=>hidden__name=>RedLabel collection-msg__class=>RedLabel collection-msg h6 red__widthmode=>_100__value=>@%lang::collection-msg%@__moreAttra=>__;typeID=>T7__type=>endDiv__;||stepid=>s1__steporder=>5__steptitle=>checkboxes__|typeID=>T1__type=>check__name=>terms-conditions__class=>__title=>@%lang::terms-conditions%@__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>check__name=>anonymous-donation__class=>__title=>@%lang::anonymous-donation%@__widthmode=>_100__moreAttra=>__;typeID=>T3__type=>label__name=>__class=>help-text h6 red RedLabel__title=>@%lang::help-text%@__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>check__name=>project-updates__class=>__title=>@%lang::project-updates%@__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>check__name=>newsletter__class=>__title=>@%lang::newsletter%@__widthmode=>_100__moreAttra=>__;typeID=>T9__type=>hidden__name=>collection-fee__class=>collection-fee__widthmode=>_100__value=>0__moreAttra=>__;typeID=>T10__type=>hidden__name=>go-to-save__class=>go-to-save__widthmode=>_100__value=>yes__moreAttra=>__;typeID=>T6__type=>submit__name=>__class=>disabled-for-terms__title=>@%lang::submitt%@__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>endForm__;typeID=>T9__type=>hidden__name=>city-not-selectable __class=>city-not-selectable __widthmode=>_100__value=>@%lang::city-not-selectable%@__moreAttra=>__;typeID=>T11__type=>hidden__name=>alert-agree-terms__class=>alert-agree-terms__widthmode=>_100__value=>@%lang::alert-agree-terms%@__moreAttra=>__;||'),
+(1, 'Madad-Checkout', 0, '2015-03-30 12:11:59', '2013-04-22 12:52:51', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T13__type=>label__name=>__class=>h3 bb toclear__title=>@%lang::payTitle%@__widthmode=>_100__moreAttra=>__;typeID=>T10__type=>hidden__name=>payTitle__class=>COLabel payTitle__widthmode=>_100__value=>@%lang::payTitle%@__moreAttra=>__;typeID=>T2__type=>form__name=>Madad-Checkout__class=>Madad-Checkout__class=>Madad-Checkout__saveType=>sesstion__saveTo=>Madad-Checkout__SMsg=>aaaaa__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>data-name%3D%22dddddd%22__;typeID=>T8__type=>div__name=>rightform__class=>rightform__moreactions=>-1__moreAttra=>__;typeID=>T3__type=>text__name=>name__class=>name__title=>@%lang::name%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.name%25%40%22__;typeID=>T4__type=>email__name=>email__class=>email__title=>@%lang::email%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.email%25%40%22%20readonly__;typeID=>T7__type=>select__name=>country__class=>country__title=>@%lang::country%@__widthmode=>_100__select_type=>data__select_data=>__select_text=>%D9%85%D8%B5%D8%B1__select_value=>egypt__value=>egypt__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T5__type=>select__name=>city__class=>city__title=>@%lang::city%@__widthmode=>_100__required=>required__select_type=>XML__select_data=>http://fiz.qlegal.net/lib/xml/egstates_checkout_ar.xml__select_text=>egstates__select_value=>__value=>@%session::Madad-Checkout.city%@__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T10__type=>select__name=>area__class=>area__title=>@%lang::area%@__widthmode=>_100__required=>required__select_type=>__select_data=>__select_text=>__select_value=>__value=>@%session::Madad-Checkout.area%@__depend_on=>city__depend_source=>xml__moreAttra=>__;typeID=>T8__type=>hidden__name=>donations__class=>donations__widthmode=>_100__value=>%@session::donations@%__moreAttra=>__;typeID=>T9__type=>endDiv__;||stepid=>s1__steporder=>2__steptitle=>payment-choices__|typeID=>T2__type=>div__name=>payment-choices__class=>payment-choices __moreactions=>-1__moreAttra=>__;typeID=>T8__type=>label__name=>__class=>COLabel choice-label toclear h3 bb__title=>@%lang::choice-label%@__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>hidden__name=>choice-label__class=>COLabel choice-label__widthmode=>_100__value=>@%lang::choice-selected%@__moreAttra=>__;typeID=>T3__type=>radio__name=>pay-choice__class=>COD__title=>@%lang::pay-chioce-COD%@__widthmode=>_100__value=>COD__moreAttra=>__;typeID=>T8__type=>hidden__name=>COD__class=>COD__widthmode=>_100__value=>@%lang::pay-chioce-COD%@__moreAttra=>__;typeID=>T1__type=>radio__name=>pay-choice__class=>collection-point__title=>@%lang::pay-chioce-collection-point%@__widthmode=>_100__value=>collection-point__moreAttra=>__;typeID=>T9__type=>hidden__name=>pay-chioce-collection-point__class=>pay-chioce-collection-point__widthmode=>_100__value=>@%lang::pay-chioce-collection-point%@__moreAttra=>__;typeID=>T9__type=>label__name=>__class=>COD-msg h6 red RedLabel__title=>@%lang::COD-msg%@__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>endDiv__;||stepid=>s1__steporder=>3__steptitle=>left-form__|typeID=>T4__type=>div__name=>leftform__class=>leftform__moreactions=>-1__moreAttra=>__;typeID=>T10__type=>label__name=>__class=>RequestLabel request-fill h4__title=>@%lang::request-fill%@__widthmode=>_100__moreAttra=>__;typeID=>T16__type=>hidden__name=>RequestLabel request-fill__class=>RequestLabel request-fill h4__widthmode=>_100__value=>@%lang::request-selected%@__moreAttra=>__;typeID=>T18__type=>label__name=>__class=>RequestLabel request-collection-fill h4__title=>@%lang::request-collection-fill%@__widthmode=>_100__moreAttra=>__;typeID=>T17__type=>hidden__name=>RequestLabel request-collection__class=>RequestLabel request-collection-fill h4__widthmode=>_100__value=>@%lang::request-collection-selected%@__moreAttra=>__;typeID=>T1__type=>date__name=>date__class=>__title=>@%lang::date%@__widthmode=>_100__required=>required__styleMode=>-1__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.date%25%40%22__;typeID=>T2__type=>time__name=>time__class=>__title=>@%lang::time%@__widthmode=>_100__required=>required__value=>@%session::Madad-Checkout.time%@__moreAttra=>__;typeID=>T3__type=>egphone__name=>mobile__class=>__title=>@%lang::mobile%@__widthmode=>_100__required=>required__value=>@%session::Madad-Checkout.mobile%@__moreAttra=>__;typeID=>T5__type=>endDiv__;typeID=>T11__type=>div__name=>cod-options__class=>cod-options__moreactions=>-1__moreAttra=>__;typeID=>T19__type=>label__name=>__class=>RequestLabel address-label h4__title=>@%lang::address-label%@__widthmode=>_100__moreAttra=>__;typeID=>T20__type=>hidden__name=>RequestLabel address-label__class=>RequestLabel address-label__widthmode=>_100__value=>@%lang::address-label%@__moreAttra=>__;typeID=>T15__type=>text__name=>street__class=>__title=>@%lang::street%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.street%25%40%22__;typeID=>T7__type=>text__name=>building__class=>__title=>@%lang::building%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.building%25%40%22__;typeID=>T8__type=>text__name=>floor__class=>__title=>@%lang::floor%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.floor%25%40%22__;typeID=>T9__type=>text__name=>flat__class=>__title=>@%lang::flat%@__widthmode=>_100__required=>required__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.flat%25%40%22__;typeID=>T15__type=>text__name=>shipping_note__class=>__title=>@%lang::shipping_note%@__widthmode=>_100__moreAttra=>value%3D%22%40%25session%3A%3AMadad-Checkout.shipping_note%25%40%22__;typeID=>T12__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>Collection-point__|typeID=>T1__type=>div__name=>Collection-point-option__class=>Collection-point-option__moreactions=>-1__moreAttra=>__;typeID=>T7__type=>label__name=>collection-point-label__class=>RequestLabel address-label h4__title=>@%lang::Collection-Point%@__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>hidden__name=>RequestLabel collection-point-label__class=>RequestLabel address-label h4__widthmode=>_100__value=>@%lang::Collection-Point%@__moreAttra=>__;typeID=>T5__type=>select__name=>Collection-Point__class=>__title=>__widthmode=>_100__required=>required__select_type=>data__select_data=>__select_text=>%D9%88%D8%B3%D8%B7%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF__select_value=>downtown__value=>downtown__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T6__type=>hidden__name=>Collection-Point-selected__class=>Collection-Point-selected__widthmode=>_100__value=>@%lang::Collection-Point-selected%@__moreAttra=>__;typeID=>T6__type=>label__name=>__class=>RedLabel collection-msg h6 red__title=>@%lang::collection-msg%@__widthmode=>_100__moreAttra=>__;typeID=>T6__type=>hidden__name=>RedLabel collection-msg__class=>RedLabel collection-msg h6 red__widthmode=>_100__value=>@%lang::collection-msg%@__moreAttra=>__;typeID=>T7__type=>endDiv__;||stepid=>s1__steporder=>5__steptitle=>checkboxes__|typeID=>T1__type=>check__name=>terms-conditions__class=>__title=>@%lang::terms-conditions%@__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>check__name=>anonymous-donation__class=>__title=>@%lang::anonymous-donation%@__widthmode=>_100__moreAttra=>__;typeID=>T3__type=>label__name=>__class=>help-text h6 red RedLabel__title=>@%lang::help-text%@__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>check__name=>project-updates__class=>__title=>@%lang::project-updates%@__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>check__name=>newsletter__class=>__title=>@%lang::newsletter%@__widthmode=>_100__moreAttra=>__;typeID=>T9__type=>hidden__name=>collection-fee__class=>collection-fee__widthmode=>_100__value=>0__moreAttra=>__;typeID=>T10__type=>hidden__name=>go-to-save__class=>go-to-save__widthmode=>_100__value=>yes__moreAttra=>__;typeID=>T6__type=>submit__name=>__class=>disabled-for-terms__title=>@%lang::submitt%@__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>endForm__;typeID=>T9__type=>hidden__name=>city-not-selectable __class=>city-not-selectable __widthmode=>_100__value=>@%lang::city-not-selectable%@__moreAttra=>__;typeID=>T11__type=>hidden__name=>alert-agree-terms__class=>alert-agree-terms__widthmode=>_100__value=>@%lang::alert-agree-terms%@__moreAttra=>__;||'),
 (2, 'يا', 0, '2014-01-19 00:00:00', '2013-11-17 07:32:33', 1, 0, 1, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>picAdvanced__name=>sss__class=>sss__title=>sss__widthmode=>_100__moreAttra=>sss__;typeID=>T2__type=>radio__name=>__class=>__title=>%D8%A8%D8%B3%D9%8A%D8%A8%D8%B3%D9%8A%D8%A8sdfsdf__widthmode=>_100__value=>__moreAttra=>__;typeID=>T3__type=>radio__name=>aaaa__class=>a__title=>%D9%8A%D9%82%D8%A8%D9%84%20%D8%AB%D9%82%D9%84%20%D8%A4%D9%8A%D8%A8%D9%84%D9%8A%D8%A8%20__widthmode=>_100__value=>2__moreAttra=>a__;typeID=>T4__type=>date__name=>ddd__class=>dd__title=>__widthmode=>_100__styleMode=>inline__dateToinput=>.__minDate=>03%2F12%2F2013__maxDate=>09%2F12%2F2013__moreAttra=>__;typeID=>T5__type=>color__name=>Testing3333__class=>__title=>Testing3333__widthmode=>_100__moreAttra=>__;||'),
-(3, 'users', 0, '2014-04-15 08:40:35', '2013-11-21 09:54:12', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>form__name=>usersreg__class=>__class=>__saveType=>-1__saveTo=>__SMsg=>__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>__;typeID=>T2__type=>text__name=>name__class=>username__title=>الاسم__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>email__name=>email__class=>__title=>البريد الاكترونى__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>password__name=>password__class=>__title=>انشاء كلمة المرور__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T5__type=>password__name=>repassword__class=>repassword__title=>إعادة ادخال كلمة المرور__widthmode=>_100__moreAttra=>__;typeID=>T9__type=>select__name=>gender__class=>__title=>الجنس__widthmode=>_100__required=>required__select_type=>data__select_data=>__select_text=>%D8%B0%D9%83%D8%B1%2C%D8%A3%D9%86%D8%AB%D9%89__select_value=>male%2Cfemale__value=>__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T9__type=>submit__name=>send__class=>__title=>__widthmode=>_100__moreAttra=>value%3D%22%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%22__;typeID=>T8__type=>endForm__;typeID=>T9__type=>label__name=>orlabel__class=>orlabel__title=>أو__widthmode=>_100__moreAttra=>__;||'),
+(3, 'users', 0, '2015-03-30 12:11:59', '2013-11-21 09:54:12', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>form__name=>usersreg__class=>__class=>__saveType=>-1__saveTo=>__SMsg=>__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>__;typeID=>T2__type=>text__name=>name__class=>username__title=>الاسم__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>email__name=>email__class=>__title=>البريد الاكترونى__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>password__name=>password__class=>__title=>انشاء كلمة المرور__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T5__type=>password__name=>repassword__class=>repassword__title=>إعادة ادخال كلمة المرور__widthmode=>_100__moreAttra=>__;typeID=>T9__type=>select__name=>gender__class=>__title=>الجنس__widthmode=>_100__required=>required__select_type=>data__select_data=>__select_text=>%D8%B0%D9%83%D8%B1%2C%D8%A3%D9%86%D8%AB%D9%89__select_value=>male%2Cfemale__value=>__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T9__type=>submit__name=>send__class=>__title=>__widthmode=>_100__moreAttra=>value%3D%22%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%22__;typeID=>T8__type=>endForm__;typeID=>T9__type=>label__name=>orlabel__class=>orlabel__title=>أو__widthmode=>_100__moreAttra=>__;||'),
 (4, '', 0, '0000-00-00 00:00:00', '2013-11-21 09:57:13', 0, 0, 1, ''),
 (5, '', 0, '0000-00-00 00:00:00', '2013-11-21 09:57:55', 0, 0, 1, ''),
 (6, '', 0, '0000-00-00 00:00:00', '2013-11-21 10:12:17', 0, 0, 1, ''),
 (7, '', 0, '0000-00-00 00:00:00', '2013-11-21 10:16:37', 0, 0, 1, ''),
 (8, '', 0, '0000-00-00 00:00:00', '2013-11-21 10:17:19', 0, 0, 1, ''),
 (9, '', 0, '0000-00-00 00:00:00', '2013-11-21 10:19:21', 0, 0, 1, ''),
-(10, 'Checkout Form', 0, '2014-01-15 00:00:00', '2014-01-15 12:56:16', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Delivery Address__|typeID=>T1__type=>hidden__name=>site__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T3__type=>label__name=>sh_address_label__class=>__title=>Delivery%20Address__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>div__name=>sh_address_div__class=>__moreactions=>__moreAttra=>__;typeID=>T5__type=>text__name=>ship_name__class=>__title=>Full%20Name__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T6__type=>text__name=>ship_street_address__class=>__title=>Address%201__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T7__type=>text__name=>ship_street_address2__class=>__title=>Address%202__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>text__name=>ship_city__class=>__title=>Town%20%2F%20City__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T9__type=>text__name=>ship_state__class=>__title=>County__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T10__type=>text__name=>ship_zip__class=>__title=>Postal%20Code__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T11__type=>select__name=>ship_country__class=>__title=>Country__widthmode=>_100__required=>required__select_type=>countries2CO__select_data=>__select_text=>__select_value=>__value=>__moreAttra=>__;typeID=>T4__type=>endDiv__;||stepid=>s1__steporder=>2__steptitle=>billing address Show__|typeID=>T1__type=>check__name=>checkbox__class=>__title=>this%20is%20also%20my%20billing%20address__widthmode=>_100__moreAttra=>__;||stepid=>s2__steporder=>3__steptitle=>billing address__|typeID=>T10__type=>label__name=>sh_Baddress_label__class=>__title=>Billing%20Address__widthmode=>_100__moreAttra=>__;typeID=>T1__type=>div__name=>sh_Baddress_div__class=>__moreactions=>__moreAttra=>__;typeID=>T2__type=>text__name=>card_holder_name__class=>__title=>Full%20Name__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>text__name=>street_address__class=>__title=>Address%201__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>text__name=>street_address2__class=>__title=>Address%202__widthmode=>_100__moreAttra=>__;typeID=>T5__type=>text__name=>city__class=>__title=>Town%20%2F%20City__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T6__type=>text__name=>state__class=>__title=>County__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T7__type=>text__name=>zip__class=>__title=>Postal%20Code__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T9__type=>select__name=>country__class=>__title=>Country__widthmode=>_100__required=>required__select_type=>countries2CO__select_data=>__select_text=>__select_value=>__value=>__moreAttra=>__;typeID=>T8__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>Contact Details__|typeID=>T6__type=>label__name=>sh_contect_label__class=>__title=>Contact%20Details__widthmode=>_100__moreAttra=>__;typeID=>T1__type=>div__name=>sh_Contact_div__class=>__moreactions=>__moreAttra=>__;typeID=>T2__type=>email__name=>email__class=>__title=>Email__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>phone__name=>phone__class=>__title=>Phone__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>endDiv__;typeID=>T8__type=>hidden__name=>order_status__class=>__widthmode=>_100__value=>1__moreAttra=>__;typeID=>T5__type=>hidden__name=>demo__class=>__widthmode=>_100__value=>N__moreAttra=>__;typeID=>T9__type=>hidden__name=>currency__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T10__type=>hidden__name=>merchant_order_id__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T7__type=>submit__name=>send__class=>mbotton__widthmode=>_100__moreAttra=>__;||'),
-(11, 'Madad Contact Form', 0, '0000-00-00 00:00:00', '2014-02-22 07:29:08', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Contact-form__|typeID=>T1__type=>div__name=>contact-form__class=>contact-form__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>form__name=>contact-us-form__class=>contact-us-form__class=>__saveType=>DBTabel__saveTo=>__SMsg=>__FMsg=>__moreAttra=>__;typeID=>T3__type=>text__name=>Name__class=>name__title=>الاسم بالكامل__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>email__name=>Email__class=>email__title=> البريد الإلكتروني__widthmode=>_100__moreAttra=>__;typeID=>T5__type=>select__name=>topic__class=>topic__title=>الموضوع__widthmode=>_100__select_type=>__select_data=>__select_text=>%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D8%A7%D9%85%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%2C%D9%85%D8%B4%D8%A7%D9%83%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%83%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85%2C%D9%85%D8%B4%D8%A7%D9%83%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%83%D9%85%D9%86%D8%B8%D9%85%D8%A9%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%85%20%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D8%B9%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%AD%D9%88%D9%84%20%D8%B7%D8%B1%D9%82%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9%2C%D8%A3%D8%AE%D8%B1%D9%89__select_value=>General%2CInquiry%20about%20a%20project%2CProblems%20with%20personal%20registration%2CProblems%20with%20NGO%20registration%2CHow%20to%20make%20a%20donation%2CInquiry%20regarding%20method%20of%20payment%20or%20pick%20up%2COthers__value=>__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T6__type=>text__name=>subject__class=>subject__title=>عنوان الرسالة__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>textarea__name=>message__class=>message__title=>الرسالة__widthmode=>_100__value=>__moreAttra=>__;typeID=>T9__type=>submit__name=>ارسل__class=>submit-contact-form__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>endForm__;typeID=>T10__type=>endDiv__;||'),
-(12, 'faiz-reservation', 0, '2014-06-03 17:21:26', '2014-06-01 07:59:42', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Step1__|typeID=>T1__type=>label__name=>__class=>h2 bb__title=>Create New Reservation__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>form__name=>faiz-new-reservation__class=>faiz-new-reservation__class=>faiz-new-reservation__saveType=>sesstion__saveTo=>faiz-new-reservation__SMsg=>__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>data-name%3D%22newfaiz%22__;||stepid=>s1__steporder=>2__steptitle=>dates__|typeID=>T1__type=>div__name=>dates-info__class=>dates-info__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>date__name=>checkinDate__class=>checkin__title=>Checkin__widthmode=>_50__required=>required__styleMode=>inline__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkinDate%25%40%22__;typeID=>T3__type=>date__name=>checkoutDate__class=>checkout__title=>Checkout__widthmode=>_50__required=>required__styleMode=>inline__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkoutDate%25%40%22__;typeID=>T4__type=>number__name=>nights__class=>nights__title=>Nights__widthmode=>_30__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.nights%25%40%22__;typeID=>T5__type=>endDiv__;typeID=>T6__type=>hidden__name=>checkin__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkin%@__moreAttra=>__;typeID=>T7__type=>hidden__name=>checkout__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkout%@__moreAttra=>__;||stepid=>s1__steporder=>3__steptitle=>arrivalDetails__|typeID=>T9__type=>line__;typeID=>T1__type=>div__name=>arrival-details__class=>arrival-details__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>text__name=>airline__class=>airline__title=>Airline__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline%25%40%22__;typeID=>T3__type=>text__name=>airline_code__class=>airline_code__title=>Airline Code__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline_code%25%40%22__;typeID=>T4__type=>text__name=>arriving_from__class=>arriving_from__title=>Arriving from__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arriving_from%25%40%22__;typeID=>T5__type=>time__name=>arrival_time__class=>arrival_time__title=>Arrival Time__widthmode=>_50__required=>required__value=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arrival_time%25%40%22__;typeID=>T6__type=>phone__name=>mobile__class=>mobile__title=>Contact Number__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.mobile%25%40%22__;typeID=>T7__type=>email__name=>email__class=>email__title=>Email__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.email%25%40%22__;typeID=>T8__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>addMorePax__|typeID=>T6__type=>line__;typeID=>T2__type=>label__name=>__class=>add-more-title__title=>Add more persons to this reservation__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>div__name=>tabelRes__class=>tabelRes__moreactions=>-1__moreAttra=>__;typeID=>T8__type=>endDiv__;typeID=>T1__type=>div__name=>add-more-pax__class=>add-more-pax__moreactions=>addmore__moreAttra=>__;typeID=>T4__type=>number__name=>its_id__class=>its_id__title=>ITS ID__widthmode=>_50__required=>required__moreAttra=>__;typeID=>T5__type=>date__name=>dob__class=>dob__title=>Date of Birth__widthmode=>_50__required=>required__styleMode=>monthyear__dateToinput=>__minDate=>__maxDate=>__moreAttra=>__;typeID=>T3__type=>endDiv__;typeID=>T9__type=>hidden__name=>Mumin_ids__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.Mumin_ids%@__moreAttra=>__;||stepid=>s1__steporder=>5__steptitle=>remarks__|typeID=>T1__type=>div__name=>remarks__class=>remarks__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>textarea__name=>remarks__class=>__title=>remarks__widthmode=>_100__value=>@%session::faiz-new-reservation.remarks%@__moreAttra=>__;typeID=>T3__type=>endDiv__;||stepid=>s2__steporder=>6__steptitle=>endOfForm__|typeID=>T2__type=>hidden__name=>city__class=>__widthmode=>_100__value=>cairo__moreAttra=>__;typeID=>T3__type=>hidden__name=>booking_owner__class=>__widthmode=>_100__value=>@%session::booking_owner%@__moreAttra=>__;typeID=>T1__type=>endForm__;||');
+(10, 'Checkout Form', 0, '2015-03-30 12:11:59', '2014-01-15 12:56:16', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Delivery Address__|typeID=>T1__type=>hidden__name=>site__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T3__type=>label__name=>sh_address_label__class=>__title=>Delivery%20Address__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>div__name=>sh_address_div__class=>__moreactions=>__moreAttra=>__;typeID=>T5__type=>text__name=>ship_name__class=>__title=>Full%20Name__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T6__type=>text__name=>ship_street_address__class=>__title=>Address%201__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T7__type=>text__name=>ship_street_address2__class=>__title=>Address%202__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>text__name=>ship_city__class=>__title=>Town%20%2F%20City__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T9__type=>text__name=>ship_state__class=>__title=>County__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T10__type=>text__name=>ship_zip__class=>__title=>Postal%20Code__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T11__type=>select__name=>ship_country__class=>__title=>Country__widthmode=>_100__required=>required__select_type=>countries2CO__select_data=>__select_text=>__select_value=>__value=>__moreAttra=>__;typeID=>T4__type=>endDiv__;||stepid=>s1__steporder=>2__steptitle=>billing address Show__|typeID=>T1__type=>check__name=>checkbox__class=>__title=>this%20is%20also%20my%20billing%20address__widthmode=>_100__moreAttra=>__;||stepid=>s2__steporder=>3__steptitle=>billing address__|typeID=>T10__type=>label__name=>sh_Baddress_label__class=>__title=>Billing%20Address__widthmode=>_100__moreAttra=>__;typeID=>T1__type=>div__name=>sh_Baddress_div__class=>__moreactions=>__moreAttra=>__;typeID=>T2__type=>text__name=>card_holder_name__class=>__title=>Full%20Name__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>text__name=>street_address__class=>__title=>Address%201__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>text__name=>street_address2__class=>__title=>Address%202__widthmode=>_100__moreAttra=>__;typeID=>T5__type=>text__name=>city__class=>__title=>Town%20%2F%20City__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T6__type=>text__name=>state__class=>__title=>County__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T7__type=>text__name=>zip__class=>__title=>Postal%20Code__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T9__type=>select__name=>country__class=>__title=>Country__widthmode=>_100__required=>required__select_type=>countries2CO__select_data=>__select_text=>__select_value=>__value=>__moreAttra=>__;typeID=>T8__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>Contact Details__|typeID=>T6__type=>label__name=>sh_contect_label__class=>__title=>Contact%20Details__widthmode=>_100__moreAttra=>__;typeID=>T1__type=>div__name=>sh_Contact_div__class=>__moreactions=>__moreAttra=>__;typeID=>T2__type=>email__name=>email__class=>__title=>Email__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T3__type=>phone__name=>phone__class=>__title=>Phone__widthmode=>_100__required=>required__moreAttra=>__;typeID=>T4__type=>endDiv__;typeID=>T8__type=>hidden__name=>order_status__class=>__widthmode=>_100__value=>1__moreAttra=>__;typeID=>T5__type=>hidden__name=>demo__class=>__widthmode=>_100__value=>N__moreAttra=>__;typeID=>T9__type=>hidden__name=>currency__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T10__type=>hidden__name=>merchant_order_id__class=>__widthmode=>_100__value=>__moreAttra=>__;typeID=>T7__type=>submit__name=>send__class=>mbotton__widthmode=>_100__moreAttra=>__;||'),
+(11, 'Madad Contact Form', 0, '2015-03-30 12:11:59', '2014-02-22 07:29:08', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Contact-form__|typeID=>T1__type=>div__name=>contact-form__class=>contact-form__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>form__name=>contact-us-form__class=>contact-us-form__class=>__saveType=>DBTabel__saveTo=>__SMsg=>__FMsg=>__moreAttra=>__;typeID=>T3__type=>text__name=>Name__class=>name__title=>الاسم بالكامل__widthmode=>_100__moreAttra=>__;typeID=>T4__type=>email__name=>Email__class=>email__title=> البريد الإلكتروني__widthmode=>_100__moreAttra=>__;typeID=>T5__type=>select__name=>topic__class=>topic__title=>الموضوع__widthmode=>_100__select_type=>__select_data=>__select_text=>%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D8%A7%D9%85%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%2C%D9%85%D8%B4%D8%A7%D9%83%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%83%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85%2C%D9%85%D8%B4%D8%A7%D9%83%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%83%D9%85%D9%86%D8%B8%D9%85%D8%A9%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%85%20%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D8%B9%2C%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%AD%D9%88%D9%84%20%D8%B7%D8%B1%D9%82%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9%2C%D8%A3%D8%AE%D8%B1%D9%89__select_value=>General%2CInquiry%20about%20a%20project%2CProblems%20with%20personal%20registration%2CProblems%20with%20NGO%20registration%2CHow%20to%20make%20a%20donation%2CInquiry%20regarding%20method%20of%20payment%20or%20pick%20up%2COthers__value=>__depend_on=>__depend_source=>__moreAttra=>__;typeID=>T6__type=>text__name=>subject__class=>subject__title=>عنوان الرسالة__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>textarea__name=>message__class=>message__title=>الرسالة__widthmode=>_100__value=>__moreAttra=>__;typeID=>T9__type=>submit__name=>ارسل__class=>submit-contact-form__widthmode=>_100__moreAttra=>__;typeID=>T8__type=>endForm__;typeID=>T10__type=>endDiv__;||'),
+(12, 'faiz-reservation', 0, '2015-03-30 12:12:07', '2014-06-01 07:59:42', 1, 0, 1, 'stepid=>s1__steporder=>1__steptitle=>Step1__|typeID=>T1__type=>label__hmlid=>0__morecss=>__;typeID=>T2__type=>form__formid=>0__renderType=>0__morecss=>__;||stepid=>s1__steporder=>2__steptitle=>dates__|typeID=>T1__type=>div__hmlid=>0__morecss=>__;typeID=>T2__type=>__hmlid=>0__morecss=>__;typeID=>T3__type=>__hmlid=>0__morecss=>__;typeID=>T4__type=>number__hmlid=>0__morecss=>__;typeID=>T5__type=>endDiv__hmlid=>0__morecss=>__;typeID=>T6__type=>hidden__hmlid=>0__morecss=>__;typeID=>T7__type=>hidden__hmlid=>0__morecss=>__;||stepid=>s1__steporder=>3__steptitle=>arrivalDetails__|typeID=>T9__type=>line__hmlid=>0__morecss=>__;typeID=>T1__type=>div__hmlid=>0__morecss=>__;typeID=>T2__type=>text__hmlid=>0__morecss=>__;typeID=>T3__type=>text__hmlid=>0__morecss=>__;typeID=>T4__type=>text__hmlid=>0__morecss=>__;typeID=>T5__type=>__hmlid=>0__morecss=>__;typeID=>T6__type=>phone__hmlid=>0__morecss=>__;typeID=>T7__type=>email__hmlid=>0__morecss=>__;typeID=>T8__type=>endDiv__hmlid=>0__morecss=>__;||stepid=>s1__steporder=>4__steptitle=>addMorePax__|typeID=>T6__type=>line__hmlid=>0__morecss=>__;typeID=>T2__type=>label__hmlid=>0__morecss=>__;typeID=>T7__type=>div__hmlid=>0__morecss=>__;typeID=>T8__type=>endDiv__hmlid=>0__morecss=>__;typeID=>T1__type=>div__hmlid=>0__morecss=>__;typeID=>T4__type=>number__hmlid=>0__morecss=>__;typeID=>T3__type=>endDiv__hmlid=>0__morecss=>__;typeID=>T9__type=>hidden__hmlid=>0__morecss=>__;||stepid=>s1__steporder=>5__steptitle=>remarks__|typeID=>T1__type=>div__hmlid=>0__morecss=>__;typeID=>T2__type=>textarea__hmlid=>0__morecss=>__;typeID=>T3__type=>endDiv__hmlid=>0__morecss=>__;||stepid=>s2__steporder=>6__steptitle=>endOfForm__|typeID=>T2__type=>hidden__hmlid=>0__morecss=>__;typeID=>T3__type=>hidden__hmlid=>0__morecss=>__;typeID=>T1__type=>endForm__hmlid=>0__morecss=>__;||'),
+(14, 'faiz-reservation', 0, '2015-03-30 12:11:59', '2015-03-30 12:12:45', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Step1__|typeID=>T1__type=>label__name=>__class=>h2 bb__title=>Create New Reservation__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>form__name=>faiz-new-reservation__class=>faiz-new-reservation__class=>faiz-new-reservation__saveType=>sesstion__saveTo=>faiz-new-reservation__SMsg=>__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>data-name%3D%22newfaiz%22__;||stepid=>s1__steporder=>2__steptitle=>dates__|typeID=>T1__type=>div__name=>dates-info__class=>dates-info__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>date__name=>checkinDate__class=>checkin__title=>Checkin__widthmode=>_50__required=>required__styleMode=>inline__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkinDate%25%40%22__;typeID=>T3__type=>date__name=>checkoutDate__class=>checkout__title=>Checkout__widthmode=>_50__required=>required__styleMode=>inline__dateToinput=>__minDate=>__maxDate=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkoutDate%25%40%22__;typeID=>T4__type=>number__name=>nights__class=>nights__title=>Nights__widthmode=>_30__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.nights%25%40%22__;typeID=>T5__type=>endDiv__;typeID=>T6__type=>hidden__name=>checkin__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkin%@__moreAttra=>__;typeID=>T7__type=>hidden__name=>checkout__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkout%@__moreAttra=>__;||stepid=>s1__steporder=>3__steptitle=>arrivalDetails__|typeID=>T9__type=>line__;typeID=>T1__type=>div__name=>arrival-details__class=>arrival-details__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>text__name=>airline__class=>airline__title=>Airline__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline%25%40%22__;typeID=>T3__type=>text__name=>airline_code__class=>airline_code__title=>Airline Code__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline_code%25%40%22__;typeID=>T4__type=>text__name=>arriving_from__class=>arriving_from__title=>Arriving from__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arriving_from%25%40%22__;typeID=>T5__type=>time__name=>arrival_time__class=>arrival_time__title=>Arrival Time__widthmode=>_50__required=>required__value=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arrival_time%25%40%22__;typeID=>T6__type=>phone__name=>mobile__class=>mobile__title=>Contact Number__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.mobile%25%40%22__;typeID=>T7__type=>email__name=>email__class=>email__title=>Email__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.email%25%40%22__;typeID=>T8__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>addMorePax__|typeID=>T6__type=>line__;typeID=>T2__type=>label__name=>__class=>add-more-title__title=>Add more persons to this reservation__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>div__name=>tabelRes__class=>tabelRes__moreactions=>-1__moreAttra=>__;typeID=>T8__type=>endDiv__;typeID=>T1__type=>div__name=>add-more-pax__class=>add-more-pax__moreactions=>addmore__moreAttra=>__;typeID=>T4__type=>number__name=>its_id__class=>its_id__title=>ITS ID__widthmode=>_50__required=>required__moreAttra=>__;typeID=>T5__type=>date__name=>dob__class=>dob__title=>Date of Birth__widthmode=>_50__required=>required__styleMode=>monthyear__dateToinput=>__minDate=>__maxDate=>__moreAttra=>__;typeID=>T3__type=>endDiv__;typeID=>T9__type=>hidden__name=>Mumin_ids__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.Mumin_ids%@__moreAttra=>__;||stepid=>s1__steporder=>5__steptitle=>remarks__|typeID=>T1__type=>div__name=>remarks__class=>remarks__moreactions=>-1__moreAttra=>__;typeID=>T2__type=>textarea__name=>remarks__class=>__title=>remarks__widthmode=>_100__value=>@%session::faiz-new-reservation.remarks%@__moreAttra=>__;typeID=>T3__type=>endDiv__;||stepid=>s2__steporder=>6__steptitle=>endOfForm__|typeID=>T2__type=>hidden__name=>city__class=>__widthmode=>_100__value=>cairo__moreAttra=>__;typeID=>T3__type=>hidden__name=>booking_owner__class=>__widthmode=>_100__value=>@%session::booking_owner%@__moreAttra=>__;typeID=>T1__type=>endForm__;||'),
+(13, 'faiz-reservation', 0, '2015-03-30 15:30:01', '2015-03-30 12:03:14', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Step1__|typeID=>T1__type=>label__name=>__class=>h2 bb__title=>Create New Reservation__widthmode=>_100__moreAttra=>__;typeID=>T2__type=>form__name=>faiz-new-reservation__class=>faiz-new-reservation__class=>faiz-new-reservation__saveType=>sesstion__saveTo=>faiz-new-reservation__SMsg=>__FMsg=>__javascript=>__css=>__php=>__phpAfterSave=>__moreAttra=>data-name%3D%22newfaiz%22__;||stepid=>s1__steporder=>2__steptitle=>dates__|typeID=>T1__type=>div__name=>dates-info__class=>dates-info__moreactions=>0__moreAttra=>__;typeID=>T2__type=>date__name=>checkinDate__class=>Checkin__title=>Checkin__widthmode=>_50__styleMode=>inline__dateToinput=>__55194f91c02f5=>__55194f91c0328=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkinDate%25%40%22__;typeID=>T3__type=>date__name=>checkoutDate__class=>checkout__title=>checkout__widthmode=>_50__required=>required__styleMode=>inline__dateToinput=>__55194fa7dd0df=>__55194fa7dd12f=>__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.checkoutDate%25%40%22__;typeID=>T4__type=>number__name=>nights__class=>nights__title=>Nights__widthmode=>_30__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.nights%25%40%22__;typeID=>T5__type=>endDiv__;typeID=>T6__type=>hidden__name=>checkin__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkin%@__moreAttra=>__;typeID=>T7__type=>hidden__name=>checkout__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.checkout%@__moreAttra=>__;||stepid=>s1__steporder=>3__steptitle=>arrivalDetails__|typeID=>T9__type=>line__;typeID=>T1__type=>div__name=>arrival-details__class=>arrival-details__moreactions=>0__moreAttra=>__;typeID=>T2__type=>text__name=>airline__class=>airline__title=>Airline__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline%25%40%22__;typeID=>T3__type=>text__name=>airline_code__class=>airline_code__title=>Airline Code__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.airline_code%25%40%22__;typeID=>T4__type=>text__name=>arriving_from__class=>arriving_from__title=>Arriving from__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arriving_from%25%40%22__;typeID=>T5__type=>__name=>arrival_time__class=>arrival_time__title=>Arrival Time__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.arrival_time%25%40%22__;typeID=>T6__type=>phone__name=>mobile__class=>mobile__title=>Contact Number__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.mobile%25%40%22__;typeID=>T7__type=>email__name=>email__class=>email__title=>Email__widthmode=>_50__required=>required__moreAttra=>value%3D%22%40%25session%3A%3Afaiz-new-reservation.email%25%40%22__;typeID=>T8__type=>endDiv__;||stepid=>s1__steporder=>4__steptitle=>addMorePax__|typeID=>T6__type=>line__;typeID=>T2__type=>label__name=>__class=>add-more-title__title=>Add more persons to this reservation__widthmode=>_100__moreAttra=>__;typeID=>T7__type=>div__name=>tabelRes__class=>tabelRes__moreactions=>0__moreAttra=>__;typeID=>T8__type=>endDiv__;typeID=>T1__type=>div__name=>add-more-pax__class=>add-more-pax__moreactions=>addmore__moreAttra=>__;typeID=>T4__type=>number__name=>its_id__class=>its_id__title=>ITS ID__widthmode=>_50__required=>required__moreAttra=>__;typeID=>T3__type=>endDiv__;typeID=>T9__type=>hidden__name=>Mumin_ids__class=>__widthmode=>_100__value=>@%session::faiz-new-reservation.Mumin_ids%@__moreAttra=>__;||stepid=>s1__steporder=>5__steptitle=>remarks__|typeID=>T1__type=>div__name=>remarks__class=>remarks__moreactions=>0__moreAttra=>__;typeID=>T2__type=>textarea__name=>remarks__class=>__title=>remarks__widthmode=>_100__value=>@%session::faiz-new-reservation.remarks%@__moreAttra=>__;typeID=>T3__type=>endDiv__;||stepid=>s2__steporder=>6__steptitle=>endOfForm__|typeID=>T2__type=>hidden__name=>city__class=>__widthmode=>_100__value=>cairo__moreAttra=>__;typeID=>T3__type=>hidden__name=>booking_owner__class=>__widthmode=>_100__value=>@%session::booking_owner%@__moreAttra=>__;typeID=>T1__type=>endForm__;||');
 
 -- --------------------------------------------------------
 
@@ -714,7 +820,7 @@ CREATE TABLE IF NOT EXISTS `com_gustbook` (
   `title` varchar(255) NOT NULL,
   `msg` text NOT NULL,
   `country` varchar(255) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
 
 --
 -- Dumping data for table `com_gustbook`
@@ -750,7 +856,9 @@ INSERT INTO `com_gustbook` (`id`, `created`, `modified`, `enabled`, `order`, `de
 (27, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, 'sdsdW', 'WWEWWE', 'WEWE'),
 (28, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, 'AZIZ', 'WWJWEKJE wdwwd', 'DUBAI'),
 (29, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 'Aziz', 'very pleasant', 'Dubai'),
-(30, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 'Aziz', 'sswdd', 'aiaia');
+(30, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 'Aziz', 'sswdd', 'aiaia'),
+(31, '2015-03-30 20:22:42', '0000-00-00 00:00:00', 0, 0, 0, 'Aziz', 'v nice', 'Dubai'),
+(32, '2015-03-30 20:23:52', '0000-00-00 00:00:00', 0, 0, 0, 'Mansoor', 'bbbb', 'Zambia');
 
 -- --------------------------------------------------------
 
@@ -779,7 +887,7 @@ CREATE TABLE IF NOT EXISTS `com_gustbook_categories` (
 CREATE TABLE IF NOT EXISTS `com_html` (
 `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
-  `image` text NOT NULL,
+  `my_body` text NOT NULL,
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL,
   `delete` int(11) NOT NULL,
@@ -788,13 +896,13 @@ CREATE TABLE IF NOT EXISTS `com_html` (
   `plugins_data` text NOT NULL,
   `cat_id` text NOT NULL,
   `history` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=377 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=388 ;
 
 --
 -- Dumping data for table `com_html`
 --
 
-INSERT INTO `com_html` (`id`, `title`, `image`, `modified`, `created`, `delete`, `enabled`, `order`, `plugins_data`, `cat_id`, `history`) VALUES
+INSERT INTO `com_html` (`id`, `title`, `my_body`, `modified`, `created`, `delete`, `enabled`, `order`, `plugins_data`, `cat_id`, `history`) VALUES
 (350, 'test2', '<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;te</p>\r\n<p>st&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;t</p>\r\n<p>est&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>', '2014-05-25 09:00:24', '2014-05-25 09:01:21', 2, 1, 0, '', '', 348),
 (349, 'test2', '<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>', '0000-00-00 00:00:00', '2014-05-25 09:00:24', 2, 1, 0, '', '', 348),
 (348, 'test23', '<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;te</p>\r\n<p>st&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;t</p>\r\n<p>est&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;te</p>\r\n<p>st&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;t</p>\r\n<p>est&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;te</p>\r\n<p>st&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;t</p>\r\n<p>est&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test</p>\r\n<p>&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;te</p>\r\n<p>st&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;t</p>\r\n<p>est&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>\r\n<p>test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;test&nbsp;</p>', '2014-06-18 06:07:30', '2014-05-25 08:51:10', 0, 1, 0, '', '', 0),
@@ -823,7 +931,18 @@ INSERT INTO `com_html` (`id`, `title`, `image`, `modified`, `created`, `delete`,
 (373, 'Contact US', '', '2015-03-25 16:49:12', '2015-03-25 16:49:31', 2, 1, 0, '', '', 369),
 (374, 'Contact US', '', '2015-03-25 16:49:31', '2015-03-25 16:49:42', 2, 1, 0, '', '', 369),
 (375, 'Contact US', '', '2015-03-25 16:49:42', '2015-03-25 16:49:50', 2, 1, 0, '', '', 369),
-(376, 'Hi', '', '0000-00-00 00:00:00', '2015-03-25 16:50:13', 0, 1, 0, '', ',64', 0);
+(376, 'Hi', '', '0000-00-00 00:00:00', '2015-03-25 16:50:13', 0, 1, 0, '', ',64', 0),
+(377, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<div class="msg">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg info">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg error">Thanks for spending your<a> valuable time and taking </a>an effort in reaching to us.</div>\r\n<div class="msg worr">Thanks for spending your <a>valuable time and taking an</a> effort in reaching to us.</div>\r\n<p><button class="button">Button</button> <button class="button disable">Button</button></p>\r\n<h2 class="title">title</h2>\r\n<table class="mainTabel">\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 22:20:41', '2015-04-01 00:49:29', 0, 1, 0, '', '', 0),
+(378, 'ph', '', '0000-00-00 00:00:00', '2015-04-01 00:52:51', 2, 1, 0, '', '', 377),
+(379, 'ph', '', '2015-04-01 00:52:51', '2015-04-01 00:52:56', 2, 1, 0, '', '', 377),
+(380, 'ph', '', '2015-04-01 00:52:56', '2015-04-01 00:53:38', 2, 1, 0, '', '', 377),
+(381, 'ph', '<p>zxczxczxczxczxc</p>', '2015-04-01 00:53:38', '2015-04-01 00:56:39', 2, 1, 0, '', '', 377),
+(382, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<table>\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 00:56:39', '2015-04-01 10:45:59', 2, 1, 0, '', '', 377),
+(383, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<h2 class="title">title</h2>\r\n<table class="mainTabel">\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 10:45:59', '2015-04-01 10:48:38', 2, 1, 0, '', '', 377),
+(384, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<div class="msg">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg info">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg error">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg worr">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<h2 class="title">title</h2>\r\n<table class="mainTabel">\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 10:48:38', '2015-04-01 11:36:24', 2, 1, 0, '', '', 377),
+(385, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<div class="msg">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg info">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg error">Thanks for spending your<a> valuable time and taking </a>an effort in reaching to us.</div>\r\n<div class="msg worr">Thanks for spending your <a>valuable time and taking an</a> effort in reaching to us.</div>\r\n<h2 class="title">title</h2>\r\n<table class="mainTabel">\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 11:36:24', '2015-04-01 22:17:08', 2, 1, 0, '', '', 377),
+(386, 'ph', '<h1>h1</h1>\r\n<h2>h2</h2>\r\n<h3>h3</h3>\r\n<h4>h4</h4>\r\n<h5>h5</h5>\r\n<h6>h6</h6>\r\n<div class="msg">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg info">Thanks for spending your valuable time and taking an effort in reaching to us.</div>\r\n<div class="msg error">Thanks for spending your<a> valuable time and taking </a>an effort in reaching to us.</div>\r\n<div class="msg worr">Thanks for spending your <a>valuable time and taking an</a> effort in reaching to us.</div>\r\n<div class="button">Button</div>\r\n<div class="button disable">Button</div>\r\n<h2 class="title">title</h2>\r\n<table class="mainTabel">\r\n<tbody>\r\n<tr><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th><th>header</th></tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n<tr>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n<td>body</td>\r\n</tr>\r\n</tbody>\r\n</table>', '2015-04-01 22:17:08', '2015-04-01 22:20:41', 2, 1, 0, '', '', 377),
+(387, 'Mutah Reservation', '<p>For reservations please contact M. Murtaza bhai Rangwala on mutah@faizehaakimi.com or call +962-799-996-168</p>', '0000-00-00 00:00:00', '2015-04-02 14:57:36', 0, 1, 0, '', ',64', 0);
 
 -- --------------------------------------------------------
 
@@ -907,7 +1026,7 @@ CREATE TABLE IF NOT EXISTS `com_html_xref` (
   `enabled` tinyint(4) NOT NULL DEFAULT '1',
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=133 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=134 ;
 
 --
 -- Dumping data for table `com_html_xref`
@@ -926,7 +1045,7 @@ INSERT INTO `com_html_xref` (`id`, `item_id`, `cat_id`, `delete`, `order`, `enab
 (109, 281, 64, 0, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (129, 305, 64, 0, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (131, 353, 64, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-06 17:36:53'),
-(132, 3, 64, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-25 16:50:13');
+(133, 3, 64, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-02 14:57:36');
 
 -- --------------------------------------------------------
 
@@ -974,7 +1093,7 @@ INSERT INTO `com_images_gallery` (`id`, `title`, `des`, `image`, `th_image`, `en
 (406, 'Deluxe Suite Room', 'Deluxe Suite Room', 'Deluxe-Suite Room.jpg', '', 1, 32, 0, '2015-03-20 16:25:57', '0000-00-00 00:00:00', ',64', '', '', 'Deluxe-Suite-Room', '', '', '', ''),
 (405, 'Standard Room', 'Standard Room', 'Standard Room.jpg', '', 1, 31, 0, '2015-03-20 16:25:18', '0000-00-00 00:00:00', ',64', '', '', 'Standard-Room', '', '', '', ''),
 (385, 'Jame Anwar Egypt_pyramids', '', 'egypt_pyramids-wide-home.jpg', '', 1, 19, 0, '2014-05-25 09:09:18', '2015-03-24 12:19:09', ',66', '', '', 'Jame-Anwar-Egypt-pyramids', '', '', '', ''),
-(386, 'Faiz Front ', '', 'Faiz Front Elevation.jpg', '', 1, 20, 0, '2014-05-25 09:09:36', '2015-03-24 12:20:07', ',66', '', '', 'Faiz-Front', '', '', '', ''),
+(386, 'Faiz Front ', '', 'Faiz-Front-Elevation-home.jpg', '', 1, 20, 0, '2014-05-25 09:09:36', '2015-03-31 13:33:00', ',66', '', '', 'Faiz-Front', '', '', '', ''),
 (387, 'Cairo-Home', '', 'cairo-home.jpg', '', 1, 21, 0, '2014-05-25 09:09:48', '2015-03-24 12:21:06', ',66', '', '', 'Cairo-Home', '', '', '', ''),
 (388, 'Anwar-Home', '', 'anwar-home.jpg', '', 1, 22, 0, '2014-05-25 09:10:03', '2015-03-24 12:21:52', ',66', '', '', 'Anwar-Home', '', '', '', ''),
 (404, 'Standard Twin Bed room', 'Standard Twin Bedroom', 'Standard Twin Bed Room.jpg', '', 1, 30, 0, '2015-03-20 16:24:44', '0000-00-00 00:00:00', ',64', '', '', 'Standard-Twin-Bed-room', '', '', '', ''),
@@ -1031,7 +1150,7 @@ CREATE TABLE IF NOT EXISTS `com_images_gallery_xref` (
   `enabled` tinyint(4) NOT NULL DEFAULT '1',
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=462 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=463 ;
 
 --
 -- Dumping data for table `com_images_gallery_xref`
@@ -1309,7 +1428,7 @@ INSERT INTO `com_images_gallery_xref` (`id`, `item_id`, `cat_id`, `delete`, `ord
 (402, 383, 65, 0, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (403, 384, 65, 0, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (441, 385, 66, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-24 12:19:09'),
-(443, 386, 66, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-24 12:20:07'),
+(462, 386, 66, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-31 13:33:00'),
 (445, 387, 66, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-24 12:21:06'),
 (447, 388, 66, 0, 0, 1, '0000-00-00 00:00:00', '2015-03-24 12:21:52'),
 (408, 389, 67, 0, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -1355,7 +1474,7 @@ CREATE TABLE IF NOT EXISTS `com_install` (
   `properties` text NOT NULL,
   `com_id` text NOT NULL,
   `type` varchar(250) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=136 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=137 ;
 
 --
 -- Dumping data for table `com_install`
@@ -1437,7 +1556,8 @@ INSERT INTO `com_install` (`id`, `ins_title`, `ins_alias`, `ins_type`, `delete`,
 (132, 'raza Types', 'fiz_raza_types', 'component', 0, 48, 1, '2014-07-20 17:12:31', NULL, NULL, 'fornt', 0, '', '', ''),
 (133, 'email Templates', 'com_mailsTemplates', 'component', 0, 49, 1, '2014-07-22 20:25:23', NULL, NULL, 'fornt', 0, '', '', ''),
 (134, 'cashier refund', 'fiz_cashier_receipt_refund', 'component', 0, 50, 1, '2014-07-30 17:33:25', NULL, NULL, 'fornt', 0, '', '', ''),
-(135, 'ejamaat', 'plg_ejamaat', 'plugin', 0, 51, 1, '2015-03-20 12:23:26', NULL, NULL, 'fornt', 0, '', '', 'typ_users');
+(135, 'ejamaat', 'plg_ejamaat', 'plugin', 0, 51, 1, '2015-03-20 12:23:26', NULL, NULL, 'fornt', 0, '', '', 'typ_users'),
+(136, 'SiteStatus', 'sys_site_status', 'component', 0, 52, 1, '2015-04-01 12:52:48', NULL, NULL, 'fornt', 0, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1538,19 +1658,20 @@ CREATE TABLE IF NOT EXISTS `com_menus` (
   `order` int(11) NOT NULL,
   `delete` tinyint(4) NOT NULL,
   `cat_id` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `com_menus`
 --
 
 INSERT INTO `com_menus` (`id`, `men_title`, `men_alias`, `modified`, `created`, `enabled`, `order`, `delete`, `cat_id`) VALUES
-(8, 'main menu', 'topmenu', '2015-03-24 21:41:03', '2012-04-26 04:23:48', 1, 0, 0, 0),
-(10, 'Locations Menu ', 'ourmenu', '2014-05-25 09:05:36', '2012-12-03 08:32:52', 1, 0, 0, 0),
-(13, 'top Menu', 'Bottom-Menu', '2015-03-24 21:41:40', '2013-04-13 06:19:37', 1, 0, 0, 0),
-(14, 'faiz bottommenu', 'bottommenu', '2014-01-22 00:00:00', '2013-04-17 05:34:35', 1, 0, 0, 0),
-(15, 'mobile', 'mobile', '0000-00-00 00:00:00', '2013-10-22 04:49:12', 1, 0, 0, 0),
-(18, 'testing new', 'testing-new', '0000-00-00 00:00:00', '2013-12-04 18:46:39', 1, 0, 1, 0);
+(8, 'main menu', 'topmenu', '2015-04-01 22:46:30', '2012-04-26 04:23:48', 1, 0, 0, 0),
+(10, 'Locations Menu ', 'ourmenu', '2015-04-01 22:46:30', '2012-12-03 08:32:52', 1, 0, 0, 0),
+(13, 'Top Menu', 'TopMenu', '2015-04-01 22:46:30', '2013-04-13 06:19:37', 1, 0, 0, 0),
+(14, 'faiz bottommenu', 'bottommenu', '2015-04-01 22:46:30', '2013-04-17 05:34:35', 1, 0, 0, 0),
+(15, 'mobile', 'mobile', '2015-04-01 22:46:30', '2013-10-22 04:49:12', 1, 0, 0, 0),
+(18, 'testing new', 'testing-new', '0000-00-00 00:00:00', '2013-12-04 18:46:39', 1, 0, 1, 0),
+(19, 'Menu after header', 'Menu-after-header', '0000-00-00 00:00:00', '2015-04-01 22:47:13', 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1579,22 +1700,23 @@ CREATE TABLE IF NOT EXISTS `com_modules` (
   `site` text NOT NULL,
   `all_site` tinyint(4) NOT NULL,
   `permission_gust` tinyint(4) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=293 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=294 ;
 
 --
 -- Dumping data for table `com_modules`
 --
 
 INSERT INTO `com_modules` (`id`, `mod_label`, `mod_viewall`, `mod_title`, `order`, `enabled`, `created`, `delete`, `modified`, `view_title`, `morecss`, `properties`, `position`, `type`, `class`, `permission`, `permission_all`, `site`, `all_site`, `permission_gust`) VALUES
-(290, '', 0, 'Leftmenu', 34, 1, '2014-05-21 13:34:58', 0, '2015-03-24 21:48:03', 0, '', '', 'left', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
+(290, '', 0, 'Location Menu Other pages', 34, 1, '2014-05-21 13:34:58', 0, '2015-04-01 21:44:13', 0, '', '', 'left', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
 (284, '', 1, 'SunsetSunrise', 31, 1, '2014-05-21 13:08:28', 0, '2015-03-24 13:00:05', 0, '', '', 'footer_left', 'mod_sunsetSunrise', 'nostyle', '', 1, '', 1, 0),
-(285, '', 1, 'mwnu', 32, 1, '2014-05-21 13:10:54', 0, '2015-03-24 13:00:05', 0, '', '', 'mainmenu', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
+(285, '', 1, 'mwnu', 32, 1, '2014-05-21 13:10:54', 0, '2015-04-01 21:36:26', 0, '', '', 'mainmenu', 'mod_Menu', 'nostyle', '', 1, ',1', 1, 0),
 (286, '', 1, 'BottomMenu', 32, 1, '2014-05-21 13:10:54', 0, '2015-03-24 13:00:05', 0, '', '', 'footer_right', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
-(287, '', 0, 'Cairo', 33, 1, '2014-05-21 13:30:01', 0, '2015-03-25 15:30:22', 1, '', '', 'slideShow_right', 'mod_Slide_Show', 'nostyle', '', 1, '', 1, 0),
-(288, '', 1, 'headermenu', 34, 1, '2014-05-21 13:34:58', 0, '2015-03-24 21:48:48', 0, '', '', 'our_menu', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
-(289, '', 0, 'Location Menu', 34, 1, '2014-05-21 13:34:58', 0, '2015-03-25 15:56:29', 0, '', '', 'slideShow_left', 'mod_Menu', 'nostyle', '', 1, '', 1, 0),
+(287, '', 0, 'Cairo', 33, 1, '2014-05-21 13:30:01', 0, '2015-04-01 15:55:13', 1, '', '', 'slideShow_right', 'mod_Slide_Show', 'nostyle', '', 1, ',1', 1, 0),
+(288, '', 1, 'headermenu', 34, 1, '2014-05-21 13:34:58', 0, '2015-04-01 22:57:07', 1, '', '', 'our_menu', 'mod_Menu', 'nostyle', '', 1, ',0', 1, 0),
+(289, '', 0, 'Location Menu Homepage', 34, 1, '2014-05-21 13:34:58', 0, '2015-04-01 22:43:50', 0, '', '', 'slideShow_left', 'mod_Menu', 'nostyle', '', 1, ',2', 1, 0),
 (291, '', 0, 'newsTaker', 35, 1, '2015-03-25 16:24:47', 0, '2015-03-25 18:09:56', 1, '', '', 'main_top_left', 'mod_news_Ticker', 'nostyle', '', 1, '', 1, 0),
-(292, '', 0, 'WeatherTime', 36, 1, '2015-03-25 16:30:04', 0, '2015-03-25 18:10:57', 0, '', '', 'main_top_right', 'mod_weatherTime', 'nostyle', '', 1, '', 1, 0);
+(292, '', 0, 'WeatherTime', 36, 1, '2015-03-25 16:30:04', 0, '2015-03-25 18:10:57', 0, '', '', 'main_top_right', 'mod_weatherTime', 'nostyle', '', 1, '', 1, 0),
+(293, '', 0, 'news', 37, 1, '2015-04-02 12:00:44', 0, '2015-04-02 14:48:57', 1, '', '', 'left', 'mod_News_Data', 'CategoryMenu', '', 1, '', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -1652,23 +1774,6 @@ INSERT INTO `com_modules_site_xref` (`id`, `created`, `modified`, `enabled`, `or
 (6, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 174, 1),
 (10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 177, 1),
 (20, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 239, 3);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `com_modules_status_xref`
---
-
-CREATE TABLE IF NOT EXISTS `com_modules_status_xref` (
-`id` int(11) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  `enabled` tinyint(4) NOT NULL DEFAULT '1',
-  `order` int(11) NOT NULL,
-  `delete` tinyint(4) NOT NULL DEFAULT '0',
-  `item_id` int(11) NOT NULL,
-  `status_id` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3297,7 +3402,6 @@ CREATE TABLE IF NOT EXISTS `com_site_status` (
   `currency_code` varchar(255) NOT NULL,
   `currency_symbol` varchar(255) NOT NULL,
   `cities` text NOT NULL,
-  `urlcode` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL,
   `alias` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -3340,6 +3444,86 @@ CREATE TABLE IF NOT EXISTS `com_users` (
   `phone` varchar(50) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   `group` int(11) NOT NULL,
+  `fb_id` varchar(255) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=204 ;
+
+--
+-- Dumping data for table `com_users`
+--
+
+INSERT INTO `com_users` (`id`, `name`, `email`, `created`, `modified`, `enabled`, `delete`, `order`, `password`, `g_id`, `user_name`, `phone`, `image`, `group`, `fb_id`) VALUES
+(3, 'ismasil2', 'empcland@gmail.com', '2012-03-21 00:00:00', '2015-03-20 16:27:54', 1, 0, 0, 'f3b32717d5322d7ba7c505c230785468', 3, 'ismail', 'g', '52c03abbbd3a9.png', 0, ''),
+(151, 'aa', 'a@aa.com', '2014-05-07 06:33:15', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465995_', 0, ''),
+(150, 'aaaa', 'aa@aaaaa.com', '2014-05-07 06:32:08', '0000-00-00 00:00:00', 1, 0, 0, '698d51a19d8a121ce581499d7b701668', 4, '', NULL, '1399465928_', 0, ''),
+(148, 'chekjjout', 'empcland@gjjjjmail.com', '2014-05-07 06:28:07', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465687_', 0, ''),
+(149, 'chekout', 'empclanggggd@gmail.com', '2014-05-07 06:30:49', '0000-00-00 00:00:00', 1, 0, 0, 'ba248c985ace94863880921d8900c53f', 4, '', NULL, '1399465849_', 0, ''),
+(140, 'Amr Al Showhady', 'empcland@gmail.com', '2014-05-07 04:57:15', '0000-00-00 00:00:00', 0, 0, 0, 'VDdu20Ju', 4, 'amr.showhady', NULL, NULL, 0, '690193676'),
+(147, 'chekout', 'ismai@sdfd11f.coml', '2014-05-07 06:25:54', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465554_', 0, ''),
+(146, 'chekout', 'emp77pp7777cland@gmail.com', '2014-05-07 06:13:11', '0000-00-00 00:00:00', 1, 0, 0, 'c483f6ce851c9ecd9fb835ff7551737c', 4, '', NULL, '1399464791_', 0, ''),
+(144, '11536dfgdfg', 'empclafffffffnd@gmail.com', '2014-05-07 06:02:24', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399464144_', 0, ''),
+(145, 'chekout', 'emp2222cland@gmail.com', '2014-05-07 06:07:03', '0000-00-00 00:00:00', 1, 0, 0, '934b535800b1cba8f96a5d72f72f1611', 4, '', NULL, '1399464423_', 0, ''),
+(152, 'Aziz Mv', 'amztelcom@yahoo.com', '2014-05-07 06:34:35', '0000-00-00 00:00:00', 0, 0, 0, 'if62xcAn', 1, 'aziz.mv.9', NULL, NULL, 0, '100000467417166'),
+(161, '', 'pratapgarhjamaat@gmail.com', '2014-06-03 17:10:30', '2015-03-20 12:42:02', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(160, '', 'azizms@gmail.com', '0000-00-00 00:00:00', '2015-03-20 17:58:07', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(162, '', 'mustafawadia@hotmail.com', '0000-00-00 00:00:00', '2015-03-20 13:32:15', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(163, '', 'azizms@gmail.com', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(164, '', 'salehahh@gmail.com', '2014-06-29 06:56:16', '2014-06-29 06:57:55', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(165, '', 'tid_88@hotmail.com', '2014-07-22 14:29:30', '2015-03-20 14:41:09', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(166, '', 'ekbal63@gmail.com', '2014-07-23 16:32:01', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(167, '', 'abbas.s.husain@gmail.com', '2014-07-23 16:34:12', '2015-03-20 13:50:52', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(168, '', 'mshakirvasi@gmail.com', '2014-07-23 20:13:57', '2015-03-20 13:50:03', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(169, '', 'azizms@gmail.com', '2014-07-23 20:20:03', '2014-07-25 06:05:37', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(170, '', 'aqhamidi@gmail.com', '2014-07-24 16:34:47', '2014-07-24 16:37:29', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(171, '', 'saifee.tarwala@gmail.com', '2014-07-25 05:39:47', '2015-03-20 13:50:26', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(172, '', 'safdiwan@yahoo.com', '2014-07-25 05:52:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(173, '', 'mustafa.batul@yahoo.com', '2014-07-31 18:57:44', '2014-08-01 21:55:14', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(174, '', 'zoher@emirates.net.ae', '2014-07-31 18:58:48', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(175, '', 'raju522000@yahoo.com', '2014-07-31 18:59:06', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(176, '', 'alijawadubai@gmail.com', '2014-08-16 09:45:22', '2015-03-20 13:50:40', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(177, '', 'mnasikwala2002@yahoo.com', '2014-08-16 09:46:52', '2015-03-20 13:50:47', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(178, '', 'mufaddalshehabi@gmail.com', '2014-08-18 05:56:58', '2014-08-18 08:52:41', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(179, '', 'murtaza.shehabi@gmail.com', '2014-08-18 06:00:27', '2014-08-18 06:36:08', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(180, '', 'mustafaqasim@gmail.com', '2014-08-18 06:53:59', '2014-08-18 06:59:11', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(181, '', 'mustafaqasim@gmail.com', '2014-08-18 06:56:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(182, '', 'mustafaqasim@gmail.com', '2014-08-18 06:56:27', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(183, '', 'hussainvajihi@gmail.com', '2014-08-19 05:35:15', '2014-08-19 05:35:57', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(184, '', 'qusaih@hotmail.com', '2014-08-19 05:36:12', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(185, '', 'ummehani.vajihi@gmail.com', '2014-08-19 05:36:46', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(186, '', 'alijawadubai@gmail.com', '2015-03-20 13:50:59', '2015-03-20 17:16:40', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(187, '', 'huzefa67@gmail.com', '2015-03-20 14:39:58', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(188, '', 'munira.burhani@yahoo.com', '2015-03-20 14:41:27', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(189, '', NULL, '2015-03-20 14:42:07', '2015-03-20 15:53:42', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(190, '', 'shabbarghadiyali@gmail.com', '2015-03-20 14:52:47', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(191, '', NULL, '2015-03-20 14:55:37', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(192, '', 'lamtista@gmail.com', '2015-03-20 15:57:02', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(193, '', 'sarrahsaasa@gmail.com', '2015-03-20 16:58:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(194, '', 'shabbir@gficg.com', '2015-03-20 16:58:43', '2015-03-20 17:49:15', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(195, '', 'shabbarm@gmail.com', '2015-03-20 17:04:50', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(196, '', 'husainsfabbas@gmail.com', '2015-03-20 17:06:59', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(197, '', 'aazain@hotmail.com', '2015-03-20 17:08:38', '2015-03-20 17:12:08', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(198, '', 'ayc786@emirates.net.ae', '2015-03-20 17:11:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(199, '', 'mohammad.mukadam@gmail.com', '2015-03-20 17:14:28', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(200, '', 'anjumanekalimi@gmai.com', '2015-03-20 17:14:47', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(201, '', 'almubaraktools@gmail.com', '2015-03-20 17:17:09', '2015-03-20 17:17:27', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(202, '', 'moiz26@hotmail.com', '2015-03-20 17:17:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, ''),
+(203, '', NULL, '2015-03-29 17:52:54', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `com_users_fiz`
+--
+
+CREATE TABLE IF NOT EXISTS `com_users_fiz` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `delete` tinyint(4) NOT NULL,
+  `order` int(11) NOT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `group` int(11) NOT NULL,
   `fb_id` varchar(255) NOT NULL,
   `mobile` varchar(255) NOT NULL,
   `city` varchar(255) NOT NULL,
@@ -3360,68 +3544,70 @@ CREATE TABLE IF NOT EXISTS `com_users` (
   `Jamaat` varchar(250) NOT NULL,
   `Jamiaat` varchar(250) NOT NULL,
   `dob` varchar(50) NOT NULL,
-  `prefix` varchar(250) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=203 ;
+  `prefix` varchar(250) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=204 ;
 
 --
--- Dumping data for table `com_users`
+-- Dumping data for table `com_users_fiz`
 --
 
-INSERT INTO `com_users` (`id`, `name`, `email`, `created`, `modified`, `enabled`, `delete`, `order`, `password`, `g_id`, `user_name`, `phone`, `image`, `group`, `fb_id`, `mobile`, `city`, `area`, `country`, `gender`, `mobile_confirm`, `mobile_confirm_code`, `Mumin_id`, `FullName`, `First_name`, `Middle_Prefix`, `Middle_Name`, `Surname`, `Age`, `MOBILE_NO`, `Age1`, `Jamaat`, `Jamiaat`, `dob`, `prefix`) VALUES
-(3, 'ismasil2', 'empcland@gmail.com', '2012-03-21 00:00:00', '2015-03-20 16:27:54', 1, 0, 0, 'f3b32717d5322d7ba7c505c230785468', 3, 'ismail', 'g', '52c03abbbd3a9.png', 0, '', '01010666917', '', '', '', '', 1, '19858', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(151, 'aa', 'a@aa.com', '2014-05-07 06:33:15', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465995_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(150, 'aaaa', 'aa@aaaaa.com', '2014-05-07 06:32:08', '0000-00-00 00:00:00', 1, 0, 0, '698d51a19d8a121ce581499d7b701668', 4, '', NULL, '1399465928_', 0, '', '', '', '', '', 'female', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(148, 'chekjjout', 'empcland@gjjjjmail.com', '2014-05-07 06:28:07', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465687_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(149, 'chekout', 'empclanggggd@gmail.com', '2014-05-07 06:30:49', '0000-00-00 00:00:00', 1, 0, 0, 'ba248c985ace94863880921d8900c53f', 4, '', NULL, '1399465849_', 0, '', '01010666918', '', '', '', 'male', 1, '89300', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(140, 'Amr Al Showhady', 'empcland@gmail.com', '2014-05-07 04:57:15', '0000-00-00 00:00:00', 0, 0, 0, 'VDdu20Ju', 4, 'amr.showhady', NULL, NULL, 0, '690193676', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(147, 'chekout', 'ismai@sdfd11f.coml', '2014-05-07 06:25:54', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399465554_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(146, 'chekout', 'emp77pp7777cland@gmail.com', '2014-05-07 06:13:11', '0000-00-00 00:00:00', 1, 0, 0, 'c483f6ce851c9ecd9fb835ff7551737c', 4, '', NULL, '1399464791_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(144, '11536dfgdfg', 'empclafffffffnd@gmail.com', '2014-05-07 06:02:24', '0000-00-00 00:00:00', 1, 0, 0, '6512bd43d9caa6e02c990b0a82652dca', 4, '', NULL, '1399464144_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(145, 'chekout', 'emp2222cland@gmail.com', '2014-05-07 06:07:03', '0000-00-00 00:00:00', 1, 0, 0, '934b535800b1cba8f96a5d72f72f1611', 4, '', NULL, '1399464423_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(152, 'Aziz Mv', 'amztelcom@yahoo.com', '2014-05-07 06:34:35', '0000-00-00 00:00:00', 0, 0, 0, 'if62xcAn', 1, 'aziz.mv.9', NULL, NULL, 0, '100000467417166', '01222489051', '', '', '', 'male', 1, '78463', '', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(161, '', 'pratapgarhjamaat@gmail.com', '2014-06-03 17:10:30', '2015-03-20 12:42:02', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385155', 'Zainab bai Shaikh Hatim bhai Ghotawala', 'Zainab', 'Shaikh ', 'Hatim ', 'Ghotawala', '62', '918696160606', '62', 'Partabgarh_Jamaat', 'Rampura', '06 May 1952 ', '0'),
-(160, '', 'azizms@gmail.com', '0000-00-00 00:00:00', '2015-03-20 17:58:07', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385154', 'Mulla Aziz bhai Shaikh Mohammed bhai Shakir ( vasi )', 'Aziz', 'Shaikh', 'Mohammed', 'Shakir ( vasi )', '32', '201222489051', '32', 'Cairo_Jamaat', 'Al-Khaleej', '23 Aug 1982 ', 'Mulla'),
-(162, '', 'mustafawadia@hotmail.com', '0000-00-00 00:00:00', '2015-03-20 13:32:15', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355789', 'Taha bhai  Mustafa bhai Wadia', 'Taha', '', 'Mustafa', 'Wadia', '18', '+201228799330', '18', 'Cairo_Jamaat', 'Al-Khaleej', '30 Sep 1996 ', '0'),
-(163, '', 'azizms@gmail.com', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355993', 'Mufaddal bhai Mulla Aziz bhai Shakir ( vasi )', 'Mufaddal', 'Mulla', 'Aziz', 'Shakir ( vasi )', '4', '+20122489051', '4', 'Cairo_Jamaat', 'Al-Khaleej', '31 Aug 2009 ', '0'),
-(164, '', 'salehahh@gmail.com', '2014-06-29 06:56:16', '2014-06-29 06:57:55', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '78652180', 'Saleh bs Abilfazal bs Husami', 'Saleh', 'Shaikh', 'Abilfazal', 'Husami', '31', '', '31', 'Qa_Jamaat', 'Mumbai', '02 Jan 1983 ', '0'),
-(165, '', 'tid_88@hotmail.com', '2014-07-22 14:29:30', '2015-03-20 14:41:09', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385152', 'Tasneem bai  Moiz bhai Motiwala', 'Tasneem', ' ', 'Moiz ', 'Motiwala', '26', '+971503845472', '26', 'Dubai_Jamaat', 'Al-Khaleej', '08 Apr 1988 ', '0'),
-(166, '', 'ekbal63@gmail.com', '2014-07-23 16:32:01', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385153', 'Farida bai  Mustafa bhai Dalal', 'Farida', ' ', 'Mustafa ', 'Dalal', '47', '+971507650681', '47', 'Dubai_Jamaat', 'Al-Khaleej', '11 Jan 1967 ', '0'),
-(167, '', 'abbas.s.husain@gmail.com', '2014-07-23 16:34:12', '2015-03-20 13:50:52', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385150', 'Abbas bhai Shaikh Shabbirhusain bhai Sadriwala', 'Abbas', 'Shaikh', 'Shabbirhusain', 'Sadriwala', '28', '+971503504786', '28', 'Dubai_Jamaat', 'Al-Khaleej', '27 Oct 1986 ', '0'),
-(168, '', 'mshakirvasi@gmail.com', '2014-07-23 20:13:57', '2015-03-20 13:50:03', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322202', 'Shaikh Mohammed bhai  Abid bhai Shakir ( vasi )', 'Mohammed', '', 'Abid', 'Shakir ( vasi )', '69', '+971506761525', '69', 'Dubai_Jamaat', 'Al-Khaleej', '07 Aug 1945 ', 'Shaikh'),
-(169, '', 'azizms@gmail.com', '2014-07-23 20:20:03', '2014-07-25 06:05:37', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387405', 'Mulla Rashida bai  Rashida bhai Shakir ( vasi )', 'Rashida', ' ', ' ', 'Shakir ( vasi )', '62', '+971503557882', '62', 'Dubai_Jamaat', 'Al-Khaleej', '08 Jun 1952 ', 'Mulla'),
-(170, '', 'aqhamidi@gmail.com', '2014-07-24 16:34:47', '2014-07-24 16:37:29', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385151', 'Mulla Abdulqadir bhai Shaikh Juzer bhai Hamidi', 'Abdulqadir', 'Shaikh', 'Juzer', 'Hamidi', '27', '+971551287652', '27', 'Dubai_Jamaat', 'Al-Khaleej', '14 Apr 1987 ', 'Mulla'),
-(171, '', 'saifee.tarwala@gmail.com', '2014-07-25 05:39:47', '2015-03-20 13:50:26', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322201', 'Saifuddin bhai  Mansoor bhai Tarwala', 'Saifuddin', '', 'Mansoor', 'Tarwala', '40', '+919377718873', '40', 'Jeddah_Jamaat', 'Al-Khaleej', '03 Sep 1974 ', ''),
-(172, '', 'safdiwan@yahoo.com', '2014-07-25 05:52:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322203', 'Saifuddin bhai  Asgarali bhai Diwan', 'Saifuddin', '', 'Asgarali', 'Diwan', '41', '', '41', 'Dubai_Jamaat', 'Al-Khaleej', '19 Sep 1972 ', ''),
-(173, '', 'mustafa.batul@yahoo.com', '2014-07-31 18:57:44', '2014-08-01 21:55:14', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322205', 'Mustafa bhai  Abbas bhai Hydrabad wala', 'Mustafa', '', 'Abbas', 'Hydrabad wala', '37', '+971506502095', '37', 'Dubai_Jamaat', 'Al-Khaleej', '10 Jul 1977 ', ''),
-(174, '', 'zoher@emirates.net.ae', '2014-07-31 18:58:48', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322206', 'Zohair bhai  Shiraz bhai Lokhandwala', 'Zohair', '', 'Shiraz', 'Lokhandwala', '67', '+971504581406', '67', 'Dubai_Hakimi', 'Al-Khaleej', '11 Apr 1947 ', ''),
-(175, '', 'raju522000@yahoo.com', '2014-07-31 18:59:06', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322208', 'Mulla Abbas bhai  Yusuf bhai Hamid', 'Abbas', '', 'Yusuf', 'Hamid', '68', '+971506760251', '68', 'Dubai_Jamaat', 'Al-Khaleej', '14 Jun 1946 ', 'Mulla'),
-(176, '', 'alijawadubai@gmail.com', '2014-08-16 09:45:22', '2015-03-20 13:50:40', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385156', 'Munira bai Shaikh Aliasgar bhai Jawadwala', 'Munira', 'Shaikh ', 'Aliasgar ', 'Jawadwala', '42', '+971506539150', '42', 'Dubai_Jamaat', 'Al-Khaleej', '25 Apr 1972 ', ''),
-(177, '', 'mnasikwala2002@yahoo.com', '2014-08-16 09:46:52', '2015-03-20 13:50:47', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385158', 'Burhanuddin bhai Mulla Mustafa bhai Nasikwala', 'Burhanuddin', 'Mulla', 'Mustafa', 'Nasikwala', '14', '+971501914082', '14', 'Dubai_Jamaat', 'Al-Khaleej', '01 Aug 2000 ', ''),
-(178, '', 'mufaddalshehabi@gmail.com', '2014-08-18 05:56:58', '2014-08-18 08:52:41', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355522', 'Mufaddal bhai Shaikh Ilyas bhai Shehabi', 'Mufaddal', 'Shaikh', 'Ilyas', 'Shehabi', '27', '+201224211510', '27', 'Cairo_Jamaat', 'Al-Khaleej', '10 May 1987 ', ''),
-(179, '', 'murtaza.shehabi@gmail.com', '2014-08-18 06:00:27', '2014-08-18 06:36:08', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355523', 'Murtaza bhai Shaikh Ilyas bhai Shehabi', 'Murtaza', 'Shaikh', 'Ilyas', 'Shehabi', '22', '+201225285192', '22', 'Cairo_Jamaat', 'Al-Khaleej', '07 May 1992 ', ''),
-(180, '', 'mustafaqasim@gmail.com', '2014-08-18 06:53:59', '2014-08-18 06:59:11', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355786', 'Huzaifa bhai Shaikh Mustafa bhai Kasimji', 'Huzaifa', 'Shaikh', 'Mustafa', 'Kasimji', '18', '+201222148734', '18', 'Cairo_Jamaat', 'Al-Khaleej', '06 Dec 1995 ', ''),
-(181, '', 'mustafaqasim@gmail.com', '2014-08-18 06:56:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355785', 'Fatema bai Shaikh Mustafa bhai Kasimji', 'Fatema', 'Shaikh', 'Mustafa', 'Kasimji', '20', '+201222148734', '20', 'Cairo_Jamaat', 'Al-Khaleej', '30 Jan 1994 ', ''),
-(182, '', 'mustafaqasim@gmail.com', '2014-08-18 06:56:27', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355784', 'Tasneem bai Shaikh Mustafa bhai Kasimji', 'Tasneem', 'Shaikh ', 'Mustafa ', 'Kasimji', '43', '+201222148734', '43', 'Cairo_Jamaat', 'Al-Khaleej', '20 Jul 1971 ', ''),
-(183, '', 'hussainvajihi@gmail.com', '2014-08-19 05:35:15', '2014-08-19 05:35:57', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355667', 'Husain bhai Shaikh Shabbir bhai Vajihi', 'Husain', 'Shaikh', 'Shabbir', 'Vajihi', '26', '+201224261370', '26', 'Cairo_Jamaat', 'Al-Khaleej', '02 Nov 1987 ', ''),
-(184, '', 'qusaih@hotmail.com', '2014-08-19 05:36:12', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355669', 'Khadija bai Mulla Qusai bhai Hamidi (sunelwala)', 'Khadija', 'Mulla ', 'Qusai ', 'Hamidi (sunelwala)', '30', '+919167855766', '30', 'Dubai_Jamaat', 'Al-Khaleej', '11 Feb 1984 ', ''),
-(185, '', 'ummehani.vajihi@gmail.com', '2014-08-19 05:36:46', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355670', 'Ummehani bai Shaikh Shabbir bhai Vajihi', 'Ummehani', 'Shaikh', 'Shabbir', 'Vajihi', '21', '+201094521952', '21', 'Cairo_Jamaat', 'Al-Khaleej', '07 Dec 1992 ', ''),
-(186, '', 'alijawadubai@gmail.com', '2015-03-20 13:50:59', '2015-03-20 17:16:40', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385160', 'Mustaali bhai Shaikh Aliasgar bhai Jawadwala', 'Mustaali', 'Shaikh', 'Aliasgar', 'Jawadwala', '18', '918238710669', '18', 'Surat_Jamea', 'Surat', '28 Sep 1996 ', ''),
-(187, '', 'huzefa67@gmail.com', '2015-03-20 14:39:58', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385052', 'Fatema bai Mulla Zohair bhai Jawadwala', 'Fatema', 'Mulla', 'Zohair', 'Jawadwala', '12', '+971507780051', '12', 'Dubai_Jamaat', 'Al-Khaleej', '06 May 2002 ', ''),
-(188, '', 'munira.burhani@yahoo.com', '2015-03-20 14:41:27', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375452', 'Tasneem bai  Qaidjohar bhai Burhani', 'Tasneem', ' ', 'Qaidjohar ', 'Burhani', '51', '+919850698887', '51', 'Pune_Burhani', 'Pune', '03 Oct 1963 ', ''),
-(189, '', NULL, '2015-03-20 14:42:07', '2015-03-20 15:53:42', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375252', 'Zahra bai  Taher bhai Gheewala', 'Zahra', '', 'Fidahusain', 'Gheewala', '90', '', '90', 'Pune_Burhani', 'Pune', '23 Feb 1925 ', ''),
-(190, '', 'shabbarghadiyali@gmail.com', '2015-03-20 14:52:47', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '20321208', 'Rashida bai  Abidali bhai Ghadiyali', 'Rashida', ' ', 'Abidali ', 'Ghadiyali', '50', '+919928279269', '50', 'Banswara_Badri', 'Taherabad', '17 Aug 1964 ', ''),
-(191, '', NULL, '2015-03-20 14:55:37', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30315167', 'Nafisa bai  Hatim bhai Tajani', 'Nafisa', ' ', 'Hatim ', 'Tajani', '51', '+919664907864', '51', 'Bombay_Hashemi', 'Mumbai', '15 Sep 1963 ', ''),
-(192, '', 'lamtista@gmail.com', '2015-03-20 15:57:02', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385161', 'Lamak bhai Shaikh Aliasgar bhai Jawadwala', 'Lamak', 'Shaikh', 'Aliasgar', 'Jawadwala', '20', '+971551878633', '20', 'Dubai_Jamaat', 'Al-Khaleej', '21 May 1994 ', ''),
-(193, '', 'sarrahsaasa@gmail.com', '2015-03-20 16:58:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387160', 'Sarrah bai Shaikh Mustafa bhai Saasa', 'Sarrah', 'Shaikh', 'Mustafa', 'Saasa', '19', '+971508579566', '19', 'Dubai_Jamaat', 'Al-Khaleej', '11 Nov 1995 ', ''),
-(194, '', 'shabbir@gficg.com', '2015-03-20 16:58:43', '2015-03-20 17:49:15', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385760', 'Rashida bai  Shabbirali bhai Lokhandwala', 'Rashida', ' ', 'Shabbirali ', 'Lokhandwala', '35', '+971506881869', '35', 'Dubai_Jamaat', 'Al-Khaleej', '08 Nov 1979 ', ''),
-(195, '', 'shabbarm@gmail.com', '2015-03-20 17:04:50', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385177', 'Rashida bai  Shabbar bhai Mala', 'Rashida', ' ', 'Shabbar ', 'Mala', '44', '+971506500850', '44', 'Dubai_Hakimi', 'Al-Khaleej', '14 Dec 1970 ', ''),
-(196, '', 'husainsfabbas@gmail.com', '2015-03-20 17:06:59', '0000-00-00 00:00:00', 0, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385192', 'Husain bhai Mulla Shabbir bhai Adenwala', 'Husain', 'Mulla', 'Shabbir', 'Adenwala', '33', '+971554525335', '33', 'Dubai_Jamaat', 'Al-Khaleej', '18 Jun 1981 ', ''),
-(197, '', 'aazain@hotmail.com', '2015-03-20 17:08:38', '2015-03-20 17:12:08', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385195', 'Bilqis bai Shaikh Zainuddin bhai Shujaei', 'Bilqis', 'Shaikh ', 'Zainuddin ', 'Shujaei', '64', '+971501892597', '64', 'Dubai_Jamaat', 'Al-Khaleej', '24 Apr 1950 ', ''),
-(198, '', 'ayc786@emirates.net.ae', '2015-03-20 17:11:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385143', 'Maimuna bai  Yusuf bhai Contractor', 'Maimuna', '', 'Hasan', 'Contractor', '85', '+971508778010', '85', 'Houston_Jamaat', 'USA', '15 Mar 1930 ', ''),
-(199, '', 'mohammad.mukadam@gmail.com', '2015-03-20 17:14:28', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30384160', 'Mohammed bhai Shaikh Zohair bhai Mukadam', 'Mohammed', 'Shaikh', 'Zohair', 'Mukadam', '17', '+917767845753', '17', 'Abudhabi_Jamaat', 'Al-Khaleej', '12 Apr 1997 ', ''),
-(200, '', 'anjumanekalimi@gmai.com', '2015-03-20 17:14:47', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30383160', 'Aziz bhai  Shabbir bhai Bootwala', 'Aziz', '', 'Shabbir', 'Bootwala', '18', '', '18', 'Ratlam_Burhani', 'Ujjain', '16 Aug 1996 ', ''),
-(201, '', 'almubaraktools@gmail.com', '2015-03-20 17:17:09', '2015-03-20 17:17:27', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385197', 'Rashida bai Shaikh Juzer bhai Berberawala', 'Rashida', 'Shaikh ', 'Juzer ', 'Berberawala', '59', '+971504224148', '59', 'Dubai_Jamaat', 'Al-Khaleej', '19 Apr 1955 ', ''),
-(202, '', 'moiz26@hotmail.com', '2015-03-20 17:17:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, 0, '', NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385198', 'Moiz bhai  Shabbir bhai Doodhwala', 'Moiz', '', 'Shabbir', 'Doodhwala', '32', '+447948289929', '32', 'Manchester_Jamaat', 'UK', '14 Apr 1982 ', '');
+INSERT INTO `com_users_fiz` (`id`, `created`, `modified`, `enabled`, `delete`, `order`, `phone`, `image`, `group`, `fb_id`, `mobile`, `city`, `area`, `country`, `gender`, `mobile_confirm`, `mobile_confirm_code`, `Mumin_id`, `FullName`, `First_name`, `Middle_Prefix`, `Middle_Name`, `Surname`, `Age`, `MOBILE_NO`, `Age1`, `Jamaat`, `Jamiaat`, `dob`, `prefix`, `user_id`) VALUES
+(3, '2012-03-21 00:00:00', '2015-03-20 16:27:54', 1, 0, 0, 'g', '52c03abbbd3a9.png', 0, '', '01010666917', '', '', '', '', 1, '19858', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(151, '2014-05-07 06:33:15', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465995_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(150, '2014-05-07 06:32:08', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465928_', 0, '', '', '', '', '', 'female', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(148, '2014-05-07 06:28:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465687_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(149, '2014-05-07 06:30:49', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465849_', 0, '', '01010666918', '', '', '', 'male', 1, '89300', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(140, '2014-05-07 04:57:15', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '690193676', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(147, '2014-05-07 06:25:54', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399465554_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(146, '2014-05-07 06:13:11', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464791_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(144, '2014-05-07 06:02:24', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464144_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(145, '2014-05-07 06:07:03', '0000-00-00 00:00:00', 1, 0, 0, NULL, '1399464423_', 0, '', '', '', '', '', 'male', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(152, '2014-05-07 06:34:35', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '100000467417166', '01222489051', '', '', '', 'male', 1, '78463', '', '', '', '', '', '', '', '', '', '', '', '', '0', 0),
+(161, '2014-06-03 17:10:30', '2015-03-20 12:42:02', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385155', 'Zainab bai Shaikh Hatim bhai Ghotawala', 'Zainab', 'Shaikh ', 'Hatim ', 'Ghotawala', '62', '918696160606', '62', 'Partabgarh_Jamaat', 'Rampura', '06 May 1952 ', '0', 0),
+(160, '0000-00-00 00:00:00', '2015-03-20 17:58:07', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385154', 'Mulla Aziz bhai Shaikh Mohammed bhai Shakir ( vasi )', 'Aziz', 'Shaikh', 'Mohammed', 'Shakir ( vasi )', '32', '201222489051', '32', 'Cairo_Jamaat', 'Al-Khaleej', '23 Aug 1982 ', 'Mulla', 160),
+(162, '0000-00-00 00:00:00', '2015-03-20 13:32:15', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355789', 'Taha bhai  Mustafa bhai Wadia', 'Taha', '', 'Mustafa', 'Wadia', '18', '+201228799330', '18', 'Cairo_Jamaat', 'Al-Khaleej', '30 Sep 1996 ', '0', 0),
+(163, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355993', 'Mufaddal bhai Mulla Aziz bhai Shakir ( vasi )', 'Mufaddal', 'Mulla', 'Aziz', 'Shakir ( vasi )', '4', '+20122489051', '4', 'Cairo_Jamaat', 'Al-Khaleej', '31 Aug 2009 ', '0', 0),
+(164, '2014-06-29 06:56:16', '2014-06-29 06:57:55', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '78652180', 'Saleh bs Abilfazal bs Husami', 'Saleh', 'Shaikh', 'Abilfazal', 'Husami', '31', '', '31', 'Qa_Jamaat', 'Mumbai', '02 Jan 1983 ', '0', 0),
+(165, '2014-07-22 14:29:30', '2015-03-20 14:41:09', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385152', 'Tasneem bai  Moiz bhai Motiwala', 'Tasneem', ' ', 'Moiz ', 'Motiwala', '26', '+971503845472', '26', 'Dubai_Jamaat', 'Al-Khaleej', '08 Apr 1988 ', '0', 0),
+(166, '2014-07-23 16:32:01', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385153', 'Farida bai  Mustafa bhai Dalal', 'Farida', ' ', 'Mustafa ', 'Dalal', '47', '+971507650681', '47', 'Dubai_Jamaat', 'Al-Khaleej', '11 Jan 1967 ', '0', 0),
+(167, '2014-07-23 16:34:12', '2015-03-20 13:50:52', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385150', 'Abbas bhai Shaikh Shabbirhusain bhai Sadriwala', 'Abbas', 'Shaikh', 'Shabbirhusain', 'Sadriwala', '28', '+971503504786', '28', 'Dubai_Jamaat', 'Al-Khaleej', '27 Oct 1986 ', '0', 0),
+(168, '2014-07-23 20:13:57', '2015-03-20 13:50:03', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322202', 'Shaikh Mohammed bhai  Abid bhai Shakir ( vasi )', 'Mohammed', '', 'Abid', 'Shakir ( vasi )', '69', '+971506761525', '69', 'Dubai_Jamaat', 'Al-Khaleej', '07 Aug 1945 ', 'Shaikh', 0),
+(169, '2014-07-23 20:20:03', '2014-07-25 06:05:37', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387405', 'Mulla Rashida bai  Rashida bhai Shakir ( vasi )', 'Rashida', ' ', ' ', 'Shakir ( vasi )', '62', '+971503557882', '62', 'Dubai_Jamaat', 'Al-Khaleej', '08 Jun 1952 ', 'Mulla', 0),
+(170, '2014-07-24 16:34:47', '2014-07-24 16:37:29', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385151', 'Mulla Abdulqadir bhai Shaikh Juzer bhai Hamidi', 'Abdulqadir', 'Shaikh', 'Juzer', 'Hamidi', '27', '+971551287652', '27', 'Dubai_Jamaat', 'Al-Khaleej', '14 Apr 1987 ', 'Mulla', 0),
+(171, '2014-07-25 05:39:47', '2015-03-20 13:50:26', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322201', 'Saifuddin bhai  Mansoor bhai Tarwala', 'Saifuddin', '', 'Mansoor', 'Tarwala', '40', '+919377718873', '40', 'Jeddah_Jamaat', 'Al-Khaleej', '03 Sep 1974 ', '', 0),
+(172, '2014-07-25 05:52:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322203', 'Saifuddin bhai  Asgarali bhai Diwan', 'Saifuddin', '', 'Asgarali', 'Diwan', '41', '', '41', 'Dubai_Jamaat', 'Al-Khaleej', '19 Sep 1972 ', '', 0),
+(173, '2014-07-31 18:57:44', '2014-08-01 21:55:14', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322205', 'Mustafa bhai  Abbas bhai Hydrabad wala', 'Mustafa', '', 'Abbas', 'Hydrabad wala', '37', '+971506502095', '37', 'Dubai_Jamaat', 'Al-Khaleej', '10 Jul 1977 ', '', 0),
+(174, '2014-07-31 18:58:48', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322206', 'Zohair bhai  Shiraz bhai Lokhandwala', 'Zohair', '', 'Shiraz', 'Lokhandwala', '67', '+971504581406', '67', 'Dubai_Hakimi', 'Al-Khaleej', '11 Apr 1947 ', '', 0),
+(175, '2014-07-31 18:59:06', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '20322208', 'Mulla Abbas bhai  Yusuf bhai Hamid', 'Abbas', '', 'Yusuf', 'Hamid', '68', '+971506760251', '68', 'Dubai_Jamaat', 'Al-Khaleej', '14 Jun 1946 ', 'Mulla', 0),
+(176, '2014-08-16 09:45:22', '2015-03-20 13:50:40', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385156', 'Munira bai Shaikh Aliasgar bhai Jawadwala', 'Munira', 'Shaikh ', 'Aliasgar ', 'Jawadwala', '42', '+971506539150', '42', 'Dubai_Jamaat', 'Al-Khaleej', '25 Apr 1972 ', '', 0),
+(177, '2014-08-16 09:46:52', '2015-03-20 13:50:47', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385158', 'Burhanuddin bhai Mulla Mustafa bhai Nasikwala', 'Burhanuddin', 'Mulla', 'Mustafa', 'Nasikwala', '14', '+971501914082', '14', 'Dubai_Jamaat', 'Al-Khaleej', '01 Aug 2000 ', '', 0),
+(178, '2014-08-18 05:56:58', '2014-08-18 08:52:41', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355522', 'Mufaddal bhai Shaikh Ilyas bhai Shehabi', 'Mufaddal', 'Shaikh', 'Ilyas', 'Shehabi', '27', '+201224211510', '27', 'Cairo_Jamaat', 'Al-Khaleej', '10 May 1987 ', '', 0),
+(179, '2014-08-18 06:00:27', '2014-08-18 06:36:08', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355523', 'Murtaza bhai Shaikh Ilyas bhai Shehabi', 'Murtaza', 'Shaikh', 'Ilyas', 'Shehabi', '22', '+201225285192', '22', 'Cairo_Jamaat', 'Al-Khaleej', '07 May 1992 ', '', 0),
+(180, '2014-08-18 06:53:59', '2014-08-18 06:59:11', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355786', 'Huzaifa bhai Shaikh Mustafa bhai Kasimji', 'Huzaifa', 'Shaikh', 'Mustafa', 'Kasimji', '18', '+201222148734', '18', 'Cairo_Jamaat', 'Al-Khaleej', '06 Dec 1995 ', '', 0),
+(181, '2014-08-18 06:56:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355785', 'Fatema bai Shaikh Mustafa bhai Kasimji', 'Fatema', 'Shaikh', 'Mustafa', 'Kasimji', '20', '+201222148734', '20', 'Cairo_Jamaat', 'Al-Khaleej', '30 Jan 1994 ', '', 0),
+(182, '2014-08-18 06:56:27', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355784', 'Tasneem bai Shaikh Mustafa bhai Kasimji', 'Tasneem', 'Shaikh ', 'Mustafa ', 'Kasimji', '43', '+201222148734', '43', 'Cairo_Jamaat', 'Al-Khaleej', '20 Jul 1971 ', '', 0),
+(183, '2014-08-19 05:35:15', '2014-08-19 05:35:57', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30355667', 'Husain bhai Shaikh Shabbir bhai Vajihi', 'Husain', 'Shaikh', 'Shabbir', 'Vajihi', '26', '+201224261370', '26', 'Cairo_Jamaat', 'Al-Khaleej', '02 Nov 1987 ', '', 0),
+(184, '2014-08-19 05:36:12', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355669', 'Khadija bai Mulla Qusai bhai Hamidi (sunelwala)', 'Khadija', 'Mulla ', 'Qusai ', 'Hamidi (sunelwala)', '30', '+919167855766', '30', 'Dubai_Jamaat', 'Al-Khaleej', '11 Feb 1984 ', '', 0),
+(185, '2014-08-19 05:36:46', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30355670', 'Ummehani bai Shaikh Shabbir bhai Vajihi', 'Ummehani', 'Shaikh', 'Shabbir', 'Vajihi', '21', '+201094521952', '21', 'Cairo_Jamaat', 'Al-Khaleej', '07 Dec 1992 ', '', 0),
+(186, '2015-03-20 13:50:59', '2015-03-20 17:16:40', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385160', 'Mustaali bhai Shaikh Aliasgar bhai Jawadwala', 'Mustaali', 'Shaikh', 'Aliasgar', 'Jawadwala', '18', '918238710669', '18', 'Surat_Jamea', 'Surat', '28 Sep 1996 ', '', 0),
+(187, '2015-03-20 14:39:58', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385052', 'Fatema bai Mulla Zohair bhai Jawadwala', 'Fatema', 'Mulla', 'Zohair', 'Jawadwala', '12', '+971507780051', '12', 'Dubai_Jamaat', 'Al-Khaleej', '06 May 2002 ', '', 0),
+(188, '2015-03-20 14:41:27', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375452', 'Tasneem bai  Qaidjohar bhai Burhani', 'Tasneem', ' ', 'Qaidjohar ', 'Burhani', '51', '+919850698887', '51', 'Pune_Burhani', 'Pune', '03 Oct 1963 ', '', 0),
+(189, '2015-03-20 14:42:07', '2015-03-20 15:53:42', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30375252', 'Zahra bai  Taher bhai Gheewala', 'Zahra', '', 'Fidahusain', 'Gheewala', '90', '', '90', 'Pune_Burhani', 'Pune', '23 Feb 1925 ', '', 0),
+(190, '2015-03-20 14:52:47', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '20321208', 'Rashida bai  Abidali bhai Ghadiyali', 'Rashida', ' ', 'Abidali ', 'Ghadiyali', '50', '+919928279269', '50', 'Banswara_Badri', 'Taherabad', '17 Aug 1964 ', '', 0),
+(191, '2015-03-20 14:55:37', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30315167', 'Nafisa bai  Hatim bhai Tajani', 'Nafisa', ' ', 'Hatim ', 'Tajani', '51', '+919664907864', '51', 'Bombay_Hashemi', 'Mumbai', '15 Sep 1963 ', '', 0),
+(192, '2015-03-20 15:57:02', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385161', 'Lamak bhai Shaikh Aliasgar bhai Jawadwala', 'Lamak', 'Shaikh', 'Aliasgar', 'Jawadwala', '20', '+971551878633', '20', 'Dubai_Jamaat', 'Al-Khaleej', '21 May 1994 ', '', 0),
+(193, '2015-03-20 16:58:18', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30387160', 'Sarrah bai Shaikh Mustafa bhai Saasa', 'Sarrah', 'Shaikh', 'Mustafa', 'Saasa', '19', '+971508579566', '19', 'Dubai_Jamaat', 'Al-Khaleej', '11 Nov 1995 ', '', 0),
+(194, '2015-03-20 16:58:43', '2015-03-20 17:49:15', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385760', 'Rashida bai  Shabbirali bhai Lokhandwala', 'Rashida', ' ', 'Shabbirali ', 'Lokhandwala', '35', '+971506881869', '35', 'Dubai_Jamaat', 'Al-Khaleej', '08 Nov 1979 ', '', 0),
+(195, '2015-03-20 17:04:50', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385177', 'Rashida bai  Shabbar bhai Mala', 'Rashida', ' ', 'Shabbar ', 'Mala', '44', '+971506500850', '44', 'Dubai_Hakimi', 'Al-Khaleej', '14 Dec 1970 ', '', 0),
+(196, '2015-03-20 17:06:59', '0000-00-00 00:00:00', 0, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385192', 'Husain bhai Mulla Shabbir bhai Adenwala', 'Husain', 'Mulla', 'Shabbir', 'Adenwala', '33', '+971554525335', '33', 'Dubai_Jamaat', 'Al-Khaleej', '18 Jun 1981 ', '', 0),
+(197, '2015-03-20 17:08:38', '2015-03-20 17:12:08', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385195', 'Bilqis bai Shaikh Zainuddin bhai Shujaei', 'Bilqis', 'Shaikh ', 'Zainuddin ', 'Shujaei', '64', '+971501892597', '64', 'Dubai_Jamaat', 'Al-Khaleej', '24 Apr 1950 ', '', 0),
+(198, '2015-03-20 17:11:07', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385143', 'Maimuna bai  Yusuf bhai Contractor', 'Maimuna', '', 'Hasan', 'Contractor', '85', '+971508778010', '85', 'Houston_Jamaat', 'USA', '15 Mar 1930 ', '', 0),
+(199, '2015-03-20 17:14:28', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30384160', 'Mohammed bhai Shaikh Zohair bhai Mukadam', 'Mohammed', 'Shaikh', 'Zohair', 'Mukadam', '17', '+917767845753', '17', 'Abudhabi_Jamaat', 'Al-Khaleej', '12 Apr 1997 ', '', 0),
+(200, '2015-03-20 17:14:47', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30383160', 'Aziz bhai  Shabbir bhai Bootwala', 'Aziz', '', 'Shabbir', 'Bootwala', '18', '', '18', 'Ratlam_Burhani', 'Ujjain', '16 Aug 1996 ', '', 0),
+(201, '2015-03-20 17:17:09', '2015-03-20 17:17:27', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'F', 0, '', '30385197', 'Rashida bai Shaikh Juzer bhai Berberawala', 'Rashida', 'Shaikh ', 'Juzer ', 'Berberawala', '59', '+971504224148', '59', 'Dubai_Jamaat', 'Al-Khaleej', '19 Apr 1955 ', '', 0),
+(202, '2015-03-20 17:17:34', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', 'M', 0, '', '30385198', 'Moiz bhai  Shabbir bhai Doodhwala', 'Moiz', '', 'Shabbir', 'Doodhwala', '32', '+447948289929', '32', 'Manchester_Jamaat', 'UK', '14 Apr 1982 ', '', 0),
+(203, '2015-03-29 17:52:54', '0000-00-00 00:00:00', 1, 0, 0, NULL, NULL, 0, '', '', '', '', '', '', 0, '', '160', '16dasdasd0', '', '', '', '', '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -3454,7 +3640,7 @@ CREATE TABLE IF NOT EXISTS `com_users_groups` (
 --
 
 INSERT INTO `com_users_groups` (`id`, `group_name`, `leve`, `modified`, `created`, `enabled`, `delete`, `order`, `def`, `admin`, `isadmin`, `canadd`, `canedit`, `candelete`, `components`, `can_update_users`, `can_management_components`) VALUES
-(3, 'admin', 4, '2014-07-30 17:34:08', '2012-03-26 00:00:00', '1', 0, 1, 0, 1, 1, 1, 1, 1, ',47,49,52,53,79,65,67,69,70,71,74,75,76,87,81,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,110,111,112,113,114,115,116,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134', 1, 1),
+(3, 'admin', 4, '2015-04-01 12:53:19', '2012-03-26 00:00:00', '1', 0, 1, 0, 1, 1, 1, 1, 1, ',47,49,52,53,79,65,67,69,70,71,74,75,76,87,81,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,110,111,112,113,114,115,116,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136', 1, 1),
 (4, 'user', 0, '0000-00-00 00:00:00', '2012-07-09 00:00:00', '1', 0, 0, 1, 0, 0, 0, 0, 0, '', 0, 0);
 
 -- --------------------------------------------------------
@@ -3472,78 +3658,80 @@ CREATE TABLE IF NOT EXISTS `com_users_groups_xref` (
   `enabled` tinyint(4) NOT NULL DEFAULT '1',
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2049 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2116 ;
 
 --
 -- Dumping data for table `com_users_groups_xref`
 --
 
 INSERT INTO `com_users_groups_xref` (`id`, `item_id`, `cat_id`, `delete`, `order`, `enabled`, `modified`, `created`) VALUES
-(2048, 3, 134, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2047, 3, 133, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2046, 3, 132, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2045, 3, 131, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2044, 3, 130, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2043, 3, 129, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2042, 3, 128, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2041, 3, 127, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2040, 3, 126, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2039, 3, 125, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2038, 3, 124, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2037, 3, 123, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2036, 3, 122, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2035, 3, 121, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2034, 3, 120, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2033, 3, 119, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2032, 3, 118, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2031, 3, 116, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2030, 3, 115, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2029, 3, 114, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2028, 3, 113, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2027, 3, 112, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2026, 3, 111, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2025, 3, 110, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2024, 3, 108, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2023, 3, 107, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2022, 3, 106, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2021, 3, 105, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2020, 3, 104, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2019, 3, 103, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2018, 3, 102, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2017, 3, 101, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2016, 3, 100, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2015, 3, 99, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2014, 3, 98, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2013, 3, 97, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2012, 3, 96, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2011, 3, 95, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2010, 3, 94, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2009, 3, 93, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2008, 3, 92, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2007, 3, 91, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2006, 3, 90, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2005, 3, 89, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2004, 3, 88, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2003, 3, 86, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2002, 3, 85, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2001, 3, 84, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(2000, 3, 83, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1999, 3, 82, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1998, 3, 81, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1997, 3, 87, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1996, 3, 76, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1995, 3, 75, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1994, 3, 74, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1993, 3, 71, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1992, 3, 70, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1991, 3, 69, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1990, 3, 67, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1989, 3, 65, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1988, 3, 79, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1987, 3, 53, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1986, 3, 52, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1985, 3, 49, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08'),
-(1984, 3, 47, 0, 0, 1, '0000-00-00 00:00:00', '2014-07-30 17:34:08');
+(2113, 3, 134, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2112, 3, 133, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2111, 3, 132, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2110, 3, 131, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2109, 3, 130, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2108, 3, 129, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2107, 3, 128, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2106, 3, 127, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2105, 3, 126, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2104, 3, 125, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2103, 3, 124, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2102, 3, 123, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2101, 3, 122, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2100, 3, 121, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2099, 3, 120, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2098, 3, 119, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2097, 3, 118, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2096, 3, 116, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2095, 3, 115, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2094, 3, 114, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2093, 3, 113, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2092, 3, 112, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2091, 3, 111, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2090, 3, 110, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2089, 3, 108, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2088, 3, 107, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2087, 3, 106, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2086, 3, 105, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2085, 3, 104, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2084, 3, 103, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2083, 3, 102, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2082, 3, 101, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2081, 3, 100, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2080, 3, 99, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2079, 3, 98, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2078, 3, 97, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2077, 3, 96, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2076, 3, 95, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2075, 3, 94, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2074, 3, 93, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2073, 3, 92, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2072, 3, 91, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2071, 3, 90, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2070, 3, 89, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2069, 3, 88, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2068, 3, 86, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2067, 3, 85, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2066, 3, 84, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2065, 3, 83, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2064, 3, 82, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2063, 3, 81, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2062, 3, 87, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2061, 3, 76, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2060, 3, 75, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2059, 3, 74, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2058, 3, 71, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2057, 3, 70, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2056, 3, 69, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2055, 3, 67, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2054, 3, 65, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2053, 3, 79, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2052, 3, 53, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2051, 3, 52, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2050, 3, 49, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2049, 3, 47, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2114, 3, 135, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19'),
+(2115, 3, 136, 0, 0, 1, '0000-00-00 00:00:00', '2015-04-01 12:53:19');
 
 -- --------------------------------------------------------
 
@@ -3835,7 +4023,7 @@ CREATE TABLE IF NOT EXISTS `com_wizard` (
 --
 
 INSERT INTO `com_wizard` (`id`, `title`, `enabled`, `delete`, `order`, `created`, `modified`, `cat_id`, `data`) VALUES
-(13, 'Faiz-Wizard', 1, 0, 0, '2014-06-01 09:18:18', '2014-06-03 09:44:37', '', 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>19__morecss=>__;||stepid=>s1__steporder=>2__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>20__morecss=>__;||stepid=>s1__steporder=>3__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>21__morecss=>__;||'),
+(13, 'Faiz-Wizard', 1, 0, 0, '2014-06-01 09:18:18', '2015-03-30 01:24:27', '', 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>22__morecss=>__;||stepid=>s1__steporder=>2__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>19__morecss=>__;||stepid=>s1__steporder=>3__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>20__morecss=>__;||stepid=>s1__steporder=>4__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>21__morecss=>__;||'),
 (14, 'w1', 1, 0, 0, '2014-06-01 13:12:56', '2014-06-01 17:05:11', '', 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>data__data1=>19__morecss=>__;typeID=>T2__type=>data__data1=>20__morecss=>__;||'),
 (15, 'w1', 0, 1, 0, '2014-06-01 13:14:50', '0000-00-00 00:00:00', '', ''),
 (16, 'w1', 0, 1, 0, '2014-06-01 13:15:45', '0000-00-00 00:00:00', '', ''),
@@ -4342,18 +4530,9 @@ INSERT INTO `fiz_raza_types` (`id`, `title`, `des`, `modified`, `created`, `enab
 CREATE TABLE IF NOT EXISTS `fiz_reservation` (
 `id` int(11) NOT NULL,
   `reservation_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `arrival_time` datetime NOT NULL,
-  `airline` varchar(50) NOT NULL,
-  `airline_code` varchar(50) NOT NULL,
-  `arriving_from` varchar(50) NOT NULL,
   `booking_owner` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
   `remarks` text NOT NULL,
-  `individual_id` varchar(50) NOT NULL,
-  `its_id` int(11) NOT NULL,
-  `arrived` tinyint(4) NOT NULL,
-  `city` varchar(50) NOT NULL,
   `mobile` varchar(50) NOT NULL,
   `planner_options` varchar(50) NOT NULL,
   `airport_pickup` tinyint(4) NOT NULL,
@@ -4361,69 +4540,64 @@ CREATE TABLE IF NOT EXISTS `fiz_reservation` (
   `delete` tinyint(4) NOT NULL,
   `order` int(11) NOT NULL,
   `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  `user_type` varchar(5) NOT NULL,
-  `approved` tinyint(4) NOT NULL,
-  `raza_type` int(11) NOT NULL,
-  `host_its_id` text NOT NULL,
-  `booking_email` varchar(255) NOT NULL DEFAULT '-'
+  `modified` datetime NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=97 ;
 
 --
 -- Dumping data for table `fiz_reservation`
 --
 
-INSERT INTO `fiz_reservation` (`id`, `reservation_id`, `user_id`, `arrival_time`, `airline`, `airline_code`, `arriving_from`, `booking_owner`, `email`, `remarks`, `individual_id`, `its_id`, `arrived`, `city`, `mobile`, `planner_options`, `airport_pickup`, `enabled`, `delete`, `order`, `created`, `modified`, `user_type`, `approved`, `raza_type`, `host_its_id`, `booking_email`) VALUES
-(90, 13, 199, '0000-00-00 00:00:00', '', '', '', 186, 'mohammad.mukadam@gmail.com', '', '', 30384160, 0, '', '+917767845753', '', 0, 1, 0, 0, '2015-03-20 17:14:28', '0000-00-00 00:00:00', 'Adult', 0, 2, '', '-'),
-(91, 13, 200, '0000-00-00 00:00:00', '', '', '', 186, 'anjumanekalimi@gmai.com', '', '', 30383160, 0, '', '', '', 0, 1, 0, 0, '2015-03-20 17:14:47', '0000-00-00 00:00:00', 'Adult', 0, 2, '', '-'),
-(3, 2, 160, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0002A1', 30355993, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 0, 2, '', '-'),
-(4, 2, 163, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0002A1C1', 30355993, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Child', 0, 2, '', '-'),
-(5, 3, 160, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0003A1', 30355993, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 0, 2, '', '-'),
-(6, 3, 163, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0003A1C1', 30355993, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Child', 0, 2, '', '-'),
-(7, 4, 160, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0004A1', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 0, 2, '', '-'),
-(8, 4, 163, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0004A1C1', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Child', 0, 2, '', '-'),
-(9, 4, 162, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0004A1C1A2', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 0, 2, '', '-'),
-(10, 5, 160, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0005A1', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 2, 2, '', '-'),
-(11, 5, 163, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0005A1C1', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Child', 3, 2, '', '-'),
-(12, 5, 162, '0000-00-00 00:00:00', 'EK', '2001', 'Dubai', 0, 'azizms@gmail.com', 'sddsd', '0005A1C1A2', 30355789, 0, 'cairo', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55', 'Adult', 2, 2, '', '-'),
-(68, 6, 191, '0000-00-00 00:00:00', '', '', '', 173, '', '', '', 30315167, 0, '', '+919664907864', '', 0, 1, 0, 0, '2015-03-20 14:55:37', '2015-03-20 17:59:24', 'Adult', 0, 1, '22', 'lazizms@gmail.com'),
-(14, 7, 164, '0000-00-00 00:00:00', 'ek', 'ek', 'dubai', 0, 'azizms@gmail.com', '33434', '0007A1', 33323, 0, 'cairo', '1212121', '', 0, 1, 0, 0, '2014-06-29 06:56:16', '2015-03-20 15:17:55', 'Adult', 3, 2, '', '-'),
-(15, 8, 164, '0000-00-00 00:00:00', 'ek', 'ek', 'dubai', 0, 'azizms@gmail.com', '33434', '0008A1', 33323, 0, 'cairo', '1212121', '', 0, 1, 0, 0, '2014-06-29 06:57:55', '2015-03-20 15:17:55', 'Adult', -1, 2, '', '-'),
-(66, 6, 189, '0000-00-00 00:00:00', '', '', '', 173, '', '', '', 30375252, 0, '', '', '', 0, 1, 0, 0, '2015-03-20 14:51:06', '2015-03-20 17:59:24', 'Adult', 0, 1, '22', 'lazizms@gmail.com'),
-(67, 6, 190, '0000-00-00 00:00:00', '', '', '', 173, 'shabbarghadiyali@gmail.com', '', '', 20321208, 0, '', '+919928279269', '', 0, 1, 0, 0, '2015-03-20 14:52:47', '2015-03-20 17:59:24', 'Adult', 0, 1, '22', 'lazizms@gmail.com'),
-(28, 2, 160, '0000-00-00 00:00:00', '', '', '', 0, '', '', '', 30385154, 0, '', '', '', 0, 1, 0, 0, '2014-07-21 16:16:57', '2015-03-20 15:17:55', '', 0, 2, '', '-'),
-(29, 3, 160, '0000-00-00 00:00:00', '', '', '', 0, '', '', '', 30385154, 0, '', '', '', 0, 1, 0, 0, '2014-07-21 16:17:00', '2015-03-20 15:17:55', '', 0, 2, '', '-'),
-(30, 4, 160, '0000-00-00 00:00:00', '', '', '', 0, '', '', '', 30385154, 0, '', '', '', 0, 1, 0, 0, '2014-07-21 16:22:29', '2015-03-20 15:17:55', '', 0, 2, '', '-'),
-(31, 5, 160, '0000-00-00 00:00:00', '', '', '', 160, 'azizms@gmail.com', '', '', 30385154, 0, '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:25:41', '2015-03-20 14:58:01', '', 2, 1, '30385155', '-'),
-(32, 6, 160, '0000-00-00 00:00:00', '', '', '', 173, 'azizms@gmail.com', '', '', 30385154, 0, '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:29:24', '2015-03-20 17:59:24', 'Adult', 3, 1, '22', 'lazizms@gmail.com'),
-(33, 5, 160, '0000-00-00 00:00:00', 'ari', 'aircode', 'arrfrom', 160, 'undefined', '', '', 30385154, 0, '', '', '', 0, 1, 0, 0, '2014-07-21 16:45:42', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(34, 5, 160, '0000-00-00 00:00:00', 'air2', 'aire2co', 'arrvf', 160, 'undefined', '', '', 30385154, 0, '', '', '', 0, 1, 0, 0, '2014-07-21 16:48:21', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(35, 5, 160, '0000-00-00 00:00:00', '', '', '', 160, 'azizms@gmail.com', '', '', 30385154, 0, '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:48:43', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(36, 5, 165, '0000-00-00 00:00:00', '', '', '', 160, 'tid_88@hotmail.com', '', '', 30385152, 0, '', '+971503845472', '', 0, 1, 0, 0, '2014-07-22 14:29:30', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(37, 5, 166, '0000-00-00 00:00:00', '', '', '', 160, 'ekbal63@gmail.com', '', '', 30385153, 0, '', '+971507650681', '', 0, 1, 0, 0, '2014-07-23 16:32:01', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(38, 5, 167, '0000-00-00 00:00:00', '', '', '', 160, 'abbas.s.husain@gmail.com', '', '', 30385150, 0, '', '+971503504786', '', 0, 1, 0, 0, '2014-07-23 16:34:12', '2015-03-20 14:58:01', 'Adult', 3, 1, '30385155', '-'),
-(39, 5, 168, '0000-00-00 00:00:00', 'aa', 'assee', 'sddd', 168, 'mshakirvasi@gmail.com', 'THisi s new booking', '', 20322202, 0, '', '+971506761525', '', 0, 1, 0, 0, '2014-07-23 20:17:30', '2014-07-27 17:17:27', 'Adult', 2, 1, '30385154', '-'),
-(40, 5, 169, '0000-00-00 00:00:00', '', '', '', 168, 'azizms@gmail.com', '', '', 30387405, 0, '', '+971503557882', '', 0, 1, 0, 0, '2014-07-23 20:20:03', '2014-07-27 17:17:27', 'Adult', 1, 1, '30385154', '-'),
-(41, 5, 161, '0000-00-00 00:00:00', '', '', '', 168, 'pratapgarhjamaat@gmail.com', '', '', 30385155, 0, '', '918696160606', '', 0, 1, 0, 0, '2014-07-23 20:38:45', '2014-07-27 17:17:27', 'Adult', 2, 1, '30385154', '-'),
-(42, 5, 170, '0000-00-00 00:00:00', '', '', '', 160, 'aqhamidi@gmail.com', '', '', 30385151, 0, '', '+971551287652', '', 0, 1, 0, 0, '2014-07-24 16:34:47', '2015-03-20 14:58:01', 'Adult', 2, 1, '30385155', '-'),
-(43, 5, 171, '0000-00-00 00:00:00', '', '', '', 168, 'saifee.tarwala@gmail.com', '', '', 20322201, 0, '', '+919377718873', '', 0, 1, 0, 0, '2014-07-25 05:39:47', '2014-07-27 17:17:27', 'Adult', 3, 1, '30385154', '-'),
-(44, 5, 172, '0000-00-00 00:00:00', '', '', '', 168, 'safdiwan@yahoo.com', '', '', 20322203, 0, '', '', '', 0, 1, 0, 0, '2014-07-25 05:52:34', '2014-07-27 17:17:27', 'Adult', 2, 1, '30385154', '-'),
-(45, 6, 173, '0000-00-00 00:00:00', '', '', '', 173, 'mustafa.batul@yahoo.com', '', '', 20322205, 0, '', '+971506502095', '', 0, 1, 0, 0, '2014-07-31 18:58:41', '2015-03-20 17:59:24', 'Adult', 1, 1, '22', 'lazizms@gmail.com'),
-(46, 6, 174, '0000-00-00 00:00:00', '', '', '', 173, 'zoher@emirates.net.ae', '', '', 20322206, 0, '', '+971504581406', '', 0, 1, 0, 0, '2014-07-31 18:58:48', '2015-03-20 17:59:24', 'Adult', 2, 1, '22', 'lazizms@gmail.com'),
-(47, 6, 175, '0000-00-00 00:00:00', '', '', '', 173, 'raju522000@yahoo.com', '', '', 20322208, 0, '', '+971506760251', '', 0, 1, 0, 0, '2014-07-31 18:59:06', '2015-03-20 17:59:24', 'Adult', 0, 1, '22', 'lazizms@gmail.com'),
-(48, 7, 176, '0000-00-00 00:00:00', '', '', '', 176, 'alijawadubai@gmail.com', '', '', 30385156, 0, '', '+971506539150', '', 0, 1, 0, 0, '2014-08-16 09:46:35', '2014-08-16 09:53:18', 'Adult', 2, 2, '', '-'),
-(49, 7, 177, '0000-00-00 00:00:00', 'EK', 'EK101', 'Dubai', 176, 'mnasikwala2002@yahoo.com', 'This is remarks', '', 30385158, 0, '', '+971501914082', '', 0, 1, 0, 0, '2014-08-16 09:46:52', '2014-08-16 09:53:18', 'Adult', 1, 1, '', '-'),
-(50, 8, 178, '0000-00-00 00:00:00', 'ek', '111', 'dxb', 178, 'mufaddalshehabi@gmail.com', 'fgfg', '', 30355522, 0, '', '+201224211510', '', 0, 1, 0, 0, '2014-08-18 06:00:02', '2014-08-18 07:02:33', 'Adult', 1, 2, '', '-'),
-(51, 8, 179, '0000-00-00 00:00:00', 'ek', '111', 'dxb', 178, 'murtaza.shehabi@gmail.com', 'fgfg', '', 30355523, 0, '', '+201225285192', '', 0, 1, 0, 0, '2014-08-18 06:00:28', '2014-08-18 07:02:33', 'Adult', 1, 2, '', '-'),
-(52, 9, 181, '0000-00-00 00:00:00', '', '', '', 180, 'mustafaqasim@gmail.com', '', '', 30355785, 0, '', '+201222148734', '', 0, 1, 0, 0, '2014-08-18 06:56:18', '0000-00-00 00:00:00', 'Adult', 0, 2, '', '-'),
-(53, 9, 182, '0000-00-00 00:00:00', '', '', '', 180, 'mustafaqasim@gmail.com', '', '', 30355784, 0, '', '+201222148734', '', 0, 1, 0, 0, '2014-08-18 06:56:27', '0000-00-00 00:00:00', 'Adult', 0, 2, '', '-'),
-(54, 10, 183, '0000-00-00 00:00:00', 'rek', '1111', '111', 183, 'hussainvajihi@gmail.com', 'dfddf', '', 30355667, 0, '', '+201224261370', '', 0, 1, 0, 0, '2014-08-19 05:35:57', '2014-08-19 05:48:10', 'Adult', 1, 1, '30355667', '-'),
-(55, 10, 184, '0000-00-00 00:00:00', 'rek', '1111', '111', 183, 'qusaih@hotmail.com', 'dfddf', '', 30355669, 0, '', '+919167855766', '', 0, 1, 0, 0, '2014-08-19 05:36:12', '2014-08-19 05:48:10', 'Adult', 1, 1, '30355667', '-'),
-(56, 10, 185, '0000-00-00 00:00:00', 'rek', '1111', '111', 183, 'ummehani.vajihi@gmail.com', 'dfddf', '', 30355670, 0, '', '+201094521952', '', 0, 1, 0, 0, '2014-08-19 05:36:46', '2014-08-19 05:48:10', 'Adult', 1, 1, '30355667', '-'),
-(95, 14, 202, '0000-00-00 00:00:00', '', '', '', 186, 'moiz26@hotmail.com', '', '', 30385198, 0, '', '+447948289929', '', 0, 1, 0, 0, '2015-03-20 17:17:34', '2015-03-20 17:18:24', 'Adult', 0, 1, '12345', '-'),
-(92, 14, 186, '0000-00-00 00:00:00', '', '', '', 186, 'alijawadubai@gmail.com', '', '', 30385160, 0, '', '918238710669', '', 0, 1, 0, 0, '2015-03-20 17:16:40', '2015-03-20 17:18:24', 'Adult', 0, 1, '12345', '-'),
-(80, 12, 193, '0000-00-00 00:00:00', '', '', '', 186, 'sarrahsaasa@gmail.com', '', '', 30387160, 0, '', '+971508579566', '', 0, 1, 0, 0, '2015-03-20 16:58:18', '0000-00-00 00:00:00', 'Adult', 0, 1, '', '-'),
-(96, 15, 194, '0000-00-00 00:00:00', '', '', '', 194, 'shabbir@gficg.com', '', '', 30385760, 0, '', '+971506881869', '', 0, 1, 0, 0, '2015-03-20 17:49:15', '2015-03-20 18:04:29', 'Adult', 0, 1, '', '14bbir@gficg.com');
+INSERT INTO `fiz_reservation` (`id`, `reservation_id`, `booking_owner`, `email`, `remarks`, `mobile`, `planner_options`, `airport_pickup`, `enabled`, `delete`, `order`, `created`, `modified`) VALUES
+(90, 13, 160, 'mohammad.mukadam@gmail.com', '', '+917767845753', '', 0, 1, 0, 0, '2015-03-20 17:14:28', '0000-00-00 00:00:00'),
+(91, 13, 186, 'anjumanekalimi@gmai.com', '', '', '', 0, 1, 0, 0, '2015-03-20 17:14:47', '0000-00-00 00:00:00'),
+(3, 2, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(4, 2, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(5, 3, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(6, 3, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(7, 4, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(8, 4, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(9, 4, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(10, 5, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(11, 5, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(12, 5, 0, 'azizms@gmail.com', 'sddsd', '2029029', '', 0, 1, 0, 0, '0000-00-00 00:00:00', '2015-03-20 15:17:55'),
+(68, 6, 173, '', '', '+919664907864', '', 0, 1, 0, 0, '2015-03-20 14:55:37', '2015-03-20 17:59:24'),
+(14, 7, 0, 'azizms@gmail.com', '33434', '1212121', '', 0, 1, 0, 0, '2014-06-29 06:56:16', '2015-03-20 15:17:55'),
+(15, 8, 0, 'azizms@gmail.com', '33434', '1212121', '', 0, 1, 0, 0, '2014-06-29 06:57:55', '2015-03-20 15:17:55'),
+(66, 6, 173, '', '', '', '', 0, 1, 0, 0, '2015-03-20 14:51:06', '2015-03-20 17:59:24'),
+(67, 6, 173, 'shabbarghadiyali@gmail.com', '', '+919928279269', '', 0, 1, 0, 0, '2015-03-20 14:52:47', '2015-03-20 17:59:24'),
+(28, 2, 0, '', '', '', '', 0, 1, 0, 0, '2014-07-21 16:16:57', '2015-03-20 15:17:55'),
+(29, 3, 0, '', '', '', '', 0, 1, 0, 0, '2014-07-21 16:17:00', '2015-03-20 15:17:55'),
+(30, 4, 0, '', '', '', '', 0, 1, 0, 0, '2014-07-21 16:22:29', '2015-03-20 15:17:55'),
+(31, 5, 160, 'azizms@gmail.com', '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:25:41', '2015-03-20 14:58:01'),
+(32, 6, 173, 'azizms@gmail.com', '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:29:24', '2015-03-20 17:59:24'),
+(33, 5, 160, 'undefined', '', '', '', 0, 1, 0, 0, '2014-07-21 16:45:42', '2015-03-20 14:58:01'),
+(34, 5, 160, 'undefined', '', '', '', 0, 1, 0, 0, '2014-07-21 16:48:21', '2015-03-20 14:58:01'),
+(35, 5, 160, 'azizms@gmail.com', '', '201222489051', '', 0, 1, 0, 0, '2014-07-21 16:48:43', '2015-03-20 14:58:01'),
+(36, 5, 160, 'tid_88@hotmail.com', '', '+971503845472', '', 0, 1, 0, 0, '2014-07-22 14:29:30', '2015-03-20 14:58:01'),
+(37, 5, 160, 'ekbal63@gmail.com', '', '+971507650681', '', 0, 1, 0, 0, '2014-07-23 16:32:01', '2015-03-20 14:58:01'),
+(38, 5, 160, 'abbas.s.husain@gmail.com', '', '+971503504786', '', 0, 1, 0, 0, '2014-07-23 16:34:12', '2015-03-20 14:58:01'),
+(39, 5, 168, 'mshakirvasi@gmail.com', 'THisi s new booking', '+971506761525', '', 0, 1, 0, 0, '2014-07-23 20:17:30', '2014-07-27 17:17:27'),
+(40, 5, 168, 'azizms@gmail.com', '', '+971503557882', '', 0, 1, 0, 0, '2014-07-23 20:20:03', '2014-07-27 17:17:27'),
+(41, 5, 168, 'pratapgarhjamaat@gmail.com', '', '918696160606', '', 0, 1, 0, 0, '2014-07-23 20:38:45', '2014-07-27 17:17:27'),
+(42, 5, 160, 'aqhamidi@gmail.com', '', '+971551287652', '', 0, 1, 0, 0, '2014-07-24 16:34:47', '2015-03-20 14:58:01'),
+(43, 5, 168, 'saifee.tarwala@gmail.com', '', '+919377718873', '', 0, 1, 0, 0, '2014-07-25 05:39:47', '2014-07-27 17:17:27'),
+(44, 5, 168, 'safdiwan@yahoo.com', '', '', '', 0, 1, 0, 0, '2014-07-25 05:52:34', '2014-07-27 17:17:27'),
+(45, 6, 173, 'mustafa.batul@yahoo.com', '', '+971506502095', '', 0, 1, 0, 0, '2014-07-31 18:58:41', '2015-03-20 17:59:24'),
+(46, 6, 173, 'zoher@emirates.net.ae', '', '+971504581406', '', 0, 1, 0, 0, '2014-07-31 18:58:48', '2015-03-20 17:59:24'),
+(47, 6, 173, 'raju522000@yahoo.com', '', '+971506760251', '', 0, 1, 0, 0, '2014-07-31 18:59:06', '2015-03-20 17:59:24'),
+(48, 7, 176, 'alijawadubai@gmail.com', '', '+971506539150', '', 0, 1, 0, 0, '2014-08-16 09:46:35', '2014-08-16 09:53:18'),
+(49, 7, 176, 'mnasikwala2002@yahoo.com', 'This is remarks', '+971501914082', '', 0, 1, 0, 0, '2014-08-16 09:46:52', '2014-08-16 09:53:18'),
+(50, 8, 178, 'mufaddalshehabi@gmail.com', 'fgfg', '+201224211510', '', 0, 1, 0, 0, '2014-08-18 06:00:02', '2014-08-18 07:02:33'),
+(51, 8, 178, 'murtaza.shehabi@gmail.com', 'fgfg', '+201225285192', '', 0, 1, 0, 0, '2014-08-18 06:00:28', '2014-08-18 07:02:33'),
+(52, 9, 180, 'mustafaqasim@gmail.com', '', '+201222148734', '', 0, 1, 0, 0, '2014-08-18 06:56:18', '0000-00-00 00:00:00'),
+(53, 9, 180, 'mustafaqasim@gmail.com', '', '+201222148734', '', 0, 1, 0, 0, '2014-08-18 06:56:27', '0000-00-00 00:00:00'),
+(54, 10, 183, 'hussainvajihi@gmail.com', 'dfddf', '+201224261370', '', 0, 1, 0, 0, '2014-08-19 05:35:57', '2014-08-19 05:48:10'),
+(55, 10, 183, 'qusaih@hotmail.com', 'dfddf', '+919167855766', '', 0, 1, 0, 0, '2014-08-19 05:36:12', '2014-08-19 05:48:10'),
+(56, 10, 183, 'ummehani.vajihi@gmail.com', 'dfddf', '+201094521952', '', 0, 1, 0, 0, '2014-08-19 05:36:46', '2014-08-19 05:48:10'),
+(95, 14, 186, 'moiz26@hotmail.com', '', '+447948289929', '', 0, 1, 0, 0, '2015-03-20 17:17:34', '2015-03-20 17:18:24'),
+(92, 14, 186, 'alijawadubai@gmail.com', '', '918238710669', '', 0, 1, 0, 0, '2015-03-20 17:16:40', '2015-03-20 17:18:24'),
+(80, 12, 186, 'sarrahsaasa@gmail.com', '', '+971508579566', '', 0, 1, 0, 0, '2015-03-20 16:58:18', '0000-00-00 00:00:00'),
+(96, 15, 194, 'shabbir@gficg.com', '', '+971506881869', '', 0, 1, 0, 0, '2015-03-20 17:49:15', '2015-03-20 18:04:29');
 
 -- --------------------------------------------------------
 
@@ -4459,6 +4633,45 @@ CREATE TABLE IF NOT EXISTS `fiz_reservation_settings` (
 
 INSERT INTO `fiz_reservation_settings` (`id`, `new_email_subject`, `email_from`, `enabled`, `delete`, `order`, `created`, `modified`, `cat_id`, `package_category`, `email_from_name`, `email_copy`, `edit_email_subject`, `delete_email_subject`, `email_new_template`, `email_edit_template`, `email_delete_template`, `title`, `des`) VALUES
 (1, 'New Reservation', 'Faiz Reservations', 1, 0, 0, '2014-06-03 00:00:00', '2014-06-02 16:43:51', '', ',1,2', '0', 'azizms@gmail.com', 'Edit Reservation', 'Delete Reservation', 348, 348, 348, 'New', 'fsdfds sdfsdf sdfsd sdfsd sdfsdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fiz_reservation_users_xref`
+--
+
+CREATE TABLE IF NOT EXISTS `fiz_reservation_users_xref` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `reservation_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `airline` varchar(255) NOT NULL,
+  `airline_code` varchar(255) NOT NULL,
+  `arriving_from` varchar(255) NOT NULL,
+  `individual_id` varchar(255) NOT NULL,
+  `its_id` varchar(255) NOT NULL,
+  `arrived` tinyint(4) NOT NULL,
+  `raza_type` varchar(255) NOT NULL,
+  `approved` tinyint(4) NOT NULL,
+  `host_its_id` text NOT NULL,
+  `arrival_date` datetime NOT NULL,
+  `departure_date` datetime NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `fiz_reservation_users_xref`
+--
+
+INSERT INTO `fiz_reservation_users_xref` (`id`, `created`, `modified`, `enabled`, `order`, `delete`, `reservation_id`, `user_id`, `airline`, `airline_code`, `arriving_from`, `individual_id`, `its_id`, `arrived`, `raza_type`, `approved`, `host_its_id`, `arrival_date`, `departure_date`) VALUES
+(5, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 90, 186, '', '', '', '', '30385154', 0, '', 0, '', '2015-04-04 04:11:11', '2015-04-30 00:00:00'),
+(4, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 90, 160, '', '', '', '', '30385154', 0, '', 0, '', '2015-04-04 04:11:11', '2015-04-30 00:00:00'),
+(6, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 31, 160, '', '', '', '', '30385154', 0, '', 0, '', '2015-03-30 00:00:00', '2015-04-01 00:00:00'),
+(7, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 35, 160, '', '', '', '', '30385154', 0, '', 0, '', '2015-03-17 00:00:00', '2015-04-01 00:00:00'),
+(8, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 35, 162, '', '', '', '', '30385154', 0, '', 0, '', '2015-03-17 00:00:00', '2015-04-01 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -4580,96 +4793,61 @@ CREATE TABLE IF NOT EXISTS `menu_itmes` (
   `all_site` tinyint(4) NOT NULL,
   `color` varchar(255) NOT NULL,
   `permission_gust` tinyint(4) NOT NULL,
-  `property__url` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=369 ;
+  `property__url` text NOT NULL,
+  `addstatus` text NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=373 ;
 
 --
 -- Dumping data for table `menu_itmes`
 --
 
-INSERT INTO `menu_itmes` (`id`, `parent_id`, `mei_background`, `mei_image`, `mei_options`, `mei_morecss`, `mei_title`, `mei_alias`, `modified`, `created`, `enabled`, `order`, `delete`, `mei_home`, `properties`, `mei_main`, `cat_id`, `mei_template`, `show`, `mei_comment`, `openType`, `main_link`, `permission`, `permission_all`, `description`, `keywords`, `header`, `site`, `all_site`, `color`, `permission_gust`, `property__url`) VALUES
-(287, 8, NULL, '', NULL, '', 'About', 'About', '2014-05-25 08:32:42', '2014-01-22 07:56:58', 1, 219, 1, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '89bd3c', 0, '/search/cat=Environment/'),
-(223, 14, NULL, NULL, NULL, NULL, 'Contact Us', 'Contact-Us-bottom', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 160, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(225, 14, NULL, NULL, NULL, NULL, 'Business', 'Business', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 162, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(226, 14, NULL, NULL, NULL, NULL, 'Edit Reservation', 'Edit-Reservation-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 163, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(227, 14, NULL, NULL, NULL, NULL, 'FAQ', 'FAQ-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 164, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(218, 0, NULL, NULL, NULL, '', 'F.A.Q', 'F.A.Q', '2013-12-10 00:00:00', '2013-04-16 05:17:16', 1, 157, 0, 0, 'faqtype__0;faqstyle__list;', 'com_faq', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(219, 14, NULL, NULL, NULL, '', 'Home', 'home', '2014-05-25 08:38:05', '2013-04-17 05:36:05', 1, 156, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', -1, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(220, 14, NULL, NULL, NULL, NULL, 'Cairo', 'Cairo', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 157, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(221, 14, NULL, NULL, NULL, NULL, 'Standard', 'Standard', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 158, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(222, 14, NULL, NULL, NULL, NULL, 'Reservation', 'Reservation', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 159, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(199, 0, NULL, NULL, NULL, '', 'ABOUT2', 'ABOUT2', '2013-12-09 00:00:00', '2013-04-15 14:40:24', 1, 154, 0, 0, 'imagegallery__;selectcode__;', 'com_html', 0, '', '0', '', 1, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(214, 0, NULL, NULL, NULL, '', 'HOME', 'home', '2013-12-11 00:00:00', '2013-04-15 14:49:04', 1, 156, 0, 0, 'imagegallery__;selectcode__128;', 'com_html', 0, '', '1', '', 1, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(215, 0, NULL, NULL, NULL, '', 'Contact Us', 'Contact-Us', '2013-12-10 00:00:00', '2013-04-15 14:49:04', 1, 156, 0, 0, 'contect__5;title__cmail;formlabel__empcland@gmail.com;formmail__empcland@gmail.com;showmap__0;width__;height__;Lat__;Lng__;zoom__14;markerTitle__;intro__;markerData__;', 'com_contect', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(232, 14, NULL, NULL, NULL, NULL, 'Guestbook', 'Guestbook-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 168, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(233, 14, NULL, NULL, NULL, NULL, '-', '#', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 169, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(234, 14, NULL, NULL, NULL, NULL, '-', '#', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 170, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(235, 14, NULL, NULL, NULL, NULL, 'Virtual Tours', 'Virtual-Tours-Down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 171, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(237, 8, NULL, NULL, NULL, NULL, 'Outside Faiz', 'Outside-Faiz', '0000-00-00 00:00:00', '2013-05-29 08:14:38', 1, 173, 0, 0, 'url__#;', 'GET__com', 236, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(238, 0, '', '', '', '', 'DataTest', 'DataTest', '2013-09-02 00:00:00', '0000-00-00 00:00:00', 1, 174, 0, 0, 'data__12;', 'com_data', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(241, 15, NULL, NULL, NULL, '', 'Instructions for safar	', 'Instructions-for-safar', '0000-00-00 00:00:00', '2013-10-22 04:50:57', 1, 176, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(242, 15, NULL, NULL, NULL, '', 'about1', 'about1', '2013-12-10 00:00:00', '2013-10-22 04:51:11', 1, 177, 0, 0, 'imagegallery__;selectcode__;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(243, 15, NULL, NULL, NULL, '', 'Copyright', 'Copyright', '0000-00-00 00:00:00', '2013-10-22 04:51:24', 1, 178, 0, 0, 'imagegallery__;selectcode__124;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(244, 15, NULL, NULL, NULL, '', 'Step 1', 'Step-1', '0000-00-00 00:00:00', '2013-10-22 04:51:36', 1, 179, 0, 0, 'imagegallery__;selectcode__125;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(245, 15, '', '', '', '', 'Cairo222', 'Cairo222', '2013-11-04 00:00:00', '2013-04-17 06:24:57', 1, 159, 0, 0, 'cat_id__36;nums__3;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__20;shareView__0;introInBody__0;thimageinBody__0;comment__0;', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(246, 15, '', '', '', '', 'Accomodation', 'Accomodation', '2013-11-05 00:00:00', '2013-04-15 14:47:08', 1, 155, 0, 0, 'gallery__65;rowNumbers__10;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__0;catPageViewHist__0;', 'com_images_gallery', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(249, 18, NULL, NULL, NULL, '', 'faiz', 'faizfaiz', '2013-12-04 00:00:00', '2013-12-04 18:35:12', 1, 182, 0, 0, 'url__#;', 'com_link', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(251, 8, NULL, NULL, NULL, '', 'app', 'app', '0000-00-00 00:00:00', '2013-12-09 17:29:45', 1, 184, 0, 0, 'url__;', '', 230, '', '1', '', 1, 1, '', 0, '', '', '', '', 0, '', 0, ''),
-(253, 10, NULL, NULL, NULL, '', 'a', 'aa', '0000-00-00 00:00:00', '2013-12-10 06:27:32', 1, 117, 1, 0, 'url__;', 'com_link', 128, '', '1', 'a', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(254, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:28:29', 1, 186, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(255, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:28:56', 1, 187, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(256, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:29:10', 1, 188, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(257, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:29:10', 1, 189, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(258, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:30:45', 1, 190, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(259, 10, NULL, NULL, NULL, '', 'ddd', 'ddddd', '0000-00-00 00:00:00', '2013-12-10 06:31:02', 1, 191, 1, 0, 'url__;', 'com_link', 128, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(262, 8, NULL, NULL, NULL, '', 'add', 'add', '0000-00-00 00:00:00', '2013-12-23 12:58:17', 1, 194, 1, 0, '', 'com_content_article', 231, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(285, 10, NULL, NULL, NULL, '', 'الاعضاء', 'account', '2014-03-19 10:29:25', '2014-01-20 08:36:02', 1, 213, 1, 0, '', 'com_users', 0, '', '0', '', 0, 0, '', 1, '', '', '', '', 1, '', 1, ''),
-(289, 8, '', '532daed477933.png', '', '', 'Reservations', 'Reservations', '2014-05-21 13:20:30', '2014-01-22 07:56:58', 1, 221, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, 'abcede', 0, '/search/cat=Child/'),
-(290, 8, '', '532daef37f047.png', '', '', 'Virtual', 'Virtual', '2014-05-21 13:20:49', '2014-01-22 07:56:58', 1, 220, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, 'e7842a', 0, '/search/cat=Women/'),
-(310, 13, NULL, NULL, NULL, '', 'الشروط و الاحكام', 'terms-of-use', '2014-04-15 06:19:20', '2014-01-28 05:09:30', 1, 258, 1, 0, '', 'com_html', 333, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(309, 13, NULL, NULL, NULL, '', 'فريق العمل ', 'our-team', '2014-04-27 09:37:28', '2014-01-28 05:04:36', 1, 237, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(307, 13, NULL, NULL, NULL, '', 'الية اختيار المشاريع ', 'projects-guideline', '2014-04-27 09:36:42', '2014-01-28 05:03:02', 1, 235, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(306, 13, NULL, NULL, NULL, '', 'كيف تعمل مدد ', 'how-madad-works', '2014-04-27 09:24:44', '2014-01-28 05:00:44', 1, 234, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(305, 13, NULL, NULL, NULL, '', 'من نحن  ', 'about-mission', '2014-04-27 09:31:00', '2014-01-28 04:51:39', 1, 233, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(304, 13, NULL, NULL, NULL, '', 'عن مدد', 'عن-مدد', '2014-02-06 00:00:00', '2014-01-28 04:16:33', 1, 232, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(308, 13, NULL, NULL, NULL, '', 'خصوصية البيانات', 'privacy-policy', '2014-04-15 06:19:42', '2014-01-28 05:03:35', 1, 255, 1, 0, '', 'com_html', 333, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(319, 13, '', '', '', '', 'انضم لفريق العمل ', 'join-the-team', '2014-04-27 09:37:44', '2014-01-28 05:10:13', 1, 239, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(320, 10, NULL, NULL, NULL, '', 'مرحبا @%user::name%@', 'users', '2014-03-19 10:25:41', '2014-01-28 07:29:57', 1, 240, 1, 0, '', 'com_users', 0, '', '1', '', 0, 1, ',3,4', 0, '', '', '', '', 1, '', 0, ''),
-(325, 13, NULL, NULL, NULL, '', 'مجالات المشاريع ', 'مجالات-المشاريع', '2014-04-27 08:24:37', '2014-02-04 12:59:39', 1, 242, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#'),
-(327, 13, NULL, NULL, NULL, '', 'الطفل', 'Discover-Projects-for-Chi', '2014-04-15 06:00:02', '2014-02-04 13:01:56', 1, 244, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Children/'),
-(328, 13, NULL, NULL, NULL, '', 'المرأة', 'Discover-Projects-for-Wom', '2014-03-19 15:44:06', '2014-02-04 13:02:26', 1, 245, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Women/'),
-(329, 13, NULL, NULL, NULL, '', 'البيئة', 'Discover-Projects-for-Env', '2014-03-19 15:44:40', '2014-02-04 13:02:55', 1, 246, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Environment/'),
-(330, 13, NULL, NULL, NULL, '', 'الصحة', 'Discover-Projects-for-Hea', '2014-03-19 15:44:59', '2014-02-04 13:03:24', 1, 247, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Health/'),
-(331, 13, NULL, NULL, NULL, '', 'التعليم', 'Discover-Projects-for-Edu', '2014-03-19 15:45:22', '2014-02-04 13:04:03', 1, 248, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Education/'),
-(332, 13, NULL, NULL, NULL, '', 'الفقر', 'Discover-Projects-for-Pov', '2014-03-19 15:46:39', '2014-02-04 13:04:33', 1, 249, 1, 0, '', 'com_link', 325, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/search/cat=Poverty/'),
-(333, 13, NULL, NULL, NULL, '', 'عن الموقع', 'about-the-site', '0000-00-00 00:00:00', '2014-02-06 04:08:53', 1, 250, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(335, 13, NULL, NULL, NULL, '', 'شركائنا', 'partners', '2014-04-27 09:38:13', '2014-02-06 04:17:02', 1, 252, 1, 0, '', 'com_html', 304, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(336, 13, NULL, NULL, NULL, '', 'الخدمات', 'services', '0000-00-00 00:00:00', '2014-02-06 04:18:33', 1, 253, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(337, 13, NULL, NULL, NULL, '', 'دخول / تسجيل', 'login', '2014-04-27 08:59:13', '2014-02-06 04:19:18', 1, 254, 1, 0, '', 'com_link', 336, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '/account/#login'),
-(338, 13, NULL, NULL, NULL, '', 'طرق المساهمة ', 'donation-channels', '2014-04-27 09:39:27', '2014-02-06 04:20:39', 1, 238, 1, 0, '', 'com_html', 333, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(339, 13, NULL, NULL, NULL, '', 'ترشيح مشروع ', 'recommend-projects', '2014-04-27 09:40:13', '2014-02-06 04:21:11', 1, 256, 1, 0, '', 'com_html', 336, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(340, 13, NULL, NULL, NULL, '', 'المساعدة', 'support', '0000-00-00 00:00:00', '2014-02-06 04:22:44', 1, 257, 1, 0, '', 'com_link', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(341, 13, NULL, NULL, NULL, '', 'الأسئلة الشائعة ', 'faq', '2014-04-27 08:26:27', '2014-02-06 04:23:15', 1, 236, 1, 0, '', 'com_faq', 333, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(342, 13, NULL, NULL, NULL, '', 'اتصل بنا', 'contact-us', '2014-04-27 09:40:38', '2014-02-06 04:23:44', 1, 259, 1, 0, '', 'com_html', 336, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(346, 10, NULL, NULL, NULL, '', 'مستخدم جديد', 'مستخدم-جديد', '2014-03-19 10:56:11', '2014-03-19 04:18:49', 1, 262, 1, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 1, '/account/#register'),
-(349, 10, '', '', '', '', 'خروج', 'خروج', '2014-04-15 09:25:33', '2014-01-28 07:29:57', 1, 240, 1, 0, '', 'com_link', 320, '', '1', '', 0, 1, ',3,4', 0, '', '', '', '', 1, '', 0, '/users/logout/'),
-(352, 8, '', '532daeba2a36e.png', '', '', 'Egypt At A Glance', 'Egypt-At-A-Glance', '2015-03-24 20:17:50', '2014-01-22 07:56:58', 1, 219, 0, 0, '', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '89bd3c', 0, '#'),
-(353, 8, NULL, NULL, NULL, '', 'about', 'about', '2014-05-25 08:51:29', '2014-05-25 08:39:27', 0, 263, 0, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(354, 14, NULL, NULL, NULL, '', 'Home', 'Home', '2014-05-25 08:54:02', '2014-05-25 08:53:10', 1, 264, 0, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(355, 10, NULL, NULL, NULL, '', 'Cairo', 'Cairo', '0000-00-00 00:00:00', '2014-05-25 09:04:04', 1, 265, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#'),
-(356, 10, NULL, NULL, NULL, '', 'Mutah', 'Mutah', '0000-00-00 00:00:00', '2014-05-25 09:04:16', 1, 266, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#'),
-(357, 10, NULL, NULL, NULL, '', 'Shaam', 'Shaam', '0000-00-00 00:00:00', '2014-05-25 09:04:28', 1, 267, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#'),
-(358, 8, NULL, NULL, NULL, '', 'Virtual Tours', 'Virtual-Tours', '2015-03-24 20:15:12', '2014-05-25 09:17:25', 1, 268, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#'),
-(359, 8, NULL, NULL, NULL, '', 'Accommodation', 'Accommodation', '2014-07-15 09:28:48', '2014-05-25 09:20:36', 1, 269, 0, 0, '', 'com_images_gallery', 358, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(360, 8, NULL, NULL, NULL, '', 'ciato', 'ciato', '2014-05-25 09:41:51', '2014-05-25 09:39:42', 0, 270, 0, 0, '', 'com_content_article', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(361, 8, NULL, NULL, NULL, '', 'Reservations', 'Reservations', '2015-03-26 11:03:16', '2014-05-29 05:44:16', 1, 271, 0, 0, '', 'fiz_reservations', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(362, 14, NULL, NULL, NULL, '', 'rex', 'rex', '2014-06-01 13:31:35', '2014-06-01 10:00:52', 1, 272, 0, 0, '', 'com_wizard', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(363, 8, NULL, NULL, NULL, '', 'Faiz Pics', 'Faiz-Pics', '2015-03-24 14:42:58', '2014-07-15 09:30:13', 1, 273, 0, 0, '', 'com_images_gallery', 358, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(364, 8, NULL, NULL, NULL, '', 'Fiz Reservations', 'FizReservations', '0000-00-00 00:00:00', '2014-07-20 16:52:18', 1, 274, 0, 0, '', 'fiz_reservations', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, ''),
-(365, 13, NULL, NULL, NULL, '', 'home', 'home', '2015-03-25 15:23:40', '2015-03-24 21:42:05', 1, 275, 0, 1, '', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/'),
-(366, 13, '', '', '', '', 'countect us', 'countect-us', '2015-03-25 15:22:15', '2015-03-24 21:42:23', 1, 275, 0, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, ''),
-(367, 13, '', '', '', '', 'Gust book', 'Gust-book', '2015-03-25 15:22:15', '2015-03-24 21:42:26', 1, 275, 0, 0, '', 'com_gustbook', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/'),
-(368, 13, '', '', '', '', 'F.A.Q', 'F.A.Q', '2015-03-25 15:22:15', '2015-03-24 21:42:32', 1, 275, 0, 0, '', 'com_faq', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/');
+INSERT INTO `menu_itmes` (`id`, `parent_id`, `mei_background`, `mei_image`, `mei_options`, `mei_morecss`, `mei_title`, `mei_alias`, `modified`, `created`, `enabled`, `order`, `delete`, `mei_home`, `properties`, `mei_main`, `cat_id`, `mei_template`, `show`, `mei_comment`, `openType`, `main_link`, `permission`, `permission_all`, `description`, `keywords`, `header`, `site`, `all_site`, `color`, `permission_gust`, `property__url`, `addstatus`) VALUES
+(223, 14, NULL, NULL, NULL, NULL, 'Contact Us', 'Contact-Us-bottom', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 160, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(225, 14, NULL, NULL, NULL, NULL, 'Business', 'Business', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 162, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(226, 14, NULL, NULL, NULL, NULL, 'Edit Reservation', 'Edit-Reservation-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 163, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(227, 14, NULL, NULL, NULL, NULL, 'FAQ', 'FAQ-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 164, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(218, 0, NULL, NULL, NULL, '', 'F.A.Q', 'F.A.Q', '2013-12-10 00:00:00', '2013-04-16 05:17:16', 1, 157, 0, 0, 'faqtype__0;faqstyle__list;', 'com_faq', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(219, 14, NULL, NULL, NULL, '', 'Home', 'home', '2014-05-25 08:38:05', '2013-04-17 05:36:05', 1, 156, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', -1, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(220, 14, NULL, NULL, NULL, NULL, 'Cairo', 'Cairo', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 157, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(221, 14, NULL, NULL, NULL, NULL, 'Standard', 'Standard', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 158, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(222, 14, NULL, NULL, NULL, NULL, 'Reservation', 'Reservation', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 159, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(199, 0, NULL, NULL, NULL, '', 'ABOUT2', 'ABOUT2', '2013-12-09 00:00:00', '2013-04-15 14:40:24', 1, 154, 0, 0, 'imagegallery__;selectcode__;', 'com_html', 0, '', '0', '', 1, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(214, 0, NULL, NULL, NULL, '', 'HOME', 'home', '2013-12-11 00:00:00', '2013-04-15 14:49:04', 1, 156, 0, 0, 'imagegallery__;selectcode__128;', 'com_html', 0, '', '1', '', 1, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(215, 0, NULL, NULL, NULL, '', 'Contact Us', 'Contact-Us', '2013-12-10 00:00:00', '2013-04-15 14:49:04', 1, 156, 0, 0, 'contect__5;title__cmail;formlabel__empcland@gmail.com;formmail__empcland@gmail.com;showmap__0;width__;height__;Lat__;Lng__;zoom__14;markerTitle__;intro__;markerData__;', 'com_contect', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(232, 14, NULL, NULL, NULL, NULL, 'Guestbook', 'Guestbook-down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 168, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(233, 14, NULL, NULL, NULL, '', '-', 'ph', '2015-04-01 10:43:57', '2013-04-17 05:36:05', 1, 169, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(234, 14, NULL, NULL, NULL, NULL, '-', '#', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 170, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(235, 14, NULL, NULL, NULL, NULL, 'Virtual Tours', 'Virtual-Tours-Down', '2013-05-28 00:00:00', '2013-04-17 05:36:05', 1, 171, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(237, 8, NULL, NULL, NULL, NULL, 'Outside Faiz', 'Outside-Faiz', '0000-00-00 00:00:00', '2013-05-29 08:14:38', 1, 173, 0, 0, 'url__#;', 'GET__com', 236, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(238, 0, '', '', '', '', 'DataTest', 'DataTest', '2013-09-02 00:00:00', '0000-00-00 00:00:00', 1, 174, 0, 0, 'data__12;', 'com_data', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(241, 15, NULL, NULL, NULL, '', 'Instructions for safar	', 'Instructions-for-safar', '0000-00-00 00:00:00', '2013-10-22 04:50:57', 1, 176, 0, 0, 'imagegallery__;selectcode__110;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(242, 15, NULL, NULL, NULL, '', 'about1', 'about1', '2013-12-10 00:00:00', '2013-10-22 04:51:11', 1, 177, 0, 0, 'imagegallery__;selectcode__;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(243, 15, NULL, NULL, NULL, '', 'Copyright', 'Copyright', '0000-00-00 00:00:00', '2013-10-22 04:51:24', 1, 178, 0, 0, 'imagegallery__;selectcode__124;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(244, 15, NULL, NULL, NULL, '', 'Step 1', 'Step-1', '0000-00-00 00:00:00', '2013-10-22 04:51:36', 1, 179, 0, 0, 'imagegallery__;selectcode__125;', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(245, 15, '', '', '', '', 'Cairo222', 'Cairo222', '2013-11-04 00:00:00', '2013-04-17 06:24:57', 1, 159, 0, 0, 'cat_id__36;nums__3;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__20;shareView__0;introInBody__0;thimageinBody__0;comment__0;', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(246, 15, '', '', '', '', 'Accomodation', 'Accomodation', '2013-11-05 00:00:00', '2013-04-15 14:47:08', 1, 155, 0, 0, 'gallery__65;rowNumbers__10;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__0;catPageViewHist__0;', 'com_images_gallery', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(249, 18, NULL, NULL, NULL, '', 'faiz', 'faizfaiz', '2013-12-04 00:00:00', '2013-12-04 18:35:12', 1, 182, 0, 0, 'url__#;', 'com_link', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(251, 8, NULL, NULL, NULL, '', 'app', 'app', '0000-00-00 00:00:00', '2013-12-09 17:29:45', 1, 184, 0, 0, 'url__;', '', 230, '', '1', '', 1, 1, '', 0, '', '', '', '', 0, '', 0, '', ''),
+(372, 19, NULL, NULL, NULL, '', 'Test', 'Test', '0000-00-00 00:00:00', '2015-04-01 22:54:54', 1, 277, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '#', ''),
+(352, 8, '', '532daeba2a36e.png', '', '', 'Egypt At A Glance', 'Egypt-At-A-Glance', '2015-03-30 18:37:13', '2014-01-22 07:56:58', 1, 219, 0, 0, '', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '89bd3c', 0, '#', ''),
+(353, 8, NULL, NULL, NULL, '', 'about', 'about', '2015-03-30 18:37:13', '2014-05-25 08:39:27', 0, 263, 0, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(354, 14, NULL, NULL, NULL, '', 'Home', 'Home', '2014-05-25 08:54:02', '2014-05-25 08:53:10', 1, 264, 0, 0, '', 'com_html', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(355, 10, NULL, NULL, NULL, '', 'Cairo', 'Cairo', '2015-04-02 15:32:02', '2014-05-25 09:04:04', 1, 265, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ',1'),
+(356, 10, NULL, NULL, NULL, '', 'Mutah', 'Mutah', '2015-04-02 15:32:02', '2014-05-25 09:04:16', 1, 266, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ',2'),
+(357, 10, NULL, NULL, NULL, '', 'Shaam', 'Shaam', '2015-04-02 15:32:02', '2014-05-25 09:04:28', 0, 267, 0, 0, '', 'com_link', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#', ''),
+(358, 8, NULL, NULL, NULL, '', 'Virtual Tours', 'Virtual-Tours', '2015-03-30 18:37:13', '2014-05-25 09:17:25', 1, 268, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '#', ''),
+(359, 8, NULL, NULL, NULL, '', 'Accommodation', 'Accommodation', '2015-03-30 18:37:13', '2014-05-25 09:20:36', 1, 269, 0, 0, '', 'com_images_gallery', 358, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(360, 8, NULL, NULL, NULL, '', 'ciato', 'ciato', '2015-03-30 18:37:13', '2014-05-25 09:39:42', 0, 270, 0, 0, '', 'com_content_article', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(361, 8, NULL, NULL, NULL, '', 'Reservations', 'Reservations', '2015-03-30 18:37:13', '2014-05-29 05:44:16', 0, 271, 0, 0, '', 'fiz_reservations', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(362, 14, NULL, NULL, NULL, '', 'rex', 'rex', '2014-06-01 13:31:35', '2014-06-01 10:00:52', 1, 272, 0, 0, '', 'com_wizard', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(363, 8, NULL, NULL, NULL, '', 'Faiz Pics', 'Faiz-Pics', '2015-03-30 18:37:13', '2014-07-15 09:30:13', 1, 273, 0, 0, '', 'com_images_gallery', 358, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(364, 8, NULL, NULL, NULL, '', 'Fiz Reservations', 'FizReservations', '2015-03-30 18:37:13', '2014-07-20 16:52:18', 1, 274, 0, 0, '', 'fiz_reservations', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(365, 13, NULL, NULL, NULL, '', 'home', 'home', '2015-04-01 22:52:40', '2015-03-24 21:42:05', 1, 275, 0, 1, '', 'com_content_article', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/', ',0'),
+(366, 13, '', '', '', '', 'countect us', 'countect-us', '2015-04-01 22:49:46', '2015-03-24 21:42:23', 0, 275, 0, 0, '', 'com_html', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '', ''),
+(367, 13, '', '', '', '', 'Gust book', 'Gust-book', '2015-04-01 22:49:46', '2015-03-24 21:42:26', 0, 275, 0, 0, '', 'com_gustbook', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/', ''),
+(368, 13, '', '', '', '', 'F.A.Q', 'F.A.Q', '2015-04-01 22:54:29', '2015-03-24 21:42:32', 0, 275, 0, 0, '', 'com_faq', 0, '', '0', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '/', ''),
+(369, 8, '', '', '', '', 'Reservations', 'Reservations', '2015-03-30 18:37:32', '2015-03-30 01:12:43', 1, 271, 0, 0, '', 'com_wizard', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 1, '', 0, '', ''),
+(370, 13, NULL, NULL, NULL, '', 'New Test', 'New-Test', '2015-04-01 22:49:46', '2015-04-01 22:36:37', 1, 276, 0, 0, '', 'com_link', 0, '', '1', '', 0, 1, '', 1, '', '', '', '', 0, '', 0, '#', '');
 
 -- --------------------------------------------------------
 
@@ -4737,23 +4915,6 @@ INSERT INTO `menu_itmes_site_xref` (`id`, `created`, `modified`, `enabled`, `ord
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu_itmes_status_xref`
---
-
-CREATE TABLE IF NOT EXISTS `menu_itmes_status_xref` (
-`id` int(11) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  `enabled` tinyint(4) NOT NULL DEFAULT '1',
-  `order` int(11) NOT NULL,
-  `delete` tinyint(4) NOT NULL DEFAULT '0',
-  `item_id` int(11) NOT NULL,
-  `status_id` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `menu_xref_com`
 --
 
@@ -4788,7 +4949,7 @@ CREATE TABLE IF NOT EXISTS `menu_xref_mod` (
   `delete` tinyint(4) NOT NULL,
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=826 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=879 ;
 
 --
 -- Dumping data for table `menu_xref_mod`
@@ -4879,17 +5040,19 @@ INSERT INTO `menu_xref_mod` (`id`, `mxm_menu_id`, `mxm_mod_id`, `mxm_options`, `
 (753, 303, 269, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (769, 303, 279, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (766, 303, 280, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(819, 365, 287, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 15:30:22'),
-(821, 365, 289, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 15:56:29'),
-(820, 219, 287, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 15:30:22'),
-(818, 359, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-24 21:48:03'),
-(817, 358, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-24 21:48:03'),
-(816, 352, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-24 21:48:03'),
-(815, 251, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-24 21:48:03'),
-(814, 237, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-24 21:48:03'),
-(822, 219, 289, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 15:56:29'),
+(827, 219, 287, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 15:55:13'),
+(872, 219, 289, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 22:43:50'),
+(826, 365, 287, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 15:55:13'),
+(864, 359, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 21:44:13'),
+(863, 358, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 21:44:13'),
+(862, 352, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 21:44:13'),
+(861, 251, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 21:44:13'),
+(860, 237, 290, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 21:44:13'),
+(871, 365, 289, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 22:43:50'),
 (823, 365, 291, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 18:09:56'),
-(825, 365, 292, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 18:10:57');
+(825, 365, 292, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-03-25 18:10:57'),
+(874, 369, 288, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-01 22:57:07'),
+(878, 352, 293, NULL, NULL, 0, 0, 1, 0, '0000-00-00 00:00:00', '2015-04-02 14:48:57');
 
 -- --------------------------------------------------------
 
@@ -5873,7 +6036,7 @@ CREATE TABLE IF NOT EXISTS `sys_dataBluder` (
   `delete` tinyint(4) NOT NULL,
   `data` text NOT NULL,
   `plugins_options` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `sys_dataBluder`
@@ -5886,9 +6049,10 @@ INSERT INTO `sys_dataBluder` (`id`, `title`, `des`, `modified`, `created`, `enab
 (16, 'r3', '1111', '2013-10-07 00:00:00', '2013-09-15 11:40:03', 1, 0, 1, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T2__type=>plugin__pluginTitle=>plg_pkgs__returnType=>__returnTo=>__;typeID=>T4__type=>form__formid=>1__renderType=>results__morecss=>__;||', 'nights%3D%3E%40%25session%3A%3AAddress.Nights%25%40__Adults%3D%3E%40%25session.length%3A%3AAddress.adults_name%25%40__Childs%3D%3E%40%25session.length%3A%3AAddress.childs_name%25%40__Infants%3D%3E%40%25session.length%3A%3AAddress.infant_name%25%40__%3D%3Ethis%5B0%5D__%3B'),
 (17, 'r4', '', '2013-10-07 00:00:00', '2013-09-15 11:40:03', 1, 0, 1, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>plugin__pluginTitle=>plg_rssave__returnType=>__returnTo=>11__;||', 'saveform%3D%3EAddress__%3D%3E__%3B'),
 (18, 'testing form', '', '0000-00-00 00:00:00', '2013-11-17 08:32:01', 1, 0, 1, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>form__formid=>2__renderType=>form__morecss=>__;||', ''),
-(19, 'faiz-new-reservation-step-1', 'Faiz new reservation step 1', '2014-06-01 10:05:40', '2014-06-01 08:39:52', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>form__formid=>12__renderType=>form__morecss=>__;||', ''),
-(20, 'faiz-new-reservation-step-2', 'Faiz new reservation step 2', '2014-06-02 17:12:04', '2014-06-01 10:08:00', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s2__|typeID=>T2__type=>plugin__pluginTitle=>fiz_lawazim_table__returnType=>-1__returnTo=>__morecss=>__;typeID=>T1__type=>Sesstion_data__SesstionName=>faiz-new-reservation__SesstionType=>array__morecss=>__;||', ''),
-(21, 'aiz-New-ReservationSeave', '', '2014-06-03 14:51:46', '2014-06-03 09:25:25', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>plugin__pluginTitle=>fiz_saveReservation__returnType=>-1__returnTo=>__morecss=>__;||', '');
+(19, 'faiz-new-reservation-step-1', 'Faiz new reservation step 1', '2015-03-30 12:12:20', '2014-06-01 08:39:52', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>form__formid=>13__renderType=>form__morecss=>__;||', ''),
+(20, 'faiz-new-reservation-step-2', 'Faiz new reservation step 2', '2015-03-30 19:56:43', '2014-06-01 10:08:00', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s2__|typeID=>T2__type=>plugin__pluginTitle=>fiz_lawazim_table__returnType=>0__returnTo=>__morecss=>__;||', ''),
+(21, 'aiz-New-ReservationSeave', '', '2015-03-30 01:23:29', '2014-06-03 09:25:25', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>plugin__pluginTitle=>fiz_saveReservation__returnType=>-1__returnTo=>__morecss=>__;||', ''),
+(22, 'Board', '', '2015-03-30 01:23:29', '2015-03-30 01:22:02', 1, 0, 0, 'stepid=>s1__steporder=>1__steptitle=>Setp-s1__|typeID=>T1__type=>plugin__pluginTitle=>faiz_res_board__returnType=>0__returnTo=>__morecss=>__;||', '<br />\r\n<b>Notice</b>:  Undefined variable: myurl in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/libs.php</b> on line <b>13</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/utiles/utilClass.php</b> on line <b>113</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/utiles/utillibsClass.php</b> on line <b>24</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/utiles/utilPagClass.php</b> on line <b>32</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/utiles/utilDBClass.php</b> on line <b>28</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/utiles/utilForntClass.php</b> on line <b>26</b><br />\r\n<br />\r\n<b>Notice</b>:  Undefined index: parent in <b>/Users/eScapes/Documents/Work/www/insyaCMS/lib/engine/adminEngClass.php</b> on line <b>53</b><br />\r\n');
 
 -- --------------------------------------------------------
 
@@ -5919,6 +6083,23 @@ INSERT INTO `sys_language` (`id`, `lang`, `obj_type`, `modified`, `created`, `de
 (357, '3', 'com_html', '2014-06-19 06:50:55', '2014-06-19 06:48:36', 0, 1, 0, 'cat_id[]', 348, '', 'ttt'),
 (358, '3', 'com_html', '0000-00-00 00:00:00', '2014-06-19 06:52:58', 0, 1, 0, 'cat_id', 348, '', 'ttt22'),
 (356, '3', 'com_html', '2014-06-19 06:48:04', '0000-00-00 00:00:00', 0, 1, 0, 'title', 348, '', 'ttt333');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sys_menu_status_xref`
+--
+
+CREATE TABLE IF NOT EXISTS `sys_menu_status_xref` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `item_id` int(11) NOT NULL,
+  `status_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -5967,6 +6148,33 @@ CREATE TABLE IF NOT EXISTS `sys_mobile_setting` (
 
 INSERT INTO `sys_mobile_setting` (`id`, `modified`, `created`, `enabled`, `order`, `delete`, `right_menu`, `left_menu`, `header_bar`, `footer_bar`, `pages_transition`, `theme`, `homebt`, `backbt`) VALUES
 (1, '2014-05-04 13:58:52', '2013-10-21 00:00:00', 0, 0, 0, 8, -1, 15, 15, 'rondome', 'a', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sys_modules_status_xref`
+--
+
+CREATE TABLE IF NOT EXISTS `sys_modules_status_xref` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `item_id` int(11) NOT NULL,
+  `cat_id` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=45 ;
+
+--
+-- Dumping data for table `sys_modules_status_xref`
+--
+
+INSERT INTO `sys_modules_status_xref` (`id`, `created`, `modified`, `enabled`, `order`, `delete`, `item_id`, `cat_id`) VALUES
+(18, '2015-04-01 21:36:26', '0000-00-00 00:00:00', 1, 0, 0, 285, 1),
+(5, '2015-04-01 15:55:13', '0000-00-00 00:00:00', 1, 0, 0, 287, 1),
+(44, '2015-04-01 22:43:50', '0000-00-00 00:00:00', 1, 0, 0, 289, 2),
+(40, '2015-04-01 21:54:19', '0000-00-00 00:00:00', 1, 0, 0, 288, 0);
 
 -- --------------------------------------------------------
 
@@ -6151,7 +6359,7 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'com_images_gallery', 372, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 371, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_menus', 14, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_menus', 13, '', '2015-03-24 21:41:40', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_menus', 13, '', '2015-04-01 21:48:57', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 303, 'subtitle__;selectcode__270;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 306, 'subtitle__;selectcode__280;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 307, 'subtitle__;selectcode__283;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6214,7 +6422,7 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'com_modules', 280, 'selectcode__226;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 345, 'subtitle__;selectcode__266;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 266, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_modules', 289, 'selecmenu__10;viewImage__0;viewComment__0;colorbg__0;', '2015-03-25 15:56:29', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 289, 'selecmenu__10;viewImage__0;viewComment__0;colorbg__0;', '2015-04-01 22:43:50', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_modules', 281, 'selecmenu__8;viewImage__0;viewComment__0;colorbg__0;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_modules', 282, 'selectcode__270;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 347, 'url__/account/#login;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6254,17 +6462,17 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'com_html', 270, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 318, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 322, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_modules', 285, 'selecmenu__8;viewImage__0;viewComment__0;colorbg__0;', '2015-03-23 22:37:07', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 285, 'selecmenu__8;viewImage__0;viewComment__0;colorbg__0;', '2015-04-01 21:36:26', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_modules', 286, 'selecmenu__14;viewImage__0;viewComment__0;colorbg__0;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_modules', 0, 'selecmenu__10;viewImage__0;viewComment__0;colorbg__0;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_modules', 288, 'selecmenu__13;viewImage__0;viewComment__0;colorbg__0;', '2015-03-24 21:48:48', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_modules', 287, 'viwtype__images;seleccatnews__0;seleccat__66;seleccatvideo__0;seleccatpro__0;effect__random;style__theme-default;captionOpacity__1;Speed__800;pauseTime__4000;directionNav__true;directionNavHide__0;pauseOnHover__0;controlNavThumbs__0;morecss__;', '2015-03-25 15:30:22', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 288, 'selecmenu__19;viewImage__0;viewComment__0;colorbg__0;', '2015-04-01 22:57:07', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 287, 'viwtype__images;seleccatnews__0;seleccat__66;seleccatvideo__0;seleccatpro__0;effect__random;style__theme-default;captionOpacity__1;Speed__800;pauseTime__4000;directionNav__true;directionNavHide__0;pauseOnHover__0;controlNavThumbs__0;morecss__;', '2015-04-01 15:55:13', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 219, 'subtitle__;selectcode__347;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 353, 'subtitle__;selectcode__348;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 376, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 354, 'subtitle__;selectcode__348;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_modules', 290, 'selecmenu__10;viewImage__0;viewComment__0;colorbg__0;', '2015-03-24 21:48:03', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 290, 'selecmenu__10;viewImage__0;viewComment__0;colorbg__0;', '2015-04-01 21:44:13', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 348, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery_categories', 66, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 359, 'title__;alias__;link__;cat_id__,65;des__;order__;enabled__1;tags__;description__;keywords__;header__;', '2014-07-15 09:28:48', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6275,9 +6483,9 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'menu_itmes', 360, 'cat_id__37;nums__5;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__100;shareView__0;introInBody__1;thimageinBody__1;comment__1;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'sys_dataBluder', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_wizard', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_wizard', 13, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'sys_dataBluder', 19, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'sys_dataBluder', 20, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_wizard', 13, '', '2015-03-30 01:24:27', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_dataBluder', 19, '', '2015-03-30 12:12:20', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_dataBluder', 20, '', '2015-03-30 19:56:43', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_wizard', 14, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 362, 'wizard__13;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'fiz_city', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6290,7 +6498,7 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'sys_admin_menu', 38, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'fiz_reservation_settings', 1, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'sys_dataBluder', 21, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_form', 12, '', '2014-06-03 17:21:26', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_form', 12, '', '2015-03-30 12:06:24', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'fiz_extension', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'fiz_hotel_rooms', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'fiz_hotels', 0, '', '2014-06-29 07:15:36', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6304,7 +6512,7 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'fiz_extension', 24, '', '2014-06-29 07:34:16', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 0, '', '2014-07-08 18:14:10', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_install', 0, '', '2014-07-30 17:33:25', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_users_groups', 3, '', '2014-07-30 17:34:08', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_users_groups', 3, '', '2015-04-01 12:53:19', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 392, '', '2014-07-15 09:24:40', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 363, 'gallery__64;rowNumbers__5;catPageViewTitle__0;catPageViewImage__0;catPageViewDes__0;catPageViewHist__0;', '2015-03-24 14:42:58', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'sys_site_status', 0, '', '2014-07-20 14:43:41', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6358,11 +6566,11 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'com_images_gallery', 388, '', '2015-03-24 12:21:52', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 387, '', '2015-03-24 12:21:06', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_images_gallery', 385, '', '2015-03-24 12:19:09', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_images_gallery', 386, '', '2015-03-24 12:20:07', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_images_gallery', 386, '', '2015-03-31 13:33:00', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 358, 'url__#;', '2015-03-24 20:15:12', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 352, 'cat_id__36;nums__10;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__200;shareView__0;introInBody__0;thimageinBody__0;comment__0;', '2015-03-24 20:17:50', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'menu_itmes', 365, 'cat_id__38;nums__8;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__;shareView__0;introInBody__0;thimageinBody__0;comment__0;', '2015-03-25 15:23:40', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'menu_itmes', 368, 'faqtype__0;faqstyle__list;', '2015-03-24 22:03:01', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 365, 'cat_id__38;nums__8;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__;shareView__0;introInBody__0;thimageinBody__0;comment__0;', '2015-04-01 22:52:40', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 368, 'faqtype__0;faqstyle__list;', '2015-04-01 22:54:29', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 366, 'subtitle__;selectcode__348;', '2015-03-24 21:43:31', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'menu_itmes', 367, 'addform__1;enabledMsgs__0;nums__10;', '2015-03-24 22:01:32', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_content_catgories', 38, '', '2015-03-25 15:13:15', '0000-00-00 00:00:00', 1, 0, 0),
@@ -6394,7 +6602,29 @@ INSERT INTO `sys_properies_data` (`id`, `title`, `com_type`, `com_id`, `data`, `
 (0, '', 'com_faq', 60, '', '2015-03-25 16:39:01', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_faq', 61, '', '2015-03-25 16:39:23', '0000-00-00 00:00:00', 1, 0, 0),
 (0, '', 'com_html', 369, '', '2015-03-25 16:49:50', '0000-00-00 00:00:00', 1, 0, 0),
-(0, '', 'com_html', 376, '', '2015-03-25 16:50:13', '0000-00-00 00:00:00', 1, 0, 0);
+(0, '', 'com_html', 376, '', '2015-03-25 16:50:13', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 369, 'wizard__13;', '2015-03-30 18:37:32', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_dataBluder', 22, '', '2015-03-30 01:22:35', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_form', 13, '', '2015-03-30 15:30:01', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_html', 377, '', '2015-04-01 22:20:41', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 233, 'subtitle__;selectcode__377;', '2015-04-01 10:43:57', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_install', 136, '', '2015-04-01 12:52:48', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_site_status', 1, '', '2015-04-01 21:34:46', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_site_status', 2, '', '2015-04-01 14:46:15', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_site_status', 3, '', '2015-04-01 16:28:32', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 355, 'url__;', '2015-04-01 16:42:43', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'sys_site_status', 4, '', '2015-04-01 16:38:03', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 370, 'url__#;', '2015-04-01 22:36:37', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_menus', 19, '', '2015-04-01 22:47:13', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 371, 'cat_id__38;nums__4;catPageViewTitle__1;catPageViewImage__1;catPageViewDes__1;catPageViewHist__0;catPageViewAuthor__0;catPageViewDate__0;desLimit__;shareView__0;introInBody__0;thimageinBody__0;comment__0;', '2015-04-01 22:48:51', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 372, 'url__#;', '2015-04-01 22:54:54', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_modules', 293, 'cat_id__39;view__categories;Datatype__0;dynamic__0;viewTitle__1;viewImage__0;viewDes__0;viewDesNum__100;viewMViews__0;numberView__10;firstMainStyle__0;tagmaxfont__;tagminfont__;', '2015-04-02 14:48:57', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_content_catgories', 39, '', '2015-04-02 12:08:20', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_content_catgories', 36, '', '2015-04-02 12:08:39', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_content_catgories', 40, '', '2015-04-02 13:02:35', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_content_catgories', 41, '', '2015-04-02 13:03:04', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'com_html', 387, '', '2015-04-02 14:57:36', '0000-00-00 00:00:00', 1, 0, 0),
+(0, '', 'menu_itmes', 356, 'url__;', '2015-04-02 15:01:19', '0000-00-00 00:00:00', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -6413,7 +6643,7 @@ CREATE TABLE IF NOT EXISTS `sys_pugins_data` (
   `order` int(11) NOT NULL,
   `delete` tinyint(4) NOT NULL,
 `id` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3399 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3521 ;
 
 --
 -- Dumping data for table `sys_pugins_data`
@@ -6568,7 +6798,7 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('plg_rescores', 'com_images_gallery', 371, 'name8__plg_rescores;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2558),
 ('', 'com_images_gallery', 371, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2557),
 ('', 'com_menus', 14, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 989),
-('', 'com_menus', 13, '', '2015-03-24 21:41:40', '0000-00-00 00:00:00', 1, 0, 0, 3284),
+('', 'com_menus', 13, '', '2015-04-01 21:48:57', '0000-00-00 00:00:00', 1, 0, 0, 3484),
 ('', 'menu_itmes', 303, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2640),
 ('', 'menu_itmes', 305, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2521),
 ('', 'menu_itmes', 306, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2519),
@@ -6706,12 +6936,12 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'com_html', 318, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2677),
 ('', 'com_html', 322, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2687),
 ('plg_cart', 'com_project', 19, 'name14__plg_cart;settings__-1;cart__-1;multiItems__0;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2696),
-('', 'com_modules', 285, '', '2015-03-23 22:37:07', '0000-00-00 00:00:00', 1, 0, 0, 3219),
+('', 'com_modules', 285, '', '2015-04-01 21:36:26', '0000-00-00 00:00:00', 1, 0, 0, 3467),
 ('', 'com_modules', 286, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2728),
 ('', 'menu_itmes', 352, '', '2015-03-24 20:17:50', '0000-00-00 00:00:00', 1, 0, 0, 3282),
-('', 'com_modules', 287, '', '2015-03-25 15:30:22', '0000-00-00 00:00:00', 1, 0, 0, 3336),
-('', 'com_modules', 288, '', '2015-03-24 21:48:48', '0000-00-00 00:00:00', 1, 0, 0, 3293),
-('', 'com_modules', 289, '', '2015-03-25 15:56:29', '0000-00-00 00:00:00', 1, 0, 0, 3337),
+('', 'com_modules', 287, '', '2015-04-01 15:55:13', '0000-00-00 00:00:00', 1, 0, 0, 3445),
+('', 'com_modules', 288, '', '2015-04-01 22:57:07', '0000-00-00 00:00:00', 1, 0, 0, 3508),
+('', 'com_modules', 289, '', '2015-04-01 22:43:50', '0000-00-00 00:00:00', 1, 0, 0, 3498),
 ('', 'menu_itmes', 219, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2750),
 ('', 'com_images_gallery', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2831),
 ('plg_rescores', 'com_images_gallery', 0, 'name11__plg_rescores;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2832),
@@ -6719,7 +6949,7 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'com_images_gallery', 376, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2763),
 ('plg_rescores', 'com_images_gallery', 376, 'name8__plg_rescores;', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2764),
 ('', 'menu_itmes', 354, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2775),
-('', 'com_modules', 290, '', '2015-03-24 21:48:03', '0000-00-00 00:00:00', 1, 0, 0, 3292),
+('', 'com_modules', 290, '', '2015-04-01 21:44:13', '0000-00-00 00:00:00', 1, 0, 0, 3479),
 ('', 'com_html', 348, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2985),
 ('', 'com_images_gallery_categories', 66, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2811),
 ('', 'menu_itmes', 359, '', '2014-07-15 09:28:48', '0000-00-00 00:00:00', 1, 0, 0, 3035),
@@ -6727,9 +6957,9 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'menu_itmes', 361, '', '2015-03-26 11:03:16', '0000-00-00 00:00:00', 1, 0, 0, 3398),
 ('', 'sys_dataBluder', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2917),
 ('', 'com_wizard', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2861),
-('', 'com_wizard', 13, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2928),
-('', 'sys_dataBluder', 19, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2853),
-('', 'sys_dataBluder', 20, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2916),
+('', 'com_wizard', 13, '', '2015-03-30 01:24:27', '0000-00-00 00:00:00', 1, 0, 0, 3402),
+('', 'sys_dataBluder', 19, '', '2015-03-30 12:12:20', '0000-00-00 00:00:00', 1, 0, 0, 3405),
+('', 'sys_dataBluder', 20, '', '2015-03-30 19:56:43', '0000-00-00 00:00:00', 1, 0, 0, 3420),
 ('', 'com_wizard', 14, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2878),
 ('', 'menu_itmes', 362, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2866),
 ('', 'fiz_city', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2887),
@@ -6742,7 +6972,7 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'sys_admin_menu', 38, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2900),
 ('', 'fiz_reservation_settings', 1, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2907),
 ('', 'sys_dataBluder', 21, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2947),
-('', 'com_form', 12, '', '2014-06-03 17:21:26', '0000-00-00 00:00:00', 1, 0, 0, 2954),
+('', 'com_form', 12, '', '2015-03-30 12:06:24', '0000-00-00 00:00:00', 1, 0, 0, 3404),
 ('', 'fiz_extension', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2961),
 ('', 'fiz_hotel_rooms', 0, '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 0, 0, 2988),
 ('', 'fiz_hotels', 0, '', '2014-06-29 07:15:36', '0000-00-00 00:00:00', 1, 0, 0, 2993),
@@ -6756,7 +6986,7 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'fiz_extension', 24, '', '2014-06-29 07:34:16', '0000-00-00 00:00:00', 1, 0, 0, 2996),
 ('', 'com_html', 0, '', '2014-07-08 18:14:09', '0000-00-00 00:00:00', 1, 0, 0, 3027),
 ('', 'com_install', 0, '', '2014-07-30 17:33:25', '0000-00-00 00:00:00', 1, 0, 0, 3060),
-('', 'com_users_groups', 3, '', '2014-07-30 17:34:08', '0000-00-00 00:00:00', 1, 0, 0, 3061),
+('', 'com_users_groups', 3, '', '2015-04-01 12:53:19', '0000-00-00 00:00:00', 1, 0, 0, 3434),
 ('', 'com_images_gallery', 392, '', '2014-07-15 09:24:40', '0000-00-00 00:00:00', 1, 0, 0, 3033),
 ('plg_rescores', 'com_images_gallery', 392, 'name5__plg_rescores;', '2014-07-15 09:24:40', '0000-00-00 00:00:00', 1, 0, 0, 3034),
 ('', 'menu_itmes', 363, '', '2015-03-24 14:42:58', '0000-00-00 00:00:00', 1, 0, 0, 3248),
@@ -6887,8 +7117,8 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'com_images_gallery', 387, '', '2015-03-24 12:21:06', '0000-00-00 00:00:00', 1, 0, 0, 3242),
 ('plg_rescores', 'com_images_gallery', 385, 'name9__plg_rescores;', '2015-03-24 12:19:09', '0000-00-00 00:00:00', 1, 0, 0, 3235),
 ('', 'com_images_gallery', 385, '', '2015-03-24 12:19:09', '0000-00-00 00:00:00', 1, 0, 0, 3234),
-('plg_rescores', 'com_images_gallery', 386, 'name15__plg_rescores;', '2015-03-24 12:20:07', '0000-00-00 00:00:00', 1, 0, 0, 3239),
-('', 'com_images_gallery', 386, '', '2015-03-24 12:20:07', '0000-00-00 00:00:00', 1, 0, 0, 3238),
+('', 'com_images_gallery', 386, '', '2015-03-31 13:33:00', '0000-00-00 00:00:00', 1, 0, 0, 3421),
+('plg_rescores', 'com_images_gallery', 386, 'name11__plg_rescores;', '2015-03-31 13:33:00', '0000-00-00 00:00:00', 1, 0, 0, 3422),
 ('plg_rescores', 'com_images_gallery', 387, 'name5__plg_rescores;', '2015-03-24 12:21:06', '0000-00-00 00:00:00', 1, 0, 0, 3243),
 ('plg_rescores', 'com_images_gallery', 388, 'name5__plg_rescores;', '2015-03-24 12:21:52', '0000-00-00 00:00:00', 1, 0, 0, 3247),
 ('plg_rescores', 'com_images_gallery', 414, 'name11__plg_rescores;', '2015-03-24 14:53:03', '0000-00-00 00:00:00', 1, 0, 0, 3258),
@@ -6896,9 +7126,9 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('plg_rescores', 'com_images_gallery', 409, 'name8__plg_rescores;', '2015-03-24 14:54:11', '0000-00-00 00:00:00', 1, 0, 0, 3274),
 ('plg_rescores', 'com_images_gallery', 408, 'name14__plg_rescores;', '2015-03-24 14:54:16', '0000-00-00 00:00:00', 1, 0, 0, 3276),
 ('', 'menu_itmes', 358, '', '2015-03-24 20:15:12', '0000-00-00 00:00:00', 1, 0, 0, 3278),
-('', 'menu_itmes', 365, '', '2015-03-25 15:23:40', '0000-00-00 00:00:00', 1, 0, 0, 3335),
+('', 'menu_itmes', 365, '', '2015-04-01 22:52:40', '0000-00-00 00:00:00', 1, 0, 0, 3503),
 ('', 'menu_itmes', 366, '', '2015-03-24 21:43:31', '0000-00-00 00:00:00', 1, 0, 0, 3288),
-('', 'menu_itmes', 368, '', '2015-03-24 22:03:01', '0000-00-00 00:00:00', 1, 0, 0, 3297),
+('', 'menu_itmes', 368, '', '2015-04-01 22:54:29', '0000-00-00 00:00:00', 1, 0, 0, 3505),
 ('', 'menu_itmes', 367, '', '2015-03-24 22:01:32', '0000-00-00 00:00:00', 1, 0, 0, 3294),
 ('', 'com_content_catgories', 38, '', '2015-03-25 15:13:15', '0000-00-00 00:00:00', 1, 0, 0, 3298),
 ('', 'com_content_article', 232, '', '2015-03-25 15:13:59', '0000-00-00 00:00:00', 1, 0, 0, 3299),
@@ -6953,7 +7183,29 @@ INSERT INTO `sys_pugins_data` (`title`, `com_type`, `com_id`, `data`, `created`,
 ('', 'com_faq', 60, '', '2015-03-25 16:39:01', '0000-00-00 00:00:00', 1, 0, 0, 3385),
 ('', 'com_faq', 61, '', '2015-03-25 16:39:23', '0000-00-00 00:00:00', 1, 0, 0, 3386),
 ('', 'com_html', 369, '', '2015-03-25 16:49:50', '0000-00-00 00:00:00', 1, 0, 0, 3392),
-('', 'com_html', 376, '', '2015-03-25 16:50:13', '0000-00-00 00:00:00', 1, 0, 0, 3393);
+('', 'com_html', 376, '', '2015-03-25 16:50:13', '0000-00-00 00:00:00', 1, 0, 0, 3393),
+('', 'menu_itmes', 369, '', '2015-03-30 18:37:32', '0000-00-00 00:00:00', 1, 0, 0, 3419),
+('', 'sys_dataBluder', 22, '', '2015-03-30 01:22:35', '0000-00-00 00:00:00', 1, 0, 0, 3401),
+('', 'com_form', 13, '', '2015-03-30 15:30:01', '0000-00-00 00:00:00', 1, 0, 0, 3418),
+('', 'com_html', 377, '', '2015-04-01 22:20:41', '0000-00-00 00:00:00', 1, 0, 0, 3493),
+('', 'menu_itmes', 233, '', '2015-04-01 10:43:57', '0000-00-00 00:00:00', 1, 0, 0, 3429),
+('', 'com_install', 136, '', '2015-04-01 12:52:48', '0000-00-00 00:00:00', 1, 0, 0, 3433),
+('', 'sys_site_status', 1, '', '2015-04-01 21:34:46', '0000-00-00 00:00:00', 1, 0, 0, 3465),
+('', 'sys_site_status', 2, '', '2015-04-01 14:46:15', '0000-00-00 00:00:00', 1, 0, 0, 3438),
+('', 'sys_site_status', 3, '', '2015-04-01 16:28:32', '0000-00-00 00:00:00', 1, 0, 0, 3451),
+('', 'menu_itmes', 355, '', '2015-04-01 16:42:43', '0000-00-00 00:00:00', 1, 0, 0, 3453),
+('', 'sys_site_status', 4, '', '2015-04-01 16:38:03', '0000-00-00 00:00:00', 1, 0, 0, 3452),
+('', 'menu_itmes', 370, '', '2015-04-01 22:36:37', '0000-00-00 00:00:00', 1, 0, 0, 3494),
+('', 'com_menus', 19, '', '2015-04-01 22:47:13', '0000-00-00 00:00:00', 1, 0, 0, 3499),
+('', 'menu_itmes', 371, '', '2015-04-01 22:48:51', '0000-00-00 00:00:00', 1, 0, 0, 3500),
+('', 'menu_itmes', 372, '', '2015-04-01 22:54:54', '0000-00-00 00:00:00', 1, 0, 0, 3506),
+('', 'com_modules', 293, '', '2015-04-02 14:48:57', '0000-00-00 00:00:00', 1, 0, 0, 3518),
+('', 'com_content_catgories', 39, '', '2015-04-02 12:08:20', '0000-00-00 00:00:00', 1, 0, 0, 3511),
+('', 'com_content_catgories', 36, '', '2015-04-02 12:08:39', '0000-00-00 00:00:00', 1, 0, 0, 3512),
+('', 'com_content_catgories', 40, '', '2015-04-02 13:02:35', '0000-00-00 00:00:00', 1, 0, 0, 3515),
+('', 'com_content_catgories', 41, '', '2015-04-02 13:03:04', '0000-00-00 00:00:00', 1, 0, 0, 3516),
+('', 'com_html', 387, '', '2015-04-02 14:57:36', '0000-00-00 00:00:00', 1, 0, 0, 3519),
+('', 'menu_itmes', 356, '', '2015-04-02 15:01:19', '0000-00-00 00:00:00', 1, 0, 0, 3520);
 
 -- --------------------------------------------------------
 
@@ -7005,26 +7257,107 @@ INSERT INTO `sys_query` (`id`, `title`, `des`, `modified`, `created`, `enabled`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table ` sys_site_status`
+--
+
+CREATE TABLE IF NOT EXISTS ` sys_site_status` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `des` text NOT NULL,
+  `cat_id` int(11) NOT NULL,
+  `currency_code` varchar(255) NOT NULL,
+  `currency_symbol` varchar(255) NOT NULL,
+  `cities` text NOT NULL,
+  `urlcode` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `alias` text NOT NULL,
+  `language` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sys_site_status`
 --
 
 CREATE TABLE IF NOT EXISTS `sys_site_status` (
 `id` int(11) NOT NULL,
-  `title` varchar(250) NOT NULL,
-  `des` text NOT NULL,
-  `modified` datetime NOT NULL,
   `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   `enabled` tinyint(4) NOT NULL DEFAULT '1',
   `order` int(11) NOT NULL,
-  `delete` tinyint(4) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `des` text NOT NULL,
+  `cat_id` int(11) NOT NULL,
+  `currency_code` varchar(255) NOT NULL,
+  `currency_symbol` varchar(255) NOT NULL,
+  `cities` text NOT NULL,
+  `urlcode` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `alias` text NOT NULL,
+  `language` varchar(255) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `sys_site_status`
 --
 
-INSERT INTO `sys_site_status` (`id`, `title`, `des`, `modified`, `created`, `enabled`, `order`, `delete`) VALUES
-(1, ' SAFAR2014', '', '0000-00-00 00:00:00', '2014-07-20 14:43:41', 1, 0, 0);
+INSERT INTO `sys_site_status` (`id`, `created`, `modified`, `enabled`, `order`, `delete`, `title`, `image`, `des`, `cat_id`, `currency_code`, `currency_symbol`, `cities`, `urlcode`, `type`, `alias`, `language`) VALUES
+(1, '2015-04-01 13:05:58', '2015-04-01 21:34:46', 1, 1, 0, 'cairo', '', '', 0, '', '', '', '', 'get', 'cairo', '0'),
+(2, '2015-04-01 13:06:09', '2015-04-01 14:46:15', 1, 1, 0, 'mutah', '', '', 0, '', '', '', '', 'get', 'mutah', ''),
+(3, '2015-04-01 13:56:43', '2015-04-01 16:28:32', 1, 2, 0, 'saaaa', '', '', 0, '', '', '', '', 'normal', 'saaaa', ''),
+(4, '2015-04-01 16:38:03', '0000-00-00 00:00:00', 0, 3, 0, 'fsdfsdf', '', '', 0, '', '', '', '', 'get', 'fsdfsdf', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sys_site_status_xxx`
+--
+
+CREATE TABLE IF NOT EXISTS `sys_site_status_xxx` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `des` text NOT NULL,
+  `cat_id` int(11) NOT NULL,
+  `currency_code` varchar(255) NOT NULL,
+  `currency_symbol` varchar(255) NOT NULL,
+  `cities` text NOT NULL,
+  `urlcode` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `alias` text NOT NULL,
+  `language` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sys_status_xref`
+--
+
+CREATE TABLE IF NOT EXISTS `sys_status_xref` (
+`id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `enabled` tinyint(4) NOT NULL DEFAULT '1',
+  `order` int(11) NOT NULL,
+  `delete` tinyint(4) NOT NULL DEFAULT '0',
+  `item_id` int(11) NOT NULL,
+  `cat_id` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -7122,6 +7455,12 @@ ALTER TABLE `com_faq`
 -- Indexes for table `com_faq_categories`
 --
 ALTER TABLE `com_faq_categories`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `com_fiz_users`
+--
+ALTER TABLE `com_fiz_users`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -7242,12 +7581,6 @@ ALTER TABLE `com_modules_permission_xref`
 -- Indexes for table `com_modules_site_xref`
 --
 ALTER TABLE `com_modules_site_xref`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `com_modules_status_xref`
---
-ALTER TABLE `com_modules_status_xref`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -7455,6 +7788,12 @@ ALTER TABLE `com_users`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `com_users_fiz`
+--
+ALTER TABLE `com_users_fiz`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `com_users_groups`
 --
 ALTER TABLE `com_users_groups`
@@ -7593,6 +7932,12 @@ ALTER TABLE `fiz_reservation_settings`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `fiz_reservation_users_xref`
+--
+ALTER TABLE `fiz_reservation_users_xref`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `fiz_voucher`
 --
 ALTER TABLE `fiz_voucher`
@@ -7626,12 +7971,6 @@ ALTER TABLE `menu_itmes_permission_xref`
 -- Indexes for table `menu_itmes_site_xref`
 --
 ALTER TABLE `menu_itmes_site_xref`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `menu_itmes_status_xref`
---
-ALTER TABLE `menu_itmes_status_xref`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -7797,6 +8136,12 @@ ALTER TABLE `sys_language`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `sys_menu_status_xref`
+--
+ALTER TABLE `sys_menu_status_xref`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `sys_mobile_application`
 --
 ALTER TABLE `sys_mobile_application`
@@ -7806,6 +8151,12 @@ ALTER TABLE `sys_mobile_application`
 -- Indexes for table `sys_mobile_setting`
 --
 ALTER TABLE `sys_mobile_setting`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sys_modules_status_xref`
+--
+ALTER TABLE `sys_modules_status_xref`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -7827,9 +8178,27 @@ ALTER TABLE `sys_query`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table ` sys_site_status`
+--
+ALTER TABLE ` sys_site_status`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `sys_site_status`
 --
 ALTER TABLE `sys_site_status`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sys_site_status_xxx`
+--
+ALTER TABLE `sys_site_status_xxx`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sys_status_xref`
+--
+ALTER TABLE `sys_status_xref`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -7866,7 +8235,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=308;
 -- AUTO_INCREMENT for table `com_content_catgories`
 --
 ALTER TABLE `com_content_catgories`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `com_data`
 --
@@ -7903,10 +8272,15 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=62;
 ALTER TABLE `com_faq_categories`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
+-- AUTO_INCREMENT for table `com_fiz_users`
+--
+ALTER TABLE `com_fiz_users`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=204;
+--
 -- AUTO_INCREMENT for table `com_form`
 --
 ALTER TABLE `com_form`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `com_google_adsense`
 --
@@ -7921,7 +8295,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `com_gustbook`
 --
 ALTER TABLE `com_gustbook`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
 --
 -- AUTO_INCREMENT for table `com_gustbook_categories`
 --
@@ -7931,7 +8305,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `com_html`
 --
 ALTER TABLE `com_html`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=377;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=388;
 --
 -- AUTO_INCREMENT for table `com_html_categories`
 --
@@ -7946,7 +8320,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 -- AUTO_INCREMENT for table `com_html_xref`
 --
 ALTER TABLE `com_html_xref`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=133;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=134;
 --
 -- AUTO_INCREMENT for table `com_images_gallery`
 --
@@ -7961,12 +8335,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=68;
 -- AUTO_INCREMENT for table `com_images_gallery_xref`
 --
 ALTER TABLE `com_images_gallery_xref`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=462;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=463;
 --
 -- AUTO_INCREMENT for table `com_install`
 --
 ALTER TABLE `com_install`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=136;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=137;
 --
 -- AUTO_INCREMENT for table `com_invitation`
 --
@@ -7986,12 +8360,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `com_menus`
 --
 ALTER TABLE `com_menus`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `com_modules`
 --
 ALTER TABLE `com_modules`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=293;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=294;
 --
 -- AUTO_INCREMENT for table `com_modules_permission_xref`
 --
@@ -8002,11 +8376,6 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
 --
 ALTER TABLE `com_modules_site_xref`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
---
--- AUTO_INCREMENT for table `com_modules_status_xref`
---
-ALTER TABLE `com_modules_status_xref`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `com_newsLetter`
 --
@@ -8176,7 +8545,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `com_users`
 --
 ALTER TABLE `com_users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=203;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=204;
+--
+-- AUTO_INCREMENT for table `com_users_fiz`
+--
+ALTER TABLE `com_users_fiz`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=204;
 --
 -- AUTO_INCREMENT for table `com_users_groups`
 --
@@ -8186,7 +8560,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `com_users_groups_xref`
 --
 ALTER TABLE `com_users_groups_xref`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2049;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2116;
 --
 -- AUTO_INCREMENT for table `com_users_settings`
 --
@@ -8293,6 +8667,11 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=97;
 ALTER TABLE `fiz_reservation_settings`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `fiz_reservation_users_xref`
+--
+ALTER TABLE `fiz_reservation_users_xref`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
 -- AUTO_INCREMENT for table `fiz_voucher`
 --
 ALTER TABLE `fiz_voucher`
@@ -8311,7 +8690,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `menu_itmes`
 --
 ALTER TABLE `menu_itmes`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=369;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=373;
 --
 -- AUTO_INCREMENT for table `menu_itmes_permission_xref`
 --
@@ -8323,11 +8702,6 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=93;
 ALTER TABLE `menu_itmes_site_xref`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `menu_itmes_status_xref`
---
-ALTER TABLE `menu_itmes_status_xref`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT for table `menu_xref_com`
 --
 ALTER TABLE `menu_xref_com`
@@ -8336,7 +8710,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `menu_xref_mod`
 --
 ALTER TABLE `menu_xref_mod`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=826;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=879;
 --
 -- AUTO_INCREMENT for table `menu_xref_tem`
 --
@@ -8456,12 +8830,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 -- AUTO_INCREMENT for table `sys_dataBluder`
 --
 ALTER TABLE `sys_dataBluder`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `sys_language`
 --
 ALTER TABLE `sys_language`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=359;
+--
+-- AUTO_INCREMENT for table `sys_menu_status_xref`
+--
+ALTER TABLE `sys_menu_status_xref`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `sys_mobile_application`
 --
@@ -8473,6 +8852,11 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `sys_mobile_setting`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `sys_modules_status_xref`
+--
+ALTER TABLE `sys_modules_status_xref`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=45;
+--
 -- AUTO_INCREMENT for table `sys_more_data`
 --
 ALTER TABLE `sys_more_data`
@@ -8481,17 +8865,32 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=87;
 -- AUTO_INCREMENT for table `sys_pugins_data`
 --
 ALTER TABLE `sys_pugins_data`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3399;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3521;
 --
 -- AUTO_INCREMENT for table `sys_query`
 --
 ALTER TABLE `sys_query`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
+-- AUTO_INCREMENT for table ` sys_site_status`
+--
+ALTER TABLE ` sys_site_status`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `sys_site_status`
 --
 ALTER TABLE `sys_site_status`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `sys_site_status_xxx`
+--
+ALTER TABLE `sys_site_status_xxx`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `sys_status_xref`
+--
+ALTER TABLE `sys_status_xref`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `sys_usertrack`
 --
