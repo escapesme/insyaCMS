@@ -1,0 +1,19 @@
+
+<root>
+    <fields>
+        <field name="title" title="Title" type="text" />
+        <field name="th_alias" title="alias" type="text" />
+        <field name="order" title="order" type="text" />
+        <field name="bgImage" title="bgImage" type="image" />
+        <field name="image" title="image" type="image" />
+        <field name="enable" title="enable" value="1" type="checkbox" />
+        <field name="home" title="Home" value="1" type="checkbox" />
+        <field name="morecss" title="morecss" type="textarea" />
+        <field name="keywords" title="keywords" type="textarea" />
+        <field name="template" title="Template" type="select"  selectDataTable = "def_templates"   selectTexttField = "title" selectValueField = "id"/>
+
+    </fields>
+</root>
+
+
+

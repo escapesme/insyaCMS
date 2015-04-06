@@ -15,6 +15,9 @@ function plg_getForm($data, $lang) {
 
     $data = $lib->forms->getFiledsFormStrign("db", "com_form", $data['formId'], "data");
 
+    
+    
+    
 
     return $data;
 }

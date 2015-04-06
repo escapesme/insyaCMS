@@ -1,0 +1,14 @@
+<root>
+  <fields>
+       <field name="title" title="Field Title" type="text" />
+       
+     <field name="th_alias" title="alias" type="text" />
+      <field name="type" title="type" type="select"  selectData="com/component,mod/module,plg/plugin" />
+     <field name="enable" title="enable" value="1" type="checkbox" />
+     
+     
+  </fields>
+</root>
+
+
+

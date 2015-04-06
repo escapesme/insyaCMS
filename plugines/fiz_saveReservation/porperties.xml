@@ -7,13 +7,11 @@ and open the template in the editor.
     
     <fields>
         
+        <msg_template name="msg_template"  type="select" select_type='DB' 
+                      select_data="com_html" select_text='title' select_value='id'  title="Success Message template" pclass='_50'/>
         
         
-        <data_from_name  name="data_from_name"  type="text"    title="fromName"/>
-        
-
-        
-        
+        <email_new_template name="email_new_template"  type="select" select_type='DB'  select_data="com_html" select_text='title' select_value='id'  title="email_new_template" pclass='_50'/>
         
         
         

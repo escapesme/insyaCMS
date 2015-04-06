@@ -1,0 +1,14 @@
+
+<root>
+  <fields>
+      <field name="title" title="Title" type="text" />
+      
+      <field name="des" title="Body" type="editor" />
+      <field name="enable" title="Body" type="checkbox" />
+      
+      
+  </fields>
+</root>
+
+
+

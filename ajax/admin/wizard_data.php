@@ -10,16 +10,32 @@ $valuesData = $lib->util->data->updateStringTorray($_POST['data']);
 
 
 $filds = array(
-    "tmorecss" => array(
+    "title" => array(
         "type" => "text",
         "id" => "title",
         "class" => "optionData",
         "title" => "Title",
         "value" => $valuesData['title']
-    )
+    ),
+    
+    "nextText" => array(
+        "type" => "text",
+        "id" => "nextText",
+        "class" => "optionData",
+        "title" => "next Text",
+        "value" => $valuesData['nextText']
+    ), "prevText" => array(
+        "type" => "text",
+        "id" => "prevText",
+        "class" => "optionData",
+        "title" => "prev Text",
+        "value" => $valuesData['prevText']
+    ),
 );
 $lib->forms->filds = $filds;
 $data .= $lib->forms->_render_form();
+
+
 
 
 if ($typ == "Sesstion_data") {

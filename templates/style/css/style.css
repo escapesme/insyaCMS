@@ -35,6 +35,9 @@ input, textarea, select {
     color: #000;
     font-size: 12px;
     opacity: 0.9;
+    /* width: 49%; */
+    /* margin: 1px; */
+    /* min-height: 30px; */
 }
 
 th, td, caption {
@@ -1090,8 +1093,14 @@ div.tooltip iframe{
     float:left;
     margin: 1%;
 }
-.field-input ,.field-input input{
+.field-input ,.field-input input ,select{
+    
     width: 98.3%;
+}
+select{
+      min-height: 30px;
+
+    height: 30px;
 }
 .aduinfo{
     clear: both;
@@ -1571,3 +1580,16 @@ td button,td .button, td input[type="button"]{
     margin-bottom: 44px;
 }
 
+
+
+
+
+.time_input select{
+
+    width: 49%;
+    margin: 1px;
+  
+
+    border-radius: 0px;
+
+}

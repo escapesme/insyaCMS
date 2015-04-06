@@ -59,13 +59,25 @@ class languageClass {
     }
 
     function getsymbol($name) {
-        
-        
+
+
         $file = $this->lib->util->siteSetting['site_link'] . "/lib/" . $this->lib->foldersMap->lib_folder . "xml/";
         $file1 = $file . "symbols" . "_" . $this->lib->util->siteSetting['lang'] . ".xml";
 
 
-        return  $this->lib->util->readXmlDataString($file1, "symbols")[$name]["value"];
+        return $this->lib->util->readXmlDataString($file1, "symbols")[$name]["value"];
+    }
+
+    function updateText($body, $data) {
+        preg_match_all('/\\((.*?)\)/', $body, $matches);
+        for ($i = 0; $i < count($matches[0]); $i++) {
+            $m = $matches[1][$i];
+            $w = '\(' . $m . ')';
+            if (isset($data[$m])) {
+                $body = str_replace($w, $data[$m], $body);
+            }
+        }
+        return $body;
     }
 
     function getText($type, $field, $id, $old, $lang = "") {

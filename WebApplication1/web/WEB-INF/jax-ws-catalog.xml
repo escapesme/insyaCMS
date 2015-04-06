@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.53.55.17:8080/XActEngineServer/XActEngWSService?wsdl" uri="wsdl/10.53.55.17_8080/XActEngineServer/XActEngWSService.wsdl"/>
+    <system systemId="http://10.53.55.17:8080/XActEngineServer/XActEngWSService?xsd=1" uri="wsdl/10.53.55.17_8080/XActEngineServer/XActEngWSService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/MDLImport/MDLImport?wsdl" uri="wsdl/localhost_8080/MDLImport/MDLImport.wsdl"/>
+    <system systemId="http://localhost:8080/MDLImport/MDLImport?xsd=1" uri="wsdl/localhost_8080/MDLImport/MDLImport.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ModelOperations/ModelOperations?wsdl" uri="wsdl/localhost_8080/ModelOperations/ModelOperations.wsdl"/>
+    <system systemId="http://localhost:8080/ModelOperations/ModelOperations?xsd=1" uri="wsdl/localhost_8080/ModelOperations/ModelOperations.xsd_1.xsd"/>
+</catalog>

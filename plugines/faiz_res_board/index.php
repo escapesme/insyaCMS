@@ -39,7 +39,6 @@ function faiz_res_board($data, $l) {
 
 
         $data .= fiz_razaTypes($pro, $l, $oid, $odata);
-        ;
     } else {
 
 

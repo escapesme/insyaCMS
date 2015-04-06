@@ -92,7 +92,7 @@ function getreRowsAc($user_id, $ids) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) > 0) {
-                $r .= "<tr><td>" . $d['id'] . "</td><td>" . count($myxref) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td>" . count($myxref) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "<td><input data-rid = '" . $d['id'] . "' type = 'button' value = 'delete' class = 'delete_its'/></td></tr>";
@@ -136,7 +136,7 @@ function getreRows($user_id, $ids) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) <= 0) {
-                $r .= "<tr><td>" . $d['id'] . "</td><td>" . count($myxref) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td>" . count($myxref) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "</tr>";

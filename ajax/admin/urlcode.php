@@ -6,11 +6,16 @@
  */
 
 
-if (isset($_GET['status'])&&$_GET['status'] == "en") {
-    echo urlencode($_GET['data']);
-} else {
-    echo urldecode($_GET['data']);
+$g = $_GET;
+if (!isset($g['data']) && isset($_POST['data'])) {
+
+    $g = $_POST;
 }
 
 
+if (isset($g['status']) && $g['status'] == "en") {
+    echo urlencode($g['data']);
+} else {
+    echo urldecode($g['data']);
+}
 ?>

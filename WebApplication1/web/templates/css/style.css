@@ -1,0 +1,827 @@
+
+
+.xactWindows select[multiple] {
+    height: auto;
+}
+
+select {
+    min-width: 80px;
+}
+.mymassges{
+    position: fixed;
+    right:0px;
+    left:0px;
+    z-index: 10000; 
+    top:0px;
+
+}
+.xmessagep{
+    z-index: 10000; 
+    position: relative;
+    width:100%
+}
+.xmessage{
+    height:36px;
+    background: url(images/message_bg.png) repeat-x ;
+    line-height: 36px;
+    position: relative;
+    width:100%;   
+    z-index: 1; 
+    font-family: Arial;
+    font-weight: lighter;
+} 
+.xmessage .title{
+    float: left;
+    line-height: 36px;margin: 0 20px;
+}
+.xmessage .cbt{
+    float:right;
+    width:12px;
+    height:36px; 
+    background: url(images/message_cbt_bg.png) no-repeat ;
+    margin-right: 5px;
+    cursor: pointer;
+
+} 
+.xmessage .button{
+    background: url(images/message_bt_bg.png) repeat-x ;
+    height:28px;
+    line-height: 25px;
+    border: 1px solid #988f67;
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin-left: 10px;
+
+}
+
+.xmessage.info{
+
+    background: url(images/message_bg_green.png) repeat-x ;
+}
+
+.xmessage.info .button{
+    background: url(images/message_bt_bg_green.png) repeat-x ;
+}
+
+.xmessage.info .cbt{
+    background: url(images/message_cbt_bg_green.png) no-repeat ;
+
+}
+
+.xmessage.err{
+
+    background: url(images/message_bg_red.png) repeat-x ;
+}
+
+.xmessage.err .button{
+    background: url(images/message_bt_bg_red.png) repeat-x ;
+}
+
+.xmessage.err .cbt{
+    background: url(images/message_cbt_bg_red.png) no-repeat ;
+
+}.xmessagep .bg{
+
+    display: none;
+
+}
+
+
+.xmessagep.err .bg{    display: block;
+                       background: rgba(0,0,0,0.3);
+                       position: fixed;
+                       top:0;bottom:0;left:0;right:0;
+}
+
+
+
+td.mxWindowTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 16px;
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    background:    #1e1e1e;
+
+
+    -moz-border-radius: 5px  5px  0px 0px;
+    border-radius: 5px  5px  0px 0px;
+
+
+} 
+
+div.mxWindow {
+    background:    #1e1e1e;
+    -moz-border-radius: 5px  5px  5px   5px ;
+    border-radius: 5px  5px   5px   5px ;
+
+
+}
+
+
+
+.th_close{
+    background-color: transparent;
+    background-image: url("images/group_tabs_close.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 14px;
+    margin: 0;
+    overflow: hidden;
+    width: 14px;
+    float:right;
+    margin-top: 5px;
+    margin-right: 8px;
+    background-position: 0px 1px;
+}
+.th_close:hover{
+    background-position: 0px -27px;
+
+
+}
+.th_close.act{
+    background-position: 0px -13px;
+}
+
+.td.mxWindowPane{
+    background: #1e1e1e;
+}
+
+td.mxWindowPane .frm_input{
+    float:left
+}
+td.mxWindowPane  .frm_label{
+    float:left;
+    width:30%
+        ;text-align: left;
+    padding-top:6px;
+}
+
+td.mxWindowPane .view_pre .frm_label{
+    width:auto
+}
+
+td.mxWindowPane .view_pre textarea{
+    width: 230px;
+}
+
+td.mxWindowPane .view_pre td{
+    overflow: hidden;
+}
+
+
+td.mxWindowPane textarea{
+
+    height:110px;
+    width:230px;
+
+}
+
+
+
+
+td.mxWindowPane{
+
+    padding :5px;
+
+}
+.tabletd {
+    text-align: center ;
+}
+.indextd{
+    text-align: center ;
+}
+.mxWindowPane .mydata{
+    background: none repeat scroll 0 0 #EBEBEB;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    height: 87%;
+
+    overflow: auto;
+    padding: 5px;
+    position: relative;
+
+
+}
+
+
+.windowsDataBody{
+    padding: 0px;
+    padding-bottom: 41px;
+}
+
+.proTabel{
+    width:100%;
+    height:100%;;
+    overflow: auto
+}
+
+.frm_label.actTypeLabel{
+    width:auto !important;
+}
+
+.mxWindowPane .do_center{
+
+
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+
+.do_right{
+    float:left;
+}
+td input[type="text"]{
+    width: 98%;
+    max-width: 100%;
+    margin: 1%
+
+}
+td.mxWindowPane input[type="text"].require,input.require{
+    background: #f00;
+}
+
+.require{
+    background: #f00;
+}
+.windows_colse_bt{
+    width:19px;
+    height: 19px;
+    background:url("images/windows_colse_bt.png");
+    float:right;
+    margin-right:10px;
+
+
+}
+
+.windows_colse_bt:hover{
+    background-position: 100% 100%;
+
+
+}
+
+
+
+
+
+.tb_Property thead,.data_gris thead,.data_grid thead{
+    background: #f2f2f2;
+    font-size: 10px;
+}
+.tb_Property,.data_gris,.data_grid{
+    font-size: 9px;
+    width:100%;
+    font-family: Verdana, helvetica, arial, sans-serif;
+
+}
+
+.tb_Property td{
+
+
+    background:url("images/proper_td_bg.png");
+    height:20px;
+    color:#393939;
+    font-size: 7pt;
+    background-size:100% 100% ; 
+
+
+}
+
+.tb_Property th{
+    background:#fdfdfd;
+    color:#244182;
+
+}
+
+
+.tb_Property th.th_Value,.tb_Property th.th_Property{
+
+    background:url("images/proper_td_op.png");
+    height:20px;
+    color:#fff;
+    font-size: 7pt;
+    background-size:100% 100%
+
+
+
+}
+
+
+
+
+
+
+
+.th_Value {
+    width: auto;
+}
+
+.th_Property{
+    width: 100px;
+}
+.data_gris ,.data_grid {
+
+    background: #eee;
+
+
+    height: 100px;
+    border: 1px solid #eee; table-layout: fixed;
+    border-spacing:0px;
+    overflow: auto;
+
+
+    /* position: relative
+    */}
+
+.data_grid tr,.data_grid thead{
+
+    width:100%;
+}
+.data_grid tbody{
+    height:150px;
+    overflow: auto;
+    width: 200%;
+}
+
+.data_grid tr:hover,.data_grid tr.one:hover{
+
+
+    background: #e0e0e0;
+
+
+
+    border: 1px #7a8a99 solid;
+    cursor: pointer
+
+}
+.data_grid tr.act.one,.data_grid tr.act{
+    background: #647074;
+
+
+}.data_grid tr.act.one td,.data_grid tr.act.one td a,.data_grid tr.act td,.data_grid tr.act td a{
+
+
+    color: #fff;
+
+
+
+    overflow: hidden;
+
+
+}
+
+.data_grid tr.one{
+
+
+    background: #fff;
+}
+
+.data_gris thead ,
+.data_gris tr,
+.data_gris td
+,.data_grid thead ,
+.data_grid tr,
+.data_gris td
+
+
+
+{
+    border-left: 1px solid white;
+    padding: 0px;
+    margin: 0px;
+    height:20px;
+    text-align: center
+}
+
+
+.data_grid thead th{
+    background: none repeat scroll 0 0 #1E1E1E;
+
+    color: #FFFFFF;
+    white-space: normal;
+
+} 
+
+.data_grid td{
+    text-align: left ;
+
+} 
+
+
+td.mxWindowPane .frm_row._25{
+
+}
+._20,__20{
+    margin: 1% !important;; 
+    width: 18%;
+    float: left
+
+}
+._25,__25{
+    margin: 1% !important;; 
+    width: 23%;
+    float: left
+
+}td.mxWindowPane .view_pre ._25 .frm_label,td.mxWindowPane .view_pre .__25 .frm_label{
+    width: 100%;
+}
+td.mxWindowPane .view_pre ._25 .frm_input ,td.mxWindowPane .view_pre ._25 .frm_input input,td.mxWindowPane .view_pre .__25 .frm_input ,td.mxWindowPane .view_pre .__25 .frm_input input{
+    width:80%;
+}
+
+
+
+
+
+.clear{
+    float: none !important;; 
+    clear: both !important;; 
+
+}
+
+td.mxWindowPane input[type=text] ,td.mxWindowPane textarea{
+    -moz-border-radius: 5px  5px  5px   5px ;
+    border-radius: 5px  5px   5px   5px ;
+    background: #eeeeee;
+    float:left;
+
+    ;font-size: 9pt;
+    color:#242424;
+
+
+
+}
+td.mxWindowPane  .frm_row{
+    margin:5px;
+}
+.do_center{
+    margin:auto;
+    text-align: center}
+
+td.mxWindowPane input[type=text] {
+    height:25px;
+    width: 230px;
+}
+
+
+td.mxWindowPane input[type=button]
+,
+
+.Creat_new.button
+,
+.rep_view,.rep_edit,.rep_Delete
+,.comp_row input[type=button]
+{
+
+    background: url("images/windows_bt_bg.png");
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    border: none;
+    margin: 5px;
+    color: #080808;
+    cursor: pointer;
+    background-size: 100% 100%;
+    border-radius: 5px  5px   5px   5px ;
+    -moz-border-radius: 5px  5px   5px   5px ;
+
+
+    box-shadow: 1px 1px 3px;
+
+}
+
+
+
+/*windows*/
+
+
+.xactWindows{
+    background: #1e1e1e;
+}
+
+.xactWindows .frm_input{
+    float:left
+        ;
+    /* width: 67%; */
+    min-width: 50%;
+}
+.xactWindows  .frm_label{
+    float:left;
+    width: 30%;text-align: left;
+    padding-top:6px;
+}
+
+.xactWindows .view_pre .frm_label{
+    width:30%;
+    white-space:normal;
+}
+
+.xactWindows .view_pre textarea{
+    width: 230px;
+}
+
+.xactWindows .view_pre td{
+    overflow: hidden;
+}
+
+
+.xactWindows textarea{
+
+    height:110px;
+    width:230px;
+
+}
+
+
+
+.xactWindows .view_pre ._25 .frm_label{
+    width: 100%;
+}
+.xactWindows .view_pre ._25 .frm_input ,.xactWindows .view_pre ._25 .frm_input input{
+    width:80%;
+}
+
+
+
+
+.xactWindows .view_pre ._50 .frm_label{
+    width: 100%;
+}
+.xactWindows .view_pre ._50 .frm_input ,.xactWindows .view_pre ._50 .frm_input input{
+    float: left;
+    width: 60%;
+}
+
+.qq-upload-button {
+
+    width:150px !important;;
+}
+
+
+.xactWindows{
+    background: none repeat scroll 0 0 #1E1E1E;
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 16px;
+    overflow: hidden;
+    padding: 4px 2px 6px;
+    text-align: left;
+    white-space: normal;
+    z-index: 11198;
+    padding:5px;
+    padding-bottom:40px;font-family: arial;
+}
+.xactWindows{
+
+
+
+    font-size: 12px;
+    font-weight: bold;
+
+
+
+
+
+
+}
+
+.xactWindows .mydata {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border-radius: 5px;
+    display: block;
+    max-height: 500px;
+    overflow: auto;
+    padding: 5px;
+    position: relative;
+    color:#333;
+
+    position: absolute;
+    bottom: 47px;
+    top: 22px;
+    left: 5px;
+    right: 5px;
+
+}
+
+.xactWindows .do_center {
+    bottom: 3px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+
+.xactWindows  input[type="button"], .Creat_new.button, .rep_view, .rep_edit, .rep_Delete {
+    background: url("images/windows_bt_bg.png") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    border: medium none;
+    border-radius: 5px;
+    color: #080808;
+    cursor: pointer;
+    height: 28px;
+    margin: 5px;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: 0px 0px 3px #333;
+}
+
+
+.undefined_p{
+    display: none
+}
+.xactWindows input[type=text] ,.xactWindows textarea,.xactWindows select ,.xactWindows input[type=number]{
+    -moz-border-radius: 5px  5px  5px   5px ;
+    border-radius: 5px  5px   5px   5px ;
+    background: #eeeeee;
+    float:left;
+
+    ;font-size: 9pt;
+    color:#242424;
+
+text-transform: none
+
+}
+
+
+
+.xactWindows input, .xactWindows select, .xactWindows textarea, .xactWindows radio {
+    border-color: #8C8C8C;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial;
+    font-size: 8pt;
+    padding: 1px;
+}
+.xactWindows input[type=text],.xactWindows select ,.xactWindows input[type=number] {
+    height: 25px;
+    min-width: 96%;
+    max-width: 96%;
+    width: 100%;}
+
+.xactWindows select {
+text-transform: capitalize;
+}
+
+.xactWindows .frm_row {
+    margin: 5px;
+    min-height: 25px
+        ;
+    overflow: hidden;
+}
+
+.xactWindowsClose{
+
+
+    width:12px;
+    height:12px;
+    background: url( images/close.gif) ;
+    position: absolute;
+    cursor: pointer;
+
+    top:3px;
+
+    right:5px;
+
+
+
+
+
+
+}
+.xactWindowsTitle{
+    cursor: move
+}
+
+.BVTitle{
+    margin-bottom: 5px; 
+}
+
+input.BVInput {
+    background: none repeat scroll 0 0 #F2F5F7;
+    border: 1px solid #DDDDDD;
+    border-radius: 9px;
+    width: 97%;
+}
+
+
+
+*{
+
+    text-transform: capitalize;
+}
+.do_left{
+    float:left
+
+}
+
+
+.windowsfooter{
+    /* position: absolute; */
+
+    /* bottom: 17px; */
+    /* width: 100%; */
+}
+tr.seleted{
+    /* background: #333; */
+    color:#00f; 
+
+
+    text-decoration: underline
+        /* border-radius: 3px; */
+}
+.tableClass,.messageEdit{
+    border-collapse: collapse;
+}.storagedialogue_show_bt{
+    background: url("/Xact/templates/fornt/yall/css/images/proper_td_op.png");
+    background-size: 100% 100%;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    color: #fff;
+    width: 100%;
+    padding: 0 2px 0 2px;
+
+}
+.red{
+    color:#c31b1b;
+    text-transform: none;
+}
+
+.highlight{
+    padding:0px 2px;
+    background: none repeat scroll 0 0 #1E1E1E;
+    color: #FFFFFF;
+    white-space: normal;
+}
+
+.storedNamesInfo .info  label {
+    min-width: 181px;
+    display: block;
+    float: left;font-size: 9px;
+    font-family: Verdana, helvetica, arial, sans-serif;
+}
+
+
+
+.xactWindows input[type=text].readonly, .xactWindows textarea.readonly, .xactWindows select.readonly, .xactWindows input[type=number].readonly
+
+
+{
+    color: #938F8F;
+    background: #F5F3F3;
+    border-color: #eee;
+}
+
+.readonly.header{
+    text-align: center;
+    color: #333 !important;
+    border-color: #333 !important;
+
+
+    border: none;
+    background: none !important;
+    font-weight: bold;
+}
+
+.headerupdate_p .frm_label{
+    color:transparent;
+    font-size: 0.1
+}
+.radio_p {
+    position: relative
+}
+.radio_p .frm_label{
+    margin-left: 20px;
+
+
+}
+
+
+.radio_p .frm_input{
+    position: absolute;
+    left:0px;
+    top: 4px;
+}
+
+
+div.mxTooltip {
+	/* -webkit-box-shadow: 3px 3px 12px #C0C0C0; */
+	//-moz-box-shadow: 3px 3px 12px #C0C0C0;
+	/* box-shadow: 3px 3px 12px #C0C0C0; */
+	background: #E8EAEB !important;;
+	border-style: solid !important;;
+	border-width: 1px !important;;
+	border-color: rgb(204, 200, 200) !important;;
+	font-family: Verdana;
+	font-size: 15pt;
+	position: absolute;
+	cursor: default;
+	padding: 4px;
+	color: rgb(98, 98, 98) !important;;
+}

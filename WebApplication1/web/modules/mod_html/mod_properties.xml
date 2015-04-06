@@ -1,0 +1,10 @@
+
+<root>
+  <fields>
+   
+     <field name="htmlid" title="Html" type="select"  selectDataTable = "com_code_html"   selectTexttField = "title" selectValueField = "id"/>
+  </fields>
+</root>
+
+
+

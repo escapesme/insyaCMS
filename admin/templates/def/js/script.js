@@ -287,4 +287,26 @@ $(function() {
     })
 
 
+
+
+$(window).scroll(function(e){ 
+  $el = $('.chstepOpions'); 
+  
+  if ($(this).scrollTop() > 600 && $el.css('position') != 'fixed'){ 
+      
+    $('.chstepOpions').css({'position': 'fixed', 'top': '66px',"right":"54px","width":"35%"}); 
+  }
+  
+  if ($(this).scrollTop() < 600 && $el.css('position') == 'fixed')
+  {
+    $('.chstepOpions').css({'position': 'absolute', 'top': '66px',"right":"0px","width":"42%"}); 
+  } 
+});
+
+
+
+
+
+
+
 })

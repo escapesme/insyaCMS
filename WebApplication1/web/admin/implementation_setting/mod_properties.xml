@@ -1,0 +1,25 @@
+
+<root>
+    <fields>
+        <field name="point_type" title="point type" type="text" />
+        <field name="line_color" title="line color" type="color" />
+        <field name="line_width" title="line width" type="text" />
+        
+        <field name="image" title="point type" type="image" />
+        <field name="image_width" title="image width" type="number" />
+        <field name="image_height" title="image height" type="number" />
+
+        <field name="positionX" title="positionX" type="number" />
+        <field name="positionY" title="positionY" type="number" />
+
+        <field name="line" title="view IN" type="line"    />
+        <field name="allProjects" title="For all Projects" type="checkbox" />
+        <field name="project" title="project" type="select"   selectDataTable="project"  selectTexttField = "Name" selectValueField = "pid"   selectDataWhere="gid='2' and cid='2'"   />
+
+
+
+    </fields>
+</root>
+
+
+

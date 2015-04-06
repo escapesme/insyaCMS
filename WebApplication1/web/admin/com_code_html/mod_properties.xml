@@ -1,0 +1,11 @@
+
+<root>
+  <fields>
+      <field name="title" title="Title" type="text" />
+      <field name="body" title="Body" type="editor" />
+      
+  </fields>
+</root>
+
+
+

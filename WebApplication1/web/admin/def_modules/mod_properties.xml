@@ -1,0 +1,16 @@
+
+<root>
+    <fields>
+ <field name="title" title="Title" type="text" />
+        <field name="order" title="order" type="number" />
+        <field name="position" title="position" type="select"   selectData="left/left,right/right,menu/menu,implementation/implementation,NodeProperties/NodeProperties,serves/serves,loginTop/loginTop,groupview/groupview,p4/p4,p5/p5,p6/p6,p7/p7,p8/p8,p9/p9,p10/p10"/>
+        <field name="class" title="Class" type="select"   selectData="on_class/on_class"/>
+        <field name="showinall" title="Show In All" value="1" type="checkbox" />
+           <field name="show_to" title="Show To" value="1" type="select"  selectData="0/All,1/users"/>
+        <field name="enable" title="enable" value="1" type="checkbox" />
+        <field name="morecss" title="morecss" type="textarea" />
+    </fields>
+</root>
+
+
+

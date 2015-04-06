@@ -1,0 +1,8 @@
+/*ajax template
+    * 
+    *       var x = new Array(dddl);
+            ajaxAbort(x);
+            dddl=loadAjax("http://localhost:8080/Xact/ajax/engine/getMain.jsp?alias=xact&model_id=1319836684971","data","hide","");
+    * 
+    */
+   

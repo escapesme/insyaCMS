@@ -68,9 +68,24 @@ function createStepesBar($septes) {
     // foreach ($septes as $s) {
     $data.="<div class='types'>";
 
-    $data.=typesData($septes[$thsetp - 1]);
+
+
+    $stepData = explode(";", $septes[$thsetp - 1]);
+
+    $data.=typesData($stepData);
+
+
+    $stepData = $lib->util->data->updateStringTorray($stepData[0]);
+
     $data.= "</div>";
+
+
     // }
+
+
+
+
+
 
     $newxurlnum = $thsetp + 1;
     $perurlnum = $thsetp - 1;
@@ -91,9 +106,15 @@ function createStepesBar($septes) {
 
 
     $data.="<div class='setpesBar'>";
-    $data.="
-        <a href='" . $perurl . "'  class='wprev'>prev</a> 
-        <a  href='" . $nexturl . "' class='wnext'>next</a>";
+
+    if (isset($stepData['prevText']) && $stepData['prevText']!="") {
+        $data.="<a href='" . $perurl . "'  class='wprev'>" . $stepData['prevText'] . "</a> ";
+    }
+    if (isset($stepData['nextText']) && $stepData['nextText']!="") {
+
+        $data.="<a  href='" . $nexturl . "' class='wnext'>" . $stepData['nextText'] . "</a>";
+    }
+
     $data.= "</div>";
     $data.= "</div>";
 
@@ -113,7 +134,7 @@ function typesData($types) {
 
 
 
-    $types = explode(";", $types);
+
 
 
     foreach ($types as $type) {
@@ -121,11 +142,11 @@ function typesData($types) {
 
         if (isset($type) && trim($type) != "") {
             $ts1 = $lib->util->data->updateStringTorray($type);
-            
-        $lib->util->page->updateTitle($ts1['title'], $ts1['title'], "title-web");
 
-        
-        
+            $lib->util->page->updateTitle($ts1['title'], $ts1['title'], "title-web");
+
+
+
             $data .= $lib->util->dataBluder->renderDataBluder($ts1['data1']);
         }
     }

@@ -2023,11 +2023,12 @@ div.mce-edit-area {
     background-color: #ABC6D2;
     position: absolute;
     display: none;
-    top: 66px;
-    height: 408px;
+    top: 65px;
+    min-height: 408px;
     overflow-y: auto;
     overflow-x: hidden;
 
+    /* top: 0; */
 }
 .stepHeader.act{
 
@@ -2062,3 +2063,5 @@ html[xmlns] .my_clearfix {
     min-height: 500px;
     background: #eee;
 }
+
+

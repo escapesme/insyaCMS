@@ -1,0 +1,47 @@
+
+<root>
+    <fields>
+        <field name="TYPE" title="TYPE" type="select" selectData="corporate/corporate,business_process/business_process,Line of Business/business entity>>Line of Business,Line of Business Not-1/business entity>>Line of Business Number Unique (Not -1),Business Function/business entity>>Business Function,Perc/Utilization Frequency,service_start/service>>start,service_end/service>>end,service_task/service>>task,service_process/service>>process,service_component/service>>component,service_activity/service>>activity,service_service/service>>service
+        ,GroupView_groupNode/GroupView>>groupNode,GroupView_TERMINAL/GroupView>>TERMINAL,GroupView_ROUTER/GroupView>>ROUTER,GroupView_EQUIPMENT/GroupView>>EQUIPMENT,GroupView_VEHICLE/GroupView>>VEHICLE,GroupView_SERVER/GroupView>>SERVER,GroupView_HUMAN/GroupView>>HUMAN,GroupView_SWITCH/GroupView>>SWITCH"/>
+
+        <field name="Style" title="Style" type="line"    />
+     
+        <field name="STYLE_STROKECOLOR" title="STROKECOLOR" type="color" />
+        <field name="STYLE_FILLCOLOR" title=" FILLCOLOR" type="color" />
+        <field name="STYLE_FONTCOLOR" title="FONTCOLOR" type="color" />
+        <field name="STYLE_GRADIENTCOLOR" title="GRADIENTCOLOR" type="color" />
+        <field name="STYLE_FONTFAMILY" title="FONTFAMILY" type="select"  selectData="Verdana/Verdana"/>
+        <field name="STYLE_SHADOW" title="SHADOW" type="checkbox" />
+        <field name="STYLE_ROUNDED" title="ROUNDED" type="checkbox" />
+        <field name="STYLE_GLASS" title="GLASS" type="checkbox" />
+        <field name="STYLE_VERTICAL_ALIGN" title="VERTICAL ALIGN" type="select"  selectData="left/left,right/right,top/top,bottom/bottom"/>
+
+        <field name="STYLE_VERTICAL_LABEL_POSITION" title="VERTICAL LABEL POSITION" type="select" selectData="left/left,right/right,top/top,bottom/bottom" />
+        <field name="STYLE_LABEL_POSITION" title="STYLE LABEL POSITION" type="select" selectData="left/left,right/right,top/top,bottom/bottom" />
+        <field name="STYLE_HORIZONTAL" title="HORIZONTAL" type="select" selectData="false/false,true/true" />
+        <field name="IMAGE" title="IMAGE" type="image" />
+        <field name="STYLE_ROTATION" title="ROTATION" type="number" />
+        <field name="HEIGHT" title="HEIGHT" type="number" />
+
+
+        <field name="WIDTH" title="WIDTH" type="number" />
+        <field name="SHAPE" title="SHAPE" type="select"  selectData="actor/actor,triangle/triangle,cylinder/cylinder,cylinder/cylinder,rhombus/rhombus,ellipse/ellipse,image/image"/>
+
+<field name="line" title="view IN" type="line"    />
+<field name="allProjects" title="For all Projects" type="checkbox" />
+<field name="project" title="project" type="select"   selectDataTable="project"  selectTexttField = "Name" selectValueField = "pid"   selectDataWhere="gid='2' and cid='2'"   />
+
+
+
+
+
+
+
+
+    </fields>
+</root>
+
+
+
+
+
