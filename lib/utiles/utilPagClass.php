@@ -151,7 +151,13 @@ class utilPagClass {
             $page_title_tags .= $tag . "\n";
         }
     }
-
+ function sety_title($tag) {
+        global $page_title_tags;
+            $page_title_tags = $tag;
+        
+        
+        
+ }
     function get_title() {
         global $page_title_tags;
         return $page_title_tags;

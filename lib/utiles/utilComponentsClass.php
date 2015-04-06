@@ -441,7 +441,7 @@ class utilComponentsClass {
 
                 $imagePath = "/uploads/images/" . $all[$i]['image'];
                 /*  if (!is_file($imagePath)) {
- videosvido
+                  videosvido
                   $imagePath = "/uploads/images/noimages.jpg";
                   } */
                 $returnData.= "<div id='" . $all[$i]['id'] . "' class='mod_block'>";
@@ -499,16 +499,21 @@ class utilComponentsClass {
             if (isset($all[$i]['id']) && trim($all[$i]['id']) != "") {
 
 
-
                 $imagePath = "/uploads/images/" . $all[$i]['th_image'];
 
 
                 if ($thiscatgoriesTable != "") {
-                    $datacat = $this->lib->db->get_row($thiscatgoriesTable, "*", "`id`='" . $all[$i]['cat_id'] . "'");
+
+                    $cts = explode(",", $all[$i]['cat_id']);
+                    $datacat = $this->lib->db->get_row($thiscatgoriesTable, "*", "`id`='" . $cts[1] . "'");
+                }
+
+                $url = $this->createURL($thisTable, $datacat['alias'], $all[$i]['alias']);
 
 
 
-                    $url = $this->createURL($thisTable, $datacat['alias'], $all[$i]['alias']);
+                if (isset($all[$i]['ex_link']) && $all[$i]['ex_link'] != "") {
+                    $url = $all[$i]['ex_link'];
                 }
 
                 //  if (!is_file($imagePath)) {

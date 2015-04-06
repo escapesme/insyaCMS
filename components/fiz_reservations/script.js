@@ -260,8 +260,12 @@ $(function() {
 
 
 
-    $(document).on("click", ".next_res", function() {
 
+
+
+
+
+    $(document).on("click", ".next_res", function() {
 
 
         var o = $(this);

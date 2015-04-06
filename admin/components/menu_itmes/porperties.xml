@@ -73,7 +73,7 @@ and open the template in the editor.
         
         <Data_site name='Data_site'  collapse="yes" type='block' title="Sites"  />
      
-        <all_site name="all_site"  type="enable"  title="all site" value="1" /> 
+        <all_status name="all_status"  type="enable"  title="all site" value="1" /> 
       
         <site  
             xref='com_modules_status_xref' 

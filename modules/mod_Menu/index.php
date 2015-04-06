@@ -8,26 +8,44 @@
  * 
  */
 
-
-
 function mod_menu($pro) {
     global $lib;
 
+//($lib->site->isInStatus
 
-   // print(">>>>".$pro['selecmenu']);
-    
-    
-    
+
+    if ($lib->site->checkStatusAlias("cairo"))  {
+
+        echo '<script>$(function(){$(".__li_355").addClass("li_active")})</script>';
+        
+        
+        
+        
+    }   else  if ($lib->site->checkStatusAlias("mutah")) 
+    {
+        echo '<script>$(function(){$(".__li_356").addClass("li_active")})</script>';
+    }
+
+
+
+
+
+
+    //__li_352 li_active
+
 
     $datasql = $lib->db->get_data('menu_itmes', '', 'cat_id=0  and parent_id=' . $pro['selecmenu'] . " and `show`='1' ");
-    
-    
-    
-    
+
+
+
+
 
     $data = "<div class='menu menu" . $pro['selecmenu'] . "'><ul>";
 
+
+
     foreach ($datasql as $d) {
+
 
         $d = $lib->language->getDBArray("menu_itmes", $d['id'], $d);
 
@@ -36,8 +54,11 @@ function mod_menu($pro) {
         if (($d['permission_all'] == "1" ||
                 $lib->util->chkInPermission($d['id'], $pPermission)) &&
                 $lib->util->chkInPermissionGuset($d['permission_gust'])) {
-            if ($lib->site->isInStatus($d['id'], $d['all_site'], "menu")) {
 
+
+
+
+            if ($lib->site->isInStatus($d['id'], $d['all_status'], "menu")) {
 
 
 

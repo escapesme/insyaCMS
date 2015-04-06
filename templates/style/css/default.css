@@ -17,6 +17,7 @@ a{
 
 
 * {
+    /* clear: both; */
   
 }
 
@@ -301,14 +302,14 @@ div.theme-default div.nivo-controlnav a.nivo-control ,.mod_image img,.multiple_s
 
 .itemBlock_title,.CatBlock_title,.catBlock_title{
 
-    font-weight: bold;
+    font-weight: normal;
     
 
     color: #222;
     line-height: 30px;
     margin-bottom: 8px;
 
-    font-size: 100%;
+    font-size: 112%;
     
 
     line-height: 1.5em;
@@ -541,6 +542,6 @@ input.required-valid,input[type="text"].required-valid, input[type="input"].requ
     padding: 5px;
     color: #000;
     font-size: 16px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }

@@ -12,7 +12,7 @@ function mod_weatherTime($pro) {
 
     $todayDate = date("Y-m-d g:i a"); // current date
     $currentTime = time($todayDate); //Change date into time
-    $timeAfterOneHour = ($currentTime - 60);
+    $timeAfterOneHour = ($currentTime - ( 60 * (60 * $pro['TimeAdjustment'] )));
 
     $data = '<link rel="stylesheet" href="/' . $lib->util->mylink("module", "mod_weatherTime") . '/style.css"></link>';
 
@@ -32,11 +32,16 @@ function mod_weatherTime($pro) {
     <div class="weather-current-dayname">' . date("l") . '</div>
     <div class="weather-current-hi-lo">Lo: <span class="lovalue"></span> Hi:  <span class="hivalue"></span> </div></div>
 ';
+
+
+
+
+
     $data .='<div id="clock">
         <div class="clock-image"></div><div class="current-time" id="current-time">
-        <div class="current-hourstime">' . date('h:i', $timeAfterOneHour - 2) . '</div>'
-            . '<div class="time-city">CAIRO</div>'
-            . '<div class="ampm">' . date('A') . '</div>
+        <div class="current-hourstime">' . date('h:i', $timeAfterOneHour) . '</div>'
+            . '<div class="time-city"> ' . $pro['city'] . '</div>'
+            . '<div class="ampm">' . date('A', $timeAfterOneHour) . '</div>
                 </div> </div> </div>
     
    ';

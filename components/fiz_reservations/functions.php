@@ -27,10 +27,10 @@ function fiz_reservations_login($p, $l) {
             "pclass" => " _50",
             "title" => "its_id",
             "name" => "its_id"
-        ), "next_res" => array(
+        ), "" => array(
             "type" => "button",
             "pclass" => " _100",
-            "class" => "next_res",
+            "class" => "",
             "title" => $l['lgoinsubmit'], "value" => $l['lgoinsubmit'],
             "name" => "its_id"
             , "moreAttra" => "data-to='/FizReservations/' data-do='login' "
@@ -151,7 +151,7 @@ function fiz_reservations_craeteData($p, $l, $oid) {
     $r .= "<div class='buts'><input  type='button' value='Back' data-to='/FizReservations/'  class='next_back'/>";
 
 
-    $r .= "<input  type='button' value='Next'  data-to='/do/$n/FizReservations/' data-do='addtosesstion'  class='next_res'/></div>";
+    $r .= "<input  type='button' value='Next'  data-to='/do/$n/FizReservations/' data-do='addtosesstion'  class=''/></div>";
 
 
 
@@ -182,7 +182,7 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
 
 
 
-      $r .= "<input  type='button' value='Next'  data-to='/do/create/FizReservations/' class='next_res'/>";
+      $r .= "<input  type='button' value='Next'  data-to='/do/create/FizReservations/' class=''/>";
 
     $r .=fiz_raza_its_date($p, $l, $oid, $odata);
 
@@ -369,7 +369,7 @@ function fiz_reservations_pkgs($p, $l, $oid) {
 
 
     $r .= "<div class='buts'><input  type='button' value='Back' data-to='/do/create-raza/FizReservations/'  class='next_back'/>";
-    $r .= "<input  type='button' value='Next'  data-to='/do/view-raza/FizReservations/' data-do='updatePkg'  class='next_res'/>";
+    $r .= "<input  type='button' value='Next'  data-to='/do/view-raza/FizReservations/' data-do='updatePkg'  class=''/>";
 
     return $r;
 }
@@ -438,7 +438,7 @@ function fiz_reservations_viewData($p, $l, $oid) {
 
 
 
-    $r .= "<input  type='button' value='Next' data-to='/do/end-raza/FizReservations/' data-do='save'   class='next_res'/></div>";
+    $r .= "<input  type='button' value='Next' data-to='/do/end-raza/FizReservations/' data-do='save'   class=''/></div>";
 
     return $r;
 }

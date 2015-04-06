@@ -7,19 +7,18 @@ and open the template in the editor.
 
 
 <root>
-    <logoutsubmit>logoutsubmit</logoutsubmit>   
-    <Reservation_ID>Reservation_ID</Reservation_ID>   
+    <logoutsubmit>Logout</logoutsubmit>   
+    <Reservation_ID>Reservation No</Reservation_ID>   
 
-    <No_of_Persons>No_of_Persons</No_of_Persons>   
-    <Arrival_Date>Arrival_Date</Arrival_Date>   
-    <Departure_Date>Departure_Date</Departure_Date>   
-    <actions>actions</actions>   
+    <No_of_Persons>No of Persons</No_of_Persons>   
+    <Arrival_Date>Arrival Date</Arrival_Date>   
+    <Departure_Date>Departure Date</Departure_Date>   
+    <actions>Actions</actions>   
+    <ActiveReservations>Active Reservations</ActiveReservations>   
+    <NewReservation>New Reservation</NewReservation>   
 
-          <ActiveReservations>Active Reservations</ActiveReservations>   
- 
-                 <NewReservation>New Reservation</NewReservation>   
+           <PreviousReservations>Previous Reservations</PreviousReservations>   
 
-       
        
 
     

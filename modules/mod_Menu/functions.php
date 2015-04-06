@@ -16,12 +16,12 @@ function mod_menu_createStatu($d) {
 
     if ($lib->site->cretaStatus($d['id'], $lib->variables->statusPost)) {
 
-        $r = " data-postsatatus='" .$lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusPost) . "'";
+        $r = " data-postsatatus='" . $lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusPost) . "'";
     }
 
     if ($lib->site->cretaStatus($d['id'], $lib->variables->statusSession)) {
 
-        $r .= " data-sessionsatatus='" .$lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusSession) ."'";
+        $r .= " data-sessionsatatus='" . $lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusSession) . "'";
     }
 
 
@@ -32,10 +32,10 @@ function mod_menu_createStatu($d) {
 function mod_menu_updateLink($d, $dap) {
     /* @var $lib  libs\libs */
     global $lib;
-    $href = "";
+    $href = "/";
 
     $status.= $lib->site->cretaStatusFormIDs($d['addstatus'], $lib->variables->statusGet);
-    
+
     if ($status != "") {
         $href .= $lib->variables->statusVariableName . "/" . $status . "/";
     }
@@ -101,7 +101,7 @@ function getsubmenu($id, $parent, $pro) {
             if (($d['permission_all'] == "1" ||
                     $lib->util->chkInPermission($d['id'], $pPermission)) &&
                     $lib->util->chkInPermissionGuset($d['permission_gust'])) {
-                if ($lib->site->isInStatus($d['id'], $d['all_site'], "menu")) {
+                if ($lib->site->isInStatus($d['id'], $d['all_status'], "menu")) {
 
 
 

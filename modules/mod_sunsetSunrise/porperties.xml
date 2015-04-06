@@ -11,6 +11,20 @@ and open the template in the editor.
        
         />
         
+         <Longitude name="Longitude"  type="text"  
+        title="Longitude" 
+        value='+1' 
+       
+        />
+         
+         
+          <Latitude name="Latitude"  type="text"  
+        title="Latitude" 
+        value='+1' 
+       
+        />
+        
+        
     </fields>
 </root>
 

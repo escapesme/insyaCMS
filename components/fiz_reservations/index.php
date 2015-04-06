@@ -33,10 +33,10 @@ function main($pro, $l) {
         $data .= "<h3>" . $l['lgointitle'] . $odata['FullName'] . " (" . $odata['Mumin_id'] . ") " . "</h3>";
 
         $filds = array(
-            "next_res" => array(
+            "" => array(
                 "type" => "button",
                 "pclass" => " _100",
-                "class" => "next_res",
+                "class" => "",
                 "value" => $l['logoutsubmit'],
                 "name" => "its_id"
                 , "moreAttra" => "data-to='/FizReservations/' data-do='logout' "

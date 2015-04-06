@@ -10,7 +10,7 @@
 
 function mod_News_Data($pro, $l) {
     global $lib;
-    print_R($pro);
+ //   print_R($pro);
 
 
 ini_set("display_errors", 1);

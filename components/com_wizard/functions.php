@@ -120,8 +120,12 @@ function typesData($types) {
 
 
         if (isset($type) && trim($type) != "") {
-
             $ts1 = $lib->util->data->updateStringTorray($type);
+            
+        $lib->util->page->updateTitle($ts1['title'], $ts1['title'], "title-web");
+
+        
+        
             $data .= $lib->util->dataBluder->renderDataBluder($ts1['data1']);
         }
     }

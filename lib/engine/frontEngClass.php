@@ -94,19 +94,22 @@ class frontEngClass {
         if (isset($alias) && $alias != "") {
             $menus = $this->db->get_data('menu_itmes', "", "mei_alias='" . $alias . "'");
             foreach ($menus as $m) {
-                if ($this->lib->site->isInStatus($m['id'], $m['all_site'], "menu") == true) {
+                if ($this->lib->site->isInStatus($m['id'], $m['all_status'], "menu") == true) {
                     $th = $this->db->get_row('menu_itmes', "", "id='" . $m['id'] . "'");
                 }
             }
         } else {
 
             $th = $this->db->get_row('menu_itmes', "", "mei_home='1'");
-            
-            
-            $data = $this->lib->site->addTostatus($th["addstatus"]);
-            
-          //  print_r($this->lib->site->getActStatus());
-            
+
+
+
+            if (!isset($_GET[$this->lib->variables->statusVariableName])) {
+
+
+                $data = $this->lib->site->addTostatus($th["addstatus"]);
+            }
+
         }
 
 
@@ -451,7 +454,7 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
 
-                if ($this->util->cities->getIsInSite($m['id'], $m['all_site']) == true) {
+                if ($this->util->cities->getIsInSite($m['id'], $m['all_status']) == true) {
 
                     include_once( $this->templatelink . "/" . "classs/" . $m['class'] . "" . ".php");
 
@@ -509,8 +512,7 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
 
 
-                if ($this->lib->site->isInStatus($m['id'], $m['all_site']) == true) {
-
+                if ($this->lib->site->isInStatus($m['id'], $m['all_status']) == true) {
 
                     include_once( $this->templatelink . "/" . "classs/" . $m['class'] . ".php");
 

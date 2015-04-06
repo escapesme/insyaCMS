@@ -1009,14 +1009,7 @@ class utilClass {
         return $res;
     }
 
-     function howManyDaysTime($startDate, $endDate) {
 
-        $date1 = strtotime($startDate);
-        $date2 = strtotime($endDate);
-        $res = (int) (($date2 - $date1) / 86400);
-
-        return $res;
-    }
     
     
     function dateTodb($data) {
@@ -1781,10 +1774,16 @@ EOF;
         $alias = $this->data->TextVarUpdate("", $alias);
 
         $returnData = "";
+        
+        
+        
+        
+        
+        /*
         if (trim($_GET['lang'])) {
 
             $returnData = "/" . $_GET['lang'];
-        }
+        }*/
 
         /* if (isset($_GET["site"]) && $_GET["site"] != "global") {
           $returnData .= "/site/" . $_GET["site"];
@@ -1793,7 +1792,7 @@ EOF;
 
         if ($alias) {
 
-            $returnData .=  "/" . $alias . "/";
+            $returnData .=  $alias . "/";
         }
         if (isset($items) && trim($items) != "") {
             $returnData .= $items . "/";

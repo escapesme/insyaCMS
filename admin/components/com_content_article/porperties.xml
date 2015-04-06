@@ -41,7 +41,7 @@ and open the template in the editor.
         
         <th_image name="th_image"  type="pic"  title="TH image" />
         <tags name="tags"  type="textarea" title="Tags"  />
-        <ex_link  name="ex_link"  type="editor" title="ex_link" />
+        <ex_link  name="ex_link"  type="textare" title="ex_link" />
 
         
         

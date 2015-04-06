@@ -10,7 +10,7 @@
 
 session_start();
 
-function fiz_lawazim_table($data) {
+function fiz_lawazim_table($data, $lang) {
 
     /* @var $lib  \libs\libs */
     global $lib;
@@ -29,20 +29,20 @@ function fiz_lawazim_table($data) {
 
 
 ////////////////////////////
-    $rdata .= "<div class='datarow TravelDates'><h3 class='title'>Travel Dates</h3>";
+    $rdata .= "<div class='datarow TravelDates'><h3 class='title'>" . $lang['TravelDates'] . "</h3>";
     $rdata .= "<table class='mainTabel'>"
             . "<thead>"
-            . "<tr><th>checkin </th><td>" . $_SESSION[$myform]['checkin'] . "</td><th> checkOut</th><td>" . $_SESSION[$myform]['checkout'] . "</td><th>nights</th><td>$nights</td></tr>"
+            . "<tr><th>" . $lang['checkin'] . "</th><td>" . $_SESSION[$myform]['checkin'] . "</td><th>" . $lang['checkOut'] . "</th><td>" . $_SESSION[$myform]['checkout'] . "</td><th>" . $_SESSION[$myform]['nights'] . "</th><td>$nights</td></tr>"
             . "</thead>";
     $rdata .= "</table></div>";
 
 ////////////////////////////
 
-    $rdata .= "<div class='datarow ArrivalDetails'><h3 class='title'>Arrival Details</h3>";
+    $rdata .= "<div class='datarow ArrivalDetails'><h3 class='title'>" . $lang['ArrivalDetails'] . "</h3>";
 
     $rdata .= "<table class='mainTabel'>"
             . "<thead>"
-            . "<tr><th>Airline </th><th> Flight No:</th><th>Arriving from</th></tr>"
+            . "<tr><th>" . $lang['Airline'] . "</th><th>" . $lang['FlightNo'] . "</th><th>" . $lang['Arrivingfrom'] . "</th></tr>"
             . "</thead>"
             . "<tbody><tr><td>" . $_SESSION[$myform]['airline'] . "</td><td>" . $_SESSION[$myform]['airline_code'] . "</td><td>" . $_SESSION[$myform]['arriving_from'] . "</td></tr></tbody>";
     $rdata .= "</table></div>";
@@ -55,7 +55,7 @@ function fiz_lawazim_table($data) {
 
     $rdata .= "<table class='mainTabel'>"
             . "<thead>"
-            . "<tr><th>Email:</th><th>Mobile:</th></tr>"
+            . "<tr><th>" . $lang['Email'] . "</th><th>" . $lang['Mobile'] . "</th></tr>"
             . "</thead>"
             . "<tbody><tr><td>" . $_SESSION[$myform]['email'] . "</td><td>" . $_SESSION[$myform]['mobile'] . "</td></tr></tbody>";
     $rdata .= "</table></div>";
@@ -63,11 +63,11 @@ function fiz_lawazim_table($data) {
 
     ////////////////////////////
 
-    $rdata .= "<div class='datarow GuistDetails'><h3 class='title'>Guist Details</h3>";
+    $rdata .= "<div class='datarow GuistDetails'><h3 class='title'>Guest Details</h3>";
 
     $rdata .= "<table class='mainTabel'>"
             . "<thead>"
-            . "<tr><th>SNO </th><th>ITS </th><th> Name</th><th> Type</th><th> Package Name</th><th>Lawazim</th></tr>"
+            . "<tr><th>" . $lang['SNO'] . "</th><th>" . $lang['ITS'] . "</th><th>" . $lang['Name'] . "</th><th>" . $lang['Type'] . "</th><th>" . $lang['PackageName'] . "</th><th>Lawazim</th></tr>"
             . "</thead>"
             . "<tbody>";
 
@@ -92,7 +92,9 @@ function fiz_lawazim_table($data) {
         }
 
         $pkgData = $lib->plugins->importPlugin("fiz_lawazim_packages", "nights__" . $nights . ";type__" . $types);
-        $rdata.="<tr><td>" . $no . " </td><td>" . $ej . " </td><td> " . $ejdata['FullName'] . "</td><td> $type</td><td>" . $pkgData['5'] . "</td><td>" . $pkgData['0'] . "</td></tr>";
+        $rdata.="<tr><td>" . $no . " </td><td>" . $ej . " </td><td> " . $ejdata['FullName'] . "</td><td> $type</td><td>" . $pkgData['5'] . "</td><td>" . $lang['currency'] . $pkgData['0'] . "</td></tr>";
+        $llLawazim +=$pkgData['0'];
+
         $gArray[$i] = $ejdata;
         $gArray[$i]['user_type'] = $type;
         $gArray[$i]['type'] = $type;
@@ -108,6 +110,11 @@ function fiz_lawazim_table($data) {
         $gArray[$i]['ex_checkout'] = $lib->util->dateTodb($_SESSION[$myform]['checkout']);
         $i++;
     }
+
+
+    $rdata.="<tr><td colspan='5' style='text-align:center ;  font-weight: bold;'>Total</td><td  style=' font-weight: bold;' >" . $lang['currency'] . "$llLawazim</td></tr>";
+
+
 
     $_SESSION[$myform]['guests'] = $gArray;
     $rdata.="</tbody>"

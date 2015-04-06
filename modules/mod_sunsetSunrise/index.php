@@ -8,19 +8,13 @@
  */
 
 function mod_sunsetSunrise($pro) {
-
-
-
-
-
-    return getsun('30.2', '31.21', $pro['ptime']);
-    ;
+    return getsun($pro['Longitude'], $pro['Latitude'], $pro['ptime']);
 }
 ?>
 
 
 <style>
-    
 
-   
+
+
 </style>

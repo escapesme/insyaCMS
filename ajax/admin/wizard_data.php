@@ -7,6 +7,21 @@ $typ = $_POST['type'];
 
 $valuesData = $lib->util->data->updateStringTorray($_POST['data']);
 
+
+
+$filds = array(
+    "tmorecss" => array(
+        "type" => "text",
+        "id" => "title",
+        "class" => "optionData",
+        "title" => "Title",
+        "value" => $valuesData['title']
+    )
+);
+$lib->forms->filds = $filds;
+$data .= $lib->forms->_render_form();
+
+
 if ($typ == "Sesstion_data") {
     $filds = array(
         "SesstionName" => array(
@@ -103,6 +118,10 @@ if ($typ == "Sesstion_data") {
     $lib->forms->filds = $filds;
     $data .= $lib->forms->_render_form();
 }
+
+
+
+
 
 
 $filds = array(

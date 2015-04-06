@@ -52,13 +52,15 @@ function mod_news_Ticker($pro) {
 
     $(function() {
 
-
+        var dirStatus = "left";
         $(document).ready(function() {
 
             var speed = 1;
-            
-            
-            var pwidth= $('.marquee').outerWidth();
+
+
+
+
+            var pwidth = $('.marquee').outerWidth();
             var items, scroller = $('.marquee ul');
 
 
@@ -72,6 +74,7 @@ function mod_news_Ticker($pro) {
 
             scroll();
             function scroll() {
+                 dirStatus="left";
                 items = scroller.children();
                 var scrollWidth = items.eq(0).outerWidth();
                 scroller.animate({'left': pwidth}, 120 * 100 / speed, 'linear', changeFirst);
@@ -79,6 +82,7 @@ function mod_news_Ticker($pro) {
 
 
             function scrollRight() {
+                dirStatus="right";
                 items = scroller.children();
                 var scrollWidth = items.last().outerWidth();
                 scroller.animate({'left': -scroller.outerWidth()}, 120 * 100 / speed, 'linear', changeLast);
@@ -101,7 +105,15 @@ function mod_news_Ticker($pro) {
             $(".marquee ul").hover(function() {
                 $(this).stop();
             }, function() {
-                scroll();
+
+                if (dirStatus === "left") {
+                    scroll();
+                } else {
+
+
+                    scrollRight();
+                }
+
             });
 
 

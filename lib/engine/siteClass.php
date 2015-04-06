@@ -81,6 +81,8 @@ class siteClass {
         $us = explode(",", $g);
 
 
+
+
         $i = 0;
         foreach ($us as $a) {
             if ($a != "") {
@@ -103,7 +105,7 @@ class siteClass {
         $normal = $this->getFromStatus($this->lib->variables->statusNormal);
         $post = $this->getStatusData($_POST[$this->lib->variables->statusVariableName]);
         $session = $this->getStatusData($_SESSION[$this->lib->variables->statusVariableName]);
-        $other = $this->getStatusData($this->otherStatus,"id");
+        $other = $this->getStatusData($this->otherStatus, "id");
 
 
         switch ($type) {
@@ -126,6 +128,8 @@ class siteClass {
                 $r = array_merge((array) $normal, (array) $post, (array) $get, (array) $session, (array) $other);
                 break;
         }
+
+
 
 
         foreach ($r as $rr) {
@@ -182,7 +186,7 @@ class siteClass {
 
                 if ($s != "") {
 
-                    print_r($sttaus);
+                    //print_r($sttaus);
 
                     $datasql = $this->lib->db->get_row("sys_site_status", "*", "id='" . $s . "'");
                     //  foreach ($datasql as $d) {
@@ -232,10 +236,27 @@ class siteClass {
 
 
                 foreach ($datasql as $d) {
+
+
                     if ($s['id'] == $d['cat_id']) {
                         $return = true;
                         break;
                     }
+                }
+            }
+        }
+
+
+        return $return;
+    }
+
+    function checkStatusAlias($status) {
+        $sttaus = $this->getActStatus();
+        if (is_array($sttaus)) {
+                        foreach ($sttaus as $s) {
+                if ($s['alias'] == $status) {
+                    $return = true;
+                    break;
                 }
             }
         }

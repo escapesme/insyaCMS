@@ -31,8 +31,10 @@ input, textarea, select {
     color: #6d3c07;
     border: 1px #eee solid;
     background-color: #fff;
-    padding: 10px;
+    padding: 7px;
     color: #000;
+    font-size: 12px;
+    opacity: 0.9;
 }
 
 th, td, caption {
@@ -50,7 +52,7 @@ a, a:active, a:visited {
 
 }
 
-button,.button,input[type="button"]{
+button,.button,input[type="button"],.addMore ,.wstep .wnext, .wstep .wprev{
     background: #a95533;
     color:#fff;
     border-radius: 3px;
@@ -178,6 +180,9 @@ body {
 
 }
 
+
+
+//
 div.nivo-caption{
     opacity: 0;
 }
@@ -305,6 +310,14 @@ ul .menu_itm:last-child {
 }
 
 
+.slideshow .left .menu_itm.li_active a, .left .menu_itm.li_active a
+{
+
+
+
+    color: #f9da8f;
+
+}
 
 
 
@@ -410,6 +423,7 @@ div.modig_blocTitle a{
 
     float: right;
     clear: none;
+    margin-right: 4px;
 }
 
 .footer{
@@ -501,9 +515,9 @@ div.modig_blocTitle a{
 }
 
 .main_top_left .mod-title{
-    width: 120px;
+    width: 128px;
     float: left;
-    margin: 19px 0px 0px 10px;
+    margin: 14px 0px 0px 8px;
     padding: 0;
     font-size: 18px;
     height: 20px;
@@ -512,28 +526,40 @@ div.modig_blocTitle a{
 }
 
 .main_bottom .mod_block{
-    float:left;
-    width: 218px;
+    float: none;
+    display: inline-block;
+    width: 209px;
     height: 265px;
     background: url('images/package-bg.png') no-repeat;
     margin: 33px 2px 0;
-    text-align: justify;
-
+    text-align: justify;  overflow: hidden;
 }
 
 .main_bottom  .modig_blocTitle{
 
-    text-align: center;
-    font-size: 16px;
-    margin: 20px 0 0 18px;
-    font-weight: bold;
-    width: 180px;
-}
-.main_bottom   .modig_blocTitle a{
-    color: #1B1A14;
-    font-size:16px; 
+    padding: 27px 20px  13px 25px;text-align: center;
 
 }
+.main_bottom   .modig_blocTitle a{
+    font-weight: normal;
+    color: #222;
+    line-height: 30px;
+    margin-bottom: 8px;
+    font-size: 128%;
+    line-height: 1.5em;
+    clear: both;
+
+}
+
+
+
+.main_bottom .itemBlock_des{
+    padding: 0px 25px;}
+
+
+
+
+
 
 .weather {
 
@@ -549,7 +575,7 @@ div.modig_blocTitle a{
     height: 150px;
 
 
-    margin: 12px 19px;
+    margin: 0px 19px;
     overflow: hidden;
 
 }
@@ -696,6 +722,12 @@ div.modig_blocTitle a{
 .footer .menu{
 
     margin-top: -3px;
+
+
+    margin-left: 36px;
+
+    margin-right: -60px;
+
 }
 
 .footer .menu_itm{
@@ -703,6 +735,8 @@ div.modig_blocTitle a{
     float: left;
     width: 24%;
     line-height: 24px;
+    text-align: left;
+    /* margin-left: 8%; */
 }
 .footer .menu_itm a{
 
@@ -1057,7 +1091,7 @@ div.tooltip iframe{
     margin: 1%;
 }
 .field-input ,.field-input input{
-    width: 95%;
+    width: 98.3%;
 }
 .aduinfo{
     clear: both;
@@ -1079,14 +1113,17 @@ div.tooltip iframe{
 
 
 
-    font-size: 16px;font-weight: normal;
+    font-size: 14px;font-weight: normal;
 
 
-    font-family: 'Oswald', sans-serif;   
+    font-family: 'Open Sans', sans-serif;   
 
 
 
     font-weight: 300;
+
+
+    margin-left: -3px;
 
 
 }
@@ -1096,38 +1133,49 @@ select.time{
 }
 
 .textarea ,textarea{
-    width: 99%;
+    width: 98.6%;
     min-height: 150px;
 
     margin-left: 0.5%
 }
-.addMore{
-    background: url("images/plus.png");
-    float: right;
-    margin-right: 20px;width: 80px;
-    height: 25px;
-    background-repeat: no-repeat;
-    list-style: none;
-    cursor: pointer;
-    font-size: 0.1px;
-    color:transparent;
+.addMore,.wstep .wnext, .wstep .wprev{
+    float: left;
+    /*  background: url("images/plus.png");
+      /float: right;
+      margin-right: 20px;width: 80px;
+      height: 25px;
+      background-repeat: no-repeat;
+      list-style: none;
+      cursor: pointer;
+      font-size: 0.1px;
+      color:transparent;*/
+    margin-top: -35px;
+    margin-left: 159px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 17px;
 }
+
+
+
 
 
 
 .wstep .wnext,.wstep .wprev{
-    background:center url("images/next2.png");
-    font-size: 0.1px;
-    color:transparent;
-    width:58px;
-    height:20px; float: right; 
+    /*  background:center url("images/next2.png");
+      font-size: 0.1px;
+      color:transparent;
+      width:58px;
+      height:20px;*/ float: right; 
+    margin-right: 1%;
 }
 
 .wstep .wprev{
-    background: center url("images/bt_prv.png") no-repeat;
-    width:79px;
+    /*  background: center url("images/bt_prv.png") no-repeat;
+      width:79px;*/
     float: left;
 
+    margin-left: 6px;
 }
 
 
@@ -1250,14 +1298,7 @@ select.time{
         ;
     margin-top: -13px;
 }
-.home .itemBlock{
-    float: none;
-    display: inline-block;
-    width: 209px;  height: 265px;
-    background-image: url('images/package-bg.png');
-    margin: 33px 2px 0;
-    text-align: justify;  overflow: hidden;
-}
+
 .home img{
     display: none
 
@@ -1278,15 +1319,6 @@ select.time{
 
 
 
-
-.home .itemBlock_des{
-    padding: 0px 25px;}
-
-
-.home .itemBlock_title{
-    padding: 27px 20px  13px 25px;text-align: center;
-
-}
 
 .home .pageTitle{
     display: none
@@ -1345,12 +1377,15 @@ a , .light{
     color:#9f3500;
 }
 .mainTabel{
-    width: 100%;
+    width: 97.9%;
 
     border:0;          /* Replace border */
     border-spacing: 0px; /* Replace cellspacing */
     border-collapse: collapse; 
     margin-top: 0px;
+    margin-bottom: 6px;
+    margin-left: 1%;
+    opacity: 0.9;
 }
 
 h2.title{
@@ -1395,13 +1430,18 @@ h3.title{
 .formError{
     color:red
         ;
-    min-width: 200px;
+    /* min-width: 200px; */
+    background: #fff;
+    padding: 5px;
+    border: 1px red solid;
 }
 
 
 .datarow .title{
-    width: 161px;
+    width: 186px;
     margin-top: 15px;
+    margin-left: 6px;
+    opacity: 0.9;
 }
 
 
@@ -1414,78 +1454,120 @@ td button,td .button, td input[type="button"]{
 
 
 .wstep._1 .setpesBar{
-    
-  display: none  
+
+    /* display: none  
+    */
+
+    /* clear: both; */
+
+    /* width: 100%; */
+
+    /* position: relative; */
+
 }
 
 .left .mod_block img,.left .mod_block .normal-button{
-    
+
     display: none
 }
 
 
 .CategoryMenu .mod-title {
-  width: 187px;
-  height: 33px;
-  background-image: url("images/package-bg2_0.png");
-  margin: auto;
-  font-size: 15px;
-  padding-top: 37px;
-  margin: 30px 2px 0px 50px;
-  color:#000;
-  text-align: center;
+    width: 187px;
+    height: 33px;
+    background-image: url("images/package-bg2_0.png");
+    margin: auto;
+    font-size: 15px;
+    padding-top: 37px;
+    margin: 30px 2px 0px 50px;
+    color:#000;
+    text-align: center;
 }
 
 .CategoryMenu  .innend{
 
-  background-image: url("images/package-bg2_2.png");
-  width: 187px;
-  height: 60px;
-  
+    background-image: url("images/package-bg2_2.png");
+    width: 187px;
+    height: 60px;
 
-  margin: 13px 2px 0px 50px;
+
+    margin: 13px 2px 0px 50px;
 
 }
 
 
 
 .CategoryMenu  .myinn {
-  padding-right: 25px;
-  padding-top: 10px;
-  background-image: url("images/package-bg2_1.png");
-  background-repeat: repeat-y;
-  margin: 0px 2px 0px 50px;
-  text-align: justify;
-  width: 194px;
-  margin-bottom: -13px;
-  padding-bottom: 7px;
+    padding-right: 25px;
+    padding-top: 10px;
+    background-image: url("images/package-bg2_1.png");
+    background-repeat: repeat-y;
+    margin: 0px 2px 0px 50px;
+    text-align: justify;
+    width: 194px;
+    margin-bottom: -13px;
+    padding-bottom: 7px;
 }
 
 .CategoryMenu  .myinn .modig_blocTitle {
-  width: 130px;
-  background-image: url("images/innli.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  border-bottom: 1px dashed #604426;
-  padding-left: 20px;
-  margin-bottom: 0px;
+    width: 130px;
+    background-image: url("images/innli.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    border-bottom: 1px dashed #604426;
+    padding-left: 20px;
+    margin-bottom: 0px;
 }
 .CategoryMenu  .myinn a {
 
 
 
 
-  color: #663300;
-  text-decoration: none;
+    color: #663300;
+    text-decoration: none;
 }
 
 
 .CategoryMenu  .myinn a:hover{
     color:#000;
-    
-    
+
+
 }
 
 .CategoryMenu  .more{
     display: none
 }
+
+.main_bottom {
+    text-align: center
+        ;clear: both;
+    width: 100%;
+}
+.theme-default .nivo-caption ,.nivo-directionNav{
+    display: none !important
+}
+
+.arrival-details {
+
+    width:99%;
+}
+
+.ui-datepicker-inline{
+    width: 99%;
+    opacity: 0.9;
+}
+
+.tabelRes{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.datarow{
+
+    margin-bottom: 44px;
+}
+

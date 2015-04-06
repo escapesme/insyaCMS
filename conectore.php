@@ -12,7 +12,13 @@ $header = '
 <link type = "text/css" href = "/lib/css/utile.css" rel = "stylesheet" />
 
 
-<link type = "text/css" href = "http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.css" rel = "stylesheet" />
+
+<link type = "text/css" href = "/includes/js/jqueryUi/css/jquery-ui.css" rel = "stylesheet" />
+<link type = "text/css" href = "/includes/js/jqueryUi/css/jquery-ui.structure.css" rel = "stylesheet" />
+
+<link type = "text/css" href = "/includes/js/jqueryUi/css/jquery-ui.theme.css" rel = "stylesheet" />
+
+
 
 <script type = "text/javascript" src = "/includes/js/jquery.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

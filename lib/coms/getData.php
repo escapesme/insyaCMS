@@ -176,7 +176,7 @@ class getData {
                     $d['permission_all'] == "1" || $this->lib->util->chkInPermission($d['id'], $pPermission) == true
             ) {
 
-                if ($this->lib->site->isInStatus($d['id'], $d['all_site'], "menu")) {
+                if ($this->lib->site->isInStatus($d['id'], $d['all_status'], "menu")) {
 
 
 

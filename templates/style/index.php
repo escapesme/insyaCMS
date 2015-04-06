@@ -56,7 +56,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript">
 
-        </script>
+    </script>
 
 
 
@@ -111,13 +111,20 @@
 
                         <div class='main_top_left modcont'><?= getModule("main_top_left") ?></div>
                         <div class='main_top_right modcont'><?= getModule("main_top_right") ?></div>
-                     
-                            <div class='maindatabottom toclear'> 
-                                <div class='left toleft modcont'><?= getModule("left") ?></div>
-                                <div class='main  modcont'>
-                                    <div class='pageTitle'><?= getPageTitle() ?></div>
-                                    <?= $getmymani ?></div></div>
-                      
+
+
+
+                        <? if (!ishome()){ ?>
+                        <div class='maindatabottom toclear'> 
+                            <div class='left toleft modcont'><?= getModule("left") ?></div>
+                            <div class='main  modcont'>
+                                <div class='pageTitle'><?= getPageTitle() ?></div>
+                                <?= $getmymani ?></div></div>
+
+
+
+
+                        <?} ?>
 
 
                         <div class='main_bottom modcont'><?= getModule("main_bottom") ?></div>

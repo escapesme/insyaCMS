@@ -5,8 +5,13 @@ and open the template in the editor.
 -->
 <root>
     <fields>
-        <citycode type='text' value='EGXX0004' title='citycode' name='citycode'
-        />        
+        <citycode type='text' value='EGXX0004' title='citycode' name='citycode'/>    
+        <TimeAdjustment type='text' value='2' title='TimeAdjustment' name='TimeAdjustment'/>        
+    
+        <city type='text' value='' title='city' name='city'/>        
+
+                
+                
     </fields>
 </root>
 

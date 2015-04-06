@@ -22,13 +22,13 @@ function fiz_reservations_login($p, $l) {
             "pclass" => " _50",
             "title" => "its_id",
             "name" => "its_id"
-        ), "next_res" => array(
+        ), "" => array(
             "type" => "button",
             "pclass" => " _100",
-            "class" => "next_res",
+            "class" => "",
             "title" => $l['lgoinsubmit'], "value" => $l['lgoinsubmit'],
             "name" => "its_id"
-            , "moreAttra" => "data-to='/FizReservations/' data-do='login' "
+            , "moreAttra" => "data-to='/Reservations/' data-do='login' "
         )
     );
     $lib->forms->filds = $filds;
@@ -50,7 +50,7 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
     $r .= getreRowsAc($odata['user_id'], $ids);
     $r .= "</tbody></table></div><div class='datarow'>";
 
-    $r .= "<h3 class='title'>" . $l['ActiveReservations'] . "</h3>";
+    $r .= "<h3 class='title'>" . $l['PreviousReservations'] . "</h3>";
 
     $r .= "<table class = 'mainTabel itsTable'><thead>"
             . "<th>" . $l['Reservation_ID'] . "</th>"
@@ -91,12 +91,10 @@ function getreRowsAc($user_id, $ids) {
 
 
 
-            echo $lib->util->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) . "<br/>";
-
-            if ($lib->util->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) > 0) {
+            if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) > 0) {
                 $r .= "<tr><td>" . $d['id'] . "</td><td>" . count($myxref) . "</td>"
-                        . "<td>" . $myxref[0]['arrival_date'] . "</td>"
-                        . "<td>" . $myxref[0]['departure_date'] . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "<td><input data-rid = '" . $d['id'] . "' type = 'button' value = 'delete' class = 'delete_its'/></td></tr>";
             }
         }
@@ -137,10 +135,10 @@ function getreRows($user_id, $ids) {
 
 
 
-            if ($lib->util->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) <= 0) {
+            if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) <= 0) {
                 $r .= "<tr><td>" . $d['id'] . "</td><td>" . count($myxref) . "</td>"
-                        . "<td>" . $myxref[0]['arrival_date'] . "</td>"
-                        . "<td>" . $myxref[0]['departure_date'] . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "</tr>";
             }
         }

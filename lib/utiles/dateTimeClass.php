@@ -52,6 +52,27 @@ class dateTimeClass {
         return $dt;
     }
 
+    function dateTimeFromdb($data) {
+
+
+        $datas = explode(' ', $data);
+
+        $newdate = explode('-', $datas[0]);
+
+        if (isset($newdate) && $newdate[0] != "") {
+
+            $l = explode(" ", $newdate[2]);
+
+            $dt = $l[0] . "/" . $newdate[1] . "/" . $newdate[0];
+
+            $dt = str_replace('//', '', $dt);
+        } else {
+            $dt = $data;
+        }
+
+        return $dt ." ". $datas[1];
+    }
+
     function updateDBDates($r, $type = "") {
 
         if ($type != "modified") {
@@ -127,6 +148,15 @@ class dateTimeClass {
 
         $date1 = strtotime($startDate . " 0:00:00");
         $date2 = strtotime($endDate . " 23:59:59");
+        $res = (int) (($date2 - $date1) / 86400);
+
+        return $res;
+    }
+
+    function howManyDaysTime($startDate, $endDate) {
+
+        $date1 = strtotime($startDate);
+        $date2 = strtotime($endDate);
         $res = (int) (($date2 - $date1) / 86400);
 
         return $res;

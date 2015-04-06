@@ -200,7 +200,7 @@ $(function() {
 <td><input class='button removeTabelRes' value='remove'  data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>";
 
 
-            $(".tabelRes table tbody").append(html).hide().fadeIn(1000);
+            $(".tabelRes table tbody").append(html);
 
             if (status !== "open") {
                 $(".Mumin_ids").val($(".Mumin_ids").val() + "," + data['Mumin_id']);
@@ -209,11 +209,20 @@ $(function() {
         } else {
 
 
-            var html = "<table class='mainTabel'><thead><tr><th>ITS ID</th><th>Name</th></tr></thead><tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr></tbody></table>";
+            var html = "<table class='mainTabel'>\n\
+<thead><tr><th>ITS ID</th><th>Name</th></tr></thead>\n\
+<tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr></tbody></table>";
+            
+            
+            
+         
+            
+            
+            
             if (status !== "open") {
                 $(".Mumin_ids").val(data['Mumin_id']);
             }
-            $(".tabelRes").html(html).hide().fadeIn(1000);
+            $(".tabelRes").html(html);   
 
         }
 

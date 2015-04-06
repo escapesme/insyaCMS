@@ -93,7 +93,7 @@ function news_Ticker_viewdatat($pro, $all, $thisTable, $thiscatgoriesTable) {
 
 
 
-   // $returnData.= "<div class='" . $thisTable . " modig_all'>";
+    // $returnData.= "<div class='" . $thisTable . " modig_all'>";
     for ($i = 0; $i < $pro['numberView']; $i++) {
 
 
@@ -103,9 +103,20 @@ function news_Ticker_viewdatat($pro, $all, $thisTable, $thiscatgoriesTable) {
         if (isset($all[$i]['id']) && trim($all[$i]['id']) != "") {
 
             if ($thiscatgoriesTable != "") {
-                $datacat = $lib->db->get_row($thiscatgoriesTable, "*", "id='" . $all[$i]['cat_id'] . "'");
+                $cts = explode(",", $all[$i]['cat_id']);
+
+
+
+                $datacat = $lib->db->get_row($thiscatgoriesTable, "*", "id='" . $cts[1] . "'");
                 $url = $lib->util->createURL($thisTable, $datacat['alias'], $all[$i]['alias']);
             }
+
+
+
+            if (isset($all[$i]['ex_link']) && $all[$i]['ex_link'] != "") {
+                $url = $all[$i]['ex_link'];
+            }
+
 
             $imagePath = "/uploads/images/" . $all[$i]['th_image'];
             if (!is_file($imagePath)) {
@@ -145,7 +156,7 @@ function news_Ticker_viewdatat($pro, $all, $thisTable, $thiscatgoriesTable) {
     }
 
 
-   // $returnData.= "</div>";
+    // $returnData.= "</div>";
     return $returnData;
 }
 
@@ -153,13 +164,7 @@ function news_Ticker_viewdatat($pro, $all, $thisTable, $thiscatgoriesTable) {
 function news_Ticker_categories_viewdatat($pro, $all, $thisTable, $thiscatgoriesTable) {
     global $lib;
     // $alias = $lib->util->getMenuAlias($thisTable);
-
-
-
-
-
-
-   // $returnData.= "<div class='" . $thisTable . " modig_all'>";
+    // $returnData.= "<div class='" . $thisTable . " modig_all'>";
     for ($i = 0; $i < $pro['numberView']; $i++) {
         if (isset($all[$i]['id']) && trim($all[$i]['id']) != "") {
 
@@ -210,7 +215,7 @@ function news_Ticker_categories_viewdatat($pro, $all, $thisTable, $thiscatgories
         }
     }
 
-  //  $returnData.= "</div>";
+    //  $returnData.= "</div>";
     return $returnData;
 }
 ?>
