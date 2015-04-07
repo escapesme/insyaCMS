@@ -17,15 +17,7 @@ function viewItem($id, $pro, $lng) {
     $d = $lib->db->get_row('com_content_article', '', 'id=' . $id);
 
 
-
-
-
-
     $lib->util->headerData($d['description'], $d['keywords'], $d['header']);
-
-
-
-
     $urluser = $lib->util->createURL("com_content_article", $d['author'], "", "author");
     $urldate = $lib->util->createURL("com_content_article", $d['date'], "", "date");
 
@@ -55,10 +47,20 @@ function viewItem($id, $pro, $lng) {
 
     $data.="<div class = 'itemBlock_imgae_cont'>";
 
-
     //   if (isset($pro['catPageViewImage']) && $pro['catPageViewImage'] == "1" && $pro['thimageinBody'] == "1") {
 
-    $imagePath = " /uploads/images/" . $d['th_image'];
+    $imagePath = "/uploads/images/";
+    
+    
+    if (isset($d['th_image']) && $d['th_image'] != "") {
+        $imagePath .= $d['th_image'];
+
+    } else {
+
+        $imagePath .= $d['image'];
+
+    }
+
     if (isset($pro['catPageViewDate']) && $pro['catPageViewDate'] == "1") {
 
         $data.="<div class='itemBlock_date info'><div class='data'><span>" . $date->format('j') . "</span><span>" . $date->format('F') . " </span><span>" . $date->format('Y') . "</span></div><span class=\"triangle\"></span></div>";
@@ -66,7 +68,7 @@ function viewItem($id, $pro, $lng) {
     $data.= "
 
     
-    <img title = \"" . $d['dec'] . "\"  alt=\"" . $d['title'] . "\"  class=' itemBlock_imgae' src='" . $imagePath . "' />
+    <img title = \"" . $d['dec'] . "\"  alt=\"" . $d['title'] . "\"  class='mianitem itemBlock_imgae' src='" . $imagePath . "' />
     <div class='light img'></div></div>";
     //   }
 
@@ -99,11 +101,11 @@ function viewItem($id, $pro, $lng) {
 //    if (isset($pro['catPageViewTitle']) && $pro['catPageViewTitle'] == "1") {
 
 
-        $data.="<div class = 'itemBlock_title'><a title = 'More' href = '" . $url . "'>" . $d['title'] . "</a></div>";
+    $data.="<div class = 'itemBlock_title'><a title = 'More' href = '" . $url . "'>" . $d['title'] . "</a></div>";
 //    }
 
-    
-    
+
+
     if ($pro['introInBody'] == "1") {
 
         $data.="<div class='art_intro'>" . $d['des'] . "</div>";

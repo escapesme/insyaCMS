@@ -375,7 +375,10 @@ class htmlClass {
                     $input_html = '</div></div>';
 
                     break;
+                case 'captcha':
+                    $input_html = '<div class="g-recaptcha" data-sitekey="6Le-9wQTAAAAAG39Q8tCok18s1e7Iuf-ZQe9v00e"></div>';
 
+                    break;
 
                 case 'url':
                     $inputClass .= "validate[custom[url]]";
@@ -475,23 +478,23 @@ class htmlClass {
 
 
                      */
+                    /*
+
+
+                      foreach ($options as $k => $v) {
+
+                      if ((intval($fild['datamax']) >= intval($k) && intval($fild['datamin']) <= intval($k))
+                      ) {
 
 
 
-                    foreach ($options as $k => $v) {
-
-                        if ((intval($fild['datamax']) >= intval($k) && intval($fild['datamin']) <= intval($k))
-                        ) {
-
-
-
-                            $new[$k] = $v;
-                        }
-                    }
+                      $new[$k] = $v;
+                      }
+                      } */
 
 
 
-                    $options = $new;
+                    //   $options = $new;
 
 
 
@@ -793,6 +796,10 @@ class htmlClass {
                     case'endblock':
                     case'html':
                     case'label':
+                        
+                                            case'captcha':
+
+                        
                     case'getXrefData':
 
 

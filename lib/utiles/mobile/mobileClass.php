@@ -83,7 +83,7 @@ class mobileClass {
         $urldate = $lib->util->createURL("com_content_article", $d['date'], "", "date");
         $urlcat = $lib->util->createURL("com_content_article", $catData['alias']);
 
-        $returnData.= "<li id='" . $d['id'] . "' class='itemBlock'><a href='".$d['ex_link']."'>"
+        $returnData.= "<li id='" . $d['id'] . "' class='itemBlock'>"
                 . "";
 
 
@@ -93,7 +93,14 @@ class mobileClass {
         // if (isset($pro['catPageViewTitle']) && $pro['catPageViewTitle'] == "1") {
         //   }
 
-        
+                $returnData.= " <a title='More' href='" . $url . "'>";
+                
+                
+                if ($d['ex_link']!=""){
+                    
+                    $url=$d['ex_link'];
+                    
+                }
         
                 $returnData.="<h2 class = ' itemBlock_title info'>" . $d['title'] . "</h2>";
 
@@ -102,7 +109,7 @@ class mobileClass {
             $returnData.="<div class='itemBlock_date info'><div class='data'><span>" . $date->format('j') . "</span><span>" . $date->format('F') . " </span><span>" . $date->format('Y') . "</span></div><span class=\"triangle\"></span></div>";
         }
         
-                $returnData.= " <a title='More' href='" . $url . "'>";
+        
         if (isset($pro['catPageViewImage']) && $pro['catPageViewImage'] == "1") {
             $imagePath = "/uploads/images/" . $d['th_image'];
             $returnData.= "<img title = \"" . $d['title'] . "\"  alt=\"" . $d['title'] . "\"   class='lazy itemBlock_imgae'  data-original='" . $imagePath . "' src='/images/pixel.gif' />";

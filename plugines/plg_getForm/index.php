@@ -13,11 +13,11 @@ function plg_getForm($data, $lang) {
     /* @var $lib  libs\libs */
     global $lib;
 
-    $data = $lib->forms->getFiledsFormStrign("db", "com_form", $data['formId'], "data");
 
-    
-    
-    
+    if (isset($data['formId']) && $data['formId'] != "" && $data['formId'] != "0") {
+       $data = $lib->forms->getFiledsFormStrign("db", "com_form", $data['formId'], "data");
+    }
+
 
     return $data;
 }

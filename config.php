@@ -1,13 +1,9 @@
 <?php
 
-
-
-
-$setting["db_name"] = 'escapesm_gitfaiz';
-$setting["db_user"] = 'escapesm_newfaiz';
-$setting["db_pass"] = 'newfaiz5152';
+$setting["db_name"] = 'insya';
+$setting["db_user"] = 'root';
+$setting["db_pass"] = '';
 $setting["db_host"] = 'localhost';
-
 
 
 
@@ -50,9 +46,4 @@ $sms['userName'] = "";
 $sms['password'] = "";
 $sms['lang'] = "A";
 $sms['MSMUrl'] = "http://217.52.114.3//kannelSending/Service.asmx?WSDL";
-
-
-
-
-
 ?>

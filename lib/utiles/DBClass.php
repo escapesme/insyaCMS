@@ -705,7 +705,7 @@ class dbClass {
 
         $moreWhere .= " where  1=1 ";
 
-        if (!$this->getEnable) {
+        if ($this->getEnable) {
             $moreWhere .= " and  enabled='1'";
         } else if ($this->getDisable) {
             $moreWhere .= " and  enabled='0'";
@@ -739,7 +739,7 @@ class dbClass {
 
         $this->returnSQL = $sql;
 
-//echo $sql;
+
 
         if ($debug) {
             debug($sql, $debug);

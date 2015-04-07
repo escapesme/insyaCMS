@@ -16,11 +16,6 @@
 
 
 
-  $lang['myUploadsimagesurl'] = "http://fiz.qlegal.net/uploads/images/";
-  $lang['myimagesurl'] = "http://fiz.qlegal.net/templates/style/css/images/";
-  $lang['userurl'] = "http://fiz.qlegal.net/account/#login";
-
-
 
 
 

@@ -55,7 +55,7 @@ a, a:active, a:visited {
 
 }
 
-button,.button,input[type="button"],.addMore ,.wstep .wnext, .wstep .wprev{
+button,.button,input[type="button"],input[type="submit"],     .addMore ,.wstep .wnext, .wstep .wprev{
     background: #a95533;
     color:#fff;
     border-radius: 3px;
@@ -419,7 +419,7 @@ div.modig_blocTitle a{
 
 .main {
     padding-left: 10px;
-    width: 628px;
+    width: 620px;
 
     background: none;
     /* margin-left: 290px; */
@@ -954,7 +954,7 @@ div.light_square .pp_content{
 
 .pagesbar .next{
     background: url('images/bt_next.png') no-repeat;
-    color:transparent;   
+    /* color:transparent; */   
     height:15px;   
     width:47px;
     float:right;
@@ -962,20 +962,21 @@ div.light_square .pp_content{
 
 .pagesbar .prev{
     background: url('images/bt_prv.png')  no-repeat;  
-    color:transparent;
+    /* color:transparent; */
     height:15px;
     width:79px;   
     float:left;
 }
 
 .pagesbar  .fpage{
-    display: none;
+    /* display: none; */
+    margin-right: 39px;
 }.pagesbar {
     clear: both;
     margin: auto;  
     height: 30px;
 
-    width: 200px;
+    width: 250px;
 }
 .linesp{
     margin: auto;
@@ -1592,4 +1593,22 @@ td button,td .button, td input[type="button"]{
 
     border-radius: 0px;
 
+}
+
+
+.next.disable{
+    display: none
+}
+
+.rc-anchor{
+    margin-left: 50px; 
+}
+
+.gustbook{
+    width:60%;
+    margin-left: 30px;
+}
+
+img.mianitem{
+    display: none;
 }

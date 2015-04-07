@@ -9,11 +9,13 @@ and open the template in the editor.
 
 <root>
     
-    <from>| From </from>
-    <addmsg>add</addmsg>
-    
-        
-        
+    <from>From </from> 
+    <addmsg>Thank you for your comments to our guest book!</addmsg>
+    <name>Name</name>   
+    <comment>comment</comment>
+    <submit>submit</submit>
+    <country>country</country>       <captchaError>Please verify captcha before submitting the form!</captchaError>
+
      
     
 </root>
