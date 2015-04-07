@@ -24,16 +24,24 @@ function faiz_res_board($data, $l) {
         $odata = $lib->coms->faiz->getUserDataByID($_SESSION['razaOwnerID']);
 
 
+        print_r($odata);
+
+
+
+        $_SESSION["faiz-new-reservation"]['email'] = $odata['email'];
+        $_SESSION["faiz-new-reservation"]['mobile'] = $odata['MOBILE_NO'];
+
+
+
+
+
 
         $data .= "<h3>" . $l['lgointitle'] . $odata['FullName'] . " (" . $odata['Mumin_id'] . ") " . "</h3>";
 
-     
-        $data .= "<div class='restools toright'>" ;// $lib->forms->_render_form();
 
-        $data .= "<a href=\"/rex/step/2/\" class=\"button\">".$l['NewReservation']."</a><a href=\"#\" class=\"button  logoutbt\">logout</a></div>";
+        $data .= "<div class='restools toright'>"; // $lib->forms->_render_form();
 
-
-
+        $data .= "<a href=\"/rex/step/2/\" class=\"button\">" . $l['NewReservation'] . "</a><a href=\"#\" class=\"button  logoutbt\">logout</a></div>";
 
         $ressettings = $lib->db->get_row("fiz_reservation_settings");
 

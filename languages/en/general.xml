@@ -16,6 +16,6 @@ and open the template in the editor.
     <phone>Phone</phone> 
     <email>Email</email> 
     <address>Address</address> 
-    <other> Other</other>           
-    <send> Send</send> 
+    <other>Other</other>           
+    <send>Send</send> 
 </root>

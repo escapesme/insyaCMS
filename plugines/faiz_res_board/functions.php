@@ -6,14 +6,14 @@
  * and open the template in the editor.
  */
 
+
+$dataresIDS = array();
+
 function fiz_reservations_login($p, $l) {
 
     /* @var $lib  \libs\libs */
     global $lib;
-
     $r = "";
-
-
     $r .= '<h2>' . $l['lgoinmsg'] . '</h2>';
 
     $filds = array(
@@ -47,8 +47,16 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
             . "<th>" . $l['actions'] . "</th>"
             . "</tr></thead>"
             . "";
-    $r .= getreRowsAc($odata['user_id'], $ids);
+    $r .= getreRowsAc($odata['user_id']);
+
+    $r .= getreRowsBygAc($odata['user_id']);
+
+
     $r .= "</tbody></table></div><div class='datarow'>";
+
+
+
+
 
     $r .= "<h3 class='title'>" . $l['PreviousReservations'] . "</h3>";
 
@@ -59,7 +67,10 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
             . "<th>" . $l['Departure_Date'] . "</th>"
             . "</tr></thead>"
             . "<tbody>";
-    $r .= getreRows($odata['user_id'], $ids);
+    $r .= getreRows($odata['user_id']);
+    $r .= getreRowsByg($odata['user_id']);
+
+
     $r .= "</tbody></table>";
 
     return $r;
@@ -68,15 +79,16 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
 function getreRowsAc($user_id, $ids) {
     /* @var $lib  \libs\libs */
     global $lib;
-    /*
-     * 
-     * select Date, TotalAllowance from Calculation where EmployeeId = 1
-      and Date >= '2011/02/25' and Date <= '2011/02/27'
-     */
+
+
+
     $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner = '" . $user_id . "' ");
 
 
     foreach ($ds as $d) {
+
+        $dataresIDS[$d['id']] = $d['reservation_id'];
+
 
 
         if (!in_array($d['id'], (array) $ids)) {
@@ -87,10 +99,6 @@ function getreRowsAc($user_id, $ids) {
                 $status = "Not Approved";
             }
             $myxref = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '" . $d['id'] . "' ");
-
-
-
-
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) > 0) {
                 $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td>" . count($myxref) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
@@ -109,16 +117,11 @@ function getreRowsAc($user_id, $ids) {
 function getreRows($user_id, $ids) {
     /* @var $lib  \libs\libs */
     global $lib;
-    /*
-     * 
-     * select Date, TotalAllowance from Calculation where EmployeeId = 1
-      and Date >= '2011/02/25' and Date <= '2011/02/27'
-     */
+
     $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner = '" . $user_id . "' ");
 
-
     foreach ($ds as $d) {
-
+        $dataresIDS[$d['id']] = $d['reservation_id'];
 
         if (!in_array($d['id'], (array) $ids)) {
 
@@ -128,11 +131,6 @@ function getreRows($user_id, $ids) {
                 $status = "Not Approved";
             }
             $myxref = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '" . $d['id'] . "' ");
-
-
-            ////0:00:00 " "
-
-
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) <= 0) {
@@ -146,6 +144,84 @@ function getreRows($user_id, $ids) {
 
 
 
+
+    return $r;
+}
+
+
+
+
+function getreRowsBygAc($user_id) {
+    /* @var $lib  \libs\libs */
+    global $lib;
+
+    
+    
+    $myxrefs = $lib->db->get_data("fiz_reservation_users_xref", "*", "user_id = '" . $user_id . "' ");
+
+    
+    foreach ($myxrefs as $myxref) {
+        
+            $resData = $lib->db->get_row("fiz_reservation", "*", "id = '" . $myxref['reservation_id'] . "' ");
+
+        
+        
+        
+        if (!in_array($d['id'], (array) $dataresIDS)) {
+
+            if ($d['approved'] == "1") {
+                $status = "Approved";
+            } else {
+                $status = "Not Approved";
+            }
+            
+            
+            if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) > 0) {
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td>" . count($myxrefs) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
+                        . "<td><input data-rid = '" . $resData['reservation_id'] . "' type = 'button' value = 'delete' class = 'delete_its'/></td></tr>";
+            }
+        }
+    }
+
+    return $r;
+}
+
+
+
+
+
+function getreRowsByg($user_id) {
+    /* @var $lib  \libs\libs */
+    global $lib;
+
+    
+    
+    $myxrefs = $lib->db->get_data("fiz_reservation_users_xref", "*", "user_id = '" . $user_id . "' ");
+
+    
+    foreach ($myxrefs as $myxref) {
+                    $resData = $lib->db->get_row("fiz_reservation", "*", "id = '" . $myxref['reservation_id'] . "' ");
+
+        
+        if (!in_array($d['id'], (array) $dataresIDS)) {
+
+            if ($d['approved'] == "1") {
+                $status = "Approved";
+            } else {
+                $status = "Not Approved";
+            }
+            
+            
+            if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) <= 0) {
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td>" . count($myxrefs) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
+                        . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
+                        . "</tr>";
+            }
+        }
+    }
 
     return $r;
 }

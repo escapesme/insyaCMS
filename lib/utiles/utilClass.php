@@ -700,11 +700,14 @@ class utilClass {
     }
 
     function readXmlDataString($file, $tag) {
-
+     if(is_file($file)){
         try {
+            
+       
             $xml = simplexml_load_string(file_get_contents($file));
             $data = array();
             $dnum = 0;
+            
             foreach ($xml->children() as $child) {
                 if ($child->getName() == $tag) {
 
@@ -726,7 +729,7 @@ class utilClass {
             }
         } catch (Exception $e) {
             echo ">>>" . $e->getMessage();
-        }
+        }}
 
 
         return $data;

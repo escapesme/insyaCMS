@@ -30,6 +30,7 @@
         <script type = "text/javascript" src = "/<?= $template_url ?>/js/my.js"></script>
 
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
         <script type = "text/javascript" src = "/<?= $template_url ?>/js/cufon-yui.js"></script>
         <script type = "text/javascript" src = "/<?= $template_url ?>/js/Trajan_Pro_400-Trajan_Pro_700.font.js"></script>

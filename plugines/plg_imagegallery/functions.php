@@ -12,7 +12,10 @@ function plgig_gatData($id, $pro) {
     global $lib;
 
 
-    $more = " order by `order` DESC ";
+        if (isset($pro['imagegallery']) && $pro['imagegallery'] != "" && $pro['imagegallery'] != "0") {
+
+
+        $more = " order by `order` DESC ";
 
     $datasql = $lib->util->getXrefData('com_images_gallery', $id, $more);
 
@@ -38,6 +41,11 @@ function plgig_gatData($id, $pro) {
             . '})'
             . '</script>';
     //   $returnData.= $this->u_slidedata($mydata, $id, $pro, "ac_images_gallery");
+     
+     
+        }
+     
+     
     return $mydata;
 }
 

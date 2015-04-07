@@ -14,8 +14,10 @@ function plg_videosgallery($data, $lang) {
 
 
 //return print_r($data,true);
+    if (isset($data['videogallery']) && $data['videogallery'] != "" && $data['videogallery'] != "0") {
 
- return plgvi_gatData($data['videogallery'], $data);
+        return plgvi_gatData($data['videogallery'], $data);
+    }
 }
 
 ?>

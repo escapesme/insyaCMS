@@ -1,8 +1,0 @@
-<root>
-  <fields>
-<field name="menu" title="manu Pkg" type="select"  selectDataTable = "def_menus"   selectTexttField = "title" selectValueField = "id"/>
-  </fields>
-</root>
-
-
-
