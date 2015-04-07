@@ -71,8 +71,11 @@ if ($_GET['status'] == "getits") {
     global $lib;
 
     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'] . ";getType__data");
-    $data['Mumin_id'] = "30385154";
+   /* $data['Mumin_id'] = "30385154";
     $data['FullName'] = "16dasdasd0";
+    
+    */
+    
     if ($data['FullName']) {
         $_SESSION['razaOwnerID'] = $lib->coms->faiz->saveUser($data);
     } else {
