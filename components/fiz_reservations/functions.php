@@ -1,3 +1,8 @@
+
+
+
+
+
 <?php
 /*
  * To change this template, choose Tools | Templates
@@ -10,6 +15,152 @@ function fiz_reservations_returnData($p, $l, $oid, $odata) {
 
     return fiz_razaTypes($p, $l, $oid, $odata);
 }
+
+function fiz_razaTypes($p, $l, $oid, $odata) {
+    /* @var $lib  \libs\libs */
+    global $lib;
+
+
+
+
+
+
+    $datas = $lib->db->get_data("fiz_raza_types");
+
+    global $ressettings;
+    // print_r($odata);
+    // //echo $odata['id'];
+    $ds = $lib->db->get_row("fiz_reservation_users_xref", "*", "user_id = '" . $odata['id'] . "' ");
+
+
+
+
+    $a = "";
+    $b = "";
+
+    $oldraza = "";
+    if (is_array($ds)) {
+        $rddata = $lib->db->get_row("fiz_reservation", "*", "id = '" . $ds['reservation_id'] . "' ");
+
+        if (isset($rddata['raza_type']) && $rddata['raza_type'] != "") {
+            $oldraza = $lib->db->get_row("fiz_raza_types", "*", "id=" . $rddata['raza_type']);
+        }
+
+
+        $a = "display:none;";
+        $b = "display:block;";
+    } else {
+        $a = "display:block;";
+        $b = "display:none;";
+    }
+
+
+
+// <editor-fold defaultstate="collapsed" desc="UpdateCouncet">
+
+
+    $filds = array(
+        "uc_email" => array(
+            "type" => "text",
+            "pclass" => " _50",
+            "title" => "email",
+            "name" => "uc_email",
+            "value" => $rddata['email']
+        ), "uc_phone" => array(
+            "type" => "text",
+            "pclass" => " _50",
+            "title" => "phone",
+            "name" => "uc_phone"
+            , "value" => $rddata['mobile']
+        ), "uc_do" => array(
+            "type" => "button",
+            "pclass" => " _100",
+            "class" => "uc_do ",
+            "title" => $l['lgoinsubmit'], "value" => $l['update_button'],
+            "name" => "uc_do"            , "moreAttra" => "data-to='/" . $_GET["alias"] . "/' "
+
+        )
+    );
+    $lib->forms->filds = $filds;
+
+
+    $rddata['here'] = "<a class='updatecontect'>here</a>";
+
+
+    $r .= "<div>" . $ressettings['des'] . "</div>" . "<div style = '$b' data-show='updataConectData'  class=' msg info showhtmllightbox'> " . $lib->language->updateText($l['updateCounect'], $rddata) . "</div ><div  style ='display:none;'  class='updataConectData'>"
+            . "<h2>Update contact details</h2>"
+            . $lib->forms->_render_form()
+            . "</div>"; // </editor-fold>
+
+
+
+
+    $r .= "<div style ='display:none;' class='mylightboxbg'><div   class=' mylightbox'><div   class=' mylightboxdata'><div id=\"cboxClose\"></div><div  id='fine-uploader'></div><div class='FileTable'></div></div></div></div>";
+
+    $r .= "<input class='res_id'  type='hidden' value='" . $rddata["id"] . "' /><div class='raza_type_body'>";
+
+    $r .= "<div class=''  > "
+    ;
+    $r .= "<input style='$a' type='button'  value='" . $l['ApplyforRaza'] . "' class='apply_for_raza' />";
+
+    $r .= razaActions("add", $oid, $l, $ds, $datas,$rddata['host_its_id']) . razaActions("edit", $oid, $l, $ds, $datas,$rddata['host_its_id']) . ""
+            . "<div style = '$b' class = 'raza_val_body $b '>"
+            . "<div class='msg info '> " . $l['raza_type_msg'] . "<span data-id = '" . $oldraza['id'] . "' data-host_its_id='" . $ds['host_its_id'] . "'   class = 'raza_type_val'>" . $oldraza['title'] . "</span><div class = 'des'></div>"
+            . " Click <a  class = 'change_button' />here </a> to " . $l['change_button'] . "  your Raza type request."
+            . "</div>"
+            . ""
+            
+            . "";
+    $r .= "<table class='mainTabel itsTable'>";
+    $r .= "<thead><tr>"
+            . "<th>" . $l['ejeemt'] . "</th>"
+            . "<th>" . $l['name'] . "</th>"
+            . "<th>" . $l['approved_status'] . "</th>"
+            . "<th>" . $l['actions'] . "</th>"
+            . "</tr></thead>"
+            . "<tbody class='restable'></tbody></table>";
+    $r .= "</div></div>";
+
+    return $r;
+}
+
+function razaActions($status, $oid, $l, $ds, $datas,$vhost) {
+
+
+    $btTitle = $l['update_button'];
+
+    $btClass = "update_button";
+
+    if ($status == "add") {
+        $btTitle = $l['apply_button'];
+        $btClass = "add_button_new";
+    }
+
+
+    $r .= "<div class=' $status razaoptions '  style='display:none;' ><ul>";
+
+    foreach ($datas as $data) {
+        $r .= "<li><input name='raza_type'  type='radio'  data-title='" . $data['title'] . "' class='raza_type' value='" . $data['id'] . "' />" . $data['title'] . "<spen>" . $data['des'] . "</spen>";
+
+        if (getviewmodules($oid, "host_its_id", $data['id'])) {
+            $r .= "<input name='host_its_id' value='" . $vhost . "' class='host_its_id' type='text' />";
+        } $r .= "<div class='safartext'></div></li>";
+    }
+
+
+
+    $r .= "</ul><input type = 'button' data-to='/" . $_GET["alias"] . "/' value = '" . $btTitle . "' class = '" . $btClass . "' /></div></div>";
+
+
+    return $r;
+}
+
+// <editor-fold defaultstate="collapsed" desc="Temp">
+
+
+
+
+
 
 function fiz_reservations_login($p, $l) {
 
@@ -30,10 +181,12 @@ function fiz_reservations_login($p, $l) {
         ), "" => array(
             "type" => "button",
             "pclass" => " _100",
-            "class" => "",
+            "class" => "res_actions ",
             "title" => $l['lgoinsubmit'], "value" => $l['lgoinsubmit'],
             "name" => "its_id"
-            , "moreAttra" => "data-to='/FizReservations/' data-do='login' "
+            , "moreAttra" => "data-to='/" . $_GET["alias"] . "/' "
+            . "data-do='login'"
+            . " data-status='lgoin' "
         )
     );
     $lib->forms->filds = $filds;
@@ -52,102 +205,98 @@ function fiz_reservations_craeteData($p, $l, $oid) {
 
 
 
-   // $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner='" . $oid . "' and Approved='1'");
-
-
-
-
-   // $odata = $lib->db->get_row("com_users", "*", "id='" . $oid . "'");
+    // $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner='" . $oid . "' and Approved='1'");
+    // $odata = $lib->db->get_row("com_users", "*", "id='" . $oid . "'");
 
 
 
 
     $r .= '<h2> Step 1: Update ArrivalDetails</h2>';
-         
-     $r.= $lib->forms->getFiledsFormStrign("db", "com_form","12", "data", "0");
+
+    $r.= $lib->forms->getFiledsFormStrign("db", "com_form", "12", "data", "0");
 
 // 
 
 
-/*
+    /*
 
-    $filds = array(
-        "mobile" => array(
-            "type" => "text",
-            "pclass" => " _50",
-            "title" => "Contact Number",
-            "name" => "mobile", "value" => $odata['mobile']
-        ), "email" => array(
-            "type" => "text",
-            "pclass" => " _50",
-            "title" => "email",
-            "name" => "Email",
-            "value" => $odata['email']
-        ), "forall" => array(
-            "type" => "button",
-            "pclass" => " _100",
-            "class" => "forall",
-            "value" => $l['forall']
-        )
-    );
-    $lib->forms->filds = $filds;
-    $r .= $lib->forms->_render_form();
-
-
-    foreach ($ds as $d) {
-
-        $uds = $lib->db->get_row("com_users", "*", "id='" . $d['user_id'] . "'");
-        $r.= "<div class='razaform'>";
-        $r.= "<h2>" . $uds['FullName'] . "</h2>";
-
-        $ex_data = $lib->db->get_row("fiz_extension", "*", "reservation_id='" . $d['id'] . "'");
-
-        if (isset($_SESSION['formraza'][$d['id']])) {
-            $olddata = $_SESSION['formraza'][$d['id']];
-        } else if (is_array($ex_data)) {
+      $filds = array(
+      "mobile" => array(
+      "type" => "text",
+      "pclass" => " _50",
+      "title" => "Contact Number",
+      "name" => "mobile", "value" => $odata['mobile']
+      ), "email" => array(
+      "type" => "text",
+      "pclass" => " _50",
+      "title" => "email",
+      "name" => "Email",
+      "value" => $odata['email']
+      ), "forall" => array(
+      "type" => "button",
+      "pclass" => " _100",
+      "class" => "forall",
+      "value" => $l['forall']
+      )
+      );
+      $lib->forms->filds = $filds;
+      $r .= $lib->forms->_render_form();
 
 
-            $olddata = array_merge($ex_data, $d);
-            $olddata['ex_checkin'] = $lib->util->dateTime->dateFromdb($olddata['ex_checkin']);
-            $olddata['ex_checkout'] = $lib->util->dateTime->dateFromdb($olddata['ex_checkout']);
-        }
+      foreach ($ds as $d) {
+
+      $uds = $lib->db->get_row("com_users", "*", "id='" . $d['user_id'] . "'");
+      $r.= "<div class='razaform'>";
+      $r.= "<h2>" . $uds['FullName'] . "</h2>";
+
+      $ex_data = $lib->db->get_row("fiz_extension", "*", "reservation_id='" . $d['id'] . "'");
+
+      if (isset($_SESSION['formraza'][$d['id']])) {
+      $olddata = $_SESSION['formraza'][$d['id']];
+      } else if (is_array($ex_data)) {
 
 
-
-
-        $r.= fiz_reservations_addform($p, $l, $d['id'], $olddata);
+      $olddata = array_merge($ex_data, $d);
+      $olddata['ex_checkin'] = $lib->util->dateTime->dateFromdb($olddata['ex_checkin']);
+      $olddata['ex_checkout'] = $lib->util->dateTime->dateFromdb($olddata['ex_checkout']);
+      }
 
 
 
 
-        $r.= "</div>";
-    }
-
-
-
-    $filds = array(
-        "remarks" => array(
-            "type" => "textarea",
-            "pclass" => " _100",
-            "title" => "remarks",
-            "name" => "remarks",
-            "value" => $d['remarks']
-        )
-    );
-    $lib->forms->filds = $filds;
-    $r .= $lib->forms->_render_form();
+      $r.= fiz_reservations_addform($p, $l, $d['id'], $olddata);
 
 
 
 
+      $r.= "</div>";
+      }
 
-    if (getviewmodules($oid, "lawazim")) {
-        $n = "pkgs-raza";
-    } else {
-        $n = "view-raza";
-    };
 
-*/
+
+      $filds = array(
+      "remarks" => array(
+      "type" => "textarea",
+      "pclass" => " _100",
+      "title" => "remarks",
+      "name" => "remarks",
+      "value" => $d['remarks']
+      )
+      );
+      $lib->forms->filds = $filds;
+      $r .= $lib->forms->_render_form();
+
+
+
+
+
+      if (getviewmodules($oid, "lawazim")) {
+      $n = "pkgs-raza";
+      } else {
+      $n = "view-raza";
+      };
+
+     */
     $r .= "<div class='buts'><input  type='button' value='Back' data-to='/FizReservations/'  class='next_back'/>";
 
 
@@ -161,81 +310,35 @@ function fiz_reservations_craeteData($p, $l, $oid) {
     return $r;
 }
 
-function fiz_razaTypes($p, $l, $oid, $odata) {
-    /* @var $lib  \libs\libs */
-    global $lib;
+/*
+  function fiz_razaTypes($p, $l, $oid, $odata) {
+  global $lib;
 
-    $datas = $lib->db->get_data("fiz_raza_types");
+  $datas = $lib->db->get_data("fiz_raza_types");
 
-    global $ressettings;
-
-
-
-    $ds = $lib->db->get_row("fiz_reservation", "*", "booking_owner='" . $odata['id'] . "'   ");
+  global $ressettings;
 
 
 
-    $a = "";
-    $b = "";
-
-  
+  $ds = $lib->db->get_row("fiz_reservation", "*", "booking_owner='" . $odata['id'] . "'   ");
 
 
 
-      $r .= "<input  type='button' value='Next'  data-to='/do/create/FizReservations/' class=''/>";
-
-    $r .=fiz_raza_its_date($p, $l, $oid, $odata);
-
-
-
-    return $r;
-}
-
-function fiz_raza_its_date($p, $l, $oid, $udata) {
-    /* @var $lib  \libs\libs */
-    global $lib;
-    $r = "<table class = 'itsTable'>";
+  $a = "";
+  $b = "";
 
 
 
 
 
-    $r .= "<thead><tr>"
-            . "<th>" . $l['Reservation_ID'] . "</th>"
-            . "<th>" . $l['No_of_Persons'] . "</th>"
-            . "<th>" . $l['Arrival_Date'] . "</th>"
-            . "<th>" . $l['Departure_Date'] . "</th>"
-            . "</tr></thead>"
-            . "<tbody>";
+  $r .= "<input  type='button' value='Next'  data-to='/do/create/FizReservations/' class=''/>";
 
-
-    $resids = array();
-    $myxrefData = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '" . $d['id'] . "' ");
-
-    $i = 0;
-    foreach ($myxrefData as $d) {
-        getreRows($d['reservation_id']);
-        $resids[$i] = $d['reservation_id'];
-        $i++;
-    }
+  $r .=fiz_raza_its_date($p, $l, $oid, $odata);
 
 
 
-
-
-    $r .= getreRows($udata['user_id'], $ids);
-
-
-
-    $r .= "<tr><td colspan = \"4\" >" . $l['additsmsg'] . "<input type='text' class='addits' ><input type='button'  value='" . $l['add_button'] . "' class='add_button' /></td></tr>"
-            . "</tbody>";
-
-    $r .= "</table>";
-
-
-
-    return $r;
-}
+  return $r;
+  } */
 
 function getreRows($user_id, $ids) {
     /* @var $lib  \libs\libs */
@@ -271,8 +374,6 @@ function getreRows($user_id, $ids) {
 
     return $r;
 }
-
-
 
 function fiz_reservations_addform($p, $l, $id, $data) {
     $r = "";
@@ -359,7 +460,6 @@ function fiz_reservations_pkgs($p, $l, $oid) {
 
 
         $data = $lib->db->get_row("fiz_lawazim_packages_cat", "*", "id='" . $p . "'");
-
 
         if (isset($data['id'])) {
             $r .= "<li><input name='raza_pkg'  type='radio'  data-title='" . $data['title'] . "' class='raza_pkg' value='" . $data['id'] . "' />" . $data['title'] . "<spen>" . $data['des'] . "</spen><div class='safartext'></div></li>";
@@ -475,6 +575,8 @@ function getviewmodules($oid, $type, $id = "") {
 
     return in_array($type, $os);
 }
+
+// </editor-fold>
 ?>
 
 <script>

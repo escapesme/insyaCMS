@@ -445,7 +445,7 @@ class htmlClass {
 
 
                 case 'time':
-
+                    
                     $values = explode(":", $inputValue);
                     $options = array(
                         "00" => "00"
@@ -510,7 +510,7 @@ class htmlClass {
                         "30" => "30",
                         "45" => "45"
                     );
-                    $input_html .= '<select style="' . $inputStyle . '"  class=" data_m" >'
+                    $input_html .= $inputValue.'<select style="' . $inputStyle . '"  class=" data_m" >'
                             . $this->arrayToOptions($moptions, $values['1']) . '
                         </select>                       
                 <input  value="' . $inputValue . '"   name="' . $inputName . '" id="' . $inputID . '"  type="hidden" class="time_input_data"  >'

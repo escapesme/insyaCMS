@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<root>
+
+    <fields>
+       
+
+        
+        
+        <extypeaa pclass='col-12'
+                  name="extype"
+                  type="select"
+                  title="Type" 
+                  select_data="extend>>Extend / Reduce Stay;booking>> Make new booking (Cancel old);transfer>>Transfer to another package"     
+        />
+      
+      
+      
+      
+        <checkin name="checkin"  type="date"  title="checkin" pclass='col-3'/>
+
+        <checkout name="checkout"  type="date"  title="checkout" pclass='col-3'/> 
+        <package_id   
+            name="package_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_lawazim_packages_cat"
+            select_text='title' 
+            select_value='id'  
+            title="package"  
+            pclass='col-3' 
+        />
+        
+
+          
+        
+        <updateex name="updateex"  type="button" style="margin-top:28px;float:left" pstyle="float:left !important;"    value="Update" pclass='col-3 action-left'/>
+
+        
+        
+        
+        
+        <line name="line"  type="line" style="padding-bottom: 64px;
+background: #fff;
+width: 100%;" />
+        <div name="div"  type="div" />
+        <enddiv name="enddiv"  type="enddiv" />
+    </fields>
+    
+    
+
+ 
+    
+   
+</root>
+
+
+    
+

@@ -10,48 +10,49 @@ and open the template in the editor.
 <root>
     <raza_type_msg>You requested Raza type:</raza_type_msg>
     
-    <update_button>update</update_button>
-    <change_button>change</change_button>
-    <itsid>itsid</itsid>
-    <name>name</name>
-    <status>status</status>
-    <actions>actions</actions>
+    <update_button>Update</update_button>
+    <change_button>Change</change_button>
+    <itsid>ITS ID</itsid>
+    <name>Name</name>
+    <status>Status</status>
+    <actions>Actions</actions>
 
     <additsmsg>Add more persons to your group. ITS NO</additsmsg>
-    <add_button>add</add_button>
+    <add_button>Add</add_button>
 
     <ApplyforRaza>Apply for Raza</ApplyforRaza>
 
 
     <ex_checkin>ex_checkin</ex_checkin>
     <ex_checkout>ex_checkout</ex_checkout>
-    <airline>airline</airline>
-    <airline_code>airline code</airline_code>
-    <arrival_time>arrival time</arrival_time>
+    <airline>Airline</airline>
+    <airline_code>Airline code</airline_code>
+    <arrival_time>Arrival time</arrival_time>
 
-    <arriving_from>arriving from</arriving_from>
-    <ex_lawazim>lawazim</ex_lawazim>
+    <arriving_from>Arriving from</arriving_from>
+    <ex_lawazim>Lawazim</ex_lawazim>
         
-    <total_lawazim>total lawazim</total_lawazim>
+    <total_lawazim>Total Lawazim</total_lawazim>
     
-    <ex_nights>nights</ex_nights>
-    <lgoinmsg>login</lgoinmsg>
-    
-    <lgoinsubmit>login</lgoinsubmit>
-    <forall> applay for all</forall>
+    <ex_nights>Nights</ex_nights>
+    <lgoinmsg>Login</lgoinmsg>
+    <lgoinsubmit>Login</lgoinsubmit>
+    <forall> Apply for all</forall>
     <lgointitle>Logged in as : </lgointitle>
-    
-    
-      <Reservation_ID>Reservation_ID</Reservation_ID>
-      
-            <No_of_Persons>No_of_Persons</No_of_Persons>
-
-      <Arrival_Date>Arrival_Date</Arrival_Date>
-
-      <Departure_Date>Departure_Date</Departure_Date>
+    <Reservation_ID>Reservation_ID</Reservation_ID>
+    <No_of_Persons>No_of_Persons</No_of_Persons>
+    <Arrival_Date>Arrival_Date</Arrival_Date>
+    <Departure_Date>Departure_Date</Departure_Date>
+    <ejeemt>ITS ID</ejeemt>
+    <approved_status>Status</approved_status>
+    <apply_button>Apply</apply_button>
 
     
-    
+    <updateCounect>All communication for your group will be sent to this email address: \(email)   Click \(here) to update your email address.</updateCounect>
+
+
+
+
 
 </root>
 

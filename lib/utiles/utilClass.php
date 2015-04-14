@@ -663,7 +663,7 @@ class utilClass {
 
         $xml = simplexml_load_file($file);
 
-        echo $file;
+
 
 
 
@@ -2063,6 +2063,15 @@ EOF;
 
 
         return $returnData;
+    }
+    
+    
+    function reload($url = "", $s = "1") {
+        if ($url == "") {
+
+            $url = "?show=" . $_GET['show'];
+        }
+        echo("<meta http-equiv=\"refresh\" content=\"$s; url=$url\">");
     }
 
 }

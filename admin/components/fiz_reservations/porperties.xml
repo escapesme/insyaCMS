@@ -1,133 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <fields>
-        
-        <reservation_id name="reservation_id"  type="text"  title="reservation_id"/> 
-        
-     
-        <Mumin_id  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='Mumin_id' 
-            select_value='id' 
-              
-              
-            title="ITS NO"      
-            connect="true"
-            pclass='col-6' 
-            
-        />
-            
-            
-        <Name  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='FullName' 
-            select_value='id'  
-            title="Name"     
-            connect="true"
-            pclass='col-6' 
-            
-        />
     
+    <plugins >   
+        <fiz_reservations_search name="fiz_reservations_search"  options="type=>list__3=>ssdfdsf" position="list"/>
+      
+    </plugins>
+    
+    
+    
+    
+    
+    
+    
+    
+    <fields>
+            <name name="name"  type="text"  title="name"/> 
+            <Title name="Title"  type="text"  title="Title"/> 
+            <Gender name="Gender"  type="text"  title="Gender"/> 
+            <Mumin_id name="Mumin_id"  type="Mumin_id"  title="Mumin_id"/> 
+
+        <reservation_id name="reservation_id"  type="text"  title="Res id"/> 
+        <email name="email"  type="text"  title="email"/> 
+        <remarks name="editor"  type="textarea"  title="remarks"/> 
+           
         
-        
-          <Namesearch
-            name="user_id" 
-            type="text" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='FullName' 
-            select_value='id'  
-            title="Name"    
-              connect="true"
-            pclass='col-6' 
-            
-        />
-        
-        
-        <Country  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='Jamaat' 
-            select_value='id'  
-            title="Country"  
-            pclass='col-6'      connect="true"
-            
-        />
-  
-        <Age  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='Age' 
-            select_value='id'  
-            
-            
-            title="Age"  
-            pclass='col-6'      connect="true"
-            
-        />
-        <gender  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='gender' 
-            select_value='id'  
-            title="gender"  
-            pclass='col-6' 
-            connect="true"
-            
-        />
-  
-        <prefix  
-            name="user_id" 
-            type="select" 
-            select_type='DB' 
-            select_data="com_users"
-            select_text='prefix' 
-            select_value='id'  
-            title="title"  
-            pclass='col-6' 
-            connect="true"
-            
-        />
+         
+        <raza_type name="raza_type"  
+                   type="select" select_type='DB' 
+                   select_data="fiz_raza_types" 
+                   select_text='title' 
+                   select_value='id'  
+                   title="raza type"
+                   pclass='_50'/>
         
         
         
-        <raza_type  
-            name="raza_type" 
-            type="select" 
-            select_type='DB' 
-            select_data="fiz_raza_types"
-            select_text='title' 
-            select_value='id'  
-            title="raza_type"  
-            pclass='col-6' 
-            
-        />
         
-        <approved  
-            name="approved" 
-            type="select" 
-            select_type='DB' 
-            select_data="fiz_approved_status"
-            select_text='title' 
-            select_value='id'  
-            title="approved"  
-            pclass='col-6' 
-            editable="true"
-            
-        />
         
+          
+        <myreservation_id 
+         
+            name="myreservation_id"  
+            type="getXrefData" 
+            
+            
+            title="Osdfsdfsdrder" 
+            getData= "fiz_reservation_users_xref"
+            pclass='_100'
+            xrefmyid="reservation_id"
+            xrefType="o2m"
+            
+        /> 
         
         
         
@@ -136,48 +59,28 @@
     
     <group>
         <fiz_reservations title="Reservations" parent="yes" />
-        <fiz_approved_status title="approved_status"  />
     </group>
     
     <selectfields>
-        <mumin_id type='alone' title='Mumin_id'/>
         
- 
-           <Country  />
-          <Namesearch  />
-        
-   
-        <approved  />
-        
-        <gender  />
-        
-        <prefix  />
+        <raza_type  />
+        <name  />
+        <Title  />
+                <Mumin_id  />
+
         
     </selectfields>
     
     
     
-    <listfields 
-        nolimit="true" 
-        actions='false'
-    
-    >   
-        <reservation_id  list-width="1"/>
-        <Name list-width="2.5"/>
-        
-        <Mumin_id list-width="1"/>
-        
-        
-        <Country list-width="1"/>
-        
-        <Age list-width="0.5"/>
-        <gender list-width="1"/>
-        
-        
-        
-        <raza_type list-width="1"/>
-        <approved list-width="2"/>
-        
+    <listfields   xrefopend ='true'  actions ='false'>   
+        <reservation_id    list-width="1"/>
+        <remarks    list-width="1"/>
+        <raza_type    list-width="1.5"/>
+        <email    list-width="2"/>
+                
+        <myreservation_id list-width="11"/>
+
     </listfields>
     
    

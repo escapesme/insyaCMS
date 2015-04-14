@@ -2065,3 +2065,12 @@ html[xmlns] .my_clearfix {
 }
 
 
+.divRow.opened .divCell{
+
+
+    max-height: none
+}
+.divRow.opened .tools_bar{
+    
+    top: 0px;  
+}

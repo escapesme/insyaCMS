@@ -11,13 +11,13 @@ and open the template in the editor.
     
     
     
-   <forgotPassword>نسيت كلمة السر؟</forgotPassword>
-           <forgotpassword_msg>ادخل بريدك الالكتروني الخاص بحسابك و سيتم ارسال كلمة سر مؤقتة اليك</forgotpassword_msg>
-            <forgotpassword_sendmsg>تم ارسال كلمة السر الى بريدك الالكتروني</forgotpassword_sendmsg>
-           <forgotpassword_errormsg>البريد الالكتروني غير مسجل</forgotpassword_errormsg>
+    <forgotPassword>نسيت كلمة السر؟</forgotPassword>
+    <forgotpassword_msg>ادخل بريدك الالكتروني الخاص بحسابك و سيتم ارسال كلمة سر مؤقتة اليك</forgotpassword_msg>
+    <forgotpassword_sendmsg>تم ارسال كلمة السر الى بريدك الالكتروني</forgotpassword_sendmsg>
+    <forgotpassword_errormsg>البريد الالكتروني غير مسجل</forgotpassword_errormsg>
 
 
-            <yourpassword>  كلمة السر المؤقتة الخاصة بك</yourpassword>
+    <yourpassword>  كلمة السر المؤقتة الخاصة بك</yourpassword>
 
        
     <sendemail>ارسال   </sendemail>

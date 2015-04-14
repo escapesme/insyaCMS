@@ -1,8 +1,8 @@
 <?php
 
-$setting["db_name"] = 'insya';
-$setting["db_user"] = 'root';
-$setting["db_pass"] = '';
+$setting["db_name"] = 'escapesm_gitfaiz';
+$setting["db_user"] = 'escapesm_newfaiz';
+$setting["db_pass"] = 'newfaiz5152';
 $setting["db_host"] = 'localhost';
 
 
@@ -11,11 +11,9 @@ $setting["siteTitle"] = 'E-Scapes Main Repository';
 $setting["admin_mail"] = 'info@e-scapes.me';
 
 $setting["mailTitle"] = 'E-Scapes';
-$setting["site_path"] = 'http://cms.localhost';
+$setting["site_path"] = 'http://new.faizehaakimi.com/';
 
 $setting["succeedClass"] = "succee";
-
-
 
 
 

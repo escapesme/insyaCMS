@@ -521,8 +521,48 @@ class adminClass extends adminactions {
                 break;
 
 
+            case "files" :
+                $html="";
+                $fs = $dval[$data['name']];
+                $files = explode(",", $fs);
+
+                foreach ($files as $d) {
+                    if ($d != "") {
+                        $html.="<a  style='margin:2px' target='_blank' href='/uploads/userdocs/$d'><i title='$d' class=\"fa fa-file-text\"></i></a>";
+                    }
+                }
+                break;
+            case "user_data" :
+                   $html="";
+                /* $fs = $dval[$data['name']];
+                  $files = explode(",", $fs);
+
+                  foreach ($files as $d) {
+                  if ($d != "") {
+                  $html.="<a  style='margin:2px' target='_blank' href='/uploads/userdocs/$d'><i title='$d' class=\"fa fa-file-text\"></i></a>";
+                  }
+                 * user_data
+                  name,email
+                  } */
 
 
+                $gdata = $this->mydb->get_row("com_users", "", "id='" . $dval[$data['name']] . "'");
+                
+                    $gdata2 = $this->mydb->get_row("com_users_fiz", "", "user_id='" . $gdata["id"] . "'");
+                
+                    
+                  $gdata=  array_merge($gdata, $gdata2);
+//print_r($gdata);
+                $gs = explode(",", $data['get']);
+
+                foreach ($gs as $g) {
+                    $html.= "<span style='margin:2px'>" . $gdata[$g] . "</span>";
+                }
+
+
+
+
+                break;
             case "select" :
 
 
@@ -614,7 +654,7 @@ class adminClass extends adminactions {
 
 
 
-              
+
             default :
 
 
@@ -634,7 +674,7 @@ class adminClass extends adminactions {
                         break;
                     default :
                         $html.= "
-                            <input  data-id='" . $dval['id'] . "' data-type='".$data['type']."'  type='hidden'   value='" . $dval['id'] . "__" . $myname . "__" . $data['type'] . "'    class='input__" . $dval['id'] . "__info' />
+                            <input  data-id='" . $dval['id'] . "' data-type='" . $data['type'] . "'  type='hidden'   value='" . $dval['id'] . "__" . $myname . "__" . $data['type'] . "'    class='input__" . $dval['id'] . "__info' />
                                 <span title='" . $dval[$data['name']] . "' />" . $slpn . " " . $dval[$data['name']] . "</span>";
                         break;
                 }
@@ -805,7 +845,7 @@ class adminClass extends adminactions {
 
 
 
-                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "'   data-type='".$data['type']."' class=\"$myname divCell " . " list_data\">"
+                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "'   data-type='" . $data['type'] . "' class=\"$myname divCell " . " list_data\">"
                         . "<label class='cellTitle'>" . $this->table_properties[$list]['title'] . "</label><div class='cellvalue'>"
                         . "";
 
@@ -2224,6 +2264,10 @@ class adminClass extends adminactions {
             } else if ($dataupdate[$list]['type'] == "getXrefData") {
 
                 $dataupdate[$list]['data'] = "<div>" . $this->getXerfDataInput($this->editID, $dataupdate[$list]) . "</div>";
+
+
+
+
                 //    $dataupdate[$list]['get_data_body'] = $this->getXerfDataInput($dataupdate[$list]);
             } else if ($dataupdate[$list]['type'] == "select") {
 
@@ -3051,7 +3095,6 @@ class adminClass extends adminactions {
 
                 $mthisData = $this->mydb->get_row($data['thisTabel'], "*", "id='" . $myid . "'");
 
-
                 $getid = $mthisData[$data['xrefIdField']];
             }
 
@@ -3062,7 +3105,7 @@ class adminClass extends adminactions {
             $ds = $this->mydb->get_data($data['getData'], "*", $data['xrefmyid'] . "='" . $getid . "'");
 
 
-
+            //    echo "<textarea>".$this->mydb->returnSQL . "</textarea><br/>";
 
             foreach ($ds as $d) {
 
@@ -3071,7 +3114,7 @@ class adminClass extends adminactions {
 
 
                 $out.= "<tr>";
-                $out.= "<td class='thisId'>"
+                $out.= "<td class='thisId'>" . count($ds) . $getid . $data['xrefmyid']
                         . "<input value='" . $d['id'] . "' type='hidden' class='thisrowid' />"
                         . "<input value='" . $d[$data['getDataValue']] . "' type='hidden' class='thisvalue'/>" .
                         "<input data-value='" . $d[$data['getDataValue']] . "' value='" . $d[$data['getDataTitle']] . "' type='hidden' class='thistitle'/>" . "</td>";

@@ -250,10 +250,28 @@ class siteClass {
         return $return;
     }
 
+    function getStatusAlias() {
+        $sttaus = $this->getActStatus();
+        $return = "";
+        if (is_array($sttaus)) {
+            foreach ($sttaus as $s) {
+                $mm = ",";
+                if ($return == "") {
+                    $mm = "";
+                }
+
+                $return .=$mm . $s['alias'];
+            }
+        }
+
+
+        return $return;
+    }
+
     function checkStatusAlias($status) {
         $sttaus = $this->getActStatus();
         if (is_array($sttaus)) {
-                        foreach ($sttaus as $s) {
+            foreach ($sttaus as $s) {
                 if ($s['alias'] == $status) {
                     $return = true;
                     break;

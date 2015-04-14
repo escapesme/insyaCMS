@@ -24,7 +24,8 @@ and open the template in the editor.
         
         <language  name="language"  type="select"  title="language" select_type='language'/>
 
-        <cities xref='com_site_status_xref' name="cities"  type="list"  title="Countries" select_type='countries'/>
+        
+        
         <currency_code name="currency_code"  type="text"  title="currency code"/>
         <currency_symbol name="currency_symbol"  type="text"  title="currency symbol"/>	
         <image  name="image"  type="pic" title="image" />

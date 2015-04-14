@@ -530,6 +530,11 @@ class dbClass {
      * @return int The excuted query id.
      */
     function insert_row_city($table, $data) {
+
+        /* @var $lib  \libs\libs */
+        global $lib;
+        $data['statuses'] = $lib->site->getStatusAlias();
+
         $data = $this->filter_values($table, $data);
         foreach ($data as $k => $v) {
             $sql_felds.="`" . $k . "`,";
@@ -563,7 +568,7 @@ class dbClass {
 
         $data['created'] = $lib->util->dateTime->craeteDBDateTime();
 
-
+        $data['statuses'] = $lib->site->getStatusAlias();
 
         $data = $this->filter_values($table, $data);
         foreach ($data as $k => $v) {
@@ -573,6 +578,8 @@ class dbClass {
         $sql_felds = substr($sql_felds, 0, (strlen($sql_felds) - 1));
         $sql_valus = substr($sql_valus, 0, (strlen($sql_valus) - 1));
         $sql = "INSERT INTO $table ($sql_felds)VALUES($sql_valus)";
+
+        //echo "<textarea>" . $sql . "</textarea>";
         $result = $this->unb_query($sql);
         return $result;
     }
@@ -589,7 +596,7 @@ class dbClass {
         foreach ($data as $row) {
 
             $data['created'] = $lib->util->dateTime->craeteDBDateTime();
-
+            $data['statuses'] = $lib->site->getStatusAlias();
 
             $sql_felds = "";
             $sql_valus = "";
@@ -858,7 +865,6 @@ class dbClass {
 
 
 
-        echo $mid;
         $r = "0";
         if ($mid['id'] != "") {
 
@@ -876,12 +882,12 @@ class dbClass {
      * @return int
      */
     function update_row($table, $data, $id = "", $where = "") {
-         /* @var $lib  \libs\libs */
+        /* @var $lib  \libs\libs */
         global $lib;
 
-                    $data['modified'] = $lib->util->dateTime->craeteDBDateTime();
+        $data['modified'] = $lib->util->dateTime->craeteDBDateTime();
 
-        
+
         $data = $this->filter_values($table, $data);
         if (!$id && !$where) {
             return 0;
@@ -910,11 +916,10 @@ class dbClass {
      * @param type $where
      * @return type
      */
-    
     function update_data($table, $data, $where) {
-        
-       
-             $data = $this->filter_values($table, $data);
+
+
+        $data = $this->filter_values($table, $data);
         foreach ($data as $k => $v) {
             $sql_data.="`$k`='$v',";
         }

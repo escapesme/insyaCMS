@@ -58,8 +58,6 @@ and open the template in the editor.
         <nights  name="nights"  type="text"  title="nights"/> 
         <ex_lawazim  name="ex_lawazim"  type="text"  title="ex_lawazim"/> 
         <ex_paid  name="ex_paid"  type="enable"  title="ex_paid"/> 
-        <ex_checkin  name="ex_checkin"  type="date"  title="ex_checkin"/> 
-        <ex_checkout  name="ex_checkout"  type="date"  title="ex_checkout"/> 
 
 
     </fields>

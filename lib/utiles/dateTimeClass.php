@@ -20,20 +20,29 @@ class dateTimeClass {
         $this->gen = $gen;
     }
 
+    function dateFormFormatToFormat($date, $From, $tow) {
+
+        //$date = date_create_from_format("d/m/Y", $date);
+        //return ($date);
+    }
+
     // <editor-fold defaultstate="collapsed" desc="DataBase">
 
-    function dateTodb($data) {
-        $newdate = explode('/', $data);
 
-        if (isset($newdate) && $newdate[0] != "") {
 
-            $dd = $newdate[2] . "-" . $newdate[1] . "-" . $newdate[0];
-            $dd = str_replace('--', '', $dd);
-        } else {
 
-            $dd = $data;
-        }
+
+
+    function dataFormat($date, $format = 'Y-m-d') {
+
+        $date = str_replace('/', '-', $date);
+        $dd = date($format, strtotime($date));
         return $dd;
+    }
+
+    function dateTodb($date) {
+
+        return $this->dataFormt($date);
     }
 
     function dateFromdb($data) {
@@ -52,25 +61,34 @@ class dateTimeClass {
         return $dt;
     }
 
+    function dateFromdbnew($data) {
+        $date = date_create_from_format("d/m/Y", $data);
+        return ($date);
+    }
+
     function dateTimeFromdb($data) {
 
+        /*
+          $datas = explode(' ', $data);
 
-        $datas = explode(' ', $data);
+          $newdate = explode('-', $datas[0]);
 
-        $newdate = explode('-', $datas[0]);
+          if (isset($newdate) && $newdate[0] != "") {
 
-        if (isset($newdate) && $newdate[0] != "") {
+          $l = explode(" ", $newdate[2]);
 
-            $l = explode(" ", $newdate[2]);
+          $dt = $l[0] . "/" . $newdate[1] . "/" . $newdate[0];
 
-            $dt = $l[0] . "/" . $newdate[1] . "/" . $newdate[0];
+          $dt = str_replace('//', '', $dt);
+          } else {
+          $dt = $data;
+          }
 
-            $dt = str_replace('//', '', $dt);
-        } else {
-            $dt = $data;
-        }
+         */
 
-        return $dt ." ". $datas[1];
+
+
+        return $dt . " " . $datas[1];
     }
 
     function updateDBDates($r, $type = "") {
@@ -89,14 +107,9 @@ class dateTimeClass {
 
     function getDate($com) {
 
-
-
         $data = $this->db->get_Data($com, "DISTINCT  date", "`enabled`=1 and  `delete`=0");
         $returnData = "";
-
-
         foreach ($data as $A) {
-
             $date = $A['date'];
             $urlTag = $this->createURL($com, "date", $date);
             $returnData .= "<div class='blockitem item date'><a href='" . $urlTag . "'>" . $this->updateDate($date) . "</a></div>";
@@ -168,6 +181,30 @@ class dateTimeClass {
             $startDate = $this->dateTodb($startDate);
         }
         return strtotime($startDate . " 0:00:00");
+    }
+
+    function createDateRangeArray($strDateFrom, $strDateTo, $Backformat = "Y-m-d") {
+        // takes two dates formatted as Y-m-d and creates an
+        // inclusive array of the dates between the from and to dates.
+        // could test validity of dates here but I'm already doing
+        // that in the main script
+
+        $aryRange = array();
+
+        $iDateFrom = mktime(1, 0, 0, substr($strDateFrom, 5, 2), substr($strDateFrom, 8, 2), substr($strDateFrom, 0, 4));
+        $iDateTo = mktime(1, 0, 0, substr($strDateTo, 5, 2), substr($strDateTo, 8, 2), substr($strDateTo, 0, 4));
+
+
+        echo $strDateFrom;
+
+        if ($iDateTo >= $iDateFrom) {
+            array_push($aryRange, date($Backformat, $iDateFrom)); // first entry
+            while ($iDateFrom < $iDateTo) {
+                $iDateFrom+=86400; // add 24 hours
+                array_push($aryRange, date($Backformat, $iDateFrom));
+            }
+        }
+        return $aryRange;
     }
 
 }

@@ -80,7 +80,12 @@ button.disable,.button.disable,input[type="button"].disable{
 
 
 }
+.qq-upload-button{
+    background: #a95533;
+    border: none;
+    margin: 10px;
 
+}
 
 
 
@@ -693,6 +698,7 @@ div.modig_blocTitle a{
 }
 
 
+
 #sunries .title, #sunset .title{
     color: #fdeba1;
     font-family: "Times New Roman";
@@ -1095,11 +1101,11 @@ div.tooltip iframe{
     margin: 1%;
 }
 .field-input ,.field-input input ,select{
-    
+
     width: 98.3%;
 }
 select{
-      min-height: 30px;
+    min-height: 30px;
 
     height: 30px;
 }
@@ -1365,7 +1371,7 @@ select.time{
     font-size: 14px;
     background: url(images/succ_icon.png) no-repeat 16px #fff;
     padding-left: 80px;
-    color: #333; 
+    color: #333;   opacity: 0.9;
 
 }
 .msg.error{
@@ -1589,7 +1595,7 @@ td button,td .button, td input[type="button"]{
 
     width: 49%;
     margin: 1px;
-  
+
 
     border-radius: 0px;
 
@@ -1612,3 +1618,74 @@ td button,td .button, td input[type="button"]{
 img.mianitem{
     display: none;
 }
+
+.restools{
+    margin-top: 20px;
+    margin-right: 3px;
+
+
+}
+
+.mylightboxbg{
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+    right:0px;
+    background: rgba(0,0,0,0.8);
+    z-index: 1111111111
+
+}
+.mylightbox{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 600px;
+    height:200px;
+}
+
+#cboxLoadedContent ,.mylightbox {
+    border: 6px solid #99522f;
+    background: #be8e59;
+    color:#000;
+    border-radius: 2px;}
+
+.razaoptions,.lightboxData ,.mylightboxdata{
+    padding:10px;
+}.razaoptions input{
+    margin: 6px;}
+
+.mylightboxdata{
+    overflow: auto;
+    max-height: 166px;
+}
+
+#cboxClose {
+    top: -14px;
+    right: -14px;
+    width: 40px;
+    height: 40px;
+    background: url(images/closebt.png) no-repeat ;
+    background-position: top center;
+    background-size: 100% 100%;
+    opacity: 0.9;    z-index: 1111111111
+
+}
+
+#cboxWrapper,#colorbox {
+    overflow: visible; 
+
+
+}
+
+#cboxClose:hover
+{
+
+    background-position: top center;
+    opacity: 1;
+}
+
+
+
+
+

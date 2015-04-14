@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <fields>
+        
+        <reservation_id name="reservation_id"  type="text"  title="reservation_id"/> 
+        
+     
+        <Mumin_id  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='Mumin_id' 
+            select_value='id' 
+              
+              
+            title="ITS NO"      
+            connect="true"
+            pclass='col-6' 
+            
+        />
+            
+            
+        <Name  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Name"     
+            connect="true"
+            pclass='col-6' 
+            
+        />
+    
+        
+        
+          <Namesearch
+            name="user_id" 
+            type="text" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='FullName' 
+            select_value='id'  
+            title="Name"    
+              connect="true"
+            pclass='col-6' 
+            
+        />
+        
+        
+        <Country  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='Jamaat' 
+            select_value='id'  
+            title="Country"  
+            pclass='col-6'      connect="true"
+            
+        />
+  
+        <Age  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='Age' 
+            select_value='id'  
+            
+            
+            title="Age"  
+            pclass='col-6'      connect="true"
+            
+        />
+        <gender  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='gender' 
+            select_value='id'  
+            title="gender"  
+            pclass='col-6' 
+            connect="true"
+            
+        />
+  
+        <prefix  
+            name="user_id" 
+            type="select" 
+            select_type='DB' 
+            select_data="com_users"
+            select_text='prefix' 
+            select_value='id'  
+            title="title"  
+            pclass='col-6' 
+            connect="true"
+            
+        />
+        
+        
+        
+        <raza_type  
+            name="raza_type" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_raza_types"
+            select_text='title' 
+            select_value='id'  
+            title="raza_type"  
+            pclass='col-6' 
+            
+        />
+        
+        <approved  
+            name="approved" 
+            type="select" 
+            select_type='DB' 
+            select_data="fiz_approved_status"
+            select_text='title' 
+            select_value='id'  
+            title="approved"  
+            pclass='col-6' 
+            editable="true"
+            
+        />
+        
+        
+        
+        
+        
+    </fields>
+    
+    <group>
+        <fiz_reservations title="Reservations" parent="yes" />
+        <fiz_approved_status title="approved_status"  />
+    </group>
+    
+    <selectfields>
+        <mumin_id type='alone' title='Mumin_id'/>
+        
+ 
+           <Country  />
+          <Namesearch  />
+        
+   
+        <approved  />
+        
+        <gender  />
+        
+        <prefix  />
+        
+    </selectfields>
+    
+    
+    
+    <listfields 
+        nolimit="true" 
+        actions='false'
+    
+    >   
+        <reservation_id  list-width="1"/>
+        <Name list-width="2.5"/>
+        
+        <Mumin_id list-width="1"/>
+        
+        
+        <Country list-width="1"/>
+        
+        <Age list-width="0.5"/>
+        <gender list-width="1"/>
+        
+        
+        
+        <raza_type list-width="1"/>
+        <approved list-width="2"/>
+        
+    </listfields>
+    
+   
+</root>
+
+
+    
+
+
+    
+    
+
+
+ 

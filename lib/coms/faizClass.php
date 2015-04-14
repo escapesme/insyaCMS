@@ -84,55 +84,83 @@ class faizClass {
     function saveUser($data) {
         /* @var $lib  \libs\libs */
         global $lib;
-        $u = $lib->db->get_row("com_fiz_users", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
+        $u = $lib->db->get_row("com_users_fiz", "*", "Mumin_id='" . $data['Mumin_id'] . "'");
 
 
 
 
-        if (is_array($u)) {
-            $lib->db->update_row("com_fiz_users", $data, $u['user_id']);
+        if (is_array($u) && $u['user_id'] != "0") {
+            $lib->db->update_row("com_users", $data, $u['user_id']);
+
+            $lib->db->update_row("com_users_fiz", $data, $u['id']);
             $id = $u['user_id'];
         } else {
+
+
+
+            $lib->db->delete_data("com_users_fiz", "user_id='0'");
+
+
+
+
+            $data['name'] = $data['FullName'];
+
+
             $u = $lib->db->insert_row("com_users", $data);
             $rdata = $lib->db->get_row("com_users", "max(id) as id");
-            $data['user_id'] = $rdata['id'];
-            $u = $lib->db->insert_row("com_fiz_users", $data);
+
             $id = $rdata['id'];
+            $data['user_id'] = $id;
+
+            $lib->db->insert_row("com_users_fiz", $data);
         }
 
 
-        print_r($id);
         return $id;
     }
 
     function getUserDataByMumin_id($uid) {
-        $r = FALSE;
         /* @var $lib  \libs\libs */
         global $lib;
-        $u = $lib->db->get_row("com_fiz_users", "*", "Mumin_id='" . $uid . "'");
+
+
+        // echo $uid;
+
+        $u = $lib->db->get_row("com_users_fiz", "*", "`Mumin_id`='" . $uid . "'");
+
+        // print_R($u);
         if (is_array($u)) {
             $o = $lib->db->get_row("com_users", "*", "id='" . $u['user_id'] . "'");
-            $r = array_merge($u, $o);
+            print_r($o);
+            if (is_array($o)) {
+
+                $r = array_merge($u, $o);
+            }
         }
 
         return $r;
     }
 
     function getUserDataByID($uid) {
-        $r = FALSE;
+
         /* @var $lib  \libs\libs */
         global $lib;
 
 
         $u = $lib->db->get_row("com_users", "*", "id='" . $uid . "'");
 
+
+        $r = $u;
         if (is_array($u)) {
-            $o = $lib->db->get_row("com_fiz_users", "*", "user_id='" . $u['id'] . "'");
-            $r = array_merge($u, $o);
+            $o = $lib->db->get_row("com_users_fiz", "*", "user_id='" . $u['id'] . "'");
+
+            if (is_array($o)) {
+                $r = array_merge($o, $u);
+            }
+            // print_r($u);
         }
 
-        
-             //   print_r($r);
+        //  print_r($r);
 
         return $r;
     }

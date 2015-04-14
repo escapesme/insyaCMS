@@ -21,11 +21,11 @@
 
         <link rel="stylesheet" href="/<?= $template_url ?>/css/style.css" type="text/css"/>
 
-
+<!--
         <link   href="/<?= $template_url ?>/css/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 900px)" />
 
         <link   href="/<?= $template_url ?>/css/medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 800px)" />
-
+-->
 
         <script type = "text/javascript" src = "/<?= $template_url ?>/js/my.js"></script>
 

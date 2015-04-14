@@ -46,7 +46,7 @@ $(function() {
 
 
 
-
+ d() ;
 
     $(".checkinDate").datepicker({
         dateFormat: "dd/mm/yy",
@@ -97,60 +97,141 @@ $(function() {
     }
 
 
+
+
+
+
+
+
+  $(document).on("click", ".new_its", function() {
+
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=newres&rid=" + rid, function(f) {
+
+
+        window.location = "/rex/step/2/";
+
+        })
+
+    })
+  $(document).on("click", ".logout_its", function() {
+
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=logoures&rid=" + rid, function(f) {
+         window.location = "/rex/step/1/";
+        })
+    })
+    
+    
+    
+    /*
+     * 
+     * 
+     * = "lgoin") {
+    global $lib;
+
+    $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'
+     */
+    
+    $(document).on("click", ".edit_its", function() {
+
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=editres&rid=" + rid, function(f) {
+
+
+           window.location = "/rex/step/2/";
+
+        })
+
+    });
+    
+    
+    
+    $(document).on("click", ".delete_its", function() {
+
+
+        var rid = $(this).data("rid");
+
+        getAjax("coms/fiz/reservations_actions", "status=deleteres&rid=" + rid, function(f) {
+
+///rex/step/2/
+
+
+            window.location = "/Reservations//"
+
+        })
+
+    })
+
+
+
     $(document).on("click", ".addMoreBT", function() {
 
         var me = $(this);
 
+        var eid = me.parent().find(".its_id").val();
 
-        getAjax("res/chekej", "ej=" + me.parent().find(".its_id").val(), function(f) {
-
-            if ($.trim(f) !== "0") {
-
+        if (isNaN(eid)) {
+            alert("Error: ITS ID incorrect. Please verify the ITS ID you entered");
 
 
-                updateResTable($.trim(f));
+        } else {
+            getAjax("res/chekej", "ej=" + eid, function(f) {
 
-            } else {
-
-                alert("Authentication error: The ITS ID and date of birth do not match. Please check if the ITS ID or date of birth is correct");
-
-            }
+                if ($.trim(f) !== "0") {
 
 
 
-        })
+                    updateResTable($.trim(f));
+
+                } else {
+
+                    alert("Authentication error: The ITS ID and date of birth do not match. ");
+
+                }
 
 
 
+            })
+
+
+        }
 
     })
 
 
     $(document).on("click", ".removeTabelRes", function() {
-
-
         var t = $(this);
-        var mep = $(this).parent("td").parent("tr");
-        mep.fadeOut(1000, function() {
-            mep.remove();
+        var id = t.data('id');
+
+        if (confirm("Are you sure you would like to remove ITS ID " + id + " from your reservation?")) {
 
 
-            var id = t.data('id');
-
-            var res = $(".Mumin_ids").val().replace("," + id, "");
-
-            res = res.replace(id, "");
+            var mep = $(this).parent("td").parent("tr");
 
 
-
-
-
-            $(".Mumin_ids").val(res);
+            mep.fadeOut(1000, function() {
+                mep.remove();
 
 
 
+                var res = $(".Mumin_ids").val().replace("," + id, "");
 
-        });
+                res = res.replace(id, "");
+
+
+
+
+
+                $(".Mumin_ids").val(res);
+
+
+
+
+            });
+        }
+
+
 
     })
 
@@ -195,7 +276,7 @@ $(function() {
         if ($(".tabelRes table tbody").length)
         {
             var html = "<tr>\n\
-<td>" + data['Mumin_id'] + "</td>\n\
+    <td>" + data['Mumin_id'] + "</td>\n\
 <td>" + data['FullName'] + "</td>\n\
 <td><input class='button removeTabelRes' value='remove'  data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>";
 
@@ -210,19 +291,20 @@ $(function() {
 
 
             var html = "<table class='mainTabel'>\n\
-<thead><tr><th>ITS ID</th><th>Name</th></tr></thead>\n\
-<tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr></tbody></table>";
-            
-            
-            
-         
-            
-            
-            
+                                                <thead><tr><th>ITS ID</th><th>Name</th></tr></thead>\n\
+                                                <tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>\n\
+                                                        </tbody></table>";
+
+
+
+
+
+
+
             if (status !== "open") {
                 $(".Mumin_ids").val(data['Mumin_id']);
             }
-            $(".tabelRes").html(html);   
+            $(".tabelRes").html(html);
 
         }
 

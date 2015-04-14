@@ -1,162 +1,67 @@
 <?php
-
 /**
- * Handle file uploads via XMLHttpRequest
+ * PHP Server-Side Example for Fine Uploader (traditional endpoint handler).
+ * Maintained by Widen Enterprises.
+ *
+ * This example:
+ *  - handles chunked and non-chunked requests
+ *  - supports the concurrent chunking feature
+ *  - assumes all upload requests are multipart encoded
+ *  - supports the delete file feature
+ *
+ * Follow these steps to get up and running with Fine Uploader in a PHP environment:
+ *
+ * 1. Setup your client-side code, as documented on http://docs.fineuploader.com.
+ *
+ * 2. Copy this file and handler.php to your server.
+ *
+ * 3. Ensure your php.ini file contains appropriate values for
+ *    max_input_time, upload_max_filesize and post_max_size.
+ *
+ * 4. Ensure your "chunks" and "files" folders exist and are writable.
+ *    "chunks" is only needed if you have enabled the chunking feature client-side.
+ *
+ * 5. If you have chunking enabled in Fine Uploader, you MUST set a value for the `chunking.success.endpoint` option.
+ *    This will be called by Fine Uploader when all chunks for a file have been successfully uploaded, triggering the
+ *    PHP server to combine all parts into one file. This is particularly useful for the concurrent chunking feature,
+ *    but is now required in all cases if you are making use of this PHP example.
  */
-class qqUploadedFileXhr {
-    /**
-     * Save the file to the specified path
-     * @return boolean TRUE on success
-     */
-    function save($path) {    
-        $input = fopen("php://input", "r");
-        $temp = tmpfile();
-        $realSize = stream_copy_to_stream($input, $temp);
-        fclose($input);
-        
-        if ($realSize != $this->getSize()){            
-            return false;
-        }
-        
-        $target = fopen($path, "w");        
-        fseek($temp, 0, SEEK_SET);
-        stream_copy_to_stream($temp, $target);
-        fclose($target);
-        
-        return true;
+// Include the upload handler class
+require_once "handler.php";
+$uploader = new UploadHandler();
+// Specify the list of valid extensions, ex. array("jpeg", "xml", "bmp")
+$uploader->allowedExtensions = array(); // all files types allowed by default
+// Specify max file size in bytes.
+$uploader->sizeLimit = 10 * 1024 * 1024; // default is 10 MiB
+// Specify the input name set in the javascript.
+$uploader->inputName = "qqfile"; // matches Fine Uploader's default inputName value by default
+// If you want to use the chunking/resume feature, specify the folder to temporarily save parts.
+$uploader->chunksFolder = "chunks";
+$method = $_SERVER["REQUEST_METHOD"];
+
+if ($method == "POST") {
+    header("Content-Type: text/plain");
+    // Assumes you have a chunking.success.endpoint set to point here with a query parameter of "done".
+    // For example: /myserver/handlers/endpoint.php?done
+    if (isset($_GET["done"])) {
+        $result = $uploader->combineChunks("files");
     }
-    function getName() {
-        return $_GET['qqfile'];
+    // Handles upload requests
+    else {
+        // Call handleUpload() with the name of the folder, relative to PHP's getcwd()
+        $result = $uploader->handleUpload('../uploads/userdocs/');
+        // To return a name used for uploaded file you can use the following line.
+        $result["uploadName"] = $uploader->getUploadName();
     }
-    function getSize() {
-        if (isset($_SERVER["CONTENT_LENGTH"])){
-            return (int)$_SERVER["CONTENT_LENGTH"];            
-        } else {
-            throw new Exception('Getting content length is not supported.');
-        }      
-    }   
+    echo json_encode($result);
+}
+// for delete file requests
+else if ($method == "DELETE") {
+    $result = $uploader->handleDelete("files");
+    echo json_encode($result);
+}
+else {
+    header("HTTP/1.0 405 Method Not Allowed");
 }
 
-/**
- * Handle file uploads via regular form post (uses the $_FILES array)
- */
-class qqUploadedFileForm {  
-    /**
-     * Save the file to the specified path
-     * @return boolean TRUE on success
-     */
-    function save($path) {
-        if(!move_uploaded_file($_FILES['qqfile']['tmp_name'], $path)){
-            return false;
-        }
-        return true;
-    }
-    function getName() {
-        return $_FILES['qqfile']['name'];
-    }
-    function getSize() {
-        return $_FILES['qqfile']['size'];
-    }
-}
 
-class qqFileUploader {
-    private $allowedExtensions = array();
-    private $sizeLimit = 1000485760;
-    private $file;
-
-    function __construct(array $allowedExtensions = array(), $sizeLimit = 1000485760){        
-        $allowedExtensions = array_map("strtolower", $allowedExtensions);
-            
-        $this->allowedExtensions = $allowedExtensions;        
-        $this->sizeLimit = $sizeLimit;
-        
-        $this->checkServerSettings();       
-
-        if (isset($_GET['qqfile'])) {
-            $this->file = new qqUploadedFileXhr();
-        } elseif (isset($_FILES['qqfile'])) {
-            $this->file = new qqUploadedFileForm();
-        } else {
-            $this->file = false; 
-        }
-    }
-    
-    private function checkServerSettings(){        
-        $postSize = $this->toBytes(ini_get('post_max_size'));
-        $uploadSize = $this->toBytes(ini_get('upload_max_filesize'));        
-        
-        if ($postSize < $this->sizeLimit || $uploadSize < $this->sizeLimit){
-            $size = max(1, $this->sizeLimit / 1024 / 1024) . 'M';             
-            die("{'error':'increase post_max_size and upload_max_filesize to $size'}");    
-        }        
-    }
-    
-    private function toBytes($str){
-        $val = trim($str);
-        $last = strtolower($str[strlen($str)-1]);
-        switch($last) {
-            case 'g': $val *= 1024;
-            case 'm': $val *= 1024;
-            case 'k': $val *= 1024;        
-        }
-        return $val;
-    }
-    
-    /**
-     * Returns array('success'=>true) or array('error'=>'error message')
-     */
-    function handleUpload($uploadDirectory, $replaceOldFile = FALSE){
-        if (!is_writable($uploadDirectory)){
-            return array('error' => "Server error. Upload directory isn't writable.");
-        }
-        
-        if (!$this->file){
-            return array('error' => 'No files were uploaded.');
-        }
-        
-        $size = $this->file->getSize();
-        
-        if ($size == 0) {
-            return array('error' => 'File is empty');
-        }
-        
-        if ($size > $this->sizeLimit) {
-            return array('error' => 'File is too large');
-        }
-        
-        $pathinfo = pathinfo($this->file->getName());
-        $filename = $pathinfo['filename'];
-        //$filename = md5(uniqid());
-        $ext = $pathinfo['extension'];
-
-        if($this->allowedExtensions && !in_array(strtolower($ext), $this->allowedExtensions)){
-            $these = implode(', ', $this->allowedExtensions);
-            return array('error' => 'File has an invalid extension, it should be one of '. $these . '.');
-        }
-        
-        if(!$replaceOldFile){
-            /// don't overwrite previous files that were uploaded
-            while (file_exists($uploadDirectory . $filename . '.' . $ext)) {
-                $filename .= rand(10, 99);
-            }
-        }
-        
-        if ($this->file->save($uploadDirectory . $filename . '.' . $ext)){
-            return array('success'=>true);
-        } else {
-            return array('error'=> 'Could not save uploaded file.' .
-                'The upload was cancelled, or server error encountered');
-        }
-        
-    }    
-}
-
-// list of valid extensions, ex. array("jpeg", "xml", "bmp")
-$allowedExtensions = array();
-// max file size in bytes
-$sizeLimit = 10 * 1024 * 1024;
-
-$uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
-$result = $uploader->handleUpload('uploads/');
-// to pass data through iframe you will need to encode all html tags
-echo htmlspecialchars(json_encode($result), ENT_NOQUOTES);

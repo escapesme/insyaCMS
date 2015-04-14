@@ -12,7 +12,7 @@ session_start();
 $status = $_POST['status'];
 
 
-echo $status;
+///echo $status;
 switch ($status) {
     case "form":
         $_POST['form'] = urldecode($_POST['form']);
@@ -41,7 +41,7 @@ switch ($status) {
 
 
 
-        print("<pre>" . print_r($_POST, true) . "</pre>");
+     //   print("<pre>" . print_r($_POST, true) . "</pre>");
 
         break;
 }

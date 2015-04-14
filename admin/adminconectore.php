@@ -26,8 +26,7 @@ $myurl = "../";
 
 
 <?php
-ini_set("display_errors", 0);
-error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
+
 require_once($myurl . "lib/libs.php");
 
 

@@ -371,11 +371,11 @@ if (isset($_GET['alias']) && $_GET['alias'] == '404') {
 } else if ((isset($_GET['main']) && $_GET['catid'] == 'main') || isset($_GET['main'])) {
 
     getMain();
-} else if (detect_mobile()) {
+//} else if (detect_mobile()) {
 
 
 
-    $lib->front->getmobilePage();
+  //  $lib->front->getmobilePage();
 } else if ($lib->util->siteSetting['offline'] != "1") {
 
 

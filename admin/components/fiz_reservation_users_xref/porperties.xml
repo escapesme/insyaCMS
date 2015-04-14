@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+
+  reservation_id, user_id, airline, airline_code, arriving_from, its_id, arrived, approved_status, arrival_date, departure_date, arrival_time, statuses, files
+-->
+<root>
+
+    <fields>
+        
+        
+     
+        
+        
+        <its_id name="its_id"  type="its_id"  title="its_id"/>
+        <user_id name="user_id"  type="user_data"  title="name" get="name" />
+        
+        <user_id2 name="user_id"  type="user_data"  title="Jamaat" get="Jamaat" />
+                
+        <user_id3 name="user_id"  type="user_data"  title="Age" get="Age" />
+        <approved_status name="approved_status"  type="date"  title="approved_status" />
+
+        <arrival_date name="arrival_date"  type="date"  title="arrival" />
+
+        <departure_date name="departure_date"  type="date"  title="departure " />
+        <files name="files"  type="files"  title="files" />
+
+    
+        <files name="files"  type="files"  title="files" />
+
+    <approved_status name="approved_status"  
+                   type="select" select_type='DB' 
+                   select_data="fiz_approved_status" 
+                   select_text='title' 
+                   select_value='id'  
+                   title="raza Status"
+                   pclass='_50'/>
+        
+
+    
+    </fields>
+    
+    
+  
+    
+    
+    <selectfields>
+    </selectfields>
+    
+    <listfields >   
+        <its_id  list-width="3"/>
+                <user_id  list-width="2"/>
+
+                <user_id2  list-width="2"/>
+                <user_id3  list-width="2"/>
+
+        
+          <approved_status  list-width="2"/>
+       
+
+        <files  list-width="2"/>
+
+
+    </listfields>
+    
+    <group>
+        
+    </group>
+</root>
+
+
+    
+
