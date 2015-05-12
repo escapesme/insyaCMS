@@ -66,6 +66,8 @@ function createStepesBar($septes) {
 
 
     // foreach ($septes as $s) {
+    
+    $type =$septes[$thsetp - 1];
     $data.="<div class='types'>";
 
     $data.=typesData($septes[$thsetp - 1]);
@@ -92,8 +94,8 @@ function createStepesBar($septes) {
 
     $data.="<div class='setpesBar'>";
     $data.="
-        <a href='" . $perurl . "'  class='wprev'>prev</a> 
-        <a  href='" . $nexturl . "' class='wnext'>next</a>";
+        <a href='" . $perurl . "'  class=' $type wprev'>prev</a> 
+        <a  href='" . $nexturl . "' class=' $type wnext'>next</a>";
     $data.= "</div>";
     $data.= "</div>";
 

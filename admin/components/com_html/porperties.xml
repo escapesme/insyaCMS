@@ -8,7 +8,7 @@ and open the template in the editor.
     <fields>      
     
       
-        <title name="title" lang='true'    type="text"  title="Title" pclass='col-6'/>
+        <title name="title" lang='true'   showTags="true" toolbar="true"  type="text"  title="Title" pclass='col-6'/>
         <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-3' />
         <cat_id   lang='true'
                   name="cat_id[]" 

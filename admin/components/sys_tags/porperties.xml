@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    
+    <fields>
+        
+        
+        <title name="title"  type="text"  title="title" />
+        <color name="color"  type="color"  title="color" />
+        <all name="all" type="enable"  title="all" />
+        <obj_alias name="obj_alias" value="@%get::com%@" type="text"  title="obj_alias" />
+        <obj_type name="obj_type" value="com"  type="text"  title="obj_type" />
+
+    </fields>
+    
+    
+    
+    <listfields>   
+        <title list-width="4"/>
+        <color list-width="4"/>
+        <all  list-width="1"/>
+    </listfields>
+</root>

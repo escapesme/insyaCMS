@@ -28,8 +28,11 @@ and open the template in the editor.
         
                 
         
+          
         
         
+        <countries_exempted name="countries_exempted[]"  title="countries_exempted"  type="list"  select_type="countries"  comment="Select the  countries_exempted"  pclass='col-6'/>
+
         
         
         <package_category name="package_category"  type="list" select_type='DB' 

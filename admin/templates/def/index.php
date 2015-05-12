@@ -92,6 +92,7 @@ $main = creat_main();
                 <section class='page-sidebar '>
 
                     <?= creat_module("mod_defaultMenu") ?> 
+                    <?= creat_module("mod_tags") ?> 
 
 
 

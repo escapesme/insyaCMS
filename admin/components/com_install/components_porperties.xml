@@ -19,7 +19,7 @@ and open the template in the editor.
             <order name="order"  type="order" title="order" pclass="col-3" />
 
         <ins_for name="ins_for"   type="hidden" value="fornt" />
-        <ins_type  name="ins_type"  type="hidden"  value="@%get::type%@" />   
+        <ins_type  name="ins_type"  type="hidden"  value="component" />   
     </fields>
    
     <selectfields>

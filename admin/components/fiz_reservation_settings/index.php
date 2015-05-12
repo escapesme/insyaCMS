@@ -14,7 +14,7 @@
 /* @var $lib  \libs\libs */
 global $lib;
 
-echo $lib->adminEng->getComponentMain("", "", "");
+echo $lib->adminEng->getComponentMain();
 ?>
 
 

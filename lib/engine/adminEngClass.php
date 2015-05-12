@@ -324,10 +324,10 @@ class adminEngClass {
 
         $admin->group = $group;
 
-        
 
-        
-        
+
+
+
 
         $admin->addToForm = $this->addToForm;
         $admin->moreHtml = $moreHtml;
@@ -430,6 +430,12 @@ class adminEngClass {
 
             $pro = "";
             $returndata = mod_favorites($pro);
+        } else {
+
+            include_once $this->foldersMap->admin_modules_folder . $postion . '/index.php';
+
+            $pro = "";
+            $returndata = $postion($pro);
         }
 
 

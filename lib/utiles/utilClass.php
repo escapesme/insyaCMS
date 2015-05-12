@@ -666,7 +666,6 @@ class utilClass {
 
 
 
-
         foreach ($xml->children() as $child) {
 
 

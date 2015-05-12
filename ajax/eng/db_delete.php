@@ -15,10 +15,13 @@ $id = $get['id'];
 
 
 if (isset($_GET['field'])) {
- 
-    echo $lib->db->delete_data($_GET['table'], "".$_GET['field'] . "='" . $id . "'");
+
+    echo $lib->db->delete_data($_GET['table'], "" . $_GET['field'] . "='" . $id . "'");
+}if (isset($_GET['query'])) {
+
+    echo $lib->db->delete_data($_GET['table'], $_GET['query']);
 } else {
 
-    echo $lib->db->delete_data($_GET['table'],"id=". $id);
+    echo $lib->db->delete_data($_GET['table'], "id=" . $id);
 }
 ?>

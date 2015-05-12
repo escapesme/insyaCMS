@@ -12,7 +12,7 @@ $dataresIDS = array();
 function fiz_reservations_login($p, $l) {
 
     /* @var $lib  \libs\libs */
-    global $lib,$dataresIDS;
+    global $lib, $dataresIDS;
     $r = "";
     $r .= '<h2>' . $l['lgoinmsg'] . '</h2>';
 
@@ -76,7 +76,7 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
 
 function getreRowsAc($user_id, $ids) {
     /* @var $lib  \libs\libs */
-    global $lib,$dataresIDS;
+    global $lib, $dataresIDS;
 
 
 
@@ -101,12 +101,15 @@ function getreRowsAc($user_id, $ids) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) >= 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td>" . count($myxref) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td>"
+                        . "<td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxref) . "</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "<td>"
                         . "<input data-rid = '" . $d['id'] . "' type = 'button' value = 'Edit' class = 'edit_its'/>"
-                        . "<input data-rid = '" . $d['id'] . "' type = 'button' value = 'delete' class = 'delete_its'/></td></tr>";
+                        . "<input data-rid = '" . $d['id'] . "' type = 'button' value = 'delete' class = 'delete_its'/>"
+                        . "<input data-rid = '" . $d['id'] . "' type = 'button' value = 'Documents' class = 'documents_its'/>"
+                        . "</td></tr>";
             }
         }
     }
@@ -119,7 +122,7 @@ function getreRowsAc($user_id, $ids) {
 
 function getreRows($user_id, $ids) {
     /* @var $lib  \libs\libs */
-    global $lib,$dataresIDS;
+    global $lib, $dataresIDS;
     print_R($ds);
     $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner = '" . $user_id . "' ");
 
@@ -137,7 +140,7 @@ function getreRows($user_id, $ids) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) < 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td>" . count($myxref) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxref) . "</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "</tr>";
@@ -153,7 +156,7 @@ function getreRows($user_id, $ids) {
 
 function getreRowsBygAc($user_id) {
     /* @var $lib  \libs\libs */
-    global $lib,$dataresIDS;
+    global $lib, $dataresIDS;
 
 
 
@@ -176,7 +179,7 @@ function getreRowsBygAc($user_id) {
             }
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) >= 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td>" . count($myxrefs) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxrefs) . "</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
                         . "<td>"
@@ -191,7 +194,7 @@ function getreRowsBygAc($user_id) {
 
 function getreRowsByg($user_id) {
     /* @var $lib  \libs\libs */
-    global $lib,$dataresIDS;
+    global $lib, $dataresIDS;
 
 
 
@@ -211,7 +214,7 @@ function getreRowsByg($user_id) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) < 0) {
-                $r .= "<tr><td>". sprintf("%04s", $resData['reservation_id']) . "</td><td>" . count($myxrefs) . "</td>"
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxrefs) . "</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
                         . "</tr>";

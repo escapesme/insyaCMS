@@ -16,7 +16,7 @@ class adminClass extends adminactions {
 
     var $thisXref;
 
-    //put your code here
+    //put your code herepageinfo
     public function __construct($lib) {
         parent::__construct($lib);
     }
@@ -137,6 +137,11 @@ class adminClass extends adminactions {
 
             $html.="</div>";
         }
+
+
+        $html .= "<textarea class='pageinfo'>" . str_replace("file=admin/update_list&", "", explode("?", $_SERVER['REQUEST_URI'])[1]) . "</textarea>";
+
+
         return $html;
     }
 
@@ -239,15 +244,6 @@ class adminClass extends adminactions {
         } else {
             $atatus = "normal";
         }
-
-
-//  if ($this->style_status == "tabs" && $this->tabheader != false) {
-//getmian.php?view=menu_itmes&mode=edit&id=
-//
-
-
-
-
 
 
 
@@ -436,9 +432,12 @@ class adminClass extends adminactions {
 
         $this->numrow++;
 
-
+//
         $myname = $data['name'];
         $typestyle = $this->util->odd_or_even($this->numrow);
+
+        $html = $this->getTags($dval["id"], $this->table_name, $data) . "<div class='tdata'>";
+
         switch ($data['type']) {
             case "order" :
 
@@ -474,12 +473,6 @@ class adminClass extends adminactions {
             case "enable_one" :
             case "enable" :
 
-                /* $filds = array(
-                  $snam => array("type" => "select", "name" => $myname, "id" => $myname . "__" . $dval['id'], "class" => $myname . "__enable input__" . $dval['id'], "select_data" => array("1" => "yes", "0" => "no"), "value" => $dval[$myname])
-                  );
-                  $this->formes->filds = $filds;
-                  $html.= "<input type='hidden' value='" . $dval['id'] . "__" . $myname . "__" . $data['type'] . "'    class='input__" . $dval['id'] . "__info' />"
-                  . $this->formes->_render_form(); */
 
                 if ($dval[$myname] == "1") {
                     $s = 'checked="checked"';
@@ -522,7 +515,6 @@ class adminClass extends adminactions {
 
 
             case "files" :
-                $html="";
                 $fs = $dval[$data['name']];
                 $files = explode(",", $fs);
 
@@ -533,26 +525,15 @@ class adminClass extends adminactions {
                 }
                 break;
             case "user_data" :
-                   $html="";
-                /* $fs = $dval[$data['name']];
-                  $files = explode(",", $fs);
 
-                  foreach ($files as $d) {
-                  if ($d != "") {
-                  $html.="<a  style='margin:2px' target='_blank' href='/uploads/userdocs/$d'><i title='$d' class=\"fa fa-file-text\"></i></a>";
-                  }
-                 * user_data
-                  name,email
-                  } */
 
 
                 $gdata = $this->mydb->get_row("com_users", "", "id='" . $dval[$data['name']] . "'");
-                
-                    $gdata2 = $this->mydb->get_row("com_users_fiz", "", "user_id='" . $gdata["id"] . "'");
-                
-                    
-                  $gdata=  array_merge($gdata, $gdata2);
-//print_r($gdata);
+
+                $gdata2 = $this->mydb->get_row("com_users_fiz", "", "user_id='" . $gdata["id"] . "'");
+
+
+                $gdata = array_merge($gdata, $gdata2);
                 $gs = explode(",", $data['get']);
 
                 foreach ($gs as $g) {
@@ -661,9 +642,6 @@ class adminClass extends adminactions {
                 switch ($data['view']) {
 
                     case "input" :
-
-
-
                         $html.= ' <input  data-id="' . $dval['id'] . '"  data-value="' . $dval[$data['name']] . '" '
                                 . ' name="' . $myname . '"  id = "' . $myname . "__" . $dval['id'] . '"  class=" ' . $data['class'] . ' ' . $myname . "_input\"  "
                                 . ' value ="' . $dval[$data['name']] . '"'
@@ -679,8 +657,37 @@ class adminClass extends adminactions {
                         break;
                 }
         }
-
+        $html.="</div>";
         return $html;
+    }
+
+    function getTags($id, $table, $alldata) {
+        $r = "";
+
+        if ($alldata['showTags'] == "true") {
+            $dataTages = $this->mydb->get_data("sys_tags_xref", "*", "obj_id='" . $id . "' and `obj_alias`='" . $table . "'   order by `tag_id` ");
+
+            $data = '<div class=\'_' . $id . ' tags\'>';
+
+
+
+
+            foreach ($dataTages as $tag) {
+
+                $d = $this->mydb->get_row('sys_tags', "*", "id=" . $tag['tag_id']);
+
+//                $data .= '<li  style="background:#' . $d['color'] . '"  data-id="' . $d['id'] . '" id="' . $d['id'] . '" ><i  class="fa fa-tag"></i>' . $d['title'] . '</a></li>';
+
+                $data .= '<li  style="background:#' . $d['color'] . '"  data-id="' . $d['id'] . '" id="' . $d['id'] . '" ><i  class="fa fa-tag"></i>' . $d['title'] . '</a></li>';
+            }
+
+
+
+
+
+            $data .= '</div>';
+        }
+        return $data;
     }
 
     function get_trs($id = "0", $class = "") {
@@ -741,7 +748,7 @@ class adminClass extends adminactions {
             }
 
 
-            $html.= "<div  id=' tr__" . $dval['id'] . "' class=\"divRow $moreClass chtr_" . $id . " " . $typestyle . "  " . $islast . "  " . $class . " tr__" . $dval['id'] . "\" >";
+            $html.= "<div data-id='" . $dval['id'] . "' data-table='" . $this->table_name . "' id=' tr__" . $dval['id'] . "' class=\"divRow $moreClass chtr_" . $id . " " . $typestyle . "  " . $islast . "  " . $class . " tr__" . $dval['id'] . "\" >";
 
             $coll = "";
 
@@ -843,10 +850,13 @@ class adminClass extends adminactions {
 
 
 
+                $m = "";
+                if ($this->table_properties[$list]['toolbar'] == "true") {
+                    $m = "toolbar";
+                }
 
-
-                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "'   data-type='" . $data['type'] . "' class=\"$myname divCell " . " list_data\">"
-                        . "<label class='cellTitle'>" . $this->table_properties[$list]['title'] . "</label><div class='cellvalue'>"
+                $html.="<div   style='width:" . $this->getColwidtth($v["list-width"]) . "'   data-type='" . $data['type'] . "' class=\"$myname divCell  " . " list_data\">"
+                        . "<label class='cellTitle'>" . $this->table_properties[$list]['title'] . "</label><div  data-field='$myname' class=' $m  cellvalue'>"
                         . "";
 
                 $html.= $this->updateTdData($this->table_properties[$list], $dval);
@@ -873,6 +883,18 @@ class adminClass extends adminactions {
             // $html.="</div>";
         }
         return $html;
+    }
+
+    function isfor($name) {
+        $r = true;
+        if (isset($_GET['for'])) {
+            if ($name == $_GET['for']) {
+                $r = true;
+            } else {
+                $r = false;
+            }
+        }
+        return $r;
     }
 
     // </editor-fold>
@@ -2242,7 +2264,26 @@ class adminClass extends adminactions {
 
 
         $dataupdate = $this->table_properties;
+
         foreach ($dataupdate as $list => $V) {
+
+
+            /// print_R(($dataupdate[$list]));
+
+
+
+            if (!$this->isfor($dataupdate[$list]['name'])) {
+                unset($dataupdate[$list]);
+
+                unset($this->table_properties[$list]);
+            }
+        }
+
+
+        foreach ($dataupdate as $list => $V) {
+
+
+
 
 
             if ($dataupdate[$list]['type'] == "plugin") {
@@ -2326,6 +2367,8 @@ class adminClass extends adminactions {
                 }
             }
         }
+
+
 
 
         return $dataupdate;
@@ -2739,12 +2782,12 @@ class adminClass extends adminactions {
 
             $data = $this->dbdata;
         } else {
-
+            $this->mydb->getEnable = FALSE;
 
             $data = $this->mydb->get_data($this->table_name, '', $where);
         }
 
-
+echo  $this->mydb->returnSQL;
 
 
 
@@ -3113,7 +3156,7 @@ class adminClass extends adminactions {
 
 
 
-                $out.= "<tr>";
+                $out.= "<tr class='divRow' data-id='" . $d['id'] . "' data-table='" . $this->table_name . "' >";
                 $out.= "<td class='thisId'>" . count($ds) . $getid . $data['xrefmyid']
                         . "<input value='" . $d['id'] . "' type='hidden' class='thisrowid' />"
                         . "<input value='" . $d[$data['getDataValue']] . "' type='hidden' class='thisvalue'/>" .
@@ -3315,11 +3358,6 @@ class adminClass extends adminactions {
 // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Colltions">
 
-
-
-
-
-
     function getPlugin($alias, $title, $id = "", $block = "", $blockstatus = "") {
 
         $Data = "";
@@ -3390,7 +3428,6 @@ class adminClass extends adminactions {
     }
 
     function getplugins_data($id = "") {
-        // print_r($sData);
 
         $thData = $this->getcomponentData();
         $plugins = $this->mydb->get_data("plugins_xref", "*", "cat_id='" . $thData['id'] . "'");

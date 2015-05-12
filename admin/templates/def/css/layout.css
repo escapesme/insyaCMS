@@ -217,6 +217,7 @@ header .header-seperation {
     width: 250px;
     margin-top: 58px;
     position: fixed
+;overflow: visible;
 }
 
 .main{

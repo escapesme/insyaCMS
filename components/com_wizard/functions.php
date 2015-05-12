@@ -38,9 +38,29 @@ function postDataSteps() {
     }
 }
 
+function getStepByAlias($septes, $alias) {
+    global $lib, $stapesTypes;
+
+
+    foreach ($septes as $s) {
+        $stepData = $lib->util->data->updateStringTorray($s);
+
+        
+        
+        
+
+        if ($stepData['alias'] == $alias) {
+            $r = $stepData;
+        }
+    }
+
+
+    return $r;
+}
+
 function createStepesBar($septes) {
     $data = "";
-    global $lib;
+    global $lib, $stapesTypes;
     $thsetp = 1;
 
     $data.="<div class='wstep _" . $thsetp . "'>";
@@ -62,98 +82,66 @@ function createStepesBar($septes) {
         $data.="<div class='setp " . $more . "'>" . $num . "</div>";
     }
 
+
+
+
+
+
     $data.= "</div>";
 
 
-    // foreach ($septes as $s) {
     $data.="<div class='types'>";
 
 
 
-    $stepData = explode(";", $septes[$thsetp - 1]);
-
-    $data.=typesData($stepData);
 
 
-    $stepData = $lib->util->data->updateStringTorray($stepData[0]);
+    $stepData = getStepByAlias($septes, $thsetp);
+
+
+
+
+    $thisSetpNum = $stepData['steporder']-1 ;
+
+    
+    
+    
+    $PrevstepData = explode(";", $septes[$thisSetpNum - 1]);
+    $NextstepData = explode(";", $septes[$thisSetpNum + 1]);
+    
+    
+    $NextstepData = $lib->util->data->updateStringTorray($NextstepData[0]);
+    $PrevstepData = $lib->util->data->updateStringTorray($PrevstepData[0]);
+
+    
+    print_r($NextstepData);
+
+    $lib->util->page->updateTitle($stepData['title'], $stepData['title'], "title-web");
+    $data .= $lib->util->dataBluder->renderDataBluder($stepData['data1']);
+    $data .=" " . $lib->util->dataBluder->StypeType;
+
 
     $data.= "</div>";
 
-
-    // }
-
-
-
-
-
-
-    $newxurlnum = $thsetp + 1;
-    $perurlnum = $thsetp - 1;
-    if ($perurlnum < 1) {
-        $perurlnum = 1;
-    }
-
-    if ($newxurlnum >= count($septes)) {
-        $newxurlnum = count($septes);
-    }
-
-
-    $nexturl = $lib->util->createURL("com_wizard", $newxurlnum, "", "step");
-    $perurl = $lib->util->createURL("com_wizard", $perurlnum, "", "step");
-
-
-
+    $nexturl = $lib->util->createURL("com_wizard", $NextstepData['alias'], "", "step");
+    $perurl = $lib->util->createURL("com_wizard", $PrevstepData['alias'], "", "step");
 
 
     $data.="<div class='setpesBar'>";
 
-    if (isset($stepData['prevText']) && $stepData['prevText']!="") {
-        $data.="<a href='" . $perurl . "'  class='wprev'>" . $stepData['prevText'] . "</a> ";
+    if (isset($stepData['prevText']) && $stepData['prevText'] != "") {
+        $data.="<a href='" . $perurl . "'  data-step='" . $thsetp . "  class='$stapesTypes wprev'>" . $stepData['prevText'] . "</a> ";
     }
-    if (isset($stepData['nextText']) && $stepData['nextText']!="") {
+    if (isset($stepData['nextText']) && $stepData['nextText'] != "") {
 
-        $data.="<a  href='" . $nexturl . "' class='wnext'>" . $stepData['nextText'] . "</a>";
+        $data.="<a  href='" . $nexturl . "' data-step='" . $thsetp . "' class='$stapesTypes wnext'>" . $stepData['nextText'] . "</a>";
     }
 
     $data.= "</div>";
     $data.= "</div>";
 
-
     return $data;
 }
 
-function typesData($types) {
-
-    //$types = explode("||", $mytype);
-
-    /* @var $lib  libs\libs */
-    global $lib;
-
-
-    $data = "";
-
-
-
-
-
-
-    foreach ($types as $type) {
-
-
-        if (isset($type) && trim($type) != "") {
-            $ts1 = $lib->util->data->updateStringTorray($type);
-
-            $lib->util->page->updateTitle($ts1['title'], $ts1['title'], "title-web");
-
-
-
-            $data .= $lib->util->dataBluder->renderDataBluder($ts1['data1']);
-        }
-    }
-
-
-
-    return $data;
-}
-
+$stapesTypes = "";
 ?>

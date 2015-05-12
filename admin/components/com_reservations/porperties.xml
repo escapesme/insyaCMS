@@ -5,12 +5,23 @@ and open the template in the editor.
 -->
 <root>
     
+    <bar>
+        <edit  actions="edit" action="edit" />
+        <delete  actions="delete" action="delete" />
+    </bar>
+    
+    
+    
+    
+    
     <fields>
     
-        <res_id name="res_id"  type="text"  title="res_id"/>
+        <res_id name="res_id"   type="text"  title="res_id"/>
         
         
-        <status name="checkin"  type="text"  title="checkin"/>
+        <status name="checkin"   type="text"  title="checkin"/>
+        
+        
         
         
         <status 

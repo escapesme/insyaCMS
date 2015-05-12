@@ -6,47 +6,29 @@
 
 
 
-function  updateFileTable() {
 
+
+
+
+
+
+function  updateFileTable() {
     if ($(".res_id").val() !== undefined) {
         sendPAjax("ajax/coms/fiz/reservations_actions", "status=get_files&" + "&id=" + $(".mylightboxbg").data("id"), function (data) {
             $(".FileTable").html(data);
         })
     }
 }
+
+
+
+
 $(document).ready(function () {
-    $('#fine-uploader').fineUploader({
-        request: {
-            endpoint: "/ajax/upload.php"
-        },
-        // optional feature
-
-        validation: {
-            itemLimit: 5,
-            sizeLimit: 15000000
-        }})
-
-            .on('complete', function (event, id, name, response) {
-
-
-
-
+    advuploader('#fine-uploader',
+            function (event, id, name, response) {
                 sendPAjax("ajax/coms/fiz/reservations_actions", "name=" + name + "&status=add_files" + "&id=" + $(".mylightboxbg").data("id"), function (data) {
-
                     updateFileTable();
-                });
-
-
-                /*var $fileEl = $(this).fineUploaderS3("getItemByFileId", id),
-                 $viewBtn = $fileEl.find(".view-btn");
-                 alert("sdfsdf");
-                 
-                 
-                 if (response.success) {
-                 alert(response.tempLink);
-                 $viewBtn.show();
-                 $viewBtn.attr("href", response.tempLink);
-                 }*/
+                })
             });
 });
 
@@ -289,7 +271,7 @@ $(function () {
         var more = "";
 
 
-        sendPAjax("ajax/coms/fiz/reservations_actions", "rid=" + $(this).data("res_id") + "&status=raza_new&value=" + $(".addits").val() + more, function (data) {
+        sendPAjax("ajax/coms/fiz/reservations_actions", "rid=" + $(this).data("res_id") + "&status=raza_new&value=" + $(".addits").val() + "&country=" + $(".addits").val() + more, function (data) {
             if ($.trim(data) == "0") {
                 alert("Error: User data could not be retrieved. Please check if the ITS IS is correct.");
 

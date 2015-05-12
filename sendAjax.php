@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -11,6 +12,10 @@
 require_once("lib/libs.php");
 
 error_reporting(E_ALL);
+if ($_GET['wstyle']) {
+    echo '<link rel="stylesheet" href="/templates/style/css/style.css" type="text/css"/>
+';
+}
 
 $_SESSION[url] = $_GET;
 

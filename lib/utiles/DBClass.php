@@ -79,7 +79,7 @@ class dbClass {
     var $return_die = 0;
     var $error = "";
     var $getDleleted = "";
-    var $getEnable = "";
+    var $getEnable = true;
     var $getDisable = "";
     var $returnSQL = "";
 
@@ -739,7 +739,6 @@ class dbClass {
                 $options.=" LIMIT 0," . $this->opt->num_rows;
             }
         }
-
 
 
         $sql = "SELECT $sql_felds FROM $table $moreWhere $options";

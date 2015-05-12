@@ -23,7 +23,6 @@ if ($_GET['status'] == "get_files") {
 
     $r = "<table class='mainTabel'>";
 
-
     foreach ($files as $f) {
         if ($f != "") {
             $r .= "<tr><td><a target=\"_blank\" href='/uploads/userdocs/$f'>$f</a></td><td><input type='button' data-id='" . $_GET['id'] . "'   data-name='$f' value='Delete' class='delete_file' /></td></tr>";
@@ -51,6 +50,18 @@ if ($_GET['status'] == "get_files") {
         "files" => $newfile
     );
     $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+} else if ($_GET['status'] == "getgdata") {
+    $data = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id='" . $_GET['value'] . "'");
+    $r .= "<table class='maintabel'><tbody>";
+    foreach ($data as $d) {
+        $userData = $lib->coms->faiz->getUserDataByID($d['user_id']);
+        $approved_status = $lib->db->get_row("fiz_approved_status", "*", "id='" . $d['approved_status'] . "'");
+        $r .= "<tr><td>" . $userData['Mumin_id'] . "</td><td>" . $userData['name'] . "</td><td> " . $approved_status['title'] . "</td></tr>";
+    }
+    //$r .= getreRows($udata['user_id'], $ids);
+    $r .= "</tbody>";
+    $r .= "</table>";
+    echo $r;
 } else if ($_GET['status'] == "add_files") {
 
 
@@ -133,7 +144,8 @@ if ($_GET['status'] == "get_files") {
                 "email" => $userdata['email'],
                 "mobile" => $userdata['mobile'],
                 "booking_owner" => $_SESSION['razaOwnerID'],
-                "raza_type" => $_GET['rtpy']
+                "raza_type" => $_GET['rtpy'],
+                "country" => $_GET['country']
             );
 
             $lib->db->insert_row("fiz_reservation", $resData);
@@ -152,44 +164,54 @@ if ($_GET['status'] == "get_files") {
 
         $lib->db->insert_row("fiz_reservation_users_xref", $xrefData);
     }
-
 } else if ($_GET['status'] == "updateTable") {
 
 
-    ini_set("display_errors", 1);
-    error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
-
-
     $resids = array();
-    $myxrefData = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '".$_GET['res_id']."'");
+    $myxrefData = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '" . $_GET['res_id'] . "'");
+
+    $r .= "";
+
+
+    $lib->forms->filds = array(
+        "addits" => array(
+            "type" => "text",
+            "name" => "addits", "class" => "addits",
+            "title" => "Add more persons to your group. ITS NO ", "pclass" => '_75'
+        ),
+        "country" => array(
+            "type" => "select",
+            "select_type" => "countries",
+            "name" => "country",
+            "title" => "country", "pclass" => '_75'
+        ),
+        "button" => array(
+            "type" => "button",
+            "name" => "add_button",
+            "value" => "Add"
+            , "pclass" => '_50'
+            , "class" => 'add_button'
+            , "moreAttra" => "data-res_id='" . $_GET['res_id'] . "'"
+        )
+    );
 
 
 
-
-
-
-
-
-
-
+    $out_data = $lib->forms->_render_form();
     foreach ($myxrefData as $d) {
 
 
         $userData = $lib->coms->faiz->getUserDataByID($d['user_id']);
 
-
-
-
         $approved_status = $lib->db->get_row("fiz_approved_status", "*", "id='" . $d['approved_status'] . "'");
 
-        $r .= "<tr><td>" . $userData['Mumin_id'] . "</td><td>" . $userData['name'] . "</td><td> " . $approved_status['title'] . "</td><td>"
+        $r .= "<tr><td>" . $userData['Mumin_id'] . "</td><td>" . $userData['name'] . "</td><td> " . $approved_status['title'] . "</td><td> " . $d['country'] . "</td><td>"
                 . "<input type='button' data-show='updatefiles' data-name='" . $userData['name'] . "''  data-id='" . $d['id'] . "'' value='Upload' class='upload_filesdata' />"
                 . "<input type='button' data-name='" . $userData['name'] . "''  data-id='" . $d['id'] . "'' value='delete' class='deleteej_bt' /></td></tr>";
     }
     //$r .= getreRows($udata['user_id'], $ids);
-    $r .= "<tr><td colspan = \"4\" >Add more persons to your group. ITS NO<input type='text' class='addits' ><input type='button'  data-res_id='" . $_GET['res_id'] . "'' value='Add' class='add_button' /></td></tr>"
-            . "</tbody>";
-    $r .= "</table>";
+    $r .= "<tr><td colspan = \"4\" >$out_data<div></div></td></tr>"
+            . "";
 
     echo $r;
 }
@@ -258,15 +280,17 @@ else if ($_GET['status'] == "lgoin") {
     global $lib;
     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'] . ";getType__data");
 
+    $_SESSION['razaOwnerID'] = "276";
+
+    /*
 
 
+      if ($data['FullName']) {
+      $_SESSION['razaOwnerID'] = $lib->coms->faiz->saveUser($data);
+      } else {
 
-    if ($data['FullName']) {
-        $_SESSION['razaOwnerID'] = $lib->coms->faiz->saveUser($data);
-    } else {
-
-        echo "0";
-    }
+      echo "0";
+      } */
 } else if ($_GET['status'] == "updatepkg") {
 
 
@@ -376,8 +400,29 @@ else if ($_GET['status'] == "lgoin") {
 
     $_SESSION['razaOwnerID'] = "";
     $_SESSION['formraza'] = "";
+} elseif ($_GET['status'] == "visa_file") {
+
+
+    $saveArray = array(
+        "visa_file" => $_GET['name']
+    );
+
+    $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+} elseif ($_GET['status'] == "passport_file") {
+
+
+
+    $saveArray = array(
+        "passport_file" => $_GET['name']
+    );
+
+    $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
 }
 
+
+
+
+ 
 
 //logoures
     /*

@@ -13,10 +13,7 @@ session_start();
 
 function fiz_reservations_returnData($p, $l, $oid, $odata) {
 
-    return fiz_razaTypes($p, $l, $oid, $odata);
-}
 
-function fiz_razaTypes($p, $l, $oid, $odata) {
     /* @var $lib  \libs\libs */
     global $lib;
 
@@ -45,7 +42,6 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
         if (isset($rddata['raza_type']) && $rddata['raza_type'] != "") {
             $oldraza = $lib->db->get_row("fiz_raza_types", "*", "id=" . $rddata['raza_type']);
         }
-
 
         $a = "display:none;";
         $b = "display:block;";
@@ -91,8 +87,6 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
             . "<h2>Update contact details</h2>"
             . $lib->forms->_render_form()
             . "</div>"; // </editor-fold>
-
-
 
 
     $r .= "<div style ='display:none;' class='mylightboxbg'><div   class=' mylightbox'><div   class=' mylightboxdata'><div id=\"cboxClose\"></div><div  id='fine-uploader'></div><div class='FileTable'></div></div></div></div>";

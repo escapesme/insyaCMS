@@ -13,8 +13,8 @@ and open the template in the editor.
      
         
         
-        <its_id name="its_id"  type="its_id"  title="its_id"/>
-        <user_id name="user_id"  type="user_data"  title="name" get="name" />
+        <its_id name="its_id"   type="its_id"  title="its_id"/>
+        <user_id name="user_id" showTags="true"  type="user_data"  title="name" get="name" />
         
         <user_id2 name="user_id"  type="user_data"  title="Jamaat" get="Jamaat" />
                 

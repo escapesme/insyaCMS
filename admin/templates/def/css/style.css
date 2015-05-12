@@ -2071,6 +2071,48 @@ html[xmlns] .my_clearfix {
     max-height: none
 }
 .divRow.opened .tools_bar{
-    
+
     top: 0px;  
+}
+
+
+
+.divRow .tags li{
+
+
+    display: inline-block
+        ;
+    font-size: 9px;
+
+
+
+    margin: 1px;
+
+
+
+
+
+}
+
+.divRow .tags {
+    float: right;
+    margin-right: 20px;
+}.tool-items .fa{
+    font-size: 25px;
+    margin-top: 4px;
+}
+
+.tags li{
+   display: inline-block;
+  font-size: 9px;
+  margin: 1px;
+  padding: 1px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 0 10px 10px 0;
+  padding-right: 10px;
+  padding-left: 5px;
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer
 }

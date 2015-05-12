@@ -70,7 +70,7 @@
 
                             <div id="alertBox-generated" style="" class="alert error no-margin top"><?= $returnData[1] ?></div>
 
-                        <? } ?>
+                        <?php } ?>
 
 
 
@@ -109,13 +109,13 @@
                             <ul class="actions-left"> <li>
                                     <a class="button recover_password" name="recover_password" >Recover Password</a></li> 
                                 <li class="divider-vertical"></li> 
-                                 
-                            
+
+
                             </ul> 
                             <ul class="actions-right">
-                                  <li><input type='reset' class="button blue" id="reset-login" ></li>
+                                <li><input type='reset' class="button blue" id="reset-login" ></li>
                                 <li><input type="submit" class="button Logindo blue" value="Login"></li>
-                              
+
                                 <li><input type="submit" style='display:none' class="button recoverdo" value="recover"></li> 
                             </ul> </div> 
 
@@ -128,12 +128,3 @@
 
     </body>
 </html>
-
-<style>
-
-
-</style>
-
-
-
-

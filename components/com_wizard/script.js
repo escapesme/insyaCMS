@@ -3,31 +3,37 @@
 
 
 
-function d() {
-
+function d(go) {
 
     var d2 = $(".checkout").val();
     var d1 = $(".checkin").val();
 
-
-
-
-
     if (d1 != null && d2 != null) {
-        getAjax("daysW2Dates", "d1=" + d1 + "&d2=" + d2, function(f) {
-            if (parseFloat(f) >= 0) {
 
-                $(".nights").val(f)
+        getAjax("daysW2Dates", "d1=" + d1 + "&d2=" + d2, function (f) {
+            if (parseFloat(f) > 0) {
+                $(".nights").val(f);
+
+                if (go) {
+                    //$("form").submit();
+
+                    setFormToSesstion($("form"), function () {
+
+                        window.location = "/rex/step/3/";
+                    })
+                }
             } else if (parseFloat(f) < 0) {
 
 
-
-                alert("Error: Checkout date cannot be before check in date!");
-
-
+                if (go) {
+                    alert("Error: Checkout date cannot be before check in date!");
+                }
 
                 $(".nights").val(0);
             } else {
+                if (go) {
+                    alert("Error: Checkout date cannot be before check in date!");
+                }
 
                 $(".nights").val(0);
 
@@ -37,37 +43,36 @@ function d() {
 
         });
     }
-    ;
-
-
 }
 
-$(function() {
+$(function () {
 
 
 
- d() ;
+
+
+    // d();
 
     $(".checkinDate").datepicker({
         dateFormat: "dd/mm/yy",
-        onSelect: function(value, date) {
+        onSelect: function (value, date) {
 
 
             $(".checkin").val(value);
 
+            d(false);
 
-            d();
         }}).
             datepicker('setDate', $(".checkin").val());
-    ;
+
 
     $(".checkoutDate").datepicker({
         dateFormat: "dd/mm/yy",
-        onSelect: function(value, date) {
+        onSelect: function (value, date) {
 
             $(".checkout").val(value);
 
-            d();
+            d(false);
         }}).
             datepicker('setDate', $(".checkout").val());
     ;
@@ -85,7 +90,7 @@ $(function() {
     if (ids) {
         ids = ids.split(",");
         for (var i = 0; i < ids.length; i++) {
-            getAjax("res/chekej", "ej=" + ids[i], function(f) {
+            getAjax("res/chekej", "ej=" + ids[i], function (f) {
 
 
                 updateResTable(f, "open");
@@ -103,56 +108,56 @@ $(function() {
 
 
 
-  $(document).on("click", ".new_its", function() {
+    $(document).on("click", ".new_its", function () {
 
         var rid = $(this).data("rid");
-        getAjax("coms/fiz/reservations_actions", "status=newres&rid=" + rid, function(f) {
+        getAjax("coms/fiz/reservations_actions", "status=newres&rid=" + rid, function (f) {
 
 
-        window.location = "/rex/step/2/";
+            window.location = "/rex/step/2/";
 
         })
 
     })
-  $(document).on("click", ".logout_its", function() {
+    $(document).on("click", ".logout_its", function () {
 
         var rid = $(this).data("rid");
-        getAjax("coms/fiz/reservations_actions", "status=logoures&rid=" + rid, function(f) {
-         window.location = "/rex/step/1/";
+        getAjax("coms/fiz/reservations_actions", "status=logoures&rid=" + rid, function (f) {
+            window.location = "/rex/step/1/";
         })
     })
-    
-    
-    
+
+
+
     /*
      * 
      * 
      * = "lgoin") {
-    global $lib;
-
-    $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'
+     global $lib;
+     
+     $data = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $_GET['value'
      */
-    
-    $(document).on("click", ".edit_its", function() {
+
+    $(document).on("click", ".edit_its", function () {
 
         var rid = $(this).data("rid");
-        getAjax("coms/fiz/reservations_actions", "status=editres&rid=" + rid, function(f) {
+        getAjax("coms/fiz/reservations_actions", "status=editres&rid=" + rid, function (f) {
 
 
-           window.location = "/rex/step/2/";
+            window.location = "/rex/step/2/";
 
         })
 
     });
-    
-    
-    
-    $(document).on("click", ".delete_its", function() {
+
+
+
+    $(document).on("click", ".delete_its", function () {
 
 
         var rid = $(this).data("rid");
 
-        getAjax("coms/fiz/reservations_actions", "status=deleteres&rid=" + rid, function(f) {
+        getAjax("coms/fiz/reservations_actions", "status=deleteres&rid=" + rid, function (f) {
 
 ///rex/step/2/
 
@@ -165,7 +170,7 @@ $(function() {
 
 
 
-    $(document).on("click", ".addMoreBT", function() {
+    $(document).on("click", ".addMoreBT", function () {
 
         var me = $(this);
 
@@ -176,7 +181,7 @@ $(function() {
 
 
         } else {
-            getAjax("res/chekej", "ej=" + eid, function(f) {
+            getAjax("res/chekej", "ej=" + eid, function (f) {
 
                 if ($.trim(f) !== "0") {
 
@@ -200,7 +205,7 @@ $(function() {
     })
 
 
-    $(document).on("click", ".removeTabelRes", function() {
+    $(document).on("click", ".removeTabelRes", function () {
         var t = $(this);
         var id = t.data('id');
 
@@ -210,7 +215,7 @@ $(function() {
             var mep = $(this).parent("td").parent("tr");
 
 
-            mep.fadeOut(1000, function() {
+            mep.fadeOut(1000, function () {
                 mep.remove();
 
 
@@ -273,42 +278,36 @@ $(function() {
             var v = a[0].replace("]", "");
             data[$.trim(v)] = $.trim(a[1]);
         }
-        if ($(".tabelRes table tbody").length)
-        {
-            var html = "<tr>\n\
+        getAjax("admin/fillList", "status=countries", function (selectData) {
+            if ($(".tabelRes table tbody").length)
+            {
+                var html = "<tr>\n\
     <td>" + data['Mumin_id'] + "</td>\n\
-<td>" + data['FullName'] + "</td>\n\
+<td>" + data['FullName'] + "</td><td><select>" + selectData + "</select></td>\n\
 <td><input class='button removeTabelRes' value='remove'  data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>";
 
 
-            $(".tabelRes table tbody").append(html);
+                $(".tabelRes table tbody").append(html);
 
-            if (status !== "open") {
-                $(".Mumin_ids").val($(".Mumin_ids").val() + "," + data['Mumin_id']);
-            }
+                if (status !== "open") {
+                    $(".Mumin_ids").val($(".Mumin_ids").val() + "," + data['Mumin_id']);
+                }
 
-        } else {
+            } else {
 
 
-            var html = "<table class='mainTabel'>\n\
+                var html = "<table class='mainTabel'>\n\
                                                 <thead><tr><th>ITS ID</th><th>Name</th></tr></thead>\n\
-                                                <tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>\n\
+                                                <tbody><tr><td>" + data['Mumin_id'] + "</td><td>" + data['FullName'] + "</td><td><select>" + selectData + "</select></td><td><input class='button removeTabelRes' value='remove' data-id='" + data['Mumin_id'] + "'  type='button' /></td></tr>\n\
                                                         </tbody></table>";
+                if (status !== "open") {
+                    $(".Mumin_ids").val(data['Mumin_id']);
+                }
+                $(".tabelRes").html(html);
 
-
-
-
-
-
-
-            if (status !== "open") {
-                $(".Mumin_ids").val(data['Mumin_id']);
             }
-            $(".tabelRes").html(html);
 
-        }
-
-
+        })
 
     }
 
@@ -327,16 +326,30 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
 
-    $(".wnext").click(function() {
+    $(".wnext").click(function () {
+
+        var o = $(this);
 
 
         if ($("form").doesExist()) {
-            $("form").submit();
+
+
+
+            if (o.data("step") != "2") {
+                //  $("form").submit();
+                return false;
+            } else {
+                d(true);
+            }
             return false;
+
+
         }
+
+
     })
 
 });

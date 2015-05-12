@@ -14,12 +14,12 @@
     
     
     <fields>
-            <name name="name"  type="text"  title="name"/> 
-            <Title name="Title"  type="text"  title="Title"/> 
-            <Gender name="Gender"  type="text"  title="Gender"/> 
-            <Mumin_id name="Mumin_id"  type="Mumin_id"  title="Mumin_id"/> 
+        <name name="name"   type="text"  title="name"/> 
+        <Title name="Title"  type="text"  title="Title"/> 
+        <Gender name="Gender"  type="text"  title="Gender"/> 
+        <Mumin_id name="Mumin_id"  type="Mumin_id"  title="Mumin_id"/> 
 
-        <reservation_id name="reservation_id"  type="text"  title="Res id"/> 
+        <reservation_id showTags="true" name="reservation_id"  type="text"  title="Res id"/> 
         <email name="email"  type="text"  title="email"/> 
         <remarks name="editor"  type="textarea"  title="remarks"/> 
            
@@ -66,7 +66,7 @@
         <raza_type  />
         <name  />
         <Title  />
-                <Mumin_id  />
+        <Mumin_id  />
 
         
     </selectfields>

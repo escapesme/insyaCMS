@@ -17,7 +17,13 @@ $filds = array(
         "title" => "Title",
         "value" => $valuesData['title']
     ),
-    
+        "alias" => array(
+        "type" => "text",
+        "id" => "alias",
+        "class" => "optionData",
+        "title" => "Alias",
+        "value" => $valuesData['alias']
+    ),
     "nextText" => array(
         "type" => "text",
         "id" => "nextText",

@@ -17,6 +17,8 @@ require_once('queryBluderClass.php');
 
 class dataBluder extends queryBluderClass {
 
+    var $StypeType = "";
+
     function plugin_render($vdata) {
 
         /* @var $lib  \libs\libs */
@@ -41,7 +43,7 @@ class dataBluder extends queryBluderClass {
 
 
 
-        return "<div class='type ".$vdata['pluginTitle']." plugintype'>" . $data . "</div>";
+        return "<div class='type " . $vdata['pluginTitle'] . " plugintype'>" . $data . "</div>";
     }
 
     function images_render($vdata) {
@@ -104,10 +106,10 @@ class dataBluder extends queryBluderClass {
             $datar = $lib->db->get_row('com_form', '', 'ID=' . $vdata['formid']);
             $data.=$datar['des'];
 
-            
-             $data.="<script>formToSeesstion('".$datar['title']."');</script>";
-            
-            
+
+            $data.="<script>formToSeesstion('" . $datar['title'] . "');</script>";
+
+
             $data.= $lib->forms->getFiledsFormStrign("db", "com_form", $vdata['formid'], "data", "0");
         }
 
@@ -166,14 +168,16 @@ class dataBluder extends queryBluderClass {
         return "<div class='chartCont'>" . $this->renderQuery($valuesData['queryid'], $valuesData['returnType']) . "</div>";
     }
 
+  
+
     function renderDataBluder($dataBluder_id) {
         //   print_r($_SESSION);
         /* @var $lib  libs\libs */
-        global $lib;
+        global $lib, $StypeType;
 
 
 
-      
+
         if (isset($_POST)) {
 
 
@@ -195,6 +199,11 @@ class dataBluder extends queryBluderClass {
 
 
             $valuesData = $lib->util->data->updateStringTorray($d);
+
+
+            $this->StypeType .=" ". $valuesData['type'];
+
+
 
             switch ($valuesData['type']) {
                 case "query":

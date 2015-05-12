@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <fields>
+        <obj_alias name="obj_alias" value="@%get::com%@" type="text"  title="obj_alias" />
+        <obj_type name="obj_type" value="com"  type="text"  title="obj_type" />
+        <obj_data name="textarea"  type="text"  title="comment" />
+    </fields>
+    
+    
+    <listfields>   
+        <obj_alias list-width="4"/>
+        <obj_type list-width="4"/>
+        <obj_data  list-width="1"/>
+    </listfields>
+</root>
