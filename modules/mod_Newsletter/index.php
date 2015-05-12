@@ -9,7 +9,7 @@ function mod_Newsletter($pro, $lang) {
 
     global $lib;
 
-    $n = $lib->db->get_data("com_newsLetter");
+    $n = $lib->db->get_data("com_newsletter");
 
 
     $returnData .="<div class='submun'>" . $lang['subnum'] . ":<span>" . count($n) . "</span></div>";

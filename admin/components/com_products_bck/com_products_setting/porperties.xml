@@ -46,7 +46,7 @@ and open the template in the editor.
             name="mailtemplate" 
             type="select" 
             select_type='DB' 
-            select_data="com_mailsTemplates"
+            select_data="com_mailstemplates"
             select_text='title' 
             select_value='id'
             title="email template:" 

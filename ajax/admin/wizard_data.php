@@ -111,7 +111,7 @@ if ($typ == "Sesstion_data") {
             "type" => "select",
             "select_type" => "DB",
             "id" => "data1",
-            "select_data" => "sys_dataBluder",
+            "select_data" => "sys_databluder",
             "class" => "optionData",
             "select_text" => "title",
             "select_value" => "id",

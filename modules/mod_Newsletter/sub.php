@@ -11,7 +11,7 @@ $d = array(
     "group" => $_GET['group']
 );
 
-$lib->db->insert_row("com_newsLetter", $d);
+$lib->db->insert_row("com_newsletter", $d);
 
 $emails = array(
     "email" => $_GET['email'],
@@ -20,7 +20,7 @@ $emails = array(
 if ($_GET['emailTemplate'] != "") {
 
 
-    $mData = $lib->db->get_data("com_mailsTemplates", "", "id=" . $_GET['emailTemplate']);
+    $mData = $lib->db->get_data("com_mailstemplates", "", "id=" . $_GET['emailTemplate']);
 
 
 

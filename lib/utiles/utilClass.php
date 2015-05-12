@@ -1089,7 +1089,7 @@ class utilClass {
     function sendMailData($meils, $meilTemplat_id, $dataBefor = "", $dataAfter = "", $vraarys = "") {
 
         global $lib;
-        $Msetting = $this->db->get_row("com_mailsTemplates", "", "id='" . $meilTemplat_id . "'");
+        $Msetting = $this->db->get_row("com_mailstemplates", "", "id='" . $meilTemplat_id . "'");
         $subject = $Msetting['subject'];
         $formlabel = $Msetting['sender_name'];
         $formmail = $Msetting['sender_mail'];

@@ -68,7 +68,7 @@ class getData {
     function _renderFromData() {
 
         $lib = $this->lib;
-        $this->databulderData = $lib->db->get_row('sys_dataBluder', "*", "id='" . $this->id . "'");
+        $this->databulderData = $lib->db->get_row('sys_databluder', "*", "id='" . $this->id . "'");
         $valuesDatas = explode(";", $this->databulderData['data']);
         foreach ($valuesDatas as $d) {
             $valuesData = $lib->util->data->updateStringTorray($d);

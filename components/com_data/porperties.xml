@@ -6,7 +6,7 @@ and open the template in the editor.
 <root>
     <fields>
         <data name="data"  type="select"  
-                   title="wizard" select_data="sys_dataBluder" 
+                   title="wizard" select_data="sys_databluder" 
                    select_type="DB"  
                    select_text ="title" options='fsdf'
                    select_value ="id" pclass='_50'

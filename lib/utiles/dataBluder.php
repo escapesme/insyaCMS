@@ -185,7 +185,7 @@ class dataBluder extends queryBluderClass {
         }
 
         $this->dataID = $dataBluder_id;
-        $this->databulderData = $lib->db->get_row('sys_dataBluder', "*", "id='" . $this->dataID . "'");
+        $this->databulderData = $lib->db->get_row('sys_databluder', "*", "id='" . $this->dataID . "'");
 
 
 
