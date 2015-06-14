@@ -31,19 +31,59 @@ class emailsClass {
      * @param type $formmail
      * @return type
      */
-    function sendMail($emails, $message, $subject, $formlabel, $formmail,$morPath) {
+    function sendmailBytemplate($emails, $MailID, $varArray = "") {
+        $returndata = "";
+
+
+        /* @var $lib  libs\libs */
+        global $lib;
+
+        $maildata = $this->lib->db->get_row("com_mailstemplates", "*", "id=" . $MailID);
+        
+
+        
+        if ($varArray != "") {
+
+            //$lib->language->updateText($message, $n)
+            $maildata['subject'] = $lib->language->updateText($maildata['subject'], $varArray);
+            $maildata['sender_name'] = $lib->language->updateText($maildata['sender_name'], $varArray);
+            $maildata['body'] = $lib->language->updateText($maildata['body'], $varArray);
+        }
+        $formmail = $maildata['sender_mail'];
+        $formlabel = $maildata['sender_name'];
+        $message = $maildata['body'];
+        $subject = $maildata['subject'];
+        $emails.=";" . $maildata['recipients'];
+        $mails = explode(";", $emails);
+        foreach ($mails as $m) {
+            $returndata.= $this->sendMailType($this->lib->config->options['emailType'], $m, $subject, $message, $formlabel, $formmail);
+        }
+        
+        
+        return $returndata;
+    }
+
+    /**
+     * 
+     * @param type $emails
+     * @param type $message
+     * @param type $subject
+     * @param type $formlabel
+     * @param type $formmail
+     * @return type
+     */
+    function sendMail($emails, $message, $subject, $formlabel, $formmail, $morPath) {
         $returndata = "";
         $mails = explode(";", $emails);
 
 
         foreach ($mails as $m) {
-            
-         //   $morPath
-            
             $returndata.= $this->sendMailType($this->lib->config->options['emailType'], $m, $subject, $message, $formlabel, $formmail);
         }
 
 
+        
+        
         return $returndata;
     }
 

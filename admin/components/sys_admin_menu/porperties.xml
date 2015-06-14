@@ -9,7 +9,7 @@ and open the template in the editor.
     
 
     <fields>
-        <title name="title"  type="text"  title="Title" pclass='col-6'/>
+        <title name="title"  type="text" lang='true'   title="Title" pclass='col-6'/>
         <icone name="icone"  type="text" title="icon"
                comment= "Choose your icon from fontawesome.io/icons/ and enter the class as provided. Example: fa-circle" pclass='col-6' />
         
@@ -55,7 +55,7 @@ and open the template in the editor.
     <selectfields>
     
                 
-                
+                  <cat_id /> 
     </selectfields>
     
     

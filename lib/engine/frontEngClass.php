@@ -64,7 +64,6 @@ class frontEngClass {
 
     function updatedata() {
 
-
         $this->menuData = $this->lib->language->getDBArray('menu_itmes', $this->menuData['id'], $this->getmenuDB());
 
         $this->templateData = $this->gettemplatedataDB();
@@ -109,7 +108,6 @@ class frontEngClass {
 
                 $data = $this->lib->site->addTostatus($th["addstatus"]);
             }
-
         }
 
 
@@ -165,9 +163,17 @@ class frontEngClass {
 
             $this->templatelink = $this->foldersMap->fornt_templates_folder . $mydata['ins_alias'];
         } else {
+            if ($_GET['alias'] == "file") {
+                if (isset($_GET['catid'])) {
+                    include $_GET['catid'] . '.php';
+                } else {
+                    include $_GET['id'] . '.php';
+                }
+            } else {
 
-            if ($_GET['alias'] != '404') {
-                $this->util->page->getTo404();
+                if ($_GET['alias'] != '404') {
+                    $this->util->page->getTo404();
+                }
             }
         }
         return $mydata;
@@ -241,6 +247,8 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
     }
 
     function getmain($importfile = true) {
+
+
 
         global $lib;
         $this->updatedata();
@@ -470,7 +478,7 @@ $('body').append('<div class=\'message_bg\'><div onclick=\"copyText()\" class=\'
 
                         if ($m['view_title'] == "1") {
                             $pro['title'] = $lib->language->getText("com_modules", "mod_title", $m['id'], $m['mod_title']);
-                            ;
+                           
                         } else {
                             $pro['title'] = "";
                         }

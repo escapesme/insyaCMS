@@ -11,34 +11,6 @@ $ids = explode(",", $_GET['ids']);
 $type = $_GET['type'];
 
 
-/*
- *  Array
-  (
-  [id] => 12
-  [reservation_id] => 2
-  [user_id] => 161
-  [arrival_time] => 0000-00-00 00:00:00
-  [airline] => sdfdsf
-  [airline_code] => sdfsdf
-  [arriving_from] => sdfdsf
-  [booking_owner] => 161
-  [email] => empcland@gmail.com
-  [remarks] => sdfsdfsdf
-  [individual_id] => 0002I1
-  [its_id] => 30385154
-  [arrived] => 0
-  [city] => cairo
-  [mobile] => 01000445904
-  [planner_options] =>
-  [airport_pickup] => 0
-  [enabled] => 0
-  [delete] => 0
-  [order] => 0
-  [created] => 2014-06-04 15:49:43
-  [modified] => 0000-00-00 00:00:00
-  [user_type] =>
-  )
- */
 
 
 

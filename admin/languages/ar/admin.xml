@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <add>أضافة</add>
+    <edit>تعديل</edit>
+    <delete>حذف</delete>
+    <back>رجوع</back>
+    <copy>نسخ</copy>
+    <trash>المحذوفات</trash>
+      
+            
+    <remove>حذف</remove>
+    <restore>أعاده</restore>
+              
+              
+              
+      
+    <enable>تفعيل</enable>
+    <disable>تعطيل</disable>
+    <reset>Site</reset>
+    <site>Site</site>
+    <Components_Management> التحكم بالملحقات</Components_Management>
+    <Components>الملحقات</Components>
+    <Menus>القوائم</Menus>
+    <Content>المحتوى</Content>
+     
+    
+    
+    <site_Config>أعدادت الموقع</site_Config>
+    
+    <mobile_Config>أعدادت المحمول</mobile_Config>
+    <Users>الاعضاء</Users>
+    <install>تنصب</install>
+    <Modlues_Management>إداره البلوكات </Modlues_Management>
+    <Templates_Management>إداره السمات </Templates_Management>
+    <Menu_Management>إداره القوائم</Menu_Management>
+    <users_Management>إذاره الاعضاء </users_Management>
+    
+
+    
+    <removeAll> حذف الجميع</removeAll>
+    <restoreAll> أستعادة الجميع</restoreAll>
+    <AllMenuItems>   محتويات كل القوائم</AllMenuItems>
+
+    <access_denied_msg>الصلاحيه لا تسمح</access_denied_msg>
+    
+</root>

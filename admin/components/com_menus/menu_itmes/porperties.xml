@@ -94,7 +94,7 @@ and open the template in the editor.
         
         
         <site  
-            xref='com_site_status_xref' 
+            xref='sys_menu_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 

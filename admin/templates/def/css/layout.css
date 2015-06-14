@@ -215,7 +215,7 @@ header .header-seperation {
     float: left;
     position: relative;
     width: 250px;
-    margin-top: 58px;
+    margin-top: 0px;
     position: fixed
 ;overflow: visible;
 }

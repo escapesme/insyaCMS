@@ -20,10 +20,14 @@ switch ($status) {
         break;
 
     case "countries":
-        $file = "/libs/" . $lib->foldersMap->lib_folder . "xml/countries.xml";
-        echo $file;
-        $out.=$lib->files->xmlToOptionsVal($file, "countries", $inputdefault, $select_field_value);
+        $file =  $lib->foldersMap->lib_folder . "xml/countries.xml";
+        $out.=$lib->getHTML->xmlToOptionsVal($file, "countries", $inputdefault, $select_field_value);
         break;
+    
+    
+    
+    
+    
     /* case "xml":
       case "XML":
       $out.= $lib->files->xmlToOptions($selectData, $select_field_text, $inputdefault);
@@ -73,11 +77,7 @@ switch ($status) {
       $out.=$lib->files->xmlToOptionsVal($file, "months", $inputdefault, $select_field_value);
       break;
       case "DB":
-
       $c = "*";
-
-
-
       if (isset($fild['custemData'])) {
 
 

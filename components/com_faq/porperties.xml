@@ -22,7 +22,7 @@ and open the template in the editor.
                      title="View Type" 
 
         
-                     select_data='list>>list;linked>>linked;accordian>>Accordian'
+                     select_data='list>>list;linked>>linked;accordian>>Accordian;normal>>Normal'
      
         />
          

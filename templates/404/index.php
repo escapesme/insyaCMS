@@ -12,22 +12,17 @@ and open the template in the editor.
     </head>
     <body>  <div class='logo'></div>
         <div class='bodyData'>
-          
+
             <div class='error'></div>
-            <h1>لايمكن العثور على الصفحة المطلوبة </h1>
+            <h1>Page Not found</h1>
 
-            
-            <div class='msg'>قد تكوت أزيلت أو أنها غير متوفرة بشكل مؤقت .يمكنك العودة الى 
-          <a href='/' > الصفحة الرئيسية</a>
-                لو كنت تعتقد ان هناك خلل تقنى أو أشرافى تسبب قى ظهور هذة الرشالة ، نرجو منك 
-                مراسلة
-                
-             <a href='/' >   إدارة الموقع</a></div>
 
-            
-            
 
-        </div>
+            <div class='msg'>
+                Sorry, but the page you are trying to view cannot be found.
+                It looks like this was the result of either an out-of-date link or it is removed. The best thing to
+                do is to start again from the <a href='/' > Home Page.</a>
+            </div>
     </body>
 
 </html>

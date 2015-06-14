@@ -34,7 +34,7 @@ function mod_menu($pro) {
     //__li_352 li_active
 
 
-    $datasql = $lib->db->get_data('menu_itmes', '', 'cat_id=0  and parent_id=' . $pro['selecmenu'] . " and `show`='1' ");
+    $datasql = $lib->db->get_data('menu_itmes', '', 'cat_id=0  and parent_id=' . $pro['selecmenu'] . " and `show`='1'  Order by `order` ");
 
 
 

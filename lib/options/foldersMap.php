@@ -25,6 +25,7 @@ class foldersMap {
     var $admin_plugins_users_folder = "plugines/typ_users/";
     var $fornt_includes_folder = "includes/";
     var $fornt_upload_images = "/uploads/images/";
+    var $lib_folder = "lib/";
 
 }
 

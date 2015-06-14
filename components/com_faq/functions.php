@@ -102,13 +102,13 @@ function linkedStyle($pro, $lng) {
     }
     ?>
     <script>
-        $(function() {
+        $(function () {
 
             var speed = 500;
 
 
 
-            $(".totop").click(function() {
+            $(".totop").click(function () {
 
 
                 $('html, body').animate({
@@ -119,7 +119,7 @@ function linkedStyle($pro, $lng) {
 
 
 
-            $(".faqq_question").click(function() {
+            $(".faqq_question").click(function () {
                 var toClass = $(this).attr("id");
 
                 $('html, body').animate({
@@ -227,6 +227,42 @@ function listStyle($pro, $lng) {
 
     <?php
     $data.="<script>$(function() { listTypeactions(); })</script>";
+    return $data;
+}
+
+function normalStyle($pro, $lng) {
+    global $lib;
+
+    $faqs = $lib->db->get_Data("com_faq", "*", "`delete`=0 and `enabled`=1 order by `order`");
+
+    foreach ($faqs as $f) {
+        $data.="<div class='faq_question'>" . $f['question'] . "</div>";
+        $data.="<div class='faq_answer_n'>" . $f['answer'] . "</div>";
+        //$data.="<div class='faq_answer'>" . $f['answer'] . "</div>";
+    }
+    ?>
+
+
+    <style>
+
+        .faq_question{
+            cursor: pointer;
+        }
+
+
+        .faq_answer_n{
+
+  line-height: 25px;
+
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+
+
+    </style>
+
+    <?php
     return $data;
 }
 ?>

@@ -82,6 +82,7 @@ and open the template in the editor.
         <mod_viewall  list-width="1"/>
         <view_title list-width="1.25"/>
         <permission_all list-width="1.25"/>
+        
         <order  list-width="1"/>
         <enabled list-width="1"/>
         

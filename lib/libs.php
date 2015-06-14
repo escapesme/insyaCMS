@@ -175,9 +175,11 @@ class Libs {
     public $getHTML;
 
     function __construct() {
+        
+      
         $this->foldersMap = new options\foldersMap();
         $this->config = new options\configClass();
-        $this->variables = new options\variablesClass();
+        $this->variables = new options\variablesClass($this);
         $this->Messages = new options\Messages();
         $this->DBTables = new options\DBTables();
 

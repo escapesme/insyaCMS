@@ -214,7 +214,6 @@ class siteClass {
 
 
 
-
         $xreafTabel = "";
         if ($type == "menu") {
             $xreafTabel = "sys_menu_status_xref";
@@ -227,15 +226,23 @@ class siteClass {
 //print_r($sttaus);
 
         if (is_array($sttaus)) {
+
+
+
             foreach ($sttaus as $s) {
+
+
+
+
 
                 $datasql = $this->lib->db->get_data($xreafTabel, "*", "item_id='" . $id . "'");
 
 
 
-
+                //  echo  $id."<br/> ";
 
                 foreach ($datasql as $d) {
+
 
 
                     if ($s['id'] == $d['cat_id']) {

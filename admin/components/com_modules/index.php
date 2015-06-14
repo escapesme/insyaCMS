@@ -44,23 +44,13 @@ if ($mode == "add" && $setpes != "step2") {
 
 
     update_menu($mymaxid['mid'], "");
-
     echo "<script>$(function(){ chDataCom('" . $lib->util->getmyurl("admin", "steps") . "steps=step1" . "') })</script>";
 } else {
-
     if ($mode == "edit" & $setpes == "step1") {
-
-
         echo getmodules();
     } else if ($mode == "edit") {
-
-
-
-
         $mymaxid = $lib->db->get_row($lib->util->thisTable(), "", 'id=' . $_GET[$lib->variables->url_id]);
-
         $myxData = $mymaxid['type'];
-
         if (isset($_GET["com"])) {
 
             $myxData = $_GET["com"];
@@ -71,19 +61,11 @@ if ($mode == "add" && $setpes != "step2") {
         }
 
         $comtitle = $myxData;
-
-
-
         $comtitle = str_replace("com_", "", $comtitle);
         $comtitle = str_replace("mod_", "", $comtitle);
         $comtitle = str_replace("plg_", "", $comtitle);
         $comtitle = str_replace("_", " ", $comtitle);
-
-
         echo "<script>$(function(){ chDataComForEdit('" . $comtitle . "','" . $lib->util->getmyurl("admin", "steps") . "steps=step1" . "') })</script>";
-
-
-
         $lib->adminEng->proretiesdir = $myxData;
 
         update_menu($_GET[$lib->variables->url_id], "edit");

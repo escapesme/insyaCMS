@@ -24,8 +24,8 @@ and open the template in the editor.
         <edit_email_subject name="edit_email_subject"  type="text"  title="edit_email_subject"/> 
         <delete_email_subject name="delete_email_subject"  type="text"  title="delete_email_subject"/> 
         
+        <login_html name="login_html"  type="editor"  title="login_html"/> 
 
-        
                 
         
           
@@ -40,15 +40,18 @@ and open the template in the editor.
                      
         
         <email_new_template name="email_new_template"  type="select" select_type='DB' 
-                            select_data="com_html" select_text='title' select_value='id'  title="email_new_template" pclass='_50'/>
+                            select_data="com_mailstemplates" select_text='title' select_value='id'  title="email_new_template" pclass='_50'/>
                      
         <email_edit_template name="email_edit_template"  type="select" select_type='DB' 
-                             select_data="com_html" select_text='title' select_value='id'  title="email_edit_template" pclass='_50'/>
+                             select_data="com_mailstemplates" select_text='title' select_value='id'  title="email_edit_template" pclass='_50'/>
                      
         <email_delete_template name="email_delete_template"  type="select" select_type='DB' 
-                               select_data="com_html" select_text='title' select_value='id'  title="email_delete_template" pclass='_50'/>
+                               select_data="com_mailstemplates" select_text='title' select_value='id'  title="email_delete_template" pclass='_50'/>
            
        
+        
+        
+        
 
         <enabled name="enabled"  type="enable" title="enable" />
     </fields>

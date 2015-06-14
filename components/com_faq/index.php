@@ -42,8 +42,9 @@ function main($pro, $lng) {
     if ($pro['faqstyle'] == "linked") {
         $data.=linkedStyle();
     } else if ($pro['faqstyle'] == "accordian") {
-
         $data.=accordianStyle($lng);
+    } else if ($pro['faqstyle'] == "normal") {
+        $data.=normalStyle($lng);
     } else {
         $data.=listStyle();
     }

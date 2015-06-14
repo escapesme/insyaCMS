@@ -8,7 +8,7 @@ and open the template in the editor.
     <fields>
      <title name="title"  type="text" title="title" pclass="col-6" />
         
-        <alias name="alias"  type="text"  title="Alias" pclass="col-6"/>
+     <alias name="alias"  type="text"  title="Alias" pclass="col-6"/>
                 <des name="des"  type="text" title="Description" />
 
         <image  name="image"  type="pic" title="Image" pclass="col-6" />

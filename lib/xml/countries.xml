@@ -5,68 +5,76 @@ and open the template in the editor.
 -->
 <root>
 
-
 <countries>
-    <AF>Afghanistan</AF>
-<AR>Argentina</AR>
-<AU>Australia</AU>
-<AT>Azerbaijan</AT>
-<BD>Bangladesh</BD>
-<BR>Brazil</BR>
-<KH>Cambodia</KH>
-<CA>Canada</CA>
-<CL>Chile</CL>
-<CN>China</CN>
-<EG>Egypt</EG>
-<SV>El Salvador</SV>
-<ET>Ethiopia</ET>
-
-<FR>France</FR>
-<GE>Georgia</GE>
-<DE>Germany</DE>
-<GR>Greece</GR>
-<GT>Guatemala</GT>
-<IS>Iceland</IS>
 <IN>India</IN>
+<PK>Pakistan</PK>
+ <YE>Yemen</YE>
+<AU>Australia</AU>
+<AT>Austria</AT>
+<BH>Bahrain</BH>
+<BD>Bangladesh</BD>
+<BE>Belgium</BE>
+<BW>Botswana</BW>
+<BV>Bouvet Island</BV>
+<BN>Brunei</BN>
+<BI>Burundi</BI>
+<CA>Canada</CA>
+<CN>China</CN>
+<KM>Comoros</KM>
+<CY>Cyprus</CY>
+<CZ>Czech Republic</CZ>
+<DK>Denmark</DK>
+<DJ>Djibouti</DJ>
+<ET>Ethiopia</ET>
+<FI>Finland</FI>
+<FR>France</FR>
+<DE>Germany</DE>
+<GH>Ghana</GH>
+<GR>Greece</GR>
+<HK>Hong Kong</HK>
+<HU>Hungary</HU>
 <ID>Indonesia</ID>
 <IR>Iran</IR>
+<IQ>Iraq</IQ>
+<IE>Ireland</IE>
 <IT>Italy</IT>
 <JP>Japan</JP>
-<JO>Jordan</JO>
-<LB>Lebanon</LB>
-<LS>Lesotho</LS>
+<KE>Kenya</KE>
+<KW>Kuwait</KW>
 <MG>Madagascar</MG>
 <MY>Malaysia</MY>
-<MX>Mexico</MX>
-<MA>Morocco</MA>
-<MM>Myanmar</MM>
+<MU>Mauritius</MU>
+<MZ>Mozambique</MZ>
 <NP>Nepal</NP>
+<NL>Netherlands</NL>
 <NZ>New Zealand</NZ>
-<NG>Nigeria</NG>
 <NO>Norway</NO>
-<PK>Pakistan</PK>
+<OM>Oman</OM>
 <PH>Philippines</PH>
 <PL>Poland</PL>
 <PT>Portugal</PT>
+<RE>Reunion</RE>
 <RU>Russia</RU>
+<RW>Rwanda</RW>
+<SA>Saudi Arabia</SA>
+<SC>Seychelles</SC>
+<SG>Singapore</SG>
+<SO>Somalia</SO>
 <ZA>South Africa</ZA>
-<KR>South Korea</KR>
 <ES>Spain</ES>
 <LK>Sri Lanka</LK>
-<SD>Sudan</SD>
-<SY>Syria</SY>
+<SE>Sweden</SE>
+<CH>Switzerland</CH>
 <TW>Taiwan</TW>
+<TZ>Tanzania</TZ>
 <TH>Thailand</TH>
 <TR>Turkey</TR>
-
 <UG>Uganda</UG>
 <UA>Ukraine</UA>
+<AE>United Arab Emirates</AE>
 <UK>United Kingdom</UK>
 <US>United States</US>
-<VE>Venezuela</VE>
-<VN>Vietnam</VN>
-<YE>Yemen</YE>
+<ZM>Zambia</ZM>
+<ZW>Zimbabwe</ZW>
 </countries>
 </root>
-
-

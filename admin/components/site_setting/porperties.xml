@@ -8,15 +8,15 @@ and open the template in the editor.
         
         
        
-        <title name="title"  type="text"  title="Site Name"/>
+        <title name="title"  type="text"  title="Site Name" title_ar="إسم الموقع"/>
         
         
         <site_link name="site_link"  type="url"  title=" Site Link" pclass='col-6'/>
            
         <admin_mail name="admin_mail"  type="email" title=" Admin email address" pclass='col-6' />
         
-        <lang name="lang"  title="language"   type="select" select_data="ar>>ar;en>>en" value='ar' pclass='col-6' />
-        <admin_lang name="admin_lang"   title="Admin language"   type="select" select_data="en>>en"  pclass='col-6'/>
+        <lang name="lang"  title="language"   type="select" select_type="language" value='ar' pclass='col-6' />
+        <admin_lang name="admin_lang"   title="Admin language" type="select" select_type="language"   pclass='col-6'/>
         
         <line1  type="line" style='background-color:transparent' /> 
 

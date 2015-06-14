@@ -29,6 +29,9 @@ function getmenus() {
     $data = $lib->db->get_data("sys_admin_pkg", "*", " 1=1 order by `order`");
 
     foreach ($data as $d) {
+        $d = $lib->language->getDBArray("sys_admin_pkg", $d['id'], $d);
+
+
         $r .= " <li class='menu-parent'>"
                 . "<i class=\"fa " . $d['icone'] . " fa-fw\"></i>"
                 . "<a class='title' title='" . $d['tooltip'] . "'>" . $d['title'] . "</a>   <i class=\"fa fa-angle-left acr\"></i>";
@@ -39,10 +42,10 @@ function getmenus() {
         $datamenu = $lib->db->get_data("sys_admin_menu", "*", "cat_id='" . $d['id'] . "' order by `order`");
 
         foreach ($datamenu as $m) {
-
+            $m = $lib->language->getDBArray("sys_admin_menu", $m['id'], $m);
             if ($m['title'] == "separator") {
 
-                 $r .= "<li class='separator'></li>";
+                $r .= "<li class='separator'></li>";
             } else {
                 if (checkPermission($m['url']) == true) {
                     $r .= "<a href='?view=" . $m['url'] . "'  title='" . $m['tooltip'] . "'><li class=\"fa " . $m['icone'] . " fa-fw\"></li>" . $m['title'] . "</a>";

@@ -1,16 +1,5 @@
 
-
-
-//<editor-fold defaultstate="collapsed" desc="comment">
-
-
-
-
-
-
-
-
-
+//<editor-fold defaultstate="collapsed" desc="faiz">
 
 function  updateFileTable() {
     if ($(".res_id").val() !== undefined) {
@@ -19,9 +8,6 @@ function  updateFileTable() {
         })
     }
 }
-
-
-
 
 $(document).ready(function () {
     advuploader('#fine-uploader',
@@ -32,9 +18,9 @@ $(document).ready(function () {
             });
 });
 
+//</editor-fold>
 
-
-
+//<editor-fold defaultstate="collapsed" desc="comment">
 
 $(function () {
 //mylightbox
@@ -53,15 +39,6 @@ $(function () {
 
 
     });
-
-
-
-
-
-
-
-
-
 
     $(document).on("click", ".delete_file", function () {
         sendPAjax("ajax/coms/fiz/reservations_actions", "name=" + $(this).data("name") + "&status=delete_files&" + "id=" + $(this).data("id"), function (data) {
@@ -92,19 +69,11 @@ $(function () {
 
             }});
 
-    })
-
-
-
-
-
-
+    });
     $(document).on("click", ".edit .update_button", function () {
         var to = $(this).data("to");
         var more = "";
         var p = $(this).parents(".razaoptions");
-
-
         if ($(".lightboxData .host_its_id").val() != null && $(".lightboxData .host_its_id").val() != "") {
             more = "&host_its_id=" + $(".lightboxData .host_its_id").val();
 
@@ -112,16 +81,8 @@ $(function () {
         sendPAjax("ajax/coms/fiz/reservations_actions", "rid=" + $(".res_id").val() + "&status=raza_change&" + "&rtpy=" + p.find(".raza_type:checked").val() + more, function (data) {
 
             window.location = to;
-
-
         });
-
     })
-
-
-
-
-
     $(document).on("click", ".res_actions", function () {
         var status = $(this).data("status");
         var to = $(this).data("to");
@@ -203,8 +164,7 @@ $(function () {
 
 
 
-            ;
-
+   
     function  updateTable() {
 
         if ($(".res_id").val() !== undefined) {

@@ -568,9 +568,9 @@ class formsClass {
 
                 case 'fields':
 
-                    
-                    
-                    
+
+
+
                     $input_html = "
 
           <div class='f" . $inputName . "'>
@@ -617,16 +617,14 @@ class formsClass {
 
                 case 'data':
 
-                    
-                    if ($fild['file']==null){
-                        
-                        $fild['file']="b_data";
-                        
+
+                    if ($fild['file'] == null) {
+
+                        $fild['file'] = "b_data";
                     }
-                      if ($fild['options=']==null){
-                        
-                        $fild['options=']="ops";
-                        
+                    if ($fild['options='] == null) {
+
+                        $fild['options='] = "ops";
                     }
                     $input_html = "
 
@@ -654,8 +652,8 @@ class formsClass {
             var ops = new Array( 'query',
              'html','images','videos'
              ,'form','Sesstion_data','plugin');
-                UpdateFromBluder('.f" . $inputName . "','admin/".$fild['file']."','".$fild['options']."','" . $inputValue . "');
-                getBluder('.f" . $inputName . "','admin/".$fild['file']."','".$fild['options']."');
+                UpdateFromBluder('.f" . $inputName . "','admin/" . $fild['file'] . "','" . $fild['options'] . "','" . $inputValue . "');
+                getBluder('.f" . $inputName . "','admin/" . $fild['file'] . "','" . $fild['options'] . "');
         </script>";
 
 
@@ -986,27 +984,31 @@ class formsClass {
     }
 
     function xmlToOptionsVal($file, $tag, $inputdefault, $select_field_value) {
-        $pos = $this->util->readXmlvaluesString($file, $tag);
+
+
+        if (is_file($file)) {
+            echo $file;
+            $pos = $this->util->readXmlvaluesString($file, $tag);
 
 
 
-        $names = $this->util->readXmlnamesString($file, $tag);
-        $n = 0;
+            $names = $this->util->readXmlnamesString($file, $tag);
+            $n = 0;
 
 
-        foreach ($pos as $p) {
+            foreach ($pos as $p) {
 
-            $n++;
+                $n++;
 
-            $val = $names[$n];
-            if (isset($select_field_value) && $select_field_value != "") {
                 $val = $names[$n];
+                if (isset($select_field_value) && $select_field_value != "") {
+                    $val = $names[$n];
+                }
+
+
+                $out.="<option " . $this->isSelect($inputdefault, $val) . " value='" . $names[$n] . "' >" . $p . "</option>";
             }
-
-
-            $out.="<option " . $this->isSelect($inputdefault, $val) . " value='" . $names[$n] . "' >" . $p . "</option>";
         }
-
         return $out;
     }
 

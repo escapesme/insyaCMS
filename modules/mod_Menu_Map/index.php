@@ -8,11 +8,13 @@
  * 
  */
 
+
+
 function mod_Menu_Map($pro) {
     global $lib;
 
 
-
+print_r($datasql);
     $datasql = $lib->db->get_data('menu_itmes', '', 'cat_id=0 and `delete`=0 and   enabled=1 and parent_id=' . $pro['selecmenu'] . " and `show`='1'  Order by `order` ");
 
     $data = "<div class='menu menu" . $pro['selecmenu'] . "'>";
@@ -87,7 +89,7 @@ function mod_Menu_Map($pro) {
                     $data .="<img src='/uploads/images/" . $d['mei_image'] . "'/>";
                 }
 
-                $data .= "<span>" . $d['mei_title'] . "</span></a>"
+                $data .= "<span>". $d['mei_title'] . "</span></a>"
                         . "</div>" . mapgetsubmenu($d['id'], $pro['selecmenu'], $pro) . '</div>';
             }
         }

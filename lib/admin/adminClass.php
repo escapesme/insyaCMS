@@ -339,6 +339,15 @@ class adminClass extends adminactions {
 
 
         foreach ($this->list as $list => $v) {
+
+
+            if (isset($this->table_properties[$list]['title_' . $this->util->siteSetting['admin_lang']])) {
+
+                $this->table_properties[$list]['title'] = $this->table_properties[$list]['title_' . $this->util->siteSetting['admin_lang']];
+            }
+
+
+
             if ($this->table_properties[$list]['type'] != "getXrefData") {
                 // <editor-fold defaultstate="collapsed" desc="thtype">
 
@@ -935,13 +944,13 @@ class adminClass extends adminactions {
             "mysubmit" => array(
                 "name" => "mysubmit",
                 "type" => "submit",
-                "value" => "Add",
+                "value" => $this->util->getLangWord("admin", "add"),
                 'class' => 'button actions-right'
             ),
             "myreset" => array(
                 "name" => "myreset",
                 "type" => "reset",
-                "value" => "reset",
+                "value" => $this->util->getLangWord("admin", "reset"),
                 'class' => 'button red actions-right'
             ),
         );
@@ -1056,13 +1065,13 @@ class adminClass extends adminactions {
             "mysubmit" => array(
                 "name" => "mysubmit",
                 "type" => "submit",
-                "value" => "add",
+                "value" => $this->util->getLangWord("admin", "add"),
                 "class" => "button actions-right"
             ),
             "myreset" => array(
                 "name" => "myreset",
                 "type" => "reset",
-                "value" => "reset",
+                "value" => $this->util->getLangWord("admin", "reset"),
                 "class" => "button red actions-right"
             ),
             "status" => array(
@@ -1517,7 +1526,21 @@ class adminClass extends adminactions {
 
 
 
+
             foreach ($this->group as $k => $v) {
+
+
+
+
+
+
+                if (isset($this->group[$k]['title_' . $this->util->siteSetting['admin_lang']])) {
+
+                    $this->group[$k]['title'] = $this->group[$k]['title_' . $this->util->siteSetting['admin_lang']];
+                }
+
+
+
                 $moreClass = '';
                 if ($_GET[$view_url] == $k) {
                     $moreClass = 'act';
@@ -1921,6 +1944,11 @@ class adminClass extends adminactions {
     function updatexrefValue($list, $id, $data) {
 
 
+
+        if (isset($list['title_' . $this->util->siteSetting['admin_lang']])) {
+
+            $list['title'] = $list['title_' . $this->util->siteSetting['admin_lang']];
+        }
         $this->mydb->opt->order_a = "id";
 
 
@@ -2280,10 +2308,17 @@ class adminClass extends adminactions {
         }
 
 
+
+
+
+
         foreach ($dataupdate as $list => $V) {
 
 
+            if (isset($dataupdate[$list]['title_' . $this->util->siteSetting['admin_lang']])) {
 
+                $dataupdate[$list]['title'] = $dataupdate[$list]['title_' . $this->util->siteSetting['admin_lang']];
+            }
 
 
             if ($dataupdate[$list]['type'] == "plugin") {
@@ -2387,6 +2422,15 @@ class adminClass extends adminactions {
 
         $remore = "";
         foreach ($this->selectlist as $slist) {
+
+
+
+
+            if (isset($this->table_properties[$slist]['title_' . $this->util->siteSetting['admin_lang']])) {
+
+                $this->table_properties[$slist]['title'] = $this->table_properties[$slist]['title_' . $this->util->siteSetting['admin_lang']];
+            }
+
 
 
 
@@ -2787,7 +2831,7 @@ class adminClass extends adminactions {
             $data = $this->mydb->get_data($this->table_name, '', $where);
         }
 
-echo  $this->mydb->returnSQL;
+      //  echo $this->mydb->returnSQL;
 
 
 

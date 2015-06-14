@@ -57,7 +57,7 @@ class mobileClass {
         $this->addType("button", "", '"button" => array(
             "type" => "button",
             "target" => "myb",
-             "data" => "sdfsdfsdfsdf",
+             "data" => "",
             "icon" => "delete"
             ,"iconPosition"=>"top"
             , "corner" => "right"
@@ -122,7 +122,7 @@ class mobileClass {
         $this->addType("radio", "", '"radio" => array(
             "type" => "radio",
             "name" => "aaaa",
-            "data" => "sdfsdfsdfsdf",
+            "data" => "",
         )');
     }
 
@@ -145,7 +145,7 @@ class mobileClass {
         foreach ($this->items as $item) {
 
 
-            print_r($_SESSION)
+          //  print_r($_SESSION)
             ;
 
 

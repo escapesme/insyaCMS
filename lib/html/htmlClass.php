@@ -445,7 +445,7 @@ class htmlClass {
 
 
                 case 'time':
-                    
+
                     $values = explode(":", $inputValue);
                     $options = array(
                         "00" => "00"
@@ -474,27 +474,6 @@ class htmlClass {
                         , "23" => "23"
                     );
 
-                    /*
-
-
-                     */
-                    /*
-
-
-                      foreach ($options as $k => $v) {
-
-                      if ((intval($fild['datamax']) >= intval($k) && intval($fild['datamin']) <= intval($k))
-                      ) {
-
-
-
-                      $new[$k] = $v;
-                      }
-                      } */
-
-
-
-                    //   $options = $new;
 
 
 
@@ -510,7 +489,7 @@ class htmlClass {
                         "30" => "30",
                         "45" => "45"
                     );
-                    $input_html .= $inputValue.'<select style="' . $inputStyle . '"  class=" data_m" >'
+                    $input_html .= '<select style="' . $inputStyle . '"  class=" data_m" >'
                             . $this->arrayToOptions($moptions, $values['1']) . '
                         </select>                       
                 <input  value="' . $inputValue . '"   name="' . $inputName . '" id="' . $inputID . '"  type="hidden" class="time_input_data"  >'
@@ -743,6 +722,7 @@ class htmlClass {
                         <div class="imageBar">
                         <input style="' . $inputStyle . '" action="' . $inputAction . '" name="' . $inputName . '" id="' . $inputID . '"  class="' . $inputClass . '"   type="file" />'
                             . '<a class=\'imagebt deleteimg\'   title="Delete Image"><i class="fa fa-trash-o"></i></a>'
+                            . '<a href="/ajax/crop.php" data-name="' . $inputName . '" class="btn imagebt crop-btn" class=\'imagebt imagecrop\' style=" right: 47px;"  title="Delete Crop"><i class="fa  fa-crop""></i></a>'
                             . '
 	    <a  title="select from server " href="/includes/php/filemanager/dialog.php?type=1&amp;subfolder=&amp;editor=mce_0&amp;field_id=fieldID' . $inputName . '" class="btn imagebt iframe-btn"   type="button"><i class="fa fa-cloud"></i></a>
 		    <input  class="imageurl" id="fieldID' . $inputName . '" type="hidden" value="">
@@ -796,10 +776,10 @@ class htmlClass {
                     case'endblock':
                     case'html':
                     case'label':
-                        
-                                            case'captcha':
 
-                        
+                    case'captcha':
+
+
                     case'getXrefData':
 
 
@@ -980,7 +960,7 @@ class htmlClass {
 
 
         $out = "";
-        $stringmyurl = $this->util->siteSetting['site_link'] . "/lib/";
+        $stringmyurl = $this->util->siteSetting['site_link'] . "/";
         $out.="<option value=\"0\"></option>";
 
         $selected = "";
@@ -1021,11 +1001,6 @@ class htmlClass {
                     break;
                 case "xml":
                 case "XML":
-
-
-
-
-
                     $out.= $this->xmlToOptions($selectData, $select_field_text, $inputdefault);
                     break;
 
@@ -1071,13 +1046,22 @@ class htmlClass {
                 case "months":
                     $file = $stringmyurl . $this->foldersMap->lib_folder . "xml/months.xml";
                     $out.=$this->xmlToOptionsVal($file, "months", $inputdefault, $select_field_value);
+                case "languages":
+                    $file = $stringmyurl . $this->foldersMap->lib_folder . "xml/languages.xml";
+                    $out.=$this->xmlToOptionsVal($file, "languages", $inputdefault, $select_field_value);
+                    break;
+                case "xmfile":
 
+                    $file = $stringmyurl . $this->foldersMap->lib_folder . "xml/" . $fild['file'] . ".xml";
+
+                    $out.=$this->xmlToOptionsVal($file, $fild['file'], $inputdefault, $select_field_value);
+                    break;
                 case "language":
 
 
                     $mydata = $this->db->get_Data("com_language", "*", $select_query);
                     foreach ($mydata as $mdata) {
-                        $val = $mdata["id"];
+                        $val = $mdata["alias"];
 
                         $out.="<option  " . $this->isSelect($inputdefault, $val) . " value=\"" . $val . "\">" . $mdata["title"] . "</option>";
                     }
@@ -1362,15 +1346,7 @@ class htmlClass {
     function getFiledsFormStrign($type, $data, $id = "", $filed = "", $save = "", $lang = "", $sendmail = "", $prf = "", $values = "") {
         $REDATA = "";
         $this->filds = "";
-
-
-
-
-
         $values = $this->tarray($values);
-
-
-
         if ($type == "db") {
             $more = "";
             if ($id) {
@@ -1581,12 +1557,27 @@ class htmlClass {
                         }
 
 
+                        if (isset($row['saveTo'])) {
+                            $this->filds[0]['moreAttra'] .= " data-saveTo='" . $row['saveTo'] . "'";
+                        }
+
+
+                        if (isset($row['saveType'])) {
+                            $this->filds[0]['moreAttra'] .= " data-saveType='" . $row['saveTo'] . "'";
+                        }
+
+
                         $REDATA.= $this->CraetForm();
 
 
 
 
                         if ($row["type"] == "form") {
+
+
+
+
+
 
                             $REDATA.="<script>$(function(){" . urldecode($row['javascript']) . "})</script>";
                             $REDATA.="<style>" . urldecode($row['css']) . "</style>";
@@ -1595,6 +1586,7 @@ class htmlClass {
 
                                 $row['php']();
                             }
+
 
 
 
@@ -1632,6 +1624,9 @@ class htmlClass {
 
 
 
+                            echo $this->filds[0]['moreAttra'];
+
+                            print_R($this->filds[0]);
                             $this->filds[0]['name'] = "formName";
                             $this->filds[0]['type'] = "hidden";
                             $this->filds[0]['value'] = $row['value'];

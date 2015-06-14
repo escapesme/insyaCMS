@@ -10,30 +10,11 @@
 $dataresIDS = array();
 
 function fiz_reservations_login($p, $l) {
-
     /* @var $lib  \libs\libs */
     global $lib, $dataresIDS;
-    $r = "";
-    $r .= '<h2>' . $l['lgoinmsg'] . '</h2>';
-
-    $filds = array(
-        "its_id" => array(
-            "type" => "text",
-            "pclass" => " _50",
-            "title" => "its_id",
-            "name" => "its_id"
-        ), "dologin" => array(
-            "type" => "button",
-            "pclass" => "dologin _100",
-            "class" => "",
-            "title" => $l['lgoinsubmit'], "value" => $l['lgoinsubmit'],
-            "name" => "its_id"
-            , "moreAttra" => "data-to='/Reservations/' data-do='login' "
-        )
-    );
-    $lib->forms->filds = $filds;
-    $r .= $lib->forms->_render_form();
-    return $r;
+    $ressettings = $lib->db->get_row("fiz_reservation_settings");
+    //    $r = '<a href="http://www.its52.com/ServiceLogin.aspx?domain=http://new.faizehaakimi.com&amp;continue=http://new.faizehaakimi.com/its_login.php">Click here to ITS Authentication</a>';
+    return $ressettings['login_html'];
 }
 
 function fiz_razaTypes($p, $l, $oid, $odata) {
@@ -47,9 +28,15 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
             . "<th>" . $l['actions'] . "</th>"
             . "</tr></thead>"
             . "";
-    $r .= getreRowsAc($odata['user_id']);
+    $gdata = getreRowsAc($odata['user_id']);
 
-    $r .= getreRowsBygAc($odata['user_id']);
+    $gdata .= getreRowsBygAc($odata['user_id']);
+
+    if (trim($gdata) == "") {
+        $r .= "<tr><td style='text-align: center;' colspan='5'>" . $l['TableEmptyMsg'] . "</td></tr> ";
+    } else {
+        $r .=$gdata;
+    }
 
 
     $r .= "</tbody></table></div><div class='datarow'>";
@@ -65,8 +52,17 @@ function fiz_razaTypes($p, $l, $oid, $odata) {
             . "<tbody>";
 
 
-    $r .= getreRows($odata['user_id']);
-    $r .= getreRowsByg($odata['user_id']);
+    $gdata = getreRows($odata['user_id']);
+    $gdata .= getreRowsByg($odata['user_id']);
+
+
+
+    if (trim($gdata) == "") {
+        $r .= "<tr><td  style='text-align: center;'  colspan='4'>" . $l['TableEmptyMsg'] . "</td></tr> ";
+    } else {
+        $r .=$gdata;
+    }
+
 
 
     $r .= "</tbody></table>";
@@ -102,7 +98,7 @@ function getreRowsAc($user_id, $ids) {
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) >= 0) {
                 $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td>"
-                        . "<td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxref) . "</a></td>"
+                        . "<td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxref) . " (Details)</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "<td>"
@@ -123,7 +119,6 @@ function getreRowsAc($user_id, $ids) {
 function getreRows($user_id, $ids) {
     /* @var $lib  \libs\libs */
     global $lib, $dataresIDS;
-    print_R($ds);
     $ds = $lib->db->get_data("fiz_reservation", "*", "booking_owner = '" . $user_id . "' ");
 
     foreach ($ds as $d) {
@@ -139,8 +134,9 @@ function getreRows($user_id, $ids) {
             $myxref = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id = '" . $d['id'] . "' ");
 
 
+
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref[0]['arrival_date']) < 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxref) . "</a></td>"
+                $r .= "<tr><td>" . sprintf("%04s", $d['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&wstyle=1&status=getgdata&value=" . $d['id'] . "' >" . count($myxref) . " (Details)</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref[0]['departure_date']) . "</td>"
                         . "</tr>";
@@ -169,7 +165,6 @@ function getreRowsBygAc($user_id) {
 
 
 
-
         if (!in_array($resData['reservation_id'], (array) $dataresIDS)) {
 
             if ($d['approved'] == "1") {
@@ -179,7 +174,10 @@ function getreRowsBygAc($user_id) {
             }
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) >= 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxrefs) . "</a></td>"
+
+
+
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&wstyle=1&status=getgdata&value=" . $resData['id'] . "' >" . count($myxrefs) . " (Details)</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
                         . "<td>"
@@ -214,7 +212,7 @@ function getreRowsByg($user_id) {
 
 
             if ($lib->util->dateTime->howManyDaysTime(date("Y-m-d") . " 23:59:59", $myxref['arrival_date']) < 0) {
-                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxrefs) . "</a></td>"
+                $r .= "<tr><td>" . sprintf("%04s", $resData['reservation_id']) . "</td><td><a class='lightbox-url' href='/sendAjax.php?file=ajax/coms/fiz/reservations_actions&wstyle=1&status=getgdata&value=" . $myxref['reservation_id'] . "' >" . count($myxrefs) . " (Details)</a></td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['arrival_date']) . "</td>"
                         . "<td>" . $lib->util->dateTime->dateFromdb($myxref['departure_date']) . "</td>"
                         . "</tr>";

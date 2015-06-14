@@ -2116,3 +2116,12 @@ html[xmlns] .my_clearfix {
   color: #fff;
   cursor: pointer
 }
+.pageinfo{
+    display: none;
+}
+
+.box iframe{
+    width: 100%;
+    height: 100%;
+
+border: none}

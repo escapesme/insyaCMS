@@ -9,7 +9,7 @@ and open the template in the editor.
     
     
     <fields>
-        <title name="title"  type="text"  title="Title"/>
+        <title name="title" lang='true'   type="text"  title="Title"/>
                 <line1  type="line" style='background-color:transparent' /> 
 
         <icone name="icone"  type="text" title="icon"

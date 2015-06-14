@@ -190,9 +190,16 @@ class utilComponentsClass {
     function createURL($alias, $cat, $item, $type) {
 
         $alias = $this->getMenuAlias($alias);
+        $s = $this->lib->variables->statusVariableName;
+
+
 
         $returnData = "";
 
+
+        if (isset($_GET[$s]) && trim($_GET[$s]) != "") {
+           $returnData ="/".$s ."/".$_GET[$s];
+        }
 
         $returnData .= "/" . $alias . "/";
 
@@ -204,14 +211,27 @@ class utilComponentsClass {
         }
 
 
+
+
+
+
+
         if (isset($cat) && trim($cat) != "") {
             $returnData .= $cat . "/";
         }
+
+
+
+
+
 
         if (isset($item) && trim($item) != "") {
             $returnData .= $item . "/";
         }
 
+        
+        
+     //   echo  $returnData ."<br/>";
 
         return $returnData;
     }
@@ -509,7 +529,6 @@ class utilComponentsClass {
                 }
 
                 $url = $this->createURL($thisTable, $datacat['alias'], $all[$i]['alias']);
-
 
 
                 if (isset($all[$i]['ex_link']) && $all[$i]['ex_link'] != "") {

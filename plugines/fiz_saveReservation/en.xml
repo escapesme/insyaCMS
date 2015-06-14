@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <currency>$</currency>
+
+    <TravelDates>Travel Dates</TravelDates>
+    <checkin>Check In</checkin>
+    <checkOut>Check Out</checkOut>
+    <nights>Nights</nights>
+
+   
+   
+    <ArrivalDetails>Arrival Details</ArrivalDetails>
+    <Airline>Airline</Airline>
+    <FlightNo>Flight No</FlightNo>
+    <Arrivingfrom>Arriving From</Arrivingfrom>
+ 
+    <ContactDetails>Contact Details</ContactDetails>
+    <Email>Email</Email>
+    <Mobile>Mobile</Mobile>
+    <GuistDetails>Guest Details</GuistDetails>
+    <SNO>S. No</SNO>
+    <Name>Name</Name>
+
+    <ITS>ITS ID</ITS>
+
+    <Type>Type</Type>
+    <PackageName>Package Name</PackageName>
+
+    <arriving_time>arriving time</arriving_time>
+
+   
+   
+    
+</root>

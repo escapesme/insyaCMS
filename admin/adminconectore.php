@@ -1,7 +1,8 @@
 <?php
 session_start();
 $myurl = "../";
-?>
+?>  <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type = "text/javascript" src = "<?= $myurl ?>includes/js/jquery.js"></script>
 <script type="text/javascript" src="<?= $myurl ?>includes/js/jscripts/tiny_mce/jquery.tinymce.min.js"></script>
 <link type = "text/css" href =" //code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel = "stylesheet" />
@@ -137,7 +138,6 @@ $myurl = "../";
 ini_set("display_errors", 1);
 error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
 
-echo "asdasd";
 require_once($myurl . "lib/libs.php");
 
 $lib->db->connect();
@@ -168,6 +168,9 @@ function getTitle() {
     global $lib;
     return $lib->adminEng->getTitle();
 }
+
+ini_set("display_errors", 1);
+error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
 ?>
 
 

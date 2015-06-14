@@ -8,43 +8,31 @@ global $lib;
 $oid = $_SESSION['razaOwnerID'];
 
 
+session_start();
 
 
 
 if ($_GET['status'] == "get_files") {
 
     $file = $_GET['file'];
-
     $data = $lib->db->get_row("fiz_reservation_users_xref", "*", "id='" . $_GET['id'] . "'");
-
-
     $files = explode(",", $data['files']);
-
-
     $r = "<table class='mainTabel'>";
-
     foreach ($files as $f) {
         if ($f != "") {
             $r .= "<tr><td><a target=\"_blank\" href='/uploads/userdocs/$f'>$f</a></td><td><input type='button' data-id='" . $_GET['id'] . "'   data-name='$f' value='Delete' class='delete_file' /></td></tr>";
         }
     }
-
-
-
     $r .= "</table>";
-
-
     echo $r;
 } else if ($_GET['status'] == "delete_files") {
 
     $file = $_GET['name'];
 
     $data = $lib->db->get_row("fiz_reservation_users_xref", "*", "id='" . $_GET['id'] . "'");
-
     $newfile = str_replace($file . ",", "", $data['files']);
 
     $newfile = str_replace($file, "", $newfile);
-
 
     $saveArray = array(
         "files" => $newfile
@@ -52,11 +40,15 @@ if ($_GET['status'] == "get_files") {
     $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
 } else if ($_GET['status'] == "getgdata") {
     $data = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id='" . $_GET['value'] . "'");
-    $r .= "<table class='maintabel'><tbody>";
+    $r .= "<table class='maintabel'>"
+            . "<thead><tr><th>ITS ID</th><th>Name</th></tr></thead>"
+            . ""
+            . ""
+            . "<tbody>";
     foreach ($data as $d) {
         $userData = $lib->coms->faiz->getUserDataByID($d['user_id']);
         $approved_status = $lib->db->get_row("fiz_approved_status", "*", "id='" . $d['approved_status'] . "'");
-        $r .= "<tr><td>" . $userData['Mumin_id'] . "</td><td>" . $userData['name'] . "</td><td> " . $approved_status['title'] . "</td></tr>";
+        $r .= "<tr><td>" . $userData['Mumin_id'] . "</td><td>" . $userData['name'] . "</td></tr>";
     }
     //$r .= getreRows($udata['user_id'], $ids);
     $r .= "</tbody>";
@@ -78,7 +70,6 @@ if ($_GET['status'] == "get_files") {
 
 
 
-
     $saveArray = array(
         "files" => $newfile . $file . ","
     );
@@ -95,9 +86,6 @@ if ($_GET['status'] == "get_files") {
         $saveArray['mobile'] = $_GET['mobile'];
     }
     $lib->db->update_row("fiz_reservation", $saveArray, $_GET['rid']);
-
-
-    print_R($saveArray);
 } else if ($_GET['status'] == "raza_change") {
     $saveArray = array(
         "raza_type" => $_GET['rtpy']
@@ -159,7 +147,7 @@ if ($_GET['status'] == "get_files") {
             "user_id" => $userdata['id'],
             "its_id" => $userdata['Mumin_id']
         );
-        print_r($xrefData);
+//        print_r($xrefData);
 
 
         $lib->db->insert_row("fiz_reservation_users_xref", $xrefData);
@@ -291,7 +279,10 @@ else if ($_GET['status'] == "lgoin") {
 
       echo "0";
       } */
-} else if ($_GET['status'] == "updatepkg") {
+}
+
+// <editor-fold defaultstate="collapsed" desc="gen">
+else if ($_GET['status'] == "updatepkg") {
 
 
     $rdatas = $_SESSION['formraza'];
@@ -347,11 +338,12 @@ else if ($_GET['status'] == "lgoin") {
     }
 } elseif ($_GET['status'] == "editres") {
 
-
+    unset($_SESSION['reservation_document']);
     $rdata = $lib->db->get_row("fiz_reservation", "*", "id='" . $_GET['rid'] . "'");
     $xrdata = $lib->db->get_data("fiz_reservation_users_xref", "*", "reservation_id='" . $_GET['rid'] . "'");
 
     $ids = "";
+    $country = "";
     foreach ($xrdata as $d) {
         if ($d['its_id'] != "") {
 
@@ -360,8 +352,11 @@ else if ($_GET['status'] == "lgoin") {
 
                 $mm = "";
             }
-
+            $country .=$mm . $d['country'];
             $ids .=$mm . $d['its_id'];
+            $xid .=$mm . $d["id"];
+
+            $approved_status = $mm . $d['approved_status'];
         }
     }
 
@@ -370,7 +365,12 @@ else if ($_GET['status'] == "lgoin") {
     $_SESSION['w_status'] = "edit";
     $_SESSION['w_status_id'] = $_GET['rid'];
     $_SESSION['faiz-new-reservation'] = $array;
+    $_SESSION['faiz-new-reservation']['country'] = $country;
 
+    $_SESSION['approved_status'] = $approved_status;
+
+
+    $_SESSION['faiz-new-reservation']['xrefids'] = $xid;
     $_SESSION['faiz-new-reservation']['Mumin_ids'] = $ids;
     $_SESSION['faiz-new-reservation']['checkin'] = $lib->util->dateTime->dateFromdb($array['arrival_date']);
     $_SESSION['faiz-new-reservation']['checkout'] = $lib->util->dateTime->dateFromdb($array['departure_date']);
@@ -385,58 +385,164 @@ else if ($_GET['status'] == "lgoin") {
 
 
 
+    unset($_SESSION['reservation_document']);
+
+    unset($_SESSION['visa_file']);
+
+    unset($_SESSION['passport_file']);
+
+
 
 
     unset($_SESSION['faiz-new-reservation']);
     unset($_SESSION['w_status']);
     unset($_SESSION['w_status_id']);
-
+    unset($_SESSION['faiz-new-reservation']['document_status']);
 
     $odata = $lib->coms->faiz->getUserDataByID($_SESSION['razaOwnerID']);
     $_SESSION['faiz-new-reservation']['Mumin_ids'] = $odata['Mumin_id'];
     $_SESSION["faiz-new-reservation"]['email'] = $odata['email'];
     $_SESSION["faiz-new-reservation"]['mobile'] = $odata['MOBILE_NO'];
+    $_SESSION["faiz-new-reservation"]['checkin'] = date('d/m/Y'); // date_format($date, );// "31/05/2015";
+    $_SESSION["faiz-new-reservation"]['checkout'] = date('d/m/Y');
 } elseif ($_GET['status'] == "logoures") {
 
     $_SESSION['razaOwnerID'] = "";
     $_SESSION['formraza'] = "";
 } elseif ($_GET['status'] == "visa_file") {
+    if ($_GET['save_status'] == "session") {
 
 
-    $saveArray = array(
-        "visa_file" => $_GET['name']
-    );
 
-    $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+        $_SESSION['visa_file'][$_GET['id']] .= $_GET['name'] . ",";
+    } else {
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        $saveArray = array(
+            "visa_file" => $_GET['name'] . "," . $d['visa_file']
+        );
+        $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+    }
 } elseif ($_GET['status'] == "passport_file") {
 
 
+    if ($_GET['save_status'] == "session") {
 
-    $saveArray = array(
-        "passport_file" => $_GET['name']
-    );
+        $_SESSION['passport_file'][$_GET['id']] .= $_GET['name'] . ",";
+    } else {
 
-    $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        $saveArray = array(
+            "passport_file" => $_GET['name'] . "," . $d['passport_file']
+        );
+        $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+    }
+
+
+    print_R($_SESSION);
 }
+// </editor-fold>
+// <editor-fold defaultstate="collapsed" desc="Doucments">
+elseif ($_GET['status'] == "getvisa_file") {
+
+    if ($_GET['save_status'] == "session") {
+        echo $_SESSION['visa_file'][$_GET['id']];
+    } else {
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        echo $d['visa_file'];
+    }
+} elseif ($_GET['status'] == "getpassport_file") {
+
+    if ($_GET['save_status'] == "session") {
+        echo $_SESSION['passport_file'][$_GET['id']];
+    } else {
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        echo $d['passport_file'];
+    }
+} elseif ($_GET['status'] == "delpassport_file") {
+    if ($_GET['save_status'] == "session") {
+
+        $_SESSION['passport_file'][$_GET['id']] = str_replace($_GET['name'], "", $_SESSION['passport_file'][$_GET['id']]);
+        echo updateDocStatus($_GET['datastatus'], $_GET['type'], $_GET['id'], $_GET['size']);
+    } else {
+
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        $saveArray = array(
+            "passport_file" => str_replace($_GET['name'], "", $d['passport_file'])
+        );
+        $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+    }
+} elseif ($_GET['status'] == "delvisa_file") {
+    if ($_GET['save_status'] == "session") {
+
+        // echo $_SESSION['visa_file'][$_GET['id']];
+
+
+        $_SESSION['visa_file'][$_GET['id']] = str_replace($_GET['name'], "", $_SESSION['visa_file'][$_GET['id']]);
+
+        echo updateDocStatus($_GET['datastatus'], $_GET['type'], $_GET['id'], $_GET['size']);
+    } else {
+
+
+        $d = $lib->db->get_row("fiz_reservation_users_xref", "*", "id=" . $_GET['id']);
+        $saveArray = array(
+            "visa_file" => str_replace($_GET['name'], "", $d['visa_file'])
+        );
+        $lib->db->update_row("fiz_reservation_users_xref", $saveArray, $_GET['id']);
+    }
+} elseif ($_GET['status'] == "clear_reservation_documet") {
+
+    unset($_SESSION['reservation_document']);
+} elseif ($_GET['status'] == "gtexrefids") {
+    echo $_SESSION['faiz-new-reservation']['xrefids'];
+} elseif ($_GET['status'] == "setdocument_status") {
+    echo updateDocStatus($_GET['datastatus'], $_GET['type'], $_GET['id'], $_GET['size']);
+}
+// </editor-fold>
+// <editor-fold defaultstate="collapsed" desc="country">
+elseif ($_GET['status'] == "getcuntry") {
+    echo $_SESSION['faiz-new-reservation']['country'];
+} elseif ($_GET['status'] == "set_reservation_documet") {
+    echo $_SESSION['reservation_document'] = $_GET['rid'];
+}// </editor-fold>
+
+function updateDocStatus($datastatus, $type, $id) {
+
+
+
+    /* @var $lib  libs\libs */
+    global $lib;
+    $visa_files = explode(",", $_SESSION['visa_file'][$id]);
+
+    $passport_files = explode(",", $_SESSION['passport_file'][$id]);
+
+
+
+    $visa_files = array_filter($visa_files);
+
+    $passport_files = array_filter($passport_files);
 
 
 
 
- 
 
-//logoures
-    /*
-     * 
-     * logoures
-      newres
-     */
+
+    $dstatus = "1";
+
+
+    if ($datastatus == "ppOnly") {
 
 
 
+        if (count($passport_files) > 0) {
+            $dstatus = "2";
+        }
+    } else {
 
-
-
-
-
-
-    
+        if (count($visa_files) > 0 && count($passport_files) > 0) {
+            $dstatus = "2";
+        }
+    }
+    $_SESSION['faiz-new-reservation']['document_status'][$id] = $dstatus;
+    return $lib->db->get_row("fiz_document_status", "*", "id='" . $dstatus . "'")['name'];
+}

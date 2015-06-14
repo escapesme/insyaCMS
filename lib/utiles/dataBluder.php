@@ -104,11 +104,12 @@ class dataBluder extends queryBluderClass {
         } else {
 
             $datar = $lib->db->get_row('com_form', '', 'ID=' . $vdata['formid']);
-            $data.=$datar['des'];
+           // $data.=$datar['des'];
 
 
+            
+        // print_R($datar);
             $data.="<script>formToSeesstion('" . $datar['title'] . "');</script>";
-
 
             $data.= $lib->forms->getFiledsFormStrign("db", "com_form", $vdata['formid'], "data", "0");
         }

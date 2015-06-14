@@ -16,90 +16,75 @@ function fiz_lawazim_table($data, $lang) {
     global $lib;
 
     $myform = 'faiz-new-reservation';
-
-
-
-
     $nights = $_SESSION[$myform]['nights'];
-
-
-
-
-
-
-
     $ejs = explode(",", $_SESSION['faiz-new-reservation']['Mumin_ids']);
 
 
-
-    if (checkData($ejs, $_SESSION, $myform)) {
-
-
-
-
-
-
-
-
-
-
-        $rdata = "";
+    $rdata = "";
 
 
 ////////////////////////////
-        $rdata .= "<div class='datarow TravelDates'><h3 class='title'>" . $lang['TravelDates'] . "</h3>";
-        $rdata .= "<table class='mainTabel'>"
-                . "<thead>"
-                . "<tr><th>" . $lang['checkin'] . "</th><td>" . $_SESSION[$myform]['checkin'] . "</td><th>" . $lang['checkOut'] . "</th><td>" . $_SESSION[$myform]['checkout'] . "</td><th>" . $lang['nights'] . "</th><td>$nights</td></tr>"
-                . "</thead>";
-        $rdata .= "</table></div>";
+    $rdata .= "<div class='datarow TravelDates'><h3 class='title'>" . $lang['TravelDates'] . "</h3>";
+    $rdata .= "<table class='mainTabel'>"
+            . "<thead>"
+            . "<tr><th>" . $lang['checkin'] . "</th><td>" . $_SESSION[$myform]['checkin'] . "</td><th>" . $lang['checkOut'] . "</th><td>" . $_SESSION[$myform]['checkout'] . "</td><th>" . $lang['nights'] . "</th><td>$nights</td></tr>"
+            . "</thead>";
+    $rdata .= "</table></div>";
 
 ////////////////////////////
 
-        $rdata .= "<div class='datarow ArrivalDetails'><h3 class='title'>" . $lang['ArrivalDetails'] . "</h3>";
+    $rdata .= "<div class='datarow ArrivalDetails'><h3 class='title'>" . $lang['ArrivalDetails'] . "</h3>";
 
-        $rdata .= "<table class='mainTabel'>"
-                . "<thead>"
-                . "<tr><th>" . $lang['Airline'] . "</th><th>" . $lang['FlightNo'] . "</th><th>" . $lang['Arrivingfrom'] . "</th><th>" . $lang['arriving_time'] . "</th></tr>"
-                . "</thead>"
-                . "<tbody><tr><td>" . $_SESSION[$myform]['airline'] . "</td><td>" . $_SESSION[$myform]['airline_code'] . "</td><td>" . $_SESSION[$myform]['arriving_from'] . "</td><td>" . $_SESSION[$myform]['arrival_time'] . "</td></tr></tbody>";
-        $rdata .= "</table></div>";
+    $rdata .= "<table class='mainTabel'>"
+            . "<thead>"
+            . "<tr><th>" . $lang['Airline'] . "</th><th>" . $lang['FlightNo'] . "</th><th>" . $lang['Arrivingfrom'] . "</th><th>" . $lang['arriving_time'] . "</th></tr>"
+            . "</thead>"
+            . "<tbody><tr><td>" . $_SESSION[$myform]['airline'] . "</td><td>" . $_SESSION[$myform]['airline_code'] . "</td><td>" . $_SESSION[$myform]['arriving_from'] . "</td><td>" . $_SESSION[$myform]['arrival_time'] . "</td></tr></tbody>";
+    $rdata .= "</table></div>";
 
 
 ////////////////////////////
 
-        $rdata .= "<div class='datarow ContactDetails'><h3 class='title'>Contact Details</h3>";
+    $rdata .= "<div class='datarow ContactDetails'><h3 class='title'>Contact Details</h3>";
 
 
-        $rdata .= "<table class='mainTabel'>"
-                . "<thead>"
-                . "<tr><th>" . $lang['Email'] . "</th><th>" . $lang['Mobile'] . "</th></tr>"
-                . "</thead>"
-                . "<tbody><tr><td>" . $_SESSION[$myform]['email'] . "</td><td>" . $_SESSION[$myform]['mobile'] . "</td></tr></tbody>";
-        $rdata .= "</table></div>";
+    $rdata .= "<table class='mainTabel'>"
+            . "<thead>"
+            . "<tr><th>" . $lang['Email'] . "</th><th>" . $lang['Mobile'] . "</th></tr>"
+            . "</thead>"
+            . "<tbody><tr><td>" . $_SESSION[$myform]['email'] . "</td><td>" . $_SESSION[$myform]['mobile'] . "</td></tr></tbody>";
+    $rdata .= "</table></div>";
 
 
-        ////////////////////////////
+    ////////////////////////////
 
-        $rdata .= "<div class='datarow GuistDetails'><h3 class='title'>Guest Details</h3>";
+    $rdata .= "<div class='datarow GuistDetails'><h3 class='title'>Guest Details</h3>";
 
-        $rdata .= "<table class='mainTabel'>"
-                . "<thead>"
-                . "<tr><th>" . $lang['SNO'] . "</th><th>" . $lang['ITS'] . "</th><th>" . $lang['Name'] . "</th><th>" . $lang['Type'] . "</th><th>" . $lang['PackageName'] . "</th><th>Lawazim</th></tr>"
-                . "</thead>"
-                . "<tbody>";
+    $rdata .= "<table class='mainTabel'>"
+            . "<thead>"
+            . "<tr><th>" . $lang['SNO'] . "</th><th>" . $lang['ITS'] . "</th><th>" . $lang['Name'] . "</th><th>" . $lang['Type'] . "</th><th>" . $lang['PackageName'] . "</th><th>Document Status</th><th>Lawazim</th></tr>"
+            . "</thead>"
+            . "<tbody>";
 
-        $i = 0;
-        $no = 0;
-        foreach ($ejs as $ej) {
+    $i = 0;
+    $no = 0;
+
+
+
+    $countries = explode(",", $_SESSION[$myform]['country']);
+
+    $passport_file = explode(",", $_SESSION['passport_file']);
+    $visa_file = explode(",", $_SESSION['visa_file']);
+
+
+
+    foreach ($ejs as $ej) {
+
+        if (trim($ej) != "") {
             $no++;
             //  $ejdata = $lib->plugins->importPlugin("plg_ejamaat", "ejamaatId__" . $ej . ";getType__data");
-
-         //   echo "<br/>" . $ej . "<br/>";
+            //   echo "<br/>" . $ej . "<br/>";
             $ejdata = $lib->coms->faiz->getUserDataByMumin_id($ej);
-            // print_r($ejdata);
-
-
 
             $type = "";
 
@@ -114,10 +99,14 @@ function fiz_lawazim_table($data, $lang) {
                 $type = "Child";
             }
 
-            $pkgData = $lib->plugins->importPlugin("fiz_lawazim_packages", "nights__" . $nights . ";type__" . $types);
-            $rdata.="<tr><td>" . $no . " </td><td>" . $ej . " </td><td> " . $ejdata['FullName'] . "</td><td> $type</td><td>" . $pkgData['5'] . "</td><td>" . $lang['currency'] . $pkgData['0'] . "</td></tr>";
-            $llLawazim +=$pkgData['0'];
 
+
+            $document_statusTitle = $lib->db->get_row("fiz_document_status", "*", "id='" . $_SESSION['faiz-new-reservation']['document_status'][$ejdata['id']] . "'")['name'];
+
+
+            $pkgData = $lib->plugins->importPlugin("fiz_lawazim_packages", "nights__" . $nights . ";type__" . $types);
+            $rdata.="<tr><td>" . $no . " </td><td>" . $ej . " </td><td> " . $ejdata['FullName'] . "</td><td> $type</td><td>" . $pkgData['5'] . "</td>     <td>" . $document_statusTitle . "</td> <td>" . $lang['currency'] . $pkgData['0'] . "</td></tr>";
+            $llLawazim +=$pkgData['0'];
             $gArray[$i] = $ejdata;
             $gArray[$i]['user_type'] = $type;
             $gArray[$i]['type'] = $type;
@@ -131,26 +120,24 @@ function fiz_lawazim_table($data, $lang) {
             $gArray[$i]['type'] = $type;
             $gArray[$i]['ex_checkin'] = $lib->util->dateTodb($_SESSION[$myform]['checkin']);
             $gArray[$i]['ex_checkout'] = $lib->util->dateTodb($_SESSION[$myform]['checkout']);
+            $gArray[$i]['country'] = $countries[$i];
+            $gArray[$i]['visa_file'] = $_SESSION['visa_file'][$ejdata['id']];
+            $gArray[$i]['passport_file'] = $_SESSION['passport_file'][$ejdata['id']];
 
-
-
+            $gArray[$i]['document_status'] = $_SESSION['faiz-new-reservation']['document_status'][$ejdata['id']];
 
             $i++;
         }
-
-
-        $rdata.="<tr><td colspan='5' style='text-align:center ;  font-weight: bold;'>Total</td><td  style=' font-weight: bold;' >" . $lang['currency'] . "$llLawazim</td></tr>";
-
-
-
-        $_SESSION[$myform]['guests'] = $gArray;
-        $rdata.="</tbody>"
-                . "</table></div>";
-    } else {
-
-        $lib->util->reload("/rex/step/2/", "0");
-        //$rdata"" 
     }
+
+    $rdata.="<tr><td colspan='6' style='text-align:center ;  font-weight: bold;'>Total</td><td  style=' font-weight: bold;' >" . $lang['currency'] . "$llLawazim</td></tr>";
+
+
+
+    $_SESSION[$myform]['guests'] = $gArray;
+    $rdata.="</tbody>"
+            . "</table></div>";
+    // }
     return $rdata;
 }
 

@@ -1,0 +1,148 @@
+
+.form_row {
+
+
+
+}
+
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+
+    float: right;
+    margin-right: -4px;
+    text-align: right;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"]
+,.field-label
+
+{
+    text-align: right
+
+
+
+}
+
+.page-content {
+    margin-right: 250px;
+
+    margin-left:0px;
+}
+
+.page-sidebar{
+    right:0
+}
+.site_title{
+    margin-right: 15px;
+    margin-left: 0px;
+}
+
+header .header-seperation,.site_title{
+    float: right;
+    text-align: right;
+
+
+}
+.userData {
+    float: left;
+    margin-left: 30px 
+}
+
+.databody.minisidebar .page-content {
+    margin-right: 50px;
+    z-index: 1;
+}
+
+.headerBar, .headerBar li {
+
+}
+
+.menu-parent {
+
+    direction: rtl;
+    text-align: right;}
+
+.page-sidebar .menu-parent a {
+
+    text-align: right;}
+.acr {
+    float: left;}
+
+.group_bar a {
+
+    float: left;}
+
+
+
+.actions-right , .toright{
+    float:left !important;;
+}
+
+
+.block-actions {
+    left: -5px;
+    right: auto;
+}
+
+
+.block-header {
+    padding-right: 26px;
+    text-align: right;}
+
+.divCell {
+
+    float: right
+}
+
+.divTable  {
+    direction: rtl
+}
+
+.divRow .tags {
+    float: left;
+    margin-left: 20px;
+}
+
+.divRow.head .divCell, .divRow.head .divCell .th_title {
+
+    text-align: right;
+}
+
+.thbutton {
+    right:auto;
+    left: 10px;}
+
+
+.divRow .divCell {
+    margin-left: -1px !important;
+    margin-right: -5px !important;}
+
+.divCell.actions a, .tools_bar a {
+
+    margin-right:10px;
+}
+
+.cellvalue{
+
+    margin-right: 12px;
+
+}
+.divRow.head .divCell, .divRow.head .divCell .th_title {
+    text-align: center
+}
+.divrow.head .divCell a {
+    float: right;}
+
+.tools_bar a {
+    float: left;
+}
+
+
+.langBar {
+    right: auto;
+    left: 20px;
+}
+
+
+.adminmsg {
+    right: 252px;
+    left: 5px;}

@@ -120,15 +120,15 @@ class filesClass {
     }
 
     function readFilesNames($dir, $types, $prefx = "") {
-        
-               
 
-        
-        
+
+
+
+
         $reurn = "";
         $type = explode(",", $types);
-        
-        
+
+
         if (is_dir($dir)) {
             if ($dh = opendir($dir)) {
                 while (($file = readdir($dh)) !== false) {
@@ -137,8 +137,8 @@ class filesClass {
 
                     foreach ($type as $t) {
                         if ($filetype == $t && (trim($file) != ".." && trim($file) != ".")) {
-                            
-                            
+
+
                             if ($prefx != "") {
 
                                 $filePrefx = explode("_", $file)[0];
@@ -415,26 +415,29 @@ class filesClass {
         return $data;
     }
 
-    function readXmlvalue($file, $tag) {
+    function readXmlvalue($file, $name, $parentTag = "") {
         $xml = simplexml_load_file($file);
-        $data = array();
-        $dnum = 0;
-
-
+        $data = "";
         foreach ($xml->children() as $child) {
+            if ($parentTag == "") {
+                if ($child->getName() == $name) {
+
+                    $data = (string) $child;
+                }
+            } else {
 
 
+                if ($child->getName() == $parentTag) {
 
+                    foreach ($child->children() as $child2) {
+                        
+                        
+                        if ($child2->getName() == $name) {
 
-            if ($child->getName() == $tag) {
-
-
-
-
-//  foreach ($child->children() as $child2) {
-                $dnum++;
-                $data = (string) $child;
-// }
+                            $data = (string) $child2;
+                        }
+                    }
+                }
             }
         }
 

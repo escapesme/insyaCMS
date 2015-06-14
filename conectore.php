@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+  //  print_R($_GET);
 
 /*
  * 
@@ -130,7 +130,8 @@ ini_set("display_errors", 1);
 error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
 require_once("lib/libs.php");
 
-
+ini_set("display_errors", 1);
+error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR);
 
 
 //echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";

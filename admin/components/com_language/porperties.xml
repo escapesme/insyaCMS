@@ -7,7 +7,10 @@ and open the template in the editor.
 
     <fields>
         <title name="title"  type="text"  title="Title"/> 
+        <alias name="alias"  type="text"  title="Alias" pclass="col-6"/>
+
         <l_image name="l_image"  type="pic"  title="image"/> 
+        
 
         <enabled name="enabled"  type="enable" title="enable" />
     </fields>

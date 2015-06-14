@@ -9,17 +9,17 @@ and open the template in the editor.
         
         <line  style="  height: 20px;" type="line"  />
         
-        <title comment="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="title"  type="text"  title="Title" pclass='_50'/>
-        <alias name="alias"  type="text"  title="Alias" pclass='_50'/>
-        <author name="author"  type="text"  title="Author" pclass='_50'/> 
-        <date name="date"  type="date"  title="Date" pclass='_50'/>
+        <title comment="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="title"  type="text"  title="Title"  title_ar="العنوان" pclass='_50'/>
+        <alias name="alias"  type="text"  title="Alias"  title_ar="المسمى" pclass='_50'/>
+        <author name="author"  type="text"  title="Author"  title_ar="الكاتب" pclass='_50'/> 
+        <date name="date"  type="date"  title="Date"   title_ar="التاريخ"  pclass='_50'/>
         
         <line1 style="  height: 20px;" type="line"  />
         
         
         
         <cat_id  
-           
+            title_ar="القسم"
             xref='com_content_article_xref' 
             name="cat_id" 
             type="list" 
@@ -36,17 +36,17 @@ and open the template in the editor.
         
         
         
-        <order name="order"  type="order" title="order" pclass='_50' />
-        <enabled name="enabled"  type="enable" title="Enable"  pclass='_50' value='1'/>
+        <order name="order"  title_ar="الترتيب" type="order" title="order" pclass='_50' />
+        <enabled name="enabled" title_ar="التفعيل"  type="enable" title="Enable"  pclass='_50' value='1'/>
         
-        <th_image name="th_image"  type="pic"  title="TH image" />
-        <tags name="tags"  type="textarea" title="Tags"  />
-        <ex_link  name="ex_link"  type="textarea" title="ex_link" />
+        <th_image name="th_image"  type="pic"      title_ar="الصورة العينة" title="TH image" />
+        <tags name="tags"  type="textarea"    title_ar="كلمات المفاتيح"  title="Tags"  />
+        <ex_link  name="ex_link"     title_ar="رابط أضافى"  type="textarea" title="ex_link" />
 
         
         
-        <des  name="des"  type="editor" title="Intro" />
-        <artbody  name="artbody"  type="editor" title="Body" />
+        <des  name="des"   title_ar="نبذه"  type="editor" title="Intro" />
+        <artbody  name="artbody" title_ar="المحتوى"   type="editor" title="Body" />
         
         <line3 style="  height: 25px;" type="line"  />
         
@@ -79,7 +79,6 @@ and open the template in the editor.
         <cat_id/>
         <author/>
  
-        <enabled />
     </selectfields>
    
    

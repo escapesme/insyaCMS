@@ -4,36 +4,62 @@
  * and open the template in the editor.
  */
 
+function createEdit(rid) {
+   
+    getAjax("coms/fiz/reservations_actions", "status=editres&rid=" + rid, function (f) {
 
-$(function() {
+        window.location = "/site/cairo/Reservations/step/reservation-form/";
 
-
-
-
-    $(document).on("click", ".its_id.button", function() {
-
-
-        var o = $(this);
-
-
-
-        sendPAjax("ajax/coms/fiz/reservations_actions", "status=lgoin&value=" + $(".its_id").val(), function(data) {
-
-
-
-
-            if ($.trim(data) == "0") {
-                alert("Error: User data could not be retrieved. Please check if the ITS IS is correct.");
-
-
-
-            } else {
-
-
-                window.location = o.data("to");
-            }
-
-
-        })
     })
+
+
+}
+$(function () {
+
+
+
+    $(document).on("click", ".delete_its", function () {
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=deleteres&rid=" + rid, function (f) {
+            window.location = "/Reservations/"
+        });
+
+    });
+
+
+
+
+
+    $(document).on("click", ".edit_its", function () {
+        createEdit($(this).data("rid"));
+    });
+
+
+    $(document).on("click", ".documents_its", function () {
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=set_reservation_documet&rid=" + rid, function (f) {
+            window.location = "/site/cairo/Reservations/step/verify-documents/";
+        })
+
+    });
+    $(document).on("click", ".new_its", function () {
+
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=newres&rid=" + rid, function (f) {
+            window.location = "/site/cairo/Reservations/step/reservation-form/";
+        })
+
+    })
+    $(document).on("click", ".logout_its", function () {
+
+
+        var rid = $(this).data("rid");
+        getAjax("coms/fiz/reservations_actions", "status=logoures&rid=" + rid, function (f) {
+            window.location = "?";
+        })
+
+
+
+    })
+
 })

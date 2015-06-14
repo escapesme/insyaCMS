@@ -76,7 +76,7 @@ and open the template in the editor.
         <all_status name="all_status"  type="enable"  title="all site" value="1" /> 
       
         <site  
-            xref='com_modules_status_xref' 
+            xref='sys_menu_status_xref' 
             name="site" 
             type="list" 
             select_type='DB' 
@@ -109,9 +109,15 @@ and open the template in the editor.
     
        
     <listfields >   
-        <mei_title list-width="3"/>
+        <mei_title list-width="2"/>
         <mei_alias list-width="2"/>
         <parent_id list-width="1"/>
+                <mei_home list-width="1"/>
+
+        
+        
+        
+        
         <mei_main list-width="1"/>
         <show list-width="1"/>
         

@@ -16,7 +16,7 @@ $setting["siteTitle"] = 'E-Scapes Main Repository';
 $setting["admin_mail"] = 'info@e-scapes.me';
 
 $setting["mailTitle"] = 'E-Scapes';
-$setting["site_path"] = 'http://localhost/';
+$setting["site_path"] = 'http://new.faizehaakimi.com/';
 
 $setting["succeedClass"] = "succee";
 

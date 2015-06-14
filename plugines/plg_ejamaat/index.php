@@ -35,21 +35,20 @@ function plg_ejamaat($pdata, $lang) {
 
     $xml = str_replace(array("diffgr:", "msdata:"), '', $response->FaizehaakimiResult->any);
 
-
     $xml = "<package>" . $xml . "</package>";
     $data = simplexml_load_string($xml);
-    
-        
 
-  
-    
-    
-     //print_R($pdata);
 
-    
-    
+
+
+
+
+    //print_R($pdata);
+
+
+
     if (!empty($data)) {
- 
+
         foreach ($data->diffgram->NewDataSet->children() as $child) {
             foreach ($child as $key0 => $value) {
 

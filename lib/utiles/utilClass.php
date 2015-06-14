@@ -699,76 +699,90 @@ class utilClass {
     }
 
     function readXmlDataString($file, $tag) {
-     if(is_file($file)){
-        try {
-            
-       
-            $xml = simplexml_load_string(file_get_contents($file));
-            $data = array();
-            $dnum = 0;
-            
-            foreach ($xml->children() as $child) {
-                if ($child->getName() == $tag) {
+        if (is_file($file)) {
+            try {
 
 
-                    foreach ($child as $key0 => $value) {
+                $xml = simplexml_load_string(file_get_contents($file));
+                $data = array();
+                $dnum = 0;
 
-                        //  $data[$key0] = (string) $value;
+                foreach ($xml->children() as $child) {
+                    if ($child->getName() == $tag) {
 
-                        foreach ($value->attributes() as $attributeskey0 => $attributesvalue1) {
+
+                        foreach ($child as $key0 => $value) {
+
+                            //  $data[$key0] = (string) $value;
+
+                            foreach ($value->attributes() as $attributeskey0 => $attributesvalue1) {
 
 
-                            $data[$key0][$attributeskey0] = (string) $attributesvalue1;
+                                $data[$key0][$attributeskey0] = (string) $attributesvalue1;
+                            }
+
+
+                            $data[$key0]["value"] = (string) $value;
                         }
-
-
-                        $data[$key0]["value"] = (string) $value;
                     }
                 }
+            } catch (Exception $e) {
+                echo ">>>" . $e->getMessage();
             }
-        } catch (Exception $e) {
-            echo ">>>" . $e->getMessage();
-        }}
+        }
 
 
         return $data;
     }
 
     function readXmlnamesString($file, $tag) {
-        $xml = simplexml_load_string(file_get_contents($file));
-        $data = array();
-        $dnum = 0;
 
-        //  print_r | ($xml);
-        foreach ($xml->children() as $child) {
-            if ($child->getName() == $tag) {
+        try {
+            $xml = simplexml_load_string(file_get_contents($file));
+            $data = array();
+            $dnum = 0;
 
 
-                foreach ($child as $key0 => $value) {
-                    $dnum++;
-                    $data[$dnum] = $key0;
+
+            //  print_r | ($xml);
+            foreach ($xml->children() as $child) {
+                if ($child->getName() == $tag) {
+
+
+                    foreach ($child as $key0 => $value) {
+                        $dnum++;
+                        $data[$dnum] = $key0;
+                    }
                 }
             }
+        } catch (Exception $exc) {
+            echo $exc->getTraceAsString() . " " . $file;
         }
-
-
 
 
         return $data;
     }
 
     function readXmlvaluesString($file, $tag) {
-        $xml = simplexml_load_string(file_get_contents($file));
-        $data = array();
-        //  echo $file;
-        $dnum = 0;
-        foreach ($xml->children() as $child) {
-            if ($child->getName() == $tag) {
-                foreach ($child->children() as $child2) {
-                    $dnum++;
-                    $data[$dnum] = (string) $child2;
-                }
+
+        try {
+     
+
+                $xml = simplexml_load_string(file_get_contents($file));
+                $data = array();
+
+                $dnum = 0;
+                foreach ($xml->children() as $child) {
+                    if ($child->getName() == $tag) {
+                        foreach ($child->children() as $child2) {
+                            $dnum++;
+                            $data[$dnum] = (string) $child2;
+                        }
+                    }
+                
             }
+        } catch (Exception $exc) {
+            echo $exc->getTraceAsString() . " " . $file;
         }
         return $data;
     }
@@ -800,11 +814,11 @@ class utilClass {
     }
 
     function readXmlvalue($file, $tag) {
+        
+    
         $xml = simplexml_load_file($file);
         $data = array();
         $dnum = 0;
-
-
         foreach ($xml->children() as $child) {
 
 
@@ -1011,9 +1025,6 @@ class utilClass {
         return $res;
     }
 
-
-    
-    
     function dateTodb($data) {
         $newdate = explode('/', $data);
 
@@ -1707,14 +1718,17 @@ EOF;
 
     function createURL($alias, $cat, $item, $type) {
 
-
+         //   print_R($_GET);
 
         $returnData = "";
+        if (trim($_GET['site'])) {
 
-        if (trim($_GET['lang'])) {
+            $returnData = "/site/" . $_GET['site'];
+        }
+    /*    if (trim($_GET['lang'])) {
 
             $returnData = "/" . $_GET['lang'];
-        }
+        }*/
 
         /*  if (isset($_GET["site"]) && $_GET["site"] != "global") {
 
@@ -1727,7 +1741,6 @@ EOF;
 
 
         $returnData .= "/" . $alias . "/";
-
 
 
 
@@ -1776,16 +1789,16 @@ EOF;
         $alias = $this->data->TextVarUpdate("", $alias);
 
         $returnData = "";
-        
-        
-        
-        
-        
-        /*
-        if (trim($_GET['lang'])) {
 
-            $returnData = "/" . $_GET['lang'];
-        }*/
+
+
+
+
+        /*
+          if (trim($_GET['lang'])) {
+
+          $returnData = "/" . $_GET['lang'];
+          } */
 
         /* if (isset($_GET["site"]) && $_GET["site"] != "global") {
           $returnData .= "/site/" . $_GET["site"];
@@ -1794,7 +1807,7 @@ EOF;
 
         if ($alias) {
 
-            $returnData .=  $alias . "/";
+            $returnData .= $alias . "/";
         }
         if (isset($items) && trim($items) != "") {
             $returnData .= $items . "/";
@@ -1854,7 +1867,7 @@ EOF;
 
 
         <script>
-            $(function() {
+            $(function () {
                 $(".pageTitle h3").text("<?= $title ?>");
             });
         </script>
@@ -2063,8 +2076,7 @@ EOF;
 
         return $returnData;
     }
-    
-    
+
     function reload($url = "", $s = "1") {
         if ($url == "") {
 

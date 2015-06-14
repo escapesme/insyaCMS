@@ -131,7 +131,6 @@ class faizClass {
         // print_R($u);
         if (is_array($u)) {
             $o = $lib->db->get_row("com_users", "*", "id='" . $u['user_id'] . "'");
-            print_r($o);
             if (is_array($o)) {
 
                 $r = array_merge($u, $o);

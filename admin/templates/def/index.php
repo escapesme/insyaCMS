@@ -1,39 +1,42 @@
-<?php
-/* @var $lib  libs\libs */
-global $lib;
-session_start();
-$image = "";
-if ($lib->users->getUser("image") == "") {
-    $image = "images/avatar_small.png";
-} else {
-    $image = "../uploads/images/" . $lib->users->getUser("image");
-}
-$main = creat_main();
-?>
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+    
+
+
+        <?php
+        /* @var $lib  libs\libs */
+        global $lib;
+        session_start();
+        $image = "";
+        if ($lib->users->getUser("image") == "") {
+            $image = "images/avatar_small.png";
+        } else {
+            $image = "../uploads/images/" . $lib->users->getUser("image");
+        }
+        $main = creat_main();
+        ?>
+
+
         <link href="templates/def/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-
 
         <link type = "text/css" href =" templates/def/css/style.css" rel = "stylesheet" />
         <link type = "text/css" href =" templates/def/css/layout.css" rel = "stylesheet" />
         <link type = "text/css" href =" templates/def/css/build.css" rel = "stylesheet" />
         <script src="templates/def/js/script.js" ></script>
 
-<link rel="stylesheet" type="text/css" href="/includes/js/lightbox/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/includes/js/lightbox/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
 
         <script type="text/javascript" src="/includes/js/lightbox/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
-	
+
 
 
 
         <link rel="stylesheet" href="templates/def/standalone/switchery.css" />
         <script src="templates/def/standalone/switchery.js"></script>
+        <link type = "text/css" href =" templates/def/css/<?= $lib->util->siteSetting['admin_lang'] ?>.css" rel = "stylesheet" />
 
 
 
@@ -42,13 +45,13 @@ $main = creat_main();
 
 
 
-            $(function() {
+            $(function () {
 
                 $(".content").tooltip({
                     position: {
                         my: "center bottom-20",
                         at: "center top",
-                        using: function(position, feedback) {
+                        using: function (position, feedback) {
                             $(this).css(position);
                             $("<div>")
                                     .addClass("arrow")
@@ -119,10 +122,10 @@ $main = creat_main();
 
     var elems = Array.prototype.slice.call(document.querySelectorAll('.ios'));
 
-        elems.forEach(function(html) {
-        
-   
-    var switchery = new Switchery(html , {color: '#0aa699'});
+    elems.forEach(function (html) {
+
+
+        var switchery = new Switchery(html, {color: '#0aa699'});
     });
 </script>
 

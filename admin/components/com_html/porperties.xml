@@ -8,8 +8,8 @@ and open the template in the editor.
     <fields>      
     
       
-        <title name="title" lang='true'   showTags="true" toolbar="true"  type="text"  title="Title" pclass='col-6'/>
-        <enabled name="enabled"  type="enable" title="enable" value="1" pclass='col-3' />
+        <title name="title"  lang='true'   showTags="true" toolbar="true"  type="text" title_ar="العنوان" title="Title" pclass='col-6'/>
+        <enabled name="enabled"  type="enable" title="enable" title_ar="مفعل" value="1" pclass='col-3' />
         <cat_id   lang='true'
                   name="cat_id[]" 
                   type="list" 
@@ -18,12 +18,13 @@ and open the template in the editor.
                   select_text='title' 
                   select_value='id'  
                   title="Category"   
+                    title_ar="القسم"
                   xref="com_html_xref" 
                   pclass='col-3'
         
         />
 
-        <my_body name="my_body"  lang='true'  type="editor" editor_type="full"  title="body" />
+        <my_body name="my_body"  title_ar="المحتوى"  lang='true'  type="editor" editor_type="full"  title="body" />
     
         
     </fields>
